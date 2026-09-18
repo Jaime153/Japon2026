@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+
+const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
+const currentPath = new URL(Astro.request.url).pathname;
+const base = import.meta.env.BASE_URL;
+
+function isActive(href: string) {
+  return currentPath === href || currentPath === href.replace(/\/$/, '');
+}
+---
+
+<nav class="sticky top-0 z-10 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <ul class="flex gap-1 overflow-x-auto px-2 py-2 text-sm">
+    <li>
+      <a
+        href={base}
+        class:list={[
+          'block rounded-full px-3 py-1.5 whitespace-nowrap transition-colors',
+          isActive(base) ? 'bg-slate-900 text-white' : 'text-slate-600 hover:bg-slate-100',
+        ]}
+      >
+        Resumen
+      </a>
+    </li>
+    {
+      segments.map((segment) => {
+        const href = `${base}viaje/${segment.id}/`;
+        return (
+          <li>
+            <a
+              href={href}
+              class:list={[
+                'block rounded-full px-3 py-1.5 whitespace-nowrap transition-colors',
+                isActive(href) ? 'bg-slate-900 text-white' : 'text-slate-600 hover:bg-slate-100',
+              ]}
+            >
+              {segment.data.legLabel ?? segment.data.city}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>

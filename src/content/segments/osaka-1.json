@@ -1,0 +1,12 @@
+{
+  "order": 2,
+  "city": "Osaka",
+  "legLabel": "Osaka (ida)",
+  "startDate": "2026-10-10",
+  "endDate": "2026-10-13",
+  "hotel": {
+    "name": "GN98 Saiwaicho"
+  },
+  "days": [],
+  "candidateModules": []
+}

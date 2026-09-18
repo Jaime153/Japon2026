@@ -1,0 +1,11 @@
+{
+  "order": 3,
+  "city": "Kyoto",
+  "startDate": "2026-10-13",
+  "endDate": "2026-10-20",
+  "hotel": {
+    "name": "RESI STAY Yasaka"
+  },
+  "days": [],
+  "candidateModules": []
+}

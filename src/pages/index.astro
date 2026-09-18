@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { formatDate, formatDateRange, getTripDateRange } from '../lib/segments';
+
+const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
+const tripRange = getTripDateRange(segments.map((segment) => segment.data));
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout title="Japón 2026 — Itinerario">
+  <header class="mb-6">
+    <h1 class="text-2xl font-bold tracking-tight">Japón 2026</h1>
+    <p class="mt-1 text-slate-600">{formatDateRange(tripRange.start, tripRange.end)}</p>
+  </header>
+
+  <ul class="flex flex-col gap-3">
+    {
+      segments.map((segment) => (
+        <li>
+          <a
+            href={`${base}viaje/${segment.id}/`}
+            class="block rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="flex items-baseline justify-between gap-2">
+              <h2 class="text-lg font-semibold text-slate-900">
+                {segment.data.legLabel ?? segment.data.city}
+              </h2>
+              <span class="text-xs font-medium text-slate-400">#{segment.data.order}</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-500">
+              {formatDate(segment.data.startDate)} – {formatDate(segment.data.endDate)}
+            </p>
+            <p class="mt-2 text-sm text-slate-700">🏨 {segment.data.hotel.name}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

@@ -1,0 +1,12 @@
+{
+  "order": 5,
+  "city": "Osaka",
+  "legLabel": "Osaka (vuelta)",
+  "startDate": "2026-10-23",
+  "endDate": "2026-10-28",
+  "hotel": {
+    "name": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower"
+  },
+  "days": [],
+  "candidateModules": []
+}

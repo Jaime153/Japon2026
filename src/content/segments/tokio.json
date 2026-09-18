@@ -1,0 +1,133 @@
+{
+  "order": 1,
+  "city": "Tokio",
+  "startDate": "2026-10-04",
+  "endDate": "2026-10-10",
+  "hotel": {
+    "name": "SUI Ginza Kyobashi"
+  },
+  "days": [
+    {
+      "date": "2026-10-04",
+      "title": "Llegada: Ginza y alrededores",
+      "activities": [
+        {
+          "id": "ginza",
+          "title": "Ginza",
+          "category": "compras"
+        },
+        {
+          "id": "tsukiji-hongwanji",
+          "title": "Tsukiji Hongwanji",
+          "category": "templo",
+          "notes": "Iluminado de noche"
+        },
+        {
+          "id": "yurakucho",
+          "title": "Yurakucho",
+          "category": "ocio",
+          "notes": "Cena"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Recogida del coche (excursión al Fuji)",
+      "activities": [
+        {
+          "id": "recogida-coche",
+          "title": "Recogida coche de alquiler",
+          "time": "19:00",
+          "category": "transporte"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Excursión de un día al Fuji",
+      "activities": [
+        {
+          "id": "pagoda-chureito",
+          "title": "Pagoda Chureito",
+          "category": "mirador"
+        },
+        {
+          "id": "shimoyoshida-honcho",
+          "title": "Calle Shimoyoshida Honcho",
+          "category": "otro"
+        },
+        {
+          "id": "santuario-kitaguchi-hongu",
+          "title": "Santuario Kitaguchi Hongu Fuji Sengen",
+          "category": "templo"
+        },
+        {
+          "id": "oshino-hakkai",
+          "title": "Oshino Hakkai",
+          "category": "otro"
+        },
+        {
+          "id": "oishi-park",
+          "title": "Oishi Park",
+          "category": "mirador"
+        },
+        {
+          "id": "punto-foto-lawson",
+          "title": "Punto de foto Lawson",
+          "category": "otro"
+        },
+        {
+          "id": "devolucion-coche",
+          "title": "Devolución coche de alquiler",
+          "time": "19:00",
+          "category": "transporte"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Traslado a Osaka vía Nagoya (Ghibli Park)",
+      "activities": [
+        {
+          "id": "traslado-nagoya",
+          "title": "Traslado a Nagoya",
+          "category": "transporte"
+        },
+        {
+          "id": "ghibli-park",
+          "title": "Ghibli Park",
+          "time": "14:00",
+          "category": "ocio",
+          "notes": "Pase O-Sanpo Standard. Entrada aún no comprada — pendiente de verificar."
+        },
+        {
+          "id": "continuacion-osaka",
+          "title": "Continuación a Osaka",
+          "category": "transporte"
+        }
+      ]
+    }
+  ],
+  "candidateModules": [
+    {
+      "id": "asakusa-zona-este",
+      "title": "Asakusa / zona este",
+      "activities": []
+    },
+    {
+      "id": "ueno-akihabara",
+      "title": "Ueno / Akihabara",
+      "activities": []
+    },
+    {
+      "id": "shibuya-harajuku-meiji",
+      "title": "Shibuya / Harajuku / Meiji",
+      "activities": []
+    },
+    {
+      "id": "zona-hotel",
+      "title": "Zona del hotel",
+      "activities": []
+    }
+  ]
+}

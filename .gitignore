@@ -1,6 +1,10 @@
-﻿.idea/
+.idea/
 node_modules/
 dist/
 .astro/
 .env
 .env.*
+npm-debug.log*
+.DS_Store
+.cerebro-sync/
+.claude/
