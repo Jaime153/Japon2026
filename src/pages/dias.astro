@@ -68,6 +68,8 @@ const days = flattenDays(segments);
         chip.setAttribute('aria-pressed', active ? 'true' : 'false');
       });
       const activePanel = panels[current];
+      const activeDate = activePanel?.getAttribute('data-day-date') ?? '';
+      try { if (activeDate) localStorage.setItem('japon2026:selected-date', activeDate); } catch {}
       if (label) label.textContent = activePanel?.getAttribute('data-day-label') ?? '';
       chips[current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       if (prev instanceof HTMLButtonElement) prev.disabled = current === 0;
