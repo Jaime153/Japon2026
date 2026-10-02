@@ -77,12 +77,21 @@ const days = flattenDays(segments);
 
     function refreshNext(entry) {
       const date = entry.getAttribute('data-date') ?? '';
-      const cards = [...entry.querySelectorAll('[data-activity-card]')].filter((card) => !card.closest('[data-variant-panel].hidden'));
+      const visibleCards = [...entry.querySelectorAll('[data-activity-card]')]
+        .filter((card) => !card.closest('[data-variant-panel].hidden'));
+      const cards = visibleCards.filter((card) => card.getAttribute('data-completed') !== 'true');
 
-      if (!cards.length) {
+      if (!visibleCards.length) {
         nextKicker.textContent = 'Plan';
         nextTitle.textContent = 'Sin actividades cargadas';
         nextNote.textContent = '';
+        return;
+      }
+
+      if (!cards.length) {
+        nextKicker.textContent = 'Hoy';
+        nextTitle.textContent = 'Plan completado ✓';
+        nextNote.textContent = 'Has marcado todas las paradas de este día como hechas.';
         return;
       }
 
@@ -160,6 +169,10 @@ const days = flattenDays(segments);
       if (event.target instanceof Element && event.target.closest('[data-variant-button]')) {
         window.setTimeout(() => refreshNext(entries[current]), 0);
       }
+    });
+    document.addEventListener('japon2026:activity-state', () => {
+      const entry = entries[current];
+      if (entry) refreshNext(entry);
     });
 
     show(current);
