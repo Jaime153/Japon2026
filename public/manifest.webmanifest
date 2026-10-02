@@ -1,0 +1,18 @@
+{
+  "name": "Japón 2026 · Jaime",
+  "short_name": "Japón 2026",
+  "description": "Itinerario operativo del viaje a Japón 2026",
+  "start_url": "/Japon2026/hoy/",
+  "scope": "/Japon2026/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/Japon2026/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

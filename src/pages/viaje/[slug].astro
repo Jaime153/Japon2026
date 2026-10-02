@@ -1,95 +1,60 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import EmptyState from '../../components/EmptyState.astro';
+import DayBlock from '../../components/DayBlock.astro';
 import ActivityCard from '../../components/ActivityCard.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { formatDate, formatDayHeading, getModulesWithContent, hasContent } from '../../lib/segments';
+import { formatDate, getModulesWithContent } from '../../lib/segments';
+import { SHARED_MAP_LISTS } from '../../data/trip';
 
 export async function getStaticPaths() {
   const segments = await getCollection('segments');
-  return segments.map((segment) => ({
-    params: { slug: segment.id },
-    props: { segment },
-  }));
+  return segments.map((segment) => ({ params: { slug: segment.id }, props: { segment } }));
 }
 
-interface Props {
-  segment: CollectionEntry<'segments'>;
-}
-
+interface Props { segment: CollectionEntry<'segments'>; }
 const { segment } = Astro.props;
 const { data } = segment;
 const modulesWithContent = getModulesWithContent(data);
 const title = data.legLabel ?? data.city;
+const relevantLists = SHARED_MAP_LISTS.filter((list) => {
+  const c = data.city.toLowerCase();
+  return list.city.toLowerCase().includes(c) || (c === 'tokio' && list.id === 'fuji');
+});
 ---
 
-<Layout title={`${title} — Japón 2026`}>
-  <header class="mb-6">
-    <p class="text-sm font-medium text-slate-500">Tramo {data.order}</p>
-    <h1 class="text-2xl font-bold tracking-tight">{title}</h1>
-    <p class="mt-1 text-slate-600">{formatDate(data.startDate)} – {formatDate(data.endDate)}</p>
+<Layout title={`${title} · Japón 2026`}>
+  <header class="mb-7">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Tramo {data.order}</p>
+    <h1 class="text-3xl font-black tracking-tight">{title}</h1>
+    <p class="mt-1 text-sm text-slate-500">{formatDate(data.startDate)} – {formatDate(data.endDate)}</p>
 
-    <div class="mt-3 rounded-xl border border-slate-200 bg-white p-3 text-sm">
-      <p class="font-medium text-slate-900">🏨 {data.hotel.name}</p>
-      {(data.hotel.checkIn || data.hotel.checkOut) && (
-        <p class="mt-1 text-slate-500">
-          {data.hotel.checkIn && <>Check-in: {data.hotel.checkIn}</>}
-          {data.hotel.checkIn && data.hotel.checkOut && ' · '}
-          {data.hotel.checkOut && <>Check-out: {data.hotel.checkOut}</>}
-        </p>
-      )}
-      {data.hotel.mapsUrl && (
-        <a
-          href={data.hotel.mapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mt-2 inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700 hover:bg-sky-100"
-        >
-          📍 Abrir en Google Maps
-        </a>
-      )}
-    </div>
+    {data.hotel && (
+      <div class="mt-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+        <p class="text-xs font-bold uppercase tracking-wide text-slate-400">Hotel</p>
+        <p class="mt-1 font-black">🏨 {data.hotel.name}</p>
+        {data.hotel.mapsUrl && <a href={data.hotel.mapsUrl} target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">📍 Abrir en Maps</a>}
+      </div>
+    )}
+
+    {relevantLists.length > 0 && (
+      <div class="mt-3 flex flex-wrap gap-2">
+        {relevantLists.map((list) => <a href={list.url} target="_blank" rel="noopener noreferrer" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-700">🗺️ {list.title} ↗</a>)}
+      </div>
+    )}
   </header>
 
-  {
-    hasContent(data) ? (
-      <div class="flex flex-col gap-8">
-        {data.days.length > 0 && (
-          <section class="flex flex-col gap-6">
-            {data.days.map((day) => (
-              <div>
-                <p class="text-xs font-medium tracking-wide text-slate-400 uppercase">{formatDayHeading(day.date)}</p>
-                <h2 class="mb-3 text-lg font-semibold text-slate-900">
-                  {day.title ?? formatDayHeading(day.date)}
-                </h2>
-                <ul class="flex flex-col gap-3">
-                  {day.activities.map((activity) => (
-                    <ActivityCard activity={activity} />
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </section>
-        )}
-
-        {modulesWithContent.length > 0 && (
-          <section class="flex flex-col gap-6">
-            <h2 class="text-lg font-semibold text-slate-900">Módulos candidatos</h2>
-            {modulesWithContent.map((candidateModule) => (
-              <div>
-                <h3 class="mb-3 text-base font-medium text-slate-800">{candidateModule.title}</h3>
-                <ul class="flex flex-col gap-3">
-                  {candidateModule.activities.map((activity) => (
-                    <ActivityCard activity={activity} />
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </section>
-        )}
-      </div>
-    ) : (
-      <EmptyState />
-    )
-  }
+  <div class="grid gap-10">
+    {data.days.map((day) => <DayBlock day={day} city={title} />)}
+    {modulesWithContent.length > 0 && (
+      <section>
+        <h2 class="mb-3 text-xl font-black">Módulos candidatos</h2>
+        {modulesWithContent.map((module) => (
+          <div class="mb-6">
+            <h3 class="mb-3 font-bold">{module.title}</h3>
+            <ul class="grid gap-3">{module.activities.map((activity) => <ActivityCard activity={activity} />)}</ul>
+          </div>
+        ))}
+      </section>
+    )}
+  </div>
 </Layout>
