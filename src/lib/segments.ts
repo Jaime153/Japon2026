@@ -49,6 +49,7 @@ export function flattenDays(segments: SegmentEntry[]) {
       segmentTitle: segment.data.legLabel ?? segment.data.city,
       city: segment.data.city,
       day,
+      alternatives: getDayAlternatives(segment.data, day.date),
     })),
   ).sort((a, b) => a.day.date.getTime() - b.day.date.getTime());
 }
