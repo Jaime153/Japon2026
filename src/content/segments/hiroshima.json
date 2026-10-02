@@ -19,7 +19,11 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Hiroshima Peace Memorial Park"
+          "locationQuery": "Hiroshima Peace Memorial Park",
+          "plan": [
+            "Empezar por Peace Memorial Park y recorrerlo a pie con calma.",
+            "Mantener un ritmo tranquilo antes de entrar al museo."
+          ]
         },
         {
           "id": "peace-museum",
@@ -27,7 +31,11 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Hiroshima Peace Memorial Museum"
+          "locationQuery": "Hiroshima Peace Memorial Museum",
+          "plan": [
+            "Hacer la visita del museo sin encadenarla con prisas.",
+            "Dejar margen emocional y de descanso antes de seguir al A-Bomb Dome."
+          ]
         },
         {
           "id": "a-bomb-dome",
@@ -35,7 +43,11 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Atomic Bomb Dome Hiroshima"
+          "locationQuery": "Atomic Bomb Dome Hiroshima",
+          "plan": [
+            "Ver el A-Bomb Dome y cerrar el eje histórico de la tarde.",
+            "Después cambiar de ambiente y dirigirse a cenar."
+          ]
         },
         {
           "id": "okonomimura",
@@ -46,7 +58,11 @@
           "locationQuery": "Okonomimura Hiroshima",
           "links": {
             "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=Okonomimura%20Hiroshima"
-          }
+          },
+          "plan": [
+            "Ir a Okonomimura y elegir puesto según cola/ambiente.",
+            "Probar okonomiyaki estilo Hiroshima como comida/cena principal de la ciudad."
+          ]
         }
       ]
     },
@@ -61,21 +77,33 @@
           "category": "templo",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Itsukushima Shrine"
+          "locationQuery": "Itsukushima Shrine",
+          "plan": [
+            "Llegar a Miyajima y empezar por Itsukushima Shrine.",
+            "Coordinar la visita con el resto del día sin bloquearse esperando una foto perfecta."
+          ]
         },
         {
           "id": "miyajima-torii",
           "title": "Gran torii",
           "category": "mirador",
           "status": "plan",
-          "locationQuery": "Itsukushima Floating Torii"
+          "locationQuery": "Itsukushima Floating Torii",
+          "plan": [
+            "Ver el gran torii desde los puntos que mejor encajen durante el paseo.",
+            "Aprovechar el cambio de marea si coincide, pero sin rehacer toda la ruta por ello."
+          ]
         },
         {
           "id": "misen",
           "title": "Monte Misen",
           "category": "naturaleza",
           "status": "plan",
-          "locationQuery": "Mount Misen"
+          "locationQuery": "Mount Misen",
+          "plan": [
+            "Subir al Monte Misen si el tiempo y las fuerzas acompañan.",
+            "Si el grupo va justo, acortar esta parte antes que convertir Miyajima en una carrera."
+          ]
         },
         {
           "id": "anago-meshi",
@@ -86,7 +114,11 @@
           "locationQuery": "anago meshi Miyajima",
           "links": {
             "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=anago%20meshi%20Miyajima"
-          }
+          },
+          "plan": [
+            "Buscar un local de anago meshi según zona, cola y horario.",
+            "Hacerlo como comida característica de Miyajima sin fijarnos a un sitio si está imposible."
+          ]
         }
       ]
     },
@@ -101,13 +133,21 @@
           "title": "Hiroshima Castle",
           "category": "otro",
           "status": "opcional",
-          "locationQuery": "Hiroshima Castle"
+          "locationQuery": "Hiroshima Castle",
+          "plan": [
+            "Visitar Hiroshima Castle como actividad principal del día colchón.",
+            "Después dejar tiempo libre para repetir, comprar o descansar."
+          ]
         },
         {
           "id": "hiroshima-flex",
           "title": "Tiempo libre / repetir zona",
           "category": "otro",
-          "status": "plan"
+          "status": "plan",
+          "plan": [
+            "Usar el resto del día para repetir una zona, compras o descanso.",
+            "No introducir una excursión nueva: este día existe precisamente como colchón."
+          ]
         }
       ]
     },
@@ -121,7 +161,11 @@
           "title": "Traslado a Osaka",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Hommachi Station Osaka"
+          "locationQuery": "Hommachi Station Osaka",
+          "plan": [
+            "Salir de Hiroshima hacia Osaka con el equipaje organizado.",
+            "Al llegar, check-in/dejar maletas antes del plan de Dōtonbori/Shinsaibashi."
+          ]
         }
       ]
     }

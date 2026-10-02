@@ -32,7 +32,7 @@ const title = data.legLabel ?? data.city;
     )}
   </header>
 
-  <div class="sticky top-[65px] z-30 -mx-4 mb-5 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
+  <div class="sticky top-14 z-30 -mx-4 mb-5 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
     <div class="flex gap-2 overflow-x-auto pb-1" id="segment-day-chips">
       {data.days.map((day, index) => (
         <button type="button" class="segment-day-chip shrink-0 rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-700" data-index={index} data-date={isoDate(day.date)}>
@@ -90,6 +90,8 @@ const title = data.legLabel ?? data.city;
         chip.classList.toggle('bg-white', !active);
         chip.classList.toggle('text-slate-700', !active);
       });
+      const activeDate = panels[current]?.getAttribute('data-date') ?? '';
+      try { if (activeDate) localStorage.setItem('japon2026:selected-date', activeDate); } catch {}
       if (label) label.textContent = panels[current]?.getAttribute('data-label') ?? '';
       chips[current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       if (prev instanceof HTMLButtonElement) prev.disabled = current === 0;

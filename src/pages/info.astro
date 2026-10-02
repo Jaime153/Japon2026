@@ -5,6 +5,21 @@ import { FIXED_INFO } from '../data/trip';
 import { formatDate } from '../lib/segments';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
+const pendingItems = segments.flatMap((segment) =>
+  segment.data.days.flatMap((day) =>
+    day.activities
+      .filter((activity) => activity.status === 'pendiente' || activity.reservationRequired)
+      .map((activity) => ({
+        id: activity.id,
+        title: activity.title,
+        date: day.date,
+        city: segment.data.legLabel ?? segment.data.city,
+        reservationRequired: activity.reservationRequired ?? false,
+        reservation: activity.links?.reservation,
+        officialWebsite: activity.links?.officialWebsite,
+      })),
+  ),
+);
 ---
 
 <Layout title="Info · Japón 2026">
@@ -28,6 +43,39 @@ const segments = (await getCollection('segments')).sort((a, b) => a.data.order -
   </section>
 
   <section class="mt-8">
+    <div class="flex items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.16em] text-amber-600">Antes de ir</p>
+        <h2 class="text-xl font-black">Pendientes y reservas</h2>
+      </div>
+      <span class="text-xs text-slate-400">{pendingItems.length} pendientes</span>
+    </div>
+    <div class="mt-3 grid gap-3">
+      {pendingItems.map((item) => (
+        <article class="pending-item rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-sm" data-pending-id={item.id}>
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-[11px] font-bold uppercase tracking-wide text-amber-700">{formatDate(item.date)} · {item.city}</p>
+              <h3 class="mt-1 font-black text-slate-950">{item.title}</h3>
+              <p class="mt-1 text-xs text-slate-600">{item.reservationRequired ? 'Necesita entrada/reserva.' : 'Pendiente de cerrar o verificar.'}</p>
+            </div>
+            <label class="flex shrink-0 cursor-pointer items-center gap-2 rounded-xl bg-white px-3 py-2 text-xs font-bold text-slate-700">
+              <input type="checkbox" data-pending-done class="h-4 w-4" />
+              Listo
+            </label>
+          </div>
+          {(item.reservation || item.officialWebsite) && (
+            <div class="mt-3 flex flex-wrap gap-2">
+              {item.reservation && <a href={item.reservation} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-amber-200 px-3 py-2 text-sm font-bold text-amber-950">🎫 Reservar</a>}
+              {item.officialWebsite && <a href={item.officialWebsite} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-white px-3 py-2 text-sm font-bold text-slate-700">🌐 Web oficial</a>}
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-8">
     <h2 class="text-xl font-black">Alojamientos</h2>
     <div class="mt-3 grid gap-3">
       {segments.filter((s) => s.data.hotel).map((segment) => (
@@ -42,6 +90,19 @@ const segments = (await getCollection('segments')).sort((a, b) => a.data.order -
     </div>
   </section>
 
+  <section class="mt-8">
+    <h2 class="text-xl font-black">Datos locales</h2>
+    <p class="mt-2 text-sm leading-relaxed text-slate-500">Hechos, notas, pendientes y el plan Fuji/Okutama se guardan en este navegador. Puedes sacar una copia y restaurarla en otro dispositivo.</p>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <button id="export-local-state" type="button" class="rounded-xl bg-slate-950 px-3 py-2 text-sm font-bold text-white">⬇️ Exportar estado</button>
+      <label class="cursor-pointer rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-700">
+        ⬆️ Importar estado
+        <input id="import-local-state" type="file" accept="application/json,.json" class="hidden" />
+      </label>
+    </div>
+    <p id="local-state-message" class="mt-2 hidden text-xs font-semibold text-slate-600"></p>
+  </section>
+
   <section class="mt-8 rounded-3xl bg-slate-950 p-5 text-white">
     <h2 class="text-xl font-black">Cómo leer el planning</h2>
     <div class="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
@@ -51,4 +112,65 @@ const segments = (await getCollection('segments')).sort((a, b) => a.data.order -
       <p><strong class="text-amber-300">Pendiente:</strong> necesita verificar entrada, reserva u horario real.</p>
     </div>
   </section>
+  <script>
+    const stateMessage = document.querySelector('#local-state-message');
+    const showStateMessage = (message, error = false) => {
+      if (!stateMessage) return;
+      stateMessage.textContent = message;
+      stateMessage.classList.remove('hidden', 'text-red-700', 'text-emerald-700');
+      stateMessage.classList.add(error ? 'text-red-700' : 'text-emerald-700');
+    };
+
+    document.querySelector('#export-local-state')?.addEventListener('click', () => {
+      const state = {};
+      try {
+        for (let i = 0; i < localStorage.length; i += 1) {
+          const key = localStorage.key(i);
+          if (key?.startsWith('japon2026:')) state[key] = localStorage.getItem(key);
+        }
+      } catch {}
+      const blob = new Blob([JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), state }, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Japon2026_estado.json';
+      link.click();
+      URL.revokeObjectURL(url);
+      showStateMessage('Copia local exportada.');
+    });
+
+    document.querySelector('#import-local-state')?.addEventListener('change', async (event) => {
+      const input = event.currentTarget;
+      if (!(input instanceof HTMLInputElement) || !input.files?.[0]) return;
+      try {
+        const payload = JSON.parse(await input.files[0].text());
+        if (!payload || typeof payload.state !== 'object') throw new Error('Formato no válido');
+        for (const [key, value] of Object.entries(payload.state)) {
+          if (!key.startsWith('japon2026:')) continue;
+          if (typeof value === 'string') localStorage.setItem(key, value);
+        }
+        showStateMessage('Estado importado. Recargando…');
+        window.setTimeout(() => window.location.reload(), 500);
+      } catch {
+        showStateMessage('No se pudo importar ese archivo.', true);
+      } finally {
+        input.value = '';
+      }
+    });
+
+    document.querySelectorAll('[data-pending-id]').forEach((item) => {
+      const id = item.getAttribute('data-pending-id');
+      const checkbox = item.querySelector('[data-pending-done]');
+      if (!id || !(checkbox instanceof HTMLInputElement)) return;
+      const key = `japon2026:pending-done:${id}`;
+      try { checkbox.checked = localStorage.getItem(key) === 'true'; } catch {}
+      const apply = () => {
+        item.classList.toggle('opacity-50', checkbox.checked);
+        item.classList.toggle('border-emerald-200', checkbox.checked);
+        try { localStorage.setItem(key, checkbox.checked ? 'true' : 'false'); } catch {}
+      };
+      checkbox.addEventListener('change', apply);
+      apply();
+    });
+  </script>
 </Layout>

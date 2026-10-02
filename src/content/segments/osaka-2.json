@@ -19,14 +19,22 @@
           "title": "Dōtonbori",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Dotonbori Osaka"
+          "locationQuery": "Dotonbori Osaka",
+          "plan": [
+            "Volver a Dōtonbori ya sin presión de verlo todo por primera vez.",
+            "Centrarse en comer/pasear/repetir lo que más gustó."
+          ]
         },
         {
           "id": "shinsaibashi",
           "title": "Shinsaibashi",
           "category": "compras",
           "status": "opcional",
-          "locationQuery": "Shinsaibashi Osaka"
+          "locationQuery": "Shinsaibashi Osaka",
+          "plan": [
+            "Recorrer Shinsaibashi para compras y paseo.",
+            "Cerrar cuando apetezca; este primer día de vuelta a Osaka debe ser ligero."
+          ]
         }
       ]
     },
@@ -41,7 +49,11 @@
           "category": "barrio",
           "status": "plan",
           "notes": "Excursión desde Osaka.",
-          "locationQuery": "Kobe Sannomiya"
+          "locationQuery": "Kobe Sannomiya",
+          "plan": [
+            "Ir a Kobe y recorrer la zona que mejor encaje con la reserva/comida.",
+            "Dejar el día centrado en Kobe, sin intentar meter otra ciudad."
+          ]
         },
         {
           "id": "kobe-gyu",
@@ -53,7 +65,11 @@
           "locationQuery": "Kobe beef Sannomiya",
           "links": {
             "tabelog": "https://tabelog.com/en/hyogo/rstLst/steak/?sk=Kobe%20beef"
-          }
+          },
+          "plan": [
+            "Elegir restaurante por Tabelog según presupuesto, horario y disponibilidad.",
+            "Reservar si hace falta; esta es la prioridad gastronómica del día."
+          ]
         }
       ]
     },
@@ -69,14 +85,22 @@
           "status": "plan",
           "priority": "must",
           "notes": "Templo de los darumas.",
-          "locationQuery": "Katsuo-ji"
+          "locationQuery": "Katsuo-ji",
+          "plan": [
+            "Ir a Katsuo-ji como visita principal de la mañana.",
+            "Recorrer el templo de los darumas con calma antes de continuar hacia Minoh."
+          ]
         },
         {
           "id": "minoh",
           "title": "Minoh Park / cascada",
           "category": "naturaleza",
           "status": "plan",
-          "locationQuery": "Minoh Park"
+          "locationQuery": "Minoh Park",
+          "plan": [
+            "Pasear por Minoh Park hasta la cascada según fuerzas y tiempo.",
+            "Si el día se alarga, priorizar el paseo principal y volver sin apurar."
+          ]
         }
       ]
     },
@@ -89,7 +113,11 @@
           "id": "osaka-pending",
           "title": "Osaka Castle / Umeda / Sumiyoshi si quedó pendiente",
           "category": "otro",
-          "status": "plan"
+          "status": "plan",
+          "plan": [
+            "Elegir una sola gran visita pendiente entre Osaka Castle, Umeda o Sumiyoshi.",
+            "No intentar recuperar las tres si ya se hicieron o el grupo prefiere descansar."
+          ]
         },
         {
           "id": "arcades",
@@ -97,7 +125,11 @@
           "category": "ocio",
           "status": "opcional",
           "notes": "Interés por anime y recreativas.",
-          "locationQuery": "Namba arcades Osaka"
+          "locationQuery": "Namba arcades Osaka",
+          "plan": [
+            "Dedicar un bloque a recreativas, UFO Catcher y tiendas de anime.",
+            "Poner un límite flexible de gasto/tiempo y disfrutar sin itinerario rígido."
+          ]
         }
       ]
     },
@@ -112,13 +144,21 @@
           "category": "compras",
           "status": "opcional",
           "notes": "Prioridad si encaja sin desvío grande.",
-          "locationQuery": "Cerezo Osaka official store"
+          "locationQuery": "Cerezo Osaka official store",
+          "plan": [
+            "Buscar la equipación oficial del Cerezo Osaka en una tienda que encaje con nuestra ruta.",
+            "Prioridad: camiseta/equipación sin hacer un desvío grande solo por ello."
+          ]
         },
         {
           "id": "last-shopping",
           "title": "Compras / comida pendiente / repetir favorito",
           "category": "compras",
-          "status": "plan"
+          "status": "plan",
+          "plan": [
+            "Cerrar compras pendientes y repetir una comida o zona favorita.",
+            "Dejar margen para preparar equipaje y no terminar el viaje corriendo."
+          ]
         }
       ]
     },
@@ -131,21 +171,33 @@
           "id": "checkout-final",
           "title": "Check-out y última mañana",
           "category": "otro",
-          "status": "confirmado"
+          "status": "confirmado",
+          "plan": [
+            "Hacer check-out, revisar habitación y organizar equipaje para vuelo largo.",
+            "Usar la última mañana solo para algo cercano si realmente sobra tiempo."
+          ]
         },
         {
           "id": "kix-transfer",
           "title": "Traslado a KIX con margen",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Kansai International Airport"
+          "locationQuery": "Kansai International Airport",
+          "plan": [
+            "Salir hacia KIX con margen suficiente para facturación y controles.",
+            "No meter ninguna parada intermedia que pueda comprometer el vuelo."
+          ]
         },
         {
           "id": "return-flight",
           "title": "Vuelo de vuelta Jaime y Lorena",
           "category": "transporte",
           "status": "confirmado",
-          "notes": "Salida desde KIX el 28; llegada a Madrid el 29 a las 08:00. Consultar billete para hora exacta."
+          "notes": "Salida desde KIX el 28; llegada a Madrid el 29 a las 08:00. Consultar billete para hora exacta.",
+          "plan": [
+            "Comprobar terminal/puerta y documentación antes de embarcar.",
+            "Vuelta a España; llegada prevista a Madrid el 29 por la mañana."
+          ]
         }
       ]
     }

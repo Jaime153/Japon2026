@@ -24,6 +24,7 @@ const activitySchema = z.object({
   time: z.string().optional(),
   links: activityLinksSchema.optional(),
   notes: z.string().optional(),
+  plan: z.array(z.string()).optional(),
   address: z.string().optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),
