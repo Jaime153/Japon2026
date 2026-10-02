@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import DayBlock from '../../components/DayBlock.astro';
 import ActivityCard from '../../components/ActivityCard.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { formatDate, getModulesWithContent } from '../../lib/segments';
+import { formatDate, getDayAlternatives, getModulesWithContent } from '../../lib/segments';
 import { SHARED_MAP_LISTS } from '../../data/trip';
 
 export async function getStaticPaths() {
@@ -44,7 +44,7 @@ const relevantLists = SHARED_MAP_LISTS.filter((list) => {
   </header>
 
   <div class="grid gap-10">
-    {data.days.map((day) => <DayBlock day={day} city={title} />)}
+    {data.days.map((day) => <DayBlock day={day} city={title} alternatives={getDayAlternatives(data, day.date)} />)}
     {modulesWithContent.length > 0 && (
       <section>
         <h2 class="mb-3 text-xl font-black">Módulos candidatos</h2>
