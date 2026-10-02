@@ -43,11 +43,18 @@ function findDuplicateIds(activities: { id: string }[]): string[] {
   return [...duplicates];
 }
 
+const routeStopSchema = z.object({
+  title: z.string(),
+  locationQuery: z.string(),
+  note: z.string().optional(),
+});
+
 const daySchema = z.object({
   date: z.coerce.date(),
   title: z.string().optional(),
   note: z.string().optional(),
   switchLabel: z.string().optional(),
+  routeStops: z.array(routeStopSchema).optional(),
   status: statusSchema.default('plan'),
   activities: z.array(activitySchema),
 });
