@@ -69,7 +69,13 @@
           "title": "Gion Tanto",
           "category": "comida",
           "status": "opcional",
-          "locationQuery": "Gion Tanto Kyoto"
+          "locationQuery": "Gion Tanto Kyoto",
+          "nearestStation": "Gion-Shijo",
+          "approximatePrice": "¥1.000–2.000",
+          "notes": "Okonomiyaki en Gion. Tabelog indica cierre habitual los jueves; comprobar antes de ir.",
+          "links": {
+            "tabelog": "https://tabelog.com/en/kyoto/A2601/A260301/26007590/"
+          }
         }
       ]
     },
@@ -231,7 +237,25 @@
           "title": "Ramen Sen-no-Kaze",
           "category": "comida",
           "status": "opcional",
-          "locationQuery": "Ramen Sen-no-Kaze Kyoto"
+          "locationQuery": "Ramen Sen-no-Kaze Kyoto",
+          "nearestStation": "Kyoto Kawaramachi / Gion",
+          "notes": "Enlace Tabelog como búsqueda por nombre para comprobar ficha, horario y cola el mismo día.",
+          "links": {
+            "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=Ramen%20Sen-no-Kaze%20Kyoto"
+          }
+        },
+        {
+          "id": "tonkatsu-yamamoto",
+          "title": "Tonkatsu Yamamoto",
+          "category": "comida",
+          "status": "opcional",
+          "nearestStation": "Kyoto Shiyakusho-mae",
+          "approximatePrice": "¥2.000–4.000",
+          "notes": "De la lista de Lorena. Tabelog 100 Tonkatsu 2026; pocas plazas. Tabelog indica cierre habitual el domingo.",
+          "locationQuery": "Tonkatsu Yamamoto Kyoto",
+          "links": {
+            "tabelog": "https://tabelog.com/en/kyoto/A2601/A260202/26006075/"
+          }
         }
       ]
     },
