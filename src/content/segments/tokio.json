@@ -118,7 +118,7 @@
       "date": "2026-10-06",
       "title": "Asakusa · Kappabashi · este de Tokio",
       "status": "plan",
-      "note": "Kappabashi es prioridad y coincide con el Dougu Matsuri (6–12 oct). Recoger coche a las 19:00 si la reserva queda confirmada.",
+      "note": "Cattlea + Asakusa + ruta completa de las 9 paradas oficiales del Shichifukujin + Kappabashi. Comprar shikishi y completar los sellos; recepción habitual 9:00–16:00. Kappabashi coincide con el Dougu Matsuri.",
       "activities": [
         {
           "id": "cattlea",
@@ -174,6 +174,53 @@
           "status": "opcional",
           "locationQuery": "Tokyo Skytree"
         }
+      ],
+      "routeStops": [
+        {
+          "title": "Sensō-ji",
+          "locationQuery": "Senso-ji Tokyo",
+          "note": "大黒天"
+        },
+        {
+          "title": "Asakusa Shrine",
+          "locationQuery": "Asakusa Shrine Tokyo",
+          "note": "恵比須"
+        },
+        {
+          "title": "Matsuchiyama Shōden",
+          "locationQuery": "Matsuchiyama Shoden Tokyo",
+          "note": "毘沙門天"
+        },
+        {
+          "title": "Imado Shrine",
+          "locationQuery": "Imado Shrine Tokyo",
+          "note": "福禄寿"
+        },
+        {
+          "title": "Hashiba Fudōin",
+          "locationQuery": "Hashiba Fudoin Tokyo",
+          "note": "布袋尊"
+        },
+        {
+          "title": "Ishihama Shrine",
+          "locationQuery": "Ishihama Shrine Tokyo",
+          "note": "寿老神"
+        },
+        {
+          "title": "Ōtori Shrine",
+          "locationQuery": "Otori Shrine Taito Tokyo",
+          "note": "寿老人"
+        },
+        {
+          "title": "Yoshiwara Shrine",
+          "locationQuery": "Yoshiwara Shrine Tokyo",
+          "note": "弁財天"
+        },
+        {
+          "title": "Yasaki Inari Shrine",
+          "locationQuery": "Yasaki Inari Shrine Tokyo",
+          "note": "福禄寿"
+        }
       ]
     },
     {
@@ -224,6 +271,14 @@
           "category": "barrio",
           "status": "opcional",
           "locationQuery": "Godzilla Head Shinjuku"
+        },
+        {
+          "id": "cross-shinjuku",
+          "title": "Cross Shinjuku Vision",
+          "category": "ocio",
+          "status": "opcional",
+          "notes": "Pantalla 3D junto a Shinjuku; encaja con Kabukichō/Omoide Yokocho.",
+          "locationQuery": "Cross Shinjuku Vision"
         }
       ]
     },
@@ -284,10 +339,19 @@
         },
         {
           "id": "teamlab",
-          "title": "teamLab",
+          "title": "teamLab Planets",
           "category": "ocio",
           "status": "pendiente",
-          "notes": "Pendiente decidir Borderless vs Planets; no fijar hasta tener entrada."
+          "notes": "Plan provisional vigente para el día Tsukiji/Tsukishima. Necesita entrada/slot.",
+          "locationQuery": "teamLab Planets TOKYO Toyosu"
+        },
+        {
+          "id": "zojoji",
+          "title": "Zōjō-ji",
+          "category": "templo",
+          "status": "plan",
+          "notes": "Encaja antes de Tokyo Tower.",
+          "locationQuery": "Zojo-ji Tokyo"
         },
         {
           "id": "tokyo-tower-midnight",
