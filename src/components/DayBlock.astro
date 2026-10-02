@@ -4,20 +4,143 @@ import { STATUS_META } from '../lib/categories';
 import { formatDayHeading, isoDate } from '../lib/segments';
 import type { CollectionEntry } from 'astro:content';
 
-type Day = CollectionEntry<'segments'>['data']['days'][number];
-interface Props { day: Day; city?: string; compact?: boolean; }
-const { day, city, compact = false } = Astro.props;
+type Segment = CollectionEntry<'segments'>['data'];
+type Day = Segment['days'][number];
+type Alternative = Segment['candidateModules'][number];
+
+interface Props {
+  day: Day;
+  city?: string;
+  compact?: boolean;
+  alternatives?: Alternative[];
+}
+
+const { day, city, compact = false, alternatives = [] } = Astro.props;
 const status = STATUS_META[day.status];
+const dateKey = isoDate(day.date);
+const hasAlternatives = alternatives.length > 0;
 ---
 
-<section class="day-block scroll-mt-20" data-date={isoDate(day.date)}>
+<section
+  class="day-block scroll-mt-20"
+  data-date={dateKey}
+  data-day-switcher={hasAlternatives ? dateKey : undefined}
+>
   <div class="mb-3 flex items-start justify-between gap-3">
     <div>
-      <p class="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">{formatDayHeading(day.date)}{city ? ` · ${city}` : ''}</p>
-      <h2 class="mt-1 text-xl font-black tracking-tight text-slate-950">{day.title ?? formatDayHeading(day.date)}</h2>
+      <p class="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">
+        {formatDayHeading(day.date)}{city ? ` · ${city}` : ''}
+      </p>
+      <h2 class="mt-1 text-xl font-black tracking-tight text-slate-950">
+        {day.title ?? formatDayHeading(day.date)}
+      </h2>
     </div>
-    <span class:list={['shrink-0 rounded-full px-2 py-1 text-[11px] font-bold', status.className]}>{status.label}</span>
+    <span class:list={['shrink-0 rounded-full px-2 py-1 text-[11px] font-bold', status.className]}>
+      {status.label}
+    </span>
   </div>
+
   {day.note && <p class="mb-3 rounded-xl bg-slate-100 px-3 py-2 text-sm leading-relaxed text-slate-600">{day.note}</p>}
-  <ul class="grid gap-3">{day.activities.map((activity) => <ActivityCard activity={activity} compact={compact} />)}</ul>
+
+  {hasAlternatives && (
+    <div class="mb-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+      <p class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">Plan del día</p>
+      <div class="mt-2 grid grid-cols-2 gap-2" role="group" aria-label="Elegir plan del día">
+        <button
+          type="button"
+          class="day-plan-button rounded-xl border border-slate-950 bg-slate-950 px-3 py-3 text-sm font-black text-white"
+          data-variant-button="main"
+          aria-pressed="true"
+        >
+          {day.switchLabel ?? 'Plan principal'}
+        </button>
+        {alternatives.map((alternative) => (
+          <button
+            type="button"
+            class="day-plan-button rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-black text-slate-700"
+            data-variant-button={alternative.id}
+            aria-pressed="false"
+          >
+            {alternative.switchLabel ?? alternative.title}
+          </button>
+        ))}
+      </div>
+      <p class="mt-2 text-xs text-slate-500">
+        Activo: <strong data-active-plan-label>{day.switchLabel ?? 'Plan principal'}</strong>
+        <span class="text-slate-400"> · se guarda en este dispositivo</span>
+      </p>
+    </div>
+  )}
+
+  <div data-variant-panel="main">
+    <ul class="grid gap-3">
+      {day.activities.map((activity) => <ActivityCard activity={activity} compact={compact} />)}
+    </ul>
+  </div>
+
+  {alternatives.map((alternative) => (
+    <div class="hidden" data-variant-panel={alternative.id}>
+      <div class="mb-3 rounded-xl bg-emerald-50 px-3 py-2">
+        <p class="text-sm font-bold text-emerald-950">{alternative.title}</p>
+      </div>
+      <ul class="grid gap-3">
+        {alternative.activities.map((activity) => <ActivityCard activity={activity} compact={compact} />)}
+      </ul>
+    </div>
+  ))}
 </section>
+
+<script>
+  function initDayPlanSwitchers() {
+    document.querySelectorAll('[data-day-switcher]').forEach((root) => {
+      if (root.getAttribute('data-switcher-ready') === 'true') return;
+      root.setAttribute('data-switcher-ready', 'true');
+
+      const date = root.getAttribute('data-day-switcher');
+      if (!date) return;
+
+      const buttons = [...root.querySelectorAll('[data-variant-button]')];
+      const panels = [...root.querySelectorAll('[data-variant-panel]')];
+      const label = root.querySelector('[data-active-plan-label]');
+      const valid = new Set(buttons.map((button) => button.getAttribute('data-variant-button')));
+      const key = `japon2026:day-plan:${date}`;
+
+      function activate(value, persist = true) {
+        const selected = valid.has(value) ? value : 'main';
+
+        buttons.forEach((button) => {
+          const active = button.getAttribute('data-variant-button') === selected;
+          button.setAttribute('aria-pressed', active ? 'true' : 'false');
+          button.classList.toggle('bg-slate-950', active);
+          button.classList.toggle('text-white', active);
+          button.classList.toggle('border-slate-950', active);
+          button.classList.toggle('bg-white', !active);
+          button.classList.toggle('text-slate-700', !active);
+          button.classList.toggle('border-slate-200', !active);
+        });
+
+        panels.forEach((panel) => {
+          panel.classList.toggle('hidden', panel.getAttribute('data-variant-panel') !== selected);
+        });
+
+        const activeButton = buttons.find((button) => button.getAttribute('data-variant-button') === selected);
+        if (label && activeButton) label.textContent = activeButton.textContent?.trim() ?? '';
+
+        if (persist) {
+          try { localStorage.setItem(key, selected); } catch {}
+        }
+      }
+
+      let saved = 'main';
+      try { saved = localStorage.getItem(key) ?? 'main'; } catch {}
+      activate(saved, false);
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => activate(button.getAttribute('data-variant-button') ?? 'main'));
+      });
+    });
+  }
+
+  initDayPlanSwitchers();
+  document.addEventListener('astro:page-load', initDayPlanSwitchers);
+</script>
