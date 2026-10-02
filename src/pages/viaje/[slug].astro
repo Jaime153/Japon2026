@@ -90,6 +90,8 @@ const title = data.legLabel ?? data.city;
         chip.classList.toggle('bg-white', !active);
         chip.classList.toggle('text-slate-700', !active);
       });
+      const activeDate = panels[current]?.getAttribute('data-date') ?? '';
+      try { if (activeDate) localStorage.setItem('japon2026:selected-date', activeDate); } catch {}
       if (label) label.textContent = panels[current]?.getAttribute('data-label') ?? '';
       chips[current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       if (prev instanceof HTMLButtonElement) prev.disabled = current === 0;
