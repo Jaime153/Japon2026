@@ -42,8 +42,11 @@
           "title": "Okonomimura",
           "category": "comida",
           "status": "plan",
-          "notes": "Okonomiyaki estilo Hiroshima.",
-          "locationQuery": "Okonomimura Hiroshima"
+          "notes": "Okonomiyaki estilo Hiroshima. Tabelog abre búsqueda porque Okonomimura agrupa múltiples puestos.",
+          "locationQuery": "Okonomimura Hiroshima",
+          "links": {
+            "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=Okonomimura%20Hiroshima"
+          }
         }
       ]
     },
@@ -79,8 +82,11 @@
           "title": "Anago meshi",
           "category": "comida",
           "status": "opcional",
-          "notes": "Recomendación gastronómica recogida de Alberto.",
-          "locationQuery": "anago meshi Miyajima"
+          "notes": "Recomendación gastronómica recogida de Alberto. Usar Tabelog para decidir el local según zona, cola y horario.",
+          "locationQuery": "anago meshi Miyajima",
+          "links": {
+            "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=anago%20meshi%20Miyajima"
+          }
         }
       ]
     },
