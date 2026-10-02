@@ -2,25 +2,36 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { SHARED_MAP_LISTS } from '../data/trip';
-import { isoDate } from '../lib/segments';
+import { getDayAlternatives, isoDate } from '../lib/segments';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
 const places = segments.flatMap((segment) =>
-  segment.data.days.flatMap((day) =>
-    day.activities
-      .filter((activity) => activity.locationQuery || activity.address)
-      .map((activity) => ({
-        title: activity.title,
-        city: segment.data.legLabel ?? segment.data.city,
-        date: isoDate(day.date),
-        category: activity.category,
-        status: activity.status,
-        query: activity.locationQuery ?? activity.address ?? activity.title,
-        tabelog: activity.links?.tabelog ?? (activity.category === 'comida'
-          ? `https://tabelog.com/en/rstLst/?vs=1&sk=${encodeURIComponent(activity.title)}`
-          : ''),
+  segment.data.days.flatMap((day) => {
+    const variants = [
+      { label: day.switchLabel ?? 'Plan principal', activities: day.activities },
+      ...getDayAlternatives(segment.data, day.date).map((alternative) => ({
+        label: alternative.switchLabel ?? alternative.title,
+        activities: alternative.activities,
       })),
-  ),
+    ];
+
+    return variants.flatMap((variant) =>
+      variant.activities
+        .filter((activity) => activity.locationQuery || activity.address)
+        .map((activity) => ({
+          title: activity.title,
+          city: segment.data.legLabel ?? segment.data.city,
+          date: isoDate(day.date),
+          variant: variant.label,
+          category: activity.category,
+          status: activity.status,
+          query: activity.locationQuery ?? activity.address ?? activity.title,
+          tabelog: activity.links?.tabelog ?? (activity.category === 'comida'
+            ? `https://tabelog.com/en/rstLst/?vs=1&sk=${encodeURIComponent(activity.title)}`
+            : ''),
+        })),
+    );
+  }),
 );
 ---
 
@@ -51,9 +62,9 @@ const places = segments.flatMap((segment) =>
         <div id="planning-places" class="grid gap-2">
           {places.map((place) => (
             <button type="button" class="place-row rounded-2xl border border-slate-200 bg-white p-3 text-left shadow-sm"
-              data-place={place.title} data-city={place.city} data-query={place.query} data-date={place.date} data-tabelog={place.tabelog}>
+              data-place={place.title} data-city={place.city} data-query={place.query} data-date={place.date} data-variant={place.variant} data-tabelog={place.tabelog}>
               <div class="flex items-start justify-between gap-3">
-                <div><p class="text-xs font-bold uppercase tracking-wide text-slate-400">{place.date} · {place.city}</p><p class="mt-1 font-bold text-slate-950">{place.title}</p></div>
+                <div><p class="text-xs font-bold uppercase tracking-wide text-slate-400">{place.date} · {place.city} · {place.variant}</p><p class="mt-1 font-bold text-slate-950">{place.title}</p></div>
                 <span class="text-xs text-slate-400">↗</span>
               </div>
             </button>
@@ -137,7 +148,7 @@ const places = segments.flatMap((segment) =>
         row.getAttribute('data-place') ?? '',
         row.getAttribute('data-query') ?? '',
         row.getAttribute('data-city') ?? '',
-        row.getAttribute('data-date') ?? '',
+        [row.getAttribute('data-date'), row.getAttribute('data-variant')].filter(Boolean).join(' · '),
         row.getAttribute('data-tabelog') ?? '',
       );
       rows.forEach((item) => item.classList.remove('ring-2', 'ring-slate-950'));
