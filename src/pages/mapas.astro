@@ -175,6 +175,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
 
     <div class="sticky top-14 z-20 mb-4 rounded-2xl border border-slate-200 bg-slate-50/95 p-3 backdrop-blur">
       <input id="place-search" type="search" placeholder="Buscar Cattlea, Sensō-ji, Katsuo-ji…" class="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-base outline-none focus:border-slate-400" />
+      <button id="export-places" type="button" class="mt-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-700">⬇️ Exportar lugares CSV</button>
     </div>
 
     <div id="our-places" class="grid gap-2 sm:grid-cols-2">
@@ -196,7 +197,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
     </div>
   </section>
 
-  <script is:inline define:vars={{ routes }}>
+  <script is:inline define:vars={{ routes, places }}>
     let map;
     let routeLayer;
     let currentRoute = 0;
@@ -433,9 +434,32 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
 
     const search = document.querySelector('#place-search');
     const placeCards = [...document.querySelectorAll('.our-place')];
+    const exportPlaces = document.querySelector('#export-places');
     search?.addEventListener('input', () => {
       const q = search.value.trim().toLocaleLowerCase();
       placeCards.forEach((card) => card.classList.toggle('hidden', q && !(card.getAttribute('data-search') ?? '').includes(q)));
+    });
+
+    exportPlaces?.addEventListener('click', () => {
+      const escapeCsv = (value) => '"' + String(value ?? '').replaceAll('"', '""') + '"';
+      const rows = [
+        ['Fecha', 'Ciudad', 'Lugar', 'Búsqueda Maps', 'Google Maps'],
+        ...places.map((place) => [
+          place.firstDate,
+          place.city,
+          place.title,
+          place.query,
+          'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.query),
+        ]),
+      ];
+      const csv = '\uFEFF' + rows.map((row) => row.map(escapeCsv).join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Japon2026_lugares.csv';
+      link.click();
+      URL.revokeObjectURL(url);
     });
 
     const today = new Date();
