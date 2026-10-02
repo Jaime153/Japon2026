@@ -1,4 +1,4 @@
-const CACHE = 'japon2026-v3';
+const CACHE = 'japon2026-v4';
 const RUNTIME_CACHE = 'japon2026-runtime-v1';
 const BASE = '/Japon2026/';
 const SHELL = [
@@ -6,6 +6,7 @@ const SHELL = [
   BASE + 'hoy/',
   BASE + 'dias/',
   BASE + 'mapas/',
+  BASE + 'recomendaciones/',
   BASE + 'info/',
   BASE + 'viaje/viaje-ida/',
   BASE + 'viaje/tokio/',
