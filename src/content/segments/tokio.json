@@ -193,6 +193,11 @@
       ],
       "routeStops": [
         {
+          "title": "Cattlea · 元祖カレーパン",
+          "locationQuery": "Cattlea Morishita Tokyo",
+          "note": "Parada de desayuno / kare-pan original"
+        },
+        {
           "title": "Sensō-ji",
           "locationQuery": "Senso-ji Tokyo",
           "note": "大黒天"
@@ -236,6 +241,11 @@
           "title": "Yasaki Inari Shrine",
           "locationQuery": "Yasaki Inari Shrine Tokyo",
           "note": "福禄寿"
+        },
+        {
+          "title": "Kappabashi Dougu Street",
+          "locationQuery": "Kappabashi Dougu Street Tokyo",
+          "note": "Dougu Matsuri 2026"
         }
       ]
     },
