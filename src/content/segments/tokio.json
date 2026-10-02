@@ -188,7 +188,7 @@
       "date": "2026-10-07",
       "title": "Monte Fuji en coche",
       "status": "plan",
-      "note": "Solo miradores y pueblos; no ascensión. Salida temprana para aprovechar visibilidad.",
+      "note": "Plan A: Monte Fuji si hay visibilidad. Si la previsión o las webcams indican que no se va a ver, cambiar el día por 奥多摩 (Okutama).",
       "activities": [
         {
           "id": "chureito",
@@ -424,5 +424,32 @@
       ]
     }
   ],
-  "candidateModules": []
+  "candidateModules": [
+    {
+      "id": "okutama-plan-b-fuji",
+      "title": "Plan B si Fuji no se ve · 奥多摩 / Okutama",
+      "activities": [
+        {
+          "id": "okutama",
+          "title": "奥多摩 · Okutama",
+          "category": "naturaleza",
+          "status": "plan",
+          "notes": "Alternativa para el día del Fuji si la montaña queda tapada por nubes/lluvia y no compensa hacer la ruta de Kawaguchiko.",
+          "locationQuery": "Okutama Tokyo"
+        },
+        {
+          "id": "nippara-cave",
+          "title": "日原鍾乳洞 · Nippara Limestone Cave",
+          "category": "naturaleza",
+          "status": "plan",
+          "notes": "La referencia de «奥多摩 入洞» encaja con 日原鍾乳洞. En octubre abre 9:00–17:00 y la última entrada es a las 16:30. Revisar acceso/estado el mismo día, especialmente si ha llovido fuerte.",
+          "approximatePrice": "¥900 adulto",
+          "locationQuery": "Nippara Limestone Cave Okutama",
+          "links": {
+            "officialWebsite": "https://shonyudokyokai.com/spot-list/nippara/"
+          }
+        }
+      ]
+    }
+  ]
 }
