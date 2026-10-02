@@ -156,7 +156,7 @@ const days = flattenDays(segments);
         nextKicker.textContent = 'Hoy';
         nextTitle.textContent = 'No quedan hitos con hora por delante';
         nextNote.textContent = 'Las actividades sin hora siguen visibles en el orden del día.';
-        const untimed = cards.find((card) => !parseMinutes(card.getAttribute('data-activity-time') ?? ''));
+        const untimed = cards.find((card) => parseMinutes(card.getAttribute('data-activity-time') ?? '') === null);
         setNextTarget(untimed ?? null);
         return;
       }
