@@ -4,8 +4,121 @@
   "startDate": "2026-10-20",
   "endDate": "2026-10-23",
   "hotel": {
-    "name": "APA Hotel Hiroshima Ekimae Stadiumguchi"
+    "name": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=APA%20Hotel%20Hiroshima%20Ekimae%20Stadiumguchi"
   },
-  "days": [],
+  "days": [
+    {
+      "date": "2026-10-20",
+      "title": "Llegada · Hiroshima ciudad",
+      "status": "plan",
+      "activities": [
+        {
+          "id": "peace-park",
+          "title": "Peace Memorial Park",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Hiroshima Peace Memorial Park"
+        },
+        {
+          "id": "peace-museum",
+          "title": "Peace Memorial Museum",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Hiroshima Peace Memorial Museum"
+        },
+        {
+          "id": "a-bomb-dome",
+          "title": "A-Bomb Dome",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Atomic Bomb Dome Hiroshima"
+        },
+        {
+          "id": "okonomimura",
+          "title": "Okonomimura",
+          "category": "comida",
+          "status": "plan",
+          "notes": "Okonomiyaki estilo Hiroshima.",
+          "locationQuery": "Okonomimura Hiroshima"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Miyajima · día completo",
+      "status": "plan",
+      "activities": [
+        {
+          "id": "itsukushima",
+          "title": "Itsukushima Shrine",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Itsukushima Shrine"
+        },
+        {
+          "id": "miyajima-torii",
+          "title": "Gran torii",
+          "category": "mirador",
+          "status": "plan",
+          "locationQuery": "Itsukushima Floating Torii"
+        },
+        {
+          "id": "misen",
+          "title": "Monte Misen",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Mount Misen"
+        },
+        {
+          "id": "anago-meshi",
+          "title": "Anago meshi",
+          "category": "comida",
+          "status": "opcional",
+          "notes": "Recomendación gastronómica recogida de Alberto.",
+          "locationQuery": "anago meshi Miyajima"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Hiroshima · día colchón",
+      "status": "plan",
+      "note": "No llenar por llenar: ciudad, compras, castillo si apetece o descanso.",
+      "activities": [
+        {
+          "id": "hiroshima-castle",
+          "title": "Hiroshima Castle",
+          "category": "otro",
+          "status": "opcional",
+          "locationQuery": "Hiroshima Castle"
+        },
+        {
+          "id": "hiroshima-flex",
+          "title": "Tiempo libre / repetir zona",
+          "category": "otro",
+          "status": "plan"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Hiroshima → Osaka",
+      "status": "confirmado",
+      "activities": [
+        {
+          "id": "hiroshima-osaka",
+          "title": "Traslado a Osaka",
+          "category": "transporte",
+          "status": "confirmado",
+          "locationQuery": "Hommachi Station Osaka"
+        }
+      ]
+    }
+  ],
   "candidateModules": []
 }

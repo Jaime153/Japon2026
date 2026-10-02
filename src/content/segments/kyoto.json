@@ -4,8 +4,251 @@
   "startDate": "2026-10-13",
   "endDate": "2026-10-20",
   "hotel": {
-    "name": "RESI STAY Yasaka"
+    "name": "RESI STAY Yasaka",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=RESI%20STAY%20Yasaka%20Kyoto"
   },
-  "days": [],
+  "days": [
+    {
+      "date": "2026-10-13",
+      "title": "Llegada · Yasaka · Gion",
+      "status": "plan",
+      "activities": [
+        {
+          "id": "yasaka",
+          "title": "Yasaka Shrine",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Yasaka Shrine Kyoto"
+        },
+        {
+          "id": "gion",
+          "title": "Gion",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Gion Kyoto"
+        },
+        {
+          "id": "kiyamachi",
+          "title": "Kiyamachi-dori",
+          "category": "barrio",
+          "status": "opcional",
+          "locationQuery": "Kiyamachi-dori Kyoto"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Fushimi Inari · Nishiki · Gion",
+      "status": "plan",
+      "note": "Fushimi temprano para evitar la parte más fuerte de las multitudes.",
+      "activities": [
+        {
+          "id": "fushimi",
+          "title": "Fushimi Inari Taisha",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Fushimi Inari Taisha"
+        },
+        {
+          "id": "nishiki",
+          "title": "Nishiki Market",
+          "category": "comida",
+          "status": "plan",
+          "locationQuery": "Nishiki Market Kyoto"
+        },
+        {
+          "id": "kenninji",
+          "title": "Kennin-ji",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Kennin-ji Kyoto"
+        },
+        {
+          "id": "gion-tanto",
+          "title": "Gion Tanto",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Gion Tanto Kyoto"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Arashiyama profundo",
+      "status": "plan",
+      "note": "Ruta pensada de fuera hacia dentro para evitar rehacer camino.",
+      "activities": [
+        {
+          "id": "otagi",
+          "title": "Otagi Nenbutsuji",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Otagi Nenbutsuji"
+        },
+        {
+          "id": "adashino",
+          "title": "Adashino Nenbutsuji",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Adashino Nenbutsuji"
+        },
+        {
+          "id": "bamboo",
+          "title": "Bamboo Forest Trail",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Arashiyama Bamboo Forest"
+        },
+        {
+          "id": "arashiyama-onsen",
+          "title": "Onsen en Arashiyama",
+          "category": "ocio",
+          "status": "opcional",
+          "notes": "Prioridad sobre todo para Lorena, Vilma y Marga; público separado o privado para 4."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Nara · excursión de día",
+      "status": "plan",
+      "note": "Día movible dentro del tramo de Kyoto según clima/logística.",
+      "activities": [
+        {
+          "id": "nara-park",
+          "title": "Nara Park",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Nara Park"
+        },
+        {
+          "id": "todaiji",
+          "title": "Tōdai-ji",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Todaiji Nara"
+        },
+        {
+          "id": "kasuga",
+          "title": "Kasuga Taisha",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Kasuga Taisha Nara"
+        },
+        {
+          "id": "kofukuji",
+          "title": "Kōfuku-ji",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Kofuku-ji Nara"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "title": "Kinkaku-ji · noroeste",
+      "status": "plan",
+      "activities": [
+        {
+          "id": "kinkaku",
+          "title": "Kinkaku-ji",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Kinkaku-ji"
+        },
+        {
+          "id": "ryoanji",
+          "title": "Ryōan-ji",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Ryoan-ji"
+        },
+        {
+          "id": "ninnaji",
+          "title": "Ninna-ji",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Ninna-ji"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Mañana tranquila · despedida Vilma y Marga",
+      "status": "confirmado",
+      "note": "No alejarse demasiado: el ancla del día es el bus a KIX.",
+      "activities": [
+        {
+          "id": "kyoto-morning-flex",
+          "title": "Mañana libre cerca de Gion / Higashiyama",
+          "category": "barrio",
+          "status": "opcional"
+        },
+        {
+          "id": "kyoto-station-h2",
+          "title": "Kyoto Station Hachijo-guchi · parada H2/KY2",
+          "time": "14:20",
+          "category": "transporte",
+          "status": "confirmado",
+          "priority": "must",
+          "notes": "Objetivo: dejar a Vilma y Marga en el Airport Limousine Bus a KIX. Parada H2 junto a Kyoto Avanti.",
+          "locationQuery": "Kyoto Station Hachijo-dori Airport Limousine Bus H2"
+        },
+        {
+          "id": "kix-vilma-marga",
+          "title": "Vuelo Vilma y Marga desde KIX",
+          "time": "19:00",
+          "category": "transporte",
+          "status": "confirmado",
+          "locationQuery": "Kansai International Airport"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Kyoto · Jaime y Lorena",
+      "status": "plan",
+      "note": "Día colchón para lo pendiente y un onsen sin prisas.",
+      "activities": [
+        {
+          "id": "kyoto-pendiente",
+          "title": "Recuperar lo que haya quedado pendiente",
+          "category": "otro",
+          "status": "plan"
+        },
+        {
+          "id": "onsen-kyoto",
+          "title": "Onsen",
+          "category": "ocio",
+          "status": "plan",
+          "notes": "Funaoka Onsen o alternativa de Arashiyama; decidir por logística real.",
+          "locationQuery": "Funaoka Onsen Kyoto"
+        },
+        {
+          "id": "ramen-sen-no-kaze",
+          "title": "Ramen Sen-no-Kaze",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Ramen Sen-no-Kaze Kyoto"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Kyoto → Hiroshima",
+      "status": "confirmado",
+      "activities": [
+        {
+          "id": "kyoto-hiroshima",
+          "title": "Traslado a Hiroshima",
+          "category": "transporte",
+          "status": "confirmado",
+          "locationQuery": "Hiroshima Station"
+        }
+      ]
+    }
+  ],
   "candidateModules": []
 }
