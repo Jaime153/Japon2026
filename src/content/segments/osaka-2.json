@@ -190,14 +190,74 @@
         },
         {
           "id": "return-flight",
-          "title": "Vuelo de vuelta Jaime y Lorena",
+          "title": "Vuelo Jaime y Lorena · KIX → Madrid vía Shanghái",
           "category": "transporte",
           "status": "confirmado",
-          "notes": "Salida desde KIX el 28; llegada a Madrid el 29 a las 08:00. Consultar billete para hora exacta.",
+          "notes": "Regreso de Jaime y Lorena. El horario del 28 ya está en temporada de invierno: FM822 llega a PVG a las 20:25 y MU709 sale a las 00:50.",
           "plan": [
-            "Comprobar terminal/puerta y documentación antes de embarcar.",
-            "Vuelta a España; llegada prevista a Madrid el 29 por la mañana."
-          ]
+            "Ir a KIX T1 con margen amplio y comprobar el mostrador de Shanghai Airlines/China Eastern en las pantallas.",
+            "FM822 sale a las 19:00 y llega a PVG T1 a las 20:25.",
+            "Escala de 4 h 25 min en la misma T1; MU709 sale a las 00:50 y llega a Madrid T1 a las 08:00."
+          ],
+          "time": "19:00",
+          "locationQuery": "Kansai International Airport Terminal 1",
+          "flightJourney": {
+            "travellers": [
+              "Jaime",
+              "Lorena"
+            ],
+            "checkInNote": "KIX T1. Shanghai Airlines/China Eastern operan este itinerario desde T1. El mostrador concreto se confirma en las pantallas del día.",
+            "verificationNote": "Terminales y horario de invierno contrastados el 2 oct 2026. Puertas sujetas a operación del día.",
+            "legs": [
+              {
+                "airline": "Shanghai Airlines",
+                "flightNumber": "FM822",
+                "departure": {
+                  "airport": "Kansai",
+                  "code": "KIX",
+                  "terminal": "T1",
+                  "date": "28 oct",
+                  "time": "19:00"
+                },
+                "arrival": {
+                  "airport": "Shanghai Pudong",
+                  "code": "PVG",
+                  "terminal": "T1",
+                  "date": "28 oct",
+                  "time": "20:25"
+                },
+                "duration": "2 h 25 min"
+              },
+              {
+                "airline": "China Eastern",
+                "flightNumber": "MU709",
+                "departure": {
+                  "airport": "Shanghai Pudong",
+                  "code": "PVG",
+                  "terminal": "T1",
+                  "date": "29 oct",
+                  "time": "00:50"
+                },
+                "arrival": {
+                  "airport": "Madrid-Barajas",
+                  "code": "MAD",
+                  "terminal": "T1",
+                  "date": "29 oct",
+                  "time": "08:00"
+                },
+                "duration": "14 h 10 min"
+              }
+            ],
+            "connections": [
+              {
+                "airport": "PVG",
+                "terminal": "T1",
+                "duration": "4 h 25 min",
+                "sameTerminal": true,
+                "note": "Misma T1. El cambio de horario respecto al 18 de octubre es por la programación de invierno."
+              }
+            ]
+          }
         }
       ]
     }

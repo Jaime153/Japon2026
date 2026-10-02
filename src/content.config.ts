@@ -18,6 +18,39 @@ const activityLinksSchema = z.object({
   liveCam: z.string().url().optional(),
 });
 
+const flightPointSchema = z.object({
+  airport: z.string(),
+  code: z.string(),
+  terminal: z.string(),
+  date: z.string(),
+  time: z.string(),
+});
+
+const flightLegSchema = z.object({
+  airline: z.string(),
+  flightNumber: z.string(),
+  operatedBy: z.string().optional(),
+  departure: flightPointSchema,
+  arrival: flightPointSchema,
+  duration: z.string().optional(),
+});
+
+const flightConnectionSchema = z.object({
+  airport: z.string(),
+  terminal: z.string(),
+  duration: z.string(),
+  sameTerminal: z.boolean().default(false),
+  note: z.string().optional(),
+});
+
+const flightJourneySchema = z.object({
+  travellers: z.array(z.string()).optional(),
+  checkInNote: z.string().optional(),
+  verificationNote: z.string().optional(),
+  legs: z.array(flightLegSchema).min(1),
+  connections: z.array(flightConnectionSchema).optional(),
+});
+
 const activitySchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -25,6 +58,7 @@ const activitySchema = z.object({
   links: activityLinksSchema.optional(),
   notes: z.string().optional(),
   plan: z.array(z.string()).optional(),
+  flightJourney: flightJourneySchema.optional(),
   address: z.string().optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),

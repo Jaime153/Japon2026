@@ -12,38 +12,77 @@
       "note": "Salida del grupo completo. Llegada a Narita el 4 de octubre a las 12:50.",
       "activities": [
         {
-          "id": "vuelo-mad-pvg",
-          "title": "Vuelo Madrid → Shanghái",
+          "id": "vuelo-mad-nrt",
+          "title": "Vuelo Madrid → Tokio vía Shanghái",
+          "time": "11:05",
           "category": "transporte",
           "status": "confirmado",
-          "notes": "China Eastern MU710.",
-          "locationQuery": "Adolfo Suárez Madrid-Barajas Airport",
+          "priority": "must",
+          "locationQuery": "Adolfo Suárez Madrid-Barajas Airport Terminal 1",
+          "flightJourney": {
+            "travellers": [
+              "Jaime",
+              "Lorena",
+              "Vilma",
+              "Marga"
+            ],
+            "checkInNote": "Madrid-Barajas T1. La guía actual de China Eastern sitúa Economy en los mostradores 310–314; comprobar las pantallas al llegar porque el mostrador/puerta del día puede cambiar.",
+            "verificationNote": "Terminales contrastadas para este itinerario el 2 oct 2026. La puerta y el posible satélite de embarque se verifican el día del vuelo.",
+            "legs": [
+              {
+                "airline": "China Eastern",
+                "flightNumber": "MU710",
+                "departure": {
+                  "airport": "Madrid-Barajas",
+                  "code": "MAD",
+                  "terminal": "T1",
+                  "date": "3 oct",
+                  "time": "11:05"
+                },
+                "arrival": {
+                  "airport": "Shanghai Pudong",
+                  "code": "PVG",
+                  "terminal": "T1",
+                  "date": "4 oct",
+                  "time": "05:50"
+                },
+                "duration": "12 h 45 min"
+              },
+              {
+                "airline": "China Eastern",
+                "flightNumber": "MU523",
+                "departure": {
+                  "airport": "Shanghai Pudong",
+                  "code": "PVG",
+                  "terminal": "T1",
+                  "date": "4 oct",
+                  "time": "09:05"
+                },
+                "arrival": {
+                  "airport": "Tokyo Narita",
+                  "code": "NRT",
+                  "terminal": "T2",
+                  "date": "4 oct",
+                  "time": "12:50"
+                },
+                "duration": "2 h 45 min"
+              }
+            ],
+            "connections": [
+              {
+                "airport": "PVG",
+                "terminal": "T1",
+                "duration": "3 h 15 min",
+                "sameTerminal": true,
+                "note": "No hay cambio de terminal: seguir señalización de International Transfer y confirmar la puerta en las pantallas."
+              }
+            ]
+          },
+          "notes": "Salida del grupo completo. No se muestran localizadores ni asientos porque el repositorio es público.",
           "plan": [
-            "Llegar a Barajas con margen, documentación y equipaje de mano ya organizados.",
-            "Usar el vuelo para descansar; no programar nada más hasta llegar a Japón."
-          ]
-        },
-        {
-          "id": "conexion-pvg",
-          "title": "Conexión en Shanghái Pudong",
-          "category": "transporte",
-          "status": "confirmado",
-          "locationQuery": "Shanghai Pudong International Airport",
-          "plan": [
-            "Seguir señalización de conexión en Pudong y comprobar la puerta del siguiente vuelo.",
-            "Prioridad: conexión tranquila, agua/comida y cargar dispositivos."
-          ]
-        },
-        {
-          "id": "vuelo-pvg-nrt",
-          "title": "Vuelo Shanghái → Narita",
-          "category": "transporte",
-          "status": "confirmado",
-          "notes": "Tramo MU523. Llegada prevista 4 oct · 12:50.",
-          "locationQuery": "Narita International Airport",
-          "plan": [
-            "Descansar y preparar pasaporte/documentos antes del aterrizaje.",
-            "Al llegar a Narita, seguir con inmigración, equipaje y traslado al hotel."
+            "Ir directamente a Madrid-Barajas T1. Objetivo razonable: estar allí alrededor de las 08:00 para facturación y controles sin prisas.",
+            "En Pudong la conexión es T1 → T1: seguir International Transfer; no salir a llegadas salvo que la aerolínea lo indique.",
+            "El segundo tramo llega a Narita T2 a las 12:50; desde ahí inmigración, equipaje y traslado al hotel."
           ]
         }
       ]

@@ -284,15 +284,75 @@
         },
         {
           "id": "kix-vilma-marga",
-          "title": "Vuelo Vilma y Marga desde KIX",
+          "title": "Vuelo Vilma y Marga · KIX → Madrid vía Shanghái",
           "time": "19:00",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Kansai International Airport",
+          "locationQuery": "Kansai International Airport Terminal 1",
           "plan": [
-            "Vilma y Marga continúan a KIX para el vuelo de las 19:00.",
-            "Jaime y Lorena se quedan en Kyoto; no hace falta acompañarlas hasta Osaka/KIX."
-          ]
+            "Llegar a KIX T1 con margen; desde Kyoto Station el plan sigue siendo Airport Limousine Bus desde H2/KY2.",
+            "Facturación/embarque en T1. Revisar pantalla del aeropuerto para mostrador y puerta.",
+            "En PVG la escala es T1 → T1 durante 3 h 30 min; después MU709 directo a Madrid T1."
+          ],
+          "notes": "Regreso de Vilma y Marga. No se muestran localizadores ni asientos en la web pública.",
+          "flightJourney": {
+            "travellers": [
+              "Vilma",
+              "Marga"
+            ],
+            "checkInNote": "KIX T1. China Eastern indica T1 para sus vuelos internacionales; el mostrador concreto se consulta en las pantallas del día. La guía actual indica apertura aprox. 2 h 10 min antes.",
+            "verificationNote": "Terminales contrastadas para este itinerario el 2 oct 2026. Puertas sujetas a operación del día.",
+            "legs": [
+              {
+                "airline": "China Eastern",
+                "flightNumber": "MU8650",
+                "operatedBy": "Shanghai Airlines FM822",
+                "departure": {
+                  "airport": "Kansai",
+                  "code": "KIX",
+                  "terminal": "T1",
+                  "date": "18 oct",
+                  "time": "19:00"
+                },
+                "arrival": {
+                  "airport": "Shanghai Pudong",
+                  "code": "PVG",
+                  "terminal": "T1",
+                  "date": "18 oct",
+                  "time": "21:15"
+                },
+                "duration": "3 h 15 min"
+              },
+              {
+                "airline": "China Eastern",
+                "flightNumber": "MU709",
+                "departure": {
+                  "airport": "Shanghai Pudong",
+                  "code": "PVG",
+                  "terminal": "T1",
+                  "date": "19 oct",
+                  "time": "00:45"
+                },
+                "arrival": {
+                  "airport": "Madrid-Barajas",
+                  "code": "MAD",
+                  "terminal": "T1",
+                  "date": "19 oct",
+                  "time": "08:40"
+                },
+                "duration": "13 h 55 min"
+              }
+            ],
+            "connections": [
+              {
+                "airport": "PVG",
+                "terminal": "T1",
+                "duration": "3 h 30 min",
+                "sameTerminal": true,
+                "note": "Conexión internacional dentro de T1; confirmar puerta en pantallas."
+              }
+            ]
+          }
         }
       ]
     },
