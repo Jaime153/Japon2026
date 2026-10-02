@@ -49,8 +49,11 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Prioridad gastronómica del día.",
-          "locationQuery": "Kobe beef Sannomiya"
+          "notes": "Prioridad gastronómica del día. Elegir restaurante concreto en Tabelog cuando sepamos horario y presupuesto; no fijar uno a ciegas.",
+          "locationQuery": "Kobe beef Sannomiya",
+          "links": {
+            "tabelog": "https://tabelog.com/en/hyogo/rstLst/steak/?sk=Kobe%20beef"
+          }
         }
       ]
     },
