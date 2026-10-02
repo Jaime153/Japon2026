@@ -126,8 +126,13 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Intentar ir sí o sí para probar el kare-pan original.",
-          "locationQuery": "Cattlea Morishita Tokyo"
+          "notes": "Intentar ir sí o sí para probar el kare-pan original. Tabelog: 1 min de Morishita; sin reservas. Horneadas aprox. 7:00, 11:00 y 15:00; verificar el mismo día.",
+          "locationQuery": "Cattlea Morishita Tokyo",
+          "nearestStation": "Morishita",
+          "approximatePrice": "< ¥1.000",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1312/A131201/13002996/"
+          }
         },
         {
           "id": "asakusa-shichifukujin",
@@ -275,8 +280,13 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Comer monjayaki.",
-          "locationQuery": "Tsukishima Monja Street"
+          "notes": "Comer monjayaki. El botón Tabelog abre la selección de monjayaki de Tsukishima para elegir por cola, precio y disponibilidad.",
+          "locationQuery": "Tsukishima Monja Street",
+          "nearestStation": "Tsukishima",
+          "approximatePrice": "¥2.000–4.000 aprox. según local",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1313/A131302/rstLst/monjya/"
+          }
         },
         {
           "id": "ginza-itoya",
@@ -284,6 +294,19 @@
           "category": "compras",
           "status": "opcional",
           "locationQuery": "Ginza Itoya"
+        },
+        {
+          "id": "tsujita-ginza",
+          "title": "Tsujita Ginza",
+          "category": "comida",
+          "status": "opcional",
+          "nearestStation": "Higashi-Ginza",
+          "approximatePrice": "¥1.000–2.000",
+          "notes": "Tsukemen de la lista de Lorena. Tabelog lo sitúa a unos 3 min de Higashi-Ginza.",
+          "locationQuery": "Tsujita Ginza Tokyo",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1301/A130101/13277614/"
+          }
         },
         {
           "id": "teamlab",
@@ -329,8 +352,13 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Tsukemen recomendado por Alberto.",
-          "locationQuery": "Menya Musashi Takatora Takadanobaba"
+          "notes": "Tsukemen recomendado por Alberto. Tabelog: junto a Takadanobaba.",
+          "locationQuery": "Menya Musashi Takatora Takadanobaba",
+          "nearestStation": "Takadanobaba",
+          "approximatePrice": "< ¥1.000 aprox.",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
+          }
         },
         {
           "id": "omoide-yokocho",
@@ -367,8 +395,14 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Comer misokatsu de Nagoya.",
-          "locationQuery": "Misokatsu Yabaton Nagoya Station"
+          "notes": "Comer misokatsu de Nagoya. En la estación hay varias sucursales; este enlace apunta a JR Nagoya Station.",
+          "locationQuery": "Misokatsu Yabaton Nagoya Station",
+          "nearestStation": "Nagoya",
+          "approximatePrice": "¥1.000–2.000",
+          "links": {
+            "tabelog": "https://tabelog.com/en/aichi/A2301/A230101/23078795/",
+            "officialWebsite": "https://www.yabaton.com/"
+          }
         },
         {
           "id": "ghibli-park",
