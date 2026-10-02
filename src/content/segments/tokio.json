@@ -398,6 +398,19 @@
       "note": "Hueco preferente actual para Fuji por la previsión. Elige Fuji u Okutama el mismo día según visibilidad real; la selección se guarda en el dispositivo.",
       "activities": [
         {
+          "id": "fuji-weather-check",
+          "title": "Comprobar visibilidad Fuji antes de salir",
+          "time": "~05:30",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "notes": "Decisión final Fuji/Okutama: mirar previsión y cámara en directo. Si Fuji está tapado, cambiar el toggle a Okutama.",
+          "links": {
+            "weather": "https://www.timeanddate.com/weather/@7281819/ext",
+            "liveCam": "https://www.yamanashi-kankou.jp/heritage/fujisanwatcher/jp/live/"
+          }
+        },
+        {
           "id": "fuji-car",
           "title": "Alquiler de coche · horario según reserva",
           "category": "transporte",
