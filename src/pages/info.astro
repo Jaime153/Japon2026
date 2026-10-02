@@ -5,6 +5,21 @@ import { FIXED_INFO } from '../data/trip';
 import { formatDate } from '../lib/segments';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
+const pendingItems = segments.flatMap((segment) =>
+  segment.data.days.flatMap((day) =>
+    day.activities
+      .filter((activity) => activity.status === 'pendiente' || activity.reservationRequired)
+      .map((activity) => ({
+        id: activity.id,
+        title: activity.title,
+        date: day.date,
+        city: segment.data.legLabel ?? segment.data.city,
+        reservationRequired: activity.reservationRequired ?? false,
+        reservation: activity.links?.reservation,
+        officialWebsite: activity.links?.officialWebsite,
+      })),
+  ),
+);
 ---
 
 <Layout title="Info · Japón 2026">
@@ -22,6 +37,39 @@ const segments = (await getCollection('segments')).sort((a, b) => a.data.order -
           <h3 class="font-black">{item.title}</h3>
           <p class="mt-2 text-sm leading-relaxed text-slate-600">{item.body}</p>
           {item.maps && <a href={item.maps} target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">📍 Maps</a>}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-8">
+    <div class="flex items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.16em] text-amber-600">Antes de ir</p>
+        <h2 class="text-xl font-black">Pendientes y reservas</h2>
+      </div>
+      <span class="text-xs text-slate-400">{pendingItems.length} pendientes</span>
+    </div>
+    <div class="mt-3 grid gap-3">
+      {pendingItems.map((item) => (
+        <article class="pending-item rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-sm" data-pending-id={item.id}>
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-[11px] font-bold uppercase tracking-wide text-amber-700">{formatDate(item.date)} · {item.city}</p>
+              <h3 class="mt-1 font-black text-slate-950">{item.title}</h3>
+              <p class="mt-1 text-xs text-slate-600">{item.reservationRequired ? 'Necesita entrada/reserva.' : 'Pendiente de cerrar o verificar.'}</p>
+            </div>
+            <label class="flex shrink-0 cursor-pointer items-center gap-2 rounded-xl bg-white px-3 py-2 text-xs font-bold text-slate-700">
+              <input type="checkbox" data-pending-done class="h-4 w-4" />
+              Listo
+            </label>
+          </div>
+          {(item.reservation || item.officialWebsite) && (
+            <div class="mt-3 flex flex-wrap gap-2">
+              {item.reservation && <a href={item.reservation} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-amber-200 px-3 py-2 text-sm font-bold text-amber-950">🎫 Reservar</a>}
+              {item.officialWebsite && <a href={item.officialWebsite} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-white px-3 py-2 text-sm font-bold text-slate-700">🌐 Web oficial</a>}
+            </div>
+          )}
         </article>
       ))}
     </div>
@@ -51,4 +99,20 @@ const segments = (await getCollection('segments')).sort((a, b) => a.data.order -
       <p><strong class="text-amber-300">Pendiente:</strong> necesita verificar entrada, reserva u horario real.</p>
     </div>
   </section>
+  <script>
+    document.querySelectorAll('[data-pending-id]').forEach((item) => {
+      const id = item.getAttribute('data-pending-id');
+      const checkbox = item.querySelector('[data-pending-done]');
+      if (!id || !(checkbox instanceof HTMLInputElement)) return;
+      const key = `japon2026:pending-done:${id}`;
+      try { checkbox.checked = localStorage.getItem(key) === 'true'; } catch {}
+      const apply = () => {
+        item.classList.toggle('opacity-50', checkbox.checked);
+        item.classList.toggle('border-emerald-200', checkbox.checked);
+        try { localStorage.setItem(key, checkbox.checked ? 'true' : 'false'); } catch {}
+      };
+      checkbox.addEventListener('change', apply);
+      apply();
+    });
+  </script>
 </Layout>
