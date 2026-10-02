@@ -19,11 +19,12 @@ const days = flattenDays(segments);
     </div>
   </header>
 
-  <section id="next-card" class="mb-5 rounded-2xl bg-slate-950 p-4 text-white">
-    <p id="next-kicker" class="text-xs font-bold uppercase tracking-[0.16em] text-red-300">Siguiente</p>
-    <p id="next-title" class="mt-1 text-lg font-black">Calculando…</p>
-    <p id="next-note" class="mt-1 text-xs text-slate-400"></p>
-  </section>
+  <button id="next-card" type="button" class="mb-5 w-full rounded-2xl bg-slate-950 p-4 text-left text-white shadow-sm">
+    <span id="next-kicker" class="block text-xs font-bold uppercase tracking-[0.16em] text-red-300">Siguiente</span>
+    <span id="next-title" class="mt-1 block text-lg font-black">Calculando…</span>
+    <span id="next-note" class="mt-1 block text-xs text-slate-400"></span>
+    <span class="mt-2 block text-xs font-bold text-slate-300">Toca para abrir esa parada ↓</span>
+  </button>
 
   <div class="sticky top-14 z-30 -mx-4 mb-5 grid grid-cols-[auto_1fr_auto] items-center gap-2 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
     <button id="prev-day" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">←</button>
@@ -54,6 +55,7 @@ const days = flattenDays(segments);
     const prev = document.querySelector('#prev-day');
     const next = document.querySelector('#next-day');
     const jumpToday = document.querySelector('#jump-today');
+    const nextCard = document.querySelector('#next-card');
     const nextKicker = document.querySelector('#next-kicker');
     const nextTitle = document.querySelector('#next-title');
     const nextNote = document.querySelector('#next-note');
@@ -75,6 +77,13 @@ const days = flattenDays(segments);
       return h * 60 + m;
     }
 
+    function setNextTarget(card) {
+      if (!(nextCard instanceof HTMLElement)) return;
+      const id = card?.getAttribute('data-activity-id') ?? '';
+      nextCard.setAttribute('data-target-activity', id);
+      nextCard.toggleAttribute('disabled', !id);
+    }
+
     function refreshNext(entry) {
       const date = entry.getAttribute('data-date') ?? '';
       const visibleCards = [...entry.querySelectorAll('[data-activity-card]')]
@@ -85,6 +94,7 @@ const days = flattenDays(segments);
         nextKicker.textContent = 'Plan';
         nextTitle.textContent = 'Sin actividades cargadas';
         nextNote.textContent = '';
+        setNextTarget(null);
         return;
       }
 
@@ -92,6 +102,7 @@ const days = flattenDays(segments);
         nextKicker.textContent = 'Hoy';
         nextTitle.textContent = 'Plan completado ✓';
         nextNote.textContent = 'Has marcado todas las paradas de este día como hechas.';
+        setNextTarget(null);
         return;
       }
 
@@ -99,6 +110,7 @@ const days = flattenDays(segments);
         nextKicker.textContent = date > localIso ? 'Próximo día' : 'Día consultado';
         nextTitle.textContent = cards[0].getAttribute('data-activity-title') ?? 'Primera parada';
         nextNote.textContent = 'Abre este día para consultar el orden completo.';
+        setNextTarget(cards[0]);
         return;
       }
 
@@ -119,6 +131,7 @@ const days = flattenDays(segments);
         nextNote.textContent = upcoming.time.startsWith('~')
           ? 'Hora aproximada del planning; úsala como guía.'
           : 'Hora fija del planning.';
+        setNextTarget(upcoming.card);
         return;
       }
 
@@ -126,12 +139,15 @@ const days = flattenDays(segments);
         nextKicker.textContent = 'Hoy';
         nextTitle.textContent = 'No quedan hitos con hora por delante';
         nextNote.textContent = 'Las actividades sin hora siguen visibles en el orden del día.';
+        const untimed = cards.find((card) => !parseMinutes(card.getAttribute('data-activity-time') ?? ''));
+        setNextTarget(untimed ?? null);
         return;
       }
 
       nextKicker.textContent = 'Siguiente del plan';
       nextTitle.textContent = cards[0].getAttribute('data-activity-title') ?? 'Primera parada';
       nextNote.textContent = 'Este día todavía no tiene horas estimadas suficientes para calcularlo por reloj.';
+      setNextTarget(cards[0]);
     }
 
     function show(index) {
@@ -154,6 +170,17 @@ const days = flattenDays(segments);
       if (next instanceof HTMLButtonElement) next.disabled = current === entries.length - 1;
       refreshNext(entry);
     }
+
+    nextCard?.addEventListener('click', () => {
+      const id = nextCard.getAttribute('data-target-activity');
+      if (!id) return;
+      const entry = entries[current];
+      const card = [...entry.querySelectorAll('[data-activity-card]')]
+        .find((candidate) => candidate.getAttribute('data-activity-id') === id);
+      if (!(card instanceof HTMLElement)) return;
+      card.querySelector('details')?.setAttribute('open', '');
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
 
     prev?.addEventListener('click', () => show(current - 1));
     next?.addEventListener('click', () => show(current + 1));
