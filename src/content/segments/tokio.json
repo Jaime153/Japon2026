@@ -27,7 +27,8 @@
           "title": "Traslado y check-in",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST"
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "time": "~15:00"
         },
         {
           "id": "nittele-clock",
@@ -43,7 +44,8 @@
           "title": "Ginza",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Ginza Tokyo"
+          "locationQuery": "Ginza Tokyo",
+          "time": "~18:30"
         },
         {
           "id": "tsukiji-hongwanji",
@@ -51,14 +53,16 @@
           "category": "templo",
           "status": "plan",
           "notes": "Verlo iluminado al caer la noche.",
-          "locationQuery": "Tsukiji Hongwanji Tokyo"
+          "locationQuery": "Tsukiji Hongwanji Tokyo",
+          "time": "~19:30"
         },
         {
           "id": "yurakucho",
           "title": "Cena por Yurakucho",
           "category": "comida",
           "status": "plan",
-          "locationQuery": "Yurakucho Tokyo"
+          "locationQuery": "Yurakucho Tokyo",
+          "time": "~20:15"
         }
       ]
     },
@@ -73,28 +77,32 @@
           "title": "Meiji Jingu",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Meiji Jingu Tokyo"
+          "locationQuery": "Meiji Jingu Tokyo",
+          "time": "~09:00"
         },
         {
           "id": "takeshita",
           "title": "Takeshita Street / Harajuku",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Takeshita Street Tokyo"
+          "locationQuery": "Takeshita Street Tokyo",
+          "time": "~11:00"
         },
         {
           "id": "hachiko",
           "title": "Hachiko Square",
           "category": "otro",
           "status": "plan",
-          "locationQuery": "Hachiko Square Tokyo"
+          "locationQuery": "Hachiko Square Tokyo",
+          "time": "~13:30"
         },
         {
           "id": "shibuya-crossing",
           "title": "Shibuya Scramble Crossing",
           "category": "otro",
           "status": "plan",
-          "locationQuery": "Shibuya Scramble Crossing Tokyo"
+          "locationQuery": "Shibuya Scramble Crossing Tokyo",
+          "time": "~13:45"
         },
         {
           "id": "shibuya-sky",
@@ -103,14 +111,16 @@
           "status": "pendiente",
           "reservationRequired": true,
           "notes": "Solo si hay entrada/slot que encaje.",
-          "locationQuery": "Shibuya Sky Tokyo"
+          "locationQuery": "Shibuya Sky Tokyo",
+          "time": "~17:30"
         },
         {
           "id": "nonbei-yokocho",
           "title": "Shibuya Nonbei Yokocho",
           "category": "comida",
           "status": "opcional",
-          "locationQuery": "Shibuya Nonbei Yokocho Tokyo"
+          "locationQuery": "Shibuya Nonbei Yokocho Tokyo",
+          "time": "~19:30"
         }
       ]
     },
@@ -132,7 +142,8 @@
           "approximatePrice": "< ¥1.000",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1312/A131201/13002996/"
-          }
+          },
+          "time": "~07:30"
         },
         {
           "id": "asakusa-shichifukujin",
@@ -141,14 +152,16 @@
           "status": "plan",
           "priority": "must",
           "notes": "Comprar shikishi y completar los goshuin del recorrido.",
-          "locationQuery": "Asakusa Tokyo"
+          "locationQuery": "Asakusa Tokyo",
+          "time": "09:00"
         },
         {
           "id": "sensoji",
           "title": "Sensō-ji · Kaminarimon · Nakamise",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Senso-ji Tokyo"
+          "locationQuery": "Senso-ji Tokyo",
+          "time": "~09:15"
         },
         {
           "id": "kappabashi",
@@ -157,7 +170,8 @@
           "status": "plan",
           "priority": "must",
           "notes": "Coincide con Kappabashi Dougu Matsuri.",
-          "locationQuery": "Kappabashi Dougu Street Tokyo"
+          "locationQuery": "Kappabashi Dougu Street Tokyo",
+          "time": "~16:15"
         },
         {
           "id": "sumida-cruise",
@@ -165,14 +179,16 @@
           "category": "ocio",
           "status": "opcional",
           "notes": "Mejor al final de la tarde si cuadra.",
-          "locationQuery": "Asakusa Pier Tokyo"
+          "locationQuery": "Asakusa Pier Tokyo",
+          "time": "~17:15"
         },
         {
           "id": "skytree",
           "title": "Tokyo Skytree",
           "category": "mirador",
           "status": "opcional",
-          "locationQuery": "Tokyo Skytree"
+          "locationQuery": "Tokyo Skytree",
+          "time": "~18:30"
         }
       ],
       "routeStops": [
@@ -234,7 +250,8 @@
           "title": "Ueno Park",
           "category": "naturaleza",
           "status": "plan",
-          "locationQuery": "Ueno Park Tokyo"
+          "locationQuery": "Ueno Park Tokyo",
+          "time": "~09:00"
         },
         {
           "id": "akihabara",
@@ -242,7 +259,8 @@
           "category": "compras",
           "status": "plan",
           "notes": "Anime, electrónica y Yodobashi.",
-          "locationQuery": "Akihabara Tokyo"
+          "locationQuery": "Akihabara Tokyo",
+          "time": "~11:30"
         },
         {
           "id": "menya-musashi",
@@ -256,21 +274,24 @@
           "approximatePrice": "< ¥1.000 aprox.",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
-          }
+          },
+          "time": "~16:30"
         },
         {
           "id": "omoide-yokocho",
           "title": "Omoide Yokocho",
           "category": "comida",
           "status": "opcional",
-          "locationQuery": "Omoide Yokocho"
+          "locationQuery": "Omoide Yokocho",
+          "time": "~18:00"
         },
         {
           "id": "kabukicho",
           "title": "Kabukicho / Godzilla Head",
           "category": "barrio",
           "status": "opcional",
-          "locationQuery": "Godzilla Head Shinjuku"
+          "locationQuery": "Godzilla Head Shinjuku",
+          "time": "~19:00"
         },
         {
           "id": "cross-shinjuku",
@@ -278,7 +299,8 @@
           "category": "ocio",
           "status": "opcional",
           "notes": "Pantalla 3D junto a Shinjuku; encaja con Kabukichō/Omoide Yokocho.",
-          "locationQuery": "Cross Shinjuku Vision"
+          "locationQuery": "Cross Shinjuku Vision",
+          "time": "~19:30"
         }
       ]
     },
@@ -294,14 +316,16 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Tsukiji Outer Market"
+          "locationQuery": "Tsukiji Outer Market",
+          "time": "~08:00"
         },
         {
           "id": "hamarikyu",
           "title": "Hamarikyu Gardens",
           "category": "naturaleza",
           "status": "opcional",
-          "locationQuery": "Hamarikyu Gardens Tokyo"
+          "locationQuery": "Hamarikyu Gardens Tokyo",
+          "time": "~10:30"
         },
         {
           "id": "tsukishima-monja",
@@ -315,7 +339,8 @@
           "approximatePrice": "¥2.000–4.000 aprox. según local",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1313/A131302/rstLst/monjya/"
-          }
+          },
+          "time": "~12:00"
         },
         {
           "id": "ginza-itoya",
@@ -343,7 +368,8 @@
           "category": "ocio",
           "status": "pendiente",
           "notes": "Plan provisional vigente para el día Tsukiji/Tsukishima. Necesita entrada/slot.",
-          "locationQuery": "teamLab Planets TOKYO Toyosu"
+          "locationQuery": "teamLab Planets TOKYO Toyosu",
+          "time": "~15:00"
         },
         {
           "id": "zojoji",
@@ -351,7 +377,8 @@
           "category": "templo",
           "status": "plan",
           "notes": "Encaja antes de Tokyo Tower.",
-          "locationQuery": "Zojo-ji Tokyo"
+          "locationQuery": "Zojo-ji Tokyo",
+          "time": "~18:00"
         },
         {
           "id": "tokyo-tower-midnight",
@@ -359,7 +386,8 @@
           "category": "mirador",
           "status": "opcional",
           "notes": "Curiosidad: intentar ver el apagado de luces a las 00:00.",
-          "locationQuery": "Tokyo Tower"
+          "locationQuery": "Tokyo Tower",
+          "time": "23:50"
         }
       ]
     },
@@ -375,7 +403,8 @@
           "category": "transporte",
           "status": "pendiente",
           "notes": "El día de Fuji sigue siendo móvil por meteorología. No presentar una recogida/devolución fija hasta cerrar la reserva.",
-          "locationQuery": "Tokyo car rental"
+          "locationQuery": "Tokyo car rental",
+          "time": "~06:00"
         },
         {
           "id": "chureito",
@@ -383,14 +412,16 @@
           "category": "mirador",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Chureito Pagoda"
+          "locationQuery": "Chureito Pagoda",
+          "time": "~08:00"
         },
         {
           "id": "fujiyoshida-retro",
           "title": "Fujiyoshida Retro Shopping Street",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Fujiyoshida Retro Shopping Street"
+          "locationQuery": "Fujiyoshida Retro Shopping Street",
+          "time": "~09:30"
         },
         {
           "id": "kitaguchi",
@@ -398,14 +429,16 @@
           "category": "templo",
           "status": "plan",
           "notes": "Parada de goshuin.",
-          "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja"
+          "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja",
+          "time": "~10:30"
         },
         {
           "id": "oshino",
           "title": "Oshino Hakkai",
           "category": "naturaleza",
           "status": "plan",
-          "locationQuery": "Oshino Hakkai"
+          "locationQuery": "Oshino Hakkai",
+          "time": "~12:00"
         },
         {
           "id": "oishi",
@@ -413,14 +446,16 @@
           "category": "mirador",
           "status": "plan",
           "notes": "Parada de lago / helado.",
-          "locationQuery": "Oishi Park Kawaguchiko"
+          "locationQuery": "Oishi Park Kawaguchiko",
+          "time": "~14:00"
         },
         {
           "id": "yume-ohashi",
           "title": "Fujisan Yume no Ōhashi",
           "category": "mirador",
           "status": "opcional",
-          "locationQuery": "Fujisan Yume no Ohashi"
+          "locationQuery": "Fujisan Yume no Ohashi",
+          "time": "~16:00"
         },
         {
           "id": "lawson-kawaguchiko",
@@ -428,7 +463,8 @@
           "category": "otro",
           "status": "opcional",
           "notes": "Punto de foto; respetar señalización y propiedad privada.",
-          "locationQuery": "LAWSON Kawaguchiko Station"
+          "locationQuery": "LAWSON Kawaguchiko Station",
+          "time": "~17:00"
         }
       ],
       "switchLabel": "🗻 Fuji"
@@ -444,7 +480,8 @@
           "title": "Shinkansen a Nagoya",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Nagoya Station"
+          "locationQuery": "Nagoya Station",
+          "time": "~08:00"
         },
         {
           "id": "nagoya-castle",
@@ -453,7 +490,8 @@
           "status": "plan",
           "priority": "must",
           "notes": "Visita principal de la parada en Nagoya antes de comer y continuar a Osaka.",
-          "locationQuery": "Nagoya Castle"
+          "locationQuery": "Nagoya Castle",
+          "time": "~10:30"
         },
         {
           "id": "yabaton",
@@ -468,14 +506,16 @@
           "links": {
             "tabelog": "https://tabelog.com/en/aichi/A2301/A230101/23078795/",
             "officialWebsite": "https://www.yabaton.com/"
-          }
+          },
+          "time": "~14:00"
         },
         {
           "id": "nagoya-osaka",
           "title": "Continuar a Osaka",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Osaka Station"
+          "locationQuery": "Osaka Station",
+          "time": "~16:00"
         }
       ]
     }
@@ -491,7 +531,8 @@
           "category": "naturaleza",
           "status": "plan",
           "notes": "Alternativa para el día del Fuji si la montaña queda tapada por nubes/lluvia y no compensa hacer la ruta de Kawaguchiko.",
-          "locationQuery": "Okutama Tokyo"
+          "locationQuery": "Okutama Tokyo",
+          "time": "~08:30"
         },
         {
           "id": "nippara-cave",
@@ -503,7 +544,8 @@
           "locationQuery": "Nippara Limestone Cave Okutama",
           "links": {
             "officialWebsite": "https://shonyudokyokai.com/spot-list/nippara/"
-          }
+          },
+          "time": "~11:00"
         }
       ],
       "forDate": "2026-10-09",
