@@ -57,24 +57,63 @@ const routes = segments.flatMap((segment) =>
 ).filter((route) => route.variants.some((variant) => variant.stops.length > 0));
 
 const placeMap = new Map<string, { title: string; query: string; city: string; firstDate: string; category: string; tabelog: string }>();
-for (const route of routes) {
-  for (const variant of route.variants) {
-    for (const stop of variant.stops) {
-      const key = stop.query.toLocaleLowerCase();
-      if (!placeMap.has(key)) {
-        placeMap.set(key, {
-          title: stop.title,
-          query: stop.query,
-          city: route.city,
-          firstDate: route.date,
-          category: stop.category,
-          tabelog: stop.tabelog,
-        });
-      }
+
+function addPlace(place: { title: string; query: string; city: string; firstDate: string; category: string; tabelog?: string }) {
+  const key = place.query.toLocaleLowerCase();
+  if (!placeMap.has(key)) {
+    placeMap.set(key, { ...place, tabelog: place.tabelog ?? '' });
+  }
+}
+
+for (const segment of segments) {
+  const city = segment.data.legLabel ?? segment.data.city;
+
+  for (const day of segment.data.days) {
+    const firstDate = isoDate(day.date);
+
+    for (const activity of day.activities) {
+      const query = activity.locationQuery ?? activity.address;
+      if (!query) continue;
+      addPlace({
+        title: activity.title,
+        query,
+        city,
+        firstDate,
+        category: activity.category,
+        tabelog: activity.links?.tabelog,
+      });
+    }
+
+    for (const stop of day.routeStops ?? []) {
+      addPlace({
+        title: stop.title,
+        query: stop.locationQuery,
+        city,
+        firstDate,
+        category: 'otro',
+      });
+    }
+  }
+
+  for (const candidate of segment.data.candidateModules) {
+    if (!candidate.forDate) continue;
+    const firstDate = isoDate(candidate.forDate);
+    for (const activity of candidate.activities) {
+      const query = activity.locationQuery ?? activity.address;
+      if (!query) continue;
+      addPlace({
+        title: activity.title,
+        query,
+        city,
+        firstDate,
+        category: activity.category,
+        tabelog: activity.links?.tabelog,
+      });
     }
   }
 }
-const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b.firstDate));
+
+const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b.firstDate) || a.title.localeCompare(b.title, 'es'));
 ---
 
 <Layout title="Ruta · Japón 2026">
