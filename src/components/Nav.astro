@@ -5,6 +5,7 @@ const links = [
   { href: `${base}hoy/`, label: 'Hoy', icon: '☀️' },
   { href: `${base}dias/`, label: 'Días', icon: '📅' },
   { href: `${base}mapas/`, label: 'Mapa', icon: '🗺️' },
+  { href: `${base}recomendaciones/`, label: 'Recs', icon: '⭐' },
   { href: `${base}info/`, label: 'Info', icon: '🎒' },
 ];
 function active(href: string) { return currentPath === href || currentPath === href.replace(/\/$/, ''); }
@@ -20,7 +21,7 @@ function active(href: string) { return currentPath === href || currentPath === h
 </header>
 
 <nav class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-2 pb-[max(.5rem,env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl sm:hidden">
-  <ul class="mx-auto grid max-w-md grid-cols-4 gap-1">
+  <ul class="mx-auto grid max-w-md grid-cols-5 gap-1">
     {links.map((link) => <li><a href={link.href} class:list={['flex min-h-12 flex-col items-center justify-center rounded-xl text-[11px] font-bold', active(link.href) ? 'bg-slate-950 text-white' : 'text-slate-600']}><span class="text-lg" aria-hidden="true">{link.icon}</span>{link.label}</a></li>)}
   </ul>
 </nav>
