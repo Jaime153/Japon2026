@@ -11,7 +11,7 @@ export const TRIP = {
   start: '2026-10-03',
   end: '2026-10-28',
   travellers: ['Jaime', 'Lorena', 'Vilma', 'Marga'],
-  summary: 'Tokio → Nagoya/Ghibli Park → Osaka → Kyoto → Hiroshima → Osaka',
+  summary: 'Tokio → Nagoya → Osaka → Kyoto → Hiroshima → Osaka',
 };
 
 export const FIXED_INFO = [
