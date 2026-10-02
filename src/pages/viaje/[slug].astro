@@ -3,8 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import DayBlock from '../../components/DayBlock.astro';
 import ActivityCard from '../../components/ActivityCard.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { formatDate, getModulesWithContent } from '../../lib/segments';
-import { SHARED_MAP_LISTS } from '../../data/trip';
+import { formatDate, formatDayHeading, getDayAlternatives, getModulesWithContent, isoDate } from '../../lib/segments';
 
 export async function getStaticPaths() {
   const segments = await getCollection('segments');
@@ -16,14 +15,10 @@ const { segment } = Astro.props;
 const { data } = segment;
 const modulesWithContent = getModulesWithContent(data);
 const title = data.legLabel ?? data.city;
-const relevantLists = SHARED_MAP_LISTS.filter((list) => {
-  const c = data.city.toLowerCase();
-  return list.city.toLowerCase().includes(c) || (c === 'tokio' && list.id === 'fuji');
-});
 ---
 
 <Layout title={`${title} · Japón 2026`}>
-  <header class="mb-7">
+  <header class="mb-5">
     <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Tramo {data.order}</p>
     <h1 class="text-3xl font-black tracking-tight">{title}</h1>
     <p class="mt-1 text-sm text-slate-500">{formatDate(data.startDate)} – {formatDate(data.endDate)}</p>
@@ -35,26 +30,75 @@ const relevantLists = SHARED_MAP_LISTS.filter((list) => {
         {data.hotel.mapsUrl && <a href={data.hotel.mapsUrl} target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">📍 Abrir en Maps</a>}
       </div>
     )}
-
-    {relevantLists.length > 0 && (
-      <div class="mt-3 flex flex-wrap gap-2">
-        {relevantLists.map((list) => <a href={list.url} target="_blank" rel="noopener noreferrer" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-700">🗺️ {list.title} ↗</a>)}
-      </div>
-    )}
   </header>
 
-  <div class="grid gap-10">
-    {data.days.map((day) => <DayBlock day={day} city={title} />)}
-    {modulesWithContent.length > 0 && (
-      <section>
-        <h2 class="mb-3 text-xl font-black">Módulos candidatos</h2>
-        {modulesWithContent.map((module) => (
-          <div class="mb-6">
-            <h3 class="mb-3 font-bold">{module.title}</h3>
-            <ul class="grid gap-3">{module.activities.map((activity) => <ActivityCard activity={activity} />)}</ul>
-          </div>
-        ))}
-      </section>
-    )}
+  <div class="sticky top-[65px] z-30 -mx-4 mb-5 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
+    <div class="flex gap-2 overflow-x-auto pb-1" id="segment-day-chips">
+      {data.days.map((day, index) => (
+        <button type="button" class="segment-day-chip shrink-0 rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-700" data-index={index} data-date={isoDate(day.date)}>
+          {new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(day.date)}
+        </button>
+      ))}
+    </div>
+    <div class="mt-3 grid grid-cols-[auto_1fr_auto] items-center gap-2">
+      <button id="segment-prev" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">←</button>
+      <p id="segment-day-label" class="text-center text-sm font-black text-slate-900"></p>
+      <button id="segment-next" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">→</button>
+    </div>
   </div>
+
+  <div id="segment-day-panels">
+    {data.days.map((day, index) => (
+      <div class="segment-day-panel hidden" data-index={index} data-date={isoDate(day.date)} data-label={formatDayHeading(day.date)}>
+        <DayBlock day={day} city={title} alternatives={getDayAlternatives(data, day.date)} />
+      </div>
+    ))}
+  </div>
+
+  {modulesWithContent.length > 0 && (
+    <section class="mt-10">
+      <h2 class="mb-3 text-xl font-black">Ideas sin día asignado</h2>
+      {modulesWithContent.map((module) => (
+        <details class="mb-3 rounded-2xl border border-slate-200 bg-white p-4">
+          <summary class="cursor-pointer font-bold">{module.title}</summary>
+          <ul class="mt-3 grid gap-3">{module.activities.map((activity) => <ActivityCard activity={activity} />)}</ul>
+        </details>
+      ))}
+    </section>
+  )}
+
+  <script>
+    const panels = [...document.querySelectorAll('.segment-day-panel')];
+    const chips = [...document.querySelectorAll('.segment-day-chip')];
+    const label = document.querySelector('#segment-day-label');
+    const prev = document.querySelector('#segment-prev');
+    const next = document.querySelector('#segment-next');
+
+    const now = new Date();
+    const today = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('-');
+    let current = panels.findIndex((panel) => (panel.getAttribute('data-date') ?? '') >= today);
+    if (current < 0) current = Math.max(0, panels.length - 1);
+
+    function show(index) {
+      if (!panels.length) return;
+      current = Math.max(0, Math.min(index, panels.length - 1));
+      panels.forEach((panel, i) => panel.classList.toggle('hidden', i !== current));
+      chips.forEach((chip, i) => {
+        const active = i === current;
+        chip.classList.toggle('bg-slate-950', active);
+        chip.classList.toggle('text-white', active);
+        chip.classList.toggle('bg-white', !active);
+        chip.classList.toggle('text-slate-700', !active);
+      });
+      if (label) label.textContent = panels[current]?.getAttribute('data-label') ?? '';
+      chips[current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      if (prev instanceof HTMLButtonElement) prev.disabled = current === 0;
+      if (next instanceof HTMLButtonElement) next.disabled = current === panels.length - 1;
+    }
+
+    chips.forEach((chip, index) => chip.addEventListener('click', () => show(index)));
+    prev?.addEventListener('click', () => show(current - 1));
+    next?.addEventListener('click', () => show(current + 1));
+    show(current);
+  </script>
 </Layout>

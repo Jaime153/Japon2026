@@ -2,23 +2,46 @@
 import Layout from '../layouts/Layout.astro';
 import DayBlock from '../components/DayBlock.astro';
 import { getCollection } from 'astro:content';
-import { flattenDays, isoDate } from '../lib/segments';
+import { flattenDays, formatDayHeading, isoDate } from '../lib/segments';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
 const days = flattenDays(segments);
 ---
 
 <Layout title="Hoy · Japón 2026">
-  <header class="mb-5">
+  <header class="mb-4">
     <p class="text-xs font-bold uppercase tracking-[0.2em] text-red-500">Modo operativo</p>
-    <h1 class="text-3xl font-black tracking-tight">Hoy</h1>
-    <p id="today-context" class="mt-1 text-sm text-slate-500">Buscando el día del viaje…</p>
+    <div class="flex items-end justify-between gap-3">
+      <div>
+        <h1 class="text-3xl font-black tracking-tight">Hoy</h1>
+        <p id="today-context" class="mt-1 text-sm text-slate-500">Buscando el día del viaje…</p>
+      </div>
+      <button id="jump-today" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-700">Ir a hoy</button>
+    </div>
   </header>
 
+  <section id="next-card" class="mb-5 rounded-2xl bg-slate-950 p-4 text-white">
+    <p id="next-kicker" class="text-xs font-bold uppercase tracking-[0.16em] text-red-300">Siguiente</p>
+    <p id="next-title" class="mt-1 text-lg font-black">Calculando…</p>
+    <p id="next-note" class="mt-1 text-xs text-slate-400"></p>
+  </section>
+
+  <div class="sticky top-[65px] z-30 -mx-4 mb-5 grid grid-cols-[auto_1fr_auto] items-center gap-2 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
+    <button id="prev-day" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">←</button>
+    <p id="selected-day-label" class="text-center text-sm font-black text-slate-900"></p>
+    <button id="next-day" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">→</button>
+  </div>
+
   <div id="today-days">
-    {days.map((entry) => (
-      <div class="today-entry hidden" data-date={isoDate(entry.day.date)} data-city={entry.segmentTitle}>
-        <DayBlock day={entry.day} city={entry.segmentTitle} />
+    {days.map((entry, index) => (
+      <div
+        class="today-entry hidden"
+        data-day-index={index}
+        data-date={isoDate(entry.day.date)}
+        data-city={entry.segmentTitle}
+        data-label={`${formatDayHeading(entry.day.date)} · ${entry.segmentTitle}`}
+      >
+        <DayBlock day={entry.day} city={entry.segmentTitle} alternatives={entry.alternatives} />
       </div>
     ))}
   </div>
@@ -28,26 +51,122 @@ const days = flattenDays(segments);
   <script>
     const entries = [...document.querySelectorAll('.today-entry')];
     const context = document.querySelector('#today-context');
-    const now = new Date();
-    const localIso = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('-');
-    let target = entries.find((el) => el.getAttribute('data-date') === localIso);
-    let mode = 'hoy';
-    if (!target) {
-      target = entries.find((el) => (el.getAttribute('data-date') ?? '') > localIso);
-      mode = target ? 'siguiente' : 'último';
+    const label = document.querySelector('#selected-day-label');
+    const prev = document.querySelector('#prev-day');
+    const next = document.querySelector('#next-day');
+    const jumpToday = document.querySelector('#jump-today');
+    const nextKicker = document.querySelector('#next-kicker');
+    const nextTitle = document.querySelector('#next-title');
+    const nextNote = document.querySelector('#next-note');
+
+    const pageOpenedAt = new Date();
+    const localIso = [pageOpenedAt.getFullYear(), String(pageOpenedAt.getMonth() + 1).padStart(2, '0'), String(pageOpenedAt.getDate()).padStart(2, '0')].join('-');
+    let todayIndex = entries.findIndex((entry) => entry.getAttribute('data-date') === localIso);
+    let current = todayIndex;
+
+    if (current < 0) {
+      current = entries.findIndex((entry) => (entry.getAttribute('data-date') ?? '') > localIso);
+      if (current < 0) current = Math.max(0, entries.length - 1);
     }
-    if (!target && entries.length) target = entries[entries.length - 1];
-    if (target) {
-      target.classList.remove('hidden');
-      const date = target.getAttribute('data-date');
-      const city = target.getAttribute('data-city');
-      if (context) {
-        context.textContent = mode === 'hoy'
-          ? `Hoy · ${city}`
-          : mode === 'siguiente'
-            ? `Te enseño el siguiente día planificado · ${date} · ${city}`
-            : `El viaje ya terminó · último día · ${date}`;
+
+    function parseMinutes(value) {
+      const normalized = value.replace(/^~/, '');
+      if (!/^\d{1,2}:\d{2}$/.test(normalized)) return null;
+      const [h, m] = normalized.split(':').map(Number);
+      return h * 60 + m;
+    }
+
+    function refreshNext(entry) {
+      const date = entry.getAttribute('data-date') ?? '';
+      const cards = [...entry.querySelectorAll('[data-activity-card]')].filter((card) => !card.closest('[data-variant-panel].hidden'));
+
+      if (!cards.length) {
+        nextKicker.textContent = 'Plan';
+        nextTitle.textContent = 'Sin actividades cargadas';
+        nextNote.textContent = '';
+        return;
       }
-    } else if (context) context.textContent = 'No hay días cargados.';
+
+      if (date !== localIso) {
+        nextKicker.textContent = date > localIso ? 'Próximo día' : 'Día consultado';
+        nextTitle.textContent = cards[0].getAttribute('data-activity-title') ?? 'Primera parada';
+        nextNote.textContent = 'Abre este día para consultar el orden completo.';
+        return;
+      }
+
+      const clock = new Date();
+      const currentMinutes = clock.getHours() * 60 + clock.getMinutes();
+      const timed = cards
+        .map((card) => ({
+          card,
+          time: card.getAttribute('data-activity-time') ?? '',
+          minutes: parseMinutes(card.getAttribute('data-activity-time') ?? ''),
+        }))
+        .filter((item) => item.minutes !== null);
+
+      const upcoming = timed.find((item) => item.minutes >= currentMinutes);
+      if (upcoming) {
+        nextKicker.textContent = 'Siguiente';
+        nextTitle.textContent = `${upcoming.time} · ${upcoming.card.getAttribute('data-activity-title') ?? ''}`;
+        nextNote.textContent = upcoming.time.startsWith('~')
+          ? 'Hora aproximada del planning; úsala como guía.'
+          : 'Hora fija del planning.';
+        return;
+      }
+
+      if (timed.length) {
+        nextKicker.textContent = 'Hoy';
+        nextTitle.textContent = 'No quedan hitos con hora por delante';
+        nextNote.textContent = 'Las actividades sin hora siguen visibles en el orden del día.';
+        return;
+      }
+
+      nextKicker.textContent = 'Siguiente del plan';
+      nextTitle.textContent = cards[0].getAttribute('data-activity-title') ?? 'Primera parada';
+      nextNote.textContent = 'Este día todavía no tiene horas estimadas suficientes para calcularlo por reloj.';
+    }
+
+    function show(index) {
+      if (!entries.length) return;
+      current = Math.max(0, Math.min(index, entries.length - 1));
+      entries.forEach((entry, i) => entry.classList.toggle('hidden', i !== current));
+      const entry = entries[current];
+      const date = entry.getAttribute('data-date') ?? '';
+      const city = entry.getAttribute('data-city') ?? '';
+      if (label) label.textContent = entry.getAttribute('data-label') ?? '';
+      if (context) {
+        context.textContent =
+          date === localIso
+            ? `Hoy · ${city}`
+            : date > localIso
+              ? `Viendo un día futuro · ${date}`
+              : `Viendo un día anterior · ${date}`;
+      }
+      if (prev instanceof HTMLButtonElement) prev.disabled = current === 0;
+      if (next instanceof HTMLButtonElement) next.disabled = current === entries.length - 1;
+      refreshNext(entry);
+    }
+
+    prev?.addEventListener('click', () => show(current - 1));
+    next?.addEventListener('click', () => show(current + 1));
+    jumpToday?.addEventListener('click', () => {
+      if (todayIndex >= 0) show(todayIndex);
+      else {
+        const nextIndex = entries.findIndex((entry) => (entry.getAttribute('data-date') ?? '') > localIso);
+        show(nextIndex >= 0 ? nextIndex : entries.length - 1);
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Element && event.target.closest('[data-variant-button]')) {
+        window.setTimeout(() => refreshNext(entries[current]), 0);
+      }
+    });
+
+    show(current);
+    window.setInterval(() => {
+      const entry = entries[current];
+      if (entry) refreshNext(entry);
+    }, 60000);
   </script>
 </Layout>

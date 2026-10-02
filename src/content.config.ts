@@ -14,6 +14,8 @@ const activityLinksSchema = z.object({
   tabelog: z.string().url().optional(),
   officialWebsite: z.string().url().optional(),
   reservation: z.string().url().optional(),
+  weather: z.string().url().optional(),
+  liveCam: z.string().url().optional(),
 });
 
 const activitySchema = z.object({
@@ -43,10 +45,18 @@ function findDuplicateIds(activities: { id: string }[]): string[] {
   return [...duplicates];
 }
 
+const routeStopSchema = z.object({
+  title: z.string(),
+  locationQuery: z.string(),
+  note: z.string().optional(),
+});
+
 const daySchema = z.object({
   date: z.coerce.date(),
   title: z.string().optional(),
   note: z.string().optional(),
+  switchLabel: z.string().optional(),
+  routeStops: z.array(routeStopSchema).optional(),
   status: statusSchema.default('plan'),
   activities: z.array(activitySchema),
 });
@@ -54,6 +64,8 @@ const daySchema = z.object({
 const candidateModuleSchema = z.object({
   id: z.string(),
   title: z.string(),
+  forDate: z.coerce.date().optional(),
+  switchLabel: z.string().optional(),
   activities: z.array(activitySchema),
 });
 

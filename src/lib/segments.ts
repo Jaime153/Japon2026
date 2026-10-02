@@ -9,7 +9,14 @@ export function hasContent(segment: SegmentData): boolean {
 }
 
 export function getModulesWithContent(segment: SegmentData) {
-  return segment.candidateModules.filter((candidateModule) => candidateModule.activities.length > 0);
+  return segment.candidateModules.filter((candidateModule) => !candidateModule.forDate && candidateModule.activities.length > 0);
+}
+
+export function getDayAlternatives(segment: SegmentData, date: Date) {
+  const target = isoDate(date);
+  return segment.candidateModules.filter(
+    (candidateModule) => candidateModule.forDate && isoDate(candidateModule.forDate) === target && candidateModule.activities.length > 0,
+  );
 }
 
 export function getTripDateRange(segments: SegmentData[]): { start: Date; end: Date } {
