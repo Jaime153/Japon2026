@@ -411,6 +411,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       button.addEventListener('click', async () => {
         currentRoute = index;
         currentVariant = 'main';
+        try { localStorage.setItem('japon2026:selected-date', routes[index].date); } catch {}
         await renderRoute();
         button.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
       });
@@ -439,8 +440,13 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
 
     const today = new Date();
     const todayIso = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, '0'), String(today.getDate()).padStart(2, '0')].join('-');
+    const requestedDate = new URLSearchParams(window.location.search).get('date');
+    let rememberedDate = '';
+    try { rememberedDate = localStorage.getItem('japon2026:selected-date') ?? ''; } catch {}
+    const preferredDate = requestedDate || rememberedDate;
+    const preferredIndex = preferredDate ? routes.findIndex((route) => route.date === preferredDate) : -1;
     const upcoming = routes.findIndex((route) => route.date >= todayIso);
-    currentRoute = upcoming >= 0 ? upcoming : Math.max(0, routes.length - 1);
+    currentRoute = preferredIndex >= 0 ? preferredIndex : (upcoming >= 0 ? upcoming : Math.max(0, routes.length - 1));
 
     initMap().catch(() => {
       statusEl.textContent = 'No se pudo cargar el mapa interactivo. Los enlaces de Google Maps siguen disponibles.';
