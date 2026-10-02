@@ -186,9 +186,9 @@
     },
     {
       "date": "2026-10-07",
-      "title": "Monte Fuji en coche",
+      "title": "Fuji u Okutama · según visibilidad",
       "status": "plan",
-      "note": "Plan A: Monte Fuji si hay visibilidad. Si la previsión o las webcams indican que no se va a ver, cambiar el día por 奥多摩 (Okutama).",
+      "note": "Elige el plan del día según visibilidad real. La selección se guarda en este dispositivo.",
       "activities": [
         {
           "id": "chureito",
@@ -251,7 +251,8 @@
           "status": "pendiente",
           "notes": "Hora objetivo; depende de la reserva final."
         }
-      ]
+      ],
+      "switchLabel": "🗻 Fuji"
     },
     {
       "date": "2026-10-08",
@@ -427,7 +428,7 @@
   "candidateModules": [
     {
       "id": "okutama-plan-b-fuji",
-      "title": "Plan B si Fuji no se ve · 奥多摩 / Okutama",
+      "title": "Okutama + Nippara Limestone Cave",
       "activities": [
         {
           "id": "okutama",
@@ -449,7 +450,9 @@
             "officialWebsite": "https://shonyudokyokai.com/spot-list/nippara/"
           }
         }
-      ]
+      ],
+      "forDate": "2026-10-07",
+      "switchLabel": "🌲 Okutama"
     }
   ]
 }
