@@ -14,6 +14,8 @@ const activityLinksSchema = z.object({
   tabelog: z.string().url().optional(),
   officialWebsite: z.string().url().optional(),
   reservation: z.string().url().optional(),
+  weather: z.string().url().optional(),
+  liveCam: z.string().url().optional(),
 });
 
 const activitySchema = z.object({
