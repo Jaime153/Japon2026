@@ -7,16 +7,25 @@ const segments = (await getCollection('segments')).sort((a, b) => a.data.order -
 
 const routes = segments.flatMap((segment) =>
   segment.data.days.map((day) => {
-    const mainStops = day.activities
-      .filter((activity) => activity.locationQuery || activity.address)
-      .map((activity) => ({
-        id: activity.id,
-        title: activity.title,
-        query: activity.locationQuery ?? activity.address ?? activity.title,
-        category: activity.category,
-        time: activity.time ?? '',
-        tabelog: activity.links?.tabelog ?? '',
-      }));
+    const mainStops = day.routeStops?.length
+      ? day.routeStops.map((stop, index) => ({
+          id: `route-stop-${index}`,
+          title: stop.title,
+          query: stop.locationQuery,
+          category: 'otro',
+          time: '',
+          tabelog: '',
+        }))
+      : day.activities
+          .filter((activity) => activity.locationQuery || activity.address)
+          .map((activity) => ({
+            id: activity.id,
+            title: activity.title,
+            query: activity.locationQuery ?? activity.address ?? activity.title,
+            category: activity.category,
+            time: activity.time ?? '',
+            tabelog: activity.links?.tabelog ?? '',
+          }));
 
     const alternatives = getDayAlternatives(segment.data, day.date).map((alternative) => ({
       id: alternative.id,
