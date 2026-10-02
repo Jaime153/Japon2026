@@ -20,28 +20,44 @@
           "title": "Sumiyoshi Taisha",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Sumiyoshi Taisha Osaka"
+          "locationQuery": "Sumiyoshi Taisha Osaka",
+          "plan": [
+            "Recorrer el santuario principal con calma y usarlo como primera parada del sur de Osaka.",
+            "Después continuar hacia Namba sin añadir desvíos grandes."
+          ]
         },
         {
           "id": "namba-yasaka",
           "title": "Namba Yasaka Jinja",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Namba Yasaka Jinja"
+          "locationQuery": "Namba Yasaka Jinja",
+          "plan": [
+            "Hacer la visita principal y fotos del santuario.",
+            "Parada relativamente corta antes de seguir hacia Shinsekai."
+          ]
         },
         {
           "id": "shinsekai",
           "title": "Shinsekai",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Shinsekai Osaka"
+          "locationQuery": "Shinsekai Osaka",
+          "plan": [
+            "Pasear por las calles principales y ver el ambiente del barrio.",
+            "Picar algo solo si apetece; Dōtonbori sigue siendo la gran zona de cierre del día."
+          ]
         },
         {
           "id": "dotonbori",
           "title": "Dōtonbori",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Dotonbori Osaka"
+          "locationQuery": "Dotonbori Osaka",
+          "plan": [
+            "Recorrer el canal y las calles de neones con calma.",
+            "Elegir cena según cola y ganas; aquí sí merece la pena dejar margen para improvisar."
+          ]
         }
       ]
     },
@@ -55,21 +71,33 @@
           "title": "Osaka Castle",
           "category": "otro",
           "status": "plan",
-          "locationQuery": "Osaka Castle"
+          "locationQuery": "Osaka Castle",
+          "plan": [
+            "Recorrer la zona del castillo y hacer la visita principal.",
+            "No apretar demasiado la mañana para llegar a Umeda con energía."
+          ]
         },
         {
           "id": "umeda-sky",
           "title": "Umeda Sky Building",
           "category": "mirador",
           "status": "plan",
-          "locationQuery": "Umeda Sky Building"
+          "locationQuery": "Umeda Sky Building",
+          "plan": [
+            "Subir al mirador si el tiempo/visibilidad acompañan.",
+            "Después dejar la tarde abierta para compras o repetir una zona favorita."
+          ]
         },
         {
           "id": "osaka-flex",
           "title": "Compras / repetir zona favorita",
           "category": "compras",
           "status": "opcional",
-          "notes": "Dejar margen: no apretar el día."
+          "notes": "Dejar margen: no apretar el día.",
+          "plan": [
+            "Usar este bloque como colchón: compras, descanso o repetir algo que haya gustado.",
+            "No añadir una visita obligatoria nueva; el objetivo es recuperar energía."
+          ]
         }
       ]
     },
@@ -83,14 +111,22 @@
           "title": "Traslado a Kyoto",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Kyoto Station"
+          "locationQuery": "Kyoto Station",
+          "plan": [
+            "Salir de Osaka sin prisa pero con equipaje y traslado bien resueltos.",
+            "Llegar a Kyoto, dejar maletas y no meter nada exigente antes de Gion."
+          ]
         },
         {
           "id": "yasaka-evening",
           "title": "Yasaka Shrine y Gion al llegar",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Yasaka Shrine Kyoto"
+          "locationQuery": "Yasaka Shrine Kyoto",
+          "plan": [
+            "Pasear por Yasaka y Gion ya instalados en Kyoto.",
+            "Tomarlo como primera toma de contacto, no como visita exhaustiva."
+          ]
         }
       ]
     }
