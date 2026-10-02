@@ -104,6 +104,18 @@ const hasExtra = Boolean(
         </div>
       )}
 
+      <div class="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-3">
+        <label class="block text-xs font-black uppercase tracking-[0.12em] text-slate-400" for={`note-${activity.id}`}>Mi nota</label>
+        <textarea
+          id={`note-${activity.id}`}
+          data-personal-note
+          rows="2"
+          placeholder="Apunta algo para este sitio…"
+          class="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 outline-none focus:border-slate-400"
+        ></textarea>
+        <p data-note-saved class="mt-1 hidden text-[11px] font-semibold text-emerald-700">Guardado en este dispositivo</p>
+      </div>
+
       <button
         type="button"
         data-complete-toggle
@@ -124,9 +136,12 @@ const hasExtra = Boolean(
       const id = card.getAttribute('data-activity-id');
       const button = card.querySelector('[data-complete-toggle]');
       const badge = card.querySelector('[data-done-badge]');
+      const note = card.querySelector('[data-personal-note]');
+      const noteSaved = card.querySelector('[data-note-saved]');
       if (!id || !(button instanceof HTMLButtonElement)) return;
 
       const key = `japon2026:activity-done:${id}`;
+      const noteKey = `japon2026:activity-note:${id}`;
 
       function apply(done) {
         card.setAttribute('data-completed', done ? 'true' : 'false');
@@ -138,6 +153,19 @@ const hasExtra = Boolean(
       let done = false;
       try { done = localStorage.getItem(key) === 'true'; } catch {}
       apply(done);
+
+      if (note instanceof HTMLTextAreaElement) {
+        try { note.value = localStorage.getItem(noteKey) ?? ''; } catch {}
+        let saveTimer;
+        note.addEventListener('input', () => {
+          window.clearTimeout(saveTimer);
+          saveTimer = window.setTimeout(() => {
+            try { localStorage.setItem(noteKey, note.value); } catch {}
+            noteSaved?.classList.remove('hidden');
+            window.setTimeout(() => noteSaved?.classList.add('hidden'), 1200);
+          }, 250);
+        });
+      }
 
       button.addEventListener('click', () => {
         const next = card.getAttribute('data-completed') !== 'true';
