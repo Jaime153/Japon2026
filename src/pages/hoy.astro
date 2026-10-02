@@ -10,7 +10,6 @@ const days = flattenDays(segments);
 
 <Layout title="Hoy · Japón 2026">
   <header class="mb-4">
-    <p class="text-xs font-bold uppercase tracking-[0.2em] text-red-500">Modo operativo</p>
     <div class="flex items-end justify-between gap-3">
       <div>
         <h1 class="text-3xl font-black tracking-tight">Hoy</h1>
@@ -26,7 +25,7 @@ const days = flattenDays(segments);
     <p id="next-note" class="mt-1 text-xs text-slate-400"></p>
   </section>
 
-  <div class="sticky top-[65px] z-30 -mx-4 mb-5 grid grid-cols-[auto_1fr_auto] items-center gap-2 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
+  <div class="sticky top-14 z-30 -mx-4 mb-5 grid grid-cols-[auto_1fr_auto] items-center gap-2 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
     <button id="prev-day" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">←</button>
     <p id="selected-day-label" class="text-center text-sm font-black text-slate-900"></p>
     <button id="next-day" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">→</button>
