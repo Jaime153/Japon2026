@@ -157,7 +157,11 @@
           "plan": [
             "Solo hacerlo si tenemos entrada y slot que encaje.",
             "Subir con tiempo suficiente para disfrutar el mirador sin condicionar todo el día."
-          ]
+          ],
+          "links": {
+            "officialWebsite": "https://www.shibuya-scramble-square.com/sky/",
+            "reservation": "https://www.shibuya-scramble-square.com/sky/ticket/"
+          }
         },
         {
           "id": "nonbei-yokocho",
@@ -500,7 +504,12 @@
           "plan": [
             "Ir únicamente con entrada/slot confirmado.",
             "Reservar margen de llegada y no apretar demasiado el tramo anterior."
-          ]
+          ],
+          "links": {
+            "officialWebsite": "https://teamlabplanets.dmm.com/en",
+            "reservation": "https://teamlabplanets.dmm.com/en"
+          },
+          "reservationRequired": true
         },
         {
           "id": "zojoji",
