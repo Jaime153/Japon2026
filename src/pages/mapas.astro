@@ -42,11 +42,15 @@ const routes = segments.flatMap((segment) =>
         })),
     }));
 
+    const date = isoDate(day.date);
+    const isFujiDay = date === '2026-10-09';
+
     return {
-      date: isoDate(day.date),
+      date,
       city: segment.data.legLabel ?? segment.data.city,
       title: day.title ?? segment.data.city,
       mainLabel: day.switchLabel ?? 'Plan',
+      routingMode: isFujiDay ? 'car' : 'foot',
       variants: [{ id: 'main', label: day.switchLabel ?? 'Plan', stops: mainStops }, ...alternatives],
     };
   }),
@@ -115,7 +119,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       <a id="open-google-route" href="#" target="_blank" rel="noopener noreferrer" class="rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">
         🧭 Abrir ruta real en Google Maps
       </a>
-      <span class="self-center text-xs text-slate-400">La línea de la web muestra el orden de paradas; Google Maps calcula la navegación real.</span>
+      <span class="self-center text-xs text-slate-400">La web intenta seguir calles/carreteras; Google Maps queda como navegación final en tiempo real.</span>
     </div>
 
     <ol id="route-stops" class="mt-5 grid gap-2"></ol>
@@ -330,15 +334,38 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
         marker.addTo(group);
       });
 
+      let routeGeometry = null;
       if (coords.length > 1) {
-        L.polyline(coords.map((point) => [point.lat, point.lon]), { weight: 4, opacity: 0.8 }).addTo(group);
+        const coordinates = coords.map((point) => `${point.lon},${point.lat}`).join(';');
+        const router = route.routingMode === 'car' ? 'routed-car' : 'routed-foot';
+        const routeEndpoint = `https://routing.openstreetmap.de/${router}/route/v1/driving/${coordinates}?overview=full&geometries=geojson&steps=false`;
+
+        try {
+          statusEl.textContent = route.routingMode === 'car'
+            ? 'Calculando ruta por carretera…'
+            : 'Calculando recorrido por calles y caminos…';
+          const response = await fetch(routeEndpoint);
+          if (!response.ok) throw new Error('Routing failed');
+          const data = await response.json();
+          routeGeometry = data?.routes?.[0]?.geometry ?? null;
+        } catch {}
+      }
+
+      if (routeGeometry) {
+        L.geoJSON(routeGeometry, { style: { weight: 5, opacity: 0.85 } }).addTo(group);
+      } else if (coords.length > 1) {
+        L.polyline(coords.map((point) => [point.lat, point.lon]), { weight: 3, opacity: 0.45, dashArray: '6 8' }).addTo(group);
       }
 
       group.addTo(map);
       routeLayer = group;
-      const bounds = L.latLngBounds(coords.map((point) => [point.lat, point.lon]));
+      const bounds = routeGeometry
+        ? L.geoJSON(routeGeometry).getBounds()
+        : L.latLngBounds(coords.map((point) => [point.lat, point.lon]));
       map.fitBounds(bounds.pad(0.18), { maxZoom: 14 });
-      statusEl.textContent = `Ruta visual · ${coords.length}/${variant.stops.length} paradas localizadas. Para navegación real usa Google Maps.`;
+      statusEl.textContent = routeGeometry
+        ? `Ruta real sobre la red viaria · ${coords.length}/${variant.stops.length} paradas localizadas.`
+        : `No se pudo calcular el trazado real; mostrando unión orientativa entre ${coords.length}/${variant.stops.length} paradas. Google Maps sigue disponible para navegar.`;
     }
 
     dayButtons.forEach((button, index) => {
