@@ -1,12 +1,8 @@
 import type { CollectionEntry } from 'astro:content';
 
 export type SegmentData = CollectionEntry<'segments'>['data'];
+export type SegmentEntry = CollectionEntry<'segments'>;
 
-/**
- * Un tramo tiene contenido real cuando ya hay días planificados, o cuando
- * alguno de sus módulos candidatos tiene actividades. Un módulo candidato
- * vacío (sin actividades) NO cuenta como contenido real.
- */
 export function hasContent(segment: SegmentData): boolean {
   if (segment.days.length > 0) return true;
   return segment.candidateModules.some((candidateModule) => candidateModule.activities.length > 0);
@@ -23,24 +19,29 @@ export function getTripDateRange(segments: SegmentData[]): { start: Date; end: D
 }
 
 export function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat('es-ES', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-    timeZone: 'UTC',
-  }).format(date);
+  return new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(date);
 }
 
 export function formatDayHeading(date: Date): string {
-  const formatted = new Intl.DateTimeFormat('es-ES', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    timeZone: 'UTC',
-  }).format(date);
+  const formatted = new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' }).format(date);
   return formatted.charAt(0).toUpperCase() + formatted.slice(1);
 }
 
 export function formatDateRange(start: Date, end: Date): string {
   return `${formatDate(start)} – ${formatDate(end)}`;
+}
+
+export function isoDate(date: Date): string {
+  return date.toISOString().slice(0, 10);
+}
+
+export function flattenDays(segments: SegmentEntry[]) {
+  return segments.flatMap((segment) =>
+    segment.data.days.map((day) => ({
+      segmentId: segment.id,
+      segmentTitle: segment.data.legLabel ?? segment.data.city,
+      city: segment.data.city,
+      day,
+    })),
+  ).sort((a, b) => a.day.date.getTime() - b.day.date.getTime());
 }

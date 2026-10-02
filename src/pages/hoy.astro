@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DayBlock from '../components/DayBlock.astro';
+import { getCollection } from 'astro:content';
+import { flattenDays, isoDate } from '../lib/segments';
+
+const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
+const days = flattenDays(segments);
+---
+
+<Layout title="Hoy · Japón 2026">
+  <header class="mb-5">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-red-500">Modo operativo</p>
+    <h1 class="text-3xl font-black tracking-tight">Hoy</h1>
+    <p id="today-context" class="mt-1 text-sm text-slate-500">Buscando el día del viaje…</p>
+  </header>
+
+  <div id="today-days">
+    {days.map((entry) => (
+      <div class="today-entry hidden" data-date={isoDate(entry.day.date)} data-city={entry.segmentTitle}>
+        <DayBlock day={entry.day} city={entry.segmentTitle} />
+      </div>
+    ))}
+  </div>
+
+  <noscript><p class="rounded-2xl bg-amber-50 p-4 text-sm">Activa JavaScript para que el modo Hoy seleccione automáticamente la fecha.</p></noscript>
+
+  <script>
+    const entries = [...document.querySelectorAll('.today-entry')];
+    const context = document.querySelector('#today-context');
+    const now = new Date();
+    const localIso = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('-');
+    let target = entries.find((el) => el.getAttribute('data-date') === localIso);
+    let mode = 'hoy';
+    if (!target) {
+      target = entries.find((el) => (el.getAttribute('data-date') ?? '') > localIso);
+      mode = target ? 'siguiente' : 'último';
+    }
+    if (!target && entries.length) target = entries[entries.length - 1];
+    if (target) {
+      target.classList.remove('hidden');
+      const date = target.getAttribute('data-date');
+      const city = target.getAttribute('data-city');
+      if (context) {
+        context.textContent = mode === 'hoy'
+          ? `Hoy · ${city}`
+          : mode === 'siguiente'
+            ? `Te enseño el siguiente día planificado · ${date} · ${city}`
+            : `El viaje ya terminó · último día · ${date}`;
+      }
+    } else if (context) context.textContent = 'No hay días cargados.';
+  </script>
+</Layout>

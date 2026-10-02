@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DayBlock from '../components/DayBlock.astro';
+import { getCollection } from 'astro:content';
+import { flattenDays } from '../lib/segments';
+
+const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
+const days = flattenDays(segments);
+---
+
+<Layout title="Días · Japón 2026">
+  <header class="mb-6">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Timeline completo</p>
+    <h1 class="text-3xl font-black tracking-tight">Todos los días</h1>
+    <p class="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500">“Plan” significa operativo pero movible; “Confirmado” se reserva para anclas reales. No convertir pendientes en hechos.</p>
+  </header>
+  <div class="grid gap-10">{days.map((entry) => <DayBlock day={entry.day} city={entry.segmentTitle} />)}</div>
+</Layout>

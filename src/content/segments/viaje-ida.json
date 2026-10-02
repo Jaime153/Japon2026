@@ -1,0 +1,41 @@
+{
+  "order": 0,
+  "city": "En ruta",
+  "legLabel": "Salida a Japón",
+  "startDate": "2026-10-03",
+  "endDate": "2026-10-03",
+  "days": [
+    {
+      "date": "2026-10-03",
+      "title": "Madrid → Shanghái → Narita",
+      "status": "confirmado",
+      "note": "Salida del grupo completo. Llegada a Narita el 4 de octubre a las 12:50.",
+      "activities": [
+        {
+          "id": "vuelo-mad-pvg",
+          "title": "Vuelo Madrid → Shanghái",
+          "category": "transporte",
+          "status": "confirmado",
+          "notes": "China Eastern MU710.",
+          "locationQuery": "Adolfo Suárez Madrid-Barajas Airport"
+        },
+        {
+          "id": "conexion-pvg",
+          "title": "Conexión en Shanghái Pudong",
+          "category": "transporte",
+          "status": "confirmado",
+          "locationQuery": "Shanghai Pudong International Airport"
+        },
+        {
+          "id": "vuelo-pvg-nrt",
+          "title": "Vuelo Shanghái → Narita",
+          "category": "transporte",
+          "status": "confirmado",
+          "notes": "Tramo MU523. Llegada prevista 4 oct · 12:50.",
+          "locationQuery": "Narita International Airport"
+        }
+      ]
+    }
+  ],
+  "candidateModules": []
+}

@@ -2,17 +2,11 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-export const CATEGORIES = [
-  'comida',
-  'templo',
-  'mirador',
-  'transporte',
-  'compras',
-  'ocio',
-  'otro',
-] as const;
+export const CATEGORIES = ['comida','templo','mirador','transporte','compras','ocio','naturaleza','barrio','otro'] as const;
+export const STATUSES = ['confirmado','plan','opcional','pendiente'] as const;
 
 const categorySchema = z.enum(CATEGORIES);
+const statusSchema = z.enum(STATUSES);
 
 const activityLinksSchema = z.object({
   googleMaps: z.string().url().optional(),
@@ -28,22 +22,22 @@ const activitySchema = z.object({
   time: z.string().optional(),
   links: activityLinksSchema.optional(),
   notes: z.string().optional(),
-  // Este repo es público (GitHub Pages): nunca guardes aquí códigos de reserva, localizadores, PNR ni datos personales — solo información pública/práctica.
   address: z.string().optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),
   approximatePrice: z.string().optional(),
   reservationRequired: z.boolean().optional(),
   category: categorySchema,
+  status: statusSchema.default('plan'),
+  priority: z.enum(['must','nice']).optional(),
+  locationQuery: z.string().optional(),
 });
 
 function findDuplicateIds(activities: { id: string }[]): string[] {
   const seen = new Set<string>();
   const duplicates = new Set<string>();
   for (const activity of activities) {
-    if (seen.has(activity.id)) {
-      duplicates.add(activity.id);
-    }
+    if (seen.has(activity.id)) duplicates.add(activity.id);
     seen.add(activity.id);
   }
   return [...duplicates];
@@ -52,6 +46,8 @@ function findDuplicateIds(activities: { id: string }[]): string[] {
 const daySchema = z.object({
   date: z.coerce.date(),
   title: z.string().optional(),
+  note: z.string().optional(),
+  status: statusSchema.default('plan'),
   activities: z.array(activitySchema),
 });
 
@@ -68,56 +64,27 @@ const hotelSchema = z.object({
   checkOut: z.string().optional(),
 });
 
-const segmentSchema = z
-  .object({
-    order: z.number(),
-    city: z.string(),
-    legLabel: z.string().optional(),
-    startDate: z.coerce.date(),
-    endDate: z.coerce.date(),
-    hotel: hotelSchema,
-    days: z.array(daySchema),
-    candidateModules: z.array(candidateModuleSchema),
-  })
-  .superRefine((segment, ctx) => {
-    if (segment.startDate > segment.endDate) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        message: `startDate (${segment.startDate.toISOString()}) debe ser anterior o igual a endDate (${segment.endDate.toISOString()})`,
-        path: ['startDate'],
-      });
+const segmentSchema = z.object({
+  order: z.number(),
+  city: z.string(),
+  legLabel: z.string().optional(),
+  startDate: z.coerce.date(),
+  endDate: z.coerce.date(),
+  hotel: hotelSchema.optional(),
+  days: z.array(daySchema),
+  candidateModules: z.array(candidateModuleSchema).default([]),
+}).superRefine((segment, ctx) => {
+  if (segment.startDate > segment.endDate) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'startDate debe ser anterior o igual a endDate', path: ['startDate'] });
+  }
+  segment.days.forEach((day, dayIndex) => {
+    if (day.date < segment.startDate || day.date > segment.endDate) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Día fuera del rango del segmento', path: ['days', dayIndex, 'date'] });
     }
-
-    segment.days.forEach((day, dayIndex) => {
-      if (day.date < segment.startDate || day.date > segment.endDate) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          message: `El día ${day.date.toISOString()} está fuera del rango del segmento (${segment.startDate.toISOString()} - ${segment.endDate.toISOString()})`,
-          path: ['days', dayIndex, 'date'],
-        });
-      }
-
-      const duplicates = findDuplicateIds(day.activities);
-      if (duplicates.length > 0) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          message: `IDs de actividad duplicados en el día ${day.date.toISOString()}: ${duplicates.join(', ')}`,
-          path: ['days', dayIndex, 'activities'],
-        });
-      }
-    });
-
-    segment.candidateModules.forEach((candidateModule, moduleIndex) => {
-      const duplicates = findDuplicateIds(candidateModule.activities);
-      if (duplicates.length > 0) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          message: `IDs de actividad duplicados en el módulo "${candidateModule.title}": ${duplicates.join(', ')}`,
-          path: ['candidateModules', moduleIndex, 'activities'],
-        });
-      }
-    });
+    const duplicates = findDuplicateIds(day.activities);
+    if (duplicates.length) ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'IDs duplicados: ' + duplicates.join(', '), path: ['days', dayIndex, 'activities'] });
   });
+});
 
 const segments = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/segments' }),
