@@ -173,92 +173,65 @@
           "category": "mirador",
           "status": "opcional",
           "locationQuery": "Tokyo Skytree"
-        },
-        {
-          "id": "coche-recogida",
-          "title": "Recoger coche del Fuji",
-          "time": "19:00",
-          "category": "transporte",
-          "status": "pendiente",
-          "notes": "Horario objetivo histórico del planning; verificar reserva real antes de salir."
         }
       ]
     },
     {
       "date": "2026-10-07",
-      "title": "Fuji u Okutama · según visibilidad",
+      "title": "Ueno · Akihabara · Shinjuku",
       "status": "plan",
-      "note": "Elige el plan del día según visibilidad real. La selección se guarda en este dispositivo.",
+      "note": "Día urbano movido aquí para dejar libre el mejor hueco meteorológico para Fuji. Si cambia la previsión, este módulo puede volver a intercambiarse.",
       "activities": [
         {
-          "id": "chureito",
-          "title": "Chureito Pagoda / Arakurayama Sengen Park",
-          "category": "mirador",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Chureito Pagoda"
-        },
-        {
-          "id": "fujiyoshida-retro",
-          "title": "Fujiyoshida Retro Shopping Street",
-          "category": "barrio",
-          "status": "plan",
-          "locationQuery": "Fujiyoshida Retro Shopping Street"
-        },
-        {
-          "id": "kitaguchi",
-          "title": "Kitaguchi Hongu Fuji Sengen Jinja",
-          "category": "templo",
-          "status": "plan",
-          "notes": "Parada de goshuin.",
-          "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja"
-        },
-        {
-          "id": "oshino",
-          "title": "Oshino Hakkai",
+          "id": "ueno-park",
+          "title": "Ueno Park",
           "category": "naturaleza",
           "status": "plan",
-          "locationQuery": "Oshino Hakkai"
+          "locationQuery": "Ueno Park Tokyo"
         },
         {
-          "id": "oishi",
-          "title": "Oishi Park",
-          "category": "mirador",
+          "id": "akihabara",
+          "title": "Akihabara",
+          "category": "compras",
           "status": "plan",
-          "notes": "Parada de lago / helado.",
-          "locationQuery": "Oishi Park Kawaguchiko"
+          "notes": "Anime, electrónica y Yodobashi.",
+          "locationQuery": "Akihabara Tokyo"
         },
         {
-          "id": "yume-ohashi",
-          "title": "Fujisan Yume no Ōhashi",
-          "category": "mirador",
+          "id": "menya-musashi",
+          "title": "Menya Musashi Takatora",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "notes": "Tsukemen recomendado por Alberto. Tabelog: junto a Takadanobaba.",
+          "locationQuery": "Menya Musashi Takatora Takadanobaba",
+          "nearestStation": "Takadanobaba",
+          "approximatePrice": "< ¥1.000 aprox.",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
+          }
+        },
+        {
+          "id": "omoide-yokocho",
+          "title": "Omoide Yokocho",
+          "category": "comida",
           "status": "opcional",
-          "locationQuery": "Fujisan Yume no Ohashi"
+          "locationQuery": "Omoide Yokocho"
         },
         {
-          "id": "lawson-kawaguchiko",
-          "title": "LAWSON Kawaguchiko Station",
-          "category": "otro",
+          "id": "kabukicho",
+          "title": "Kabukicho / Godzilla Head",
+          "category": "barrio",
           "status": "opcional",
-          "notes": "Punto de foto; respetar señalización y propiedad privada.",
-          "locationQuery": "LAWSON Kawaguchiko Station"
-        },
-        {
-          "id": "coche-devolucion",
-          "title": "Devolver coche",
-          "time": "19:00",
-          "category": "transporte",
-          "status": "pendiente",
-          "notes": "Hora objetivo; depende de la reserva final."
+          "locationQuery": "Godzilla Head Shinjuku"
         }
-      ],
-      "switchLabel": "🗻 Fuji"
+      ]
     },
     {
       "date": "2026-10-08",
       "title": "Tsukiji → Tsukishima · centro",
       "status": "plan",
-      "note": "Tsukiji y monjayaki en Tsukishima van el mismo día, no como opción genérica.",
+      "note": "Tsukiji y monjayaki en Tsukishima van el mismo día. Este módulo puede intercambiarse con Fuji si el 8 termina siendo claramente mejor que el 9.",
       "activities": [
         {
           "id": "tsukiji-outer",
@@ -328,60 +301,79 @@
     },
     {
       "date": "2026-10-09",
-      "title": "Ueno · Akihabara · Takadanobaba",
+      "title": "Fuji u Okutama · según visibilidad",
       "status": "plan",
-      "note": "Último día completo en Tokio.",
+      "note": "Hueco preferente actual para Fuji por la previsión. Elige Fuji u Okutama el mismo día según visibilidad real; la selección se guarda en el dispositivo.",
       "activities": [
         {
-          "id": "ueno-park",
-          "title": "Ueno Park",
-          "category": "naturaleza",
-          "status": "plan",
-          "locationQuery": "Ueno Park Tokyo"
+          "id": "fuji-car",
+          "title": "Alquiler de coche · horario según reserva",
+          "category": "transporte",
+          "status": "pendiente",
+          "notes": "El día de Fuji sigue siendo móvil por meteorología. No presentar una recogida/devolución fija hasta cerrar la reserva.",
+          "locationQuery": "Tokyo car rental"
         },
         {
-          "id": "akihabara",
-          "title": "Akihabara",
-          "category": "compras",
-          "status": "plan",
-          "notes": "Anime, electrónica y Yodobashi.",
-          "locationQuery": "Akihabara Tokyo"
-        },
-        {
-          "id": "menya-musashi",
-          "title": "Menya Musashi Takatora",
-          "category": "comida",
+          "id": "chureito",
+          "title": "Chureito Pagoda / Arakurayama Sengen Park",
+          "category": "mirador",
           "status": "plan",
           "priority": "must",
-          "notes": "Tsukemen recomendado por Alberto. Tabelog: junto a Takadanobaba.",
-          "locationQuery": "Menya Musashi Takatora Takadanobaba",
-          "nearestStation": "Takadanobaba",
-          "approximatePrice": "< ¥1.000 aprox.",
-          "links": {
-            "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
-          }
+          "locationQuery": "Chureito Pagoda"
         },
         {
-          "id": "omoide-yokocho",
-          "title": "Omoide Yokocho",
-          "category": "comida",
-          "status": "opcional",
-          "locationQuery": "Omoide Yokocho"
-        },
-        {
-          "id": "kabukicho",
-          "title": "Kabukicho / Godzilla Head",
+          "id": "fujiyoshida-retro",
+          "title": "Fujiyoshida Retro Shopping Street",
           "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Fujiyoshida Retro Shopping Street"
+        },
+        {
+          "id": "kitaguchi",
+          "title": "Kitaguchi Hongu Fuji Sengen Jinja",
+          "category": "templo",
+          "status": "plan",
+          "notes": "Parada de goshuin.",
+          "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja"
+        },
+        {
+          "id": "oshino",
+          "title": "Oshino Hakkai",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Oshino Hakkai"
+        },
+        {
+          "id": "oishi",
+          "title": "Oishi Park",
+          "category": "mirador",
+          "status": "plan",
+          "notes": "Parada de lago / helado.",
+          "locationQuery": "Oishi Park Kawaguchiko"
+        },
+        {
+          "id": "yume-ohashi",
+          "title": "Fujisan Yume no Ōhashi",
+          "category": "mirador",
           "status": "opcional",
-          "locationQuery": "Godzilla Head Shinjuku"
+          "locationQuery": "Fujisan Yume no Ohashi"
+        },
+        {
+          "id": "lawson-kawaguchiko",
+          "title": "LAWSON Kawaguchiko Station",
+          "category": "otro",
+          "status": "opcional",
+          "notes": "Punto de foto; respetar señalización y propiedad privada.",
+          "locationQuery": "LAWSON Kawaguchiko Station"
         }
-      ]
+      ],
+      "switchLabel": "🗻 Fuji"
     },
     {
       "date": "2026-10-10",
-      "title": "Tokio → Nagoya → Ghibli Park → Osaka",
+      "title": "Tokio → Nagoya → Osaka",
       "status": "confirmado",
-      "note": "Día de traslado. El pase/entrada concreta de Ghibli debe comprobarse antes de salir.",
+      "note": "Parada en Nagoya: Castillo de Nagoya + comida. Ghibli Park está descartado y no debe aparecer en el planning.",
       "activities": [
         {
           "id": "shinkansen-nagoya",
@@ -389,6 +381,15 @@
           "category": "transporte",
           "status": "confirmado",
           "locationQuery": "Nagoya Station"
+        },
+        {
+          "id": "nagoya-castle",
+          "title": "Castillo de Nagoya",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "notes": "Visita principal de la parada en Nagoya antes de comer y continuar a Osaka.",
+          "locationQuery": "Nagoya Castle"
         },
         {
           "id": "yabaton",
@@ -404,16 +405,6 @@
             "tabelog": "https://tabelog.com/en/aichi/A2301/A230101/23078795/",
             "officialWebsite": "https://www.yabaton.com/"
           }
-        },
-        {
-          "id": "ghibli-park",
-          "title": "Ghibli Park",
-          "time": "14:00",
-          "category": "ocio",
-          "status": "pendiente",
-          "reservationRequired": true,
-          "notes": "Planning: O-Sanpo Day Pass Standard. Verificar la entrada final antes de ir.",
-          "locationQuery": "Ghibli Park Aichi"
         },
         {
           "id": "nagoya-osaka",
@@ -451,7 +442,7 @@
           }
         }
       ],
-      "forDate": "2026-10-07",
+      "forDate": "2026-10-09",
       "switchLabel": "🌲 Okutama"
     }
   ]
