@@ -14,5 +14,5 @@ const days = flattenDays(segments);
     <h1 class="text-3xl font-black tracking-tight">Todos los días</h1>
     <p class="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500">“Plan” significa operativo pero movible; “Confirmado” se reserva para anclas reales. No convertir pendientes en hechos.</p>
   </header>
-  <div class="grid gap-10">{days.map((entry) => <DayBlock day={entry.day} city={entry.segmentTitle} />)}</div>
+  <div class="grid gap-10">{days.map((entry) => <DayBlock day={entry.day} city={entry.segmentTitle} alternatives={entry.alternatives} />)}</div>
 </Layout>
