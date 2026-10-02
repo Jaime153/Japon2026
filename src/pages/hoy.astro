@@ -18,7 +18,7 @@ const days = flattenDays(segments);
   <div id="today-days">
     {days.map((entry) => (
       <div class="today-entry hidden" data-date={isoDate(entry.day.date)} data-city={entry.segmentTitle}>
-        <DayBlock day={entry.day} city={entry.segmentTitle} />
+        <DayBlock day={entry.day} city={entry.segmentTitle} alternatives={entry.alternatives} />
       </div>
     ))}
   </div>
