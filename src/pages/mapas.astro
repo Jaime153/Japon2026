@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SHARED_MAP_LISTS } from '../data/trip';
+---
+
+<Layout title="Mapas · Japón 2026">
+  <header class="mb-5">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Listas compartidas</p>
+    <h1 class="text-3xl font-black tracking-tight">Mapas de Lorena</h1>
+    <p class="mt-2 text-sm leading-relaxed text-slate-500">Las cuatro listas públicas recibidas están integradas sin convertir automáticamente todos sus puntos en paradas obligatorias.</p>
+  </header>
+
+  <div class="sticky top-[65px] z-20 mb-6 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+    <label class="block text-xs font-bold uppercase tracking-wide text-slate-400" for="map-search">Buscar lugar</label>
+    <input id="map-search" type="search" placeholder="Sensō-ji, Katsuoji, Kiyomizu…" class="mt-1 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-base outline-none focus:border-slate-400" />
+  </div>
+
+  <div class="grid gap-6 lg:grid-cols-[1fr_1.15fr]">
+    <div class="order-2 grid gap-5 lg:order-1">
+      {SHARED_MAP_LISTS.map((list) => (
+        <section class="map-list rounded-2xl border border-slate-200 bg-white p-4" data-list={list.id}>
+          <div class="flex items-start justify-between gap-3">
+            <div><p class="text-xs font-bold uppercase tracking-wide text-slate-400">{list.city}</p><h2 class="text-xl font-black">{list.title}</h2></div>
+            <a href={list.url} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-blue-50 px-3 py-2 text-xs font-bold text-blue-800">Abrir lista ↗</a>
+          </div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {list.places.map((place) => {
+              const maps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place + ' ' + list.city)}`;
+              return <button type="button" class="place-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-left text-xs font-semibold text-slate-700 hover:bg-slate-100" data-place={place} data-city={list.city} data-link={maps}>{place}</button>;
+            })}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <aside class="order-1 lg:order-2">
+      <div class="lg:sticky lg:top-20">
+        <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <iframe id="place-map" title="Mapa" class="h-[42vh] min-h-[320px] w-full border-0" loading="lazy" src="https://www.google.com/maps?q=Tokyo%2CJapan&output=embed"></iframe>
+          <div class="p-4">
+            <p class="text-xs font-bold uppercase tracking-wide text-slate-400">Vista rápida</p>
+            <h2 id="map-place-title" class="mt-1 text-lg font-black">Tokio</h2>
+            <a id="map-place-link" href="https://www.google.com/maps/search/?api=1&query=Tokyo%20Japan" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">Abrir en Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    const search = document.querySelector('#map-search');
+    const chips = [...document.querySelectorAll('.place-chip')];
+    const frame = document.querySelector('#place-map');
+    const title = document.querySelector('#map-place-title');
+    const link = document.querySelector('#map-place-link');
+
+    chips.forEach((chip) => chip.addEventListener('click', () => {
+      const place = chip.getAttribute('data-place') ?? '';
+      const city = chip.getAttribute('data-city') ?? '';
+      const mapsLink = chip.getAttribute('data-link') ?? '#';
+      if (frame) frame.setAttribute('src', `https://www.google.com/maps?q=${encodeURIComponent(place + ' ' + city)}&output=embed`);
+      if (title) title.textContent = place;
+      if (link) link.setAttribute('href', mapsLink);
+      chips.forEach((item) => item.classList.remove('bg-slate-950', 'text-white'));
+      chip.classList.add('bg-slate-950', 'text-white');
+    }));
+
+    search?.addEventListener('input', () => {
+      const q = search.value.trim().toLocaleLowerCase();
+      chips.forEach((chip) => chip.classList.toggle('hidden', !(chip.textContent ?? '').toLocaleLowerCase().includes(q)));
+      document.querySelectorAll('.map-list').forEach((section) => {
+        const visible = section.querySelectorAll('.place-chip:not(.hidden)').length > 0;
+        section.classList.toggle('hidden', !visible && q.length > 0);
+      });
+    });
+  </script>
+</Layout>
