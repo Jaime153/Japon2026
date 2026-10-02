@@ -17,14 +17,22 @@
           "category": "transporte",
           "status": "confirmado",
           "notes": "China Eastern MU710.",
-          "locationQuery": "Adolfo Suárez Madrid-Barajas Airport"
+          "locationQuery": "Adolfo Suárez Madrid-Barajas Airport",
+          "plan": [
+            "Llegar a Barajas con margen, documentación y equipaje de mano ya organizados.",
+            "Usar el vuelo para descansar; no programar nada más hasta llegar a Japón."
+          ]
         },
         {
           "id": "conexion-pvg",
           "title": "Conexión en Shanghái Pudong",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Shanghai Pudong International Airport"
+          "locationQuery": "Shanghai Pudong International Airport",
+          "plan": [
+            "Seguir señalización de conexión en Pudong y comprobar la puerta del siguiente vuelo.",
+            "Prioridad: conexión tranquila, agua/comida y cargar dispositivos."
+          ]
         },
         {
           "id": "vuelo-pvg-nrt",
@@ -32,7 +40,11 @@
           "category": "transporte",
           "status": "confirmado",
           "notes": "Tramo MU523. Llegada prevista 4 oct · 12:50.",
-          "locationQuery": "Narita International Airport"
+          "locationQuery": "Narita International Airport",
+          "plan": [
+            "Descansar y preparar pasaporte/documentos antes del aterrizaje.",
+            "Al llegar a Narita, seguir con inmigración, equipaje y traslado al hotel."
+          ]
         }
       ]
     }
