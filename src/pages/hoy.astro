@@ -19,12 +19,18 @@ const days = flattenDays(segments);
     </div>
   </header>
 
-  <button id="next-card" type="button" class="mb-5 w-full rounded-2xl bg-slate-950 p-4 text-left text-white shadow-sm">
-    <span id="next-kicker" class="block text-xs font-bold uppercase tracking-[0.16em] text-red-300">Siguiente</span>
-    <span id="next-title" class="mt-1 block text-lg font-black">Calculando…</span>
-    <span id="next-note" class="mt-1 block text-xs text-slate-400"></span>
-    <span class="mt-2 block text-xs font-bold text-slate-300">Toca para abrir esa parada ↓</span>
-  </button>
+  <section class="mb-5 overflow-hidden rounded-2xl bg-slate-950 text-white shadow-sm">
+    <button id="next-card" type="button" class="w-full p-4 text-left">
+      <span id="next-kicker" class="block text-xs font-bold uppercase tracking-[0.16em] text-red-300">Siguiente</span>
+      <span id="next-title" class="mt-1 block text-lg font-black">Calculando…</span>
+      <span id="next-note" class="mt-1 block text-xs text-slate-400"></span>
+      <span class="mt-2 block text-xs font-bold text-slate-300">Toca para abrir esa parada ↓</span>
+    </button>
+    <div class="border-t border-white/10 px-4 py-3">
+      <button id="locate-next" type="button" class="rounded-xl bg-white/10 px-3 py-2 text-xs font-bold text-white">📍 Desde donde estoy</button>
+      <p id="next-distance" class="mt-2 hidden text-xs leading-relaxed text-slate-300"></p>
+    </div>
+  </section>
 
   <div class="sticky top-14 z-30 -mx-4 mb-5 grid grid-cols-[auto_1fr_auto] items-center gap-2 border-y border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
     <button id="prev-day" type="button" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold">←</button>
@@ -59,6 +65,8 @@ const days = flattenDays(segments);
     const nextKicker = document.querySelector('#next-kicker');
     const nextTitle = document.querySelector('#next-title');
     const nextNote = document.querySelector('#next-note');
+    const locateNext = document.querySelector('#locate-next');
+    const nextDistance = document.querySelector('#next-distance');
 
     const pageOpenedAt = new Date();
     const localIso = [pageOpenedAt.getFullYear(), String(pageOpenedAt.getMonth() + 1).padStart(2, '0'), String(pageOpenedAt.getDate()).padStart(2, '0')].join('-');
@@ -80,8 +88,17 @@ const days = flattenDays(segments);
     function setNextTarget(card) {
       if (!(nextCard instanceof HTMLElement)) return;
       const id = card?.getAttribute('data-activity-id') ?? '';
+      const query = card?.getAttribute('data-activity-query') ?? '';
+      const time = card?.getAttribute('data-activity-time') ?? '';
       nextCard.setAttribute('data-target-activity', id);
+      nextCard.setAttribute('data-target-query', query);
+      nextCard.setAttribute('data-target-time', time);
       nextCard.toggleAttribute('disabled', !id);
+      if (nextDistance) {
+        nextDistance.textContent = '';
+        nextDistance.classList.add('hidden');
+      }
+      if (locateNext instanceof HTMLButtonElement) locateNext.disabled = !query;
     }
 
     function refreshNext(entry) {
@@ -171,6 +188,71 @@ const days = flattenDays(segments);
       if (next instanceof HTMLButtonElement) next.disabled = current === entries.length - 1;
       refreshNext(entry);
     }
+
+    function haversineKm(aLat, aLon, bLat, bLon) {
+      const toRad = (value) => value * Math.PI / 180;
+      const dLat = toRad(bLat - aLat);
+      const dLon = toRad(bLon - aLon);
+      const lat1 = toRad(aLat);
+      const lat2 = toRad(bLat);
+      const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+      return 6371 * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+    }
+
+    async function geocodeNext(query) {
+      const key = 'japon2026:geocode:' + query.toLocaleLowerCase();
+      try {
+        const cached = localStorage.getItem(key);
+        if (cached) return JSON.parse(cached);
+      } catch {}
+      const response = await fetch('https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=jp&q=' + encodeURIComponent(query), {
+        headers: { 'Accept-Language': 'en,ja;q=0.8' },
+      });
+      if (!response.ok) throw new Error('geocode');
+      const data = await response.json();
+      if (!data.length) throw new Error('not-found');
+      const result = { lat: Number(data[0].lat), lon: Number(data[0].lon) };
+      try { localStorage.setItem(key, JSON.stringify(result)); } catch {}
+      return result;
+    }
+
+    locateNext?.addEventListener('click', () => {
+      const query = nextCard?.getAttribute('data-target-query') ?? '';
+      const time = nextCard?.getAttribute('data-target-time') ?? '';
+      if (!query || !nextDistance) return;
+      nextDistance.classList.remove('hidden');
+      nextDistance.textContent = 'Calculando desde tu ubicación…';
+
+      if (!navigator.geolocation) {
+        nextDistance.textContent = 'Este navegador no permite obtener tu ubicación. Usa «Cómo llegar» dentro de la parada.';
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(async ({ coords }) => {
+        try {
+          const target = await geocodeNext(query);
+          const km = haversineKm(coords.latitude, coords.longitude, target.lat, target.lon);
+          if (km <= 3) {
+            const walkingMinutes = Math.max(3, Math.round(km * 12));
+            const parsed = parseMinutes(time);
+            let leave = '';
+            if (parsed !== null) {
+              const departure = parsed - walkingMinutes - 5;
+              const h = Math.floor((departure + 1440) % 1440 / 60);
+              const m = (departure + 1440) % 60;
+              leave = ` · para llegar ${time.replace(/^~/, '')}, salir sobre ${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+            }
+            nextDistance.textContent = `≈ ${km.toFixed(1)} km · a pie ~${walkingMinutes} min${leave}. Estimación orientativa; abre Maps para navegación real.`;
+          } else {
+            nextDistance.textContent = `≈ ${km.toFixed(1)} km en línea recta. Es demasiado lejos para estimar bien a pie: abre «Cómo llegar» en la parada para transporte/navegación real.`;
+          }
+        } catch {
+          nextDistance.textContent = 'No he podido calcular la distancia ahora. Abre «Cómo llegar» dentro de la parada.';
+        }
+      }, () => {
+        nextDistance.textContent = 'No se pudo acceder a tu ubicación. Revisa el permiso del navegador.';
+      }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 });
+    });
 
     nextCard?.addEventListener('click', () => {
       const id = nextCard.getAttribute('data-target-activity');
