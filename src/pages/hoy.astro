@@ -157,6 +157,7 @@ const days = flattenDays(segments);
       const entry = entries[current];
       const date = entry.getAttribute('data-date') ?? '';
       const city = entry.getAttribute('data-city') ?? '';
+      try { if (date) localStorage.setItem('japon2026:selected-date', date); } catch {}
       if (label) label.textContent = entry.getAttribute('data-label') ?? '';
       if (context) {
         context.textContent =
