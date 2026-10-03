@@ -15,6 +15,7 @@ const activityLinksSchema = z.object({
   officialWebsite: z.string().url().optional(),
   reservation: z.string().url().optional(),
   weather: z.string().url().optional(),
+  weatherAlt: z.string().url().optional(),
   liveCam: z.string().url().optional(),
 });
 
