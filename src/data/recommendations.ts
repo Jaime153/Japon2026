@@ -24,6 +24,26 @@ export interface Recommendation {
 
 export const RECOMMENDATIONS: Recommendation[] = [
   {
+    id: 'baikoan-matcha-2025',
+    title: 'Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)',
+    area: 'Shimogyo · Kyoto',
+    category: 'compras',
+    scope: '2026',
+    priority: 'must',
+    source: 'Jaime · recuerdo viaje 2025 + identificación provisional por descripción',
+    summary: 'Pequeña tienda de té/matcha atendida por un señor mayor a la que Jaime fue en 2025 y quiere volver sí o sí. Por la descripción, el candidato más probable es Baikoan Tea Stall / 梅香庵茶舗.',
+    fit2026: 'Metida como parada obligatoria el 14 de octubre después de Nishiki y antes de volver hacia Gion.',
+    notes: [
+      'El itinerario reconstruido de 2025 no guardó el nombre de la tienda, así que la identificación todavía no es 100% documental.',
+      'Baikoan está en 46-1 Tachibanacho, Shimogyo y encaja especialmente bien con el recuerdo de una tienda pequeña regentada por un señor mayor.',
+      'No sustituir por una tienda genérica: si al verla no coincide con el recuerdo, hay que localizar la correcta.',
+    ],
+    query: 'Baikoan Tea Stall 46-1 Tachibanacho Kyoto',
+    links: [
+      { label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto', kind: 'maps' },
+    ],
+  },
+  {
     id: 'fufu-no-yu',
     title: 'Fufu no Yu · 京都嵐山温泉 風風の湯',
     area: 'Arashiyama · Kyoto',
