@@ -23,7 +23,18 @@
           "plan": [
             "Empezar por Peace Memorial Park y recorrerlo a pie con calma.",
             "Mantener un ritmo tranquilo antes de entrar al museo."
-          ]
+          ],
+          "time": "~14:00",
+          "transit": {
+            "from": "APA Hotel Hiroshima Ekimae Stadiumguchi / Hiroshima Station",
+            "summary": "Desde Hiroshima Station, tranvía No. 2 o No. 6 → Genbaku-dome Mae; desde allí recorrer a pie Peace Park.",
+            "approximateDuration": "~20 min de tranvía + paseo",
+            "steps": [
+              "Caminar desde el hotel a Hiroshima Station.",
+              "Tomar streetcar No. 2 (Miyajima/Nishi-Hiroshima) o No. 6 (Eba).",
+              "Bajar en Genbaku-dome Mae y empezar el recorrido del parque."
+            ]
+          }
         },
         {
           "id": "peace-museum",
@@ -35,7 +46,13 @@
           "plan": [
             "Hacer la visita del museo sin encadenarla con prisas.",
             "Dejar margen emocional y de descanso antes de seguir al A-Bomb Dome."
-          ]
+          ],
+          "time": "~14:30",
+          "transit": {
+            "from": "Peace Memorial Park",
+            "summary": "Todo a pie dentro del parque memorial.",
+            "approximateDuration": "5–10 min"
+          }
         },
         {
           "id": "a-bomb-dome",
@@ -47,7 +64,13 @@
           "plan": [
             "Ver el A-Bomb Dome y cerrar el eje histórico de la tarde.",
             "Después cambiar de ambiente y dirigirse a cenar."
-          ]
+          ],
+          "time": "~16:30",
+          "transit": {
+            "from": "Peace Memorial Museum",
+            "summary": "Cruzar el parque a pie hasta el A-Bomb Dome.",
+            "approximateDuration": "10–15 min"
+          }
         },
         {
           "id": "okonomimura",
@@ -62,13 +85,19 @@
           "plan": [
             "Ir a Okonomimura y elegir puesto según cola/ambiente.",
             "Probar okonomiyaki estilo Hiroshima como comida/cena principal de la ciudad."
-          ]
+          ],
+          "time": "~18:00",
+          "transit": {
+            "from": "A-Bomb Dome",
+            "summary": "Ir andando hacia Hondori/Okonomimura; es un trayecto corto por el centro.",
+            "approximateDuration": "15–20 min"
+          }
         }
       ]
     },
     {
       "date": "2026-10-21",
-      "title": "Miyajima · día completo",
+      "title": "Miyajima · Itsukushima · Fujitaya · Monte Misen",
       "status": "plan",
       "activities": [
         {
@@ -81,7 +110,20 @@
           "plan": [
             "Llegar a Miyajima y empezar por Itsukushima Shrine.",
             "Coordinar la visita con el resto del día sin bloquearse esperando una foto perfecta."
-          ]
+          ],
+          "time": "~09:30",
+          "transit": {
+            "from": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+            "summary": "JR Hiroshima → Miyajimaguchi por Sanyo Main Line (~28 min) → JR Miyajima Ferry (~10 min) → caminar a Itsukushima Shrine.",
+            "approximateDuration": "~55–70 min puerta a puerta",
+            "steps": [
+              "Caminar a Hiroshima Station.",
+              "JR Sanyo Main Line dirección Iwakuni hasta Miyajimaguchi.",
+              "Seguir el paso subterráneo al ferry.",
+              "Tomar JR Miyajima Ferry; entre 09:10 y 16:10 los servicios 'Great Torii' pasan frente al gran torii.",
+              "Desde Miyajima Pier caminar al santuario."
+            ]
+          }
         },
         {
           "id": "miyajima-torii",
@@ -92,7 +134,13 @@
           "plan": [
             "Ver el gran torii desde los puntos que mejor encajen durante el paseo.",
             "Aprovechar el cambio de marea si coincide, pero sin rehacer toda la ruta por ello."
-          ]
+          ],
+          "time": "~10:30",
+          "transit": {
+            "from": "Itsukushima Shrine",
+            "summary": "Todo andando por el paseo costero de Miyajima.",
+            "approximateDuration": "5–15 min"
+          }
         },
         {
           "id": "misen",
@@ -103,24 +151,40 @@
           "plan": [
             "Subir al Monte Misen si el tiempo y las fuerzas acompañan.",
             "Si el grupo va justo, acortar esta parte antes que convertir Miyajima en una carrera."
-          ]
+          ],
+          "time": "~12:30",
+          "transit": {
+            "from": "Fujitaya",
+            "summary": "Caminar hacia Momijidani Ropeway; subir en teleférico y continuar a pie según fuerzas.",
+            "approximateDuration": "20–30 min hasta la zona del ropeway"
+          }
         },
         {
-          "id": "anago-meshi",
-          "title": "Anago meshi",
+          "id": "fujitaya",
+          "title": "Fujitaya · anago meshi",
           "category": "comida",
-          "status": "opcional",
-          "notes": "Recomendación gastronómica recogida de Alberto. Usar Tabelog para decidir el local según zona, cola y horario.",
-          "locationQuery": "anago meshi Miyajima",
+          "status": "plan",
+          "notes": "Recomendación de Alberto. Candidato principal para el anago meshi de Miyajima; no admite reservas, así que conviene ir antes de la comida fuerte.",
+          "locationQuery": "Fujitaya Miyajima",
           "links": {
-            "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=anago%20meshi%20Miyajima"
+            "officialWebsite": "https://www.fujitayamiyajima.com/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Fujitaya%20Miyajima"
           },
           "plan": [
-            "Buscar un local de anago meshi según zona, cola y horario.",
-            "Hacerlo como comida característica de Miyajima sin fijarnos a un sitio si está imposible."
-          ]
+            "Intentar llegar antes de las 11:00 para reducir cola.",
+            "Pedir anago meshi como comida principal del día.",
+            "Si la cola es inviable, usar otro anago meshi cercano como fallback, pero Fujitaya es la primera opción."
+          ],
+          "time": "~10:45–11:00",
+          "priority": "must",
+          "transit": {
+            "from": "Itsukushima Shrine / gran torii",
+            "summary": "Caminar por Miyajima hasta Fujitaya antes del pico de comida.",
+            "approximateDuration": "10–15 min"
+          }
         }
-      ]
+      ],
+      "note": "Ruta por JR Sanyo + JR Miyajima Ferry. Fujitaya pasa de genérico/opcional a primera opción para el anago meshi."
     },
     {
       "date": "2026-10-22",
@@ -165,7 +229,19 @@
           "plan": [
             "Salir de Hiroshima hacia Osaka con el equipaje organizado.",
             "Al llegar, check-in/dejar maletas antes del plan de Dōtonbori/Shinsaibashi."
-          ]
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+            "summary": "Caminar a Hiroshima Station → Sanyo Shinkansen directo a Shin-Osaka → Osaka Metro Midosuji Line → Hommachi.",
+            "approximateDuration": "~2 h puerta a puerta",
+            "steps": [
+              "Caminar a Hiroshima Station.",
+              "Sanyo Shinkansen (Nozomi/Mizuho/Sakura con parada) hasta Shin-Osaka.",
+              "Midosuji Line Shin-Osaka → Hommachi.",
+              "El APA Hotel & Resort Midosuji Hommachi Ekimae Tower está junto a Hommachi."
+            ]
+          }
         }
       ]
     }

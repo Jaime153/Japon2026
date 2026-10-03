@@ -10,9 +10,45 @@
   "days": [
     {
       "date": "2026-10-13",
-      "title": "Llegada · Yasaka · Gion",
+      "title": "Llegada · Higashiyama clásico · Gion",
       "status": "plan",
       "activities": [
+        {
+          "id": "chionin",
+          "title": "Chion-in",
+          "time": "~12:30",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Chion-in Kyoto",
+          "notes": "Templo visitado en 2025. Priorizarlo pronto porque la visita diurna cierra antes que Kiyomizu.",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Ir andando desde el hotel por Higashiyama/Yasaka; no merece la pena usar transporte.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Entrar por el gran Sanmon y ver el complejo principal.",
+            "No alargar demasiado los jardines si vamos justos: este día tiene una ruta larga por Higashiyama."
+          ]
+        },
+        {
+          "id": "shorenin",
+          "title": "Shōren-in",
+          "time": "~13:30",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Shoren-in Temple Kyoto",
+          "notes": "También visitado en 2025. Está pegado a Chion-in y encaja sin desvío.",
+          "transit": {
+            "from": "Chion-in",
+            "summary": "Caminar hacia el norte; Shōren-in está a pocos minutos de Chion-in.",
+            "approximateDuration": "5–10 min"
+          },
+          "plan": [
+            "Entrar si vamos bien de hora; es un templo más tranquilo que los grandes iconos.",
+            "Si la llegada desde Osaka se retrasa, este es el primero que se puede sacrificar."
+          ]
+        },
         {
           "id": "yasaka",
           "title": "Yasaka Shrine",
@@ -20,8 +56,70 @@
           "status": "plan",
           "locationQuery": "Yasaka Shrine Kyoto",
           "plan": [
-            "Recorrer el santuario y usarlo como entrada natural a Gion.",
-            "Seguir a pie por el barrio sin intentar cubrir Higashiyama entero este día."
+            "Atravesar el santuario y enlazar directamente con el paseo histórico hacia Yasaka Pagoda.",
+            "No tratarlo como una visita aislada: forma parte del recorrido a pie de Higashiyama."
+          ],
+          "time": "~14:30",
+          "priority": "must",
+          "transit": {
+            "from": "Shōren-in / Chion-in",
+            "summary": "Bajar andando por Higashiyama hasta Yasaka Shrine.",
+            "approximateDuration": "10–15 min"
+          }
+        },
+        {
+          "id": "yasaka-pagoda",
+          "title": "Yasaka Pagoda · Hōkan-ji",
+          "time": "~15:00",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
+          "notes": "Zona recorrida en 2025 según la cronología. Icono de Higashiyama y parada importante para quienes vienen por primera vez.",
+          "transit": {
+            "from": "Yasaka Shrine",
+            "summary": "Todo andando por Higashiyama; bajar hacia Ninenzaka/Hōkan-ji.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Hacer la foto/paseo de la pagoda y seguir hacia Ninenzaka y Sannenzaka.",
+            "No hace falta convertirlo en una visita larga; el objetivo es recorrer el eje histórico."
+          ]
+        },
+        {
+          "id": "ninenzaka-sannenzaka",
+          "title": "Ninenzaka · Sannenzaka",
+          "time": "~15:20",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
+          "transit": {
+            "from": "Yasaka Pagoda · Hōkan-ji",
+            "summary": "Continuar andando cuesta arriba por las calles históricas hacia Kiyomizu-dera.",
+            "approximateDuration": "15–25 min con paradas"
+          },
+          "plan": [
+            "Pasear por las calles tradicionales sin entrar en cada tienda.",
+            "Usarlas como ruta natural hasta Kiyomizu-dera."
+          ]
+        },
+        {
+          "id": "kiyomizu",
+          "title": "Kiyomizu-dera",
+          "time": "~16:00",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Kiyomizu-dera Kyoto",
+          "notes": "Imprescindible para las tres que vienen por primera vez; en 2025 también se recorrió esta zona.",
+          "transit": {
+            "from": "Ninenzaka · Sannenzaka",
+            "summary": "Seguir a pie hasta Kiyomizu-zaka y subir a la entrada de Kiyomizu-dera.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Entrar aunque vayamos algo cansados: es uno de los templos clave de Kyoto.",
+            "Después volver bajando hacia Gion con calma."
           ]
         },
         {
@@ -33,7 +131,13 @@
           "plan": [
             "Pasear por las calles históricas y disfrutar el ambiente al final de la tarde.",
             "Mantener el ritmo tranquilo: habrá más días para volver a la zona."
-          ]
+          ],
+          "time": "~18:00",
+          "transit": {
+            "from": "Kiyomizu-dera",
+            "summary": "Bajar andando por Higashiyama hacia Gion; no hace falta transporte.",
+            "approximateDuration": "25–35 min con paseo"
+          }
         },
         {
           "id": "kiyamachi",
@@ -44,15 +148,22 @@
           "plan": [
             "Terminar el día paseando por Kiyamachi y elegir cena/bebida por la zona.",
             "Cortar cuando el grupo esté cansado; es un cierre flexible."
-          ]
+          ],
+          "time": "~20:00",
+          "transit": {
+            "from": "Gion",
+            "summary": "Cruzar el Kamo hacia Kawaramachi/Kiyamachi andando.",
+            "approximateDuration": "10–15 min"
+          }
         }
-      ]
+      ],
+      "note": "En 2025 hicimos muchos templos de Higashiyama y faltaban en 2026. Este día los recupera caminando. Si llegamos tarde desde Osaka: proteger Kiyomizu, Yasaka Pagoda y Yasaka; Shōren-in es el primer recorte."
     },
     {
       "date": "2026-10-14",
-      "title": "Fushimi Inari · Nishiki · Gion",
+      "title": "Fushimi Inari · templos del sureste · Nishiki · matcha 2025",
       "status": "plan",
-      "note": "Fushimi temprano para evitar la parte más fuerte de las multitudes. Después de Nishiki: parada SÍ O SÍ en la tienda de matcha de 2025 (identificación provisional: Baikoan / 梅香庵茶舗) antes de volver a Gion.",
+      "note": "Día deliberadamente temple-heavy porque en 2025 esta parte fue muy buena. Orden de recorte si vamos lentos: Imakumano → Sennyū-ji → Kennin-ji. No recortar Fushimi, Sanjūsangendō, Nishiki ni Baikoan.",
       "activities": [
         {
           "id": "fushimi",
@@ -64,6 +175,109 @@
           "plan": [
             "Llegar temprano y recorrer los torii hasta el punto que el grupo quiera subir.",
             "Priorizar la experiencia sin obsesionarse con completar toda la montaña si consume demasiado tiempo."
+          ],
+          "time": "~06:30",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
+            "approximateDuration": "~30–35 min puerta a puerta",
+            "steps": [
+              "Caminar a Gion-Shijo.",
+              "Tomar Keihan Main Line hacia el sur; evitar los Limited Express que no paran en Fushimi-Inari.",
+              "Bajar en Fushimi-Inari y caminar ~5 min al santuario."
+            ]
+          }
+        },
+        {
+          "id": "tofukuji",
+          "title": "Tōfuku-ji",
+          "time": "~09:15",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Tofuku-ji Kyoto",
+          "notes": "Visitado en 2025: puente Tsūtenkyō y jardines zen.",
+          "transit": {
+            "from": "Fushimi Inari",
+            "summary": "Keihan Fushimi-Inari (KH34) → Tofukuji (KH36), dos paradas; después caminar al templo.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Ver el eje principal, Tsūtenkyō y los jardines sin recrearnos demasiado.",
+            "Desde aquí seguimos a pie por los templos secundarios de la zona."
+          ]
+        },
+        {
+          "id": "sennyuji",
+          "title": "Sennyū-ji",
+          "time": "~10:30",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Sennyu-ji Kyoto",
+          "notes": "Templo secundario que sí hicimos en 2025. Se mantiene como opcional porque el día ya es muy completo.",
+          "transit": {
+            "from": "Tōfuku-ji",
+            "summary": "Caminar hacia el sureste/noreste por el área de Sennyū-ji; no compensa volver al tren.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Entrar si llevamos buen ritmo.",
+            "Si Fushimi o Tōfuku-ji se alargan, saltarlo antes que perder Sanjūsangendō, Nishiki o la tienda de matcha."
+          ]
+        },
+        {
+          "id": "imakumano-kannonji",
+          "title": "Imakumano Kannon-ji",
+          "time": "~11:15",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Imakumano Kannon-ji Kyoto",
+          "notes": "Otro secundario visitado en 2025; muy fácil de combinar con Sennyū-ji.",
+          "transit": {
+            "from": "Sennyū-ji",
+            "summary": "Continuar a pie dentro del mismo sector de templos.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Entrar solo si el ritmo del grupo sigue bien.",
+            "Es un extra de 2025, no una prioridad por encima de los grandes templos."
+          ]
+        },
+        {
+          "id": "sanjusangendo",
+          "title": "Sanjūsangendō",
+          "time": "~12:15",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Sanjusangendo Kyoto",
+          "notes": "Visitado en 2025; sala de los 1.001 Kannon.",
+          "transit": {
+            "from": "Sennyū-ji / Imakumano Kannon-ji",
+            "summary": "Bajar hacia Higashiyama Nanajo. Se puede caminar; si vamos cansados, bus/taxi corto.",
+            "approximateDuration": "20–25 min"
+          },
+          "plan": [
+            "Entrar al pabellón principal y ver las 1.001 estatuas.",
+            "Mantenerlo aunque haya que recortar Sennyū-ji o Imakumano."
+          ]
+        },
+        {
+          "id": "toji",
+          "title": "Tō-ji",
+          "time": "~13:30",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "To-ji Kyoto",
+          "notes": "También visitado en 2025; pagoda de cinco pisos.",
+          "transit": {
+            "from": "Sanjūsangendō",
+            "summary": "City Bus 206 desde Higashiyama Nanajo → Kyoto Station; Kintetsu Kyoto Line una parada Kyoto → Toji.",
+            "approximateDuration": "25–35 min",
+            "note": "Si vamos 4 y cansados, un taxi directo puede ahorrar bastante tiempo."
+          },
+          "plan": [
+            "Ver la pagoda y el recinto principal.",
+            "No alargar porque Nishiki y Baikoan tienen horario comercial."
           ]
         },
         {
@@ -73,9 +287,15 @@
           "status": "plan",
           "locationQuery": "Nishiki Market Kyoto",
           "plan": [
-            "Recorrer el mercado probando cosas pequeñas y mirando tiendas.",
-            "No hacer una comida enorme si luego queremos seguir por Gion."
-          ]
+            "Usarlo también como comida tardía/picoteo.",
+            "No entretenerse demasiado: la tienda de matcha de 2025 es prioridad máxima después."
+          ],
+          "time": "~14:45",
+          "transit": {
+            "from": "Tō-ji",
+            "summary": "Kintetsu Toji → Kyoto (1 parada); metro Karasuma Line Kyoto → Shijo; caminar a Nishiki Market.",
+            "approximateDuration": "20–25 min"
+          }
         },
         {
           "id": "baikoan-matcha-2025",
@@ -83,18 +303,24 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "time": "~14:30",
+          "time": "~16:15",
           "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
           "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
           "notes": "Parada SÍ O SÍ por recuerdo del viaje 2025: pequeña tienda de té/matcha atendida por un señor mayor. La identificación como Baikoan es muy probable por la descripción, pero el itinerario 2025 no guardó el nombre; confirmar por foto/recuerdo si aparece antes del viaje.",
           "plan": [
-            "Ir después de Nishiki Market antes de volver hacia Gion; es un pequeño desvío que merece la pena porque esta parada tiene prioridad máxima.",
-            "Comprar matcha/té de Uji y dejar que el dueño recomiende variedades, como en 2025.",
-            "No sustituir esta parada por una tienda genérica de matcha: el objetivo es volver a la tienda del señor mayor.",
-            "Si al verla no coincide con el recuerdo, no darla por resuelta: revisar fotos/Maps de 2025 y localizar la tienda correcta."
+            "Parada SÍ O SÍ: volver a la tienda del señor mayor de 2025.",
+            "Pedir que nos recomiende matcha/té y comprar para llevar.",
+            "La identificación como Baikoan encaja ya muy bien con fuentes actuales: pequeña tienda de Uji tea regentada por un señor mayor.",
+            "Si al verla no coincide con tu recuerdo, no dar la tarea por resuelta."
           ],
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto"
+          },
+          "transit": {
+            "from": "Nishiki Market",
+            "summary": "Caminar a Shijo Station → Karasuma Line una parada hasta Gojo; desde Gojo caminar ~10 min a Baikoan, en Matsubara/Aburanokoji.",
+            "approximateDuration": "20–25 min",
+            "note": "La asociación de té de Kyoto publica 10:00–19:00 y cierre domingos/festivos; aun así el pequeño comercio puede tener variaciones, así que no apurar a última hora."
           }
         },
         {
@@ -106,7 +332,14 @@
           "plan": [
             "Hacer una visita tranquila al templo y jardines.",
             "Usarlo como parada cultural antes de continuar por Gion."
-          ]
+          ],
+          "time": "~17:15",
+          "notes": "Solo si hemos recortado secundarios y volvemos a Gion con tiempo. No sacrificar Baikoan por Kennin-ji.",
+          "transit": {
+            "from": "Baikoan",
+            "summary": "Volver hacia Gion en taxi o transporte urbano; con 4 personas el taxi puede compensar.",
+            "approximateDuration": "15–25 min"
+          }
         },
         {
           "id": "gion-tanto",
@@ -123,7 +356,8 @@
           "plan": [
             "Comprobar que esté abierto y la cola antes de desplazarnos.",
             "Si encaja, cenar okonomiyaki; si no, elegir alternativa cercana sin bloquear el día."
-          ]
+          ],
+          "time": "~19:00"
         }
       ]
     },
@@ -142,7 +376,19 @@
           "plan": [
             "Empezar por Otagi para hacer Arashiyama de fuera hacia dentro.",
             "Recorrer el recinto con calma y continuar después hacia Adashino."
-          ]
+          ],
+          "time": "~09:30",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar a Kyoto-Kawaramachi → Hankyu Kyoto Line hasta Katsura → cambio a Hankyu Arashiyama Line → Arashiyama; desde allí taxi/bus corto a Otagi para empezar de fuera hacia dentro.",
+            "approximateDuration": "~60–75 min",
+            "steps": [
+              "Caminar desde el hotel a Kyoto-Kawaramachi.",
+              "Hankyu Kyoto Line dirección Osaka hasta Katsura.",
+              "Cambiar a Hankyu Arashiyama Line hasta Arashiyama.",
+              "Para no perder la mañana, desde Arashiyama subir a Otagi en taxi/bus y luego bajar andando durante el día."
+            ]
+          }
         },
         {
           "id": "adashino",
@@ -153,7 +399,13 @@
           "plan": [
             "Visitar el templo y enlazar caminando con el resto de Arashiyama.",
             "Mantener margen para bosque y onsen, que son parte importante del día."
-          ]
+          ],
+          "time": "~10:30",
+          "transit": {
+            "from": "Otagi Nenbutsuji",
+            "summary": "Bajar andando por Saga-Toriimoto hasta Adashino Nenbutsuji.",
+            "approximateDuration": "15–20 min"
+          }
         },
         {
           "id": "bamboo",
@@ -164,7 +416,13 @@
           "plan": [
             "Recorrer el Bamboo Forest Trail cuando ya venimos bajando hacia la zona central.",
             "Fotos y paseo; evitar convertirlo en el único objetivo del día."
-          ]
+          ],
+          "time": "~13:00",
+          "transit": {
+            "from": "Adashino Nenbutsuji",
+            "summary": "Seguir bajando a pie hacia la zona central de Arashiyama y Bamboo Forest.",
+            "approximateDuration": "30–45 min con paradas"
+          }
         },
         {
           "id": "arashiyama-onsen",
@@ -185,16 +443,71 @@
           "approximatePrice": "¥1.100 adulto entre semana",
           "links": {
             "officialWebsite": "https://dormy-hotels.com/spa/fufu/"
+          },
+          "transit": {
+            "from": "Bamboo Forest / centro de Arashiyama",
+            "summary": "Caminar hacia Hankyu Arashiyama y Fufu no Yu.",
+            "approximateDuration": "20–25 min"
           }
         }
       ]
     },
     {
       "date": "2026-10-16",
-      "title": "Nara · excursión de día",
+      "title": "Nara · Kōfuku-ji · Haru · parque y templos",
       "status": "plan",
-      "note": "Día movible dentro del tramo de Kyoto según clima/logística.",
+      "note": "Ruta optimizada para intentar Haru a la apertura: Kintetsu-Nara → Kōfuku-ji → Haru 11:00 → Nara Park → Tōdai-ji → Kasuga Taisha. Volver por Kintetsu-Tambabashi + Keihan a Gion-Shijo.",
       "activities": [
+        {
+          "id": "kofukuji",
+          "title": "Kōfuku-ji",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Kofuku-ji Nara",
+          "plan": [
+            "Hacer Kōfuku-ji primero porque queda de camino a Naramachi/Haru.",
+            "Después bajar andando hacia Yoshoku Haru para llegar antes de la apertura."
+          ],
+          "time": "~09:30",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar a Gion-Shijo → Keihan Main Line hasta Tambabashi; conexión peatonal a Kintetsu-Tambabashi → Kintetsu Express hasta Kintetsu-Nara; después caminar a Kōfuku-ji.",
+            "approximateDuration": "~1 h 20–1 h 40",
+            "steps": [
+              "Caminar ~10 min a Gion-Shijo.",
+              "Keihan Main Line hasta Tambabashi.",
+              "Seguir la conexión a Kintetsu-Tambabashi.",
+              "Kintetsu Kyoto/Nara Line Express hasta Kintetsu-Nara.",
+              "Caminar ~5–10 min a Kōfuku-ji."
+            ]
+          }
+        },
+        {
+          "id": "haru-nara",
+          "title": "洋食 春 · Yoshoku Haru",
+          "time": "~10:45",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "洋食 春 奈良市公納堂町14",
+          "nearestStation": "Kintetsu-Nara · ~15 min andando",
+          "approximatePrice": "¥1.000–3.000 aprox.",
+          "notes": "Recomendación de Alberto. No admite reservas y puede terminar cuando se agotan ingredientes; el viernes 16 está dentro de sus días habituales de apertura.",
+          "links": {
+            "officialWebsite": "https://haru-nara.com/store.html",
+            "tabelog": "https://tabelog.com/nara/A2901/A290101/29006904/"
+          },
+          "transit": {
+            "from": "Kōfuku-ji",
+            "summary": "Bajar andando por Naramachi hasta 公納堂町14. Objetivo: llegar 10:40–10:50 para la apertura de las 11:00.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Llegar antes de abrir para reducir riesgo de cola.",
+            "Probar hamburg steak y/o ebi fry, que son las especialidades que encajan con la recomendación.",
+            "Después volver andando hacia Nara Park."
+          ]
+        },
         {
           "id": "nara-park",
           "title": "Nara Park",
@@ -204,7 +517,13 @@
           "plan": [
             "Llegar a Nara y recorrer el parque enlazando los templos principales a pie.",
             "Interactuar con los ciervos sin perder demasiado tiempo al inicio."
-          ]
+          ],
+          "time": "~12:15",
+          "transit": {
+            "from": "Yoshoku Haru",
+            "summary": "Volver andando hacia Nara Park atravesando Naramachi/centro.",
+            "approximateDuration": "15–20 min"
+          }
         },
         {
           "id": "todaiji",
@@ -215,7 +534,14 @@
           "plan": [
             "Hacer la visita principal del día en Tōdai-ji.",
             "Después seguir hacia Kasuga Taisha sin volver atrás."
-          ]
+          ],
+          "time": "~13:00",
+          "priority": "must",
+          "transit": {
+            "from": "Nara Park",
+            "summary": "Continuar a pie por el parque hasta Tōdai-ji.",
+            "approximateDuration": "15–20 min"
+          }
         },
         {
           "id": "kasuga",
@@ -225,19 +551,14 @@
           "locationQuery": "Kasuga Taisha Nara",
           "plan": [
             "Recorrer el santuario y el camino de faroles.",
-            "Continuar después hacia la zona central para cerrar Nara."
-          ]
-        },
-        {
-          "id": "kofukuji",
-          "title": "Kōfuku-ji",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Kofuku-ji Nara",
-          "plan": [
-            "Usarlo como última parada cultural antes de volver a Kyoto.",
-            "Si vamos tarde o cansados, es la parada más fácil de acortar."
-          ]
+            "Después volver hacia Kintetsu-Nara; si estamos cansados, bus local desde la zona del parque."
+          ],
+          "time": "~14:30",
+          "transit": {
+            "from": "Tōdai-ji",
+            "summary": "Atravesar Nara Park a pie hacia Kasuga Taisha.",
+            "approximateDuration": "25–35 min"
+          }
         }
       ]
     },
@@ -256,7 +577,14 @@
           "plan": [
             "Llegar temprano y hacer el recorrido principal del pabellón.",
             "No alargar compras/souvenirs para mantener el eje Kinkaku → Ryōan-ji → Ninna-ji."
-          ]
+          ],
+          "time": "~08:30",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar a la parada Gion → Kyoto City Bus 12 directo hacia Kinkakuji Temple → bajar en Kinkakuji-michi.",
+            "approximateDuration": "~45–60 min según tráfico",
+            "note": "Bus 12 es directo desde Gion. Si Kyoto está muy cargado de tráfico, taxi para 4 puede ahorrar bastante tiempo."
+          }
         },
         {
           "id": "ryoanji",
@@ -267,7 +595,13 @@
           "plan": [
             "Visitar el templo y el jardín con calma.",
             "Mantener la visita contenida para llegar bien a Ninna-ji."
-          ]
+          ],
+          "time": "~10:15",
+          "transit": {
+            "from": "Kinkaku-ji",
+            "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
+            "approximateDuration": "10–15 min"
+          }
         },
         {
           "id": "ninnaji",
@@ -278,25 +612,80 @@
           "plan": [
             "Cerrar el recorrido del noroeste aquí.",
             "Después volver al centro de Kyoto y dejar la tarde/noche flexible."
-          ]
+          ],
+          "time": "~11:30",
+          "transit": {
+            "from": "Ryōan-ji",
+            "summary": "Kyoto City Bus 59 → Omuro Ninnaji.",
+            "approximateDuration": "10–15 min"
+          }
         }
-      ]
+      ],
+      "note": "Ruta noroeste igual que 2025, pero ya con transporte indicado: Bus 12 desde Gion a Kinkaku-ji y Bus 59 para encadenar Ryōan-ji y Ninna-ji."
     },
     {
       "date": "2026-10-18",
-      "title": "Mañana tranquila · despedida Vilma y Marga",
+      "title": "Ginkaku-ji · Philosopher's Path · despedida Vilma y Marga",
       "status": "confirmado",
-      "note": "No alejarse demasiado: el ancla del día es el bus a KIX.",
+      "note": "Último bloque de templos para las tres antes del vuelo. Ginkaku + Philosopher's Path sí; si el reloj se tuerce, recortar el paseo, nunca el margen del bus a KIX.",
       "activities": [
         {
-          "id": "kyoto-morning-flex",
-          "title": "Mañana libre cerca de Gion / Higashiyama",
-          "category": "barrio",
-          "status": "opcional",
+          "id": "ginkakuji",
+          "title": "Ginkaku-ji · Pabellón de Plata",
+          "time": "~08:30",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Ginkaku-ji Kyoto",
+          "notes": "Visitado en 2025 y faltaba en 2026. Se mete temprano el día 18, con hora límite clara para no comprometer el bus a KIX.",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar a Gion-Shijo → Keihan hasta Demachiyanagi; City Bus 7 o 203 → Ginkakuji-michi.",
+            "approximateDuration": "35–45 min",
+            "steps": [
+              "Gion-Shijo → Demachiyanagi por Keihan.",
+              "Desde Demachiyanagi tomar bus 7 o 203 hasta Ginkakuji-michi.",
+              "Caminar al templo."
+            ]
+          },
           "plan": [
-            "Mantener la mañana cerca de Gion/Higashiyama para no complicar la salida de Vilma y Marga.",
-            "Nada con colas o desplazamientos largos antes de ir a Kyoto Station."
+            "Entrar a primera hora y hacer el recorrido principal.",
+            "No alargar: este día tiene la salida de Vilma y Marga como ancla."
           ]
+        },
+        {
+          "id": "philosophers-path",
+          "title": "Philosopher's Path",
+          "time": "~09:40",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Philosopher's Path Kyoto",
+          "transit": {
+            "from": "Ginkaku-ji",
+            "summary": "Salir del templo y recorrer a pie el canal hacia el sur.",
+            "approximateDuration": "30–45 min"
+          },
+          "plan": [
+            "Paseo corto/medio, sin intentar llegar obligatoriamente hasta el final si el reloj aprieta.",
+            "Hora límite: empezar regreso hacia Gion/hotel sobre las 10:30–10:45."
+          ]
+        },
+        {
+          "id": "kyoto-morning-flex",
+          "title": "Regreso al hotel · preparar salida de Vilma y Marga",
+          "category": "barrio",
+          "status": "plan",
+          "plan": [
+            "Volver al alojamiento con margen.",
+            "Vilma y Marga recogen equipaje; Jaime y Lorena se quedan en Kyoto.",
+            "Salir hacia Kyoto Station con tiempo suficiente para estar en H2/KY2 antes de las 14:20."
+          ],
+          "time": "~11:15",
+          "transit": {
+            "from": "Philosopher's Path",
+            "summary": "Bus 203 hacia Gion/Shijo Kawaramachi o taxi al RESI STAY Yasaka.",
+            "approximateDuration": "20–30 min"
+          }
         },
         {
           "id": "kyoto-station-h2",
@@ -310,7 +699,13 @@
           "plan": [
             "Llegar a Hachijo-guchi con margen y localizar la parada H2/KY2 junto a Kyoto Avanti.",
             "Dejar a Vilma y Marga ya situadas para el Airport Limousine Bus a KIX."
-          ]
+          ],
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Desde Higashiyama Yasui, City Bus 206/86 hacia Kyoto Station; con maletas y 4 personas, taxi es el backup más cómodo.",
+            "approximateDuration": "25–40 min según tráfico",
+            "note": "Objetivo operativo: estar en Hachijo-guchi / Kyoto Avanti antes de las 14:20, no salir del hotel a las 14:20."
+          }
         },
         {
           "id": "kix-vilma-marga",
@@ -390,7 +785,7 @@
       "date": "2026-10-19",
       "title": "Kyoto · Jaime y Lorena",
       "status": "plan",
-      "note": "Día colchón para lo pendiente y un onsen sin prisas.",
+      "note": "Día colchón Jaime + Lorena. El onsen aquí ya no es obligatorio: Fufu no Yu del 15 es el plan principal del grupo.",
       "activities": [
         {
           "id": "kyoto-pendiente",
@@ -406,8 +801,8 @@
           "id": "onsen-kyoto",
           "title": "Onsen",
           "category": "ocio",
-          "status": "plan",
-          "notes": "Funaoka Onsen o alternativa de Arashiyama; decidir por logística real.",
+          "status": "opcional",
+          "notes": "Backup solamente. El onsen principal del viaje es Fufu no Yu el 15 con las tres juntas; repetir el 19 solo si apetece a Jaime y Lorena.",
           "locationQuery": "Funaoka Onsen Kyoto",
           "plan": [
             "Elegir el onsen según logística y ganas del día.",
@@ -461,9 +856,22 @@
           "status": "confirmado",
           "locationQuery": "Hiroshima Station",
           "plan": [
-            "Hacer check-out y traslado a Hiroshima con el equipaje bien resuelto.",
-            "Al llegar, dejar maletas antes de empezar Hiroshima ciudad."
-          ]
+            "Hacer check-out y salir temprano para aprovechar Hiroshima ciudad.",
+            "Priorizar un Shinkansen directo Kyoto → Hiroshima; evitar transbordo en Shin-Osaka si hay opción.",
+            "Dejar maletas en el hotel junto a Hiroshima Station antes de ir al Peace Memorial Park."
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Higashiyama Yasui → Kyoto Station en City Bus 206/86 o taxi; desde Kyoto Station, Tokaido/Sanyo Shinkansen directo → Hiroshima.",
+            "approximateDuration": "~2 h 15–2 h 40 puerta a puerta",
+            "steps": [
+              "Con maletas: salir con margen del hotel hacia Kyoto Station; taxi es la opción más cómoda para cuatro.",
+              "Entrar al Shinkansen en Kyoto.",
+              "Tomar Nozomi/Hikari/Sakura que continúe a Hiroshima sin cambiar en Shin-Osaka.",
+              "En Hiroshima Station caminar al APA Hotel Hiroshima Ekimae Stadiumguchi y dejar equipaje."
+            ]
+          }
         }
       ]
     }

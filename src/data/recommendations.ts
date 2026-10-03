@@ -31,7 +31,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     scope: '2026',
     priority: 'must',
     source: 'Jaime · recuerdo viaje 2025 + identificación provisional por descripción',
-    summary: 'Pequeña tienda de té/matcha atendida por un señor mayor a la que Jaime fue en 2025 y quiere volver sí o sí. Por la descripción, el candidato más probable es Baikoan Tea Stall / 梅香庵茶舗.',
+    summary: 'Pequeña tienda de té/matcha atendida por un señor mayor a la que Jaime fue en 2025 y quiere volver sí o sí. Baikoan Tea Stall / 梅香庵茶舗 encaja muy fuertemente con el recuerdo: dirección oficial y descripciones actuales coinciden con una tienda pequeña regentada por un señor mayor.',
     fit2026: 'Metida como parada obligatoria el 14 de octubre después de Nishiki y antes de volver hacia Gion.',
     notes: [
       'El itinerario reconstruido de 2025 no guardó el nombre de la tienda, así que la identificación todavía no es 100% documental.',
@@ -197,7 +197,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     priority: 'try',
     source: 'Alberto · clase / enlaces buscados',
     summary: 'Yōshoku en una casa tradicional de Naramachi; hamburg steak y ebi fry. Es uno de los sitios concretos que se buscaron durante la clase.',
-    fit2026: 'Muy buen candidato para el día de Nara si la cola y el orden del recorrido encajan.',
+    fit2026: 'Ya integrado el 16 de octubre: Kōfuku-ji → llegar a Haru antes de las 11:00 → Nara Park → Tōdai-ji → Kasuga Taisha.',
     query: '洋食 春 奈良市公納堂町14',
     links: [
       { label: 'Web oficial', url: 'https://haru-nara.com/store.html', kind: 'official' },

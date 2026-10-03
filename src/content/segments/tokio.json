@@ -36,7 +36,19 @@
           "plan": [
             "Llegar al Hotel SUI Ginza Kyobashi, dejar maletas y hacer check-in si ya está disponible.",
             "Salir ligero para la primera tarde; este día está pensado para no forzar tras el vuelo."
-          ]
+          ],
+          "transit": {
+            "from": "Narita Airport Terminal 2",
+            "summary": "Keisei Access Express con servicio pasante hacia la Toei Asakusa Line → Takaracho (A12) cuando el tren mostrado pare allí; el hotel está a ~1 min andando.",
+            "approximateDuration": "70–85 min desde el tren",
+            "steps": [
+              "Tras inmigración/equipaje, seguir los carteles de Keisei en Terminal 2/3.",
+              "Elegir un Access Express que continúe hacia Oshiage/Asakusa y muestre parada en Takaracho (A12).",
+              "Permanecer en el mismo tren cuando entra en la red Toei Asakusa; bajar en Takaracho.",
+              "Desde Takaracho caminar al Hotel SUI Ginza Kyobashi (3-9-1 Kyobashi)."
+            ],
+            "note": "Si el siguiente tren no continúa hasta Takaracho, backup sencillo: Airport Bus TYO-NRT hasta Tokyo Station y desde allí caminar/taxi corto al hotel."
+          }
         },
         {
           "id": "nittele-clock",
@@ -107,7 +119,18 @@
           "plan": [
             "Entrar por el gran torii y hacer el paseo principal hasta el santuario.",
             "Ver el recinto con calma y, si apetece, hacer goshuin antes de continuar a Harajuku."
-          ]
+          ],
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Kyobashi (G10) → Omote-sando (G02) por Ginza Line; cambio a Chiyoda Line → Meiji-jingumae <Harajuku> (C03).",
+            "approximateDuration": "25–35 min + paseo",
+            "steps": [
+              "Caminar ~3 min a Kyobashi (G10).",
+              "Tokyo Metro Ginza Line dirección Shibuya hasta Omote-sando.",
+              "Cambiar a Chiyoda Line una parada hasta Meiji-jingumae <Harajuku>.",
+              "Entrar a Meiji Jingu desde la zona Harajuku."
+            ]
+          }
         },
         {
           "id": "takeshita",
@@ -200,7 +223,18 @@
           "plan": [
             "Ir temprano a por el kare-pan original antes de empezar Asakusa.",
             "Comprar para comer allí o llevar; no alargar la parada porque el día de templos es largo."
-          ]
+          ],
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Takaracho (A12) → Higashi-nihombashi (A15) por Toei Asakusa; conexión peatonal a Bakuro-yokoyama (S09) y Toei Shinjuku → Morishita (S11).",
+            "approximateDuration": "20–30 min",
+            "steps": [
+              "Caminar ~1 min a Takaracho (A12).",
+              "Toei Asakusa Line hasta Higashi-nihombashi (A15).",
+              "Seguir la conexión subterránea a Bakuro-yokoyama (S09).",
+              "Toei Shinjuku Line hasta Morishita (S11); Cattlea está junto a la estación."
+            ]
+          }
         },
         {
           "id": "asakusa-shichifukujin",
@@ -226,7 +260,17 @@
           "plan": [
             "Entrar por Kaminarimon, recorrer Nakamise y llegar al Hozomon/templo principal.",
             "Hacer aquí la primera parte del Shichifukujin y continuar la ruta sin perder demasiado tiempo en tiendas al principio."
-          ]
+          ],
+          "transit": {
+            "from": "Cattlea · Morishita",
+            "summary": "Morishita (E13) → Kuramae (E11) por Toei Oedo Line; desde Kuramae caminar hacia Kaminarimon/Sensō-ji.",
+            "approximateDuration": "20–25 min",
+            "steps": [
+              "Entrar en Morishita por Toei Oedo Line.",
+              "Dos paradas hasta Kuramae (vía Ryogoku).",
+              "Caminar ~12–15 min hasta Kaminarimon y empezar Asakusa."
+            ]
+          }
         },
         {
           "id": "kappabashi",
@@ -240,19 +284,6 @@
           "plan": [
             "Recorrer la calle de utensilios y mirar cuchillos, vajilla y menaje.",
             "Aprovechar el Dougu Matsuri, pero poniendo un límite de tiempo para no perder toda la tarde."
-          ]
-        },
-        {
-          "id": "sumida-cruise",
-          "title": "Crucero por el Sumida",
-          "category": "ocio",
-          "status": "opcional",
-          "notes": "Mejor al final de la tarde si cuadra.",
-          "locationQuery": "Asakusa Pier Tokyo",
-          "time": "~17:15",
-          "plan": [
-            "Hacerlo solo si acabamos la ruta con margen y el horario encaja.",
-            "Úsalo como cierre relajado de Asakusa, no como ancla obligatoria."
           ]
         },
         {
@@ -342,7 +373,17 @@
           "plan": [
             "Paseo por Ueno y decidir sobre la marcha qué rincón interesa más.",
             "No convertirlo en una mañana de museos: el objetivo es llegar a Akihabara con tiempo."
-          ]
+          ],
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Kyobashi (G10) → Ueno (G16) directo por Tokyo Metro Ginza Line.",
+            "approximateDuration": "15–20 min + paseo",
+            "steps": [
+              "Caminar a Kyobashi (G10).",
+              "Ginza Line dirección Asakusa hasta Ueno (G16).",
+              "Salir hacia Ueno Park."
+            ]
+          }
         },
         {
           "id": "akihabara",
@@ -355,7 +396,17 @@
           "plan": [
             "Recorrer las calles principales de anime/electrónica y entrar en tiendas concretas que interesen.",
             "Dejar margen para Yodobashi y compras sin fijar cada tienda por adelantado."
-          ]
+          ],
+          "transit": {
+            "from": "Ueno Park",
+            "summary": "JR Ueno → Akihabara, una parada por Yamanote Line o Keihin-Tohoku Line.",
+            "approximateDuration": "10–15 min total",
+            "steps": [
+              "Volver a JR Ueno.",
+              "Tomar Yamanote o Keihin-Tohoku dirección sur.",
+              "Bajar en Akihabara."
+            ]
+          }
         },
         {
           "id": "menya-musashi",
@@ -374,7 +425,17 @@
           "plan": [
             "Ir a por el tsukemen recomendado por Alberto.",
             "Comer sin meter otra parada gastronómica grande inmediatamente después."
-          ]
+          ],
+          "transit": {
+            "from": "Akihabara",
+            "summary": "JR Yamanote Line directa Akihabara → Takadanobaba; el restaurante está junto a la estación.",
+            "approximateDuration": "30 min",
+            "steps": [
+              "Tomar JR Yamanote Line por el lado Ueno/Ikebukuro.",
+              "Bajar en Takadanobaba.",
+              "Caminar a Menya Musashi Takatora."
+            ]
+          }
         },
         {
           "id": "omoide-yokocho",
@@ -386,7 +447,12 @@
           "plan": [
             "Pasear por los callejones y valorar picar algo si hay hueco.",
             "Si está demasiado lleno, seguir a Kabukicho sin perder tiempo esperando."
-          ]
+          ],
+          "transit": {
+            "from": "Takadanobaba",
+            "summary": "JR Yamanote Line → Shinjuku (2 paradas); Omoide Yokocho está junto a la salida oeste.",
+            "approximateDuration": "10–15 min"
+          }
         },
         {
           "id": "kabukicho",
@@ -432,7 +498,16 @@
           "plan": [
             "Llegar temprano y desayunar/probar varias cosas pequeñas en vez de una comida enorme.",
             "Recorrer el mercado sin prisa, pero guardando hambre para el monjayaki de Tsukishima."
-          ]
+          ],
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Ir andando: el hotel está aproximadamente a 1 km de Tsukiji Outer Market y evita un transbordo absurdo.",
+            "approximateDuration": "15–20 min",
+            "steps": [
+              "Salir hacia Higashi-Ginza/Tsukiji.",
+              "Llegar andando al mercado exterior."
+            ]
+          }
         },
         {
           "id": "hamarikyu",
@@ -463,7 +538,17 @@
           "plan": [
             "Elegir local según cola y disponibilidad y comer monjayaki.",
             "Esta comida sí es ancla del día; no sustituirla por otra opción genérica."
-          ]
+          ],
+          "transit": {
+            "from": "Tsukiji / Hamarikyu",
+            "summary": "Desde Tsukijishijo (E18), Toei Oedo Line → Tsukishima (E16), dos paradas.",
+            "approximateDuration": "10–15 min + paseos",
+            "steps": [
+              "Caminar a Tsukijishijo (E18).",
+              "Oedo Line dirección Ryogoku hasta Tsukishima (E16).",
+              "Salir hacia Monja Street."
+            ]
+          }
         },
         {
           "id": "ginza-itoya",
@@ -509,7 +594,17 @@
             "officialWebsite": "https://teamlabplanets.dmm.com/en",
             "reservation": "https://teamlabplanets.dmm.com/en"
           },
-          "reservationRequired": true
+          "reservationRequired": true,
+          "transit": {
+            "from": "Tsukishima Monja Street",
+            "summary": "Tsukishima (Y21) → Toyosu (Y22) por Yurakucho Line; después Yurikamome Toyosu → Shin-Toyosu, una parada.",
+            "approximateDuration": "15–20 min",
+            "steps": [
+              "Yurakucho Line una parada hasta Toyosu.",
+              "Cambiar a Yurikamome.",
+              "Una parada hasta Shin-Toyosu y caminar a teamLab Planets."
+            ]
+          }
         },
         {
           "id": "zojoji",
@@ -522,7 +617,12 @@
           "plan": [
             "Visitar el templo con Tokyo Tower de fondo.",
             "Hacer una parada relativamente corta y enlazar con la zona de la torre."
-          ]
+          ],
+          "transit": {
+            "from": "teamLab Planets",
+            "summary": "Yurikamome Shin-Toyosu → Shiodome; cambio a Toei Oedo Line Shiodome (E19) → Daimon (E20), una parada; caminar a Zōjō-ji.",
+            "approximateDuration": "35–45 min"
+          }
         },
         {
           "id": "tokyo-tower-midnight",
@@ -588,6 +688,16 @@
           "approximatePrice": "53,82 € total",
           "links": {
             "officialWebsite": "https://store.nipponrentacar.co.jp/en/b/nrs/info/511504/"
+          },
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Ir andando a Yaesu-nishi Parking / Tokyo Station Yaesu South Exit. No hace falta metro.",
+            "approximateDuration": "10–15 min",
+            "steps": [
+              "Salir del hotel sobre las 06:25–06:30.",
+              "Caminar hacia Tokyo Station Yaesu / Yaesu-nishi Parking.",
+              "Estar en la oficina antes de las 07:00."
+            ]
           }
         },
         {
@@ -697,7 +807,18 @@
           "plan": [
             "Salir de Tokio con margen y subir al shinkansen hacia Nagoya.",
             "Llevar equipaje organizado para no perder tiempo en el transbordo/consigna."
-          ]
+          ],
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Caminar a Tokyo Station → Tokaido Shinkansen (Nozomi/Hikari) → Nagoya Station.",
+            "approximateDuration": "~2 h incluyendo acceso y margen",
+            "steps": [
+              "Caminar ~7–10 min a Tokyo Station por Yaesu.",
+              "Entrar a los andenes del Tokaido Shinkansen.",
+              "Tomar Nozomi o Hikari con parada en Nagoya.",
+              "Guardar equipaje/seguir directamente hacia el castillo según la hora real."
+            ]
+          }
         },
         {
           "id": "nagoya-castle",
@@ -711,7 +832,12 @@
           "plan": [
             "Ir directo al castillo y hacer la visita principal de Nagoya.",
             "No añadir desvíos grandes: después toca comer y continuar a Osaka."
-          ]
+          ],
+          "transit": {
+            "from": "Nagoya Station",
+            "summary": "Sakura-dori Line → Hisaya-odori; cambio a Meijo Line → Nagoyajo Station; caminar al castillo.",
+            "approximateDuration": "20–25 min"
+          }
         },
         {
           "id": "yabaton",
@@ -731,7 +857,12 @@
           "plan": [
             "Comer misokatsu como plato típico de Nagoya.",
             "Elegir la sucursal que mejor encaje con la estación y el tren posterior."
-          ]
+          ],
+          "transit": {
+            "from": "Nagoya Castle",
+            "summary": "Nagoyajo → Hisaya-odori por Meijo Line; cambio a Sakura-dori Line → Nagoya Station. Comer en la sucursal que mejor encaje con la estación.",
+            "approximateDuration": "20–25 min"
+          }
         },
         {
           "id": "nagoya-osaka",
@@ -743,7 +874,18 @@
           "plan": [
             "Volver a Nagoya Station y continuar a Osaka.",
             "Llegar al alojamiento y dejar el resto de la tarde/noche ligera."
-          ]
+          ],
+          "transit": {
+            "from": "Nagoya Station",
+            "summary": "Tokaido Shinkansen → Shin-Osaka; Midosuji Line → Namba; cambio a Sennichimae Line → Sakuragawa; caminar ~5–6 min a GN98 Saiwaicho.",
+            "approximateDuration": "~1 h 40–2 h",
+            "steps": [
+              "Shinkansen Nagoya → Shin-Osaka.",
+              "Osaka Metro Midosuji Line Shin-Osaka → Namba.",
+              "Cambiar a Sennichimae Line Namba → Sakuragawa.",
+              "Caminar al alojamiento GN98 Saiwaicho."
+            ]
+          }
         }
       ]
     }

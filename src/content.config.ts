@@ -52,6 +52,14 @@ const flightJourneySchema = z.object({
   connections: z.array(flightConnectionSchema).optional(),
 });
 
+const transitSchema = z.object({
+  from: z.string().optional(),
+  summary: z.string(),
+  steps: z.array(z.string()).optional(),
+  approximateDuration: z.string().optional(),
+  note: z.string().optional(),
+});
+
 const activitySchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -59,6 +67,7 @@ const activitySchema = z.object({
   links: activityLinksSchema.optional(),
   notes: z.string().optional(),
   plan: z.array(z.string()).optional(),
+  transit: transitSchema.optional(),
   flightJourney: flightJourneySchema.optional(),
   address: z.string().optional(),
   nearestStation: z.string().optional(),
