@@ -856,9 +856,22 @@
           "status": "confirmado",
           "locationQuery": "Hiroshima Station",
           "plan": [
-            "Hacer check-out y traslado a Hiroshima con el equipaje bien resuelto.",
-            "Al llegar, dejar maletas antes de empezar Hiroshima ciudad."
-          ]
+            "Hacer check-out y salir temprano para aprovechar Hiroshima ciudad.",
+            "Priorizar un Shinkansen directo Kyoto → Hiroshima; evitar transbordo en Shin-Osaka si hay opción.",
+            "Dejar maletas en el hotel junto a Hiroshima Station antes de ir al Peace Memorial Park."
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Higashiyama Yasui → Kyoto Station en City Bus 206/86 o taxi; desde Kyoto Station, Tokaido/Sanyo Shinkansen directo → Hiroshima.",
+            "approximateDuration": "~2 h 15–2 h 40 puerta a puerta",
+            "steps": [
+              "Con maletas: salir con margen del hotel hacia Kyoto Station; taxi es la opción más cómoda para cuatro.",
+              "Entrar al Shinkansen en Kyoto.",
+              "Tomar Nozomi/Hikari/Sakura que continúe a Hiroshima sin cambiar en Shin-Osaka.",
+              "En Hiroshima Station caminar al APA Hotel Hiroshima Ekimae Stadiumguchi y dejar equipaje."
+            ]
+          }
         }
       ]
     }
