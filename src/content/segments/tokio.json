@@ -543,7 +543,7 @@
       "date": "2026-10-09",
       "title": "Fuji u Okutama · según visibilidad",
       "status": "plan",
-      "note": "Hueco preferente actual para Fuji por la previsión. Elige Fuji u Okutama el mismo día según visibilidad real; la selección se guarda en el dispositivo.",
+      "note": "Fuji sigue siendo el plan preferente del 9 según visibilidad. Coche ya reservado: recogida 07:00 y devolución 21:00 en Tokyo Station Yaesu South Exit. Si Fuji amanece realmente tapado, usar el toggle a Okutama.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -567,16 +567,28 @@
         },
         {
           "id": "fuji-car",
-          "title": "Alquiler de coche · horario según reserva",
+          "title": "Coche reservado · Tokyo Station Yaesu",
           "category": "transporte",
-          "status": "pendiente",
-          "notes": "El día de Fuji sigue siendo móvil por meteorología. No presentar una recogida/devolución fija hasta cerrar la reserva.",
-          "locationQuery": "Tokyo car rental",
-          "time": "~06:00",
+          "status": "confirmado",
+          "notes": "Honda Fit o similar, automático, 5 plazas, kilometraje ilimitado. Reserva con Alamo; recogida y devolución en la misma oficina. Cancelación con reembolso completo hasta el 6 de octubre a las 23:59 (Europe/Madrid). No guardar el localizador de Booking en el repositorio público.",
+          "locationQuery": "Yaesu-nishi Parking 2-1 Yaesu Chuo-ku Tokyo 104-0028",
+          "time": "07:00",
           "plan": [
-            "Recoger el coche según la reserva definitiva.",
-            "Revisar combustible, peajes y navegación antes de salir de Tokio."
-          ]
+            "Salir del Hotel SUI Ginza Kyobashi sobre las 06:25–06:30 para estar en la oficina antes de la apertura.",
+            "Recogida 07:00 en Yaesu-nishi Parking, junto a Tokyo Station Yaesu South Exit. Teléfono de la oficina: +81 50-1712-2632.",
+            "Durante el papeleo pedir una ETC card: «ETCカードを借りたいです / ETC kādo o karitai desu». No aparece como extra en Booking y está sujeta a disponibilidad.",
+            "Antes de salir: revisar daños con fotos/vídeo, combustible, ETC, navegación y condiciones de devolución.",
+            "Objetivo: estar conduciendo aproximadamente 07:15–07:30. Para volver, usar como referencia Yaesu-nishi Parking; Map Code de la oficina: 647 076*21.",
+            "Devolver antes de las 21:00 con margen, no apurar al cierre."
+          ],
+          "priority": "must",
+          "duration": "07:00–21:00",
+          "address": "Yaesu-nishi Parking, 2-1 Yaesu, Chuo-ku, Tokyo 104-0028",
+          "nearestStation": "Tokyo Station · Yaesu South Exit",
+          "approximatePrice": "53,82 € total",
+          "links": {
+            "officialWebsite": "https://store.nipponrentacar.co.jp/en/b/nrs/info/511504/"
+          }
         },
         {
           "id": "chureito",
@@ -585,7 +597,7 @@
           "status": "plan",
           "priority": "must",
           "locationQuery": "Chureito Pagoda",
-          "time": "~08:00",
+          "time": "~09:15",
           "plan": [
             "Llegar pronto y subir al mirador antes de que se llene.",
             "Hacer fotos y seguir; no gastar aquí media mañana."
@@ -597,7 +609,7 @@
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Fujiyoshida Retro Shopping Street",
-          "time": "~09:30",
+          "time": "~10:30",
           "plan": [
             "Recorrer la calle con vistas al Fuji y hacer las fotos principales.",
             "Parada corta de paseo antes del santuario."
@@ -610,7 +622,7 @@
           "status": "plan",
           "notes": "Parada de goshuin.",
           "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja",
-          "time": "~10:30",
+          "time": "~11:15",
           "plan": [
             "Recorrer la entrada de cedros y el santuario.",
             "Hacer goshuin antes de continuar hacia Oshino."
@@ -622,7 +634,7 @@
           "category": "naturaleza",
           "status": "plan",
           "locationQuery": "Oshino Hakkai",
-          "time": "~12:00",
+          "time": "~12:30",
           "plan": [
             "Pasear por los estanques y el pueblo.",
             "Comer/picar algo si cuadra, pero sin retrasar demasiado Oishi Park."
@@ -635,7 +647,7 @@
           "status": "plan",
           "notes": "Parada de lago / helado.",
           "locationQuery": "Oishi Park Kawaguchiko",
-          "time": "~14:00",
+          "time": "~14:30",
           "plan": [
             "Pasear junto al lago y aprovechar las vistas al Fuji.",
             "Parada tranquila para helado/café antes de seguir."
@@ -663,7 +675,7 @@
           "time": "~17:00",
           "plan": [
             "Parada rápida para la foto si no hay problemas de acceso o señalización.",
-            "Respetar propiedad privada y seguir de vuelta sin bloquear la zona."
+            "No alargar: después hay que iniciar la vuelta a Tokio para devolver el coche con margen antes de las 21:00."
           ]
         }
       ],
