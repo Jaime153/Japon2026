@@ -24,7 +24,13 @@
           "plan": [
             "Recorrer el santuario principal con calma y usarlo como primera parada del sur de Osaka.",
             "Después continuar hacia Namba sin añadir desvíos grandes."
-          ]
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "GN98 Saiwaicho",
+            "summary": "Sakuragawa (S15) → Namba (S16) por Sennichimae Line; caminar a Nankai Namba → Nankai Main Line → Sumiyoshitaisha.",
+            "approximateDuration": "35–45 min"
+          }
         },
         {
           "id": "namba-yasaka",
@@ -35,7 +41,13 @@
           "plan": [
             "Hacer la visita principal y fotos del santuario.",
             "Parada relativamente corta antes de seguir hacia Shinsekai."
-          ]
+          ],
+          "time": "~11:00",
+          "transit": {
+            "from": "Sumiyoshi Taisha",
+            "summary": "Nankai Main Line Sumiyoshitaisha → Namba; desde Nankai Namba caminar a Namba Yasaka Jinja.",
+            "approximateDuration": "20–30 min"
+          }
         },
         {
           "id": "shinsekai",
@@ -46,7 +58,13 @@
           "plan": [
             "Pasear por las calles principales y ver el ambiente del barrio.",
             "Picar algo solo si apetece; Dōtonbori sigue siendo la gran zona de cierre del día."
-          ]
+          ],
+          "time": "~13:00",
+          "transit": {
+            "from": "Namba Yasaka Jinja",
+            "summary": "Caminar a Daikokucho (M21) → Midosuji Line una parada hasta Dobutsuen-mae (M22); salir hacia Shinsekai.",
+            "approximateDuration": "15–20 min"
+          }
         },
         {
           "id": "dotonbori",
@@ -57,7 +75,13 @@
           "plan": [
             "Recorrer el canal y las calles de neones con calma.",
             "Elegir cena según cola y ganas; aquí sí merece la pena dejar margen para improvisar."
-          ]
+          ],
+          "time": "~17:00",
+          "transit": {
+            "from": "Shinsekai",
+            "summary": "Dobutsuen-mae (M22) → Namba (M20) por Midosuji Line; caminar a Dōtonbori.",
+            "approximateDuration": "15–20 min"
+          }
         }
       ]
     },
@@ -75,7 +99,13 @@
           "plan": [
             "Recorrer la zona del castillo y hacer la visita principal.",
             "No apretar demasiado la mañana para llegar a Umeda con energía."
-          ]
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "GN98 Saiwaicho",
+            "summary": "Sakuragawa (S15) → Awaza (S13) por Sennichimae Line; cambio a Chuo Line → Morinomiya (C19); caminar al castillo.",
+            "approximateDuration": "30–40 min"
+          }
         },
         {
           "id": "umeda-sky",
@@ -86,7 +116,13 @@
           "plan": [
             "Subir al mirador si el tiempo/visibilidad acompañan.",
             "Después dejar la tarde abierta para compras o repetir una zona favorita."
-          ]
+          ],
+          "time": "~13:00",
+          "transit": {
+            "from": "Osaka Castle",
+            "summary": "Desde JR Morinomiya/Osakajokoen, Osaka Loop Line → Osaka Station; caminar al Umeda Sky Building.",
+            "approximateDuration": "25–35 min"
+          }
         },
         {
           "id": "osaka-flex",
