@@ -52,7 +52,7 @@
       "date": "2026-10-14",
       "title": "Fushimi Inari · Nishiki · Gion",
       "status": "plan",
-      "note": "Fushimi temprano para evitar la parte más fuerte de las multitudes.",
+      "note": "Fushimi temprano para evitar la parte más fuerte de las multitudes. Después de Nishiki: parada SÍ O SÍ en la tienda de matcha de 2025 (identificación provisional: Baikoan / 梅香庵茶舗) antes de volver a Gion.",
       "activities": [
         {
           "id": "fushimi",
@@ -76,6 +76,26 @@
             "Recorrer el mercado probando cosas pequeñas y mirando tiendas.",
             "No hacer una comida enorme si luego queremos seguir por Gion."
           ]
+        },
+        {
+          "id": "baikoan-matcha-2025",
+          "title": "Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "time": "~14:30",
+          "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
+          "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
+          "notes": "Parada SÍ O SÍ por recuerdo del viaje 2025: pequeña tienda de té/matcha atendida por un señor mayor. La identificación como Baikoan es muy probable por la descripción, pero el itinerario 2025 no guardó el nombre; confirmar por foto/recuerdo si aparece antes del viaje.",
+          "plan": [
+            "Ir después de Nishiki Market antes de volver hacia Gion; es un pequeño desvío que merece la pena porque esta parada tiene prioridad máxima.",
+            "Comprar matcha/té de Uji y dejar que el dueño recomiende variedades, como en 2025.",
+            "No sustituir esta parada por una tienda genérica de matcha: el objetivo es volver a la tienda del señor mayor.",
+            "Si al verla no coincide con el recuerdo, no darla por resuelta: revisar fotos/Maps de 2025 y localizar la tienda correcta."
+          ],
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto"
+          }
         },
         {
           "id": "kenninji",
