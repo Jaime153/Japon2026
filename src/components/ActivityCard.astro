@@ -24,6 +24,7 @@ const flightRouteSummary = activity.flightJourney
 
 const hasExtra = Boolean(
   activity.flightJourney ||
+  activity.transit ||
   activity.plan?.length ||
   activity.notes ||
   activity.address ||
@@ -128,8 +129,25 @@ const hasExtra = Boolean(
         </div>
       )}
 
+      {activity.transit && (
+        <div class="rounded-xl border border-emerald-200 bg-emerald-50/70 p-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <p class="text-xs font-black uppercase tracking-[0.12em] text-emerald-800">Cómo llegar previsto</p>
+            {activity.transit.approximateDuration && <span class="rounded-lg bg-white px-2 py-1 text-[11px] font-bold text-emerald-800">~{activity.transit.approximateDuration}</span>}
+          </div>
+          {activity.transit.from && <p class="mt-1 text-[11px] font-bold text-emerald-700">Desde: {activity.transit.from}</p>}
+          <p class="mt-2 text-sm font-semibold leading-relaxed text-slate-800">{activity.transit.summary}</p>
+          {activity.transit.steps?.length && (
+            <ol class="mt-2 grid gap-1.5 text-sm leading-relaxed text-slate-700">
+              {activity.transit.steps.map((step, index) => <li><strong>{index + 1}.</strong> {step}</li>)}
+            </ol>
+          )}
+          {activity.transit.note && <p class="mt-2 text-xs leading-relaxed text-slate-500">ℹ️ {activity.transit.note}</p>}
+        </div>
+      )}
+
       {activity.plan?.length && (
-        <div class="rounded-xl bg-slate-50 p-3">
+        <div class:list={[activity.transit ? 'mt-3' : '', 'rounded-xl bg-slate-50 p-3']}>
           <p class="text-xs font-black uppercase tracking-[0.12em] text-slate-400">Qué hacer aquí</p>
           <ol class="mt-2 grid gap-1.5 text-sm leading-relaxed text-slate-700">
             {activity.plan.map((step, index) => <li><strong>{index + 1}.</strong> {step}</li>)}
