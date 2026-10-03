@@ -111,7 +111,7 @@
       "date": "2026-10-15",
       "title": "Arashiyama profundo",
       "status": "plan",
-      "note": "Ruta pensada de fuera hacia dentro para evitar rehacer camino.",
+      "note": "Ruta de fuera hacia dentro. Final previsto en Fufu no Yu: las tres chicas juntas en el baño femenino y Jaime en el masculino.",
       "activities": [
         {
           "id": "otagi",
@@ -148,14 +148,24 @@
         },
         {
           "id": "arashiyama-onsen",
-          "title": "Onsen en Arashiyama",
+          "title": "Fufu no Yu · onsen público en Arashiyama",
           "category": "ocio",
-          "status": "opcional",
-          "notes": "Prioridad sobre todo para Lorena, Vilma y Marga; público separado o privado para 4.",
+          "status": "plan",
+          "notes": "Objetivo principal: que Lorena, Vilma y Marga hagan juntas la experiencia de onsen público en el baño femenino. Jaime entra por separado al baño masculino. No hace falta baño privado.",
           "plan": [
-            "Elegir opción pública o privada según lo que prefiera el grupo ese día.",
-            "Reservar este tramo para relajarse; no meter otra visita grande después."
-          ]
+            "Terminar el día de Arashiyama aquí después de Otagi, Adashino y Bamboo Forest.",
+            "Lorena, Vilma y Marga entran juntas al baño público femenino; Jaime usa el masculino.",
+            "Tiene onsen natural interior y rotenburo exterior. No requiere baño privado para cumplir el objetivo del grupo.",
+            "Horario actual 12:00–22:00, última entrada 21:30. Si alguna lleva tatuajes, Fufu no permite la entrada."
+          ],
+          "priority": "must",
+          "time": "~18:00",
+          "locationQuery": "Fufu no Yu Arashiyama Kyoto",
+          "nearestStation": "Hankyu Arashiyama · ~1–2 min andando",
+          "approximatePrice": "¥1.100 adulto entre semana",
+          "links": {
+            "officialWebsite": "https://dormy-hotels.com/spa/fufu/"
+          }
         }
       ]
     },
