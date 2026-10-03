@@ -38,6 +38,7 @@ const hasExtra = Boolean(
   activity.links?.officialWebsite ||
   activity.links?.reservation ||
   activity.links?.weather ||
+  activity.links?.weatherAlt ||
   activity.links?.liveCam
 );
 ---
@@ -153,7 +154,7 @@ const hasExtra = Boolean(
         </dl>
       )}
 
-      {(googleMapsUrl || appleMapsUrl || directionsUrl || tabelogUrl || activity.links?.officialWebsite || activity.links?.reservation || activity.links?.weather || activity.links?.liveCam) && (
+      {(googleMapsUrl || appleMapsUrl || directionsUrl || tabelogUrl || activity.links?.officialWebsite || activity.links?.reservation || activity.links?.weather || activity.links?.weatherAlt || activity.links?.liveCam) && (
         <div class="mt-3 flex flex-wrap gap-2">
           {googleMapsUrl && <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">📍 Google Maps</a>}
           {directionsUrl && <a href={directionsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">🧭 Cómo llegar</a>}
@@ -161,7 +162,8 @@ const hasExtra = Boolean(
           {tabelogUrl && <a href={tabelogUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-orange-50 px-3 py-2 text-sm font-semibold text-orange-800">🍽️ Tabelog</a>}
           {activity.links?.officialWebsite && <a href={activity.links.officialWebsite} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-violet-50 px-3 py-2 text-sm font-semibold text-violet-800">🌐 Web oficial</a>}
           {activity.links?.reservation && <a href={activity.links.reservation} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-amber-50 px-3 py-2 text-sm font-semibold text-amber-900">🎫 Reservar</a>}
-          {activity.links?.weather && <a href={activity.links.weather} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-sky-50 px-3 py-2 text-sm font-semibold text-sky-900">🌤️ Previsión</a>}
+          {activity.links?.weather && <a href={activity.links.weather} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-sky-50 px-3 py-2 text-sm font-semibold text-sky-900">🌤️ Weathernews</a>}
+          {activity.links?.weatherAlt && <a href={activity.links.weatherAlt} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-900">☁️ JMA / Open-Meteo</a>}
           {activity.links?.liveCam && <a href={activity.links.liveCam} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-cyan-50 px-3 py-2 text-sm font-semibold text-cyan-900">📷 Fuji en directo</a>}
         </div>
       )}
