@@ -23,7 +23,13 @@
           "plan": [
             "Volver a Dōtonbori ya sin presión de verlo todo por primera vez.",
             "Centrarse en comer/pasear/repetir lo que más gustó."
-          ]
+          ],
+          "time": "~17:00",
+          "transit": {
+            "from": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
+            "summary": "Hommachi (M18) → Namba (M20) directo por Midosuji Line; caminar a Dōtonbori.",
+            "approximateDuration": "15–20 min"
+          }
         },
         {
           "id": "shinsaibashi",
@@ -34,7 +40,12 @@
           "plan": [
             "Recorrer Shinsaibashi para compras y paseo.",
             "Cerrar cuando apetezca; este primer día de vuelta a Osaka debe ser ligero."
-          ]
+          ],
+          "transit": {
+            "from": "Dōtonbori",
+            "summary": "Ir andando por Shinsaibashi-suji; no hace falta metro.",
+            "approximateDuration": "10–20 min"
+          }
         }
       ]
     },
@@ -53,7 +64,14 @@
           "plan": [
             "Ir a Kobe y recorrer la zona que mejor encaje con la reserva/comida.",
             "Dejar el día centrado en Kobe, sin intentar meter otra ciudad."
-          ]
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "APA Hommachi",
+            "summary": "Hommachi (M18) → Umeda (M16) por Midosuji Line; caminar a JR Osaka → JR Kobe Line Special Rapid → Sannomiya.",
+            "approximateDuration": "45–60 min",
+            "note": "Elegir el restaurante de Kobe-gyū en torno a Sannomiya/Motomachi para no romper la ruta."
+          }
         },
         {
           "id": "kobe-gyu",
@@ -89,7 +107,18 @@
           "plan": [
             "Ir a Katsuo-ji como visita principal de la mañana.",
             "Recorrer el templo de los darumas con calma antes de continuar hacia Minoh."
-          ]
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "APA Hommachi",
+            "summary": "Midosuji Line / Kita-Osaka Kyuko directa Hommachi → Minoh-Kayano; desde allí Hankyu Bus directo → Katsuo-ji.",
+            "approximateDuration": "~60–75 min",
+            "steps": [
+              "Entrar en Hommachi (M18) y tomar un servicio hacia Minoh-Kayano.",
+              "No bajar en Esaka: la línea continúa como Kita-Osaka Kyuko hasta Minoh-Kayano.",
+              "En Minoh-Kayano tomar el Hankyu Bus directo a Katsuo-ji (~20 min)."
+            ]
+          }
         },
         {
           "id": "minoh",
@@ -100,7 +129,14 @@
           "plan": [
             "Pasear por Minoh Park hasta la cascada según fuerzas y tiempo.",
             "Si el día se alarga, priorizar el paseo principal y volver sin apurar."
-          ]
+          ],
+          "time": "~13:00",
+          "transit": {
+            "from": "Katsuo-ji",
+            "summary": "Hankyu Bus de vuelta hacia Minoh-Kayano; desde allí conectar hacia la zona de Minoh Park según el bus/estado del día.",
+            "approximateDuration": "30–45 min",
+            "note": "Si el enlace a Minoh Park se vuelve torpe, taxi corto desde Katsuo-ji/Minoh-Kayano puede ahorrar bastante tiempo."
+          }
         }
       ]
     },
@@ -186,7 +222,13 @@
           "plan": [
             "Salir hacia KIX con margen suficiente para facturación y controles.",
             "No meter ninguna parada intermedia que pueda comprometer el vuelo."
-          ]
+          ],
+          "transit": {
+            "from": "APA Hommachi",
+            "summary": "Hommachi (M18) → Namba (M20) por Midosuji Line; desde Nankai Namba, Airport Express/Rapi:t → Kansai Airport.",
+            "approximateDuration": "~60–75 min",
+            "note": "Para vuelo internacional de las 19:00, salir con mucho margen; revisar el mismo día qué opción Nankai encaja mejor."
+          }
         },
         {
           "id": "return-flight",
