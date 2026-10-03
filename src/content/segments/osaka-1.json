@@ -113,9 +113,24 @@
           "status": "confirmado",
           "locationQuery": "Kyoto Station",
           "plan": [
-            "Salir de Osaka sin prisa pero con equipaje y traslado bien resueltos.",
-            "Llegar a Kyoto, dejar maletas y no meter nada exigente antes de Gion."
-          ]
+            "Salir relativamente temprano de Osaka para aprovechar la tarde completa en Higashiyama.",
+            "Dejar equipaje en RESI STAY Yasaka antes de empezar el paseo de templos.",
+            "Objetivo: estar listos para empezar Kyoto sobre mediodía/primera hora de la tarde."
+          ],
+          "time": "~09:00",
+          "transit": {
+            "from": "GN98 Saiwaicho",
+            "summary": "Sakuragawa → Namba → Umeda/Osaka → Kyoto; desde Kyoto Station, bus 206 hasta Higashiyama Yasui o taxi corto al RESI STAY Yasaka.",
+            "approximateDuration": "~1 h 30–2 h con equipaje",
+            "steps": [
+              "Caminar ~5 min a Sakuragawa (S15).",
+              "Sennichimae Line una parada hasta Namba (S16).",
+              "Cambiar a Midosuji Line hasta Umeda y seguir los carteles a JR Osaka Station.",
+              "JR Kyoto Line Special Rapid Osaka → Kyoto.",
+              "Desde Kyoto Station: City Bus 206 hacia Higashiyama/Gion y bajar en Higashiyama Yasui (el hotel está a ~1 min), o taxi si vamos cargados."
+            ],
+            "note": "Con 4 personas y maletas, taxi GN98 → Osaka Station o Kyoto Station → hotel puede compensar para ahorrar transbordos."
+          }
         },
         {
           "id": "yasaka-evening",
