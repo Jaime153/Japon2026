@@ -552,14 +552,17 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "notes": "Decisión final Fuji/Okutama: mirar previsión y cámara en directo. Si Fuji está tapado, cambiar el toggle a Okutama.",
+          "notes": "Decisión final Fuji/Okutama: comparar Weathernews (referencia japonesa de Alberto) con el modelo JMA vía Open-Meteo y mirar la cámara en directo antes de salir. La visibilidad real manda.",
           "links": {
-            "weather": "https://www.timeanddate.com/weather/@7281819/ext",
+            "weather": "https://weathernews.jp/onebox/tenki/yamanashi/19430/week.html",
+            "weatherAlt": "https://open-meteo.com/en/docs/jma-api?latitude=35.5&longitude=138.75",
             "liveCam": "https://www.yamanashi-kankou.jp/heritage/fujisanwatcher/jp/live/"
           },
           "plan": [
-            "Mirar previsión y cámara en directo antes de salir.",
-            "Si la visibilidad es mala, cambiar el plan del día a Okutama desde el toggle."
+            "La noche anterior y al levantarnos, comparar Weathernews y JMA/Open-Meteo.",
+            "Mirar específicamente nubosidad baja/media, no solo el porcentaje de lluvia.",
+            "Confirmar con la cámara en directo antes de salir.",
+            "Si Fuji está tapado de verdad, cambiar el toggle a Okutama."
           ]
         },
         {
