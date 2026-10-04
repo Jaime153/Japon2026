@@ -10,9 +10,9 @@
   "days": [
     {
       "date": "2026-10-04",
-      "title": "Llegada · Ginza sin forzar",
+      "title": "Llegada · Ginza · sushi de cinta",
       "status": "confirmado",
-      "note": "Primer día suave tras el vuelo.",
+      "note": "Primera tarde suave tras el vuelo. A estas horas no merece la pena perseguir el pase de las 18:00 del reloj de Miyazaki: paseo por Ginza, cena concreta y vuelta pronto para dormir antes del despertador de las 06:45.",
       "activities": [
         {
           "id": "narita-llegada",
@@ -51,19 +51,6 @@
           }
         },
         {
-          "id": "nittele-clock",
-          "title": "Reloj Nittele Ōdokei",
-          "time": "18:00",
-          "category": "ocio",
-          "status": "opcional",
-          "notes": "Show gratuito del reloj diseñado por Hayao Miyazaki; pensado especialmente para Lorena.",
-          "locationQuery": "Nittele Ohdokei Shiodome Tokyo",
-          "plan": [
-            "Intentar llegar con unos minutos de margen para ver el pase de las 18:00.",
-            "Ver el reloj y continuar después hacia Ginza; es una parada corta, no una visita larga."
-          ]
-        },
-        {
           "id": "ginza-paseo",
           "title": "Ginza",
           "category": "barrio",
@@ -71,34 +58,84 @@
           "locationQuery": "Ginza Tokyo",
           "time": "~18:30",
           "plan": [
-            "Pasear por Chuo-dori y las calles cercanas para ver Ginza de noche.",
-            "Entrar solo en alguna tienda que realmente apetezca; hoy prima el paseo y el ambiente.",
-            "Seguir después hacia Tsukiji Hongwanji sin convertir Ginza en una tarde entera de compras."
+            "Salir ligeros del hotel y pasear por Chuo-dori/Ginza sin intentar entrar en todo.",
+            "Ir acercándonos a Marronnier Gate Ginza 2, donde está la cena objetivo.",
+            "Hoy prima aclimatarse, cenar bien y volver pronto."
+          ],
+          "transit": {
+            "from": "Hotel SUI Ginza Kyobashi",
+            "summary": "Ir andando hacia Ginza / Marronnier Gate; no merece la pena usar metro para este tramo.",
+            "approximateDuration": "10–15 min"
+          }
+        },
+        {
+          "id": "kura-sushi-ginza",
+          "title": "Kura Sushi Global Flagship Ginza · sushi de cinta",
+          "time": "~19:15",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Kura Sushi Global Flagship Ginza Marronnier Gate Ginza 2",
+          "address": "Marronnier Gate Ginza 2 · 7F, 3-2-1 Ginza, Chuo-ku, Tokyo",
+          "nearestStation": "Ginza / Yurakucho",
+          "approximatePrice": "Desde ~¥145 por plato + extras",
+          "notes": "Primera opción para esta noche: kaiten-zushi cómodo para los cuatro, cada uno pide lo que quiera. Si la cola es absurda, usar el ramen backup de SORANOIRO.",
+          "links": {
+            "officialWebsite": "https://shop.kurasushi.co.jp/detail/641"
+          },
+          "transit": {
+            "from": "Paseo por Ginza",
+            "summary": "Todo andando hasta Marronnier Gate Ginza 2; subir a la planta 7.",
+            "approximateDuration": "5–15 min según dónde estemos"
+          },
+          "plan": [
+            "Intentar cenar aquí sin convertir la primera noche en una misión.",
+            "Probar nigiri, gunkan, maki y algún plato caliente; pedir poco a poco desde la mesa/cinta.",
+            "Si la espera es demasiado larga, activar SORANOIRO como plan B."
           ]
+        },
+        {
+          "id": "soranoiro-ginza-backup",
+          "title": "SORANOIRO Ginza · ramen backup",
+          "time": "Backup cena",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "SORANOIRO Ginza Main Branch Tokyo",
+          "notes": "Plan B si Kura Sushi tiene una cola que no compensa. No hacer ramen + sushi completos la misma noche.",
+          "plan": [
+            "Usarlo únicamente como alternativa a Kura Sushi.",
+            "Si cenamos Kura, no hace falta venir aquí hoy."
+          ]
+        },
+        {
+          "id": "yurakucho",
+          "title": "Yurakucho · paseo bajo las vías",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Yurakucho Tokyo",
+          "time": "~20:30–21:00",
+          "plan": [
+            "Dar una vuelta por los locales bajo las vías y ver el ambiente nocturno.",
+            "Volver al hotel pronto para dormir bien antes del día Meiji/Harajuku/Shibuya."
+          ],
+          "notes": "Después de Kura, paseo corto si apetece. La cena ya está resuelta, así que aquí no hace falta buscar otro restaurante.",
+          "transit": {
+            "from": "Kura Sushi Ginza",
+            "summary": "Yurakucho queda prácticamente al lado de Marronnier Gate; ir andando.",
+            "approximateDuration": "5–10 min"
+          }
         },
         {
           "id": "tsukiji-hongwanji",
           "title": "Tsukiji Hongwanji",
           "category": "templo",
-          "status": "plan",
-          "notes": "Verlo iluminado al caer la noche.",
+          "status": "opcional",
+          "notes": "Solo si después de cenar seguís con energía. No es una prioridad esta noche.",
           "locationQuery": "Tsukiji Hongwanji Tokyo",
-          "time": "~19:30",
+          "time": "~20:45",
           "plan": [
-            "Hacer una parada corta para verlo iluminado y echar un vistazo al exterior.",
-            "Fotos y paseo breve; después continuar a Yurakucho para cenar."
-          ]
-        },
-        {
-          "id": "yurakucho",
-          "title": "Cena por Yurakucho",
-          "category": "comida",
-          "status": "plan",
-          "locationQuery": "Yurakucho Tokyo",
-          "time": "~20:15",
-          "plan": [
-            "Recorrer la zona de locales bajo las vías y elegir sitio según ambiente y cola.",
-            "Cena tranquila de primera noche; después vuelta al hotel."
+            "Ir únicamente si apetece un paseo más y el cansancio del viaje lo permite.",
+            "Ver el exterior iluminado y volver; no convertirlo en un desvío obligatorio."
           ]
         }
       ]
