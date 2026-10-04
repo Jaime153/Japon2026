@@ -107,19 +107,30 @@
       "date": "2026-10-05",
       "title": "Meiji · Harajuku · Shibuya",
       "status": "plan",
-      "note": "Clásicos del oeste para las tres que vienen por primera vez.",
+      "note": "Día de clásicos del oeste con entrada confirmada para Shibuya Sky a las 12:40. Empezar temprano para dar tiempo real a Meiji Jingu y Harajuku sin correr.",
       "activities": [
         {
-          "id": "meiji-jingu",
-          "title": "Meiji Jingu",
-          "category": "templo",
-          "status": "plan",
-          "locationQuery": "Meiji Jingu Tokyo",
-          "time": "~09:00",
+          "id": "wake-up-1005",
+          "title": "Despertarse · prepararse · desayuno rápido",
+          "time": "06:45",
+          "category": "otro",
+          "status": "confirmado",
+          "priority": "must",
+          "notes": "Hora objetivo para levantarse. Dejar mochila lista esta noche para salir sin prisas.",
           "plan": [
-            "Entrar por el gran torii y hacer el paseo principal hasta el santuario.",
-            "Ver el recinto con calma y, si apetece, hacer goshuin antes de continuar a Harajuku."
-          ],
+            "Levantarse a las 06:45.",
+            "Ducha, agua y desayuno rápido cerca del hotel / konbini.",
+            "Tener batería externa, Suica y entradas listas antes de salir."
+          ]
+        },
+        {
+          "id": "leave-hotel-1005",
+          "title": "Salir del hotel hacia Meiji Jingu",
+          "time": "07:30",
+          "category": "transporte",
+          "status": "confirmado",
+          "priority": "must",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
           "transit": {
             "from": "Hotel SUI Ginza Kyobashi",
             "summary": "Kyobashi (G10) → Omote-sando (G02) por Ginza Line; cambio a Chiyoda Line → Meiji-jingumae <Harajuku> (C03).",
@@ -130,7 +141,26 @@
               "Cambiar a Chiyoda Line una parada hasta Meiji-jingumae <Harajuku>.",
               "Entrar a Meiji Jingu desde la zona Harajuku."
             ]
-          }
+          },
+          "plan": [
+            "Salir del hotel a las 07:30 como objetivo.",
+            "Si vamos 10–15 min tarde todavía hay margen; no recortar Takeshita por eso."
+          ]
+        },
+        {
+          "id": "meiji-jingu",
+          "title": "Meiji Jingu",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Meiji Jingu Tokyo",
+          "time": "~08:10–09:45",
+          "plan": [
+            "Entrar por el gran torii y hacer el paseo principal hasta el santuario.",
+            "Ver el recinto con calma y, si apetece, hacer goshuin.",
+            "Objetivo: salir hacia Harajuku sobre las 09:45–10:00."
+          ],
+          "priority": "must",
+          "notes": "Meiji Jingu abre muy temprano; aprovechar la mañana antes de que Harajuku esté a pleno rendimiento."
         },
         {
           "id": "takeshita",
@@ -138,11 +168,18 @@
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Takeshita Street Tokyo",
-          "time": "~11:00",
+          "time": "~10:00–11:35",
           "plan": [
-            "Recorrer Takeshita Street sin intentar entrar en todo.",
-            "Usar Harajuku como tramo de paseo/compras y seguir luego hacia Shibuya."
-          ]
+            "Recorrer Takeshita Street y Harajuku con tiempo para entrar en varias tiendas.",
+            "No intentar verlo absolutamente todo; a las 11:35 empezar a movernos hacia Shibuya.",
+            "Si encontramos algo que merezca mucho la pena, recordar que después de Shibuya Sky queda toda la tarde en Shibuya."
+          ],
+          "notes": "Reservar alrededor de 1 h 30 min para pasear y entrar en tiendas; no reducirlo a una parada rápida.",
+          "transit": {
+            "from": "Meiji Jingu",
+            "summary": "Salir hacia Harajuku y caminar hasta Takeshita-dori.",
+            "approximateDuration": "5–10 min"
+          }
         },
         {
           "id": "hachiko",
@@ -150,11 +187,16 @@
           "category": "otro",
           "status": "plan",
           "locationQuery": "Hachiko Square Tokyo",
-          "time": "~13:30",
+          "time": "~12:00",
           "plan": [
-            "Parada rápida para Hachiko y fotos.",
-            "Desde aquí enlazar directamente con el Scramble Crossing."
-          ]
+            "Parada corta para foto con Hachiko.",
+            "No entretenerse demasiado: tenemos entrada fija para Shibuya Sky."
+          ],
+          "transit": {
+            "from": "Harajuku",
+            "summary": "JR Yamanote Line Harajuku → Shibuya, una parada. También se puede caminar si vamos sobrados, pero con la entrada de las 12:40 mejor tren.",
+            "approximateDuration": "10–15 min total"
+          }
         },
         {
           "id": "shibuya-crossing",
@@ -162,29 +204,31 @@
           "category": "otro",
           "status": "plan",
           "locationQuery": "Shibuya Scramble Crossing Tokyo",
-          "time": "~13:45",
+          "time": "~12:10",
           "plan": [
-            "Cruzar una o dos veces y verlo también desde algún punto elevado cercano si cuadra.",
-            "Dejar margen para callejear por Shibuya antes del siguiente plan."
+            "Cruzar una vez y hacer fotos rápidas.",
+            "A las 12:20–12:25 estar ya entrando en Shibuya Scramble Square para subir sin estrés."
           ]
         },
         {
           "id": "shibuya-sky",
           "title": "Shibuya Sky",
           "category": "mirador",
-          "status": "pendiente",
-          "reservationRequired": true,
-          "notes": "Solo si hay entrada/slot que encaje.",
+          "status": "confirmado",
+          "reservationRequired": false,
+          "notes": "Entrada CONFIRMADA para 4 adultos el 5 de octubre a las 12:40. No guardar el localizador de la reserva en el repositorio público.",
           "locationQuery": "Shibuya Sky Tokyo",
-          "time": "~17:30",
+          "time": "12:40",
           "plan": [
-            "Solo hacerlo si tenemos entrada y slot que encaje.",
-            "Subir con tiempo suficiente para disfrutar el mirador sin condicionar todo el día."
+            "Estar en Shibuya Scramble Square sobre las 12:20–12:25.",
+            "Subir con la entrada de las 12:40 y hacer la visita sin prisas.",
+            "Al salir, comer y dedicar la tarde a Shibuya."
           ],
           "links": {
-            "officialWebsite": "https://www.shibuya-scramble-square.com/sky/",
-            "reservation": "https://www.shibuya-scramble-square.com/sky/ticket/"
-          }
+            "officialWebsite": "https://www.shibuya-scramble-square.com/sky/"
+          },
+          "priority": "must",
+          "duration": "Entrada 12:40 · reservar ~60–90 min"
         },
         {
           "id": "nonbei-yokocho",
@@ -192,10 +236,10 @@
           "category": "comida",
           "status": "opcional",
           "locationQuery": "Shibuya Nonbei Yokocho Tokyo",
-          "time": "~19:30",
+          "time": "~19:00",
           "plan": [
-            "Dar una vuelta por el callejón y valorar una bebida o algo de comer si apetece.",
-            "Es opcional: si el grupo está cansado, se puede cortar el día aquí."
+            "Después de comer y pasar la tarde por Shibuya, dar una vuelta por Nonbei Yokocho si apetece.",
+            "Es opcional: si estáis cansados del primer día completo, cenar cerca y volver al hotel."
           ]
         }
       ]
