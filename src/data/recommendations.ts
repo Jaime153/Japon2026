@@ -24,6 +24,49 @@ export interface Recommendation {
 
 export const RECOMMENDATIONS: Recommendation[] = [
   {
+    id: 'tonkatsu-juuroku',
+    title: 'Tonkatsu Juuroku',
+    area: 'Tawaramachi / Asakusa · Tokio',
+    category: 'comida',
+    scope: '2026',
+    priority: 'try',
+    source: 'Alberto recomendó tonkatsu · local elegido por encaje de ruta + Tabelog',
+    summary: 'Tonkatsu muy bien valorado junto a Tawaramachi. No es un restaurante nombrado por Alberto: se usa para materializar su recomendación de probar tonkatsu sin desviar el día de Asakusa.',
+    fit2026: 'Integrado como comida del 6 de octubre después del Shichifukujin y antes de Kappabashi.',
+    notes: [
+      'Martes: 11:30–14:30 y 18:00–20:30.',
+      'No acepta reservas.',
+      'Si hay cola que pone en riesgo Skytree 16:00, se sacrifica antes que el slot del mirador.',
+    ],
+    query: 'Tonkatsu Juuroku Asakusa Tokyo',
+    links: [
+      { label: 'Tabelog', url: 'https://tabelog.com/en/tokyo/A1311/A131102/13276330/', kind: 'tabelog' },
+      { label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=Tonkatsu%20Juuroku%20Asakusa%20Tokyo', kind: 'maps' },
+    ],
+  },
+  {
+    id: 'yakiniku-king-asakusa',
+    title: 'Yakiniku King Asakusa ROX',
+    area: 'Asakusa · Tokio',
+    category: 'comida',
+    scope: '2026',
+    priority: 'must',
+    source: 'Recomendación/apunte guardado del planning de Japón 2026',
+    summary: 'Yakiniku all-you-can-eat (tabehodai), con opción de nomihodai. Buen cambio después del ramen de la primera noche.',
+    fit2026: 'Cena objetivo del 6 de octubre después de Tokyo Skytree.',
+    notes: [
+      'Horario publicado: 11:00–23:00; última entrada 22:00.',
+      'Cursos actuales desde ¥3.498; King Course ¥4.158; Premium ¥5.368.',
+      'ROX-2G 4F, Asakusa.',
+    ],
+    query: 'Yakiniku King Asakusa ROX Tokyo',
+    links: [
+      { label: 'Web oficial', url: 'https://www.yakiniku-king.jp/shop/2312/', kind: 'official' },
+      { label: 'Tabelog', url: 'https://tabelog.com/tokyo/A1311/A131102/13271497/', kind: 'tabelog' },
+      { label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=Yakiniku%20King%20Asakusa%20ROX%20Tokyo', kind: 'maps' },
+    ],
+  },
+  {
     id: 'baikoan-matcha-2025',
     title: 'Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)',
     area: 'Shimogyo · Kyoto',
