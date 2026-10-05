@@ -118,7 +118,8 @@
               "No bajar en Esaka: la línea continúa como Kita-Osaka Kyuko hasta Minoh-Kayano.",
               "En Minoh-Kayano tomar el Hankyu Bus directo a Katsuo-ji (~20 min)."
             ]
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "minoh",
