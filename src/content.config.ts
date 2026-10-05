@@ -75,6 +75,7 @@ const activitySchema = z.object({
   approximatePrice: z.string().optional(),
   reservationRequired: z.boolean().optional(),
   goshuin: z.boolean().optional(),
+  skipped: z.boolean().optional(),
   category: categorySchema,
   status: statusSchema.default('plan'),
   priority: z.enum(['must','nice']).optional(),
