@@ -142,9 +142,9 @@
     },
     {
       "date": "2026-10-05",
-      "title": "Meiji · Harajuku · Shibuya",
-      "status": "plan",
-      "note": "Día de clásicos del oeste con entrada confirmada para Shibuya Sky a las 12:40. Empezar temprano para dar tiempo real a Meiji Jingu y Harajuku sin correr.",
+      "title": "Meiji · Harajuku · Shibuya · Ginza",
+      "status": "confirmado",
+      "note": "Día ya realizado. Resumen real añadido: comida en Sushiro por Shibuya, paseo por la zona, vuelta a Ginza para compras y cena de FamilyMart. Se conserva el planning anterior como referencia de la ruta del día.",
       "activities": [
         {
           "id": "wake-up-1005",
@@ -268,15 +268,46 @@
           "duration": "Entrada 12:40 · reservar ~60–90 min"
         },
         {
-          "id": "nonbei-yokocho",
-          "title": "Shibuya Nonbei Yokocho",
+          "id": "sushiro-shibuya-actual",
+          "title": "Sushiro · Shibuya",
           "category": "comida",
-          "status": "opcional",
-          "locationQuery": "Shibuya Nonbei Yokocho Tokyo",
-          "time": "~19:00",
+          "status": "confirmado",
+          "locationQuery": "Sushiro Shibuya Tokyo",
+          "notes": "Comida real del 5 de octubre. Sucursal exacta no fijada en el repositorio.",
           "plan": [
-            "Después de comer y pasar la tarde por Shibuya, dar una vuelta por Nonbei Yokocho si apetece.",
-            "Es opcional: si estáis cansados del primer día completo, cenar cerca y volver al hotel."
+            "Comimos sushi en Sushiro después del bloque principal de Shibuya."
+          ]
+        },
+        {
+          "id": "shibuya-walk-actual",
+          "title": "Vuelta por Shibuya",
+          "category": "barrio",
+          "status": "confirmado",
+          "locationQuery": "Shibuya Tokyo",
+          "notes": "Paseo real del 5 de octubre después de comer.",
+          "plan": [
+            "Paseo y tiempo libre por Shibuya sin una parada concreta adicional."
+          ]
+        },
+        {
+          "id": "ginza-shopping-actual",
+          "title": "Compras por Ginza",
+          "category": "compras",
+          "status": "confirmado",
+          "locationQuery": "Ginza Tokyo",
+          "notes": "Volvimos a Ginza y estuvimos de compras.",
+          "plan": [
+            "Compras por Ginza al final de la tarde."
+          ]
+        },
+        {
+          "id": "familymart-dinner-actual",
+          "title": "Cena · FamilyMart",
+          "category": "comida",
+          "status": "confirmado",
+          "notes": "Cena real del 5 de octubre: FamilyMart.",
+          "plan": [
+            "Cena sencilla de konbini al volver."
           ]
         }
       ]
@@ -285,7 +316,7 @@
       "date": "2026-10-06",
       "title": "Asakusa · Shichifukujin · Kappabashi · Skytree",
       "status": "plan",
-      "note": "Día reorganizado para empezar antes, hacer los goshuin desde las 09:00, comer algo que encaja con las recomendaciones de Alberto y llegar a Skytree con objetivo 16:00 para ver día → atardecer → noche.",
+      "note": "Día reorganizado para empezar antes, hacer los goshuin desde las 09:00, comer bien, Kappabashi y llegar a Skytree con objetivo 16:00. Cattlea queda completamente flexible: solo si pilla bien por la mañana o aparece un hueco cómodo por la tarde.",
       "activities": [
         {
           "id": "wake-up-1006",
@@ -311,7 +342,8 @@
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
           "plan": [
             "Salir sobre las 07:05.",
-            "Si vamos bien de tiempo, pasar por Cattlea; si no, ir directos a Asakusa."
+            "Ir directos a Asakusa si Cattlea no encaja natural; no hace falta forzarlo.",
+            "Cattlea queda vivo como opcional para otro hueco del día."
           ]
         },
         {
@@ -319,17 +351,18 @@
           "title": "Cattlea · 元祖カレーパン",
           "category": "comida",
           "status": "opcional",
-          "notes": "Parada opcional. Queremos intentar el kare-pan original, pero mañana mandan los goshuin y Skytree; si vamos tarde o cansados, se salta sin problema.",
+          "notes": "Parada totalmente flexible. Hacerla solo si pilla bien de camino o aparece un hueco real por la tarde. No sacrificar Shichifukujin, Kappabashi ni el slot de Skytree por Cattlea.",
           "locationQuery": "Cattlea Morishita Tokyo",
           "nearestStation": "Morishita",
           "approximatePrice": "< ¥1.000",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1312/A131201/13002996/"
           },
-          "time": "~07:35",
+          "time": "Opcional · mañana / hueco de tarde",
           "plan": [
-            "Entrar solo si el desvío sigue encajando bien.",
-            "Comprar rápido el kare-pan y continuar; no sentarse ni convertirlo en desayuno largo."
+            "Por la mañana: pasar solo si encaja sin retrasar la llegada a Sensō-ji / goshuin.",
+            "Si no, dejarla abierta para más tarde únicamente si aparece un hueco cómodo.",
+            "No hacer un desvío forzado ni comprometer la salida de Kappabashi hacia Skytree."
           ],
           "transit": {
             "from": "Hotel SUI Ginza Kyobashi",
