@@ -24,6 +24,47 @@ export interface Recommendation {
 
 export const RECOMMENDATIONS: Recommendation[] = [
   {
+    id: 'lorena-aun-craft-antique',
+    title: '阿吽 AUN Craft & Antique',
+    area: 'Sendagaya / Kitasando · Tokio',
+    category: 'compras',
+    scope: '2026',
+    priority: 'must',
+    source: 'Lista viva de Google Maps de Lorena · añadido recientemente',
+    summary: 'Tienda nueva de artesanía japonesa, antigüedades y regalos abierta en abril de 2026. Es la incorporación nueva detectada al comparar la lista TOKYO 2026 actual (26 sitios) con la captura anterior de 25.',
+    fit2026: 'Integrada el 7 de octubre entre Menya Musashi y ASICS Harajuku; se visita antes de ASICS porque cierra antes.',
+    notes: [
+      'Dirección: 2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku.',
+      'Horario publicado actualmente: 11:30–18:00.',
+      'Google Maps muestra valoración 5,0, aunque todavía con pocas reseñas porque abrió en 2026.',
+    ],
+    query: 'AUN Craft Antique Sendagaya Tokyo',
+    links: [
+      { label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=AUN%20Craft%20Antique%20Sendagaya%20Tokyo', kind: 'maps' },
+    ],
+  },
+  {
+    id: 'lorena-tobichi-tokyo',
+    title: 'TOBICHI Tokyo',
+    area: 'Kanda Nishikicho / Jimbocho · Tokio',
+    category: 'compras',
+    scope: '2026',
+    priority: 'try',
+    source: 'Lista viva de Google Maps de Lorena',
+    summary: 'Tienda, galería y espacio de eventos de Hobonichi. Tiene Hobonichi Techo, accesorios, colaboraciones y un rincón de productos de MOTHER.',
+    fit2026: 'Integrado como parada opcional el 7 de octubre entre Akihabara y Takadanobaba.',
+    notes: [
+      'Dirección: Hobonichi Kanda Building 1F, 3-18 Kanda Nishikicho.',
+      'Horario habitual: 11:00–19:00, con cierres irregulares.',
+      'Ya estaba en la lista anterior de Lorena, pero había quedado fuera de la web.',
+    ],
+    query: 'TOBICHI Tokyo Kanda Nishikicho',
+    links: [
+      { label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=TOBICHI%20Tokyo%20Kanda%20Nishikicho', kind: 'maps' },
+      { label: 'Web oficial', url: 'https://www.1101.com/tobichi/tokyo/', kind: 'official' },
+    ],
+  },
+  {
     id: 'yakiniku-miyabi-roppongi',
     title: 'Yakiniku Miyabi Roppongi',
     area: 'Roppongi / Tokyo Tower · Tokio',
