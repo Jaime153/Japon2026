@@ -384,7 +384,9 @@
           "locationQuery": "Senso-ji Tokyo",
           "time": "~08:30",
           "plan": [
-            "Llegar antes de que empiece la recepción de goshuin para ver Kaminarimon, Nakamise y el templo con algo más de calma.",
+            "Entrar por Kaminarimon y recorrer Nakamise hasta Hōzōmon; Hōzōmon está en la lista de Lorena y queda integrado explícitamente.",
+            "Ver Sensō-ji con calma antes de que empiece la recepción de goshuin.",
+            "El Jardín Denbō-in también está en la lista de Lorena, pero el 6 de octubre no está abierto al público: la apertura especial de 2026 es del 30 de octubre al 3 de noviembre.",
             "A las 09:00 estar ya preparados para empezar el Shichifukujin."
           ],
           "transit": {
@@ -593,9 +595,9 @@
     },
     {
       "date": "2026-10-07",
-      "title": "Ueno · Akihabara · Takadanobaba · ASICS · Shinjuku",
+      "title": "Ueno · Akihabara · TOBICHI · AUN · ASICS · Shinjuku",
       "status": "plan",
-      "note": "Se recupera ASICS FLAGSHIP HARAJUKU, que se nos pasó el día 5, y Hanazono Shrine de la lista de Lorena. ASICS manda por horario: cierra a las 19:00.",
+      "note": "Lista de Lorena revisada en vivo: AUN Craft & Antique es la nueva incorporación de Tokio; TOBICHI ya estaba en su lista pero no estaba reflejado en la web. AUN se protege antes de ASICS porque cierra a las 18:00.",
       "activities": [
         {
           "id": "ueno-park",
@@ -626,7 +628,7 @@
           "status": "plan",
           "notes": "Anime, electrónica y Yodobashi.",
           "locationQuery": "Akihabara Tokyo",
-          "time": "~11:30",
+          "time": "~11:15–13:45",
           "plan": [
             "Recorrer las calles principales de anime/electrónica y entrar en tiendas concretas que interesen.",
             "Dejar margen para Yodobashi y compras sin fijar cada tienda por adelantado."
@@ -643,6 +645,22 @@
           }
         },
         {
+          "id": "tobichi-tokyo-lorena",
+          "title": "TOBICHI Tokyo · lista de Lorena",
+          "time": "~14:00",
+          "category": "compras",
+          "status": "opcional",
+          "locationQuery": "TOBICHI Tokyo Kanda Nishikicho",
+          "address": "3-18 Kanda Nishikicho, Chiyoda-ku, Tokyo 101-0054 · Hobonichi Kanda Building 1F",
+          "nearestStation": "Jimbocho / Takebashi",
+          "notes": "Ya estaba en la lista de Lorena y se nos había quedado fuera de la web. Tienda/galería de Hobonichi: agendas, accesorios, colaboraciones y artículos de MOTHER. Horario habitual 11:00–19:00.",
+          "plan": [
+            "Entrar solo si Akihabara no se ha alargado demasiado.",
+            "Merece especialmente la pena si a Lorena le interesan Hobonichi, papelería o MOTHER.",
+            "Si hay que recortar algo para proteger AUN + ASICS, TOBICHI cae primero."
+          ]
+        },
+        {
           "id": "menya-musashi",
           "title": "Menya Musashi Takatora",
           "category": "comida",
@@ -655,11 +673,11 @@
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
           },
-          "time": "~16:00",
+          "time": "~15:30",
           "plan": [
             "Ir a por el tsukemen recomendado por Alberto.",
-            "Comer sin meter otra parada gastronómica grande inmediatamente después.",
-            "Salir hacia Harajuku sobre las 16:40–16:50 para llegar a ASICS antes de las 18:00."
+            "Comer sin alargar sobremesa.",
+            "Salir hacia Sendagaya/Harajuku sobre las 16:10–16:20."
           ],
           "transit": {
             "from": "Akihabara",
@@ -673,9 +691,26 @@
           }
         },
         {
+          "id": "aun-craft-antique-lorena",
+          "title": "阿吽 AUN Craft & Antique · nuevo en la lista de Lorena",
+          "time": "~16:40–17:15",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
+          "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
+          "nearestStation": "Kitasando / Sendagaya",
+          "notes": "NUEVA incorporación detectada al volver a leer la lista viva de Lorena. Abrió en abril de 2026 y vende artesanía japonesa y antigüedades/recuerdos. Horario publicado actualmente: 11:30–18:00.",
+          "plan": [
+            "Entrar antes que ASICS porque AUN cierra antes.",
+            "Mirar artesanía japonesa y recuerdos menos genéricos que las tiendas turísticas.",
+            "No perder demasiado tiempo: ASICS sigue pendiente y cierra a las 19:00."
+          ]
+        },
+        {
           "id": "asics-harajuku",
           "title": "ASICS FLAGSHIP HARAJUKU",
-          "time": "~17:10–18:00",
+          "time": "~17:25–18:15",
           "category": "compras",
           "status": "plan",
           "priority": "must",
@@ -687,19 +722,19 @@
             "officialWebsite": "https://www.asics.com/jp/ja-jp/mk/store/asics-flagship-harajuku"
           },
           "transit": {
-            "from": "Menya Musashi Takatora · Takadanobaba",
-            "summary": "JR Yamanote Line Takadanobaba → Harajuku; desde la estación son ~5 min andando.",
-            "approximateDuration": "20–25 min"
+            "from": "AUN Craft & Antique · Sendagaya/Kitasando",
+            "summary": "Moverse hacia Harajuku/Jingumae; es el mismo bloque de Shibuya norte. Andando o taxi corto según cansancio.",
+            "approximateDuration": "~10–20 min"
           },
           "plan": [
-            "Entrar directamente al flagship y mirar zapatillas/ropa sin perder tiempo en Takeshita otra vez.",
-            "Objetivo: salir antes de las 18:00 para seguir a Shinjuku."
+            "Entrar directamente al flagship y mirar zapatillas/ropa sin repetir Takeshita.",
+            "Objetivo: salir sobre las 18:15; la tienda cierra a las 19:00."
           ]
         },
         {
           "id": "hanazono-shrine-lorena",
           "title": "Hanazono Shrine · lista de Lorena",
-          "time": "~18:30",
+          "time": "~18:45",
           "category": "templo",
           "status": "opcional",
           "locationQuery": "Hanazono Shrine Shinjuku Tokyo",
@@ -720,7 +755,7 @@
           "category": "barrio",
           "status": "opcional",
           "locationQuery": "Godzilla Head Shinjuku",
-          "time": "~19:00",
+          "time": "~19:15",
           "plan": [
             "Pasear por Kabukicho, ver Godzilla Head y el ambiente nocturno.",
             "Mantenerlo como paseo, no hace falta fijar local concreto."
@@ -738,7 +773,7 @@
           "status": "opcional",
           "notes": "Pantalla 3D junto a Shinjuku; encaja con Kabukichō/Omoide Yokocho.",
           "locationQuery": "Cross Shinjuku Vision",
-          "time": "~19:45",
+          "time": "~19:50",
           "plan": [
             "Ver la pantalla 3D aprovechando que estamos ya en Shinjuku.",
             "Parada corta antes de cerrar el día."
@@ -755,7 +790,7 @@
           "category": "comida",
           "status": "opcional",
           "locationQuery": "Omoide Yokocho",
-          "time": "~20:15",
+          "time": "~20:20",
           "plan": [
             "Pasear por los callejones y valorar picar algo si hay hueco.",
             "Si está demasiado lleno, seguir a Kabukicho sin perder tiempo esperando."
