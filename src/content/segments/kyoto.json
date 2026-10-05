@@ -29,7 +29,8 @@
           "plan": [
             "Entrar por el gran Sanmon y ver el complejo principal.",
             "No alargar demasiado los jardines si vamos justos: este día tiene una ruta larga por Higashiyama."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "shorenin",
@@ -47,7 +48,8 @@
           "plan": [
             "Entrar si vamos bien de hora; es un templo más tranquilo que los grandes iconos.",
             "Si la llegada desde Osaka se retrasa, este es el primero que se puede sacrificar."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "yasaka",
@@ -65,7 +67,8 @@
             "from": "Shōren-in / Chion-in",
             "summary": "Bajar andando por Higashiyama hasta Yasaka Shrine.",
             "approximateDuration": "10–15 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "yasaka-pagoda",
@@ -84,7 +87,8 @@
           "plan": [
             "Hacer la foto/paseo de la pagoda y seguir hacia Ninenzaka y Sannenzaka.",
             "No hace falta convertirlo en una visita larga; el objetivo es recorrer el eje histórico."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "ninenzaka-sannenzaka",
@@ -120,7 +124,8 @@
           "plan": [
             "Entrar aunque vayamos algo cansados: es uno de los templos clave de Kyoto.",
             "Después volver bajando hacia Gion con calma."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "gion",
@@ -186,7 +191,8 @@
               "Tomar Keihan Main Line hacia el sur; evitar los Limited Express que no paran en Fushimi-Inari.",
               "Bajar en Fushimi-Inari y caminar ~5 min al santuario."
             ]
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "tofukuji",
@@ -204,7 +210,8 @@
           "plan": [
             "Ver el eje principal, Tsūtenkyō y los jardines sin recrearnos demasiado.",
             "Desde aquí seguimos a pie por los templos secundarios de la zona."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "sennyuji",
@@ -222,7 +229,8 @@
           "plan": [
             "Entrar si llevamos buen ritmo.",
             "Si Fushimi o Tōfuku-ji se alargan, saltarlo antes que perder Sanjūsangendō, Nishiki o la tienda de matcha."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "imakumano-kannonji",
@@ -240,7 +248,8 @@
           "plan": [
             "Entrar solo si el ritmo del grupo sigue bien.",
             "Es un extra de 2025, no una prioridad por encima de los grandes templos."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "sanjusangendo",
@@ -259,7 +268,8 @@
           "plan": [
             "Entrar al pabellón principal y ver las 1.001 estatuas.",
             "Mantenerlo aunque haya que recortar Sennyū-ji o Imakumano."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "toji",
@@ -278,7 +288,8 @@
           "plan": [
             "Ver la pagoda y el recinto principal.",
             "No alargar porque Nishiki y Baikoan tienen horario comercial."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "nishiki",
@@ -339,7 +350,8 @@
             "from": "Baikoan",
             "summary": "Volver hacia Gion en taxi o transporte urbano; con 4 personas el taxi puede compensar.",
             "approximateDuration": "15–25 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "gion-tanto",
@@ -388,7 +400,8 @@
               "Cambiar a Hankyu Arashiyama Line hasta Arashiyama.",
               "Para no perder la mañana, desde Arashiyama subir a Otagi en taxi/bus y luego bajar andando durante el día."
             ]
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "adashino",
@@ -405,7 +418,8 @@
             "from": "Otagi Nenbutsuji",
             "summary": "Bajar andando por Saga-Toriimoto hasta Adashino Nenbutsuji.",
             "approximateDuration": "15–20 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "bamboo",
@@ -480,7 +494,8 @@
               "Kintetsu Kyoto/Nara Line Express hasta Kintetsu-Nara.",
               "Caminar ~5–10 min a Kōfuku-ji."
             ]
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "haru-nara",
@@ -541,7 +556,8 @@
             "from": "Nara Park",
             "summary": "Continuar a pie por el parque hasta Tōdai-ji.",
             "approximateDuration": "15–20 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "kasuga",
@@ -558,7 +574,8 @@
             "from": "Tōdai-ji",
             "summary": "Atravesar Nara Park a pie hacia Kasuga Taisha.",
             "approximateDuration": "25–35 min"
-          }
+          },
+          "goshuin": true
         }
       ]
     },
@@ -584,7 +601,8 @@
             "summary": "Caminar a la parada Gion → Kyoto City Bus 12 directo hacia Kinkakuji Temple → bajar en Kinkakuji-michi.",
             "approximateDuration": "~45–60 min según tráfico",
             "note": "Bus 12 es directo desde Gion. Si Kyoto está muy cargado de tráfico, taxi para 4 puede ahorrar bastante tiempo."
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "ryoanji",
@@ -601,7 +619,8 @@
             "from": "Kinkaku-ji",
             "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
             "approximateDuration": "10–15 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "ninnaji",
@@ -618,7 +637,8 @@
             "from": "Ryōan-ji",
             "summary": "Kyoto City Bus 59 → Omuro Ninnaji.",
             "approximateDuration": "10–15 min"
-          }
+          },
+          "goshuin": true
         }
       ],
       "note": "Ruta noroeste igual que 2025, pero ya con transporte indicado: Bus 12 desde Gion a Kinkaku-ji y Bus 59 para encadenar Ryōan-ji y Ninna-ji."
@@ -651,7 +671,8 @@
           "plan": [
             "Entrar a primera hora y hacer el recorrido principal.",
             "No alargar: este día tiene la salida de Vilma y Marga como ancla."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "philosophers-path",
