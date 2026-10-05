@@ -50,13 +50,13 @@ export const RECOMMENDATIONS: Recommendation[] = [
     category: 'compras',
     scope: '2026',
     priority: 'try',
-    source: 'Lista viva de Google Maps de Lorena',
+    source: 'Lista viva de Google Maps de Lorena · añadido hoy',
     summary: 'Tienda, galería y espacio de eventos de Hobonichi. Tiene Hobonichi Techo, accesorios, colaboraciones y un rincón de productos de MOTHER.',
     fit2026: 'Integrado como parada opcional el 7 de octubre entre Akihabara y Takadanobaba.',
     notes: [
       'Dirección: Hobonichi Kanda Building 1F, 3-18 Kanda Nishikicho.',
       'Horario habitual: 11:00–19:00, con cierres irregulares.',
-      'Ya estaba en la lista anterior de Lorena, pero había quedado fuera de la web.',
+      'Lorena lo añadió hoy a la lista compartida TOKYO 2026; no era una omisión previa de la web.',
     ],
     query: 'TOBICHI Tokyo Kanda Nishikicho',
     links: [
