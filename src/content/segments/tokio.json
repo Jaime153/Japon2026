@@ -136,7 +136,8 @@
           "plan": [
             "Ir únicamente si apetece un paseo más y el cansancio del viaje lo permite.",
             "Ver el exterior iluminado y volver; no convertirlo en un desvío obligatorio."
-          ]
+          ],
+          "goshuin": false
         }
       ]
     },
@@ -197,7 +198,8 @@
             "Objetivo: salir hacia Harajuku sobre las 09:45–10:00."
           ],
           "priority": "must",
-          "notes": "Meiji Jingu abre muy temprano; aprovechar la mañana antes de que Harajuku esté a pleno rendimiento."
+          "notes": "Meiji Jingu abre muy temprano; aprovechar la mañana antes de que Harajuku esté a pleno rendimiento.",
+          "goshuin": true
         },
         {
           "id": "takeshita",
@@ -399,7 +401,8 @@
               "Caminar ~12–15 min hasta Kaminarimon y empezar Asakusa."
             ]
           },
-          "priority": "must"
+          "priority": "must",
+          "goshuin": true
         },
         {
           "id": "asakusa-shichifukujin",
@@ -414,7 +417,8 @@
             "Comprar el shikishi al empezar y completar la ruta de las 9 paradas.",
             "Mantener ritmo constante: la referencia oficial estima unas 4 h para la ruta completa.",
             "Priorizar todos los goshuin antes que tiendas/comida."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "tonkatsu-juuroku",
@@ -746,7 +750,8 @@
           "plan": [
             "Parada corta antes de entrar en la zona de Kabukichō.",
             "Si ASICS se alarga mucho, este es opcional y no debe hacer que lleguemos tardísimo al resto de Shinjuku."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "kabukicho",
@@ -943,7 +948,8 @@
             "from": "teamLab Planets",
             "summary": "Yurikamome Shin-Toyosu → Shiodome; cambio a Toei Oedo Line Shiodome (E19) → Daimon (E20), una parada; caminar a Zōjō-ji.",
             "approximateDuration": "35–45 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "yakiniku-miyabi-roppongi",
@@ -1076,7 +1082,8 @@
           "plan": [
             "Llegar pronto y subir al mirador antes de que se llene.",
             "Hacer fotos y seguir; no gastar aquí media mañana."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "fujiyoshida-retro",
@@ -1101,7 +1108,8 @@
           "plan": [
             "Recorrer la entrada de cedros y el santuario.",
             "Hacer goshuin antes de continuar hacia Oshino."
-          ]
+          ],
+          "goshuin": true
         },
         {
           "id": "oshino",
