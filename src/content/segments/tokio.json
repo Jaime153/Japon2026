@@ -384,7 +384,9 @@
           "locationQuery": "Senso-ji Tokyo",
           "time": "~08:30",
           "plan": [
-            "Llegar antes de que empiece la recepción de goshuin para ver Kaminarimon, Nakamise y el templo con algo más de calma.",
+            "Entrar por Kaminarimon y recorrer Nakamise hasta Hōzōmon; Hōzōmon está en la lista de Lorena y queda integrado explícitamente.",
+            "Ver Sensō-ji con calma antes de que empiece la recepción de goshuin.",
+            "El Jardín Denbō-in también está en la lista de Lorena, pero el 6 de octubre no está abierto al público: la apertura especial de 2026 es del 30 de octubre al 3 de noviembre.",
             "A las 09:00 estar ya preparados para empezar el Shichifukujin."
           ],
           "transit": {
@@ -593,9 +595,9 @@
     },
     {
       "date": "2026-10-07",
-      "title": "Ueno · Akihabara · Shinjuku",
+      "title": "Ueno · Akihabara · TOBICHI · AUN · ASICS · Shinjuku",
       "status": "plan",
-      "note": "Día urbano movido aquí para dejar libre el mejor hueco meteorológico para Fuji. Si cambia la previsión, este módulo puede volver a intercambiarse.",
+      "note": "Día compacto: Ueno y Akihabara por la mañana; después compras concretas (Hobonichi, AUN y ASICS) y cierre nocturno en Shinjuku.",
       "activities": [
         {
           "id": "ueno-park",
@@ -626,7 +628,7 @@
           "status": "plan",
           "notes": "Anime, electrónica y Yodobashi.",
           "locationQuery": "Akihabara Tokyo",
-          "time": "~11:30",
+          "time": "~11:15–13:45",
           "plan": [
             "Recorrer las calles principales de anime/electrónica y entrar en tiendas concretas que interesen.",
             "Dejar margen para Yodobashi y compras sin fijar cada tienda por adelantado."
@@ -643,6 +645,21 @@
           }
         },
         {
+          "id": "tobichi-tokyo-lorena",
+          "title": "TOBICHI Tokyo · agenda Hobonichi",
+          "time": "~14:00",
+          "category": "compras",
+          "status": "opcional",
+          "locationQuery": "TOBICHI Tokyo Kanda Nishikicho",
+          "address": "3-18 Kanda Nishikicho, Chiyoda-ku, Tokyo 101-0054 · Hobonichi Kanda Building 1F",
+          "nearestStation": "Jimbocho / Takebashi",
+          "notes": "Objetivo: comprar/mirar una agenda Hobonichi y sus fundas/accesorios. Si no interesa en el momento, se salta.",
+          "plan": [
+            "Mirar primero Hobonichi Techo y fundas/accesorios.",
+            "No alargar si no encontramos un modelo que guste: AUN y ASICS tienen horario más ajustado."
+          ]
+        },
+        {
           "id": "menya-musashi",
           "title": "Menya Musashi Takatora",
           "category": "comida",
@@ -655,10 +672,11 @@
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
           },
-          "time": "~16:30",
+          "time": "~15:30",
           "plan": [
             "Ir a por el tsukemen recomendado por Alberto.",
-            "Comer sin meter otra parada gastronómica grande inmediatamente después."
+            "Comer sin alargar sobremesa.",
+            "Salir hacia Sendagaya/Harajuku sobre las 16:10–16:20."
           ],
           "transit": {
             "from": "Akihabara",
@@ -672,21 +690,63 @@
           }
         },
         {
-          "id": "omoide-yokocho",
-          "title": "Omoide Yokocho",
-          "category": "comida",
-          "status": "opcional",
-          "locationQuery": "Omoide Yokocho",
-          "time": "~18:00",
+          "id": "aun-craft-antique-lorena",
+          "title": "阿吽 AUN Craft & Antique",
+          "time": "~16:40–17:15",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
+          "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
+          "nearestStation": "Kitasando / Sendagaya",
+          "notes": "Tienda pequeña de artesanía japonesa y antigüedades: buena para buscar cerámica, objetos tradicionales y un recuerdo menos genérico.",
           "plan": [
-            "Pasear por los callejones y valorar picar algo si hay hueco.",
-            "Si está demasiado lleno, seguir a Kabukicho sin perder tiempo esperando."
-          ],
+            "Entrar antes que ASICS porque AUN cierra antes.",
+            "Mirar artesanía japonesa y recuerdos menos genéricos que las tiendas turísticas.",
+            "No perder demasiado tiempo: ASICS sigue pendiente y cierra a las 19:00."
+          ]
+        },
+        {
+          "id": "asics-harajuku",
+          "title": "ASICS FLAGSHIP HARAJUKU",
+          "time": "~17:25–18:15",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
+          "address": "1-5-8 Jingumae, Shibuya-ku, Tokyo 150-0001",
+          "nearestStation": "Harajuku / Meiji-jingumae",
+          "notes": "Entrar a mirar zapatillas y ropa del flagship; cierra a las 19:00.",
+          "links": {
+            "officialWebsite": "https://www.asics.com/jp/ja-jp/mk/store/asics-flagship-harajuku"
+          },
           "transit": {
-            "from": "Takadanobaba",
-            "summary": "JR Yamanote Line → Shinjuku (2 paradas); Omoide Yokocho está junto a la salida oeste.",
-            "approximateDuration": "10–15 min"
-          }
+            "from": "AUN Craft & Antique · Sendagaya/Kitasando",
+            "summary": "Moverse hacia Harajuku/Jingumae; es el mismo bloque de Shibuya norte. Andando o taxi corto según cansancio.",
+            "approximateDuration": "~10–20 min"
+          },
+          "plan": [
+            "Entrar directamente al flagship y mirar zapatillas/ropa sin repetir Takeshita.",
+            "Objetivo: salir sobre las 18:15; la tienda cierra a las 19:00."
+          ]
+        },
+        {
+          "id": "hanazono-shrine-lorena",
+          "title": "Hanazono Shrine",
+          "time": "~18:45",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Hanazono Shrine Shinjuku Tokyo",
+          "notes": "Santuario tranquilo escondido en pleno Shinjuku; parada corta antes de Kabukichō.",
+          "transit": {
+            "from": "ASICS FLAGSHIP HARAJUKU",
+            "summary": "Meiji-jingumae (F15) → Shinjuku-sanchome (F13) por Fukutoshin Line; caminar unos minutos al santuario.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Parada corta antes de entrar en la zona de Kabukichō.",
+            "Si ASICS se alarga mucho, este es opcional y no debe hacer que lleguemos tardísimo al resto de Shinjuku."
+          ]
         },
         {
           "id": "kabukicho",
@@ -694,11 +754,16 @@
           "category": "barrio",
           "status": "opcional",
           "locationQuery": "Godzilla Head Shinjuku",
-          "time": "~19:00",
+          "time": "~19:15",
           "plan": [
             "Pasear por Kabukicho, ver Godzilla Head y el ambiente nocturno.",
             "Mantenerlo como paseo, no hace falta fijar local concreto."
-          ]
+          ],
+          "transit": {
+            "from": "Hanazono Shrine",
+            "summary": "Ir andando hacia Kabukichō / Godzilla Head.",
+            "approximateDuration": "5–10 min"
+          }
         },
         {
           "id": "cross-shinjuku",
@@ -707,19 +772,41 @@
           "status": "opcional",
           "notes": "Pantalla 3D junto a Shinjuku; encaja con Kabukichō/Omoide Yokocho.",
           "locationQuery": "Cross Shinjuku Vision",
-          "time": "~19:30",
+          "time": "~19:50",
           "plan": [
             "Ver la pantalla 3D aprovechando que estamos ya en Shinjuku.",
             "Parada corta antes de cerrar el día."
-          ]
+          ],
+          "transit": {
+            "from": "Kabukichō",
+            "summary": "Caminar hacia Cross Shinjuku Vision.",
+            "approximateDuration": "5–10 min"
+          }
+        },
+        {
+          "id": "omoide-yokocho",
+          "title": "Omoide Yokocho",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Omoide Yokocho",
+          "time": "~20:20",
+          "plan": [
+            "Pasear por los callejones y valorar picar algo si hay hueco.",
+            "Si está demasiado lleno, seguir a Kabukicho sin perder tiempo esperando."
+          ],
+          "transit": {
+            "from": "Cross Shinjuku Vision",
+            "summary": "Cruzar hacia el lado oeste de Shinjuku Station hasta Omoide Yokocho.",
+            "approximateDuration": "10–15 min"
+          }
         }
       ]
     },
     {
       "date": "2026-10-08",
-      "title": "Tsukiji → Tsukishima · centro",
+      "title": "Tsukiji · Tsukishima · teamLab · Tokyo Tower · wagyu",
       "status": "plan",
-      "note": "Tsukiji y monjayaki en Tsukishima van el mismo día. Este módulo puede intercambiarse con Fuji si el 8 termina siendo claramente mejor que el 9.",
+      "note": "Además del eje Tsukiji/Tsukishima, se añade Yakiniku Miyabi como cena premium de wagyu cerca de Tokyo Tower y se recupera Roppongi Hills de la lista de Lorena.",
       "activities": [
         {
           "id": "tsukiji-outer",
@@ -857,6 +944,50 @@
             "summary": "Yurikamome Shin-Toyosu → Shiodome; cambio a Toei Oedo Line Shiodome (E19) → Daimon (E20), una parada; caminar a Zōjō-ji.",
             "approximateDuration": "35–45 min"
           }
+        },
+        {
+          "id": "yakiniku-miyabi-roppongi",
+          "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
+          "time": "~19:00",
+          "category": "comida",
+          "status": "plan",
+          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
+          "address": "5-18-21 Roppongi, Minato-ku, Tokyo · Five Plaza Bldg 1F",
+          "nearestStation": "Roppongi-itchome / Roppongi / Azabu-juban",
+          "approximatePrice": "Cena ~¥8.000–10.000+ por persona; cursos desde ~¥6.000",
+          "notes": "Sí parece bueno de verdad: Tabelog ronda 3,56 con más de 1.200 reseñas y el restaurante compra A5 wagyu y sirve surtidos de cortes raros. Es una cena bastante más premium que Yakiniku King.",
+          "links": {
+            "officialWebsite": "https://roppongi.yakiniku-miyabi.jp/",
+            "tabelog": "https://tabelog.com/en/tokyo/A1307/A130702/13095890/"
+          },
+          "transit": {
+            "from": "Zōjō-ji / Tokyo Tower",
+            "summary": "Ir hacia Roppongi/Azabu-juban; andando son ~20–25 min. Si estáis cansados, taxi corto para 4.",
+            "approximateDuration": "20–25 min"
+          },
+          "plan": [
+            "Elegirlo si os apetece una cena de wagyu de calidad, no un tabehodai.",
+            "Para primera visita, mirar el Miyabi Set / surtido de 9 cortes o el Special Set de 12 cortes.",
+            "Reservar si decidís hacerlo porque la cena sí admite reserva."
+          ]
+        },
+        {
+          "id": "roppongi-hills-lorena",
+          "title": "Roppongi Hills",
+          "time": "~21:00",
+          "category": "barrio",
+          "status": "opcional",
+          "locationQuery": "Roppongi Hills Tokyo",
+          "notes": "Paseo nocturno después de cenar: ambiente, arquitectura y zona exterior. No hace falta subir a otro mirador.",
+          "transit": {
+            "from": "Yakiniku Miyabi Roppongi",
+            "summary": "Ir andando hacia Roppongi Hills.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Paseo nocturno corto por la zona.",
+            "No hace falta entrar a observatorios si ya hemos hecho Shibuya Sky/Skytree; aquí prima el ambiente."
+          ]
         },
         {
           "id": "tokyo-tower-midnight",
