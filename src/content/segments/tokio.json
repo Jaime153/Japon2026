@@ -593,9 +593,9 @@
     },
     {
       "date": "2026-10-07",
-      "title": "Ueno · Akihabara · Shinjuku",
+      "title": "Ueno · Akihabara · Takadanobaba · ASICS · Shinjuku",
       "status": "plan",
-      "note": "Día urbano movido aquí para dejar libre el mejor hueco meteorológico para Fuji. Si cambia la previsión, este módulo puede volver a intercambiarse.",
+      "note": "Se recupera ASICS FLAGSHIP HARAJUKU, que se nos pasó el día 5, y Hanazono Shrine de la lista de Lorena. ASICS manda por horario: cierra a las 19:00.",
       "activities": [
         {
           "id": "ueno-park",
@@ -655,10 +655,11 @@
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
           },
-          "time": "~16:30",
+          "time": "~16:00",
           "plan": [
             "Ir a por el tsukemen recomendado por Alberto.",
-            "Comer sin meter otra parada gastronómica grande inmediatamente después."
+            "Comer sin meter otra parada gastronómica grande inmediatamente después.",
+            "Salir hacia Harajuku sobre las 16:40–16:50 para llegar a ASICS antes de las 18:00."
           ],
           "transit": {
             "from": "Akihabara",
@@ -672,21 +673,46 @@
           }
         },
         {
-          "id": "omoide-yokocho",
-          "title": "Omoide Yokocho",
-          "category": "comida",
-          "status": "opcional",
-          "locationQuery": "Omoide Yokocho",
-          "time": "~18:00",
-          "plan": [
-            "Pasear por los callejones y valorar picar algo si hay hueco.",
-            "Si está demasiado lleno, seguir a Kabukicho sin perder tiempo esperando."
-          ],
+          "id": "asics-harajuku",
+          "title": "ASICS FLAGSHIP HARAJUKU",
+          "time": "~17:10–18:00",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
+          "address": "1-5-8 Jingumae, Shibuya-ku, Tokyo 150-0001",
+          "nearestStation": "Harajuku / Meiji-jingumae",
+          "notes": "Se nos pasó el día de Harajuku. Meterlo ahora sí o sí si llegamos antes del cierre; abre 11:00–19:00.",
+          "links": {
+            "officialWebsite": "https://www.asics.com/jp/ja-jp/mk/store/asics-flagship-harajuku"
+          },
           "transit": {
-            "from": "Takadanobaba",
-            "summary": "JR Yamanote Line → Shinjuku (2 paradas); Omoide Yokocho está junto a la salida oeste.",
-            "approximateDuration": "10–15 min"
-          }
+            "from": "Menya Musashi Takatora · Takadanobaba",
+            "summary": "JR Yamanote Line Takadanobaba → Harajuku; desde la estación son ~5 min andando.",
+            "approximateDuration": "20–25 min"
+          },
+          "plan": [
+            "Entrar directamente al flagship y mirar zapatillas/ropa sin perder tiempo en Takeshita otra vez.",
+            "Objetivo: salir antes de las 18:00 para seguir a Shinjuku."
+          ]
+        },
+        {
+          "id": "hanazono-shrine-lorena",
+          "title": "Hanazono Shrine · lista de Lorena",
+          "time": "~18:30",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Hanazono Shrine Shinjuku Tokyo",
+          "notes": "Estaba en la lista de Maps de Lorena y había caído fuera del planning. Encaja muy bien de camino a Kabukichō.",
+          "transit": {
+            "from": "ASICS FLAGSHIP HARAJUKU",
+            "summary": "Meiji-jingumae (F15) → Shinjuku-sanchome (F13) por Fukutoshin Line; caminar unos minutos al santuario.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Parada corta antes de entrar en la zona de Kabukichō.",
+            "Si ASICS se alarga mucho, este es opcional y no debe hacer que lleguemos tardísimo al resto de Shinjuku."
+          ]
         },
         {
           "id": "kabukicho",
@@ -698,7 +724,12 @@
           "plan": [
             "Pasear por Kabukicho, ver Godzilla Head y el ambiente nocturno.",
             "Mantenerlo como paseo, no hace falta fijar local concreto."
-          ]
+          ],
+          "transit": {
+            "from": "Hanazono Shrine",
+            "summary": "Ir andando hacia Kabukichō / Godzilla Head.",
+            "approximateDuration": "5–10 min"
+          }
         },
         {
           "id": "cross-shinjuku",
@@ -707,19 +738,41 @@
           "status": "opcional",
           "notes": "Pantalla 3D junto a Shinjuku; encaja con Kabukichō/Omoide Yokocho.",
           "locationQuery": "Cross Shinjuku Vision",
-          "time": "~19:30",
+          "time": "~19:45",
           "plan": [
             "Ver la pantalla 3D aprovechando que estamos ya en Shinjuku.",
             "Parada corta antes de cerrar el día."
-          ]
+          ],
+          "transit": {
+            "from": "Kabukichō",
+            "summary": "Caminar hacia Cross Shinjuku Vision.",
+            "approximateDuration": "5–10 min"
+          }
+        },
+        {
+          "id": "omoide-yokocho",
+          "title": "Omoide Yokocho",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Omoide Yokocho",
+          "time": "~20:15",
+          "plan": [
+            "Pasear por los callejones y valorar picar algo si hay hueco.",
+            "Si está demasiado lleno, seguir a Kabukicho sin perder tiempo esperando."
+          ],
+          "transit": {
+            "from": "Cross Shinjuku Vision",
+            "summary": "Cruzar hacia el lado oeste de Shinjuku Station hasta Omoide Yokocho.",
+            "approximateDuration": "10–15 min"
+          }
         }
       ]
     },
     {
       "date": "2026-10-08",
-      "title": "Tsukiji → Tsukishima · centro",
+      "title": "Tsukiji · Tsukishima · teamLab · Tokyo Tower · wagyu",
       "status": "plan",
-      "note": "Tsukiji y monjayaki en Tsukishima van el mismo día. Este módulo puede intercambiarse con Fuji si el 8 termina siendo claramente mejor que el 9.",
+      "note": "Además del eje Tsukiji/Tsukishima, se añade Yakiniku Miyabi como cena premium de wagyu cerca de Tokyo Tower y se recupera Roppongi Hills de la lista de Lorena.",
       "activities": [
         {
           "id": "tsukiji-outer",
@@ -857,6 +910,50 @@
             "summary": "Yurikamome Shin-Toyosu → Shiodome; cambio a Toei Oedo Line Shiodome (E19) → Daimon (E20), una parada; caminar a Zōjō-ji.",
             "approximateDuration": "35–45 min"
           }
+        },
+        {
+          "id": "yakiniku-miyabi-roppongi",
+          "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
+          "time": "~19:00",
+          "category": "comida",
+          "status": "plan",
+          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
+          "address": "5-18-21 Roppongi, Minato-ku, Tokyo · Five Plaza Bldg 1F",
+          "nearestStation": "Roppongi-itchome / Roppongi / Azabu-juban",
+          "approximatePrice": "Cena ~¥8.000–10.000+ por persona; cursos desde ~¥6.000",
+          "notes": "Sí parece bueno de verdad: Tabelog ronda 3,56 con más de 1.200 reseñas y el restaurante compra A5 wagyu y sirve surtidos de cortes raros. Es una cena bastante más premium que Yakiniku King.",
+          "links": {
+            "officialWebsite": "https://roppongi.yakiniku-miyabi.jp/",
+            "tabelog": "https://tabelog.com/en/tokyo/A1307/A130702/13095890/"
+          },
+          "transit": {
+            "from": "Zōjō-ji / Tokyo Tower",
+            "summary": "Ir hacia Roppongi/Azabu-juban; andando son ~20–25 min. Si estáis cansados, taxi corto para 4.",
+            "approximateDuration": "20–25 min"
+          },
+          "plan": [
+            "Elegirlo si os apetece una cena de wagyu de calidad, no un tabehodai.",
+            "Para primera visita, mirar el Miyabi Set / surtido de 9 cortes o el Special Set de 12 cortes.",
+            "Reservar si decidís hacerlo porque la cena sí admite reserva."
+          ]
+        },
+        {
+          "id": "roppongi-hills-lorena",
+          "title": "Roppongi Hills · lista de Lorena",
+          "time": "~21:00",
+          "category": "barrio",
+          "status": "opcional",
+          "locationQuery": "Roppongi Hills Tokyo",
+          "notes": "También estaba en la lista de Maps de Lorena y no estaba integrado. Encaja después de Miyabi y antes del intento de Tokyo Tower a medianoche.",
+          "transit": {
+            "from": "Yakiniku Miyabi Roppongi",
+            "summary": "Ir andando hacia Roppongi Hills.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Paseo nocturno corto por la zona.",
+            "No hace falta entrar a observatorios si ya hemos hecho Shibuya Sky/Skytree; aquí prima el ambiente."
+          ]
         },
         {
           "id": "tokyo-tower-midnight",
