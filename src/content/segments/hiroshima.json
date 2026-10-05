@@ -123,7 +123,8 @@
               "Tomar JR Miyajima Ferry; entre 09:10 y 16:10 los servicios 'Great Torii' pasan frente al gran torii.",
               "Desde Miyajima Pier caminar al santuario."
             ]
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "miyajima-torii",
