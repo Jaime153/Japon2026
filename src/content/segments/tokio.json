@@ -283,27 +283,53 @@
     },
     {
       "date": "2026-10-06",
-      "title": "Asakusa · Kappabashi · este de Tokio",
+      "title": "Asakusa · Shichifukujin · Kappabashi · Skytree",
       "status": "plan",
-      "note": "Cattlea + Asakusa + ruta completa de las 9 paradas oficiales del Shichifukujin + Kappabashi. Comprar shikishi y completar los sellos; recepción habitual 9:00–16:00. Kappabashi coincide con el Dougu Matsuri.",
+      "note": "Día reorganizado para empezar antes, hacer los goshuin desde las 09:00, comer algo que encaja con las recomendaciones de Alberto y llegar a Skytree con objetivo 16:00 para ver día → atardecer → noche.",
       "activities": [
+        {
+          "id": "wake-up-1006",
+          "title": "Despertarse · prepararse",
+          "time": "06:20",
+          "category": "otro",
+          "status": "confirmado",
+          "priority": "must",
+          "notes": "Mañana conviene empezar antes que hoy. Dejar mochila, Suica y batería preparados la noche anterior.",
+          "plan": [
+            "Levantarse a las 06:20.",
+            "Prepararse y desayunar muy ligero: Cattlea sigue siendo solo un intento, no una obligación.",
+            "Objetivo de salida del hotel: 07:05."
+          ]
+        },
+        {
+          "id": "leave-hotel-1006",
+          "title": "Salir del hotel hacia el este de Tokio",
+          "time": "07:05",
+          "category": "transporte",
+          "status": "confirmado",
+          "priority": "must",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "plan": [
+            "Salir sobre las 07:05.",
+            "Si vamos bien de tiempo, pasar por Cattlea; si no, ir directos a Asakusa."
+          ]
+        },
         {
           "id": "cattlea",
           "title": "Cattlea · 元祖カレーパン",
           "category": "comida",
-          "status": "plan",
-          "priority": "must",
-          "notes": "Intentar ir sí o sí para probar el kare-pan original. Tabelog: 1 min de Morishita; sin reservas. Horneadas aprox. 7:00, 11:00 y 15:00; verificar el mismo día.",
+          "status": "opcional",
+          "notes": "Parada opcional. Queremos intentar el kare-pan original, pero mañana mandan los goshuin y Skytree; si vamos tarde o cansados, se salta sin problema.",
           "locationQuery": "Cattlea Morishita Tokyo",
           "nearestStation": "Morishita",
           "approximatePrice": "< ¥1.000",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1312/A131201/13002996/"
           },
-          "time": "~07:30",
+          "time": "~07:35",
           "plan": [
-            "Ir temprano a por el kare-pan original antes de empezar Asakusa.",
-            "Comprar para comer allí o llevar; no alargar la parada porque el día de templos es largo."
+            "Entrar solo si el desvío sigue encajando bien.",
+            "Comprar rápido el kare-pan y continuar; no sentarse ni convertirlo en desayuno largo."
           ],
           "transit": {
             "from": "Hotel SUI Ginza Kyobashi",
@@ -318,29 +344,15 @@
           }
         },
         {
-          "id": "asakusa-shichifukujin",
-          "title": "Asakusa Shichifukujin Meguri",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "notes": "Comprar shikishi y completar los goshuin del recorrido.",
-          "locationQuery": "Asakusa Tokyo",
-          "time": "09:00",
-          "plan": [
-            "Comprar el shikishi al empezar y seguir el orden de la ruta que aparece en el mapa.",
-            "Priorizar los goshuin antes del cierre de recepción; las demás paradas se adaptan alrededor de esto."
-          ]
-        },
-        {
           "id": "sensoji",
           "title": "Sensō-ji · Kaminarimon · Nakamise",
           "category": "templo",
           "status": "plan",
           "locationQuery": "Senso-ji Tokyo",
-          "time": "~09:15",
+          "time": "~08:30",
           "plan": [
-            "Entrar por Kaminarimon, recorrer Nakamise y llegar al Hozomon/templo principal.",
-            "Hacer aquí la primera parte del Shichifukujin y continuar la ruta sin perder demasiado tiempo en tiendas al principio."
+            "Llegar antes de que empiece la recepción de goshuin para ver Kaminarimon, Nakamise y el templo con algo más de calma.",
+            "A las 09:00 estar ya preparados para empezar el Shichifukujin."
           ],
           "transit": {
             "from": "Cattlea · Morishita",
@@ -351,7 +363,49 @@
               "Dos paradas hasta Kuramae (vía Ryogoku).",
               "Caminar ~12–15 min hasta Kaminarimon y empezar Asakusa."
             ]
-          }
+          },
+          "priority": "must"
+        },
+        {
+          "id": "asakusa-shichifukujin",
+          "title": "Asakusa Shichifukujin Meguri",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "notes": "Comprar shikishi y completar los goshuin del recorrido.",
+          "locationQuery": "Asakusa Tokyo",
+          "time": "09:00–~13:00",
+          "plan": [
+            "Comprar el shikishi al empezar y completar la ruta de las 9 paradas.",
+            "Mantener ritmo constante: la referencia oficial estima unas 4 h para la ruta completa.",
+            "Priorizar todos los goshuin antes que tiendas/comida."
+          ]
+        },
+        {
+          "id": "tonkatsu-juuroku",
+          "title": "Tonkatsu Juuroku · comida",
+          "time": "~13:00",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Tonkatsu Juuroku Asakusa Tokyo",
+          "address": "1-5-11 Kaminarimon, Taito-ku, Tokyo",
+          "nearestStation": "Tawaramachi · salida 3",
+          "approximatePrice": "¥2.000–3.000 aprox. al mediodía",
+          "notes": "Alberto recomendó tonkatsu como plato. Este local no es una recomendación nominal suya: lo elegimos por encaje perfecto con la ruta y buena valoración. Los martes abre 11:30–14:30 y no acepta reservas.",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1311/A131102/13276330/"
+          },
+          "transit": {
+            "from": "Final del Shichifukujin / Asakusa",
+            "summary": "Ir andando hacia Tawaramachi/Kaminarimon. Está a unos 4 min de Tawaramachi Station.",
+            "approximateDuration": "10–20 min según dónde terminemos"
+          },
+          "plan": [
+            "Intentar llegar sobre las 13:00–13:15.",
+            "Comer tonkatsu y salir sobre las 13:45–14:00.",
+            "Si hay una cola que nos hace perder Skytree, comer algo rápido y mantener el slot de las 16:00."
+          ]
         },
         {
           "id": "kappabashi",
@@ -359,24 +413,90 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "notes": "Coincide con Kappabashi Dougu Matsuri.",
+          "notes": "Coincide con Kappabashi Dougu Matsuri. Bloque real de ~1 h 15 min para cuchillos, vajilla y menaje.",
           "locationQuery": "Kappabashi Dougu Street Tokyo",
-          "time": "~16:15",
+          "time": "~14:00–15:15",
           "plan": [
-            "Recorrer la calle de utensilios y mirar cuchillos, vajilla y menaje.",
-            "Aprovechar el Dougu Matsuri, pero poniendo un límite de tiempo para no perder toda la tarde."
+            "Priorizar las tiendas que más interesan: cuchillos, menaje y vajilla.",
+            "No intentar entrar en todo Kappabashi.",
+            "A las 15:15 empezar a movernos hacia Skytree."
           ]
         },
         {
           "id": "skytree",
           "title": "Tokyo Skytree",
           "category": "mirador",
-          "status": "opcional",
+          "status": "pendiente",
           "locationQuery": "Tokyo Skytree",
-          "time": "~18:30",
+          "time": "16:00",
           "plan": [
-            "Opcional al final del día si quedan ganas.",
-            "Si no subimos, basta con verlo/recorrer la zona y guardar energía."
+            "Comprar/usar slot de las 16:00 para los cuatro.",
+            "Subir primero con luz de día.",
+            "Quedarse durante el atardecer y bajar cuando ya hayamos visto Tokio iluminado."
+          ],
+          "priority": "must",
+          "reservationRequired": true,
+          "notes": "Slot OBJETIVO: 16:00, Tembo Deck + Galería. Es el mejor de los disponibles para ver Tokio de día, golden hour, puesta de sol y luego skyline nocturno. Todavía marcar como pendiente hasta comprar las 4 entradas.",
+          "duration": "Entrar 16:00 · quedarse hasta ~18:00–18:30",
+          "links": {
+            "officialWebsite": "https://www.tokyo-skytree.jp/en/"
+          },
+          "transit": {
+            "from": "Kappabashi Dougu Street",
+            "summary": "Tawaramachi (G18) → Asakusa (G19) por Ginza Line; cambiar a Toei Asakusa Line → Oshiage (A20). Si vamos justos, taxi para 4.",
+            "approximateDuration": "25–35 min",
+            "steps": [
+              "Salir de Kappabashi como tarde sobre las 15:15.",
+              "Ir a Tawaramachi y una parada por Ginza Line hasta Asakusa.",
+              "Cambiar a Toei Asakusa Line hasta Oshiage.",
+              "Llegar a Skytree sobre las 15:40–15:50."
+            ]
+          }
+        },
+        {
+          "id": "yakiniku-king-asakusa",
+          "title": "Yakiniku King Asakusa ROX · cena",
+          "time": "~19:00",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Yakiniku King Asakusa ROX Tokyo",
+          "address": "ROX-2G 4F, 1-24-1 Asakusa, Taito-ku, Tokyo",
+          "nearestStation": "Asakusa / Tawaramachi",
+          "approximatePrice": "¥3.498–5.368 según curso + bebidas",
+          "notes": "De las recomendaciones/apuntes guardados: opción de yakiniku tabehodai/nomihodai. Encaja muy bien después de Skytree y cambia completamente de ramen, que ya cenamos anoche. Abre 11:00–23:00; última entrada 22:00.",
+          "links": {
+            "officialWebsite": "https://www.yakiniku-king.jp/shop/2312/",
+            "tabelog": "https://tabelog.com/tokyo/A1311/A131102/13271497/"
+          },
+          "transit": {
+            "from": "Tokyo Skytree / Oshiage",
+            "summary": "Oshiage (A20) → Asakusa (A18) por Toei Asakusa Line; después caminar ~8–10 min a ROX-2G.",
+            "approximateDuration": "20–25 min"
+          },
+          "plan": [
+            "Bajar de Skytree sobre las 18:00–18:30 y volver hacia Asakusa.",
+            "Cenar yakiniku all-you-can-eat; para cuatro encaja mejor que volver a ramen.",
+            "Si queréis nomihodai, decidirlo allí según apetezca."
+          ]
+        },
+        {
+          "id": "billy-the-kid-kinshi-backup",
+          "title": "Billy the Kid Kinshi · backup cena",
+          "time": "Backup ~19:00",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Billy the Kid Kinshi Sumida Tokyo",
+          "approximatePrice": "¥2.000–3.000 aprox.",
+          "notes": "Backup de una recomendación nominal de Alberto. Abre por la tarde/noche y queda cerca de Skytree vía Kinshicho; usarlo solo si Yakiniku King no apetece o está imposible.",
+          "transit": {
+            "from": "Tokyo Skytree / Oshiage",
+            "summary": "Hanzomon Line Oshiage → Kinshicho, una parada; luego caminar al local.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Usarlo únicamente como plan B de cena.",
+            "No desviar el día si Yakiniku King funciona bien."
           ]
         }
       ],
