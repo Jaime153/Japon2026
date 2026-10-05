@@ -318,7 +318,7 @@
       "date": "2026-10-06",
       "title": "Asakusa · Shichifukujin · Kappabashi · Skytree",
       "status": "plan",
-      "note": "Día reorganizado para empezar antes, hacer los goshuin desde las 09:00, comer bien, Kappabashi y llegar a Skytree con objetivo 16:00. Cattlea queda completamente flexible: solo si pilla bien por la mañana o aparece un hueco cómodo por la tarde.",
+      "note": "Asakusa Shichifukujin aparece ahora templo por templo: 9 paradas, cada una con su dios, badge de goshuin y siguiente tramo. La asociación oficial acepta sellos y objetos durante todo el año; fuera de Año Nuevo el horario de referencia es 09:00–16:00.",
       "activities": [
         {
           "id": "wake-up-1006",
@@ -380,45 +380,189 @@
         },
         {
           "id": "sensoji",
-          "title": "Sensō-ji · Kaminarimon · Nakamise",
+          "title": "Sensō-ji · Daikokuten",
           "category": "templo",
           "status": "plan",
           "locationQuery": "Senso-ji Tokyo",
-          "time": "~08:30",
+          "time": "08:30–09:10",
           "plan": [
-            "Entrar por Kaminarimon y recorrer Nakamise hasta Hōzōmon; Hōzōmon está en la lista de Lorena y queda integrado explícitamente.",
-            "Ver Sensō-ji con calma antes de que empiece la recepción de goshuin.",
-            "El Jardín Denbō-in también está en la lista de Lorena, pero el 6 de octubre no está abierto al público: la apertura especial de 2026 es del 30 de octubre al 3 de noviembre.",
-            "A las 09:00 estar ya preparados para empezar el Shichifukujin."
+            "Entrar por Kaminarimon → Nakamise → Hōzōmon → Sensō-ji.",
+            "A las 09:00 comprar el shikishi oficial de Asakusa Shichifukujin.",
+            "Pedir el primer sello/goshuin de Daikokuten en el shikishi.",
+            "Salir hacia Asakusa Shrine, que está en el mismo recinto."
           ],
           "transit": {
-            "from": "Cattlea · Morishita",
-            "summary": "Morishita (E13) → Kuramae (E11) por Toei Oedo Line; desde Kuramae caminar hacia Kaminarimon/Sensō-ji.",
-            "approximateDuration": "20–25 min",
-            "steps": [
-              "Entrar en Morishita por Toei Oedo Line.",
-              "Dos paradas hasta Kuramae (vía Ryogoku).",
-              "Caminar ~12–15 min hasta Kaminarimon y empezar Asakusa."
-            ]
+            "from": "Hotel / Cattlea si finalmente se hace",
+            "summary": "Llegar a Sensō-ji antes de las 09:00. Cattlea no forma parte de la ruta y se salta si molesta.",
+            "approximateDuration": "Según punto de salida"
           },
           "priority": "must",
-          "goshuin": true
+          "goshuin": true,
+          "notes": "1/9 · 七福神: Daikokuten. Aquí empezamos la ruta."
         },
         {
-          "id": "asakusa-shichifukujin",
-          "title": "Asakusa Shichifukujin Meguri",
+          "id": "asakusa-shrine-shichifukujin",
+          "title": "Asakusa Shrine · Ebisu",
+          "time": "~09:10",
           "category": "templo",
           "status": "plan",
           "priority": "must",
-          "notes": "Comprar shikishi y completar los goshuin del recorrido.",
-          "locationQuery": "Asakusa Tokyo",
-          "time": "09:00–~13:00",
+          "goshuin": true,
+          "locationQuery": "Asakusa Shrine Tokyo",
+          "notes": "2/9 · 七福神: Ebisu.",
+          "transit": {
+            "from": "Sensō-ji",
+            "summary": "Está pegado a Sensō-ji; ir andando dentro del mismo conjunto.",
+            "approximateDuration": "2–5 min"
+          },
           "plan": [
-            "Comprar el shikishi al empezar y completar la ruta de las 9 paradas.",
-            "Mantener ritmo constante: la referencia oficial estima unas 4 h para la ruta completa.",
-            "Priorizar todos los goshuin antes que tiendas/comida."
-          ],
-          "goshuin": true
+            "Hacer la visita corta al santuario.",
+            "Pedir el sello/goshuin de Ebisu en el shikishi.",
+            "Seguir andando hacia Matsuchiyama Shōden."
+          ]
+        },
+        {
+          "id": "matsuchiyama-shoden",
+          "title": "Matsuchiyama Shōden · Bishamonten",
+          "time": "~09:35",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Matsuchiyama Shoden Tokyo",
+          "notes": "3/9 · 七福神: Bishamonten.",
+          "transit": {
+            "from": "Asakusa Shrine",
+            "summary": "Seguir a pie hacia el norte por la zona del Sumida.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Pedir el sello/goshuin de Bishamonten.",
+            "Visita breve: no gastar demasiado tiempo porque quedan seis paradas.",
+            "Continuar a Imado Shrine."
+          ]
+        },
+        {
+          "id": "imado-shrine",
+          "title": "Imado Shrine · Fukurokuju",
+          "time": "~10:05",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Imado Shrine Tokyo",
+          "notes": "4/9 · 七福神: Fukurokuju.",
+          "transit": {
+            "from": "Matsuchiyama Shōden",
+            "summary": "Continuar andando hacia Imado.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Pedir el sello/goshuin de Fukurokuju.",
+            "Ver los maneki-neko del santuario sin alargar demasiado.",
+            "Seguir a Hashiba Fudōin."
+          ]
+        },
+        {
+          "id": "hashiba-fudoin",
+          "title": "Hashiba Fudōin · Hotei",
+          "time": "~10:35",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Hashiba Fudoin Tokyo",
+          "notes": "5/9 · 七福神: Hotei.",
+          "transit": {
+            "from": "Imado Shrine",
+            "summary": "Seguir a pie hacia Hashiba.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Pedir el sello/goshuin de Hotei.",
+            "Parada corta y continuar hacia Ishihama Shrine."
+          ]
+        },
+        {
+          "id": "ishihama-shrine",
+          "title": "Ishihama Shrine · Jurōjin",
+          "time": "~11:00",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Ishihama Shrine Tokyo",
+          "notes": "6/9 · 七福神: Jurōjin.",
+          "transit": {
+            "from": "Hashiba Fudōin",
+            "summary": "Continuar andando hacia Minamisenju / Ishihama.",
+            "approximateDuration": "10–15 min"
+          },
+          "plan": [
+            "Pedir el sello/goshuin de Jurōjin.",
+            "Desde aquí viene el tramo andando más largo hacia Ōtori Shrine."
+          ]
+        },
+        {
+          "id": "otori-shrine",
+          "title": "Ōtori Shrine · Jurōjin",
+          "time": "~11:40",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Otori Shrine Taito Tokyo",
+          "notes": "7/9 · 七福神: Jurōjin. Segundo santuario de la ruta asociado a Jurōjin.",
+          "transit": {
+            "from": "Ishihama Shrine",
+            "summary": "Tramo largo a pie hacia Senzoku/Asakusa norte. Si el ritmo se rompe, taxi corto entre cuatro es válido.",
+            "approximateDuration": "25–35 min"
+          },
+          "plan": [
+            "Pedir el sello/goshuin de Jurōjin.",
+            "Seguir a Yoshiwara Shrine, que queda muy cerca."
+          ]
+        },
+        {
+          "id": "yoshiwara-shrine",
+          "title": "Yoshiwara Shrine · Benzaiten",
+          "time": "~12:00",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Yoshiwara Shrine Tokyo",
+          "notes": "8/9 · 七福神: Benzaiten.",
+          "transit": {
+            "from": "Ōtori Shrine",
+            "summary": "Ir andando; están en el mismo sector de Senzoku/Yoshiwara.",
+            "approximateDuration": "5–10 min"
+          },
+          "plan": [
+            "Pedir el sello/goshuin de Benzaiten.",
+            "Último tramo hacia Yasaki Inari."
+          ]
+        },
+        {
+          "id": "yasaki-inari",
+          "title": "Yasaki Inari Shrine · Fukurokuju",
+          "time": "~12:25",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "goshuin": true,
+          "locationQuery": "Yasaki Inari Shrine Tokyo",
+          "notes": "9/9 · 七福神: Fukurokuju. Última parada para completar el shikishi.",
+          "transit": {
+            "from": "Yoshiwara Shrine",
+            "summary": "Bajar andando hacia Matsugaya / Kappabashi.",
+            "approximateDuration": "20–25 min"
+          },
+          "plan": [
+            "Pedir el último sello/goshuin de Fukurokuju.",
+            "Comprobar que el shikishi tiene las nueve marcas antes de ir a comer.",
+            "Desde aquí Kappabashi queda muy bien colocado para continuar el día."
+          ]
         },
         {
           "id": "tonkatsu-juuroku",
@@ -541,59 +685,54 @@
       ],
       "routeStops": [
         {
-          "title": "Cattlea · 元祖カレーパン",
-          "locationQuery": "Cattlea Morishita Tokyo",
-          "note": "Parada de desayuno / kare-pan original"
-        },
-        {
-          "title": "Sensō-ji",
+          "title": "Sensō-ji · Daikokuten",
           "locationQuery": "Senso-ji Tokyo",
-          "note": "大黒天"
+          "note": "1/9 · 大黒天"
         },
         {
-          "title": "Asakusa Shrine",
+          "title": "Asakusa Shrine · Ebisu",
           "locationQuery": "Asakusa Shrine Tokyo",
-          "note": "恵比須"
+          "note": "2/9 · 恵比須"
         },
         {
-          "title": "Matsuchiyama Shōden",
+          "title": "Matsuchiyama Shōden · Bishamonten",
           "locationQuery": "Matsuchiyama Shoden Tokyo",
-          "note": "毘沙門天"
+          "note": "3/9 · 毘沙門天"
         },
         {
-          "title": "Imado Shrine",
+          "title": "Imado Shrine · Fukurokuju",
           "locationQuery": "Imado Shrine Tokyo",
-          "note": "福禄寿"
+          "note": "4/9 · 福禄寿"
         },
         {
-          "title": "Hashiba Fudōin",
+          "title": "Hashiba Fudōin · Hotei",
           "locationQuery": "Hashiba Fudoin Tokyo",
-          "note": "布袋尊"
+          "note": "5/9 · 布袋尊"
         },
         {
-          "title": "Ishihama Shrine",
+          "title": "Ishihama Shrine · Jurōjin",
           "locationQuery": "Ishihama Shrine Tokyo",
-          "note": "寿老神"
+          "note": "6/9 · 寿老神"
         },
         {
-          "title": "Ōtori Shrine",
+          "title": "Ōtori Shrine · Jurōjin",
           "locationQuery": "Otori Shrine Taito Tokyo",
-          "note": "寿老人"
+          "note": "7/9 · 寿老人"
         },
         {
-          "title": "Yoshiwara Shrine",
+          "title": "Yoshiwara Shrine · Benzaiten",
           "locationQuery": "Yoshiwara Shrine Tokyo",
-          "note": "弁財天"
+          "note": "8/9 · 弁財天"
         },
         {
-          "title": "Yasaki Inari Shrine",
+          "title": "Yasaki Inari Shrine · Fukurokuju",
           "locationQuery": "Yasaki Inari Shrine Tokyo",
-          "note": "福禄寿"
+          "note": "9/9 · 福禄寿"
         },
         {
           "title": "Kappabashi Dougu Street",
           "locationQuery": "Kappabashi Dougu Street Tokyo",
-          "note": "Dougu Matsuri 2026"
+          "note": "Después de completar el shikishi"
         }
       ]
     },
