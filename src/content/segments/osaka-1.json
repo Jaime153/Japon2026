@@ -30,7 +30,8 @@
             "from": "GN98 Saiwaicho",
             "summary": "Sakuragawa (S15) → Namba (S16) por Sennichimae Line; caminar a Nankai Namba → Nankai Main Line → Sumiyoshitaisha.",
             "approximateDuration": "35–45 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "namba-yasaka",
@@ -47,7 +48,8 @@
             "from": "Sumiyoshi Taisha",
             "summary": "Nankai Main Line Sumiyoshitaisha → Namba; desde Nankai Namba caminar a Namba Yasaka Jinja.",
             "approximateDuration": "20–30 min"
-          }
+          },
+          "goshuin": true
         },
         {
           "id": "shinsekai",
@@ -177,7 +179,8 @@
           "plan": [
             "Pasear por Yasaka y Gion ya instalados en Kyoto.",
             "Tomarlo como primera toma de contacto, no como visita exhaustiva."
-          ]
+          ],
+          "goshuin": true
         }
       ]
     }
