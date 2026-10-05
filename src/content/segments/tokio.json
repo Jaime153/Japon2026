@@ -318,7 +318,7 @@
       "date": "2026-10-06",
       "title": "Asakusa · Shichifukujin · Kappabashi · Skytree",
       "status": "plan",
-      "note": "Asakusa Shichifukujin: 9 templos con goshuin · Kappabashi · Skytree 16:00.",
+      "note": "9 templos con goshuin · vuelta a Nakamise cuando abra · Kappabashi · Skytree 16:00.",
       "activities": [
         {
           "id": "wake-up-1006",
@@ -327,11 +327,9 @@
           "category": "otro",
           "status": "confirmado",
           "priority": "must",
-          "notes": "Mañana conviene empezar antes que hoy. Dejar mochila, Suica y batería preparados la noche anterior.",
+          "notes": "Día de Asakusa + Shichifukujin + Kappabashi + Skytree.",
           "plan": [
-            "Levantarse a las 06:20.",
-            "Prepararse y desayunar muy ligero: Cattlea sigue siendo solo un intento, no una obligación.",
-            "Objetivo de salida del hotel: 07:05."
+            "Prepararse y salir pronto para llegar a Sensō-ji antes de las 09:00."
           ]
         },
         {
@@ -343,9 +341,7 @@
           "priority": "must",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
           "plan": [
-            "Salir sobre las 07:05.",
-            "Ir directos a Asakusa si Cattlea no encaja natural; no hace falta forzarlo.",
-            "Cattlea queda vivo como opcional para otro hueco del día."
+            "Ir directos a Asakusa / Sensō-ji."
           ]
         },
         {
@@ -353,30 +349,12 @@
           "title": "Cattlea · 元祖カレーパン",
           "category": "comida",
           "status": "opcional",
-          "notes": "Parada totalmente flexible. Hacerla solo si pilla bien de camino o aparece un hueco real por la tarde. No sacrificar Shichifukujin, Kappabashi ni el slot de Skytree por Cattlea.",
+          "notes": "No fuimos.",
           "locationQuery": "Cattlea Morishita Tokyo",
-          "nearestStation": "Morishita",
-          "approximatePrice": "< ¥1.000",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1312/A131201/13002996/"
           },
-          "time": "Opcional · mañana / hueco de tarde",
-          "plan": [
-            "Por la mañana: pasar solo si encaja sin retrasar la llegada a Sensō-ji / goshuin.",
-            "Si no, dejarla abierta para más tarde únicamente si aparece un hueco cómodo.",
-            "No hacer un desvío forzado ni comprometer la salida de Kappabashi hacia Skytree."
-          ],
-          "transit": {
-            "from": "Hotel SUI Ginza Kyobashi",
-            "summary": "Takaracho (A12) → Higashi-nihombashi (A15) por Toei Asakusa; conexión peatonal a Bakuro-yokoyama (S09) y Toei Shinjuku → Morishita (S11).",
-            "approximateDuration": "20–30 min",
-            "steps": [
-              "Caminar ~1 min a Takaracho (A12).",
-              "Toei Asakusa Line hasta Higashi-nihombashi (A15).",
-              "Seguir la conexión subterránea a Bakuro-yokoyama (S09).",
-              "Toei Shinjuku Line hasta Morishita (S11); Cattlea está junto a la estación."
-            ]
-          }
+          "skipped": true
         },
         {
           "id": "sensoji",
@@ -387,9 +365,9 @@
           "time": "08:30–09:10",
           "plan": [
             "Entrar por Kaminarimon → Nakamise → Hōzōmon → Sensō-ji.",
-            "A las 09:00 comprar el shikishi oficial de Asakusa Shichifukujin.",
-            "Pedir el primer sello/goshuin de Daikokuten en el shikishi.",
-            "Salir hacia Asakusa Shrine, que está en el mismo recinto."
+            "Como ahora Nakamise está prácticamente cerrada, no perder tiempo esperando tiendas.",
+            "A las 09:00 comprar el shikishi y pedir el primer sello/goshuin de Daikokuten.",
+            "Empezar la vuelta de los 9 templos; al terminar volvemos a Nakamise para verla abierta."
           ],
           "transit": {
             "from": "Hotel / Cattlea si finalmente se hace",
@@ -398,7 +376,7 @@
           },
           "priority": "must",
           "goshuin": true,
-          "notes": "1/9 · 七福神: Daikokuten. Aquí empezamos la ruta."
+          "notes": "1/9 · 七福神: Daikokuten. Primera pasada para templo + shikishi; Nakamise la vemos a la vuelta."
         },
         {
           "id": "asakusa-shrine-shichifukujin",
@@ -560,14 +538,34 @@
           },
           "plan": [
             "Pedir el último sello/goshuin de Fukurokuju.",
-            "Comprobar que el shikishi tiene las nueve marcas antes de ir a comer.",
-            "Desde aquí Kappabashi queda muy bien colocado para continuar el día."
+            "Comprobar que el shikishi tiene las nueve marcas.",
+            "Cerrar la vuelta regresando a Sensō-ji / Nakamise para verla ya abierta."
+          ]
+        },
+        {
+          "id": "nakamise-return",
+          "title": "Volver a Sensō-ji · Nakamise",
+          "time": "~12:45–13:15",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Nakamise-dori Shopping Street Tokyo",
+          "notes": "Volvemos al cerrar el círculo porque a primera hora las tiendas estaban cerradas.",
+          "transit": {
+            "from": "Yasaki Inari Shrine",
+            "summary": "Volver andando hacia Sensō-ji / Kaminarimon.",
+            "approximateDuration": "15–20 min"
+          },
+          "plan": [
+            "Recorrer Nakamise ahora con las tiendas abiertas.",
+            "Ver/comprar lo que nos interese sin hacer una visita larguísima.",
+            "Después ir a comer y continuar hacia Kappabashi."
           ]
         },
         {
           "id": "tonkatsu-juuroku",
           "title": "Tonkatsu Juuroku · comida",
-          "time": "~13:00",
+          "time": "~13:15",
           "category": "comida",
           "status": "plan",
           "priority": "must",
@@ -580,14 +578,14 @@
             "tabelog": "https://tabelog.com/en/tokyo/A1311/A131102/13276330/"
           },
           "transit": {
-            "from": "Final del Shichifukujin / Asakusa",
-            "summary": "Ir andando hacia Tawaramachi/Kaminarimon. Está a unos 4 min de Tawaramachi Station.",
-            "approximateDuration": "10–20 min según dónde terminemos"
+            "from": "Sensō-ji / Nakamise",
+            "summary": "Bajar andando hacia Tawaramachi/Kaminarimon; está a unos 4 min de Tawaramachi Station.",
+            "approximateDuration": "10–15 min"
           },
           "plan": [
-            "Intentar llegar sobre las 13:00–13:15.",
-            "Comer tonkatsu y salir sobre las 13:45–14:00.",
-            "Si hay una cola que nos hace perder Skytree, comer algo rápido y mantener el slot de las 16:00."
+            "Intentar llegar sobre las 13:15.",
+            "Comer sin sobremesa larga para proteger Kappabashi y Skytree.",
+            "Si la cola amenaza el slot de Skytree, comer algo rápido y seguir."
           ]
         },
         {
@@ -732,9 +730,14 @@
           "note": "9/9 · 福禄寿"
         },
         {
+          "title": "Nakamise · vuelta",
+          "locationQuery": "Nakamise-dori Shopping Street Tokyo",
+          "note": "Ahora sí, con tiendas abiertas"
+        },
+        {
           "title": "Kappabashi Dougu Street",
           "locationQuery": "Kappabashi Dougu Street Tokyo",
-          "note": "Después de completar el shikishi"
+          "note": "Después de comer"
         }
       ]
     },
