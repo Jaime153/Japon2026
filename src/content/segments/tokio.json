@@ -609,18 +609,19 @@
           "id": "skytree",
           "title": "Tokyo Skytree",
           "category": "mirador",
-          "status": "pendiente",
+          "status": "confirmado",
           "locationQuery": "Tokyo Skytree",
           "time": "16:00",
           "plan": [
-            "Comprar/usar slot de las 16:00 para los cuatro.",
-            "Subir primero con luz de día.",
-            "Quedarse durante el atardecer y bajar cuando ya hayamos visto Tokio iluminado."
+            "Llegar a Tokyo Skytree sobre las 15:40–15:50.",
+            "Tener abierto el cupón de Klook antes de entrar.",
+            "Subir primero con luz de día y quedarse durante el atardecer.",
+            "Bajar cuando ya hayamos visto el skyline nocturno; no hace falta correr."
           ],
           "priority": "must",
-          "reservationRequired": true,
-          "notes": "Slot OBJETIVO: 16:00, Tembo Deck + Galería. Es el mejor de los disponibles para ver Tokio de día, golden hour, puesta de sol y luego skyline nocturno. Todavía marcar como pendiente hasta comprar las 4 entradas.",
-          "duration": "Entrar 16:00 · quedarse hasta ~18:00–18:30",
+          "reservationRequired": false,
+          "notes": "Reserva confirmada para 4 adultos. Entrada combinada Tembo Deck + Tembo Galleria a las 16:00. Tener el cupón de Klook preparado antes de llegar.",
+          "duration": "Entrada 16:00 · Tembo Deck + Galería",
           "links": {
             "officialWebsite": "https://www.tokyo-skytree.jp/en/"
           },
@@ -634,7 +635,8 @@
               "Cambiar a Toei Asakusa Line hasta Oshiage.",
               "Llegar a Skytree sobre las 15:40–15:50."
             ]
-          }
+          },
+          "approximatePrice": "85,56 € total · 4 adultos"
         },
         {
           "id": "yakiniku-king-asakusa",
