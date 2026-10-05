@@ -63,6 +63,7 @@ const hasExtra = Boolean(
             {activity.priority === 'must' && <span class="inline-flex rounded-full bg-red-600 px-2 py-0.5 text-[11px] font-semibold text-white">Sí o sí</span>}
             {activity.goshuin === true && <span class="inline-flex rounded-full bg-violet-100 px-2 py-0.5 text-[11px] font-semibold text-violet-800">📕 Goshuin</span>}
             {activity.goshuin === false && <span class="inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600">Sin goshuin</span>}
+            {activity.skipped && <span class="inline-flex rounded-full bg-slate-200 px-2 py-0.5 text-[11px] font-semibold text-slate-700">No fuimos</span>}
             <span data-done-badge class="hidden rounded-full bg-emerald-100 px-2 py-0.5 text-[11px] font-bold text-emerald-800">✓ Hecho</span>
           </div>
           <h3 class="mt-2 font-semibold leading-snug text-slate-950">{activity.title}</h3>
