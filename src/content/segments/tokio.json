@@ -318,7 +318,7 @@
       "date": "2026-10-06",
       "title": "Asakusa · Shichifukujin · Kappabashi · Skytree",
       "status": "confirmado",
-      "note": "Día realizado: Asakusa Shichifukujin + Kappabashi + Skytree. Cattlea no se hizo. Comimos en Tonkatsu Oribe y cenamos en el hotel con comida de FamilyMart.",
+      "note": "Día realizado: no fuimos a Cattlea; comida en Tonkatsu Oribe; Shichifukujin + Asakusa/Kappabashi/Skytree; cena de FamilyMart en el hotel.",
       "activities": [
         {
           "id": "wake-up-1006",
@@ -717,27 +717,27 @@
     },
     {
       "date": "2026-10-07",
-      "title": "Ueno · Akihabara a fondo · fitness · Harajuku · Shinjuku",
+      "title": "Ueno · Akihabara a fondo · Kanda · Sendagaya · Shinjuku",
       "status": "plan",
-      "note": "Dormimos pronto: salida temprana. Ueno se aprovecha antes de que abran las tiendas; Akihabara tiene un bloque real de unas 4 h. TOBICHI sale de mañana y se deja para otro hueco.",
+      "note": "Salida temprana porque hoy nos acostamos pronto. La idea es aprovechar Ueno antes de que abran las tiendas, dar a Akihabara un bloque largo de verdad y después avanzar de este a oeste sin volver a Harajuku solo por ASICS: hay flagship nuevo en Shinjuku.",
       "activities": [
         {
           "id": "wake-up-1007",
-          "title": "Despertarse · prepararse",
-          "time": "07:00",
+          "title": "Despertarse · desayuno rápido",
+          "time": "06:45",
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "notes": "Nos acostamos pronto el día 6, así que no tiene sentido empezar tarde.",
+          "notes": "Nos acostamos pronto el 6, así que no tiene sentido empezar el día a las 09:00.",
           "plan": [
-            "Levantarse sobre las 07:00.",
-            "Desayuno rápido / konbini y salir con batería y Suica listas."
+            "Levantarse sobre las 06:45.",
+            "Desayuno rápido y salir con mochila ligera."
           ]
         },
         {
           "id": "leave-hotel-1007",
-          "title": "Salir del hotel hacia Ueno",
-          "time": "07:45",
+          "title": "Salir hacia Ueno",
+          "time": "07:30",
           "category": "transporte",
           "status": "plan",
           "priority": "must",
@@ -745,199 +745,180 @@
           "transit": {
             "from": "Hotel SUI Ginza Kyobashi",
             "summary": "Kyobashi (G10) → Ueno (G16) directo por Ginza Line.",
-            "approximateDuration": "15–20 min + paseo"
+            "approximateDuration": "15–20 min"
           },
           "plan": [
-            "Objetivo real: estar paseando por Ueno poco después de las 08:00."
+            "Objetivo real: estar en Ueno antes de las 08:00."
           ]
         },
         {
-          "id": "ueno-park",
-          "title": "Ueno · parque, estanque y santuarios",
-          "category": "naturaleza",
+          "id": "ueno-morning",
+          "title": "Ueno · Shinobazu · Bentendō · Tōshō-gū · Ameyoko",
+          "time": "~07:50–10:00",
+          "category": "barrio",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Ueno Park Tokyo",
-          "time": "~08:05–10:05",
-          "notes": "No es «ir a ver un parque y ya». Aprovechamos la franja temprana antes de que Akihabara esté plenamente abierto.",
+          "notes": "No vamos a Ueno solo para 'ver el parque'. La mañana se monta alrededor de lo que abre pronto: estanque y Bentendō primero, Tōshō-gū desde las 09:00 y Ameyoko al salir.",
           "plan": [
-            "08:05–08:50: paseo por Ueno Park y Shinobazu Pond.",
-            "09:00: Ueno Tōshō-gū, que abre a las 09:00.",
-            "Después, Shinobazu no Ike Bentendō, también desde las 09:00.",
-            "Si Ameyoko ya tiene ambiente al bajar hacia la estación, cruzarlo de camino; no esperar a que abran todas las tiendas."
+            "07:50–08:35 · Shinobazu Pond + Bentendō y paseo por la zona baja del parque.",
+            "08:35–09:00 · subir por Ueno Park sin meternos en museos largos.",
+            "09:00–09:30 · Ueno Tōshō-gū; en octubre abre a las 09:00.",
+            "09:30–10:00 · bajar por Ameyoko mientras empiezan a abrir comercios y puestos.",
+            "A las 10:00 movernos a Akihabara."
           ]
         },
         {
-          "id": "akihabara",
+          "id": "akihabara-deep",
           "title": "Akihabara · bloque largo",
+          "time": "~10:15–14:30",
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "notes": "Aquí sí dejamos tiempo de verdad. Yodobashi Akiba abre 09:30; Radio Kaikan 10:00; Super Potato 11:00; Mandarake a partir de mediodía.",
           "locationQuery": "Akihabara Tokyo",
-          "time": "~10:20–14:20",
+          "notes": "Akihabara deja de ser una visita de dos horas. Se reserva más de 4 h, con Yodobashi Akiba como parada fuerte.",
           "transit": {
-            "from": "Ueno",
-            "summary": "JR Ueno → Akihabara, una parada por Yamanote o Keihin-Tōhoku.",
-            "approximateDuration": "10–15 min total"
-          },
-          "plan": [
-            "10:20–11:20: Yodobashi Camera Multimedia Akiba; recorrerlo con calma, no como parada de 20 minutos.",
-            "11:20–12:10: Akihabara Radio Kaikan.",
-            "12:10–12:45: Super Potato si apetece retro gaming.",
-            "12:45–13:30: Mandarake Complex / tiendas de segunda mano y coleccionismo.",
-            "13:30–14:20: tiempo libre real para repetir, entrar donde llame la atención o hacer compras.",
-            "No meter otra visita en mitad del bloque: Akihabara es una de las anclas del día."
-          ]
-        },
-        {
-          "id": "fitness-shop-suidobashi",
-          "title": "FITNESS SHOP Suidobashi · Versa Gripps",
-          "time": "~14:35–15:05",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "FITNESS SHOP Suidobashi Tokyo",
-          "address": "3-6-13 Misakicho, Chiyoda-ku, Tokyo · Sankyo Chuo Bldg 2F",
-          "nearestStation": "Suidobashi",
-          "approximatePrice": "Versa Gripps PRO / Fit Pro ~¥14.300",
-          "notes": "Parada útil de verdad para Jaime: venden Versa Gripps y otros agarres, straps, cinturones y material de entrenamiento. Abre 11:00–20:00.",
-          "transit": {
-            "from": "Akihabara",
-            "summary": "JR Chūō-Sōbu local Akihabara → Suidobashi; después paseo corto.",
+            "from": "Ueno / Ameyoko",
+            "summary": "JR Ueno/Okachimachi → Akihabara; trayecto corto hacia el sur.",
             "approximateDuration": "10–15 min"
           },
           "plan": [
-            "Preguntar por Versa Gripps PRO / Fit Pro y probar talla.",
-            "Mirar también straps, power grips, cinturones y accesorios de entrenamiento.",
-            "No convertirlo en una visita larga: AUN cierra a las 18:00."
+            "10:15–11:45 · Yodobashi Akiba. Es enorme: electrónica, cámaras, gaming, juguetes y más; no tratarlo como una parada de 20 minutos.",
+            "11:45–12:45 · Akihabara Radio Kaikan para figuras, cartas, coleccionismo y tiendas especializadas.",
+            "12:45–14:30 · calles principales y elegir según apetencia entre Animate, Mandarake, Super Potato, arcades, gachapon y tiendas pequeñas.",
+            "Si encontramos algo interesante, priorizarlo: este bloque está hecho para poder entretenernos.",
+            "Comer solo algo ligero si hace falta; Menya Musashi queda para más tarde."
+          ]
+        },
+        {
+          "id": "tobichi-tokyo-lorena",
+          "title": "TOBICHI Tokyo · Hobonichi",
+          "time": "~14:45–15:15",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "TOBICHI Tokyo Kanda Nishikicho",
+          "address": "3-18 Kanda Nishikicho, Chiyoda-ku, Tokyo 101-0054 · Hobonichi Kanda Building 1F",
+          "nearestStation": "Jimbocho / Takebashi",
+          "notes": "Objetivo concreto: agenda Hobonichi + fundas/accesorios. Importante: TOBICHI Tokyo está en Kanda Nishikicho, no en Ginza; precisamente por eso encaja después de Akihabara.",
+          "plan": [
+            "Ir directos a por Hobonichi Techo y ver fundas/accesorios.",
+            "No convertirlo en una visita larga: 20–30 min si encontramos lo que buscamos."
           ]
         },
         {
           "id": "aun-craft-antique-lorena",
           "title": "阿吽 AUN Craft & Antique",
-          "time": "~15:30–16:00",
+          "time": "~15:50–16:20",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
           "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
-          "nearestStation": "Kitasando / Sendagaya",
-          "notes": "Aquí sí encaja mañana: desde Suidobashi se baja prácticamente directo por Chūō-Sōbu hasta Sendagaya. Cierra a las 18:00.",
-          "transit": {
-            "from": "FITNESS SHOP Suidobashi",
-            "summary": "JR Chūō-Sōbu local Suidobashi → Sendagaya; caminar a AUN.",
-            "approximateDuration": "20–25 min total"
-          },
+          "nearestStation": "Sendagaya / Kitasando",
+          "notes": "Artesanía japonesa, cerámica y objetos tradicionales. Aquí sí merece entrar porque es una tienda concreta guardada por Lorena; cierra a las 18:00.",
           "plan": [
-            "Mirar cerámica, artesanía y objetos japoneses menos genéricos.",
-            "Media hora es suficiente para una tienda pequeña si no nos entretenemos de más."
-          ]
-        },
-        {
-          "id": "lyft-harajuku",
-          "title": "LÝFT Flagship · ropa de gimnasio",
-          "time": "~16:15–16:45",
-          "category": "compras",
-          "status": "plan",
-          "locationQuery": "LYFT Omotesando Harajuku Store Tokyo",
-          "address": "4-25-12 Jingumae, Shibuya-ku, Tokyo · Mico Jingumae 2-A",
-          "nearestStation": "Meiji-jingumae / Harajuku",
-          "notes": "Marca japonesa de fitness/bodybuilding con ropa en la línea que busca Jaime: alternativa local a Gymshark. Flagship 12:00–20:00.",
-          "transit": {
-            "from": "AUN Craft & Antique",
-            "summary": "Moverse a pie hacia Jingumae/Harajuku; es el mismo bloque de Shibuya norte.",
-            "approximateDuration": "15–20 min"
-          },
-          "plan": [
-            "Mirar camisetas, tops, pantalones y ropa de entrenamiento.",
-            "Priorizar ropa que realmente usaríamos; no hace falta pasar por el gimnasio."
-          ]
-        },
-        {
-          "id": "asics-harajuku",
-          "title": "ASICS FLAGSHIP HARAJUKU",
-          "time": "~16:50–17:35",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
-          "address": "1-5-8 Jingumae, Shibuya-ku, Tokyo 150-0001",
-          "nearestStation": "Harajuku / Meiji-jingumae",
-          "notes": "Lo dejamos aquí porque está en el mismo bloque que AUN + LÝFT. Abre 11:00–19:00.",
-          "links": {
-            "officialWebsite": "https://www.asics.com/jp/ja-jp/mk/store/asics-flagship-harajuku"
-          },
-          "transit": {
-            "from": "LÝFT Flagship",
-            "summary": "Ir andando por Jingumae hacia Harajuku.",
-            "approximateDuration": "5–10 min"
-          },
-          "plan": [
-            "Mirar zapatillas y ropa con calma.",
-            "Salir como tarde sobre las 17:35 para ir a Takadanobaba."
+            "Mirar cerámica y objetos japoneses menos genéricos.",
+            "Mantenerlo en 20–30 min salvo que encontremos algo que realmente merezca la pena."
           ]
         },
         {
           "id": "menya-musashi",
           "title": "Menya Musashi Takatora · tsukemen",
+          "time": "~16:50–17:25",
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Recomendación de Alberto. No hace falta meterlo a media tarde: abre hasta las 22:00, así que lo usamos como cena temprana.",
           "locationQuery": "Menya Musashi Takatora Takadanobaba",
           "nearestStation": "Takadanobaba",
           "approximatePrice": "< ¥1.500 aprox.",
+          "notes": "Recomendación concreta de Alberto. El local abre hasta las 22:00 los miércoles, así que no necesitamos sacrificar Akihabara para comer a mediodía.",
           "links": {
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
           },
-          "time": "~18:00",
-          "transit": {
-            "from": "Harajuku",
-            "summary": "JR Yamanote Harajuku → Takadanobaba.",
-            "approximateDuration": "15–20 min total"
-          },
           "plan": [
-            "Ir a por el tsukemen recomendado por Alberto.",
-            "Comer sin prisas absurdas; Shinjuku funciona mejor de noche."
+            "Pedir tsukemen; el local destaca precisamente por esta especialidad.",
+            "Comida tardía / cena temprana antes del bloque de Shinjuku."
+          ]
+        },
+        {
+          "id": "fitness-shop-shinjuku",
+          "title": "Fitness Shop · Shinjuku Takashimaya",
+          "time": "~17:45–18:15",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Fitness Shop Shinjuku Takashimaya",
+          "address": "Shinjuku Takashimaya 8F, 5-24-2 Sendagaya, Shibuya-ku, Tokyo",
+          "nearestStation": "Shinjuku",
+          "notes": "La parada más útil para Jaime si quiere agarres/power grips, straps, muñequeras, cinturones, SBD/Gold's Gym y material de entrenamiento. Cierra a las 19:30.",
+          "plan": [
+            "Preguntar por power grips / パワーグリップ y comparar con el concepto Versa Gripps.",
+            "Mirar straps, wrist wraps y cinturones; probar talla/ajuste antes de comprar."
+          ]
+        },
+        {
+          "id": "asics-shinjuku",
+          "title": "ASICS FLAGSHIP SHINJUKU",
+          "time": "~18:15–18:50",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "ASICS FLAGSHIP SHINJUKU",
+          "address": "3-17-5 Shinjuku, Shinjuku-ku, Tokyo",
+          "nearestStation": "Shinjuku-sanchome / Shinjuku",
+          "notes": "Sustituye el desvío a Harajuku. Es el nuevo flagship de Shinjuku, abierto desde julio de 2026, con zapatillas, training, ropa y accesorios. Cierra a las 20:00.",
+          "plan": [
+            "Mirar zapatillas y ropa deportiva sin volver a Harajuku.",
+            "Aprovechar que está dentro del mismo bloque de Shinjuku."
+          ]
+        },
+        {
+          "id": "lbreath-shinjuku",
+          "title": "L-Breath Shinjuku · montaña / outdoor",
+          "time": "~18:55–19:35",
+          "category": "compras",
+          "status": "plan",
+          "locationQuery": "L-Breath Shinjuku Store",
+          "address": "4-1-11 Shinjuku, Shinjuku-ku, Tokyo",
+          "nearestStation": "Shinjuku-sanchome / Shinjuku",
+          "notes": "Para material de montaña y outdoor. Tiene sentido revisarlo aquí porque abre hasta las 22:00 y no obliga a crear otro desvío.",
+          "plan": [
+            "Mirar ropa técnica, mochilas, accesorios de montaña/camping y marcas japonesas/internacionales.",
+            "Si vamos cansados, esta es flexible porque tiene horario largo."
           ]
         },
         {
           "id": "hanazono-shrine-lorena",
           "title": "Hanazono Shrine",
-          "time": "~18:50",
+          "time": "~19:45",
           "category": "templo",
           "status": "opcional",
           "locationQuery": "Hanazono Shrine Shinjuku Tokyo",
-          "notes": "Parada corta al entrar en Shinjuku; encaja antes de Kabukichō.",
-          "transit": {
-            "from": "Menya Musashi Takatora",
-            "summary": "Takadanobaba → Shinjuku por Yamanote y caminar hacia Shinjuku-sanchome/Hanazono.",
-            "approximateDuration": "15–20 min"
-          },
+          "notes": "Parada corta y natural antes de Kabukichō.",
+          "goshuin": true,
           "plan": [
-            "Parada breve; si vamos cansados se puede saltar."
-          ],
-          "goshuin": true
+            "Entrar solo si apetece; a estas horas el objetivo es ver el santuario y seguir andando."
+          ]
         },
         {
           "id": "kabukicho",
-          "title": "Kabukicho · Godzilla Head",
+          "title": "Kabukichō · Godzilla Head",
+          "time": "~20:00",
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Godzilla Head Shinjuku",
-          "time": "~19:15",
           "plan": [
-            "Pasear por Kabukichō ya de noche y ver Godzilla Head."
+            "Pasear por Kabukichō y ver Godzilla Head con ambiente nocturno."
           ]
         },
         {
           "id": "cross-shinjuku",
           "title": "Cross Shinjuku Vision",
+          "time": "~20:30",
           "category": "ocio",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Cross Shinjuku Vision",
-          "time": "~19:50",
           "plan": [
             "Parada corta para ver la pantalla 3D."
           ]
@@ -945,39 +926,46 @@
         {
           "id": "omoide-yokocho",
           "title": "Omoide Yokocho",
-          "category": "comida",
-          "status": "plan",
-          "locationQuery": "Omoide Yokocho",
-          "time": "~20:10",
-          "notes": "Después del tsukemen es más paseo/ambiente que cena obligatoria.",
-          "plan": [
-            "Recorrer los callejones y tomar algo/picar solo si apetece.",
-            "Desde aquí volver al hotel cuando queramos."
-          ]
-        },
-        {
-          "id": "outdoor-shinjuku-backup",
-          "title": "Ishii Sports · montaña / outdoor",
-          "category": "compras",
+          "time": "~20:45",
+          "category": "barrio",
           "status": "opcional",
-          "locationQuery": "Ishii Sports Yodobashi Shinjuku West Tokyo",
-          "time": "Solo si apetece",
-          "notes": "No lo fuerzo mañana. Queda apuntado como opción de montaña en Shinjuku porque el área Yodobashi del oeste tiene tienda outdoor y horario amplio. Si estamos cansados, otro día.",
+          "locationQuery": "Omoide Yokocho",
+          "notes": "Paseo final. Como ya habremos comido Menya Musashi, aquí no hay obligación de cenar.",
           "plan": [
-            "Mirar material de montaña, trail, ropa técnica y marcas outdoor solo si sobra energía."
+            "Pasear por los callejones y picar algo solo si apetece."
           ]
         }
       ],
       "routeStops": [
         {
-          "title": "Ueno Park",
-          "locationQuery": "Ueno Park Tokyo",
-          "note": "Parque + Ameyoko"
+          "title": "Ueno Park / Shinobazu",
+          "locationQuery": "Shinobazu Pond Tokyo",
+          "note": "Inicio temprano"
         },
         {
-          "title": "Akihabara",
-          "locationQuery": "Yodobashi Camera Multimedia Akiba",
-          "note": "~4 h · Yodobashi + barrio"
+          "title": "Ueno Tōshō-gū",
+          "locationQuery": "Ueno Toshogu Shrine Tokyo",
+          "note": "Abre 09:00"
+        },
+        {
+          "title": "Ameyoko",
+          "locationQuery": "Ameyoko Tokyo",
+          "note": "Al salir de Ueno"
+        },
+        {
+          "title": "Yodobashi Akiba",
+          "locationQuery": "Yodobashi Akiba",
+          "note": "Bloque largo de Akihabara"
+        },
+        {
+          "title": "TOBICHI Tokyo",
+          "locationQuery": "TOBICHI Tokyo Kanda Nishikicho",
+          "note": "Hobonichi"
+        },
+        {
+          "title": "AUN Craft & Antique",
+          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
+          "note": "Antes de las 18:00"
         },
         {
           "title": "Menya Musashi Takatora",
@@ -985,29 +973,24 @@
           "note": "Tsukemen"
         },
         {
-          "title": "AUN Craft & Antique",
-          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
-          "note": "Cierra 18:00"
+          "title": "Shinjuku Takashimaya",
+          "locationQuery": "Shinjuku Takashimaya",
+          "note": "Fitness Shop"
         },
         {
-          "title": "Fitness Shop Harajuku",
-          "locationQuery": "Fitness Shop Harajuku Tokyo",
-          "note": "Versa Gripps"
+          "title": "ASICS FLAGSHIP SHINJUKU",
+          "locationQuery": "ASICS FLAGSHIP SHINJUKU",
+          "note": "Sin desvío a Harajuku"
         },
         {
-          "title": "ASICS Flagship Harajuku",
-          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
-          "note": "Cierra 19:00"
-        },
-        {
-          "title": "Alpen TOKYO",
-          "locationQuery": "Alpen TOKYO Shinjuku",
-          "note": "Fitness + montaña"
+          "title": "L-Breath Shinjuku",
+          "locationQuery": "L-Breath Shinjuku Store",
+          "note": "Outdoor / montaña"
         },
         {
           "title": "Kabukicho",
           "locationQuery": "Godzilla Head Shinjuku",
-          "note": "Noche en Shinjuku"
+          "note": "Noche"
         }
       ]
     },
@@ -1015,7 +998,7 @@
       "date": "2026-10-08",
       "title": "Tsukiji · Tsukishima · teamLab · Roppongi · wagyu",
       "status": "plan",
-      "note": "Tsukiji/Tsukishima + teamLab + Zōjō-ji/Tokyo Tower + Roppongi. Onitsuka Tiger queda integrado antes de la cena; TOBICHI/otros recados céntricos no se fuerzan en un día concreto y se usan solo si encajan.",
+      "note": "Tsukiji/Tsukishima + teamLab si hay entrada; tarde hacia Zōjō-ji/Tokyo Tower y Roppongi. Onitsuka Tiger Roppongi Hills queda fijado antes de la cena porque cierra a las 20:00.",
       "activities": [
         {
           "id": "tsukiji-outer",
