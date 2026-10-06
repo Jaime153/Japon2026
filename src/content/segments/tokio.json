@@ -563,29 +563,21 @@
           ]
         },
         {
-          "id": "tonkatsu-juuroku",
-          "title": "Tonkatsu Juuroku · comida",
+          "id": "tonkatsu-oribe-asakusa",
+          "title": "Tonkatsu Oribe Asakusa · comida real",
           "time": "~13:15",
           "category": "comida",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Tonkatsu Juuroku Asakusa Tokyo",
+          "status": "confirmado",
+          "locationQuery": "Tonkatsu Oribe Asakusa",
           "address": "1-5-11 Kaminarimon, Taito-ku, Tokyo",
-          "nearestStation": "Tawaramachi · salida 3",
-          "approximatePrice": "¥2.000–3.000 aprox. al mediodía",
-          "notes": "Alberto recomendó tonkatsu como plato. Este local no es una recomendación nominal suya: lo elegimos por encaje perfecto con la ruta y buena valoración. Los martes abre 11:30–14:30 y no acepta reservas.",
+          "nearestStation": "Tawaramachi / Asakusa",
+          "approximatePrice": "¥1.000–2.000 aprox.",
+          "notes": "Comida real del 6 de octubre. Juuroku estaba cerrado, así que terminamos comiendo tonkatsu en Oribe.",
           "links": {
-            "tabelog": "https://tabelog.com/en/tokyo/A1311/A131102/13276330/"
-          },
-          "transit": {
-            "from": "Sensō-ji / Nakamise",
-            "summary": "Bajar andando hacia Tawaramachi/Kaminarimon; está a unos 4 min de Tawaramachi Station.",
-            "approximateDuration": "10–15 min"
+            "officialWebsite": "https://www.tonkatsu-oribe.jp/"
           },
           "plan": [
-            "Intentar llegar sobre las 13:15.",
-            "Comer sin sobremesa larga para proteger Kappabashi y Skytree.",
-            "Si la cola amenaza el slot de Skytree, comer algo rápido y seguir."
+            "Comimos tonkatsu en Oribe antes de seguir a Kappabashi."
           ]
         },
         {
@@ -594,13 +586,17 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "notes": "Coincide con Kappabashi Dougu Matsuri. Bloque real de ~1 h 15 min para cuchillos, vajilla y menaje.",
+          "notes": "Prioridad: cuchillos japoneses serios + menaje. Para cuchillos, mirar tiendas especializadas y comparar acero, geometría, mango y mantenimiento; no comprar solo por el dibujo damasco.",
           "locationQuery": "Kappabashi Dougu Street Tokyo",
           "time": "~14:00–15:15",
           "plan": [
-            "Priorizar las tiendas que más interesan: cuchillos, menaje y vajilla.",
-            "No intentar entrar en todo Kappabashi.",
-            "A las 15:15 empezar a movernos hacia Skytree."
+            "Primera parada cuchillos: Tsubaya (3-7-2 Nishi-Asakusa). Más de 1.000 cuchillos; pedir ver gyuto 210 mm en SG2/R2 o VG10 Damascus.",
+            "Segunda: KAMA-ASA (2-24-1 Matsugaya). Muy buena para comparar VG10/Aogami y preguntar por estructura multilámina/Damascus.",
+            "Tercera: Seisuke Knife Kappabashi. Muchísima variedad de fabricantes y personal acostumbrado a explicar en inglés.",
+            "Cuarta si queremos comparar más: KAMATA Hakensha (2-12-6 Matsugaya), tienda histórica con mucha gama.",
+            "Para un cuchillo de gama alta bonito y funcional: pedir un gyuto 210 mm SG2/R2 Damascus; si se quiere carbono, preguntar por Aogami No.2 Damascus.",
+            "No asumir que 'Damascus' significa que todo el filo sea damasco: normalmente es un núcleo duro con capas exteriores estampadas/forjadas. Lo importante es el acero del núcleo y el tratamiento térmico.",
+            "Salir de Kappabashi con tiempo suficiente para llegar a Skytree sobre las 15:40–15:50."
           ]
         },
         {
