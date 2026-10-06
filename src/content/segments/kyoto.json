@@ -309,6 +309,22 @@
           }
         },
         {
+          "id": "tobichi-kyoto",
+          "title": "TOBICHI Kyoto · agenda Hobonichi",
+          "time": "~15:30",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "TOBICHI Kyoto",
+          "address": "Kotobuki Building 5F, 251-2 Ichinocho, Kawaramachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto",
+          "nearestStation": "Kyoto-Kawaramachi / Gion-Shijo",
+          "notes": "Movido desde Tokio para no cruzar la ciudad mañana. TOBICHI Kyoto también es tienda oficial Hobonichi y tiene la gama completa; encaja mucho mejor junto a Nishiki/Gion.",
+          "plan": [
+            "Ir a por la agenda Hobonichi que quiere Lorena.",
+            "Mirar fundas y accesorios; no hace falta hacer el desvío de Kanda en Tokio."
+          ]
+        },
+        {
           "id": "baikoan-matcha-2025",
           "title": "Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)",
           "category": "compras",
