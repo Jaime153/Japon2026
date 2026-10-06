@@ -634,18 +634,6 @@
         },
         {
           "id": "familymart-hotel-dinner-1006",
-          "title": "FamilyMart · cena en el hotel",
-          "time": "Noche",
-          "category": "comida",
-          "status": "confirmado",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Cena real: compramos comida en FamilyMart y cenamos en el hotel, igual que la noche anterior.",
-          "plan": [
-            "Cena sencilla de konbini en el hotel y descanso."
-          ]
-        },
-        {
-          "id": "familymart-hotel-dinner-1006",
           "title": "Cena de FamilyMart en el hotel",
           "time": "Noche",
           "category": "comida",
