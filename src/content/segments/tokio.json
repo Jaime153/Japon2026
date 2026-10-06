@@ -633,27 +633,15 @@
           "approximatePrice": "85,56 € total · 4 adultos"
         },
         {
-          "id": "familymart-hotel-dinner-1006",
-          "title": "Cena de FamilyMart en el hotel",
-          "time": "Noche",
-          "category": "comida",
-          "status": "confirmado",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Cena real del 6 de octubre, igual que la noche anterior: comprar en FamilyMart y cenar tranquilos en el hotel.",
-          "plan": [
-            "Comprar la cena en FamilyMart y cenar en el hotel."
-          ]
-        },
-        {
           "id": "familymart-hotel-1006",
           "title": "FamilyMart · cena en el hotel",
           "time": "Noche",
           "category": "comida",
           "status": "confirmado",
-          "notes": "Cena real del 6 de octubre: compramos en FamilyMart y cenamos en el hotel, igual que la noche anterior.",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "Cena real del 6 de octubre, igual que la noche anterior: compramos en FamilyMart y cenamos en el hotel.",
           "plan": [
-            "Volvimos al hotel y cenamos comida de FamilyMart."
+            "Cena sencilla en el hotel con comida de FamilyMart."
           ]
         }
       ],
@@ -719,7 +707,7 @@
       "date": "2026-10-07",
       "title": "Ueno · Akihabara a fondo · Harajuku · Shinjuku",
       "status": "plan",
-      "note": "Ruta lineal y sin saltos absurdos: Ueno → Ameyoko → Akihabara (bloque largo) → oeste de Tokio → AUN/ASICS → Shinjuku. Los cierres de AUN (18:00) y ASICS (19:00) son los únicos relojes duros.",
+      "note": "Ruta lineal: Ueno → Ameyoko → Akihabara (bloque largo) → Suidobashi/Takadanobaba → AUN/ASICS → Shinjuku. TOBICHI no se fuerza aquí: la compra de Hobonichi ya está colocada en TOBICHI Kyoto el 14. Los cierres de AUN (18:00) y ASICS (19:00) son los relojes duros.",
       "activities": [
         {
           "id": "leave-hotel-1007",
@@ -776,25 +764,9 @@
           }
         },
         {
-          "id": "tobichi-tokyo-lorena",
-          "title": "TOBICHI Tokyo · Hobonichi",
-          "time": "~15:00–15:25",
-          "category": "compras",
-          "status": "opcional",
-          "locationQuery": "TOBICHI Tokyo Kanda Nishikicho",
-          "address": "3-18 Kanda Nishikicho, Chiyoda-ku, Tokyo 101-0054 · Hobonichi Kanda Building 1F",
-          "nearestStation": "Jimbocho / Takebashi",
-          "notes": "Objetivo útil: agenda Hobonichi, fundas y accesorios. NO recortar Akihabara para llegar aquí: solo entrar si salimos de Akiba sobre la hora prevista.",
-          "plan": [
-            "Mirar directamente Hobonichi Techo + fundas/accesorios.",
-            "Visita corta y concreta.",
-            "Si Akihabara se alarga, se saca de mañana y la compra de Hobonichi se resuelve en otro hueco/tienda sin hacer zigzag."
-          ]
-        },
-        {
           "id": "fitness-shop-suidobashi",
           "title": "FITNESS SHOP Suidobashi · Versa Gripps",
-          "time": "~15:35–16:00",
+          "time": "~15:05–15:35",
           "category": "compras",
           "status": "opcional",
           "locationQuery": "FITNESS SHOP Suidobashi Tokyo",
@@ -811,7 +783,7 @@
         {
           "id": "menya-musashi",
           "title": "Menya Musashi Takatora · tsukemen",
-          "time": "~16:20–16:55",
+          "time": "~16:00–16:40",
           "category": "comida",
           "status": "plan",
           "priority": "must",
@@ -831,7 +803,7 @@
         {
           "id": "aun-craft-antique-lorena",
           "title": "阿吽 AUN Craft & Antique",
-          "time": "~17:15–17:40",
+          "time": "~17:05–17:35",
           "category": "compras",
           "status": "plan",
           "priority": "must",
@@ -848,7 +820,7 @@
         {
           "id": "asics-harajuku",
           "title": "ASICS FLAGSHIP HARAJUKU",
-          "time": "~17:50–18:30",
+          "time": "~17:45–18:25",
           "category": "compras",
           "status": "plan",
           "priority": "must",
@@ -993,7 +965,7 @@
       "date": "2026-10-08",
       "title": "Tsukiji · Tsukishima · teamLab · Roppongi · wagyu",
       "status": "plan",
-      "note": "Tsukiji/Tsukishima + bloque sur de Tokio. En Roppongi se añade Onitsuka Tiger antes de Miyabi. Para ropa de gym tipo Gymshark queda localizado CRONOS GINZA SIX, muy cerca del hotel: usarlo solo si aparece un hueco real, no forzarlo en el día 7.",
+      "note": "Tsukiji/Tsukishima + bloque sur de Tokio. Onitsuka Tiger queda integrado en Roppongi antes de cenar. CRONOS GINZA SIX queda localizado cerca del hotel para ropa de gym si aparece un hueco real; no se fuerza mañana.",
       "activities": [
         {
           "id": "tsukiji-outer",
@@ -1134,57 +1106,20 @@
           "goshuin": true
         },
         {
-          "id": "onitsuka-tiger-roppongi",
+          "id": "onitsuka-roppongi-hills",
           "title": "Onitsuka Tiger · Roppongi Hills",
           "time": "~18:35–19:00",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Onitsuka Tiger Roppongi Hills",
-          "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 · Hills Metro Hat/Hollywood Plaza B1F",
-          "nearestStation": "Roppongi",
-          "notes": "La tienda que os han pedido. Está en Metro Hat/Hollywood Plaza B1F y abre 11:00–20:00; por eso hay que hacerla antes de cenar.",
-          "plan": [
-            "Entrar antes de las 19:00 para ir con margen al cierre de las 20:00.",
-            "Después caminar a Yakiniku Miyabi."
-          ]
-        },
-        {
-          "id": "onitsuka-tiger-roppongi-hills",
-          "title": "Onitsuka Tiger Roppongi Hills",
-          "time": "~18:30",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Onitsuka Tiger Roppongi Hills Tokyo",
-          "address": "Roppongi Hills Metro Hat / Hollywood Plaza B1F, 6-4-1 Roppongi, Minato-ku, Tokyo 106-0032",
-          "nearestStation": "Roppongi",
-          "notes": "Petición concreta del grupo. La tienda de Roppongi Hills abre 11:00–20:00; colocarla antes de cenar para no encontrarla cerrada.",
-          "plan": [
-            "Entrar antes de Yakiniku Miyabi.",
-            "Parada de compra concreta; no convertirla en otro bloque largo de shopping."
-          ],
-          "transit": {
-            "from": "Zōjō-ji / Tokyo Tower",
-            "summary": "Moverse hacia Roppongi Hills; encaja de camino al bloque de cena y paseo de Roppongi.",
-            "approximateDuration": "15–25 min"
-          }
-        },
-        {
-          "id": "onitsuka-roppongi-hills",
-          "title": "Onitsuka Tiger · Roppongi Hills",
-          "time": "~18:45–19:15",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Onitsuka Tiger Roppongi Hills",
           "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 · Metro Hat / Hollywood Plaza B1F",
           "nearestStation": "Roppongi",
-          "notes": "Tienda pedida expresamente. Está dentro de Roppongi Hills y cierra a las 20:00, así que va ANTES de cenar.",
+          "notes": "Tienda pedida expresamente. Abre 11:00–20:00 y va antes de la cena para no encontrarla cerrada.",
           "plan": [
-            "Entrar al llegar a Roppongi antes de la cena.",
-            "Mirar zapatillas, apparel y modelos/colores que puedan ser distintos a España.",
-            "No dejarla para después de Miyabi porque cierra a las 20:00."
+            "Entrar al llegar al bloque de Roppongi.",
+            "Mirar zapatillas, apparel y modelos/colores que interesen.",
+            "Salir antes de las 19:00–19:10 para ir a cenar sin prisas."
           ]
         },
         {
