@@ -31,11 +31,12 @@ export const RECOMMENDATIONS: Recommendation[] = [
     scope: '2026',
     priority: 'must',
     source: 'Lorena',
-    summary: 'Tienda pequeña de artesanía japonesa y antigüedades: cerámica, objetos tradicionales y recuerdos con más gracia que el souvenir típico.',
-    fit2026: 'El 7 de octubre encaja después de Akihabara/Suidobashi y antes de ASICS; cierra a las 18:00.',
+    summary: 'Objetivo concreto: probar la máquina gacha vintage que por ¥300 da un ochoko/vasito de sake. Además tiene ochoko vintage, artesanía japonesa y antigüedades.',
+    fit2026: 'Mover al jueves 8 después de Takadanobaba y antes del bloque Harajuku. El miércoles 7 estaba cerrado.',
     notes: [
       'Dirección: 2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku.',
-      'Horario: 11:30–18:00.',
+      'Horario publicado: 11:30–18:00.',
+      'El gacha de ochoko cuesta ¥300 según la guía de la propia tienda publicada en MATCHA.',
     ],
     query: 'AUN Craft Antique Sendagaya Tokyo',
     links: [
@@ -116,7 +117,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     priority: 'optional',
     source: 'Jaime',
     summary: 'Compra personal de Jaime: Versa Gripps PRO / Fit Pro y otros grips, straps o cinturones. No convertirlo en parada del grupo.',
-    fit2026: 'Hoy no desviarnos a Suidobashi. Si apetece mirarlo al pasar por Harajuku, FITNESS SHOP Harajuku está en el mismo bloque y abre más tarde.',
+    fit2026: 'El 8 de octubre encaja después de AUN y antes del resto de compras de Harajuku. Usar Harajuku y no desviarse a Suidobashi.',
     notes: [
       'Versa Gripps PRO / Fit Pro: ¥14.300 en la tienda oficial.',
       'FITNESS SHOP Harajuku: Jingumae 6-31-17 V28 B1F · lunes-viernes 10:00–21:00 · fin de semana/festivos 10:00–20:00.',
@@ -182,6 +183,47 @@ export const RECOMMENDATIONS: Recommendation[] = [
     query: 'Onitsuka Tiger Roppongi Hills',
     links: [
       { label: 'Roppongi Hills', url: 'https://www.roppongihills.com/gourmet_shops/0020.html', kind: 'official' },
+    ],
+  },
+  {
+    id: 'menya-musashi-takatora',
+    title: 'Menya Musashi Takatora',
+    area: 'Takadanobaba · Tokio',
+    category: 'comida',
+    scope: '2026',
+    priority: 'must',
+    source: 'Alberto',
+    summary: 'Tsukemen potente de Menya Musashi en Takadanobaba; recomendación concreta que Jaime quiere probar sí o sí.',
+    fit2026: 'El 8 de octubre después de Tsukiji. Hacemos el salto largo en Uber a propósito y luego volvemos hacia Sendagaya/Harajuku.',
+    notes: [
+      'Dirección: 2-19-7 Takadanobaba, Shinjuku-ku.',
+      'A ~1 minuto de Takadanobaba Station.',
+      'Horario oficial actual: lunes-jueves y domingo 11:00–22:00; viernes y sábado 11:00–22:30.',
+    ],
+    query: 'Takadanobaba Menya Musashi Takatora',
+    links: [
+      { label: 'Web oficial', url: 'https://menya634.co.jp/', kind: 'official' },
+      { label: 'Tabelog', url: 'https://tabelog.com/tokyo/A1305/A130503/13035651/', kind: 'tabelog' },
+    ],
+  },
+  {
+    id: 'ginza-karen-nihonbashi',
+    title: 'Ginza Karen Nihonbashi · maletas',
+    area: 'Ningyocho / Nihonbashi · Tokio',
+    category: 'compras',
+    scope: '2026',
+    priority: 'must',
+    source: 'Jaime',
+    summary: 'Comprar las maletas extra al final del día para no cargarlas durante la ruta.',
+    fit2026: 'El 8 de octubre después de Roppongi: abre hasta la 01:00 y luego queda un regreso corto al hotel.',
+    notes: [
+      'Dirección: 1-15-6 Nihonbashiningyocho, Chuo-ku.',
+      'Horario publicado: 10:00–01:00.',
+      'No confundir el nombre: la tienda que interesa está en Nihonbashi/Ningyocho, no en Ginza.',
+    ],
+    query: 'Ginza Karen Nihonbashi',
+    links: [
+      { label: 'Web oficial', url: 'https://ginzakaren.co.jp/shop/nihonbashi', kind: 'official' },
     ],
   },
   {
