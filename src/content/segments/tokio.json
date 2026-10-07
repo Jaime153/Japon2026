@@ -939,7 +939,7 @@
       "date": "2026-10-08",
       "title": "Tokyo Tower · Zōjō-ji · Tsukiji · Takadanobaba · compras · Roppongi",
       "status": "plan",
-      "note": "Ruta reestructurada para mañana: salir 07:30, aprovechar la mañana para fotos de Tokyo Tower + tienda, Zōjō-ji con goshuin, aperitivo en Tsukiji, Uber a Takadanobaba para Menya Musashi, AUN para el gacha de vasos de sake y después compras. Onitsuka Roppongi + Ginza Karen + CRONOS antes de Yakiniku Miyabi. teamLab queda pendiente sin forzarlo en este día.",
+      "note": "Ruta reestructurada: Tokyo Tower temprano + fotos → Zōjō-ji → aperitivo Tsukiji → Menya Musashi Takatora → AUN (gacha vasos de sake) → ASICS + LÝFT → Onitsuka Roppongi → Ginza Karen → CRONOS opcional → Miyabi. teamLab queda pendiente sin forzarlo.",
       "activities": [
         {
           "id": "leave-hotel-1008",
@@ -1045,9 +1045,36 @@
           }
         },
         {
+          "id": "asics-harajuku-1008",
+          "title": "ASICS FLAGSHIP HARAJUKU",
+          "time": "~14:10–14:45",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
+          "notes": "Compra de zapatillas/ropa. Encaja justo después de AUN porque está en Harajuku; jueves abre 11:00–19:00.",
+          "transit": {
+            "from": "AUN Craft & Antique",
+            "summary": "Ir hacia Harajuku.",
+            "approximateDuration": "~10–15 min"
+          }
+        },
+        {
+          "id": "lyft-harajuku-1008",
+          "title": "LÝFT OMOTESANDO HARAJUKU · gymwear",
+          "time": "~14:50–15:25",
+          "status": "plan",
+          "locationQuery": "LÝFT OMOTESANDO HARAJUKU STORE",
+          "notes": "Ropa tipo Gymshark, solo para Jaime. Está en el mismo bloque Harajuku/Omotesando y abre 12:00–20:00.",
+          "transit": {
+            "from": "ASICS FLAGSHIP HARAJUKU",
+            "summary": "Ir andando hacia Omotesando.",
+            "approximateDuration": "~5–10 min"
+          }
+        },
+        {
           "id": "onitsuka-roppongi-1008",
           "title": "Onitsuka Tiger · Roppongi Hills",
-          "time": "~14:30–15:00",
+          "time": "~15:55–16:25",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Onitsuka Tiger Roppongi Hills",
@@ -1061,7 +1088,7 @@
         {
           "id": "ginza-karen-1008",
           "title": "Ginza Karen · maletas",
-          "time": "~15:45–16:30",
+          "time": "~17:00–17:45",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Ginza Karen Nihonbashi Ningyocho",
@@ -1075,7 +1102,7 @@
         {
           "id": "cronos-ginza-1008",
           "title": "CRONOS GINZA SIX · gymwear",
-          "time": "~16:50–17:30",
+          "time": "~18:00–18:30",
           "status": "opcional",
           "locationQuery": "CRONOS GINZA SIX",
           "notes": "Ropa de entrenamiento tipo Gymshark, solo para Jaime. Bloque de compra personal; no hace falta que el resto del grupo se quede mirando.",
@@ -1088,7 +1115,7 @@
         {
           "id": "free-shopping-1008",
           "title": "Compras / paseo · Ginza–Roppongi",
-          "time": "~17:30–19:00",
+          "time": "~18:30–19:00",
           "status": "opcional",
           "notes": "Colchón para compras que aparezcan sobre la marcha. No añadir otra atracción obligatoria: el día ya tiene bastantes desplazamientos.",
           "plan": [
