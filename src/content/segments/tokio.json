@@ -980,6 +980,24 @@
             "Terminar junto a FootTown poco antes de las 09:00."
           ]
         },
+{
+          "id": "tokyo-tower-tiktok-photo-spots",
+          "title": "📸 Spots de TikTok · 8 fotos de Tokyo Tower",
+          "time": "Durante el circuito 08:00–09:00",
+          "category": "mirador",
+          "status": "opcional",
+          "locationQuery": "Tokyo Tower Shibakoen Tokyo",
+          "notes": "Guía del TikTok con ocho pines, encuadres, coordenadas y navegación. No añade otra hora ni obliga a visitar todos. Importante: Tokyo Tower pide expresamente no fotografiar en las escaleras del parking subterráneo, por seguridad y para no bloquear el paso; el pin se conserva únicamente como referencia.",
+          "plan": [
+            "Abrir el mapa de los 8 spots antes o durante el circuito matinal y elegir 2–3 que estén de paso.",
+            "Priorizar Akabanebashi y Shiba Park, sin retrasar la tienda oficial de las 09:00 ni el goshuin de Zōjō-ji.",
+            "Los spots de noche (bar y silueta) quedan como referencia opcional para otro momento, no para esta mañana.",
+            "No hacer fotos en las escaleras del aparcamiento subterráneo; la torre solicita evitarlas."
+          ],
+          "links": {
+            "photoSpots": "https://jaime153.github.io/Japon2026/fotos-tokyo-tower/"
+          }
+        },
         {
           "id": "tokyo-tower-official-shop",
           "title": "Tokyo Tower · OFFICIAL SHOP GALAXY",
