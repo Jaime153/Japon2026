@@ -45,3 +45,19 @@ export const FIXED_INFO = [
     body: 'Yamato Transport / takkyubin sigue siendo la opción prevista para envío entre alojamientos. Ecbo Cloak y coin lockers como respaldo.',
   },
 ];
+
+
+export const PERSONAL_SHOPPING_INFO = [
+  {
+    title: 'Versa Gripps · compra personal de Jaime',
+    body: 'Opción verificada: FITNESS SHOP Suidobashi. La tienda oficial japonesa vende Versa Gripps PRO V3710 y Fit Pro V3720 por ¥14.300; el stock de talla/color puede variar. Horario del miércoles: 11:00–20:00. Es un desvío solo para Jaime, así que NO se mete en la ruta del grupo.',
+    maps: 'https://www.google.com/maps/search/?api=1&query=FITNESS%20SHOP%20Suidobashi%20Tokyo',
+    website: 'https://fitnessshop.jp/en/',
+  },
+  {
+    title: 'Gym / ropa / montaña · Shinjuku sin desvío',
+    body: 'Si apetece mirar material estando ya en Shinjuku: ASICS FLAGSHIP SHINJUKU abre 11:00–20:00; L-Breath abre hasta las 22:00 para montaña/outdoor; Alpen TOKYO abre hasta las 22:00 y reúne Sports Depo (fitness/ropa) + Alpen Outdoors en el mismo edificio.',
+    maps: 'https://www.google.com/maps/search/?api=1&query=Alpen%20TOKYO%20Shinjuku',
+    website: 'https://store.alpen-group.jp/Form/RealShop/ShopDetail.aspx?rsid=5201',
+  },
+];
