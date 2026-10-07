@@ -318,7 +318,7 @@
       "date": "2026-10-06",
       "title": "Asakusa · Shichifukujin · Kappabashi · Skytree",
       "status": "confirmado",
-      "note": "Día realizado: no fuimos a Cattlea; comida en Tonkatsu Oribe; Shichifukujin + Asakusa/Kappabashi/Skytree; cena de FamilyMart en el hotel.",
+      "note": "Día realizado: Asakusa Shichifukujin + Nakamise + Tonkatsu Oribe + Kappabashi + Skytree. Cattlea no se hizo. Cena de FamilyMart en el hotel.",
       "activities": [
         {
           "id": "wake-up-1006",
@@ -717,9 +717,9 @@
     },
     {
       "date": "2026-10-07",
-      "title": "Akihabara a fondo · Kikanbo · AUN · Shinjuku",
+      "title": "Ueno · Akihabara a fondo · Kikanbo · Harajuku · Shinjuku",
       "status": "plan",
-      "note": "Plan actualizado desde Akihabara: priorizar Animate + Yodobashi y no salir corriendo del barrio; comer Kikanbo en Kanda; después avanzar una sola vez al oeste para AUN + Shinjuku. Versa Gripps sale del planning del grupo y pasa a Info como compra personal de Jaime.",
+      "note": "Estado real: Ueno y Yodobashi ya hechos; ahora estamos en Animate Akihabara. Siguiente ancla: Kikanbo en Kanda. Takadanobaba sale de hoy. Después se mantiene el bloque lógico AUN → ASICS → gymwear → Shinjuku.",
       "activities": [
         {
           "id": "wake-up-1007",
@@ -821,18 +821,24 @@
         {
           "id": "aun-craft-antique-lorena",
           "title": "阿吽 AUN Craft & Antique",
-          "time": "~17:05–17:35",
+          "time": "~16:40–17:15",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
           "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
           "nearestStation": "Sendagaya / Kitasando",
-          "notes": "Esta sí conviene hoy: cierra a las 18:00 y está en el eje hacia Shinjuku. Es el único horario que manda después de Kikanbo.",
+          "notes": "Primera parada de la tarde porque cierra a las 18:00. Artesanía japonesa, cerámica y objetos tradicionales.",
           "plan": [
-            "Mirar cerámica y objetos japoneses menos genéricos.",
-            "Mantenerlo en 20–30 min salvo que encontremos algo que realmente merezca la pena."
-          ]
+            "Ir aquí primero después de comer porque es el cierre más temprano.",
+            "Mirar cerámica, artesanía y objetos japoneses concretos.",
+            "Salir sobre 17:15 para enlazar con ASICS."
+          ],
+          "transit": {
+            "from": "Kikanbo Kanda",
+            "summary": "Moverse de Kanda hacia Kitasando/Sendagaya; priorizar llegar con margen antes de las 18:00.",
+            "approximateDuration": "~25–35 min"
+          }
         },
         {
           "id": "asics-shinjuku",
@@ -914,73 +920,53 @@
           "plan": [
             "Pasear por los callejones y picar algo solo si apetece."
           ]
-        },
-        {
-          "id": "menya-musashi",
-          "title": "Menya Musashi Takatora · cena",
-          "time": "~20:45–21:30",
-          "category": "comida",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Menya Musashi Takatora Takadanobaba",
-          "nearestStation": "Takadanobaba",
-          "approximatePrice": "< ¥1.500 aprox.",
-          "notes": "Recomendación concreta de Alberto. No se elimina: se mueve a la noche porque Takadanobaba está a dos paradas de Shinjuku y hoy miércoles cierra a las 22:00.",
-          "links": {
-            "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
-          },
-          "plan": [
-            "Después del bloque de Shinjuku, ir a Takadanobaba para cenar.",
-            "Pedir tsukemen; esta es la recomendación de Alberto que no queremos perder.",
-            "Intentar llegar antes de las 21:00."
-          ],
-          "transit": {
-            "from": "Shinjuku",
-            "summary": "JR Yamanote Line Shinjuku → Takadanobaba, dos paradas; el local está junto a la salida Waseda.",
-            "approximateDuration": "~10–15 min total"
-          }
         }
       ],
       "routeStops": [
         {
-          "title": "Animate Akihabara",
-          "locationQuery": "Animate Akihabara",
-          "note": "Primera parada"
+          "title": "Ueno",
+          "locationQuery": "Ueno Park Tokyo",
+          "note": "Hecho"
         },
         {
           "title": "Yodobashi Akiba",
-          "locationQuery": "Yodobashi Akiba",
-          "note": "Ancla de Akihabara"
+          "locationQuery": "Yodobashi Camera Multimedia Akiba",
+          "note": "Hecho"
+        },
+        {
+          "title": "Animate Akihabara",
+          "locationQuery": "Animate Akihabara",
+          "note": "Ahora"
         },
         {
           "title": "Kikanbo Kanda",
-          "locationQuery": "Karashibi Miso Ramen Kikanbo Kanda Honten",
+          "locationQuery": "Karashibi Miso Ramen Kikanbo Kanda Main Store",
           "note": "Comida"
         },
         {
           "title": "AUN Craft & Antique",
           "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
-          "note": "Antes de las 18:00"
+          "note": "Cierra 18:00"
         },
         {
-          "title": "ASICS FLAGSHIP SHINJUKU",
-          "locationQuery": "ASICS FLAGSHIP SHINJUKU",
-          "note": "Hasta 20:00"
+          "title": "ASICS Flagship Harajuku",
+          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
+          "note": "Cierra 19:00"
         },
         {
-          "title": "L-Breath Shinjuku",
-          "locationQuery": "L-Breath Shinjuku Store",
-          "note": "Outdoor opcional"
+          "title": "LÝFT / CRONOS",
+          "locationQuery": "LYFT Omotesando Harajuku Store",
+          "note": "Gymwear · hasta 20:00"
+        },
+        {
+          "title": "Alpen TOKYO",
+          "locationQuery": "Alpen TOKYO Shinjuku",
+          "note": "Montaña · hasta 22:00"
         },
         {
           "title": "Kabukicho",
           "locationQuery": "Godzilla Head Shinjuku",
           "note": "Noche"
-        },
-        {
-          "title": "Menya Musashi Takatora",
-          "locationQuery": "Menya Musashi Takatora Takadanobaba",
-          "note": "Cena"
         }
       ]
     },
