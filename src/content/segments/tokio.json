@@ -745,18 +745,21 @@
         {
           "id": "akihabara",
           "title": "Akihabara · bloque largo",
-          "time": "~10:15–14:30",
+          "time": "~10:15–15:00",
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "notes": "Akihabara pasa a ser un bloque real de casi 4 horas. Yodobashi no es una parada rápida: reservarle 60–90 min.",
+          "notes": "Bloque largo de verdad. Tiendas concretas: Yodobashi para electrónica/cámaras, Animate y Mandarake para manga/anime, Radio Kaikan/AmiAmi para figuras y Super Potato para retro.",
           "locationQuery": "Akihabara Tokyo",
           "plan": [
-            "10:15–11:45 · Yodobashi Akiba: 90 min reales para electrónica, cámaras, accesorios, gaming y plantas completas.",
-            "11:45–12:45 · Radio Kaikan: figuras/anime/coleccionismo.",
-            "12:45–14:30 · elegir 1–2 extras y curiosear sin prisa: Super Potato, Mandarake Complex, Animate, GiGO, gachapon o segunda mano.",
-            "No recortar Akihabara para meter más tiendas por obligación.",
-            "Objetivo de salida: 14:30."
+            "Yodobashi Akiba: electrónica, cámaras, gaming y varias plantas; reservar 60–90 min.",
+            "Animate Akihabara: manga/libros, anime y merchandising; buena parada para manga nuevo y series actuales.",
+            "Mandarake Complex: manga y libros de segunda mano, rarezas, figuras y coleccionismo; ideal para rebuscar.",
+            "Melonbooks Akihabara 1st: manga/doujinshi; entrar solo si os interesa.",
+            "Radio Kaikan + AmiAmi: figuras, cartas y coleccionismo.",
+            "Super Potato: retro gaming, consolas/juegos antiguos y arcade.",
+            "Prioridad práctica: Yodobashi → Animate → Mandarake; añadir el resto según apetencia.",
+            "Salir sobre las 15:00 para seguir hacia Takadanobaba."
           ],
           "transit": {
             "from": "Ameyoko / Okachimachi",
@@ -766,19 +769,18 @@
         },
         {
           "id": "fitness-shop-suidobashi",
-          "title": "FITNESS SHOP Suidobashi · Versa Gripps",
-          "time": "~14:50–15:15",
+          "title": "FITNESS SHOP Suidobashi · opcional personal",
+          "time": "Otro momento",
           "category": "compras",
           "status": "opcional",
           "locationQuery": "FITNESS SHOP Suidobashi Tokyo",
           "address": "3-6-13 Misakicho, Chiyoda-ku, Tokyo · 2F",
           "nearestStation": "Suidobashi",
           "approximatePrice": "Versa Gripps Pro / Fit Pro ~¥14.300",
-          "notes": "Parada que sí encaja geográficamente al ir hacia Takadanobaba. La cadena vende Versa Gripps oficiales, Gold's Gym grips, Schiek y más material de fuerza; el stock concreto de tienda puede variar.",
+          "notes": "Parada personal; no forma parte de la ruta del grupo.",
           "plan": [
-            "Preguntar primero por Versa Gripps Pro / Fit Pro y probar talla.",
-            "Mirar también power grips, straps, cinturones y accesorios de fuerza.",
-            "Máximo ~25 min: si no tienen talla/color, seguir."
+            "No ir hoy con el grupo.",
+            "Guardar solo por si aparece un hueco otro día para mirar Versa Gripps y accesorios."
           ]
         },
         {
@@ -940,11 +942,6 @@
           "title": "Yodobashi Akiba",
           "locationQuery": "Yodobashi Camera Multimedia Akiba",
           "note": "Akihabara ~4 h"
-        },
-        {
-          "title": "FITNESS SHOP Suidobashi",
-          "locationQuery": "FITNESS SHOP Suidobashi Tokyo",
-          "note": "Versa Gripps · opcional"
         },
         {
           "title": "Menya Musashi Takatora",
