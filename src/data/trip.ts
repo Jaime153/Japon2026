@@ -44,4 +44,9 @@ export const FIXED_INFO = [
     title: 'Maletas',
     body: 'Yamato Transport / takkyubin sigue siendo la opción prevista para envío entre alojamientos. Ecbo Cloak y coin lockers como respaldo.',
   },
+  {
+    title: 'Versa Gripps · compra personal Jaime',
+    body: 'No forma parte de la ruta del grupo. FITNESS SHOP Suidobashi vende Versa Gripps PRO / Fit Pro y material de fuerza. Miércoles 11:00–20:00. Dirección: 3-6-13 Misakicho, Chiyoda-ku, Tokyo · 2F. Ir solo si aparece un hueco personal; no desviar a Lorena, Vilma y Marga.',
+    maps: 'https://www.google.com/maps/search/?api=1&query=FITNESS%20SHOP%20Suidobashi%20Tokyo',
+  },
 ];

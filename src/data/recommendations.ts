@@ -113,10 +113,10 @@ export const RECOMMENDATIONS: Recommendation[] = [
     area: 'Suidobashi · Tokio',
     category: 'compras',
     scope: '2026',
-    priority: 'must',
+    priority: 'optional',
     source: 'Jaime',
-    summary: 'Tienda especializada en entrenamiento con Versa Gripps, power grips, straps, cinturones y material Gold\'s Gym.',
-    fit2026: 'El 7 de octubre encaja justo después de Akihabara: JR Chuo-Sobu hasta Suidobashi y luego seguir hacia Sendagaya.',
+    summary: 'Compra personal de Jaime: Versa Gripps, power grips, straps, cinturones y material Gold\'s Gym.',
+    fit2026: 'No meterlo en la ruta del grupo. Guardado también en Info para ir solo si aparece un hueco personal.',
     notes: [
       'Versa Gripps PRO / Fit Pro: ¥14.300 en la tienda oficial online.',
       'Horario miércoles: 11:00–20:00.',
