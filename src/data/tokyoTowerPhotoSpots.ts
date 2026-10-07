@@ -73,8 +73,8 @@ export const TOKYO_TOWER_PHOTO_SPOTS: TokyoTowerPhotoSpot[] = [
     lng: 139.7457514,
     accuracy: 'exacto',
     mapQuery: '35.6570979,139.7457514',
-    tip: 'Baja las escaleras y fotografía desde abajo: los muros encuadran toda la torre.',
-    note: 'Es el spot de la foto de las escaleras del TikTok. Puede haber mucha cola; no bloquear el paso y no usar trípode.',
+    tip: 'Referencia visual al encuadre viral de la escalera: Tokyo Tower solicita no hacer fotos en las escaleras del aparcamiento.',
+    note: 'Ubicación guardada únicamente como referencia. La web oficial pide abstenerse de fotografiar en estas escaleras por seguridad y por respeto a los usuarios del aparcamiento. No bajar para posar o hacer fotos.',
     bestTime: 'ambos',
   },
   {
