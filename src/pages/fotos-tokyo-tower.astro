@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { TOKYO_TOWER_PHOTO_SPOTS, TOKYO_TOWER_TIKTOK_URL } from '../data/tokyoTowerPhotoSpots';
+
+const base = import.meta.env.BASE_URL;
+const spots = TOKYO_TOWER_PHOTO_SPOTS;
+const mapsSearch = (query: string) =>
+  'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query);
+const mapsDirections = (query: string) =>
+  'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(query) + '&travelmode=walking';
+const timeLabels = { dia: '☀️ Día', noche: '🌙 Noche', ambos: '🌗 Día y noche' };
+---
+
+<Layout title="Spots de fotos · Tokyo Tower · Japón 2026">
+  <header class="mb-5">
+    <a href={base + 'mapas/'} class="text-sm font-bold text-blue-700">← Volver al mapa del viaje</a>
+    <p class="mt-4 text-xs font-black uppercase tracking-[0.16em] text-red-600">📸 Mapa del TikTok</p>
+    <h1 class="mt-1 text-3xl font-black tracking-tight">8 fotos de Tokyo Tower</h1>
+    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+      Los ocho encuadres de la captura, numerados igual que el vídeo. Son ideas fotográficas, no nuevas paradas obligatorias del itinerario.
+    </p>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <a href={TOKYO_TOWER_TIKTOK_URL} target="_blank" rel="noopener noreferrer"
+        class="rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-bold text-white">▶ Ver TikTok original</a>
+      <a href="#lista-spots" class="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-700">↓ Ver los 8 puntos</a>
+    </div>
+  </header>
+
+  <section class="rounded-3xl border border-slate-200 bg-white p-3 shadow-sm sm:p-4">
+    <div class="mb-3 flex items-center justify-between gap-2">
+      <h2 class="text-lg font-black">📍 Mapa de spots</h2>
+      <button id="photo-locate" type="button" class="rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold text-slate-700">◎ Estoy aquí</button>
+    </div>
+    <div id="photo-spots-map" class="h-[47vh] min-h-[310px] overflow-hidden rounded-2xl bg-slate-100" aria-label="Mapa de ocho puntos de fotografía junto a Tokyo Tower"></div>
+    <p id="photo-map-status" class="mt-2 text-xs text-slate-500" role="status">
+      Cargando el mapa. Los enlaces de Google Maps de abajo funcionan por separado.
+    </p>
+  </section>
+
+  <div class="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-3 text-xs leading-relaxed text-amber-950">
+    <strong>Precisión de los pines:</strong> «Punto exacto» significa que hay una ubicación publicada para la foto.
+    «Referencia» lleva al parque o edificio indicado en la guía, pero no necesariamente al metro exacto del encuadre.
+    Para esos lugares, el botón de Google Maps busca el sitio por su nombre y dirección.
+  </div>
+
+  <section id="lista-spots" class="mt-7">
+    <h2 class="mb-3 text-2xl font-black">Los 8 encuadres</h2>
+    <div class="grid gap-3 md:grid-cols-2">
+      {spots.map((spot) => (
+        <article id={'spot-' + spot.number} class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div class="flex items-start gap-3">
+            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-black text-white">{spot.number}</span>
+            <div class="min-w-0">
+              <h3 class="text-lg font-black text-slate-950">{spot.title}</h3>
+              <p class="mt-0.5 text-xs text-slate-500">{spot.place}</p>
+            </div>
+          </div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-bold text-slate-700">{timeLabels[spot.bestTime]}</span>
+            <span class:list={['rounded-full px-2.5 py-1 text-[11px] font-bold', spot.accuracy === 'exacto' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800']}>
+              {spot.accuracy === 'exacto' ? '✓ Punto exacto' : '≈ Referencia'}
+            </span>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-slate-800">{spot.tip}</p>
+          {spot.note && <p class="mt-2 text-xs leading-relaxed text-slate-500">{spot.note}</p>}
+          <p class="mt-3 font-mono text-xs text-slate-500">{spot.lat.toFixed(6)}, {spot.lng.toFixed(6)}</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <button type="button" data-focus-spot={spot.number}
+              class="rounded-lg border border-slate-200 px-3 py-2 text-xs font-bold text-slate-700">🗺️ Ver pin</button>
+            <a href={mapsSearch(spot.mapQuery)} target="_blank" rel="noopener noreferrer"
+              class="rounded-lg bg-blue-50 px-3 py-2 text-xs font-bold text-blue-800">📍 Google Maps</a>
+            <a href={mapsDirections(spot.mapQuery)} target="_blank" rel="noopener noreferrer"
+              class="rounded-lg bg-emerald-50 px-3 py-2 text-xs font-bold text-emerald-800">🧭 Cómo llegar</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <footer class="mt-7 rounded-2xl bg-slate-100 p-4 text-xs leading-relaxed text-slate-600">
+    Fuentes: captura y <a href={TOKYO_TOWER_TIKTOK_URL} target="_blank" rel="noopener noreferrer" class="underline">TikTok aportado</a>;
+    puntos contrastados con las direcciones de parques, negocios y guías de fotografía locales.
+    El aparcamiento de las escaleras es de paso público: evita trípodes, colas que obstruyan la salida y entrar en zonas privadas.
+  </footer>
+
+  <script is:inline define:vars={{ spots }}>
+    const el = document.getElementById('photo-spots-map');
+    const status = document.getElementById('photo-map-status');
+    let map;
+    const markers = new Map();
+
+    function loadLeaflet() {
+      return new Promise((resolve, reject) => {
+        if (window.L) return resolve(window.L);
+        if (!document.querySelector('link[data-photo-leaflet]')) {
+          const css = document.createElement('link');
+          css.rel = 'stylesheet';
+          css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+          css.dataset.photoLeaflet = 'true';
+          document.head.appendChild(css);
+        }
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        script.onload = () => resolve(window.L);
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+
+    function focusSpot(number) {
+      const point = spots.find((spot) => spot.number === number);
+      const marker = markers.get(number);
+      if (!point || !marker || !map) {
+        status.textContent = 'El mapa no está disponible ahora. Usa Google Maps en la tarjeta.';
+        return;
+      }
+      map.flyTo([point.lat, point.lng], 18, { duration: 0.65 });
+      marker.openPopup();
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    document.querySelectorAll('[data-focus-spot]').forEach((button) => {
+      button.addEventListener('click', () => focusSpot(Number(button.dataset.focusSpot)));
+    });
+
+    document.getElementById('photo-locate')?.addEventListener('click', () => {
+      if (!map || !navigator.geolocation) {
+        status.textContent = 'La geolocalización no está disponible.';
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(
+        ({ coords }) => {
+          const L = window.L;
+          L.circleMarker([coords.latitude, coords.longitude], { radius: 8, color: '#2563eb', fillColor: '#2563eb', fillOpacity: 0.6 }).addTo(map).bindPopup('Tu ubicación').openPopup();
+          map.setView([coords.latitude, coords.longitude], 15);
+        },
+        () => { status.textContent = 'No se pudo obtener tu ubicación; revisa los permisos del móvil.'; },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 },
+      );
+    });
+
+    loadLeaflet().then((L) => {
+      map = L.map(el, { zoomControl: true }).setView([35.6575, 139.7455], 15);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map);
+      const bounds = [];
+      spots.forEach((point) => {
+        const color = point.accuracy === 'exacto' ? '#dc2626' : '#9f6c15';
+        const icon = L.divIcon({
+          className: '',
+          html: '<div style="background:' + color + ';color:white;width:30px;height:30px;border-radius:50%;border:2px solid white;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 2px 8px #0005">' + point.number + '</div>',
+          iconSize: [30, 30],
+          iconAnchor: [15, 15],
+        });
+        const marker = L.marker([point.lat, point.lng], { icon }).addTo(map);
+        const details = point.accuracy === 'exacto' ? 'Punto exacto' : 'Referencia aproximada';
+        marker.bindPopup('<strong>' + point.number + '. ' + point.title + '</strong><br>' + details + '<br><a href="#spot-' + point.number + '">Ver ficha y enlaces</a>');
+        markers.set(point.number, marker);
+        bounds.push([point.lat, point.lng]);
+      });
+      if (bounds.length) map.fitBounds(L.latLngBounds(bounds).pad(0.18), { maxZoom: 16 });
+      status.textContent = '8 puntos localizados · rojo: exactos · ocre: referencias de zona.';
+    }).catch(() => {
+      status.textContent = 'No ha cargado Leaflet. Los enlaces de Google Maps y las coordenadas siguen disponibles.';
+    });
+  </script>
+</Layout>
