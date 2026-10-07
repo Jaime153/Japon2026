@@ -719,7 +719,7 @@
       "date": "2026-10-07",
       "title": "Akihabara largo · AUN · Takadanobaba · Shinjuku",
       "status": "plan",
-      "note": "Día rehecho por zonas: fuera Ueno por meterlo sin objetivo concreto; Akihabara recibe una mañana larga de verdad. TOBICHI Tokyo sale del día: el objetivo Hobonichi ya está cubierto en TOBICHI Kyoto el 14. AUN se mantiene porque cierra pronto; ASICS se hace en el nuevo flagship de Shinjuku y se añade deporte/outdoor sin desvíos absurdos.",
+      "note": "Akihabara largo y con tiendas concretas de manga/anime/retro. Nada de llevar al grupo a un desvío por Versa Gripps: esa compra de Jaime solo se mira si aparece de paso. Después AUN → Takadanobaba → Shinjuku.",
       "activities": [
         {
           "id": "wake-up-1007",
@@ -782,25 +782,27 @@
         },
         {
           "id": "akihabara-deep-dive",
-          "title": "Akihabara · tiendas, retro y recreativos",
-          "time": "12:05–14:30",
+          "title": "Akihabara · manga, anime, retro y segunda mano",
+          "time": "12:05–15:00",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Akihabara Electric Town Tokyo",
-          "notes": "Bloque libre de más de 2 h para recorrer Akihabara sin convertir el barrio en una parada exprés.",
+          "notes": "Bloque largo de verdad. No es solo pasear: hay una ruta concreta de manga/anime/retro para elegir según lo que os interese.",
           "plan": [
-            "Super Potato: retro gaming, 3F–5F; abre 11:00–20:00.",
-            "Animate Akihabara: manga/anime/merch; abre 10:00–21:00.",
-            "GiGO: entrar si apetece arcade/UFO catchers.",
-            "Mandarake/tiendas de segunda mano si encontramos algo concreto.",
-            "Comer/picar algo rápido en la zona si hace falta; el tsukemen fuerte viene después."
+            "Animate Akihabara · prioridad manga/anime. Edificio 2: 3F novedades (manga, novelas y artbooks), 4F shōnen/seinen y catálogo, 5F revistas/shōjo/BL. Abre 10:00–21:00.",
+            "Mandarake Complex · prioridad segunda mano/coleccionismo: manga usado, ediciones antiguas, figuras, doujinshi, juegos y rarezas. Está a ~4 min de la estación.",
+            "Super Potato · 3F–5F, retro gaming. Gran stock de Famicom/Super Famicom/N64/GB/PS/SEGA; 5F tiene recreativas retro. Abre 11:00–20:00.",
+            "Surugaya Akihabara Anime Hobby Pavilion · usado de anime/hobby, figuras, juegos y libros. Buena para comparar precios con Mandarake.",
+            "BOOKOFF Akihabara Ekimae · opcional si queréis manga/juegos usados baratos sin buscar coleccionismo raro; abre hasta las 22:00.",
+            "GiGO / recreativos solo si apetece; no sacrificar Animate/Mandarake/Super Potato por UFO catchers.",
+            "A las 15:00 decidir salida. Si estáis comprando algo que merece la pena, AUN puede comprimirse; Akihabara no vuelve a ser una visita exprés."
           ]
         },
         {
           "id": "aun-craft-antique-lorena",
           "title": "阿吽 AUN Craft & Antique",
-          "time": "15:10–15:40",
+          "time": "~15:40–16:10",
           "category": "compras",
           "status": "plan",
           "priority": "must",
@@ -810,7 +812,7 @@
           "notes": "Tienda pequeña de artesanía japonesa y antigüedades. Cierra a las 18:00, por eso sí merece posición fija antes de Shinjuku.",
           "transit": {
             "from": "Akihabara",
-            "summary": "Moverse a Kitasando/Sendagaya; es el único salto grande de la tarde y está justificado por el cierre temprano.",
+            "summary": "Akihabara → Kitasando/Sendagaya. Salir sobre las 15:00 para llegar con margen antes del cierre.",
             "approximateDuration": "30–40 min"
           },
           "plan": [
@@ -819,25 +821,9 @@
           ]
         },
         {
-          "id": "fitness-shop-shinjuku-takashimaya",
-          "title": "Fitness Shop · Shinjuku Takashimaya",
-          "time": "15:55–16:25",
-          "category": "compras",
-          "status": "opcional",
-          "locationQuery": "Shinjuku Takashimaya Fitness Shop Tokyo",
-          "address": "Shinjuku Takashimaya 8F, 5-24-2 Sendagaya, Shibuya-ku, Tokyo",
-          "nearestStation": "Shinjuku / Shinjuku-sanchome",
-          "notes": "Parada pensada para Jaime: grips/straps, accesorios de entrenamiento y ropa fitness. Fitness Shop vende Versa Gripps en Japón; confirmar stock/talla en tienda. Cierra 19:30.",
-          "plan": [
-            "Preguntar directamente por Versa Gripps PRO / Fit Pro y probar talla si tienen stock.",
-            "Mirar straps, muñequeras y accesorios de gimnasio.",
-            "Si AUN se alarga o vamos cansados, se puede saltar: Alpen TOKYO después cubre deporte/outdoor."
-          ]
-        },
-        {
           "id": "menya-musashi",
           "title": "Menya Musashi Takatora · tsukemen",
-          "time": "~17:00",
+          "time": "~16:45–17:30",
           "category": "comida",
           "status": "plan",
           "priority": "must",
@@ -849,9 +835,9 @@
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
           },
           "transit": {
-            "from": "Shinjuku Takashimaya / Sendagaya",
-            "summary": "Volver a JR Shinjuku y subir dos paradas por Yamanote hasta Takadanobaba.",
-            "approximateDuration": "20–25 min"
+            "from": "AUN Craft & Antique",
+            "summary": "Kitasando/Sendagaya → Takadanobaba; enlazar hacia Yamanote según el punto exacto de salida.",
+            "approximateDuration": "25–35 min"
           },
           "plan": [
             "Pedir el tsukemen recomendado.",
@@ -862,7 +848,7 @@
         {
           "id": "asics-shinjuku",
           "title": "ASICS FLAGSHIP SHINJUKU",
-          "time": "18:00–18:40",
+          "time": "~18:00–18:40",
           "category": "compras",
           "status": "plan",
           "priority": "must",
@@ -878,18 +864,19 @@
         {
           "id": "alpen-tokyo",
           "title": "Alpen TOKYO · deporte + montaña",
-          "time": "18:45–19:35",
+          "time": "~18:45–19:45",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Alpen TOKYO Shinjuku",
           "address": "3-23-7 Shinjuku, Shinjuku-ku, Tokyo",
           "nearestStation": "Shinjuku East Exit",
-          "notes": "Muy buen encaje para Jaime sin cambiar de barrio: deporte, sportswear y varias plantas de Alpen Outdoors. Entre semana abre hasta las 22:00.",
+          "notes": "Deporte + montaña en el mismo barrio. Para Jaime: mirar training, straps/grips y ropa si aparece algo interesante, pero NO hacemos una excursión aparte solo para buscar Versa Gripps.",
           "plan": [
-            "Revisar ropa deportiva tipo training y marcas japonesas.",
-            "Subir a outdoor/montaña: mochilas, trekking, camping y equipamiento técnico.",
-            "Si queremos montaña todavía más técnica, Ishii Sports Shinjuku West queda como backup hasta las 22:00; no meterlo por obligación."
+            "Outdoor/montaña: mochilas, trekking, camping, calzado y equipamiento técnico.",
+            "Training/sportswear: mirar ropa y accesorios de gimnasio dentro del mismo edificio.",
+            "Versa Gripps quedan como compra personal de Jaime: solo mirar si están aquí o en una tienda que pille literalmente de paso; no mover al grupo por eso.",
+            "Si se quiere material de montaña todavía más técnico, Ishii Sports queda como posible visita otro día/si coincide; no se fuerza hoy."
           ]
         },
         {
@@ -948,19 +935,29 @@
       ],
       "routeStops": [
         {
-          "title": "Ueno Park",
-          "locationQuery": "Ueno Park Tokyo",
-          "note": "Parque + Ameyoko"
-        },
-        {
-          "title": "Akihabara",
+          "title": "Yodobashi Akiba",
           "locationQuery": "Yodobashi Camera Multimedia Akiba",
-          "note": "~4 h · Yodobashi + barrio"
+          "note": "Electrónica · 09:30–22:00"
         },
         {
-          "title": "Menya Musashi Takatora",
-          "locationQuery": "Menya Musashi Takatora Takadanobaba",
-          "note": "Tsukemen"
+          "title": "Radio Kaikan",
+          "locationQuery": "Akihabara Radio Kaikan",
+          "note": "AmiAmi + hobby"
+        },
+        {
+          "title": "Animate Akihabara",
+          "locationQuery": "Animate Akihabara",
+          "note": "Manga/anime · Bldg. 2"
+        },
+        {
+          "title": "Mandarake Complex",
+          "locationQuery": "Mandarake Complex Akihabara",
+          "note": "Manga usado + coleccionismo"
+        },
+        {
+          "title": "Super Potato",
+          "locationQuery": "Super Potato Akihabara",
+          "note": "Retro gaming"
         },
         {
           "title": "AUN Craft & Antique",
@@ -968,19 +965,19 @@
           "note": "Cierra 18:00"
         },
         {
-          "title": "Fitness Shop Harajuku",
-          "locationQuery": "Fitness Shop Harajuku Tokyo",
-          "note": "Versa Gripps"
+          "title": "Menya Musashi Takatora",
+          "locationQuery": "Menya Musashi Takatora Takadanobaba",
+          "note": "Tsukemen"
         },
         {
-          "title": "ASICS Flagship Harajuku",
-          "locationQuery": "ASICS FLAGSHIP HARAJUKU",
-          "note": "Cierra 19:00"
+          "title": "ASICS FLAGSHIP SHINJUKU",
+          "locationQuery": "ASICS FLAGSHIP SHINJUKU",
+          "note": "Running/training"
         },
         {
           "title": "Alpen TOKYO",
           "locationQuery": "Alpen TOKYO Shinjuku",
-          "note": "Fitness + montaña"
+          "note": "Deporte + montaña"
         },
         {
           "title": "Kabukicho",
