@@ -1144,25 +1144,9 @@
           ]
         },
         {
-          "id": "onitsuka-tiger-roppongi",
-          "title": "Onitsuka Tiger · Roppongi Hills",
-          "time": "~18:40–19:05",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Onitsuka Tiger Roppongi Hills",
-          "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 Metro Hat / Hollywood Plaza B1F",
-          "nearestStation": "Roppongi",
-          "notes": "Petición del grupo. Meterla el día que ya estamos en Roppongi, no como desvío otro día. Cierra a las 20:00.",
-          "plan": [
-            "Entrar al llegar a Roppongi antes de cenar.",
-            "Mirar zapatillas/ropa y salir con margen para la cena."
-          ]
-        },
-        {
           "id": "yakiniku-miyabi-roppongi",
           "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
-          "time": "~19:15",
+          "time": "~19:10",
           "category": "comida",
           "status": "plan",
           "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
