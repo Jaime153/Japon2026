@@ -13,6 +13,7 @@ const activityLinksSchema = z.object({
   appleMaps: z.string().url().optional(),
   tabelog: z.string().url().optional(),
   officialWebsite: z.string().url().optional(),
+  photoSpots: z.string().url().optional(),
   reservation: z.string().url().optional(),
   weather: z.string().url().optional(),
   weatherAlt: z.string().url().optional(),
