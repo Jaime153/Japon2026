@@ -643,14 +643,6 @@
           "plan": [
             "Cena sencilla en el hotel con comida de FamilyMart."
           ]
-        },
-        {
-          "id": "familymart-hotel-dinner-1006",
-          "title": "Cena de FamilyMart en el hotel",
-          "category": "comida",
-          "status": "confirmado",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Cena real del 6 de octubre. Igual que la noche anterior: comprar en FamilyMart y cenar tranquilos en el hotel."
         }
       ],
       "routeStops": [
@@ -798,22 +790,16 @@
           "title": "阿吽 AUN Craft & Antique",
           "time": "~16:40–17:15",
           "category": "compras",
-          "status": "plan",
+          "status": "opcional",
           "priority": "must",
           "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
           "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
           "nearestStation": "Kitasando / Sendagaya",
-          "notes": "Primera parada de la tarde porque cierra a las 18:00. Artesanía japonesa, cerámica y objetos tradicionales.",
+          "notes": "No fuimos: el miércoles estaba cerrado. Se mueve al jueves 8; el objetivo concreto es hacer el gacha de 300 ¥ de ochoko/vasitos de sake vintage.",
           "plan": [
-            "Ir aquí primero después de comer porque es el cierre más temprano.",
-            "Mirar cerámica, artesanía y objetos japoneses concretos.",
-            "Salir sobre 17:15 para enlazar con ASICS."
+            "Mover al 8 de octubre, cuando abre 11:30–18:00."
           ],
-          "transit": {
-            "from": "Kikanbo Kanda",
-            "summary": "Moverse de Kanda hacia Kitasando/Sendagaya y priorizar llegar antes de las 18:00.",
-            "approximateDuration": "~25–35 min"
-          }
+          "skipped": true
         },
         {
           "id": "asics-harajuku",
@@ -939,11 +925,6 @@
           "note": "Comida"
         },
         {
-          "title": "AUN Craft & Antique",
-          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
-          "note": "Cierra 18:00"
-        },
-        {
           "title": "ASICS Flagship Harajuku",
           "locationQuery": "ASICS FLAGSHIP HARAJUKU",
           "note": "Cierra 19:00"
@@ -967,169 +948,224 @@
     },
     {
       "date": "2026-10-08",
-      "title": "Tsukiji · Tsukishima · teamLab · Roppongi · wagyu",
+      "title": "Tokyo Tower temprano · Zōjō-ji · Tsukiji · Takadanobaba · compras · Roppongi",
       "status": "plan",
-      "note": "Tsukiji/Tsukishima + bloque sur de Tokio. Onitsuka Tiger queda integrado en Roppongi antes de cenar. CRONOS GINZA SIX queda localizado cerca del hotel para ropa de gym si aparece un hueco real; no se fuerza mañana.",
+      "note": "Salida 07:30. Mañana compacta en Minato: fotos de Tokyo Tower → tienda oficial → Zōjō-ji + goshuin → picoteo en Tsukiji. Después Uber a Takadanobaba para Takatora y tarde de compras encadenando Sendagaya/Harajuku → Roppongi. Ginza Itoya ya está hecho.",
       "activities": [
         {
-          "id": "tsukiji-outer",
-          "title": "Tsukiji Outer Market",
-          "category": "comida",
+          "id": "leave-hotel-1008",
+          "title": "Salir del hotel · Tokyo Tower",
+          "time": "07:30",
+          "category": "transporte",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Tsukiji Outer Market",
-          "time": "~08:00",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
           "plan": [
-            "Llegar temprano y desayunar/probar varias cosas pequeñas en vez de una comida enorme.",
-            "Recorrer el mercado sin prisa, pero guardando hambre para el monjayaki de Tsukishima."
-          ],
-          "transit": {
-            "from": "Hotel SUI Ginza Kyobashi",
-            "summary": "Ir andando: el hotel está aproximadamente a 1 km de Tsukiji Outer Market y evita un transbordo absurdo.",
-            "approximateDuration": "15–20 min",
-            "steps": [
-              "Salir hacia Higashi-Ginza/Tsukiji.",
-              "Llegar andando al mercado exterior."
-            ]
-          }
-        },
-        {
-          "id": "hamarikyu",
-          "title": "Hamarikyu Gardens",
-          "category": "naturaleza",
-          "status": "opcional",
-          "locationQuery": "Hamarikyu Gardens Tokyo",
-          "time": "~10:30",
-          "plan": [
-            "Entrar solo si apetece un descanso entre Tsukiji y el resto del día.",
-            "Paseo corto; es prescindible si vamos retrasados."
+            "Salir a las 07:30. La gracia es hacer los spots de Tokyo Tower antes de que se llene la zona."
           ]
         },
         {
-          "id": "tsukishima-monja",
-          "title": "Tsukishima Monja Street",
-          "category": "comida",
+          "id": "tokyo-tower-photo-circuit",
+          "title": "Tokyo Tower · circuito de fotos temprano",
+          "time": "~08:00–09:00",
+          "category": "mirador",
           "status": "plan",
           "priority": "must",
-          "notes": "Comer monjayaki. El botón Tabelog abre la selección de monjayaki de Tsukishima para elegir por cola, precio y disponibilidad.",
-          "locationQuery": "Tsukishima Monja Street",
-          "nearestStation": "Tsukishima",
-          "approximatePrice": "¥2.000–4.000 aprox. según local",
-          "links": {
-            "tabelog": "https://tabelog.com/en/tokyo/A1313/A131302/rstLst/monjya/"
-          },
-          "time": "~12:00",
+          "locationQuery": "Akabanebashi Tokyo Tower",
+          "notes": "Hacer primero los exteriores. Evitar la famosa escalera del parking subterráneo: la propia Tokyo Tower pide actualmente no hacer fotos allí por seguridad y paso de usuarios.",
           "plan": [
-            "Elegir local según cola y disponibilidad y comer monjayaki.",
-            "Esta comida sí es ancla del día; no sustituirla por otra opción genérica."
-          ],
-          "transit": {
-            "from": "Tsukiji / Hamarikyu",
-            "summary": "Desde Tsukijishijo (E18), Toei Oedo Line → Tsukishima (E16), dos paradas.",
-            "approximateDuration": "10–15 min + paseos",
-            "steps": [
-              "Caminar a Tsukijishijo (E18).",
-              "Oedo Line dirección Ryogoku hasta Tsukishima (E16).",
-              "Salir hacia Monja Street."
-            ]
-          }
+            "Akabanebashi / cruce: foto urbana con la torre muy cerca.",
+            "Shiba Park: césped y vistas limpias de la torre.",
+            "Exterior de Zōjō-ji: aprovechar el encuadre templo + torre, pero dejar la visita y el goshuin para después de la tienda.",
+            "Terminar junto a FootTown poco antes de las 09:00."
+          ]
         },
         {
-          "id": "ginza-itoya",
-          "title": "Ginza Itoya",
+          "id": "tokyo-tower-official-shop",
+          "title": "Tokyo Tower · OFFICIAL SHOP GALAXY",
+          "time": "09:00–09:25",
           "category": "compras",
-          "status": "opcional",
-          "locationQuery": "Ginza Itoya",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Tokyo Tower FootTown",
+          "notes": "La tienda oficial GALAXY está en FootTown 3F y abre a las 09:00. No hace falta subir al observatorio: el objetivo aquí es la tienda del edificio.",
           "plan": [
-            "Entrar si apetece papelería/compras y estamos bien de hora.",
-            "Es opcional y debe caer antes que comprometer teamLab o el tramo de Tokyo Tower."
-          ]
-        },
-        {
-          "id": "tsujita-ginza",
-          "title": "Tsujita Ginza",
-          "category": "comida",
-          "status": "opcional",
-          "nearestStation": "Higashi-Ginza",
-          "approximatePrice": "¥1.000–2.000",
-          "notes": "Tsukemen de la lista de Lorena. Tabelog lo sitúa a unos 3 min de Higashi-Ginza.",
-          "locationQuery": "Tsujita Ginza Tokyo",
-          "links": {
-            "tabelog": "https://tabelog.com/en/tokyo/A1301/A130101/13277614/"
-          },
-          "plan": [
-            "Solo si encaja por hambre/horario; no es la comida principal del día.",
-            "Úsalo como opción de tsukemen si el resto del planning deja hueco."
-          ]
-        },
-        {
-          "id": "teamlab",
-          "title": "teamLab Planets",
-          "category": "ocio",
-          "status": "pendiente",
-          "notes": "Plan provisional vigente para el día Tsukiji/Tsukishima. Necesita entrada/slot.",
-          "locationQuery": "teamLab Planets TOKYO Toyosu",
-          "time": "~15:00",
-          "plan": [
-            "Ir únicamente con entrada/slot confirmado.",
-            "Reservar margen de llegada y no apretar demasiado el tramo anterior."
+            "Entrar al abrir para verla sin comernos la mañana.",
+            "Mirar merchandising/recuerdos de Tokyo Tower.",
+            "Salir hacia Zōjō-ji sobre las 09:25."
           ],
           "links": {
-            "officialWebsite": "https://teamlabplanets.dmm.com/en",
-            "reservation": "https://teamlabplanets.dmm.com/en"
-          },
-          "reservationRequired": true,
-          "transit": {
-            "from": "Tsukishima Monja Street",
-            "summary": "Tsukishima (Y21) → Toyosu (Y22) por Yurakucho Line; después Yurikamome Toyosu → Shin-Toyosu, una parada.",
-            "approximateDuration": "15–20 min",
-            "steps": [
-              "Yurakucho Line una parada hasta Toyosu.",
-              "Cambiar a Yurikamome.",
-              "Una parada hasta Shin-Toyosu y caminar a teamLab Planets."
-            ]
+            "officialWebsite": "https://www.tokyotower.co.jp/foottown/"
           }
         },
         {
           "id": "zojoji",
-          "title": "Zōjō-ji",
+          "title": "Zōjō-ji · visita + goshuin",
           "category": "templo",
           "status": "plan",
-          "notes": "Encaja antes de Tokyo Tower.",
+          "notes": "El Hondo abre desde las 06:00, pero los goshuin y omamori se reciben en Ankoku-den de 09:00 a 17:00.",
           "locationQuery": "Zojo-ji Tokyo",
-          "time": "~17:45",
+          "time": "~09:30–10:15",
           "plan": [
             "Visitar el templo con Tokyo Tower de fondo.",
-            "Hacer una parada relativamente corta y enlazar con la zona de la torre."
+            "Ir a Ankoku-den y pedir el goshuin.",
+            "No alargar demasiado: después vamos a Tsukiji para picar."
           ],
           "transit": {
-            "from": "teamLab Planets",
-            "summary": "Yurikamome Shin-Toyosu → Shiodome; cambio a Toei Oedo Line Shiodome (E19) → Daimon (E20), una parada; caminar a Zōjō-ji.",
-            "approximateDuration": "35–45 min"
+            "from": "Tokyo Tower FootTown",
+            "summary": "Bajar andando hacia Zōjō-ji por Shiba Park.",
+            "approximateDuration": "5–10 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "priority": "must",
+          "links": {
+            "officialWebsite": "https://www.zojoji.or.jp/"
+          }
+        },
+        {
+          "id": "tsukiji-outer",
+          "title": "Tsukiji Outer Market · aperitivo",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Tsukiji Outer Market",
+          "time": "~10:35–11:25",
+          "plan": [
+            "Picoteo corto: pescado/marisco, tamagoyaki u otra cosa que apetezca.",
+            "Salir sobre las 11:20–11:30.",
+            "Pedir Uber directo a Takadanobaba para no perder la mañana en transbordos."
+          ],
+          "transit": {
+            "from": "Zōjō-ji",
+            "summary": "Taxi/Uber corto o metro hacia Tsukiji. El bloque Tokyo Tower → Tsukiji está muy cerca.",
+            "approximateDuration": "~10–20 min puerta a puerta"
+          },
+          "notes": "No hacer aquí una comida enorme: probar varias cosas pequeñas y guardar hambre para el tsukemen de Takadanobaba."
+        },
+        {
+          "id": "menya-musashi-takatora-1008",
+          "title": "Menya Musashi Takatora · tsukemen",
+          "time": "~12:00–13:00",
+          "category": "comida",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Takadanobaba Menya Musashi Takatora",
+          "address": "2-19-7 Takadanobaba, Shinjuku-ku, Tokyo",
+          "nearestStation": "Takadanobaba · ~1 min",
+          "approximatePrice": "~¥1.000–2.000",
+          "notes": "Recomendación de Alberto que quedó fuera del día 7 porque no tenía sentido cruzar Tokio. El jueves sí se hace a propósito después de Tsukiji; abre desde las 11:00.",
+          "links": {
+            "officialWebsite": "https://menya634.co.jp/",
+            "tabelog": "https://tabelog.com/tokyo/A1305/A130503/13035651/"
+          },
+          "transit": {
+            "from": "Tsukiji Outer Market",
+            "summary": "Uber/taxi directo pagado por Jaime. Es el salto largo deliberado del día.",
+            "approximateDuration": "~20–35 min según tráfico"
+          },
+          "plan": [
+            "Pedir el tsukemen de Takatora.",
+            "No meter otra comida grande antes.",
+            "Al terminar, volver hacia Sendagaya/Harajuku para que el resto de la tarde sea lineal."
+          ]
+        },
+        {
+          "id": "aun-craft-antique-1008",
+          "title": "AUN Craft & Antique · gacha de ochoko",
+          "time": "~13:30–14:00",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
+          "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
+          "nearestStation": "Kitasando / Sendagaya",
+          "approximatePrice": "Gacha de ochoko: ¥300",
+          "notes": "Este era el motivo real de venir: la máquina gacha vintage que por ¥300 da un ochoko/vasito de sake. El miércoles estaba cerrado; el jueves abre 11:30–18:00.",
+          "transit": {
+            "from": "Menya Musashi Takatora",
+            "summary": "Bajar hacia Sendagaya/Kitasando; taxi corto si queremos proteger tiempo de compras.",
+            "approximateDuration": "~15–25 min"
+          },
+          "plan": [
+            "Ir directos al gacha de los vasitos de sake.",
+            "Mirar también los ochoko vintage de la tienda si apetece.",
+            "No convertirlo en una visita larga: Harajuku queda al lado."
+          ]
+        },
+        {
+          "id": "fitness-shop-harajuku-1008",
+          "title": "FITNESS SHOP Harajuku · Versa Gripps",
+          "time": "~14:15–14:45",
+          "category": "compras",
+          "status": "plan",
+          "locationQuery": "Fitness Shop Harajuku",
+          "address": "Jingumae 6-31-17 V28 B1F, Shibuya-ku, Tokyo",
+          "nearestStation": "Meiji-jingumae / Harajuku",
+          "approximatePrice": "Versa Gripps PRO / Fit Pro: ¥14.300",
+          "notes": "Parada personal de Jaime, no del grupo. Está en el mismo bloque de Harajuku y abre hasta las 21:00 entre semana, así que no hace falta ir a Suidobashi.",
+          "links": {
+            "officialWebsite": "https://fitnessshop.jp/pages/harajuku"
+          },
+          "plan": [
+            "Preguntar por Versa Gripps PRO V3710 y Fit Pro V3720.",
+            "Probar talla antes de comprar.",
+            "Mirar straps/cinturones solo si sobra tiempo."
+          ]
+        },
+        {
+          "id": "gymwear-harajuku-1008",
+          "title": "Gymwear · LÝFT / CRONOS",
+          "time": "~14:50–15:40",
+          "category": "compras",
+          "status": "plan",
+          "locationQuery": "LYFT Omotesando Harajuku Store",
+          "notes": "Bloque de ropa tipo Gymshark sin salir de Harajuku/Omotesando. LÝFT es la primera opción por estética fitness/bodybuilding; CRONOS es más premium/street-training.",
+          "plan": [
+            "LÝFT Omotesando Harajuku: 12:00–20:00.",
+            "CRONOS Omotesando: 11:00–20:00.",
+            "Hacer una bien; la segunda solo si de verdad apetece. No convertir las compras de Jaime en dos horas de espera para el resto."
+          ]
+        },
+        {
+          "id": "afternoon-shopping-buffer-1008",
+          "title": "Compras · margen libre Harajuku / Omotesando",
+          "time": "~15:40–16:40",
+          "category": "compras",
+          "status": "opcional",
+          "locationQuery": "Harajuku Tokyo",
+          "notes": "Hueco deliberado para no volver a hacer un planning imposible. Usarlo para compras pendientes reales; no añadir desvíos nuevos.",
+          "plan": [
+            "Si ASICS Flagship Harajuku sigue pendiente, este es el hueco lógico.",
+            "Si ya está hecho, usarlo para compras del grupo o simplemente descansar/café.",
+            "Salir hacia Roppongi con margen."
+          ]
         },
         {
           "id": "onitsuka-roppongi-hills",
           "title": "Onitsuka Tiger · Roppongi Hills",
-          "time": "~18:35–19:00",
+          "time": "~17:15–18:00",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Onitsuka Tiger Roppongi Hills",
           "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 · Metro Hat / Hollywood Plaza B1F",
           "nearestStation": "Roppongi",
-          "notes": "Tienda pedida expresamente. Abre 11:00–20:00 y va antes de la cena para no encontrarla cerrada.",
+          "notes": "Tienda pedida expresamente por el grupo. Metro Hat / Hollywood Plaza B1F. Abre 11:00–20:00.",
           "plan": [
             "Entrar al llegar al bloque de Roppongi.",
             "Mirar zapatillas, apparel y modelos/colores que interesen.",
             "Salir antes de las 19:00–19:10 para ir a cenar sin prisas."
-          ]
+          ],
+          "transit": {
+            "from": "Harajuku / Omotesando",
+            "summary": "Taxi corto o metro hacia Roppongi. Está a pocos kilómetros; no hace falta volver al este de Tokio.",
+            "approximateDuration": "~15–25 min"
+          }
         },
         {
           "id": "yakiniku-miyabi-roppongi",
           "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
-          "time": "~19:30",
+          "time": "~19:00",
           "category": "comida",
           "status": "plan",
           "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
@@ -1155,11 +1191,11 @@
         {
           "id": "roppongi-hills-lorena",
           "title": "Roppongi Hills",
-          "time": "~21:00",
+          "time": "~20:30",
           "category": "barrio",
           "status": "opcional",
           "locationQuery": "Roppongi Hills Tokyo",
-          "notes": "Paseo nocturno después de cenar. La compra de Onitsuka se hace antes de cenar porque la tienda cierra a las 20:00.",
+          "notes": "Paseo nocturno corto después de cenar. Ya estaremos allí por Onitsuka + Miyabi; cero desvío.",
           "transit": {
             "from": "Yakiniku Miyabi Roppongi",
             "summary": "Ir andando hacia Roppongi Hills.",
@@ -1171,17 +1207,112 @@
           ]
         },
         {
-          "id": "tokyo-tower-midnight",
-          "title": "Tokyo Tower a medianoche",
-          "category": "mirador",
-          "status": "opcional",
-          "notes": "Curiosidad: intentar ver el apagado de luces a las 00:00.",
-          "locationQuery": "Tokyo Tower",
-          "time": "23:50",
+          "id": "ginza-karen-nihonbashi-1008",
+          "title": "Ginza Karen Nihonbashi · maletas",
+          "time": "~21:30",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Ginza Karen Nihonbashi",
+          "address": "1-15-6 Nihonbashiningyocho, Chuo-ku, Tokyo 103-0013",
+          "nearestStation": "Ningyocho · salida A2",
+          "notes": "Aunque se llama Ginza Karen, la tienda útil para nosotros está en Nihonbashi/Ningyocho. Abre muy tarde (10:00–01:00), así que es perfecta al final: comprar maletas y volver al hotel con ellas.",
+          "links": {
+            "officialWebsite": "https://ginzakaren.co.jp/shop/nihonbashi"
+          },
+          "transit": {
+            "from": "Roppongi",
+            "summary": "Ir al final del día para no cargar con las maletas durante las compras. Después, taxi corto al hotel.",
+            "approximateDuration": "~20–30 min"
+          },
           "plan": [
-            "Volver a la zona cerca de medianoche solo si seguimos con ganas.",
-            "Buscar un punto cómodo para ver el apagado de luces; es curiosidad, no obligación."
+            "Mirar tamaño de facturación y ruedas antes que diseño.",
+            "Comprar aquí al final para no arrastrar la maleta todo el día.",
+            "Después volver directamente al hotel."
           ]
+        },
+        {
+          "id": "tsukishima-monja",
+          "title": "Tsukishima Monja Street · queda fuera del eje principal",
+          "category": "comida",
+          "status": "opcional",
+          "notes": "Es el único pendiente importante que se sacrifica al priorizar Takadanobaba + compras + Roppongi. No meterlo mañana salvo que finalmente se caiga Takatora; intentar recolocarlo en otro hueco de Tokio si aparece.",
+          "locationQuery": "Tsukishima Monja Street",
+          "nearestStation": "Tsukishima",
+          "approximatePrice": "¥2.000–4.000 aprox. según local",
+          "links": {
+            "tabelog": "https://tabelog.com/en/tokyo/A1313/A131302/rstLst/monjya/"
+          },
+          "plan": [
+            "No hacer Tsukiji → Tsukishima → Takadanobaba: serían dos comidas seguidas y rompería la tarde."
+          ],
+          "transit": {
+            "from": "Tsukiji / Hamarikyu",
+            "summary": "Desde Tsukijishijo (E18), Toei Oedo Line → Tsukishima (E16), dos paradas.",
+            "approximateDuration": "10–15 min + paseos",
+            "steps": [
+              "Caminar a Tsukijishijo (E18).",
+              "Oedo Line dirección Ryogoku hasta Tsukishima (E16).",
+              "Salir hacia Monja Street."
+            ]
+          }
+        }
+      ],
+      "routeStops": [
+        {
+          "title": "Tokyo Tower · Akabanebashi / Shiba Park",
+          "locationQuery": "Akabanebashi Tokyo Tower",
+          "note": "Fotos temprano"
+        },
+        {
+          "title": "Tokyo Tower FootTown",
+          "locationQuery": "Tokyo Tower FootTown",
+          "note": "Tienda oficial 09:00"
+        },
+        {
+          "title": "Zōjō-ji",
+          "locationQuery": "Zojo-ji Tokyo",
+          "note": "Goshuin desde 09:00"
+        },
+        {
+          "title": "Tsukiji Outer Market",
+          "locationQuery": "Tsukiji Outer Market",
+          "note": "Aperitivo"
+        },
+        {
+          "title": "Menya Musashi Takatora",
+          "locationQuery": "Takadanobaba Menya Musashi Takatora",
+          "note": "Uber · comida"
+        },
+        {
+          "title": "AUN Craft & Antique",
+          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
+          "note": "Gacha ochoko ¥300"
+        },
+        {
+          "title": "FITNESS SHOP Harajuku",
+          "locationQuery": "Fitness Shop Harajuku",
+          "note": "Versa Gripps"
+        },
+        {
+          "title": "LÝFT / CRONOS",
+          "locationQuery": "LYFT Omotesando Harajuku Store",
+          "note": "Gymwear"
+        },
+        {
+          "title": "Onitsuka Tiger Roppongi Hills",
+          "locationQuery": "Onitsuka Tiger Roppongi Hills",
+          "note": "Cierra 20:00"
+        },
+        {
+          "title": "Yakiniku Miyabi Roppongi",
+          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
+          "note": "Cena"
+        },
+        {
+          "title": "Ginza Karen Nihonbashi",
+          "locationQuery": "Ginza Karen Nihonbashi",
+          "note": "Maletas al final"
         }
       ]
     },
