@@ -707,7 +707,7 @@
       "date": "2026-10-07",
       "title": "Ueno · Akihabara a fondo · Harajuku · Shinjuku",
       "status": "plan",
-      "note": "Akihabara ya está en marcha: Yodobashi hecho y ahora Animate. Siguiente ancla: Kikanbo en Kanda. Después mantener el bloque AUN → ASICS → gymwear opcional → Menya Musashi por la tarde/noche → Shinjuku.",
+      "note": "Akihabara: Yodobashi hecho y Animate actual. Siguiente: Kikanbo en Kanda. Después AUN → ASICS → gymwear opcional → Shinjuku. Menya Musashi queda para ~21:00, al final, para que no caiga pegado a Kikanbo.",
       "activities": [
         {
           "id": "leave-hotel-1007",
@@ -853,11 +853,11 @@
         {
           "id": "menya-musashi",
           "title": "Menya Musashi Takatora · tsukemen",
-          "time": "~18:45–19:30",
+          "time": "~21:00–21:40",
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Recomendación de Alberto que seguimos manteniendo sí o sí. En vez de usarlo como comida, encaja como cena temprana al terminar Harajuku: Takadanobaba queda en la Yamanote antes de cerrar la noche en Shinjuku.",
+          "notes": "Recomendación de Alberto que queremos mantener sí o sí. Como Kikanbo será la comida de ~15:00, tiene más sentido dejar Takatora para el final de la noche, cuando vuelva a haber hambre. Takadanobaba está a dos paradas de Shinjuku y el miércoles abre hasta las 22:00.",
           "locationQuery": "Menya Musashi Takatora Takadanobaba",
           "nearestStation": "Takadanobaba",
           "approximatePrice": "~¥1.000–2.000",
@@ -866,20 +866,20 @@
             "tabelog": "https://tabelog.com/en/tokyo/A1305/A130503/13035651/"
           },
           "transit": {
-            "from": "Harajuku / Omotesando",
-            "summary": "Ir a Harajuku y tomar JR Yamanote hasta Takadanobaba; después de cenar, Shinjuku queda a dos paradas.",
-            "approximateDuration": "20–30 min"
+            "from": "Shinjuku",
+            "summary": "JR Yamanote Line Shinjuku → Takadanobaba, dos paradas. Después volver al hotel desde Takadanobaba.",
+            "approximateDuration": "10–15 min"
           },
           "plan": [
-            "Pedir el tsukemen recomendado por Alberto.",
-            "No hacer sobremesa larga: después seguimos a Shinjuku.",
-            "Si Kikanbo ha sido muy tarde y aún no hay hambre, retrasarlo hasta ~20:30; hoy abre hasta las 22:00."
+            "Hacer primero AUN, ASICS, gymwear opcional y el bloque de Shinjuku.",
+            "Ir a Takadanobaba sobre las 21:00, ya con varias horas desde Kikanbo.",
+            "Pedir el tsukemen recomendado por Alberto y cerrar aquí el día."
           ]
         },
         {
           "id": "alpen-tokyo-shinjuku",
           "title": "Alpen TOKYO · montaña / deporte",
-          "time": "~20:00–20:40",
+          "time": "~18:45–19:30",
           "category": "compras",
           "status": "opcional",
           "locationQuery": "Alpen TOKYO Shinjuku",
@@ -894,7 +894,7 @@
         {
           "id": "hanazono-shrine-lorena",
           "title": "Hanazono Shrine",
-          "time": "~20:50",
+          "time": "~19:40",
           "category": "templo",
           "status": "opcional",
           "locationQuery": "Hanazono Shrine Shinjuku Tokyo",
@@ -910,7 +910,7 @@
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Godzilla Head Shinjuku",
-          "time": "~21:05",
+          "time": "~19:55",
           "plan": [
             "Paseo por Kabukichō y ver Godzilla Head ya de noche."
           ]
@@ -921,7 +921,7 @@
           "category": "ocio",
           "status": "opcional",
           "locationQuery": "Cross Shinjuku Vision",
-          "time": "~21:30",
+          "time": "~20:20",
           "plan": [
             "Parada corta para la pantalla 3D al movernos por la estación."
           ]
@@ -932,7 +932,7 @@
           "category": "comida",
           "status": "plan",
           "locationQuery": "Omoide Yokocho",
-          "time": "~21:45",
+          "time": "~20:35",
           "plan": [
             "Cerrar la noche paseando por Omoide Yokocho.",
             "Después de Kikanbo + Menya, no hace falta convertirlo en otra cena; verlo por ambiente."
@@ -966,11 +966,6 @@
           "note": "Gymwear opcional"
         },
         {
-          "title": "Menya Musashi Takatora",
-          "locationQuery": "Menya Musashi Takatora Takadanobaba",
-          "note": "Tsukemen · Alberto"
-        },
-        {
           "title": "Alpen TOKYO",
           "locationQuery": "Alpen TOKYO Shinjuku",
           "note": "Montaña / deporte"
@@ -979,6 +974,11 @@
           "title": "Kabukicho",
           "locationQuery": "Godzilla Head Shinjuku",
           "note": "Noche"
+        },
+        {
+          "title": "Menya Musashi Takatora",
+          "locationQuery": "Menya Musashi Takatora Takadanobaba",
+          "note": "Tsukemen ~21:00 · Alberto"
         }
       ]
     },
