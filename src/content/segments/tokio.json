@@ -643,6 +643,18 @@
           "plan": [
             "Cena sencilla en el hotel con comida de FamilyMart."
           ]
+        },
+        {
+          "id": "familymart-hotel-dinner-1006",
+          "title": "FamilyMart · cena en el hotel",
+          "time": "Noche",
+          "category": "comida",
+          "status": "confirmado",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "Cena real del 6 de octubre, igual que la noche anterior: compramos comida en FamilyMart y cenamos en el hotel.",
+          "plan": [
+            "Cena tranquila en el hotel después de Skytree/Kappabashi."
+          ]
         }
       ],
       "routeStops": [
@@ -707,7 +719,7 @@
       "date": "2026-10-07",
       "title": "Ueno · Akihabara a fondo · Harajuku · Shinjuku",
       "status": "plan",
-      "note": "Salida temprana porque hoy nos acostamos pronto. Ueno se aprovecha antes de que abra Akihabara; después bloque largo de Akihabara y avance hacia el oeste. TOBICHI Tokyo no se fuerza: Hobonichi queda en TOBICHI Kyoto el 14. AUN (18:00) y ASICS (19:00) son los cierres duros.",
+      "note": "Ueno temprano → Akihabara con tiempo de verdad → compras concretas al avanzar hacia el oeste → Shinjuku. Las compras de gimnasio/outdoor de Jaime son opcionales y no mandan la ruta del grupo.",
       "activities": [
         {
           "id": "leave-hotel-1007",
@@ -918,6 +930,22 @@
             "Cerrar la noche paseando por Omoide Yokocho.",
             "Picar algo solo si vuelve a haber hambre después del tsukemen."
           ]
+        },
+        {
+          "id": "alpen-tokyo-jaime",
+          "title": "Alpen TOKYO · gymwear + outdoor (Jaime)",
+          "time": "Opcional en Shinjuku",
+          "category": "compras",
+          "status": "opcional",
+          "locationQuery": "Alpen TOKYO Shinjuku",
+          "address": "3-23-7 Shinjuku, Shinjuku-ku, Tokyo",
+          "nearestStation": "Shinjuku East Exit / Seibu-Shinjuku",
+          "notes": "Mejor tienda única si Jaime quiere mirar ropa de gimnasio y montaña sin hacer dos desvíos. El edificio reúne Sports Depo y Alpen Outdoors; abre hasta las 22:00.",
+          "plan": [
+            "3F: fitness y parte de apparel; mirar ropa de entrenamiento tipo Gymshark-equivalente y accesorios.",
+            "4F–5F: Alpen Outdoors para camping, montaña y material técnico.",
+            "Ir solo si sigue apeteciendo al llegar a Shinjuku; el grupo no necesita adaptar su ruta a esta parada."
+          ]
         }
       ],
       "routeStops": [
@@ -940,6 +968,11 @@
           "title": "Yodobashi Akiba",
           "locationQuery": "Yodobashi Camera Multimedia Akiba",
           "note": "Akihabara ~4 h"
+        },
+        {
+          "title": "Radio Kaikan / animate / Mandarake",
+          "locationQuery": "animate Akihabara",
+          "note": "Elegir manga/anime/figuras según interés"
         },
         {
           "title": "FITNESS SHOP Suidobashi",
