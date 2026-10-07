@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { FIXED_INFO, MANUAL_TASKS } from '../data/trip';
+import { FIXED_INFO, MANUAL_TASKS, PERSONAL_SHOPPING_INFO } from '../data/trip';
 import { formatDate } from '../lib/segments';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
@@ -37,6 +37,24 @@ const pendingItems = segments.flatMap((segment) =>
           <h3 class="font-black">{item.title}</h3>
           <p class="mt-2 text-sm leading-relaxed text-slate-600">{item.body}</p>
           {item.maps && <a href={item.maps} target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">📍 Maps</a>}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-8">
+    <p class="text-xs font-bold uppercase tracking-[0.16em] text-violet-600">Solo si encaja</p>
+    <h2 class="mt-1 text-xl font-black">Compras personales</h2>
+    <p class="mt-2 text-sm text-slate-500">Datos útiles que no deben forzar la ruta del grupo.</p>
+    <div class="mt-3 grid gap-3 sm:grid-cols-2">
+      {PERSONAL_SHOPPING_INFO.map((item) => (
+        <article class="rounded-2xl border border-violet-200 bg-violet-50/50 p-4 shadow-sm">
+          <h3 class="font-black text-slate-950">{item.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">{item.body}</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {item.maps && <a href={item.maps} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-white px-3 py-2 text-sm font-bold text-violet-800">📍 Maps</a>}
+            {item.website && <a href={item.website} target="_blank" rel="noopener noreferrer" class="rounded-xl bg-white px-3 py-2 text-sm font-bold text-slate-700">🌐 Web</a>}
+          </div>
         </article>
       ))}
     </div>
