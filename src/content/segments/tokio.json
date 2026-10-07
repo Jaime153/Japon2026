@@ -769,19 +769,18 @@
         },
         {
           "id": "fitness-shop-suidobashi",
-          "title": "FITNESS SHOP Suidobashi · Versa Gripps",
-          "time": "~14:50–15:15",
+          "title": "FITNESS SHOP Suidobashi · opcional personal",
+          "time": "Otro momento",
           "category": "compras",
           "status": "opcional",
           "locationQuery": "FITNESS SHOP Suidobashi Tokyo",
           "address": "3-6-13 Misakicho, Chiyoda-ku, Tokyo · 2F",
           "nearestStation": "Suidobashi",
           "approximatePrice": "Versa Gripps Pro / Fit Pro ~¥14.300",
-          "notes": "Parada que sí encaja geográficamente al ir hacia Takadanobaba. La cadena vende Versa Gripps oficiales, Gold's Gym grips, Schiek y más material de fuerza; el stock concreto de tienda puede variar.",
+          "notes": "Parada personal; no forma parte de la ruta del grupo.",
           "plan": [
-            "Preguntar primero por Versa Gripps Pro / Fit Pro y probar talla.",
-            "Mirar también power grips, straps, cinturones y accesorios de fuerza.",
-            "Máximo ~25 min: si no tienen talla/color, seguir."
+            "No ir hoy con el grupo.",
+            "Guardar solo por si aparece un hueco otro día para mirar Versa Gripps y accesorios."
           ]
         },
         {
@@ -943,11 +942,6 @@
           "title": "Yodobashi Akiba",
           "locationQuery": "Yodobashi Camera Multimedia Akiba",
           "note": "Akihabara ~4 h"
-        },
-        {
-          "title": "FITNESS SHOP Suidobashi",
-          "locationQuery": "FITNESS SHOP Suidobashi Tokyo",
-          "note": "Versa Gripps · opcional"
         },
         {
           "title": "Menya Musashi Takatora",
