@@ -10,6 +10,8 @@ const statusSchema = z.enum(STATUSES);
 
 const activityLinksSchema = z.object({
   googleMaps: z.string().url().optional(),
+  originMaps: z.string().url().optional(),
+  destinationMaps: z.string().url().optional(),
   appleMaps: z.string().url().optional(),
   tabelog: z.string().url().optional(),
   officialWebsite: z.string().url().optional(),
