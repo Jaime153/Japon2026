@@ -1227,21 +1227,23 @@
         },
         {
           "id": "yamato-kyobashi-a-osaka-sakuragawa-1008",
-          "title": "Yamato · envío pendiente de decidir",
+          "title": "Yamato · Tokio (entregar) → Osaka (recoger) · pendiente",
           "category": "transporte",
           "status": "pendiente",
           "priority": "nice",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "No se ha confirmado que las maletas estén enviadas: solo se han comprado. Si se decide usar Yamato, recoger en oficina 浪速営業所（桜川） / Naniwa Sakuragawa (código 060151, 3-8-59 Sakuragawa), no en el hotel de Osaka. Confirmar la hora de corte y la fecha de llegada antes de enviar.",
+          "locationQuery": "2-16-10 Ginza, Chuo City, Tokyo, Japan",
+          "notes": "Las maletas ya están compradas, pero el envío aún está por decidir. ENTREGA EN TOKIO: Yamato Ginza Rengagai, 2-16-10 Ginza, Chuo-ku, oficina 031118 (lun-vie 08:00–19:30; salida en el día hasta 19:00). RECOGIDA EN OSAKA: Yamato Naniwa Sakuragawa, 3-8-59 Sakuragawa, código 060151 (08:00–21:00). Los dos botones de Maps apuntan a oficinas diferentes. Si no llegáis antes del cierre de Tokio, organizar entrega mañana; confirmar que llegaría cuando la necesitéis.",
           "plan": [
-            "Primero confirmar con el grupo si el envío se hace hoy o mañana.",
-            "Si se decide enviar: usar 営業所止め (eigyoujo-dome) con destino Naniwa Sakuragawa, código 060151.",
-            "Confirmar con Yamato disponibilidad y plazo de entrega; conservar comprobante y número de seguimiento.",
-            "Recoger en Osaka solo una vez disponible y durante horario de la oficina."
+            "Primero decidir si se envían hoy o mañana. No consta que ya se hayan enviado.",
+            "📦 ENTREGA EN TOKIO: oficina Yamato Ginza Rengagai (銀座煉瓦街), 〒104-8125 東京都中央区銀座2-16-10, código 031118. Mirar botón «Tokio · Entregar maletas».",
+            "📍 RECOGIDA EN OSAKA: oficina Yamato Naniwa Sakuragawa (浪速営業所・桜川), 〒556-0022 大阪市浪速区桜川3-8-59, código 060151. Mirar botón «Osaka · Recoger maletas».",
+            "Pedir servicio 営業所止め (recogida en oficina) y verificar plazo de entrega, límite de admisión y disponibilidad al llegar; guardar comprobante y número de seguimiento."
           ],
           "links": {
-            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/060151/",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Yamato%20Transport%20Naniwa%20Sakuragawa%203-8-59%20Osaka"
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E9%8A%80%E5%BA%A7%E7%85%89%E7%93%A6%E8%A1%97%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A72%E4%B8%81%E7%9B%AE16-10",
+            "originMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E9%8A%80%E5%BA%A7%E7%85%89%E7%93%A6%E8%A1%97%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A72%E4%B8%81%E7%9B%AE16-10",
+            "destinationMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E6%B5%AA%E9%80%9F%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%A1%9C%E5%B7%9D%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%B5%AA%E9%80%9F%E5%8C%BA%E6%A1%9C%E5%B7%9D3%E4%B8%81%E7%9B%AE8-59",
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/031118/"
           }
         }
       ],
