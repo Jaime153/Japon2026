@@ -948,9 +948,9 @@
     },
     {
       "date": "2026-10-08",
-      "title": "Tokyo Tower temprano · Zōjō-ji · Tsukiji · Takadanobaba · compras · Roppongi",
+      "title": "Tokyo Tower · Tsukiji real · hotel/compras · Menya 17:00 · maletas/Yamato",
       "status": "plan",
-      "note": "Salida 07:30. Mañana compacta en Minato: fotos de Tokyo Tower → tienda oficial → Zōjō-ji + goshuin → picoteo en Tsukiji. Después Uber a Takadanobaba para Takatora y tarde de compras encadenando Sendagaya/Harajuku → Roppongi. Ginza Itoya ya está hecho.",
+      "note": "Actualizado en directo el 8/10 (~13:23, JST): llegada real a Tsukiji aproximadamente una hora antes, visita actual a Tsukiji Hongwanji, segundo aperitivo y vuelta al Hotel SUI Kyobashi. Jaime irá a Versa Gripps y LÝFT; reencuentro para tsukemen en Menya Musashi Takatora entre 17:00–17:30. Después: compras libres o comprar maletas en Ginza Karen → preparar en Kyobashi → enviar por Yamato a la oficina Naniwa/Sakuragawa de Osaka (código 060151), no al hotel. Las actividades antiguas de Roppongi quedan opcionales; las de la mañana se mantienen como planning previo, sin confirmar su realización.",
       "activities": [
         {
           "id": "leave-hotel-1008",
@@ -980,7 +980,7 @@
             "Terminar junto a FootTown poco antes de las 09:00."
           ]
         },
-{
+        {
           "id": "tokyo-tower-tiktok-photo-spots",
           "title": "📸 Spots de TikTok · 8 fotos de Tokyo Tower",
           "time": "Durante el circuito 08:00–09:00",
@@ -1042,28 +1042,137 @@
         },
         {
           "id": "tsukiji-outer",
-          "title": "Tsukiji Outer Market · aperitivo",
+          "title": "Tsukiji Outer Market · llegada y primer aperitivo",
           "category": "comida",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
           "locationQuery": "Tsukiji Outer Market",
-          "time": "~10:35–11:25",
+          "time": "~12:20",
           "plan": [
-            "Picoteo corto: pescado/marisco, tamagoyaki u otra cosa que apetezca.",
-            "Salir sobre las 11:20–11:30.",
-            "Pedir Uber directo a Takadanobaba para no perder la mañana en transbordos."
+            "Llegada real a Tsukiji hacia las 12:20 (hora aproximada comunicada en directo).",
+            "Tras la visita al templo Tsukiji Hongwanji, seguir con un aperitivo ligero en la zona.",
+            "Reservar el hambre para Menya Musashi Takatora a las 17:00–17:30."
           ],
-          "transit": {
-            "from": "Zōjō-ji",
-            "summary": "Taxi/Uber corto o metro hacia Tsukiji. El bloque Tokyo Tower → Tsukiji está muy cerca.",
-            "approximateDuration": "~10–20 min puerta a puerta"
+          "notes": "Situación real de hoy: habéis llegado a Tsukiji hace aproximadamente una hora y habéis tomado algo. No sustituir por la visita planeada a las 10:35."
+        },
+        {
+          "id": "tsukiji-hongwanji-1008-real",
+          "title": "Tsukiji Hongwanji · visita de hoy",
+          "time": "~13:20",
+          "category": "templo",
+          "status": "confirmado",
+          "locationQuery": "Tsukiji Hongwanji Temple Tokyo",
+          "notes": "Visita comunicada desde Tsukiji alrededor de las 13:20 (hora local). Se trata de Tsukiji Hongwanji, distinto de Zōjō-ji, que figura en el bloque de la mañana.",
+          "plan": [
+            "Visitar el templo con calma.",
+            "Al salir, tomar algo más en Tsukiji antes de volver al hotel."
+          ]
+        },
+        {
+          "id": "tsukiji-merienda-1008",
+          "title": "Tsukiji · tomar algo después del templo",
+          "time": "~13:40",
+          "category": "comida",
+          "status": "plan",
+          "locationQuery": "Tsukiji Outer Market",
+          "notes": "Aperitivo ligero, no una segunda comida completa: tsukemen reservado para alrededor de las 17:00–17:30.",
+          "plan": [
+            "Volver al mercado exterior tras Tsukiji Hongwanji.",
+            "Picar o beber algo y salir hacia Kyobashi cuando os apetezca."
+          ]
+        },
+        {
+          "id": "kyobashi-hotel-compras-1008",
+          "title": "Volver al hotel Kyobashi · dejar compras y reorganizarse",
+          "time": "~14:15",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "Regreso previsto desde Tsukiji al alojamiento. Momento para dejar compras, recoger lo necesario y organizar las salidas individuales o del grupo.",
+          "plan": [
+            "Regresar al Hotel SUI Ginza Kyobashi by ABEST tras el aperitivo.",
+            "Dejar bolsas y decidir quién se va de compras y quién prefiere descansar.",
+            "Conservar los objetos imprescindibles para hoy y mañana si se prepara equipaje para Yamato."
+          ]
+        },
+        {
+          "id": "fitness-shop-harajuku-1008",
+          "title": "FITNESS SHOP Harajuku · Versa Gripps (Jaime)",
+          "time": "~15:00",
+          "category": "compras",
+          "status": "plan",
+          "locationQuery": "Fitness Shop Harajuku",
+          "address": "Jingumae 6-31-17 V28 B1F, Shibuya-ku, Tokyo",
+          "nearestStation": "Meiji-jingumae / Harajuku",
+          "approximatePrice": "Versa Gripps PRO / Fit Pro: ¥14.300",
+          "notes": "Compra personal de Jaime desde el bloque de vuelta al hotel; el resto del grupo puede hacer compras por su cuenta. No retrasar la llegada a Menya de las 17:00–17:30.",
+          "links": {
+            "officialWebsite": "https://fitnessshop.jp/pages/harajuku"
           },
-          "notes": "No hacer aquí una comida enorme: probar varias cosas pequeñas y guardar hambre para el tsukemen de Takadanobaba."
+          "plan": [
+            "Ir a FITNESS SHOP Harajuku para mirar y probar Versa Gripps PRO/Fit Pro.",
+            "Confirmar talla y disponibilidad sin añadir un desvío a Suidobashi.",
+            "Salir con margen para pasar por LÝFT y llegar a Takadanobaba."
+          ]
+        },
+        {
+          "id": "gymwear-harajuku-1008",
+          "title": "LÝFT Omotesando / Harajuku · ropa gym (Jaime)",
+          "time": "~15:45",
+          "category": "compras",
+          "status": "plan",
+          "locationQuery": "LYFT Omotesando Harajuku Store",
+          "notes": "Segunda parada personal de Jaime, después de Versa Gripps. CRONOS queda como alternativa, no como obligación. Vigilar la salida hacia Takadanobaba.",
+          "plan": [
+            "Priorizar LÝFT y mirar ropa de entrenamiento.",
+            "CRONOS solo si sobra tiempo; no forzar ambas tiendas.",
+            "Objetivo: partir hacia Menya hacia las 16:25–16:35, según transporte y tráfico."
+          ]
+        },
+        {
+          "id": "aun-craft-antique-1008",
+          "title": "AUN Craft & Antique · gacha de ochoko",
+          "time": "Solo si encaja",
+          "category": "compras",
+          "status": "opcional",
+          "priority": "nice",
+          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
+          "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
+          "nearestStation": "Kitasando / Sendagaya",
+          "approximatePrice": "Gacha de ochoko: ¥300",
+          "notes": "Pendiente previo del grupo. No está en el nuevo plan principal: se mantiene como alternativa para quien pueda pasar antes del cierre (18:00), sin retrasar la comida Menya.",
+          "transit": {
+            "from": "Menya Musashi Takatora",
+            "summary": "Bajar hacia Sendagaya/Kitasando; taxi corto si queremos proteger tiempo de compras.",
+            "approximateDuration": "~15–25 min"
+          },
+          "plan": [
+            "Mantener el gacha de ochoko ¥300 solo si alguien del grupo sigue interesado.",
+            "No retrasar la llegada a Takadanobaba por esta parada."
+          ]
+        },
+        {
+          "id": "takadanobaba-traslado-1008",
+          "title": "Salir hacia Takadanobaba · Menya a las 17:00–17:30",
+          "time": "~16:30",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "Takadanobaba Menya Musashi Takatora",
+          "transit": {
+            "from": "Harajuku / Omotesando (o punto en que termine cada uno)",
+            "summary": "Ir a Takadanobaba para reagruparse y comer en Menya Musashi Takatora.",
+            "note": "Usar transporte en tiempo real; el objetivo es estar en Menya entre las 17:00 y las 17:30."
+          },
+          "plan": [
+            "Acordar punto de encuentro en Menya Musashi Takatora.",
+            "Salir de las compras con margen para llegar entre 17:00 y 17:30."
+          ]
         },
         {
           "id": "menya-musashi-takatora-1008",
-          "title": "Menya Musashi Takatora · tsukemen",
-          "time": "~12:00–13:00",
+          "title": "Menya Musashi Takatora · tsukemen (comida tardía)",
+          "time": "17:00",
           "category": "comida",
           "status": "plan",
           "priority": "must",
@@ -1071,182 +1180,149 @@
           "address": "2-19-7 Takadanobaba, Shinjuku-ku, Tokyo",
           "nearestStation": "Takadanobaba · ~1 min",
           "approximatePrice": "~¥1.000–2.000",
-          "notes": "Recomendación de Alberto que quedó fuera del día 7 porque no tenía sentido cruzar Tokio. El jueves sí se hace a propósito después de Tsukiji; abre desde las 11:00.",
+          "notes": "Cambio de hoy: no se come en Takadanobaba a mediodía. Objetivo comunicado: comer sobre las 17:00 o 17:30, después de Tsukiji, hotel y compras.",
           "links": {
             "officialWebsite": "https://menya634.co.jp/",
             "tabelog": "https://tabelog.com/tokyo/A1305/A130503/13035651/"
           },
           "transit": {
-            "from": "Tsukiji Outer Market",
-            "summary": "Uber/taxi directo pagado por Jaime. Es el salto largo deliberado del día.",
-            "approximateDuration": "~20–35 min según tráfico"
+            "from": "Harajuku / Omotesando",
+            "summary": "Reagruparse directamente en Takadanobaba.",
+            "note": "En función de dónde esté cada uno, consultar tren/metro o taxi en ese momento."
           },
           "plan": [
-            "Pedir el tsukemen de Takatora.",
-            "No meter otra comida grande antes.",
-            "Al terminar, volver hacia Sendagaya/Harajuku para que el resto de la tarde sea lineal."
-          ]
-        },
-        {
-          "id": "aun-craft-antique-1008",
-          "title": "AUN Craft & Antique · gacha de ochoko",
-          "time": "~13:30–14:00",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
-          "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
-          "nearestStation": "Kitasando / Sendagaya",
-          "approximatePrice": "Gacha de ochoko: ¥300",
-          "notes": "Este era el motivo real de venir: la máquina gacha vintage que por ¥300 da un ochoko/vasito de sake. El miércoles estaba cerrado; el jueves abre 11:30–18:00.",
-          "transit": {
-            "from": "Menya Musashi Takatora",
-            "summary": "Bajar hacia Sendagaya/Kitasando; taxi corto si queremos proteger tiempo de compras.",
-            "approximateDuration": "~15–25 min"
-          },
-          "plan": [
-            "Ir directos al gacha de los vasitos de sake.",
-            "Mirar también los ochoko vintage de la tienda si apetece.",
-            "No convertirlo en una visita larga: Harajuku queda al lado."
-          ]
-        },
-        {
-          "id": "fitness-shop-harajuku-1008",
-          "title": "FITNESS SHOP Harajuku · Versa Gripps",
-          "time": "~14:15–14:45",
-          "category": "compras",
-          "status": "plan",
-          "locationQuery": "Fitness Shop Harajuku",
-          "address": "Jingumae 6-31-17 V28 B1F, Shibuya-ku, Tokyo",
-          "nearestStation": "Meiji-jingumae / Harajuku",
-          "approximatePrice": "Versa Gripps PRO / Fit Pro: ¥14.300",
-          "notes": "Parada personal de Jaime, no del grupo. Está en el mismo bloque de Harajuku y abre hasta las 21:00 entre semana, así que no hace falta ir a Suidobashi.",
-          "links": {
-            "officialWebsite": "https://fitnessshop.jp/pages/harajuku"
-          },
-          "plan": [
-            "Preguntar por Versa Gripps PRO V3710 y Fit Pro V3720.",
-            "Probar talla antes de comprar.",
-            "Mirar straps/cinturones solo si sobra tiempo."
-          ]
-        },
-        {
-          "id": "gymwear-harajuku-1008",
-          "title": "Gymwear · LÝFT / CRONOS",
-          "time": "~14:50–15:40",
-          "category": "compras",
-          "status": "plan",
-          "locationQuery": "LYFT Omotesando Harajuku Store",
-          "notes": "Bloque de ropa tipo Gymshark sin salir de Harajuku/Omotesando. LÝFT es la primera opción por estética fitness/bodybuilding; CRONOS es más premium/street-training.",
-          "plan": [
-            "LÝFT Omotesando Harajuku: 12:00–20:00.",
-            "CRONOS Omotesando: 11:00–20:00.",
-            "Hacer una bien; la segunda solo si de verdad apetece. No convertir las compras de Jaime en dos horas de espera para el resto."
+            "Reunirse en Menya Musashi Takatora entre las 17:00 y 17:30.",
+            "Pedir el tsukemen; hasta entonces, solo aperitivos ligeros en Tsukiji.",
+            "Después, resolver compra de maletas y envío Yamato; compras libres para quien no participe."
           ]
         },
         {
           "id": "afternoon-shopping-buffer-1008",
-          "title": "Compras · margen libre Harajuku / Omotesando",
-          "time": "~15:40–16:40",
+          "title": "Compras libres o descanso del grupo",
+          "time": "Después de Menya",
           "category": "compras",
           "status": "opcional",
-          "locationQuery": "Harajuku Tokyo",
-          "notes": "Hueco deliberado para no volver a hacer un planning imposible. Usarlo para compras pendientes reales; no añadir desvíos nuevos.",
+          "locationQuery": "Tokyo Station Ginza Tokyo",
+          "notes": "Tras la comida de Menya, libertad para compras pendientes o descanso. Quien gestione las maletas pasa por Ginza Karen y luego el envío Yamato.",
           "plan": [
-            "Si ASICS Flagship Harajuku sigue pendiente, este es el hueco lógico.",
-            "Si ya está hecho, usarlo para compras del grupo o simplemente descansar/café.",
-            "Salir hacia Roppongi con margen."
-          ]
-        },
-        {
-          "id": "onitsuka-roppongi-hills",
-          "title": "Onitsuka Tiger · Roppongi Hills",
-          "time": "~17:15–18:00",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Onitsuka Tiger Roppongi Hills",
-          "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 · Metro Hat / Hollywood Plaza B1F",
-          "nearestStation": "Roppongi",
-          "notes": "Tienda pedida expresamente por el grupo. Metro Hat / Hollywood Plaza B1F. Abre 11:00–20:00.",
-          "plan": [
-            "Entrar al llegar al bloque de Roppongi.",
-            "Mirar zapatillas, apparel y modelos/colores que interesen.",
-            "Salir antes de las 19:00–19:10 para ir a cenar sin prisas."
-          ],
-          "transit": {
-            "from": "Harajuku / Omotesando",
-            "summary": "Taxi corto o metro hacia Roppongi. Está a pocos kilómetros; no hace falta volver al este de Tokio.",
-            "approximateDuration": "~15–25 min"
-          }
-        },
-        {
-          "id": "yakiniku-miyabi-roppongi",
-          "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
-          "time": "~19:00",
-          "category": "comida",
-          "status": "plan",
-          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
-          "address": "5-18-21 Roppongi, Minato-ku, Tokyo · Five Plaza Bldg 1F",
-          "nearestStation": "Roppongi-itchome / Roppongi / Azabu-juban",
-          "approximatePrice": "Cena ~¥8.000–10.000+ por persona; cursos desde ~¥6.000",
-          "notes": "Sí parece bueno de verdad: Tabelog ronda 3,56 con más de 1.200 reseñas y el restaurante compra A5 wagyu y sirve surtidos de cortes raros. Es una cena bastante más premium que Yakiniku King.",
-          "links": {
-            "officialWebsite": "https://roppongi.yakiniku-miyabi.jp/",
-            "tabelog": "https://tabelog.com/en/tokyo/A1307/A130702/13095890/"
-          },
-          "transit": {
-            "from": "Onitsuka Tiger · Roppongi Hills",
-            "summary": "Ir andando desde Roppongi Hills a Miyabi.",
-            "approximateDuration": "10–15 min"
-          },
-          "plan": [
-            "Elegirlo si os apetece una cena de wagyu de calidad, no un tabehodai.",
-            "Para primera visita, mirar el Miyabi Set / surtido de 9 cortes o el Special Set de 12 cortes.",
-            "Reservar si decidís hacerlo porque la cena sí admite reserva."
-          ]
-        },
-        {
-          "id": "roppongi-hills-lorena",
-          "title": "Roppongi Hills",
-          "time": "~20:30",
-          "category": "barrio",
-          "status": "opcional",
-          "locationQuery": "Roppongi Hills Tokyo",
-          "notes": "Paseo nocturno corto después de cenar. Ya estaremos allí por Onitsuka + Miyabi; cero desvío.",
-          "transit": {
-            "from": "Yakiniku Miyabi Roppongi",
-            "summary": "Ir andando hacia Roppongi Hills.",
-            "approximateDuration": "10–15 min"
-          },
-          "plan": [
-            "Paseo nocturno corto por la zona.",
-            "No hace falta entrar a observatorios si ya hemos hecho Shibuya Sky/Skytree; aquí prima el ambiente."
+            "Cada persona puede seguir con compras libres si lo prefiere.",
+            "Quienes envían equipaje priorizan Ginza Karen → regreso al hotel → Yamato.",
+            "No fijar Roppongi u otras visitas como obligatorias esta noche."
           ]
         },
         {
           "id": "ginza-karen-nihonbashi-1008",
-          "title": "Ginza Karen Nihonbashi · maletas",
-          "time": "~21:30",
+          "title": "Ginza Karen Nihonbashi · COMPRAR maletas antes de Yamato",
+          "time": "~18:45",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Ginza Karen Nihonbashi",
           "address": "1-15-6 Nihonbashiningyocho, Chuo-ku, Tokyo 103-0013",
           "nearestStation": "Ningyocho · salida A2",
-          "notes": "Aunque se llama Ginza Karen, la tienda útil para nosotros está en Nihonbashi/Ningyocho. Abre muy tarde (10:00–01:00), así que es perfecta al final: comprar maletas y volver al hotel con ellas.",
+          "notes": "Dependencia obligatoria: comprar las maletas aquí ANTES de prepararlas y enviarlas por Yamato. La tienda está en Nihonbashi/Ningyocho, no en Ginza; la hora es orientativa tras Menya.",
           "links": {
             "officialWebsite": "https://ginzakaren.co.jp/shop/nihonbashi"
           },
           "transit": {
-            "from": "Roppongi",
-            "summary": "Ir al final del día para no cargar con las maletas durante las compras. Después, taxi corto al hotel.",
-            "approximateDuration": "~20–30 min"
+            "from": "Menya Musashi Takatora (Takadanobaba)",
+            "summary": "Tras la comida, desplazarse a Ginza Karen Nihonbashi y regresar al hotel con las maletas.",
+            "note": "La hora real depende de la duración de la comida y del transporte."
           },
           "plan": [
-            "Mirar tamaño de facturación y ruedas antes que diseño.",
-            "Comprar aquí al final para no arrastrar la maleta todo el día.",
-            "Después volver directamente al hotel."
+            "Ir a Ginza Karen Nihonbashi después de Menya, con margen por los desplazamientos.",
+            "Comprar las maletas necesarias, revisar tamaño, ruedas y cierres.",
+            "Llevarlas al Hotel SUI Kyobashi para organizar contenido y tramitar el envío Yamato."
+          ]
+        },
+        {
+          "id": "preparar-equipaje-kyobashi-1008",
+          "title": "Hotel Kyobashi · preparar maletas para Yamato",
+          "time": "~19:30",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "No enviar ninguna maleta antes de comprar las de Ginza Karen. Preparar todo para recogida en oficina Yamato de Osaka, NO entrega en hotel de Osaka.",
+          "plan": [
+            "Volver al hotel con las maletas compradas en Ginza Karen.",
+            "Distribuir las compras y dejar fuera lo necesario hasta llegar a Osaka el 10 de octubre.",
+            "Pedir en recepción si pueden aceptar/gestionar la expedición o ayudar a encontrar una oficina de envío cercana; si no, llevar el equipaje a un mostrador Yamato.",
+            "Confirmar con Yamato plazo de llegada y hora límite de admisión del centro de origen antes de pagar."
+          ]
+        },
+        {
+          "id": "yamato-kyobashi-a-osaka-sakuragawa-1008",
+          "title": "Yamato · enviar desde Tokio para recoger en oficina de Osaka",
+          "time": "~20:00",
+          "category": "transporte",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "Servicio 営業所止め (retirada en sucursal). Destino confirmado: Yamato Transport 浪速営業所（桜川） / Naniwa Sakuragawa, CÓDIGO 060151, 〒556-0022 大阪府大阪市浪速区桜川3-8-59 汐見橋ビル, cerca del GN98 Saiwaicho (幸町3-3-14). Abre 08:00–21:00; comprobar seguimiento antes de recoger. El horario propuesto de Tokio puede superar el corte de expedición del día: si es así, solicitar gestión a primera hora del 9 y verificar que llegue para la estancia del 10.",
+          "plan": [
+            "Solo después de comprar las maletas en Ginza Karen y prepararlas en el hotel.",
+            "Pedir envío con recogida en oficina: 営業所止め (eigyoujo-dome), NO hotel a hotel.",
+            "Oficina destino: 浪速営業所（桜川） — código 060151 — 〒556-0022 大阪市浪速区桜川3-8-59.",
+            "Indicar nombre y teléfono del destinatario en el albarán; conservar comprobante y número de seguimiento.",
+            "Confirmar que se puede recoger el 10 o el 11 de octubre, según hora de corte de salida; si hoy es tarde, enviarlo el 9 temprano.",
+            "Recogerlo en Osaka con pasaporte y número de seguimiento, solo cuando conste «listo para retirar»."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/060151/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Yamato%20Transport%20Naniwa%20Sakuragawa%203-8-59%20Osaka"
+          }
+        },
+        {
+          "id": "onitsuka-roppongi-hills",
+          "title": "Onitsuka Tiger · Roppongi Hills",
+          "time": "Solo si sobra tiempo",
+          "category": "compras",
+          "status": "opcional",
+          "priority": "nice",
+          "locationQuery": "Onitsuka Tiger Roppongi Hills",
+          "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 · Metro Hat / Hollywood Plaza B1F",
+          "nearestStation": "Roppongi",
+          "notes": "Desplazada del plan principal por la nueva hora de Menya y el trámite Ginza Karen → Yamato. Si sigue siendo prioridad, requiere otra ventana antes de su cierre.",
+          "plan": [
+            "Entrar al llegar al bloque de Roppongi.",
+            "Mirar zapatillas, apparel y modelos/colores que interesen.",
+            "Salir antes de las 19:00–19:10 para ir a cenar sin prisas."
+          ]
+        },
+        {
+          "id": "yakiniku-miyabi-roppongi",
+          "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
+          "time": "No fijado",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
+          "address": "5-18-21 Roppongi, Minato-ku, Tokyo · Five Plaza Bldg 1F",
+          "nearestStation": "Roppongi-itchome / Roppongi / Azabu-juban",
+          "approximatePrice": "Cena ~¥8.000–10.000+ por persona; cursos desde ~¥6.000",
+          "notes": "No reservar cena de las 19:00 como fija hoy: Menya se ha desplazado a las 17:00–17:30 y el trámite de maletas es prioritario. Queda como alternativa para otro momento si interesa.",
+          "links": {
+            "officialWebsite": "https://roppongi.yakiniku-miyabi.jp/",
+            "tabelog": "https://tabelog.com/en/tokyo/A1307/A130702/13095890/"
+          },
+          "plan": [
+            "Elegirlo si os apetece una cena de wagyu de calidad, no un tabehodai.",
+            "Para primera visita, mirar el Miyabi Set / surtido de 9 cortes o el Special Set de 12 cortes.",
+            "Reservar si decidís hacerlo porque la cena sí admite reserva."
+          ],
+          "priority": "nice"
+        },
+        {
+          "id": "roppongi-hills-lorena",
+          "title": "Roppongi Hills",
+          "time": "No fijado",
+          "category": "barrio",
+          "status": "opcional",
+          "locationQuery": "Roppongi Hills Tokyo",
+          "notes": "Sin hueco garantizado esta noche; se sacrifica frente a compras, maletas y envío Yamato.",
+          "plan": [
+            "Paseo nocturno corto por la zona.",
+            "No hace falta entrar a observatorios si ya hemos hecho Shibuya Sky/Skytree; aquí prima el ambiente."
           ]
         },
         {
@@ -1254,7 +1330,7 @@
           "title": "Tsukishima Monja Street · queda fuera del eje principal",
           "category": "comida",
           "status": "opcional",
-          "notes": "Es el único pendiente importante que se sacrifica al priorizar Takadanobaba + compras + Roppongi. No meterlo mañana salvo que finalmente se caiga Takatora; intentar recolocarlo en otro hueco de Tokio si aparece.",
+          "notes": "La visita Tsukiji ya se hizo el 8, pero la comida prevista es Menya a las 17:00–17:30; por eso no se fuerza otra comida en Tsukishima hoy. Mantener para un hueco futuro solo si resulta viable.",
           "locationQuery": "Tsukishima Monja Street",
           "nearestStation": "Tsukishima",
           "approximatePrice": "¥2.000–4.000 aprox. según local",
@@ -1273,64 +1349,60 @@
               "Oedo Line dirección Ryogoku hasta Tsukishima (E16).",
               "Salir hacia Monja Street."
             ]
-          }
+          },
+          "time": "Pendiente de recolocar"
         }
       ],
       "routeStops": [
         {
           "title": "Tokyo Tower · Akabanebashi / Shiba Park",
           "locationQuery": "Akabanebashi Tokyo Tower",
-          "note": "Fotos temprano"
-        },
-        {
-          "title": "Tokyo Tower FootTown",
-          "locationQuery": "Tokyo Tower FootTown",
-          "note": "Tienda oficial 09:00"
-        },
-        {
-          "title": "Zōjō-ji",
-          "locationQuery": "Zojo-ji Tokyo",
-          "note": "Goshuin desde 09:00"
+          "note": "Bloque de mañana según planning"
         },
         {
           "title": "Tsukiji Outer Market",
           "locationQuery": "Tsukiji Outer Market",
-          "note": "Aperitivo"
+          "note": "Llegada real ~12:20"
         },
         {
-          "title": "Menya Musashi Takatora",
-          "locationQuery": "Takadanobaba Menya Musashi Takatora",
-          "note": "Uber · comida"
+          "title": "Tsukiji Hongwanji",
+          "locationQuery": "Tsukiji Hongwanji Temple Tokyo",
+          "note": "Visita real ~13:20"
         },
         {
-          "title": "AUN Craft & Antique",
-          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
-          "note": "Gacha ochoko ¥300"
+          "title": "Tsukiji Outer Market · aperitivo",
+          "locationQuery": "Tsukiji Outer Market",
+          "note": "Después del templo"
+        },
+        {
+          "title": "Hotel SUI Ginza Kyobashi",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "note": "Regreso y reorganizarse"
         },
         {
           "title": "FITNESS SHOP Harajuku",
           "locationQuery": "Fitness Shop Harajuku",
-          "note": "Versa Gripps"
+          "note": "Jaime: Versa Gripps"
         },
         {
-          "title": "LÝFT / CRONOS",
+          "title": "LÝFT Omotesando",
           "locationQuery": "LYFT Omotesando Harajuku Store",
-          "note": "Gymwear"
+          "note": "Jaime: ropa gym"
         },
         {
-          "title": "Onitsuka Tiger Roppongi Hills",
-          "locationQuery": "Onitsuka Tiger Roppongi Hills",
-          "note": "Cierra 20:00"
-        },
-        {
-          "title": "Yakiniku Miyabi Roppongi",
-          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
-          "note": "Cena"
+          "title": "Menya Musashi Takatora",
+          "locationQuery": "Takadanobaba Menya Musashi Takatora",
+          "note": "17:00–17:30"
         },
         {
           "title": "Ginza Karen Nihonbashi",
           "locationQuery": "Ginza Karen Nihonbashi",
-          "note": "Maletas al final"
+          "note": "Comprar maletas ANTES del envío"
+        },
+        {
+          "title": "Hotel SUI Ginza Kyobashi",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "note": "Preparar y tramitar Yamato; destino Osaka Naniwa/Sakuragawa 060151"
         }
       ]
     },
