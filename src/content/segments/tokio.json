@@ -948,9 +948,9 @@
     },
     {
       "date": "2026-10-08",
-      "title": "Tokyo Tower · Tsukiji · Menya 17:00 · maletas compradas",
+      "title": "Tokyo Tower · Tsukiji · tarde libre · Menya 20:00 · descansar",
       "status": "plan",
-      "note": "Actualización 8/10 (en directo): Tsukiji y Tsukiji Hongwanji visitados; Menya Musashi Takatora previsto para las 17:00–17:30. Las maletas de Ginza Karen ya están compradas. Ahora el grupo está organizándose para decidir los siguientes pasos. Compras libres, preparar equipaje y Yamato no tienen hora cerrada; el envío no está confirmado. Se han quitado del día las antiguas propuestas de Onitsuka, Yakiniku Miyabi, Roppongi Hills y Tsukishima Monja Street. El planning anterior de la mañana se conserva como referencia, sin asumir visitas realizadas.",
+      "note": "Cierre del 8 de octubre (informado a las ~21:30 JST): Tsukiji Outer Market y Tsukiji Hongwanji visitados; después, tarde libre para todo el grupo. Menya Musashi Takatora en Takadanobaba se hizo finalmente sobre las 20:00, no a las 17:00. Las maletas de Ginza Karen ya se han comprado, pero NO consta un envío realizado por Yamato: queda como referencia logística, sin cita para esta noche. Tras Menya, regreso y descanso para la excursión del 9/10 al Fuji. Se preserva el planning de la mañana como referencia, sin suponer confirmadas todas sus paradas.",
       "activities": [
         {
           "id": "leave-hotel-1008",
@@ -1082,157 +1082,38 @@
           ]
         },
         {
-          "id": "kyobashi-hotel-compras-1008",
-          "title": "Volver al hotel Kyobashi · dejar compras y reorganizarse",
-          "time": "~14:15",
-          "category": "otro",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Regreso previsto desde Tsukiji al alojamiento. Momento para dejar compras, recoger lo necesario y organizar las salidas individuales o del grupo.",
+          "id": "tarde-libre-real-1008",
+          "title": "Tarde libre · cada uno a lo suyo",
+          "time": "~14:00–19:30",
+          "category": "barrio",
+          "status": "confirmado",
+          "locationQuery": "Ginza Tokyo",
+          "notes": "Registro del día real: desde después de Tsukiji hasta la cena tardía, el tiempo quedó libre para todo el grupo. No asignar compras o trayectos concretos como hechos.",
           "plan": [
-            "Regresar al Hotel SUI Ginza Kyobashi by ABEST tras el aperitivo.",
-            "Dejar bolsas y decidir quién se va de compras y quién prefiere descansar.",
-            "Conservar los objetos imprescindibles para hoy y mañana si se prepara equipaje para Yamato."
-          ]
-        },
-        {
-          "id": "fitness-shop-harajuku-1008",
-          "title": "FITNESS SHOP Harajuku · Versa Gripps (Jaime)",
-          "time": "~15:00",
-          "category": "compras",
-          "status": "plan",
-          "locationQuery": "Fitness Shop Harajuku",
-          "address": "Jingumae 6-31-17 V28 B1F, Shibuya-ku, Tokyo",
-          "nearestStation": "Meiji-jingumae / Harajuku",
-          "approximatePrice": "Versa Gripps PRO / Fit Pro: ¥14.300",
-          "notes": "Compra personal de Jaime desde el bloque de vuelta al hotel; el resto del grupo puede hacer compras por su cuenta. No retrasar la llegada a Menya de las 17:00–17:30.",
-          "links": {
-            "officialWebsite": "https://fitnessshop.jp/pages/harajuku"
-          },
-          "plan": [
-            "Ir a FITNESS SHOP Harajuku para mirar y probar Versa Gripps PRO/Fit Pro.",
-            "Confirmar talla y disponibilidad sin añadir un desvío a Suidobashi.",
-            "Salir con margen para pasar por LÝFT y llegar a Takadanobaba."
-          ]
-        },
-        {
-          "id": "gymwear-harajuku-1008",
-          "title": "LÝFT Omotesando / Harajuku · ropa gym (Jaime)",
-          "time": "~15:45",
-          "category": "compras",
-          "status": "plan",
-          "locationQuery": "LYFT Omotesando Harajuku Store",
-          "notes": "Segunda parada personal de Jaime, después de Versa Gripps. CRONOS queda como alternativa, no como obligación. Vigilar la salida hacia Takadanobaba.",
-          "plan": [
-            "Priorizar LÝFT y mirar ropa de entrenamiento.",
-            "CRONOS solo si sobra tiempo; no forzar ambas tiendas.",
-            "Objetivo: partir hacia Menya hacia las 16:25–16:35, según transporte y tráfico."
-          ]
-        },
-        {
-          "id": "aun-craft-antique-1008",
-          "title": "AUN Craft & Antique · gacha de ochoko",
-          "time": "Solo si encaja",
-          "category": "compras",
-          "status": "opcional",
-          "priority": "nice",
-          "locationQuery": "AUN Craft Antique Sendagaya Tokyo",
-          "address": "2nd Eight Bldg. 1F, 4-21-5 Sendagaya, Shibuya-ku, Tokyo",
-          "nearestStation": "Kitasando / Sendagaya",
-          "approximatePrice": "Gacha de ochoko: ¥300",
-          "notes": "Pendiente previo del grupo. No está en el nuevo plan principal: se mantiene como alternativa para quien pueda pasar antes del cierre (18:00), sin retrasar la comida Menya.",
-          "transit": {
-            "from": "Menya Musashi Takatora",
-            "summary": "Bajar hacia Sendagaya/Kitasando; taxi corto si queremos proteger tiempo de compras.",
-            "approximateDuration": "~15–25 min"
-          },
-          "plan": [
-            "Mantener el gacha de ochoko ¥300 solo si alguien del grupo sigue interesado.",
-            "No retrasar la llegada a Takadanobaba por esta parada."
-          ]
-        },
-        {
-          "id": "takadanobaba-traslado-1008",
-          "title": "Salir hacia Takadanobaba · Menya a las 17:00–17:30",
-          "time": "~16:30",
-          "category": "transporte",
-          "status": "plan",
-          "locationQuery": "Takadanobaba Menya Musashi Takatora",
-          "transit": {
-            "from": "Harajuku / Omotesando (o punto en que termine cada uno)",
-            "summary": "Ir a Takadanobaba para reagruparse y comer en Menya Musashi Takatora.",
-            "note": "Usar transporte en tiempo real; el objetivo es estar en Menya entre las 17:00 y las 17:30."
-          },
-          "plan": [
-            "Acordar punto de encuentro en Menya Musashi Takatora.",
-            "Salir de las compras con margen para llegar entre 17:00 y 17:30."
-          ]
-        },
-        {
-          "id": "menya-musashi-takatora-1008",
-          "title": "Menya Musashi Takatora · tsukemen (comida tardía)",
-          "time": "17:00",
-          "category": "comida",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Takadanobaba Menya Musashi Takatora",
-          "address": "2-19-7 Takadanobaba, Shinjuku-ku, Tokyo",
-          "nearestStation": "Takadanobaba · ~1 min",
-          "approximatePrice": "~¥1.000–2.000",
-          "notes": "Cambio de hoy: no se come en Takadanobaba a mediodía. Objetivo comunicado: comer sobre las 17:00 o 17:30, después de Tsukiji, hotel y compras.",
-          "links": {
-            "officialWebsite": "https://menya634.co.jp/",
-            "tabelog": "https://tabelog.com/tokyo/A1305/A130503/13035651/"
-          },
-          "transit": {
-            "from": "Harajuku / Omotesando",
-            "summary": "Reagruparse directamente en Takadanobaba.",
-            "note": "En función de dónde esté cada uno, consultar tren/metro o taxi en ese momento."
-          },
-          "plan": [
-            "Reunirse en Menya Musashi Takatora entre las 17:00 y 17:30.",
-            "Pedir el tsukemen; hasta entonces, solo aperitivos ligeros en Tsukiji.",
-            "Después, resolver compra de maletas y envío Yamato; compras libres para quien no participe."
-          ]
-        },
-        {
-          "id": "afternoon-shopping-buffer-1008",
-          "title": "Compras libres / decidir qué hacer después",
-          "time": "Después de Menya",
-          "category": "compras",
-          "status": "opcional",
-          "locationQuery": "Tokyo Station Ginza Tokyo",
-          "notes": "Las maletas de Ginza Karen ya están compradas. El grupo está organizándose para decidir qué hacer a continuación; mantener esta franja flexible y sin desvíos fijados.",
-          "plan": [
-            "Decidir en grupo qué apetece hacer después de Menya.",
-            "Compras o descanso libre según preferencias y energía.",
-            "Preparación de maletas y gestión de Yamato solo si finalmente se decide hacerlo hoy."
+            "Cada uno gestionó su tiempo libre hasta reunirse para el tsukemen.",
+            "Se habían comprado las maletas de Ginza Karen, pero no se confirma cuándo se hizo esa compra ni el envío por Yamato."
           ]
         },
         {
           "id": "preparar-equipaje-kyobashi-1008",
-          "title": "Preparar equipaje en Kyobashi · si se decide enviar hoy",
+          "title": "Maletas compradas · preparación del envío pendiente",
           "category": "otro",
           "status": "pendiente",
-          "priority": "nice",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Las maletas de Ginza Karen ya se han comprado. El grupo está decidiendo cómo continuar; preparar el equipaje para Yamato solo cuando se confirme que toca enviarlo.",
+          "notes": "Las maletas ya están compradas. No hay confirmación de que se hayan preparado o enviado hoy, y el grupo se va a descansar para Fuji el día 9. Se conserva esta ficha solo como referencia logística, no como actividad prevista esta noche.",
           "plan": [
-            "Si se decide enviar hoy, volver al hotel con las maletas ya compradas.",
-            "Organizar contenido y conservar a mano lo necesario hasta Osaka.",
-            "Preguntar en recepción por la entrega a Yamato o la oficina de envío más conveniente.",
-            "Confirmar el plazo de entrega y la hora límite antes de tramitar nada."
+            "Las maletas de Ginza Karen ya están compradas.",
+            "Cuando se retome el envío, preparar el equipaje y comprobar fechas de llegada a Osaka.",
+            "No dar por hecho que hoy se realiza este trámite."
           ]
         },
         {
           "id": "yamato-kyobashi-a-osaka-sakuragawa-1008",
-          "title": "Yamato · Tokio (entregar) → Osaka (recoger) · pendiente",
+          "title": "Yamato Tokio → Osaka · información para envío pendiente",
           "category": "transporte",
           "status": "pendiente",
-          "priority": "nice",
           "locationQuery": "2-16-10 Ginza, Chuo City, Tokyo, Japan",
-          "notes": "Las maletas ya están compradas, pero el envío aún está por decidir. ENTREGA EN TOKIO: Yamato Ginza Rengagai, 2-16-10 Ginza, Chuo-ku, oficina 031118 (lun-vie 08:00–19:30; salida en el día hasta 19:00). RECOGIDA EN OSAKA: Yamato Naniwa Sakuragawa, 3-8-59 Sakuragawa, código 060151 (08:00–21:00). Los dos botones de Maps apuntan a oficinas diferentes. Si no llegáis antes del cierre de Tokio, organizar entrega mañana; confirmar que llegaría cuando la necesitéis.",
+          "notes": "Envío NO confirmado. Hoy tras Menya toca regresar y descansar para Fuji, no hay gestión de Yamato programada. Se conservan los botones distintos para entregar en Yamato Higashi-Ginza (Tokio) y recoger en Naniwa-Sakuragawa (Osaka) solo para cuando se decida enviarlas. Confirmar horarios y plazos antes de acudir.",
           "plan": [
             "Primero decidir si se envían hoy o mañana. No consta que ya se hayan enviado.",
             "📦 ENTREGA EN TOKIO: oficina Yamato Ginza Rengagai (銀座煉瓦街), 〒104-8125 東京都中央区銀座2-16-10, código 031118. Mirar botón «Tokio · Entregar maletas».",
@@ -1245,53 +1126,69 @@
             "destinationMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E6%B5%AA%E9%80%9F%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%A1%9C%E5%B7%9D%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%B5%AA%E9%80%9F%E5%8C%BA%E6%A1%9C%E5%B7%9D3%E4%B8%81%E7%9B%AE8-59",
             "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/031118/"
           }
+        },
+        {
+          "id": "menya-musashi-takatora-1008",
+          "title": "Menya Musashi Takatora · tsukemen (realizado)",
+          "time": "~20:00",
+          "category": "comida",
+          "status": "confirmado",
+          "priority": "must",
+          "locationQuery": "Takadanobaba Menya Musashi Takatora",
+          "address": "2-19-7 Takadanobaba, Shinjuku-ku, Tokyo",
+          "nearestStation": "Takadanobaba · ~1 min",
+          "approximatePrice": "~¥1.000–2.000",
+          "notes": "El grupo comió el tsukemen en Takadanobaba sobre las 20:00 del 8/10, confirmado después de la visita. La hora de las 17:00–17:30 era un plan previo descartado.",
+          "links": {
+            "officialWebsite": "https://menya634.co.jp/",
+            "tabelog": "https://tabelog.com/tokyo/A1305/A130503/13035651/"
+          },
+          "plan": [
+            "Cena/comida tardía realizada sobre las 20:00 en Menya Musashi Takatora.",
+            "Después, regreso a descansar para la excursión a Fuji del 9 de octubre."
+          ]
+        },
+        {
+          "id": "descansar-para-fuji-1008",
+          "title": "Volver y dormir · mañana Fuji",
+          "time": "Después de Menya",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "Cierre del 8/10: después de cenar el plan es volver al hotel y descansar. El 9/10 está prevista la recogida del coche a las 07:00 cerca de Tokyo Station. No programar más compras ni desvíos hoy.",
+          "plan": [
+            "Volver al hotel tras Menya Musashi.",
+            "Preparar solo lo imprescindible para salir pronto mañana.",
+            "Descansar; el próximo día es la excursión a Fuji, que depende de la meteorología."
+          ]
         }
       ],
       "routeStops": [
         {
           "title": "Tokyo Tower · Akabanebashi / Shiba Park",
           "locationQuery": "Akabanebashi Tokyo Tower",
-          "note": "Bloque de mañana según planning"
+          "note": "Plan previo de la mañana"
         },
         {
           "title": "Tsukiji Outer Market",
           "locationQuery": "Tsukiji Outer Market",
-          "note": "Llegada real ~12:20"
+          "note": "Visitado ~12:20"
         },
         {
           "title": "Tsukiji Hongwanji",
           "locationQuery": "Tsukiji Hongwanji Temple Tokyo",
-          "note": "Visita real ~13:20"
-        },
-        {
-          "title": "Tsukiji Outer Market · aperitivo",
-          "locationQuery": "Tsukiji Outer Market",
-          "note": "Después del templo"
-        },
-        {
-          "title": "Hotel SUI Ginza Kyobashi",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "note": "Regreso y reorganizarse"
-        },
-        {
-          "title": "FITNESS SHOP Harajuku",
-          "locationQuery": "Fitness Shop Harajuku",
-          "note": "Jaime: Versa Gripps"
-        },
-        {
-          "title": "LÝFT Omotesando",
-          "locationQuery": "LYFT Omotesando Harajuku Store",
-          "note": "Jaime: ropa gym"
+          "note": "Visita ~13:20"
         },
         {
           "title": "Menya Musashi Takatora",
           "locationQuery": "Takadanobaba Menya Musashi Takatora",
-          "note": "17:00–17:30"
+          "note": "Tsukemen realizado ~20:00"
         },
         {
           "title": "Hotel SUI Ginza Kyobashi",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "note": "Maletas compradas · preparar o enviar por Yamato solo si se decide"
+          "note": "Regreso y descanso para Fuji"
         }
       ]
     },
