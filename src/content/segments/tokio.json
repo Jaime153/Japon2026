@@ -948,9 +948,9 @@
     },
     {
       "date": "2026-10-08",
-      "title": "Tokyo Tower · Tsukiji real · hotel/compras · Menya 17:00 · maletas/Yamato",
+      "title": "Tokyo Tower · Tsukiji · Menya 17:00 · maletas compradas",
       "status": "plan",
-      "note": "Actualización 8/10 (en directo): Tsukiji y Tsukiji Hongwanji visitados; Menya Musashi Takatora previsto para las 17:00–17:30. **Las maletas de Ginza Karen ya están compradas**. Ahora el grupo está organizándose para decidir los siguientes pasos. Compras libres, preparar equipaje y Yamato no tienen hora cerrada; el envío no está confirmado. Se han quitado del día las antiguas propuestas de Onitsuka, Yakiniku Miyabi, Roppongi Hills y Tsukishima Monja Street. El planning anterior de la mañana se conserva como referencia, sin asumir visitas realizadas.",
+      "note": "Actualización 8/10 (en directo): Tsukiji y Tsukiji Hongwanji visitados; Menya Musashi Takatora previsto para las 17:00–17:30. Las maletas de Ginza Karen ya están compradas. Ahora el grupo está organizándose para decidir los siguientes pasos. Compras libres, preparar equipaje y Yamato no tienen hora cerrada; el envío no está confirmado. Se han quitado del día las antiguas propuestas de Onitsuka, Yakiniku Miyabi, Roppongi Hills y Tsukishima Monja Street. El planning anterior de la mañana se conserva como referencia, sin asumir visitas realizadas.",
       "activities": [
         {
           "id": "leave-hotel-1008",
@@ -1289,7 +1289,7 @@
         {
           "title": "Hotel SUI Ginza Kyobashi",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "note": "Preparar y tramitar Yamato; destino Osaka Naniwa/Sakuragawa 060151"
+          "note": "Maletas compradas · preparar o enviar por Yamato solo si se decide"
         }
       ]
     },
