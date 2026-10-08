@@ -12,6 +12,9 @@ const query = activity.locationQuery ?? activity.address ?? activity.title;
 const googleMapsUrl = activity.links?.googleMaps ?? (query ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}` : undefined);
 const appleMapsUrl = activity.links?.appleMaps ?? (query ? `https://maps.apple.com/?q=${encodeURIComponent(query)}` : undefined);
 const directionsUrl = query ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(query)}` : undefined;
+// El envío de equipaje tiene dos oficinas: la de entrega en Tokio y la de recogida en Osaka.
+// En este caso nunca mostramos un botón genérico de Maps que pueda confundir ambas.
+const hasTwoYamatoMaps = Boolean(activity.links?.originMaps && activity.links?.destinationMaps);
 const tabelogUrl = activity.links?.tabelog ?? (activity.category === 'comida'
   ? `https://tabelog.com/en/rstLst/?vs=1&sk=${encodeURIComponent(activity.title)}`
   : undefined);
@@ -33,6 +36,8 @@ const hasExtra = Boolean(
   activity.approximatePrice ||
   activity.reservationRequired ||
   googleMapsUrl ||
+  activity.links?.originMaps ||
+  activity.links?.destinationMaps ||
   appleMapsUrl ||
   directionsUrl ||
   tabelogUrl ||
@@ -176,11 +181,21 @@ const hasExtra = Boolean(
         </dl>
       )}
 
-      {(googleMapsUrl || appleMapsUrl || directionsUrl || tabelogUrl || activity.links?.officialWebsite || activity.links?.photoSpots || activity.links?.reservation || activity.links?.weather || activity.links?.weatherAlt || activity.links?.liveCam) && (
+      {(googleMapsUrl || appleMapsUrl || directionsUrl || activity.links?.originMaps || activity.links?.destinationMaps || tabelogUrl || activity.links?.officialWebsite || activity.links?.photoSpots || activity.links?.reservation || activity.links?.weather || activity.links?.weatherAlt || activity.links?.liveCam) && (
         <div class="mt-3 flex flex-wrap gap-2">
-          {googleMapsUrl && <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">📍 Google Maps</a>}
-          {directionsUrl && <a href={directionsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">🧭 Cómo llegar</a>}
-          {appleMapsUrl && <a href={appleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800"> Maps</a>}
+          {hasTwoYamatoMaps ? (
+            <>
+              <a href={activity.links?.originMaps} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-900">📦 Tokio · Entregar maletas</a>
+              <a href={activity.links?.destinationMaps} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-900">📍 Osaka · Recoger maletas</a>
+              {directionsUrl && <a href={directionsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-800">🧭 Ruta a Yamato Tokio</a>}
+            </>
+          ) : (
+            <>
+              {googleMapsUrl && <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">📍 Google Maps</a>}
+              {directionsUrl && <a href={directionsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">🧭 Cómo llegar</a>}
+              {appleMapsUrl && <a href={appleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800"> Maps</a>}
+            </>
+          )}
           {tabelogUrl && <a href={tabelogUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-orange-50 px-3 py-2 text-sm font-semibold text-orange-800">🍽️ Tabelog</a>}
           {activity.links?.officialWebsite && <a href={activity.links.officialWebsite} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-violet-50 px-3 py-2 text-sm font-semibold text-violet-800">🌐 Web oficial</a>}
           {activity.links?.photoSpots && <a href={activity.links.photoSpots} class="tap-target inline-flex items-center gap-1 rounded-xl bg-red-50 px-3 py-2 text-sm font-bold text-red-800">📸 Ver mapa de los 8 spots</a>}

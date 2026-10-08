@@ -948,9 +948,9 @@
     },
     {
       "date": "2026-10-08",
-      "title": "Tokyo Tower · Tsukiji real · hotel/compras · Menya 17:00 · maletas/Yamato",
+      "title": "Tokyo Tower · Tsukiji · Menya 17:00 · maletas compradas",
       "status": "plan",
-      "note": "Actualizado en directo el 8/10 (~13:23, JST): llegada real a Tsukiji aproximadamente una hora antes, visita actual a Tsukiji Hongwanji, segundo aperitivo y vuelta al Hotel SUI Kyobashi. Jaime irá a Versa Gripps y LÝFT; reencuentro para tsukemen en Menya Musashi Takatora entre 17:00–17:30. Después: compras libres o comprar maletas en Ginza Karen → preparar en Kyobashi → enviar por Yamato a la oficina Naniwa/Sakuragawa de Osaka (código 060151), no al hotel. Las actividades antiguas de Roppongi quedan opcionales; las de la mañana se mantienen como planning previo, sin confirmar su realización.",
+      "note": "Actualización 8/10 (en directo): Tsukiji y Tsukiji Hongwanji visitados; Menya Musashi Takatora previsto para las 17:00–17:30. Las maletas de Ginza Karen ya están compradas. Ahora el grupo está organizándose para decidir los siguientes pasos. Compras libres, preparar equipaje y Yamato no tienen hora cerrada; el envío no está confirmado. Se han quitado del día las antiguas propuestas de Onitsuka, Yakiniku Miyabi, Roppongi Hills y Tsukishima Monja Street. El planning anterior de la mañana se conserva como referencia, sin asumir visitas realizadas.",
       "activities": [
         {
           "id": "leave-hotel-1008",
@@ -1198,159 +1198,53 @@
         },
         {
           "id": "afternoon-shopping-buffer-1008",
-          "title": "Compras libres o descanso del grupo",
+          "title": "Compras libres / decidir qué hacer después",
           "time": "Después de Menya",
           "category": "compras",
           "status": "opcional",
           "locationQuery": "Tokyo Station Ginza Tokyo",
-          "notes": "Tras la comida de Menya, libertad para compras pendientes o descanso. Quien gestione las maletas pasa por Ginza Karen y luego el envío Yamato.",
+          "notes": "Las maletas de Ginza Karen ya están compradas. El grupo está organizándose para decidir qué hacer a continuación; mantener esta franja flexible y sin desvíos fijados.",
           "plan": [
-            "Cada persona puede seguir con compras libres si lo prefiere.",
-            "Quienes envían equipaje priorizan Ginza Karen → regreso al hotel → Yamato.",
-            "No fijar Roppongi u otras visitas como obligatorias esta noche."
-          ]
-        },
-        {
-          "id": "ginza-karen-nihonbashi-1008",
-          "title": "Ginza Karen Nihonbashi · COMPRAR maletas antes de Yamato",
-          "time": "~18:45",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Ginza Karen Nihonbashi",
-          "address": "1-15-6 Nihonbashiningyocho, Chuo-ku, Tokyo 103-0013",
-          "nearestStation": "Ningyocho · salida A2",
-          "notes": "Dependencia obligatoria: comprar las maletas aquí ANTES de prepararlas y enviarlas por Yamato. La tienda está en Nihonbashi/Ningyocho, no en Ginza; la hora es orientativa tras Menya.",
-          "links": {
-            "officialWebsite": "https://ginzakaren.co.jp/shop/nihonbashi"
-          },
-          "transit": {
-            "from": "Menya Musashi Takatora (Takadanobaba)",
-            "summary": "Tras la comida, desplazarse a Ginza Karen Nihonbashi y regresar al hotel con las maletas.",
-            "note": "La hora real depende de la duración de la comida y del transporte."
-          },
-          "plan": [
-            "Ir a Ginza Karen Nihonbashi después de Menya, con margen por los desplazamientos.",
-            "Comprar las maletas necesarias, revisar tamaño, ruedas y cierres.",
-            "Llevarlas al Hotel SUI Kyobashi para organizar contenido y tramitar el envío Yamato."
+            "Decidir en grupo qué apetece hacer después de Menya.",
+            "Compras o descanso libre según preferencias y energía.",
+            "Preparación de maletas y gestión de Yamato solo si finalmente se decide hacerlo hoy."
           ]
         },
         {
           "id": "preparar-equipaje-kyobashi-1008",
-          "title": "Hotel Kyobashi · preparar maletas para Yamato",
-          "time": "~19:30",
+          "title": "Preparar equipaje en Kyobashi · si se decide enviar hoy",
           "category": "otro",
-          "status": "plan",
-          "priority": "must",
+          "status": "pendiente",
+          "priority": "nice",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "No enviar ninguna maleta antes de comprar las de Ginza Karen. Preparar todo para recogida en oficina Yamato de Osaka, NO entrega en hotel de Osaka.",
+          "notes": "Las maletas de Ginza Karen ya se han comprado. El grupo está decidiendo cómo continuar; preparar el equipaje para Yamato solo cuando se confirme que toca enviarlo.",
           "plan": [
-            "Volver al hotel con las maletas compradas en Ginza Karen.",
-            "Distribuir las compras y dejar fuera lo necesario hasta llegar a Osaka el 10 de octubre.",
-            "Pedir en recepción si pueden aceptar/gestionar la expedición o ayudar a encontrar una oficina de envío cercana; si no, llevar el equipaje a un mostrador Yamato.",
-            "Confirmar con Yamato plazo de llegada y hora límite de admisión del centro de origen antes de pagar."
+            "Si se decide enviar hoy, volver al hotel con las maletas ya compradas.",
+            "Organizar contenido y conservar a mano lo necesario hasta Osaka.",
+            "Preguntar en recepción por la entrega a Yamato o la oficina de envío más conveniente.",
+            "Confirmar el plazo de entrega y la hora límite antes de tramitar nada."
           ]
         },
         {
           "id": "yamato-kyobashi-a-osaka-sakuragawa-1008",
-          "title": "Yamato · enviar desde Tokio para recoger en oficina de Osaka",
-          "time": "~20:00",
+          "title": "Yamato · Tokio (entregar) → Osaka (recoger) · pendiente",
           "category": "transporte",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Servicio 営業所止め (retirada en sucursal). Destino confirmado: Yamato Transport 浪速営業所（桜川） / Naniwa Sakuragawa, CÓDIGO 060151, 〒556-0022 大阪府大阪市浪速区桜川3-8-59 汐見橋ビル, cerca del GN98 Saiwaicho (幸町3-3-14). Abre 08:00–21:00; comprobar seguimiento antes de recoger. El horario propuesto de Tokio puede superar el corte de expedición del día: si es así, solicitar gestión a primera hora del 9 y verificar que llegue para la estancia del 10.",
-          "plan": [
-            "Solo después de comprar las maletas en Ginza Karen y prepararlas en el hotel.",
-            "Pedir envío con recogida en oficina: 営業所止め (eigyoujo-dome), NO hotel a hotel.",
-            "Oficina destino: 浪速営業所（桜川） — código 060151 — 〒556-0022 大阪市浪速区桜川3-8-59.",
-            "Indicar nombre y teléfono del destinatario en el albarán; conservar comprobante y número de seguimiento.",
-            "Confirmar que se puede recoger el 10 o el 11 de octubre, según hora de corte de salida; si hoy es tarde, enviarlo el 9 temprano.",
-            "Recogerlo en Osaka con pasaporte y número de seguimiento, solo cuando conste «listo para retirar»."
-          ],
-          "links": {
-            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/060151/",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Yamato%20Transport%20Naniwa%20Sakuragawa%203-8-59%20Osaka"
-          }
-        },
-        {
-          "id": "onitsuka-roppongi-hills",
-          "title": "Onitsuka Tiger · Roppongi Hills",
-          "time": "Solo si sobra tiempo",
-          "category": "compras",
-          "status": "opcional",
+          "status": "pendiente",
           "priority": "nice",
-          "locationQuery": "Onitsuka Tiger Roppongi Hills",
-          "address": "〒106-0032 Tokyo, Minato City, Roppongi, 6 Chome−4−1 · Metro Hat / Hollywood Plaza B1F",
-          "nearestStation": "Roppongi",
-          "notes": "Desplazada del plan principal por la nueva hora de Menya y el trámite Ginza Karen → Yamato. Si sigue siendo prioridad, requiere otra ventana antes de su cierre.",
+          "locationQuery": "2-16-10 Ginza, Chuo City, Tokyo, Japan",
+          "notes": "Las maletas ya están compradas, pero el envío aún está por decidir. ENTREGA EN TOKIO: Yamato Ginza Rengagai, 2-16-10 Ginza, Chuo-ku, oficina 031118 (lun-vie 08:00–19:30; salida en el día hasta 19:00). RECOGIDA EN OSAKA: Yamato Naniwa Sakuragawa, 3-8-59 Sakuragawa, código 060151 (08:00–21:00). Los dos botones de Maps apuntan a oficinas diferentes. Si no llegáis antes del cierre de Tokio, organizar entrega mañana; confirmar que llegaría cuando la necesitéis.",
           "plan": [
-            "Entrar al llegar al bloque de Roppongi.",
-            "Mirar zapatillas, apparel y modelos/colores que interesen.",
-            "Salir antes de las 19:00–19:10 para ir a cenar sin prisas."
-          ]
-        },
-        {
-          "id": "yakiniku-miyabi-roppongi",
-          "title": "Yakiniku Miyabi Roppongi · A5 Wagyu",
-          "time": "No fijado",
-          "category": "comida",
-          "status": "opcional",
-          "locationQuery": "Yakiniku Miyabi Roppongi Tokyo",
-          "address": "5-18-21 Roppongi, Minato-ku, Tokyo · Five Plaza Bldg 1F",
-          "nearestStation": "Roppongi-itchome / Roppongi / Azabu-juban",
-          "approximatePrice": "Cena ~¥8.000–10.000+ por persona; cursos desde ~¥6.000",
-          "notes": "No reservar cena de las 19:00 como fija hoy: Menya se ha desplazado a las 17:00–17:30 y el trámite de maletas es prioritario. Queda como alternativa para otro momento si interesa.",
-          "links": {
-            "officialWebsite": "https://roppongi.yakiniku-miyabi.jp/",
-            "tabelog": "https://tabelog.com/en/tokyo/A1307/A130702/13095890/"
-          },
-          "plan": [
-            "Elegirlo si os apetece una cena de wagyu de calidad, no un tabehodai.",
-            "Para primera visita, mirar el Miyabi Set / surtido de 9 cortes o el Special Set de 12 cortes.",
-            "Reservar si decidís hacerlo porque la cena sí admite reserva."
+            "Primero decidir si se envían hoy o mañana. No consta que ya se hayan enviado.",
+            "📦 ENTREGA EN TOKIO: oficina Yamato Ginza Rengagai (銀座煉瓦街), 〒104-8125 東京都中央区銀座2-16-10, código 031118. Mirar botón «Tokio · Entregar maletas».",
+            "📍 RECOGIDA EN OSAKA: oficina Yamato Naniwa Sakuragawa (浪速営業所・桜川), 〒556-0022 大阪市浪速区桜川3-8-59, código 060151. Mirar botón «Osaka · Recoger maletas».",
+            "Pedir servicio 営業所止め (recogida en oficina) y verificar plazo de entrega, límite de admisión y disponibilidad al llegar; guardar comprobante y número de seguimiento."
           ],
-          "priority": "nice"
-        },
-        {
-          "id": "roppongi-hills-lorena",
-          "title": "Roppongi Hills",
-          "time": "No fijado",
-          "category": "barrio",
-          "status": "opcional",
-          "locationQuery": "Roppongi Hills Tokyo",
-          "notes": "Sin hueco garantizado esta noche; se sacrifica frente a compras, maletas y envío Yamato.",
-          "plan": [
-            "Paseo nocturno corto por la zona.",
-            "No hace falta entrar a observatorios si ya hemos hecho Shibuya Sky/Skytree; aquí prima el ambiente."
-          ]
-        },
-        {
-          "id": "tsukishima-monja",
-          "title": "Tsukishima Monja Street · queda fuera del eje principal",
-          "category": "comida",
-          "status": "opcional",
-          "notes": "La visita Tsukiji ya se hizo el 8, pero la comida prevista es Menya a las 17:00–17:30; por eso no se fuerza otra comida en Tsukishima hoy. Mantener para un hueco futuro solo si resulta viable.",
-          "locationQuery": "Tsukishima Monja Street",
-          "nearestStation": "Tsukishima",
-          "approximatePrice": "¥2.000–4.000 aprox. según local",
           "links": {
-            "tabelog": "https://tabelog.com/en/tokyo/A1313/A131302/rstLst/monjya/"
-          },
-          "plan": [
-            "No hacer Tsukiji → Tsukishima → Takadanobaba: serían dos comidas seguidas y rompería la tarde."
-          ],
-          "transit": {
-            "from": "Tsukiji / Hamarikyu",
-            "summary": "Desde Tsukijishijo (E18), Toei Oedo Line → Tsukishima (E16), dos paradas.",
-            "approximateDuration": "10–15 min + paseos",
-            "steps": [
-              "Caminar a Tsukijishijo (E18).",
-              "Oedo Line dirección Ryogoku hasta Tsukishima (E16).",
-              "Salir hacia Monja Street."
-            ]
-          },
-          "time": "Pendiente de recolocar"
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E9%8A%80%E5%BA%A7%E7%85%89%E7%93%A6%E8%A1%97%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A72%E4%B8%81%E7%9B%AE16-10",
+            "originMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E9%8A%80%E5%BA%A7%E7%85%89%E7%93%A6%E8%A1%97%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A72%E4%B8%81%E7%9B%AE16-10",
+            "destinationMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E6%B5%AA%E9%80%9F%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%A1%9C%E5%B7%9D%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%B5%AA%E9%80%9F%E5%8C%BA%E6%A1%9C%E5%B7%9D3%E4%B8%81%E7%9B%AE8-59",
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/031118/"
+          }
         }
       ],
       "routeStops": [
@@ -1395,14 +1289,9 @@
           "note": "17:00–17:30"
         },
         {
-          "title": "Ginza Karen Nihonbashi",
-          "locationQuery": "Ginza Karen Nihonbashi",
-          "note": "Comprar maletas ANTES del envío"
-        },
-        {
           "title": "Hotel SUI Ginza Kyobashi",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "note": "Preparar y tramitar Yamato; destino Osaka Naniwa/Sakuragawa 060151"
+          "note": "Maletas compradas · preparar o enviar por Yamato solo si se decide"
         }
       ]
     },
