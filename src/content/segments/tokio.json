@@ -1196,7 +1196,7 @@
       "date": "2026-10-09",
       "title": "🗻 Fuji despejado · Oshino → sushi → lago y helado → Lawson",
       "status": "plan",
-      "note": "ACTUALIZACIÓN EN DIRECTO · 9 de octubre, desde ~13:44 JST: grupo en OSHINO HAKKAI; foto desde los estanques con FUJI MUY DESPEJADO. RUTA DECIDIDA: (1) terminar en Oshino, (2) 🍣 COMER ANTES DEL LAGO en Sushiro Kawaguchiko BELL (sushi económico, aparcamiento disponible, objetivo ~14:15–15:00, no confirmado como realizado), (3) Lago Kawaguchiko / Oishi Park + helado en Oishi Park Café antes de 16:45, (4) Lawson Kawaguchiko Ekimae de la foto del Fuji detrás, (5) devolver coche en Tokyo Station Yaesu antes de 21:00. Lago YAMANAKAKO DESCARTADO y Fujisan Yume no Ōhashi fuera del recorrido principal. No inventar MAPCODE de Sushiro: ir con Google Maps. Horarios intermedios orientativos según tráfico, colas y lo que tarde la visita.",
+      "note": "ACTUALIZACIÓN EN DIRECTO · 9 de octubre, desde ~13:44 JST: grupo en OSHINO HAKKAI; foto desde los estanques con FUJI MUY DESPEJADO. RUTA DECIDIDA: (1) terminar en Oshino, (2) 🍣 COMER ANTES DEL LAGO en Sushiro Kawaguchiko BELL (sushi económico, aparcamiento disponible, objetivo ~14:15–15:00, no confirmado como realizado), (3) Lago Kawaguchiko / Oishi Park + helado en Oishi Park Café antes de 16:45, (4) Lawson Kawaguchiko Ekimae de la foto del Fuji detrás, (5) devolver coche en Tokyo Station Yaesu antes de 21:00. Lago YAMANAKAKO DESCARTADO y Fujisan Yume no Ōhashi fuera del recorrido principal. Sushiro: MAPCODE 161 242 392*76 del restaurante (Mapion), NO entrada confirmada del parking; también disponible enlace Google Maps. Horarios intermedios orientativos según tráfico, colas y lo que tarde la visita.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1371,17 +1371,26 @@
           "locationQuery": "スシロー 河口湖BELL店 山梨県南都留郡富士河口湖町船津2986",
           "address": "〒401-0301 山梨県南都留郡富士河口湖町船津2986",
           "approximatePrice": "Desde 120 ¥/plato · aprox. 1.000–2.000 ¥ por persona",
-          "notes": "DECISIÓN DE RUTA, 9/10: comer sushi AL SALIR DE OSHINO HAKKAI y ANTES del lago Kawaguchiko. Sushiro Kawaguchiko BELL (スシロー 河口湖BELL店), dentro de Kawaguchiko Shopping Center BELL, 2986 Funatsu. Tiene aparcamiento; su ficha oficial confirma apertura hoy viernes 11:00–22:30 y platos desde 120 ¥. Es una parada PLANEADA, no confirmada como realizada. No se dispone de MAPCODE fiable del aparcamiento: usar el botón Google Maps y verificar el acceso. Si hay cola o vais tarde, valorar acortar o cambiar la parada, sin sacrificar el helado de Oishi Park (cierra 16:45) ni el regreso a Tokio antes de las 21:00.",
+          "notes": "PARADA DE COMIDA PREVISTA (9/10): sushi en Sushiro Kawaguchiko BELL, 2986 Funatsu, después de Oshino Hakkai y antes del lago Kawaguchiko/Oishi Park. MAPCODE DEL RESTAURANTE 161 242 392*76, comprobado en Mapion; no está verificada la entrada del parking. Sushiro confirma que tiene aparcamiento y abre viernes 11:00–22:30, platos desde 120 ¥. No se ha confirmado que ya hayáis comido. Si hay cola, no retrasar el helado de Oishi Park (cierra 16:45) ni la devolución en Tokio (antes de las 21:00).",
           "links": {
             "officialWebsite": "https://www.akindo-sushiro.co.jp/shop/detail.php?id=1993",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%82%B7%E3%83%AD%E3%83%BC%20%E6%B2%B3%E5%8F%A3%E6%B9%96BELL%E5%BA%97%20%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E8%88%B9%E6%B4%A52986"
           },
           "plan": [
-            "1. 🍣 Después de Oshino Hakkai, ir a Sushiro Kawaguchiko BELL (船津2986), donde hay parking del centro comercial. Buscar el local y el aparcamiento en Google Maps.",
+            "1. 🍣 Ir al Sushiro Kawaguchiko BELL (船津2986). Introducir MAPCODE 161 242 392*76 para localizar el RESTAURANTE, y seguir las señales de acceso a BELL 駐車場 para aparcar (no se ha contrastado la entrada exacta).",
             "2. Objetivo orientativo: comer hacia las 14:15–15:00; si tardáis en salir de Oshino, las horas se desplazan. Sushi desde 120 ¥ el plato según la web oficial.",
             "3. Después ir DIRECTAMENTE a Oishi Park, lago Kawaguchiko, para las vistas y el helado en Oishi Park Café antes de que cierre a las 16:45.",
             "4. Luego LAWSON de la foto del Fuji, y regreso a Tokio para devolver el coche antes de las 21:00. Si vais justos, acortar esta parada y la del Lawson."
-          ]
+          ],
+          "parking": {
+            "name": "スシロー 河口湖BELL店 · aparcamiento del centro comercial BELL",
+            "mapcode": "161 242 392*76",
+            "kind": "reference",
+            "mapsQuery": "スシロー 河口湖BELL店 山梨県南都留郡富士河口湖町船津2986",
+            "notes": "MAPCODE del restaurante Sushiro publicado por Mapion; NO confirma que apunte directamente a la entrada del aparcamiento. El centro comercial BELL dispone de aparcamiento (superficie y subterráneo). Si el navegador apunta al restaurante o una zona sin acceso directo, seguir indicaciones a BELL 駐車場.",
+            "sourceUrl": "https://www.mapion.co.jp/phonebook/M01022/19430/G7633601-001/",
+            "arrived": false
+          }
         },
         {
           "id": "oishi",
@@ -1505,7 +1514,9 @@
         {
           "title": "🍣 COMIDA · Sushiro Kawaguchiko BELL · parking del centro comercial",
           "locationQuery": "スシロー 河口湖BELL店 山梨県南都留郡富士河口湖町船津2986",
-          "note": "Sushi desde 120 ¥ el plato; parking disponible en BELL; MAPCODE no verificado. Objetivo ~14:15–15:00"
+          "note": "MAPCODE del restaurante (Mapion), NO de la entrada del parking; BELL tiene aparcamiento.",
+          "mapcode": "161 242 392*76",
+          "mapcodeKind": "reference"
         },
         {
           "title": "🍦 DESPUÉS DE COMER · Lago Kawaguchiko · Oishi Park",
