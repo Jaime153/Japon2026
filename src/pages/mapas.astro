@@ -18,6 +18,7 @@ const routes = segments.flatMap((segment) =>
           mapcode: stop.mapcode ?? '',
           mapcodeKind: stop.mapcodeKind ?? '',
           note: stop.note ?? '',
+          spotQuery: stop.spotQuery ?? '',
         }))
       : day.activities
           .filter((activity) => activity.locationQuery || activity.address)
@@ -31,6 +32,7 @@ const routes = segments.flatMap((segment) =>
             mapcode: activity.parking?.mapcode ?? '',
             mapcodeKind: activity.parking?.kind ?? '',
             note: activity.parking?.name ?? '',
+            spotQuery: activity.parking?.spotQuery ?? '',
           }));
 
     const alternatives = getDayAlternatives(segment.data, day.date).map((alternative) => ({
@@ -48,6 +50,7 @@ const routes = segments.flatMap((segment) =>
           mapcode: activity.parking?.mapcode ?? '',
           mapcodeKind: activity.parking?.kind ?? '',
           note: activity.parking?.name ?? '',
+          spotQuery: activity.parking?.spotQuery ?? '',
         })),
     }));
 
@@ -351,6 +354,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       stopsEl.innerHTML = variant.stops.map((stop, index) => {
         const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(stop.query);
         const tabelog = stop.tabelog ? `<a href="${stop.tabelog}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-orange-50 px-2 py-1 text-xs font-bold text-orange-800">Tabelog</a>` : '';
+        const streetLink = stop.spotQuery ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.spotQuery)}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-amber-100 px-2 py-1 text-xs font-bold text-amber-900">📸 Ir a la calle · a pie</a>` : '';
         const mapcode = stop.mapcode ? `<div class="mt-2 flex flex-wrap items-center gap-2"><span class="rounded-lg bg-white px-2 py-1 text-sm font-black">${stop.mapcode}</span><button type="button" data-copy-route-mapcode="${stop.mapcode}" class="rounded-lg bg-slate-200 px-2 py-1 text-xs font-bold">📋 Copiar MAPCODE</button>${stop.mapcodeKind === 'reference' ? '<span class="text-[11px] font-semibold text-amber-700">⚠️ Referencia, no acceso confirmado</span>' : ''}</div>` : '';
         return `<li class="grid grid-cols-[2rem_1fr] gap-2 rounded-xl border border-slate-200 bg-slate-50 p-3">
           <span class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-950 text-xs font-black text-white">${index + 1}</span>
@@ -358,7 +362,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
             <div class="flex items-start justify-between gap-2"><strong class="text-sm text-slate-950">${stop.title}</strong><span class="text-xs text-slate-400">${stop.time || ''}</span></div>
             ${stop.note ? '<p class="mt-1 text-xs text-slate-500">' + stop.note + '</p>' : ''}
             ${mapcode}
-            <div class="mt-2 flex gap-2"><a href="${maps}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-blue-50 px-2 py-1 text-xs font-bold text-blue-800">Parking Maps</a>${tabelog}</div>
+            <div class="mt-2 flex flex-wrap gap-2"><a href="${maps}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-blue-50 px-2 py-1 text-xs font-bold text-blue-800">🅿️ Ir al parking</a>${streetLink}${tabelog}</div>
           </div>
         </li>`;
       }).join('');
