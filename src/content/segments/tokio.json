@@ -1332,14 +1332,15 @@
         },
         {
           "id": "oshino",
-          "title": "Oshino Hakkai",
+          "title": "Oshino Hakkai · los 8 estanques del Fuji",
           "category": "naturaleza",
           "status": "plan",
           "locationQuery": "Oshino Hakkai",
           "time": "~12:30",
           "plan": [
-            "Pasear por los estanques y el pueblo.",
-            "Comer/picar algo si cuadra, pero sin retrasar demasiado Oishi Park."
+            "💧 Pasear entre los OCHO ESTANQUES de Oshino Hakkai (忍野八海) y el pueblo tradicional; no son los cinco lagos del Fuji.",
+            "Ver el agua cristalina y las vistas al monte Fuji; seguir las indicaciones peatonales desde el parking Ikemoto.",
+            "Parar a tomar algo si apetece, pero reservar tiempo para el lago Kawaguchiko y el helado de Oishi Park más tarde."
           ],
           "parking": {
             "name": "忍野八海池本駐車場 · Ikemoto Parking",
@@ -1349,18 +1350,19 @@
             "notes": "Parking de pago próximo a los estanques. Mapcode contrastado en Mapion.",
             "sourceUrl": "https://www.mapion.co.jp/phonebook/M08002/19424/ILSP0084830904_ipclm/",
             "arrived": false
-          }
+          },
+          "notes": "Oshino Hakkai (忍野八海), en el pueblo de Oshino: son 8 estanques naturales de agua de manantial alimentados por el deshielo del Fuji, NO ocho lagos. Se visitan caminando desde el parking Ikemoto. Es una parada distinta del lago Kawaguchiko, donde está el helado de Oishi Park."
         },
         {
           "id": "yamanakako-nagaike-optional",
-          "title": "Lago Yamanakako · Nagaike Shinsui Park (segundo lago)",
+          "title": "Lago Yamanakako · fotos desde Nagaike (opcional)",
           "time": "Opcional tras Oshino",
           "category": "mirador",
           "status": "opcional",
           "priority": "nice",
           "locationQuery": "長池親水公園駐車場 山中湖村平野3214-1",
           "address": "長池親水公園駐車場 · 3214-1 Hirano, Yamanakako, Yamanashi",
-          "notes": "Segundo lago opcional entre Oshino Hakkai y el Kawaguchiko/Oishi Park. Fotografía del Fuji sobre el agua desde la orilla norte; aparcamiento gratuito con aproximadamente 80 plazas según Turismo Yamanakako. Es un desvío: saltar si ya vais tarde o el Fuji está tapado. No se incluye en la ruta principal del mapa para no darlo por obligatorio.",
+          "notes": "Este es un SEGUNDO LAGO de los Cinco Lagos del Fuji: Yamanakako (山中湖). No hay que confundirlo con los ocho ESTANQUES de Oshino Hakkai ni con el lago Kawaguchiko del helado. Parada opcional para fotos desde Nagaike Shinsui Park, con parking gratuito; no entra en la ruta principal porque añade un desvío.",
           "plan": [
             "Solo si vais con margen después de Oshino Hakkai y antes de Oishi Park.",
             "Aparcar en Nagaike Shinsui Park, hacer las fotos del Fuji sobre el lago Yamanaka y continuar hacia Kawaguchiko.",
@@ -1381,18 +1383,17 @@
         },
         {
           "id": "oishi",
-          "title": "Lago Kawaguchiko · Oishi Park + helado de arándano/lavanda",
+          "title": "Lago Kawaguchiko · Oishi Park · helado del Fuji 🍦",
           "category": "mirador",
           "status": "plan",
-          "notes": "Paseo clásico por la orilla norte del lago Kawaguchiko, fotos del Fuji con agua y kochia otoñal. HELADO CONCRETO: Oishi Park Café, dentro de Kawaguchiko Natural Living Center (河口湖自然生活館), en el propio parque. Soft-serve de arándano o lavanda; horario oficial octubre: 09:15–16:45. Aparcamiento del parque gratuito. El MAPCODE del parking sigue marcado como referencia, no acceso certificado.",
+          "notes": "UBICACIÓN: lago Kawaguchiko (河口湖), orilla norte, Oishi Park (大石公園), dentro de Kawaguchiko Natural Living Center (河口湖自然生活館). AQUÍ está el helado que queréis probar: soft-serve de arándano o lavanda en Oishi Park Café. Es diferente de Oshino Hakkai (los 8 estanques). Horario publicado para octubre: 09:15–16:45. Parking gratuito; su MAPCODE se mantiene como referencia de zona, no acceso confirmado.",
           "locationQuery": "Oishi Park Kawaguchiko",
           "time": "~14:30",
           "plan": [
-            "Pasear por la orilla del lago Kawaguchiko y sacar las fotos típicas de Fuji + agua + flores/kochia.",
-            "Entrar a Kawaguchiko Natural Living Center (河口湖自然生活館), junto al lago.",
-            "🍦 Pedir un soft-serve del Oishi Park Café: probar arándano (ブルーベリー) o lavanda (ラベンダー). Cierra a las 16:45 según su web oficial.",
-            "Si el Fuji está despejado, aprovechar las vistas desde el café; comprar regalos o mermelada de arándano solo si apetece.",
-            "No convertirlo en parada maratoniana: queda la vuelta al coche de Tokio antes de las 21:00."
+            "🏞️ Lago Kawaguchiko (河口湖): pasear por Oishi Park, con vistas del Fuji reflejado en el agua y de las kochia de otoño.",
+            "🍦 HELADO AQUÍ: Oishi Park Café, dentro de Kawaguchiko Natural Living Center (河口湖自然生活館), en el propio Oishi Park.",
+            "Elegir soft-serve de arándano (ブルーベリー) o lavanda (ラベンダー); horario publicado hasta las 16:45.",
+            "Hacer fotos desde la orilla y continuar sin perder de vista la devolución del coche en Tokio antes de las 21:00."
           ],
           "parking": {
             "name": "大石公園 · parking junto al parque",
@@ -1484,18 +1485,18 @@
           "note": "Parking frente al santuario"
         },
         {
-          "title": "Oshino Hakkai · Parking Ikemoto",
+          "title": "Oshino Hakkai · 8 estanques · Parking Ikemoto",
           "locationQuery": "忍野八海池本駐車場 忍草354 忍野村",
           "mapcode": "161 130 848*74",
           "mapcodeKind": "parking",
-          "note": "Aparcamiento de pago"
+          "note": "8 estanques de agua de manantial, NO 8 lagos"
         },
         {
-          "title": "Oishi Park · zona aparcamiento",
+          "title": "Lago Kawaguchiko · Oishi Park y helado 🍦",
           "locationQuery": "大石公園 駐車場 2585 大石 富士河口湖町",
           "mapcode": "59 089 356*28",
           "mapcodeKind": "reference",
-          "note": "Mapcode de referencia, revisar acceso"
+          "note": "Helado de arándano/lavanda en Natural Living Center; MAPCODE parking aproximado"
         },
         {
           "title": "LAWSON Kawaguchiko Station",
