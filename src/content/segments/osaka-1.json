@@ -31,7 +31,8 @@
             "summary": "Sakuragawa (S15) → Namba (S16) por Sennichimae Line; caminar a Nankai Namba → Nankai Main Line → Sumiyoshitaisha.",
             "approximateDuration": "35–45 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Sumiyoshi Taisha es uno de los santuarios sintoístas más antiguos de Japón; según la tradición fue fundado en el siglo III, antes de que el budismo llegara al archipiélago. Venera a las tres deidades Sumiyoshi, protectoras de navegantes, comerciantes marítimos y viajeros, y a la emperatriz Jingū. Su arquitectura Sumiyoshi-zukuri es considerada una de las formas autóctonas de construcción de santuarios, con tejados rectos y adornos tradicionales. Se conservan cuatro santuarios principales alineados de forma singular. El puente rojo arqueado Sorihashi, también llamado Taikobashi, simboliza el paso hacia un espacio sagrado. Osaka fue siempre ciudad portuaria, así que este santuario conecta directamente con su historia comercial."
         },
         {
           "id": "namba-yasaka",
@@ -49,7 +50,8 @@
             "summary": "Nankai Main Line Sumiyoshitaisha → Namba; desde Nankai Namba caminar a Namba Yasaka Jinja.",
             "approximateDuration": "20–30 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Namba Yasaka Jinja es un santuario sintoísta de Osaka dedicado principalmente a Susanoo-no-Mikoto, el kami vinculado a tormentas, protección y relatos de victoria frente al mal. No se conoce con certeza la fecha de su fundación y sus tradiciones están ligadas al antiguo culto de Gion. Lo más reconocible es una gigantesca cabeza de león de unos 12 metros, el Ema-den, cuya boca abierta se interpreta popularmente como capaz de engullir la mala suerte y atraer oportunidades. La estructura es moderna, de la década de 1970: aunque parezca un antiguo monumento, no es medieval. Fíjate en los enormes dientes y en el espacio dedicado a ofrendas y deseos."
         },
         {
           "id": "shinsekai",
@@ -180,7 +182,8 @@
             "Pasear por Yasaka y Gion ya instalados en Kyoto.",
             "Tomarlo como primera toma de contacto, no como visita exhaustiva."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Yasaka Jinja, en Gion, es un santuario sintoísta venerado en Kioto desde hace más de un milenio. Está especialmente ligado a Susanoo y a la protección ante epidemias: de este trasfondo procede el Gion Matsuri, el gran festival de la ciudad cuyos orígenes rituales se sitúan en 869. La puerta roja marca el paso al recinto sagrado; por la noche destacan los faroles del pabellón central y el ambiente animado junto a Gion. A diferencia de Kiyomizu-dera, es un santuario de kami, no un templo budista. Esta parada nocturna es un primer encuentro con la tradición espiritual de Kioto; la visita detallada se conserva en el día de Higashiyama."
         }
       ]
     }
