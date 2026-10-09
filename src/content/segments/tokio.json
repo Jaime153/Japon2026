@@ -1194,9 +1194,9 @@
     },
     {
       "date": "2026-10-09",
-      "title": "Fuji u Okutama · según visibilidad",
+      "title": "🗻 Fuji con excelente visibilidad · Oshino → Kawaguchiko → Lawson",
       "status": "plan",
-      "note": "9/10 · Ruta en coche para ver Fuji. A las ~10:01 ya habéis aparcado en el parking de Chureito / Arakurayama Sengen Park (P1 según el aparcamiento recomendado). Cada actividad del plan Fuji incluye su MAPCODE (si existe), nombre japonés del parking, botón Maps y opción de copiar. Los códigos marcados «referencia» no certifican la entrada del aparcamiento. Fujisan Yume no Ōhashi queda como desvío muy opcional; para devolver el coche en Yaesu antes de las 21:00, usar el MAPCODE oficial 647 076*21. Nota sobre los lagos: Oishi Park ya es la parada principal del lago Kawaguchiko e incluye el helado típico de Oishi Park Café (arándano/lavanda; mostrador hasta 16:45). Lago Yamanakako (Nagaike) se ofrece como segundo lago opcional, sin incluirlo en el recorrido de conducción automático para no desviaros si vais tarde. 📸 El LAWSON famoso de la foto con el Fuji al fondo SÍ está incluido: LAWSON Kawaguchiko Ekimae (ローソン河口湖駅前店), después del lago Kawaguchiko/Oishi Park, opcional y sujeto a visibilidad, tráfico y hora de devolución del coche.",
+      "note": "ACTUALIZACIÓN EN DIRECTO · 9 de octubre, ~13:44 JST. El grupo ESTÁ AHORA EN OSHINO HAKKAI (los ocho estanques); la foto enviada desde los estanques muestra muy buena visibilidad del monte Fuji. DECISIÓN CONFIRMADA: NO se visita el lago Yamanakako. SÍ se irá al lago Kawaguchiko, Oishi Park y el helado en Oishi Park Café (Natural Living Center; horario publicado hasta las 16:45), y después al LAWSON Kawaguchiko Ekimae de la famosa foto con el Fuji detrás. Conservar los enlaces y MAPCODE de cada parada; no confundir el MAPCODE del Lawson con un aparcamiento público. El desvío de Yume no Ōhashi no forma parte de esta ruta en coche. Volver a Tokyo Station Yaesu para devolver el coche antes de las 21:00, con margen por tráfico.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1340,15 +1340,15 @@
         },
         {
           "id": "oshino",
-          "title": "Oshino Hakkai · los 8 estanques del Fuji",
+          "title": "📍 AHORA · Oshino Hakkai · 8 estanques del Fuji",
           "category": "naturaleza",
-          "status": "plan",
+          "status": "confirmado",
           "locationQuery": "Oshino Hakkai",
-          "time": "~12:30",
+          "time": "~13:40 · en visita",
           "plan": [
-            "💧 Pasear entre los OCHO ESTANQUES de Oshino Hakkai (忍野八海) y el pueblo tradicional; no son los cinco lagos del Fuji.",
-            "Ver el agua cristalina y las vistas al monte Fuji; seguir las indicaciones peatonales desde el parking Ikemoto.",
-            "Parar a tomar algo si apetece, pero reservar tiempo para el lago Kawaguchiko y el helado de Oishi Park más tarde."
+            "Ahora estáis en Oshino Hakkai (忍野八海): disfrutar de los ocho estanques de agua de manantial y de la vista despejada del Fuji.",
+            "Hacer fotografías desde los caminos permitidos y terminar tranquilamente la visita.",
+            "Siguiente parada confirmada: lago Kawaguchiko → Oishi Park y Oishi Park Café. No ir al lago Yamanakako."
           ],
           "parking": {
             "name": "忍野八海池本駐車場 · Ikemoto Parking",
@@ -1359,49 +1359,21 @@
             "sourceUrl": "https://www.mapion.co.jp/phonebook/M08002/19424/ILSP0084830904_ipclm/",
             "arrived": false
           },
-          "notes": "Oshino Hakkai (忍野八海), en el pueblo de Oshino: son 8 estanques naturales de agua de manantial alimentados por el deshielo del Fuji, NO ocho lagos. Se visitan caminando desde el parking Ikemoto. Es una parada distinta del lago Kawaguchiko, donde está el helado de Oishi Park."
-        },
-        {
-          "id": "yamanakako-nagaike-optional",
-          "title": "Lago Yamanakako · fotos desde Nagaike (opcional)",
-          "time": "Opcional tras Oshino",
-          "category": "mirador",
-          "status": "opcional",
-          "priority": "nice",
-          "locationQuery": "長池親水公園駐車場 山中湖村平野3214-1",
-          "address": "長池親水公園駐車場 · 3214-1 Hirano, Yamanakako, Yamanashi",
-          "notes": "Este es un SEGUNDO LAGO de los Cinco Lagos del Fuji: Yamanakako (山中湖). No hay que confundirlo con los ocho ESTANQUES de Oshino Hakkai ni con el lago Kawaguchiko del helado. Parada opcional para fotos desde Nagaike Shinsui Park, con parking gratuito; no entra en la ruta principal porque añade un desvío.",
-          "plan": [
-            "Solo si vais con margen después de Oshino Hakkai y antes de Oishi Park.",
-            "Aparcar en Nagaike Shinsui Park, hacer las fotos del Fuji sobre el lago Yamanaka y continuar hacia Kawaguchiko.",
-            "MAPCODE de aparcamiento procedente de una guía local, no validado por el ayuntamiento para la puerta exacta. Comprobar en el navegador del coche que lleva a 長池親水公園駐車場.",
-            "Si son ya más de las 14:00 y seguís lejos de Oishi, priorizar el helado de Oishi Park Café (cierra 16:45) y omitir este segundo lago."
-          ],
-          "parking": {
-            "name": "長池親水公園駐車場 · Nagaike Shinsui Park",
-            "mapcode": "161 015 723*24",
-            "kind": "reference",
-            "mapsQuery": "長池親水公園駐車場 山梨県南都留郡山中湖村平野3214-1",
-            "notes": "Parking junto al lago, gratuito. Hay aparcamientos en dos zonas. MAPCODE publicado por una guía local de aparcamientos, sin comprobación independiente de la entrada exacta. En Mapion el código del propio parque es distinto.",
-            "sourceUrl": "https://tozanguchi-p.com/nakgaike_p/"
-          },
-          "links": {
-            "officialWebsite": "https://lake-yamanakako.com/spot/10351"
-          }
+          "notes": "📍 GRUPO EN LOS ESTANQUES AHORA (9/10, ~13:44 JST). Confirmada la llegada; no significa que se hayan recorrido ya los ocho. La fotografía enviada desde Oshino Hakkai muestra el Fuji muy despejado y nítido, con excelente visibilidad. Aquí hay ocho ESTANQUES de manantial, no ocho lagos. La próxima parada acordada es el LAGO KAWAGUCHIKO, Oishi Park + helado, y después el LAWSON de la foto famosa. Lago Yamanakako descartado."
         },
         {
           "id": "oishi",
-          "title": "Lago Kawaguchiko · Oishi Park · helado del Fuji 🍦",
+          "title": "🍦 SIGUIENTE · Lago Kawaguchiko · Oishi Park y helado",
           "category": "mirador",
           "status": "plan",
-          "notes": "UBICACIÓN: lago Kawaguchiko (河口湖), orilla norte, Oishi Park (大石公園), dentro de Kawaguchiko Natural Living Center (河口湖自然生活館). AQUÍ está el helado que queréis probar: soft-serve de arándano o lavanda en Oishi Park Café. Es diferente de Oshino Hakkai (los 8 estanques). Horario publicado para octubre: 09:15–16:45. Parking gratuito; su MAPCODE se mantiene como referencia de zona, no acceso confirmado.",
+          "notes": "PARADA CONFIRMADA POR EL GRUPO (9/10 ~13:44): desde Oshino Hakkai vamos directamente al LAGO KAWAGUCHIKO (河口湖). Visitar Oishi Park (大石公園) en la orilla norte, pasear junto al agua y tomar el helado de arándano o lavanda en Oishi Park Café, dentro de Kawaguchiko Natural Living Center (河口湖自然生活館). El horario publicado del café es hasta las 16:45. Aparcamiento gratuito; el MAPCODE 59 089 356*28 se señala como referencia, no garantiza el acceso exacto. No hace falta ir al lago Yamanakako.",
           "locationQuery": "Oishi Park Kawaguchiko",
-          "time": "~14:30",
+          "time": "Siguiente · tras Oshino",
           "plan": [
-            "🏞️ Lago Kawaguchiko (河口湖): pasear por Oishi Park, con vistas del Fuji reflejado en el agua y de las kochia de otoño.",
-            "🍦 HELADO AQUÍ: Oishi Park Café, dentro de Kawaguchiko Natural Living Center (河口湖自然生活館), en el propio Oishi Park.",
-            "Elegir soft-serve de arándano (ブルーベリー) o lavanda (ラベンダー); horario publicado hasta las 16:45.",
-            "Hacer fotos desde la orilla y continuar sin perder de vista la devolución del coche en Tokio antes de las 21:00."
+            "1. 🚗 Después de Oshino, conducir al aparcamiento de Oishi Park junto al lago Kawaguchiko. Usar el botón de aparcamiento y comprobar el acceso; MAPCODE orientativo 59 089 356*28.",
+            "2. 🏞️ Pasear por la orilla norte del lago Kawaguchiko y fotografiar el Fuji desde Oishi Park.",
+            "3. 🍦 Helado en Oishi Park Café, dentro de Kawaguchiko Natural Living Center: arándano (ブルーベリー) o lavanda (ラベンダー). Ir antes del cierre publicado a las 16:45.",
+            "4. 📸 Después ir al Lawson Kawaguchiko Ekimae para la foto clásica de la tienda con el Fuji detrás."
           ],
           "parking": {
             "name": "大石公園 · parking junto al parque",
@@ -1415,21 +1387,22 @@
           "links": {
             "officialWebsite": "https://www.fkchannel.jp/facility-03",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko%20Natural%20Living%20Center%20Oishi%20Park%202585%20Oishi"
-          }
+          },
+          "priority": "must"
         },
         {
           "id": "lawson-kawaguchiko",
-          "title": "📸 LAWSON famoso de Kawaguchiko · Fuji detrás de la tienda",
+          "title": "📸 DESPUÉS · LAWSON famoso de Kawaguchiko · Fuji detrás",
           "category": "otro",
-          "status": "opcional",
-          "notes": "ÉSTE es el LAWSON VIRAL de la foto en la que el monte Fuji parece salir del tejado de la tienda azul y blanca, junto a la estación Kawaguchiko. Nombre exacto: ローソン河口湖駅前店 (Lawson Kawaguchiko Ekimae), 3495-2 Funatsu, Fujikawaguchiko. La fotografía típica se obtiene mirando hacia la tienda desde la acera opuesta donde esté permitido: no hay que invadir la calzada ni una clínica o parcela privada. El ayuntamiento instaló medidas de control por las aglomeraciones y cruces peligrosos; puede haber vallas y restricciones según el día. MAPCODE 161 272 403*58 de la TIENDA, no de parking público garantizado. Es una foto opcional, solo si aún hay luz y margen para devolver el coche antes de las 21:00.",
+          "status": "plan",
+          "notes": "PARADA CONFIRMADA POR EL GRUPO (9/10 ~13:44): visitar DESPUÉS de Oishi Park y su helado el LAWSON famoso de la foto del Fuji detrás de la tienda. Tienda exacta: ローソン河口湖駅前店 (Lawson Kawaguchiko Ekimae), 3495-2 Funatsu, Fujikawaguchiko. MAPCODE 161 272 403*58 corresponde a la TIENDA, NO a un aparcamiento público garantizado. Fotografiar solo desde zonas habilitadas, respetar señales, barreras y propiedades privadas. Tras la parada iniciar el regreso a Tokio: coche de alquiler se devuelve antes de las 21:00.",
           "locationQuery": "ローソン河口湖駅前店 〒401-0301 山梨県南都留郡富士河口湖町船津3495-2",
-          "time": "~17:00",
+          "time": "Después del lago y del helado",
           "plan": [
-            "📸 Foto icónica: Lawson azul y blanco delante, monte Fuji de fondo, cerca de Kawaguchiko Station. Es el LAWSON famoso de las redes, no otra sucursal.",
-            "Buscar una acera pública y un ángulo permitido; respetar las barreras y la señalización, NO cruzar por medio de la carretera ni entrar en la propiedad de la clínica cercana.",
-            "🗺️ Pulsar «Ir al parking» para localizar la tienda en Google Maps; el MAPCODE 161 272 403*58 identifica la tienda, no asegura una plaza.",
-            "Solo parar si queda tiempo y visibilidad. La devolución del coche es en Tokio antes de las 21:00."
+            "1. 📸 Desde Oishi Park, dirigirse al Lawson Kawaguchiko Ekimae, la tienda azul y blanca del Fuji de fondo.",
+            "2. MAPCODE 161 272 403*58: referencia de la tienda. No asumir parking público; comprobar opciones legales para parar el coche.",
+            "3. Desde el lugar permitido, fotografiar la tienda con el Fuji detrás sin cruzar indebidamente la calle ni entrar en propiedad privada.",
+            "4. 🚗 Después, regreso a Nippon Rent-A-Car Yaesu, Tokio. Hora límite de devolución: 21:00."
           ],
           "parking": {
             "name": "ローソン河口湖駅前店 · Lawson Station",
@@ -1443,7 +1416,8 @@
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%AD%E3%83%BC%E3%82%BD%E3%83%B3%E6%B2%B3%E5%8F%A3%E6%B9%96%E9%A7%85%E5%89%8D%E5%BA%97%20%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E8%88%B9%E6%B4%A53495-2",
             "officialWebsite": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7055"
-          }
+          },
+          "priority": "must"
         },
         {
           "id": "yume-ohashi",
@@ -1451,7 +1425,7 @@
           "category": "mirador",
           "status": "opcional",
           "locationQuery": "Fujisan Yume no Ohashi",
-          "time": "~16:00",
+          "time": "Opcional descartable · desvío largo",
           "plan": [
             "Parada fotográfica opcional si la visibilidad sigue buena y vamos de hora.",
             "Saltarla sin problema si supone demasiado desvío."
@@ -1465,7 +1439,7 @@
             "sourceUrl": "https://yume-no-ohashi.com/",
             "arrived": false
           },
-          "notes": "Parada muy opcional y alejada de Kawaguchiko; el puente tiene parking dedicado de 17 plazas. No seguir el Mapcode del puente como si fuese la entrada al parking; usar el enlace específico y priorizar volver a tiempo a Tokio."
+          "notes": "NO es parte de la ruta de hoy acordada: el plan operativo desde Oshino es Kawaguchiko/Oishi Park → Lawson → regreso a Tokio. El puente en Fuji City supondría un desvío grande y amenaza la devolución del coche antes de las 21:00. Se conserva solo como referencia opcional, no conducir hasta allí salvo que decidáis cambiar los planes."
         }
       ],
       "switchLabel": "🗻 Fuji",
@@ -1500,25 +1474,25 @@
           "note": "Parking frente al santuario"
         },
         {
-          "title": "Oshino Hakkai · 8 estanques · Parking Ikemoto",
+          "title": "📍 AHORA · Oshino Hakkai · 8 estanques",
           "locationQuery": "忍野八海池本駐車場 忍草354 忍野村",
           "mapcode": "161 130 848*74",
           "mapcodeKind": "parking",
-          "note": "8 estanques de agua de manantial, NO 8 lagos"
+          "note": "Grupo en Oshino ~13:44; Fuji muy visible según foto. Próximo: Kawaguchiko"
         },
         {
-          "title": "Lago Kawaguchiko · Oishi Park y helado 🍦",
+          "title": "🍦 SIGUIENTE · Lago Kawaguchiko · Oishi Park + helado",
           "locationQuery": "大石公園 駐車場 2585 大石 富士河口湖町",
           "mapcode": "59 089 356*28",
           "mapcodeKind": "reference",
-          "note": "Helado de arándano/lavanda en Natural Living Center; MAPCODE parking aproximado"
+          "note": "Confirmado: Lago Kawaguchiko + helado en Natural Living Center hasta 16:45; MAPCODE parking de referencia"
         },
         {
-          "title": "📸 LAWSON famoso · foto del Fuji detrás de la tienda",
+          "title": "📸 DESPUÉS · LAWSON famoso, foto del Fuji detrás",
           "locationQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
           "mapcode": "161 272 403*58",
           "mapcodeKind": "reference",
-          "note": "Tienda de la foto viral. MAPCODE de tienda, no parking público; respetar barreras y paso de peatones"
+          "note": "Confirmado: ir después de Oishi Park. MAPCODE de la tienda, no aparcamiento público"
         },
         {
           "title": "REGRESO Nippon Rent-A-Car · Yaesu",
