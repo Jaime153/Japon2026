@@ -1312,15 +1312,17 @@
         },
         {
           "id": "kitaguchi",
-          "title": "Kitaguchi Hongu Fuji Sengen Jinja",
+          "title": "Kitaguchi Hongū Fuji Sengen Jinja · santuario histórico del Fuji",
           "category": "templo",
           "status": "plan",
-          "notes": "Parada de goshuin.",
+          "notes": "⛩️ HISTORIA: Kitaguchi Hongū Fuji Sengen Jinja (北口本宮冨士浅間神社) es uno de los grandes santuarios sintoístas dedicados al monte Fuji, situado en el inicio tradicional de la ruta de ascenso Yoshida. Según la TRADICIÓN del santuario, en el año 110 el legendario príncipe Yamato Takeru contempló y veneró el Fuji desde la cercana colina Ōtsukayama; no debe tomarse como un hecho histórico demostrado. Tras una erupción del Fuji en 781, el recinto se estableció en su ubicación actual en 788 para venerar a las divinidades de la montaña. Su principal deidad es Konohanasakuya-hime, asociada a los volcanes y al Fuji. Durante el período Edo (1603–1868), los peregrinos de las cofradías Fuji-kō visitaban este santuario para rezar antes de subir por la ruta Yoshida. Conserva tres edificios principales históricos de 1561, 1594 y 1615, protegidos como bienes culturales de Japón; fue ampliado y reformado por las comunidades Fuji-kō en el siglo XVIII. Forma parte del paisaje cultural del Fuji inscrito como Patrimonio Mundial de la UNESCO en 2013. QUÉ VER: caminar entre cedros y antiguos faroles de piedra, atravesar el gran torii, observar los árboles centenarios y visitar el edificio principal. Si procede, pedir el goshuin.",
           "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja",
           "time": "~11:15",
           "plan": [
-            "Recorrer la entrada de cedros y el santuario.",
-            "Hacer goshuin antes de continuar hacia Oshino."
+            "🌲 Entrada: recorrer despacio la avenida arbolada con cedros y faroles de piedra. Es parte de la experiencia histórica de los peregrinos.",
+            "⛩️ Gran torii y sala principal: observar la arquitectura y los tres santuarios principales conservados de 1561, 1594 y 1615.",
+            "🗻 Contexto: este lugar era el comienzo espiritual de la ruta Yoshida al Fuji, especialmente para los peregrinos Fuji-kō procedentes de Edo.",
+            "📖 Goshuin: preguntar en la oficina del santuario por la caligrafía/sello antes de continuar hacia Oshino Hakkai."
           ],
           "goshuin": true,
           "parking": {
@@ -1331,6 +1333,9 @@
             "notes": "P1 enfrente del santuario, junto a la carretera 138 (50 plazas). El Mapcode aparece en una guía secundaria; la web oficial confirma el parking, no el código.",
             "sourceUrl": "https://www.sengenjinja.jp/access/index.html",
             "arrived": false
+          },
+          "links": {
+            "officialWebsite": "https://www.sengenjinja.jp/yuisho/index.html"
           }
         },
         {
