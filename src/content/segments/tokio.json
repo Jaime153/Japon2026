@@ -1196,7 +1196,7 @@
       "date": "2026-10-09",
       "title": "Fuji u Okutama · según visibilidad",
       "status": "plan",
-      "note": "9/10 · Ruta en coche para ver Fuji. A las ~10:01 ya habéis aparcado en el parking de Chureito / Arakurayama Sengen Park (P1 según el aparcamiento recomendado). Cada actividad del plan Fuji incluye su MAPCODE (si existe), nombre japonés del parking, botón Maps y opción de copiar. Los códigos marcados «referencia» no certifican la entrada del aparcamiento. Fujisan Yume no Ōhashi queda como desvío muy opcional; para devolver el coche en Yaesu antes de las 21:00, usar el MAPCODE oficial 647 076*21. Nota sobre los lagos: Oishi Park ya es la parada principal del lago Kawaguchiko e incluye el helado típico de Oishi Park Café (arándano/lavanda; mostrador hasta 16:45). Lago Yamanakako (Nagaike) se ofrece como segundo lago opcional, sin incluirlo en el recorrido de conducción automático para no desviaros si vais tarde.",
+      "note": "9/10 · Ruta en coche para ver Fuji. A las ~10:01 ya habéis aparcado en el parking de Chureito / Arakurayama Sengen Park (P1 según el aparcamiento recomendado). Cada actividad del plan Fuji incluye su MAPCODE (si existe), nombre japonés del parking, botón Maps y opción de copiar. Los códigos marcados «referencia» no certifican la entrada del aparcamiento. Fujisan Yume no Ōhashi queda como desvío muy opcional; para devolver el coche en Yaesu antes de las 21:00, usar el MAPCODE oficial 647 076*21. Nota sobre los lagos: Oishi Park ya es la parada principal del lago Kawaguchiko e incluye el helado típico de Oishi Park Café (arándano/lavanda; mostrador hasta 16:45). Lago Yamanakako (Nagaike) se ofrece como segundo lago opcional, sin incluirlo en el recorrido de conducción automático para no desviaros si vais tarde. 📸 El LAWSON famoso de la foto con el Fuji al fondo SÍ está incluido: LAWSON Kawaguchiko Ekimae (ローソン河口湖駅前店), después del lago Kawaguchiko/Oishi Park, opcional y sujeto a visibilidad, tráfico y hora de devolución del coche.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1418,6 +1418,34 @@
           }
         },
         {
+          "id": "lawson-kawaguchiko",
+          "title": "📸 LAWSON famoso de Kawaguchiko · Fuji detrás de la tienda",
+          "category": "otro",
+          "status": "opcional",
+          "notes": "ÉSTE es el LAWSON VIRAL de la foto en la que el monte Fuji parece salir del tejado de la tienda azul y blanca, junto a la estación Kawaguchiko. Nombre exacto: ローソン河口湖駅前店 (Lawson Kawaguchiko Ekimae), 3495-2 Funatsu, Fujikawaguchiko. La fotografía típica se obtiene mirando hacia la tienda desde la acera opuesta donde esté permitido: no hay que invadir la calzada ni una clínica o parcela privada. El ayuntamiento instaló medidas de control por las aglomeraciones y cruces peligrosos; puede haber vallas y restricciones según el día. MAPCODE 161 272 403*58 de la TIENDA, no de parking público garantizado. Es una foto opcional, solo si aún hay luz y margen para devolver el coche antes de las 21:00.",
+          "locationQuery": "ローソン河口湖駅前店 〒401-0301 山梨県南都留郡富士河口湖町船津3495-2",
+          "time": "~17:00",
+          "plan": [
+            "📸 Foto icónica: Lawson azul y blanco delante, monte Fuji de fondo, cerca de Kawaguchiko Station. Es el LAWSON famoso de las redes, no otra sucursal.",
+            "Buscar una acera pública y un ángulo permitido; respetar las barreras y la señalización, NO cruzar por medio de la carretera ni entrar en la propiedad de la clínica cercana.",
+            "🗺️ Pulsar «Ir al parking» para localizar la tienda en Google Maps; el MAPCODE 161 272 403*58 identifica la tienda, no asegura una plaza.",
+            "Solo parar si queda tiempo y visibilidad. La devolución del coche es en Tokio antes de las 21:00."
+          ],
+          "parking": {
+            "name": "ローソン河口湖駅前店 · Lawson Station",
+            "mapcode": "161 272 403*58",
+            "kind": "reference",
+            "mapsQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
+            "notes": "Mapcode confirmado para la tienda, NO para un aparcamiento público garantizado. Respetar los accesos y cualquier restricción de fotografías.",
+            "sourceUrl": "https://www.mapion.co.jp/phonebook/M02005/19430/ILSP0058259686_ipclm/",
+            "arrived": false
+          },
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%AD%E3%83%BC%E3%82%BD%E3%83%B3%E6%B2%B3%E5%8F%A3%E6%B9%96%E9%A7%85%E5%89%8D%E5%BA%97%20%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E8%88%B9%E6%B4%A53495-2",
+            "officialWebsite": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7055"
+          }
+        },
+        {
           "id": "yume-ohashi",
           "title": "Fujisan Yume no Ōhashi",
           "category": "mirador",
@@ -1438,28 +1466,6 @@
             "arrived": false
           },
           "notes": "Parada muy opcional y alejada de Kawaguchiko; el puente tiene parking dedicado de 17 plazas. No seguir el Mapcode del puente como si fuese la entrada al parking; usar el enlace específico y priorizar volver a tiempo a Tokio."
-        },
-        {
-          "id": "lawson-kawaguchiko",
-          "title": "LAWSON Kawaguchiko Station",
-          "category": "otro",
-          "status": "opcional",
-          "notes": "Punto de foto; respetar señalización y propiedad privada.",
-          "locationQuery": "LAWSON Kawaguchiko Station",
-          "time": "~17:00",
-          "plan": [
-            "Parada rápida para la foto si no hay problemas de acceso o señalización.",
-            "No alargar: después hay que iniciar la vuelta a Tokio para devolver el coche con margen antes de las 21:00."
-          ],
-          "parking": {
-            "name": "ローソン河口湖駅前店 · Lawson Station",
-            "mapcode": "161 272 403*58",
-            "kind": "reference",
-            "mapsQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
-            "notes": "Mapcode confirmado para la tienda, NO para un aparcamiento público garantizado. Respetar los accesos y cualquier restricción de fotografías.",
-            "sourceUrl": "https://www.mapion.co.jp/phonebook/M02005/19430/ILSP0058259686_ipclm/",
-            "arrived": false
-          }
         }
       ],
       "switchLabel": "🗻 Fuji",
@@ -1508,11 +1514,11 @@
           "note": "Helado de arándano/lavanda en Natural Living Center; MAPCODE parking aproximado"
         },
         {
-          "title": "LAWSON Kawaguchiko Station",
+          "title": "📸 LAWSON famoso · foto del Fuji detrás de la tienda",
           "locationQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
           "mapcode": "161 272 403*58",
           "mapcodeKind": "reference",
-          "note": "Mapcode de tienda, no parking garantizado"
+          "note": "Tienda de la foto viral. MAPCODE de tienda, no parking público; respetar barreras y paso de peatones"
         },
         {
           "title": "REGRESO Nippon Rent-A-Car · Yaesu",
