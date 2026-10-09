@@ -124,7 +124,8 @@
               "Desde Miyajima Pier caminar al santuario."
             ]
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Itsukushima Jinja es el santuario sintoísta de Miyajima, isla venerada como sagrada desde la Antigüedad. Según su tradición, el santuario se fundó en 593; adquirió gran esplendor a partir de 1168 bajo el patrocinio de Taira no Kiyomori, poderoso dirigente del final del período Heian. El complejo se diseñó sobre pilotes y pasarelas junto al mar, como si flotara cuando sube la marea. Venera a tres kami femeninos ligados a la protección de navegación y mares. El gran torii bermellón es la puerta simbólica al espacio sagrado. El contraste de monte Misen, bahía y arquitectura forma parte de su significado y reconocimiento como Patrimonio Mundial de la UNESCO."
         },
         {
           "id": "miyajima-torii",
@@ -141,7 +142,8 @@
             "from": "Itsukushima Shrine",
             "summary": "Todo andando por el paseo costero de Miyajima.",
             "approximateDuration": "5–15 min"
-          }
+          },
+          "description": "El gran torii de Itsukushima marca de forma simbólica la entrada a un santuario sintoísta, pero aquí se alza en el mar: el paso entre lo cotidiano y lo sagrado depende visualmente de la marea. El torii actual data de 1875 y mide unos 16,8 metros; la estructura se sostiene fundamentalmente por su peso y está estabilizada con apoyos laterales. Su color bermellón, el bosque de la isla y el templo flotante forman un paisaje ritual diseñado para contemplarse también desde el agua. En marea baja se puede pasear cerca cuando las condiciones lo permiten; en marea alta parece flotar. No es una atracción independiente del santuario de Itsukushima."
         },
         {
           "id": "misen",

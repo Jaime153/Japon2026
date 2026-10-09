@@ -30,7 +30,8 @@
             "Entrar por el gran Sanmon y ver el complejo principal.",
             "No alargar demasiado los jardines si vamos justos: este día tiene una ruta larga por Higashiyama."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
         },
         {
           "id": "shorenin",
@@ -49,7 +50,8 @@
             "Entrar si vamos bien de hora; es un templo más tranquilo que los grandes iconos.",
             "Si la llegada desde Osaka se retrasa, este es el primero que se puede sacrificar."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Shōren-in es un templo de la tradición budista Tendai asociado durante siglos a miembros de la familia imperial que ejercieron como superiores religiosos. Su origen está ligado a la expansión del budismo Tendai de Enryaku-ji en Kioto. A diferencia de los grandes santuarios de multitudes, aquí importan el silencio, las pinturas interiores, los jardines de musgo y estanques y los enormes alcanforeros próximos a la entrada. Su paisaje refleja la búsqueda de armonía entre arquitectura, naturaleza y contemplación. Fíjate en cómo las habitaciones del templo enmarcan el jardín como si fueran cuadros: representa otra forma, más serena, de conocer Kioto."
         },
         {
           "id": "yasaka",
@@ -68,7 +70,8 @@
             "summary": "Bajar andando por Higashiyama hasta Yasaka Shrine.",
             "approximateDuration": "10–15 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Yasaka Jinja es uno de los santuarios sintoístas esenciales de Kioto y el corazón espiritual de Gion. Antes se conocía como Gion-sha y está vinculado al culto de Susanoo-no-Mikoto y otras divinidades protectoras. Su famoso Gion Matsuri tiene raíces en antiguos rituales para pedir protección durante epidemias, especialmente desde el siglo IX. Las carrozas festivas que hoy recorren la ciudad nacen de esa relación entre religión, salud pública y comunidad. El santuario es fácilmente reconocible por su puerta roja y su pabellón central; observa los faroles y las ofrendas. Sigue siendo un lugar de oración cotidiana, no solo una atracción histórica."
         },
         {
           "id": "yasaka-pagoda",
@@ -88,7 +91,8 @@
             "Hacer la foto/paseo de la pagoda y seguir hacia Ninenzaka y Sannenzaka.",
             "No hace falta convertirlo en una visita larga; el objetivo es recorrer el eje histórico."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "La pagoda Yasaka pertenece a Hōkan-ji, un templo budista de Higashiyama. Las tradiciones locales remontan sus orígenes a la Antigüedad japonesa y la relacionan con el príncipe Shōtoku, aunque los relatos iniciales tienen carácter legendario. La pagoda de cinco plantas que vemos hoy es una reconstrucción medieval, del siglo XV. En el simbolismo budista, una pagoda guarda o evoca reliquias y el camino de la enseñanza, y sus niveles crean una silueta ascendente. Es uno de los iconos fotográficos de Kioto al aparecer entre calles estrechas y casas tradicionales. Conviene mirarla también como edificio religioso, no solo como fondo para fotos."
         },
         {
           "id": "ninenzaka-sannenzaka",
@@ -125,7 +129,8 @@
             "Entrar aunque vayamos algo cansados: es uno de los templos clave de Kyoto.",
             "Después volver bajando hacia Gion con calma."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Kiyomizu-dera nació en 778 en las colinas orientales de Kioto y es un templo budista dedicado principalmente a Kannon, el bodhisattva de la compasión. Su nombre significa «templo del agua pura», referencia a la cascada Otowa que mana bajo el recinto. La famosa terraza de madera del pabellón principal se apoya en una compleja estructura de columnas y uniones tradicionales y ofrece vistas sobre la ciudad. Beber de los canales de Otowa se relaciona popularmente con deseos de salud, estudios y vida afectiva. Recorre la terraza, las escalinatas y el entorno boscoso; la combinación de fe, ingeniería y paisaje explica su enorme importancia."
         },
         {
           "id": "gion",
@@ -192,7 +197,8 @@
               "Bajar en Fushimi-Inari y caminar ~5 min al santuario."
             ]
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido."
         },
         {
           "id": "tofukuji",
@@ -211,7 +217,8 @@
             "Ver el eje principal, Tsūtenkyō y los jardines sin recrearnos demasiado.",
             "Desde aquí seguimos a pie por los templos secundarios de la zona."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Tōfuku-ji se fundó en 1236 como gran monasterio de budismo zen, y sigue siendo uno de los centros importantes de la escuela Rinzai en Kioto. Su nombre recuerda a dos templos clásicos de Nara, Tōdai-ji y Kōfuku-ji, buscando reunir sus ideales de grandeza y estudio. El gran Sanmon, reconstruido a comienzos del siglo XV, se considera una de las puertas zen monumentales más antiguas del país. El puente Tsūtenkyō atraviesa un valle de arces y en otoño es especialmente célebre. Sus jardines modernos reinterpretan la contemplación zen mediante patrones de piedra y musgo, como el famoso damero verde."
         },
         {
           "id": "sennyuji",
@@ -230,7 +237,8 @@
             "Entrar si llevamos buen ritmo.",
             "Si Fushimi o Tōfuku-ji se alargan, saltarlo antes que perder Sanjūsangendō, Nishiki o la tienda de matcha."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Sennyū-ji, «templo de la fuente que brota», está muy ligado a la familia imperial japonesa y por eso recibe el sobrenombre de Mi-dera, «templo imperial». Sus antecedentes se remontan al período Heian; en el siglo XIII el monje Shunjō amplió el complejo tras estudiar en China y trajo influencias de la dinastía Song. Desde el entierro del emperador Shijō en 1242, el recinto se relaciona con mausoleos y ceremonias en memoria de emperadores. Destacan el Butsuden, edificios ceremoniales y un ambiente de recogimiento distinto de los templos más turísticos. Es un ejemplo del vínculo entre budismo, cultura cortesana y memoria dinástica."
         },
         {
           "id": "imakumano-kannonji",
@@ -249,7 +257,8 @@
             "Entrar solo si el ritmo del grupo sigue bien.",
             "Es un extra de 2025, no una prioridad por encima de los grandes templos."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Imakumano Kannon-ji es un templo dedicado a Kannon, bodhisattva de la compasión que escucha el sufrimiento del mundo. Pertenece a la venerada peregrinación de los 33 templos de Kannon del oeste de Japón, llamada Saigoku Kannon. Su historia religiosa se vincula tradicionalmente a Kūkai, fundador del budismo Shingon, y a las montañas del sureste de Kioto. El nombre «Imakumano» recuerda la influencia del culto de Kumano y sus rutas de peregrinación. Es un sitio apropiado para comprender las oraciones por salud, consuelo y bienestar. Observa sus imágenes de Kannon, los árboles y los pequeños elementos votivos."
         },
         {
           "id": "sanjusangendo",
@@ -269,7 +278,8 @@
             "Entrar al pabellón principal y ver las 1.001 estatuas.",
             "Mantenerlo aunque haya que recortar Sennyū-ji o Imakumano."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior."
         },
         {
           "id": "toji",
@@ -289,7 +299,8 @@
             "Ver la pagoda y el recinto principal.",
             "No alargar porque Nishiki y Baikoan tienen horario comercial."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Tō-ji («templo del Este») fue uno de los templos de protección de la capital Heian a finales del siglo VIII y en el siglo IX quedó ligado a Kūkai (Kōbō Daishi), introductor del budismo esotérico Shingon en Japón. Su pagoda de cinco pisos, reconstruida en el siglo XVII, alcanza unos 55 metros y se ha convertido en símbolo de Kioto. En el Kōdō hay grupos escultóricos organizados como un mandala tridimensional, representación visual de la visión budista del cosmos. También son importantes los edificios de oración y los jardines. La pagoda no suele abrirse por dentro salvo ocasiones especiales; merece la pena contemplarla desde el estanque."
         },
         {
           "id": "nishiki",
@@ -367,7 +378,8 @@
             "summary": "Volver hacia Gion en taxi o transporte urbano; con 4 personas el taxi puede compensar.",
             "approximateDuration": "15–25 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Kennin-ji fue fundado en 1202 por el monje Eisai, impulsor de la escuela zen Rinzai y de la cultura del té en Japón, y se considera el templo zen más antiguo de Kioto. Está en el corazón de Gion, pero sus jardines secos y pasillos invitan a bajar el ritmo. Uno de sus atractivos es la gran pintura de dos dragones que cubre el techo de un salón: los dragones se relacionan con la protección de la enseñanza budista. También destaca el motivo de los dioses del Viento y el Trueno, célebre en el arte japonés. Aquí importa observar cómo el zen transforma piedra, grava, vacío y arquitectura en meditación."
         },
         {
           "id": "gion-tanto",
@@ -417,7 +429,8 @@
               "Para no perder la mañana, desde Arashiyama subir a Otagi en taxi/bus y luego bajar andando durante el día."
             ]
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Otagi Nenbutsu-ji fue fundado originalmente en el siglo VIII, pero sufrió inundaciones y daños y terminó trasladándose a su ubicación actual en Arashiyama. Su gran peculiaridad son las 1.200 estatuas de rakan, discípulos iluminados de Buda, talladas principalmente por personas corrientes desde la década de 1980 bajo la dirección del monje y escultor Kōchō Nishimura. Por eso no hay dos rostros iguales: unas figuras rezan, otras sonríen o muestran gestos cotidianos. El proyecto quiso unir espiritualidad, comunidad y creatividad. La imagen principal del templo es Kannon, protectora frente a desgracias. Fíjate en los musgos, expresiones y pequeños detalles humorísticos."
         },
         {
           "id": "adashino",
@@ -435,7 +448,8 @@
             "summary": "Bajar andando por Saga-Toriimoto hasta Adashino Nenbutsuji.",
             "approximateDuration": "15–20 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Adashino Nenbutsu-ji está en una zona de Arashiyama donde, antiguamente, se dejaban y enterraban a personas sin grandes monumentos funerarios. Las miles de pequeñas piedras y estelas reunidas en Sai no Kawara recuerdan a quienes murieron y simbolizan el cuidado budista de los difuntos. La tradición del lugar está vinculada a rituales de memoria y a figuras como Kūkai y Hōnen. «Nenbutsu» alude a la invocación devocional de Amida Buda. No es simplemente un jardín de rocas decorativas, sino un espacio memorial: conviene visitarlo con respeto y observar las restricciones de fotografía. También tiene un pequeño paseo de bambú."
         },
         {
           "id": "bamboo",
@@ -511,7 +525,8 @@
               "Caminar ~5–10 min a Kōfuku-ji."
             ]
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Kōfuku-ji nació en el siglo VII y se convirtió en el templo protector del poderoso clan Fujiwara, una de las familias más influyentes de la corte japonesa. Al trasladarse la capital a Nara en 710, el conjunto pasó a ser uno de sus grandes centros budistas, asociado a la escuela Hossō. Su pagoda de cinco pisos es símbolo del paisaje histórico de Nara, aunque puede estar cubierta por obras de restauración. La colección escultórica es extraordinaria: entre sus obras destaca el célebre Ashura de seis brazos y tres rostros. Visitarlo permite entender la estrecha relación entre política aristocrática, religión y arte en el Japón antiguo."
         },
         {
           "id": "haru-nara",
@@ -573,7 +588,8 @@
             "summary": "Continuar a pie por el parque hasta Tōdai-ji.",
             "approximateDuration": "15–20 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Tōdai-ji surgió en el siglo VIII por iniciativa del emperador Shōmu, que quiso fortalecer la paz y la cohesión del país mediante el budismo. Su Daibutsu, gran imagen de bronce de Vairocana Buda, fue consagrado en 752 y representa la luz universal de la sabiduría. La enorme sala Daibutsuden da una idea de la ambición del proyecto, realizado con aportaciones de todo Japón. Antes de llegar se atraviesa Nandaimon, puerta protegida por dos imponentes esculturas Niō de época medieval. Es un centro fundamental para entender la primera capital permanente de Japón y el budismo patrocinado por el Estado."
         },
         {
           "id": "kasuga",
@@ -591,7 +607,8 @@
             "summary": "Atravesar Nara Park a pie hacia Kasuga Taisha.",
             "approximateDuration": "25–35 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Kasuga Taisha se estableció en 768 bajo el patrocinio del clan Fujiwara para venerar cuatro grandes kami protectores de la capital de Nara. Según su tradición, la divinidad Takemikazuchi llegó montada sobre un ciervo blanco; por eso los ciervos de Nara se consideran mensajeros sagrados y son un símbolo de la ciudad. Los caminos del santuario están llenos de faroles de piedra y el recinto conserva faroles de bronce que se iluminan en festividades especiales. Su arquitectura de bermellón contrasta con el bosque ancestral de Kasugayama. Esta visita completa la historia de Nara junto a Kōfuku-ji y Tōdai-ji."
         }
       ]
     },
@@ -618,7 +635,8 @@
             "approximateDuration": "~45–60 min según tráfico",
             "note": "Bus 12 es directo desde Gion. Si Kyoto está muy cargado de tráfico, taxi para 4 puede ahorrar bastante tiempo."
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Kinkaku-ji es el nombre popular de Rokuon-ji, un templo zen Rinzai cuyo célebre Pabellón Dorado fue originalmente parte de la villa del shōgun Ashikaga Yoshimitsu a finales del siglo XIV. Tras su muerte se convirtió en templo budista. El edificio actual fue reconstruido en 1955 después de un incendio en 1950; sus plantas superiores están recubiertas de pan de oro, que se refleja sobre el estanque Kyōko-chi. El paisaje está concebido como un conjunto de arquitectura, islas, piedras y jardines para la contemplación. La lámina de agua multiplica la imagen del pabellón y conecta el poder histórico de los shōgun con el universo del budismo zen."
         },
         {
           "id": "ryoanji",
@@ -636,7 +654,8 @@
             "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
             "approximateDuration": "10–15 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista."
         },
         {
           "id": "ninnaji",
@@ -654,7 +673,8 @@
             "summary": "Kyoto City Bus 59 → Omuro Ninnaji.",
             "approximateDuration": "10–15 min"
           },
-          "goshuin": true
+          "goshuin": true,
+          "description": "Ninna-ji fue fundado en 888 por el emperador Uda y se convirtió en uno de los templos budistas con relaciones más estrechas con la familia imperial. Pertenece al budismo Shingon y está vinculado a la escuela Omuro, por lo que también se conoce como Omuro Gosho. Fue habitual que príncipes imperiales dirigieran el templo como monjes. Conserva una pagoda de cinco plantas del siglo XVII, puertas monumentales y elegantes residencias con jardines. Sus cerezos Omuro son famosos por florecer más tarde y crecer más bajos que otros sakura. Es una parada distinta de Kinkaku y Ryōan, que muestra cómo el poder de la corte se integró en el budismo."
         }
       ],
       "note": "Ruta noroeste igual que 2025, pero ya con transporte indicado: Bus 12 desde Gion a Kinkaku-ji y Bus 59 para encadenar Ryōan-ji y Ninna-ji."
@@ -688,7 +708,8 @@
             "Entrar a primera hora y hacer el recorrido principal.",
             "No alargar: este día tiene la salida de Vilma y Marga como ancla."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "description": "Ginkaku-ji, cuyo nombre formal es Jishō-ji, surgió de la villa de retiro del shōgun Ashikaga Yoshimasa a finales del siglo XV y se transformó en templo zen tras su muerte. Aunque se llama «Pabellón de Plata», nunca fue recubierto de plata: el nombre se popularizó por contraste con Kinkaku-ji. La belleza aquí es más discreta y se relaciona con la cultura Higashiyama, el té, la caligrafía y los jardines contemplativos. El jardín de arena blanca incluye un cono y una amplia superficie rastrillada; sus significados exactos tienen distintas interpretaciones. Sube al mirador del jardín para ver Kioto desde arriba."
         },
         {
           "id": "philosophers-path",

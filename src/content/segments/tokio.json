@@ -137,7 +137,8 @@
             "Ir únicamente si apetece un paseo más y el cansancio del viaje lo permite.",
             "Ver el exterior iluminado y volver; no convertirlo en un desvío obligatorio."
           ],
-          "goshuin": false
+          "goshuin": false,
+          "description": "Tsukiji Hongwanji pertenece a la escuela budista Jōdo Shinshū (Tierra Pura), rama Nishi Honganji. Su templo original de Tokio surgió en el siglo XVII; el edificio actual, terminado en 1934 por el arquitecto Itō Chūta, sorprende porque mezcla inspiración de arquitectura india con motivos animales y técnicas modernas. Por eso parece tan diferente de los templos japoneses clásicos. En el interior se honra a Amida Buda, figura central de una tradición que subraya la confianza en su compasión. Fíjate en la fachada de piedra, sus singulares símbolos y la gran sala de oración; es un templo budista, no un santuario sintoísta."
         }
       ]
     },
@@ -199,7 +200,8 @@
           ],
           "priority": "must",
           "notes": "Meiji Jingu abre muy temprano; aprovechar la mañana antes de que Harajuku esté a pleno rendimiento.",
-          "goshuin": true
+          "goshuin": true,
+          "description": "Meiji Jingū fue consagrado en 1920 para honrar las almas del emperador Meiji y la emperatriz Shōken, figuras del Japón que atravesó la gran modernización del siglo XIX. Es un santuario sintoísta, no un templo budista. Lo rodea un bosque creado con árboles donados desde todo Japón: el paseo entre árboles forma parte de la visita. El gran torii señala el paso simbólico del espacio cotidiano a uno sagrado. En su recinto son características las tablillas de deseos ema, las purificaciones y las ofrendas. Está junto a Harajuku, pero el contraste de ambiente es enorme."
         },
         {
           "id": "takeshita",
@@ -376,7 +378,8 @@
           },
           "priority": "must",
           "goshuin": true,
-          "notes": "1/9 · 七福神: Daikokuten. Primera pasada para templo + shikishi; Nakamise la vemos a la vuelta."
+          "notes": "1/9 · 七福神: Daikokuten. Primera pasada para templo + shikishi; Nakamise la vemos a la vuelta.",
+          "description": "Sensō-ji es el gran templo budista de Asakusa y uno de los más antiguos de Tokio. La tradición cuenta que en 628 dos pescadores encontraron en el río Sumida una imagen de Kannon, bodhisattva de la compasión, y que aquel hallazgo originó el culto del lugar. Kaminarimon (Puerta del Trueno), la calle Nakamise y Hōzōmon forman una aproximación ceremonial al pabellón principal. En la ruta de los nueve santuarios de los Siete Dioses de la Fortuna, esta parada se vincula a Daikokuten, asociado a abundancia y protección del hogar. Observa el enorme farol rojo, el incienso y la pagoda."
         },
         {
           "id": "asakusa-shrine-shichifukujin",
@@ -397,7 +400,8 @@
             "Hacer la visita corta al santuario.",
             "Pedir el sello/goshuin de Ebisu en el shikishi.",
             "Seguir andando hacia Matsuchiyama Shōden."
-          ]
+          ],
+          "description": "Asakusa Jinja, también llamado Sanja-sama, es un santuario sintoísta junto al templo budista Sensō-ji: muestran cómo ambas tradiciones han convivido históricamente. Venera a los dos pescadores que, según la leyenda, hallaron la imagen de Kannon, y al hombre que impulsó su veneración. El edificio principal conservado se asocia al patrocinio del shogunato Tokugawa en el siglo XVII. Es célebre el Sanja Matsuri, una gran fiesta de mikoshi, santuarios portátiles. En la ruta Asakusa Shichifukujin aparece Ebisu, divinidad de la prosperidad y la pesca."
         },
         {
           "id": "matsuchiyama-shoden",
@@ -418,7 +422,8 @@
             "Pedir el sello/goshuin de Bishamonten.",
             "Visita breve: no gastar demasiado tiempo porque quedan seis paradas.",
             "Continuar a Imado Shrine."
-          ]
+          ],
+          "description": "Matsuchiyama Shōden, también conocido como Honryū-in, es un templo budista del área de Asakusa, vinculado al culto esotérico de Shōten o Kangiten, deidad protectora relacionada con la prosperidad y la superación de obstáculos. Sus ofrendas más características son rábanos daikon y saquitos de arroz, símbolos de purificación, prosperidad y alimento. Por eso verás imágenes de daikon por el recinto. Aunque el lugar participa en el recorrido de los Siete Dioses de la Fortuna con Bishamonten, el carácter principal del templo está ligado a Shōten. Mira la elevación, las pequeñas puertas y las ofrendas vegetales."
         },
         {
           "id": "imado-shrine",
@@ -439,7 +444,8 @@
             "Pedir el sello/goshuin de Fukurokuju.",
             "Ver los maneki-neko del santuario sin alargar demasiado.",
             "Seguir a Hashiba Fudōin."
-          ]
+          ],
+          "description": "Imado Jinja es un santuario sintoísta del barrio de Imado, asociado a los kami Izanagi e Izanami, pareja creadora de la mitología japonesa. Por eso hoy es popular entre personas que desean buenas relaciones y vínculos duraderos. Lo reconocerás por los numerosos maneki-neko, los gatos que levantan la pata y simbolizan fortuna; Imado reivindica tradiciones locales relacionadas con este motivo. En el circuito de Asakusa Shichifukujin se rinde homenaje a Fukurokuju, dios de felicidad, riqueza y longevidad. Observa las figuras de gatos, las tablillas de deseos y la decoración del recinto."
         },
         {
           "id": "hashiba-fudoin",
@@ -459,7 +465,8 @@
           "plan": [
             "Pedir el sello/goshuin de Hotei.",
             "Parada corta y continuar hacia Ishihama Shrine."
-          ]
+          ],
+          "description": "Hashiba Fudō-in es un pequeño templo budista de Asakusa dedicado a Fudō Myōō, el «Rey de la Sabiduría Inamovible». Su aspecto severo y su espada representan la decisión de cortar la ignorancia y proteger la práctica espiritual, no una deidad malvada. Es un lugar discreto frente a los grandes templos de Tokio y conserva el ambiente de culto de barrio. En el circuito Asakusa Shichifukujin se asocia a Hotei, figura sonriente ligada a alegría, generosidad y satisfacción. Busca la imagen protectora de Fudō y el rincón de Hotei."
         },
         {
           "id": "ishihama-shrine",
@@ -479,7 +486,8 @@
           "plan": [
             "Pedir el sello/goshuin de Jurōjin.",
             "Desde aquí viene el tramo andando más largo hacia Ōtori Shrine."
-          ]
+          ],
+          "description": "Ishihama Jinja es uno de los antiguos santuarios sintoístas de la orilla norte de Asakusa, consagrado a Amaterasu —deidad solar central del sintoísmo— y a otras divinidades protectoras. Su historia se relaciona con los antiguos caminos y comunidades que crecieron junto al Sumida. A diferencia de un templo budista, aquí el torii anuncia la entrada al ámbito de los kami y el rito se articula mediante purificación y reverencias. Participa en la peregrinación Asakusa Shichifukujin con Jurōjin, dios de la longevidad. Fíjate en el torii, la serenidad del recinto y los símbolos de vida larga."
         },
         {
           "id": "otori-shrine",
@@ -499,7 +507,8 @@
           "plan": [
             "Pedir el sello/goshuin de Jurōjin.",
             "Seguir a Yoshiwara Shrine, que queda muy cerca."
-          ]
+          ],
+          "description": "Ōtori Jinja es famoso por el Tori-no-Ichi, mercado festivo celebrado en noviembre desde tiempos de Edo. Los visitantes compran kumade, rastrillos de bambú muy decorados: según el simbolismo popular, sirven para «rastrillar» y atraer la buena fortuna en los negocios. El santuario venera divinidades asociadas a la protección y la buena suerte, con relatos vinculados a Yamato Takeru. En la ruta Asakusa Shichifukujin se recoge aquí la visita a Jurōjin, uno de los símbolos de longevidad. Mira los motivos de rastrillos y el contraste entre su ambiente festivo y la visita tranquila en octubre."
         },
         {
           "id": "yoshiwara-shrine",
@@ -519,7 +528,8 @@
           "plan": [
             "Pedir el sello/goshuin de Benzaiten.",
             "Último tramo hacia Yasaki Inari."
-          ]
+          ],
+          "description": "Yoshiwara Jinja reúne el culto a varios pequeños santuarios de Inari relacionados históricamente con el antiguo barrio de Yoshiwara, célebre distrito de entretenimiento del período Edo. Es importante recordar que detrás de la imagen artística del barrio hubo también vidas condicionadas por sistemas de explotación. En la peregrinación Asakusa Shichifukujin se asocia a Benzaiten, deidad de agua, música, elocuencia y artes, de origen budista y adaptada a la religiosidad japonesa. Los zorros que puedan aparecer en torno a Inari se consideran mensajeros, no el propio kami. Observa el contexto urbano de este santuario pequeño."
         },
         {
           "id": "yasaki-inari",
@@ -540,7 +550,8 @@
             "Pedir el último sello/goshuin de Fukurokuju.",
             "Comprobar que el shikishi tiene las nueve marcas.",
             "Cerrar la vuelta regresando a Sensō-ji / Nakamise para verla ya abierta."
-          ]
+          ],
+          "description": "Yasaki Inari Jinja es un santuario sintoísta de Asakusa dedicado al culto de Inari, relacionado con cosechas, protección del comercio y prosperidad. En la tradición sintoísta los zorros son mensajeros del kami Inari y por ello suelen aparecer junto a sus santuarios. Este recinto es conocido por pinturas que representan caballos y acontecimientos de la vida japonesa, además de por su papel en el recorrido Asakusa Shichifukujin. Aquí se venera a Fukurokuju, una divinidad de felicidad, buena fortuna y larga vida. Suele ser la última de las nueve paradas antes de regresar a Sensō-ji."
         },
         {
           "id": "nakamise-return",
@@ -866,7 +877,8 @@
           "goshuin": true,
           "plan": [
             "Entrar solo si nos cae de paso hacia Kabukichō; no sacrificar la noche por esta parada."
-          ]
+          ],
+          "description": "Hanazono Jinja es uno de los santuarios sintoístas históricos de Shinjuku. Aunque ahora está rodeado de rascacielos, luces y calles de ocio, sus orígenes se remontan a la época anterior al gran desarrollo moderno del barrio. Está relacionado con Inari, divinidad asociada a fertilidad, cosechas y prosperidad comercial. Su fiesta más característica es el Tori-no-Ichi de noviembre, con rastrillos kumade para atraer la suerte. El lugar resume bien la mezcla de tradición y vida urbana del Tokio actual: fíjate en los torii, los faroles y los contrastes con Kabukichō."
         },
         {
           "id": "kabukicho",
@@ -983,11 +995,11 @@
         {
           "id": "tokyo-tower-tiktok-photo-spots",
           "title": "📸 Spots de TikTok · 8 fotos de Tokyo Tower",
-          "time": "Durante el circuito 08:00–09:00",
+          "time": "~08:00–09:00",
           "category": "mirador",
           "status": "opcional",
           "locationQuery": "Tokyo Tower Shibakoen Tokyo",
-          "notes": "Guía del TikTok con ocho pines, encuadres, coordenadas y navegación. No añade otra hora ni obliga a visitar todos. Importante: Tokyo Tower pide expresamente no fotografiar en las escaleras del parking subterráneo, por seguridad y para no bloquear el paso; el pin se conserva únicamente como referencia.",
+          "notes": "Guía del TikTok con ocho pines, encuadres, coordenadas y navegación. No añade otra hora ni obliga a visitar todos. Importante: Tokyo Tower pide expresamente no fotografiar en las escaleras del parking subterráneo, por seguridad y para no bloquear el paso; el pin se conserva únicamente como referencia. Horario indicado originalmente en la planificación: Durante el circuito 08:00–09:00.",
           "plan": [
             "Abrir el mapa de los 8 spots antes o durante el circuito matinal y elegir 2–3 que estén de paso.",
             "Priorizar Akabanebashi y Shiba Park, sin retrasar la tienda oficial de las 09:00 ni el goshuin de Zōjō-ji.",
@@ -1038,7 +1050,8 @@
           "priority": "must",
           "links": {
             "officialWebsite": "https://www.zojoji.or.jp/"
-          }
+          },
+          "description": "Zōjō-ji es un gran templo budista de la escuela Jōdo (Tierra Pura) fundado en el siglo XIV y trasladado a su ubicación actual a finales del XVI. Fue el templo familiar de los Tokugawa, los shōgun que gobernaron Japón durante el período Edo, y alberga mausoleos vinculados a seis de ellos. Su imponente puerta Sangedatsumon sobrevivió a desastres y transformaciones urbanas. Hoy Tokio Tower aparece detrás del templo, creando la imagen clásica de antiguo y moderno. Las pequeñas figuras de Jizō con gorritos y molinillos son ofrendas de recuerdo y protección de niños. Los goshuin se obtienen en el área habilitada del recinto."
         },
         {
           "id": "tsukiji-outer",
@@ -1066,7 +1079,8 @@
           "plan": [
             "Visitar el templo con calma.",
             "Al salir, tomar algo más en Tsukiji antes de volver al hotel."
-          ]
+          ],
+          "description": "Tsukiji Hongwanji es un templo budista de la escuela Jōdo Shinshū. Su historia en Tokio comienza en el siglo XVII, pero el extraordinario edificio actual se inauguró en 1934 y fue diseñado por Itō Chūta. La fachada se inspira en formas arquitectónicas del sur de Asia, de ahí que no tenga el tejado típico de un templo japonés; también hay motivos animales y un órgano en su interior. Su deidad principal de veneración es Amida Buda, símbolo de la compasión salvadora en esta tradición. Fíjate en la piedra, las esculturas y el espacio de oración. La visita del 8/10 sí fue confirmada por el grupo."
         },
         {
           "id": "tsukiji-merienda-1008",
@@ -1151,12 +1165,11 @@
         {
           "id": "descansar-para-fuji-1008",
           "title": "Volver y dormir · mañana Fuji",
-          "time": "Después de Menya",
           "category": "otro",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Cierre del 8/10: después de cenar el plan es volver al hotel y descansar. El 9/10 está prevista la recogida del coche a las 07:00 cerca de Tokyo Station. No programar más compras ni desvíos hoy.",
+          "notes": "Cierre del 8/10: después de cenar el plan es volver al hotel y descansar. El 9/10 está prevista la recogida del coche a las 07:00 cerca de Tokyo Station. No programar más compras ni desvíos hoy. Horario indicado originalmente en la planificación: Después de Menya.",
           "plan": [
             "Volver al hotel tras Menya Musashi.",
             "Preparar solo lo imprescindible para salir pronto mañana.",
@@ -1194,9 +1207,9 @@
     },
     {
       "date": "2026-10-09",
-      "title": "🗻 Fuji despejado · Oshino → Kappa Sushi → lago y helado → Lawson",
-      "status": "plan",
-      "note": "ACTUALIZACIÓN EN DIRECTO · 9 de octubre: grupo en Oshino Hakkai con excelente visibilidad del Fuji. La comida acordada ahora es 🍣 KAPPA SUSHI KAWAGUCHIKO INTER (新西原2-32-11, parking descrito como gratuito; GPS por teléfono 0555-20-1125; sin MAPCODE fiable verificado). Comida prevista, no afirmada como realizada. Después: (1) lago Kawaguchiko/Oishi Park y helado de Oishi Park Café antes de 16:45; (2) foto del Lawson Kawaguchiko Ekimae; (3) regreso para devolver coche en Tokyo Station Yaesu antes de 21:00. Lago Yamanakako descartado, Yume no Ōhashi fuera de la ruta. Los demás Mapcodes confirmados se mantienen.",
+      "title": "Fuji · resumen real del 9 de octubre",
+      "status": "confirmado",
+      "note": "RECAPITULACIÓN 09/10 (cierre confirmado por el grupo): Fuji con visibilidad excelente, especialmente desde Oshino Hakkai. Se aparcó en Chureito P1 hacia las 10:01 (no se ha confirmado expresamente la subida hasta el mirador); fotografía enviada desde el santuario Kitaguchi Hongū Fuji Sengen Jinja, por tanto visita a su recinto confirmada; llegada a los ocho estanques de Oshino Hakkai sobre las 13:44. Comieron en Kappa Sushi Kawaguchiko Inter, fueron al lago Kawaguchiko/Oishi Park y tomaron el helado. Por el Lawson famoso PASARON sin parar para hacer la foto: estaba muy concurrido. Yamanakako se descartó; el puente Yume no Ōhashi no formó parte de la ruta. No se han confirmado ni la hora exacta de las últimas paradas ni la devolución efectiva del coche; no registrar esos hechos como realizados.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1269,7 +1282,7 @@
           "status": "plan",
           "priority": "must",
           "locationQuery": "Chureito Pagoda",
-          "time": "~09:15",
+          "time": "~10:01",
           "plan": [
             "Llegar pronto y subir al mirador antes de que se llene.",
             "Hacer fotos y seguir; no gastar aquí media mañana."
@@ -1284,7 +1297,8 @@
             "sourceUrl": "https://www.city.fujiyoshida.yamanashi.jp/page/13062.html",
             "arrived": true
           },
-          "notes": "✅ Aparcamiento de la pagoda: llegada y estacionamiento comunicados hacia las 10:01 del 9 de octubre. Esto no significa que la visita al mirador ya esté completada."
+          "notes": "Confirmado por mensaje en directo el 9/10: el grupo aparcó en Chureito/Arakurayama Sengen Park P1 a las ~10:01. No se ha confirmado explícitamente que completaran la subida al mirador de la pagoda. MAPCODE del aparcamiento: referencia aproximada, no entrada verificada.",
+          "description": "La pagoda Chūreitō forma parte del santuario sintoísta Arakura Fuji Sengen, en la ladera de una colina de Fujiyoshida. Aunque su aspecto recuerda a pagodas religiosas tradicionales, la construcción actual se erigió en el siglo XX como monumento a personas fallecidas en guerras. Su silueta roja y sus cinco plantas se han convertido en una de las vistas más célebres de Japón al combinarse con el monte Fuji y, en primavera, los cerezos. La subida hasta el mirador tiene numerosos escalones. El santuario de abajo conecta con el culto tradicional al Fuji; la pagoda y el santuario no son exactamente el mismo edificio ni tienen el mismo origen."
         },
         {
           "id": "fujiyoshida-retro",
@@ -1314,10 +1328,9 @@
           "id": "kitaguchi",
           "title": "Kitaguchi Hongū Fuji Sengen Jinja · santuario histórico del Fuji",
           "category": "templo",
-          "status": "plan",
-          "notes": "⛩️ HISTORIA: Kitaguchi Hongū Fuji Sengen Jinja (北口本宮冨士浅間神社) es uno de los grandes santuarios sintoístas dedicados al monte Fuji, situado en el inicio tradicional de la ruta de ascenso Yoshida. Según la TRADICIÓN del santuario, en el año 110 el legendario príncipe Yamato Takeru contempló y veneró el Fuji desde la cercana colina Ōtsukayama; no debe tomarse como un hecho histórico demostrado. Tras una erupción del Fuji en 781, el recinto se estableció en su ubicación actual en 788 para venerar a las divinidades de la montaña. Su principal deidad es Konohanasakuya-hime, asociada a los volcanes y al Fuji. Durante el período Edo (1603–1868), los peregrinos de las cofradías Fuji-kō visitaban este santuario para rezar antes de subir por la ruta Yoshida. Conserva tres edificios principales históricos de 1561, 1594 y 1615, protegidos como bienes culturales de Japón; fue ampliado y reformado por las comunidades Fuji-kō en el siglo XVIII. Forma parte del paisaje cultural del Fuji inscrito como Patrimonio Mundial de la UNESCO en 2013. QUÉ VER: caminar entre cedros y antiguos faroles de piedra, atravesar el gran torii, observar los árboles centenarios y visitar el edificio principal. Si procede, pedir el goshuin.",
+          "status": "confirmado",
+          "notes": "⛩️ HISTORIA: Kitaguchi Hongū Fuji Sengen Jinja (北口本宮冨士浅間神社) es uno de los grandes santuarios sintoístas dedicados al monte Fuji, situado en el inicio tradicional de la ruta de ascenso Yoshida. Según la TRADICIÓN del santuario, en el año 110 el legendario príncipe Yamato Takeru contempló y veneró el Fuji desde la cercana colina Ōtsukayama; no debe tomarse como un hecho histórico demostrado. Tras una erupción del Fuji en 781, el recinto se estableció en su ubicación actual en 788 para venerar a las divinidades de la montaña. Su principal deidad es Konohanasakuya-hime, asociada a los volcanes y al Fuji. Durante el período Edo (1603–1868), los peregrinos de las cofradías Fuji-kō visitaban este santuario para rezar antes de subir por la ruta Yoshida. Conserva tres edificios principales históricos de 1561, 1594 y 1615, protegidos como bienes culturales de Japón; fue ampliado y reformado por las comunidades Fuji-kō en el siglo XVIII. Forma parte del paisaje cultural del Fuji inscrito como Patrimonio Mundial de la UNESCO en 2013. QUÉ VER: caminar entre cedros y antiguos faroles de piedra, atravesar el gran torii, observar los árboles centenarios y visitar el edificio principal. Si procede, pedir el goshuin. VISITA REAL AL RECINTO confirmada por fotografía enviada desde el santuario. No está confirmada la obtención de goshuin.",
           "locationQuery": "Kitaguchi Hongu Fuji Sengen Jinja",
-          "time": "~11:15",
           "plan": [
             "🌲 Entrada: recorrer despacio la avenida arbolada con cedros y faroles de piedra. Es parte de la experiencia histórica de los peregrinos.",
             "⛩️ Gran torii y sala principal: observar la arquitectura y los tres santuarios principales conservados de 1561, 1594 y 1615.",
@@ -1336,19 +1349,20 @@
           },
           "links": {
             "officialWebsite": "https://www.sengenjinja.jp/yuisho/index.html"
-          }
+          },
+          "description": "Kitaguchi Hongū Fuji Sengen Jinja es uno de los principales santuarios sintoístas asociados al culto del monte Fuji. La tradición lo relaciona con Yamato Takeru y una veneración del Fuji en el año 110; esa fecha es un relato religioso, no una fundación verificable históricamente. El santuario actual se vinculó a las comunidades de ascensión por la ruta Yoshida y al movimiento de peregrinos Fuji-kō de la época Edo. Se honra especialmente a Konohanasakuya-hime, diosa asociada al Fuji y la protección frente a erupciones. Mira el gran torii, la avenida de cedros, los faroles y los árboles sagrados con shimenawa y papeles shide; los edificios históricos principales datan de los siglos XVI y XVII."
         },
         {
           "id": "oshino",
-          "title": "📍 AHORA · Oshino Hakkai · 8 estanques del Fuji",
+          "title": "Oshino Hakkai · los 8 estanques del Fuji",
           "category": "naturaleza",
           "status": "confirmado",
           "locationQuery": "Oshino Hakkai",
-          "time": "~13:40 · en visita",
+          "time": "~13:44",
           "plan": [
-            "Ahora estáis en Oshino Hakkai (忍野八海): disfrutar de los ocho estanques de agua de manantial y de la vista despejada del Fuji.",
-            "Hacer fotografías desde los caminos permitidos y terminar tranquilamente la visita.",
-            "Siguiente parada confirmada: lago Kawaguchiko → Oishi Park y Oishi Park Café. No ir al lago Yamanakako."
+            "Recorrido por la zona de los estanques con el Fuji perfectamente visible.",
+            "Fotos desde los caminos permitidos; agua de manantial y casitas tradicionales.",
+            "Después eligieron comer en Kappa Sushi Kawaguchiko Inter."
           ],
           "parking": {
             "name": "忍野八海池本駐車場 · Ikemoto Parking",
@@ -1359,43 +1373,39 @@
             "sourceUrl": "https://www.mapion.co.jp/phonebook/M08002/19424/ILSP0084830904_ipclm/",
             "arrived": false
           },
-          "notes": "📍 GRUPO EN LOS ESTANQUES AHORA (9/10, ~13:44 JST). Confirmada la llegada; no significa que se hayan recorrido ya los ocho. La fotografía enviada desde Oshino Hakkai muestra el Fuji muy despejado y nítido, con excelente visibilidad. Aquí hay ocho ESTANQUES de manantial, no ocho lagos. La próxima parada acordada es el LAGO KAWAGUCHIKO, Oishi Park + helado, y después el LAWSON de la foto famosa. Lago Yamanakako descartado."
+          "notes": "VISITA CONFIRMADA: el grupo estaba en Oshino Hakkai hacia las 13:44 y envió una foto del Fuji muy despejado. Son ocho estanques de manantial, no ocho grandes lagos. No se ha confirmado que recorrieran cada uno de los ocho."
         },
         {
           "id": "almuerzo-kappa-sushi-kawaguchiko-inter-1009",
-          "title": "🍣 COMER · Kappa Sushi Kawaguchiko Inter (parking gratis)",
-          "time": "Después de Oshino · al llegar",
+          "title": "Kappa Sushi Kawaguchiko Inter · comieron aquí",
           "category": "comida",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
           "locationQuery": "かっぱ寿司 河口湖インター店 山梨県富士吉田市新西原2丁目32-11",
           "address": "〒403-0017 山梨県富士吉田市新西原2-32-11",
           "approximatePrice": "Aprox. 1.000–2.000 ¥ por persona",
-          "notes": "ELECCIÓN DEL GRUPO 9/10: comer sushi en KAPPA SUSHI KAWAGUCHIKO INTER (かっぱ寿司 河口湖インター店), Fujiyoshida, 新西原2-32-11, después de Oshino y antes del lago Kawaguchiko/Oishi Park. PARKING: sí; aparece como GRATUITO (無料) en la ficha de Ekiten, aunque conviene comprobar las señales actuales a la llegada. Teléfono para GPS por número: 0555-20-1125. No se ha localizado un MAPCODE contrastado de esta sucursal: NO utilizar el anterior de otro restaurante. Horario viernes 10:30–23:00. Comida decidida, no confirmada como realizada. Después: Oishi Park y helado antes de las 16:45, Lawson y devolución del coche en Tokio antes de las 21:00.",
+          "notes": "COMIDA REALIZADA y confirmada por el grupo el 9 de octubre. Kappa Sushi Kawaguchiko Inter (かっぱ寿司 河口湖インター店), 新西原2-32-11, parking descrito como gratuito por terceros (comprobar condiciones actuales en visitas futuras). Teléfono GPS 0555-20-1125. No hay MAPCODE del local contrastado. Hora exacta de comida no comunicada. Después fueron al lago Kawaguchiko.",
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%81%8B%E3%81%A3%E3%81%B1%E5%AF%BF%E5%8F%B8%20%E6%B2%B3%E5%8F%A3%E6%B9%96%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E5%BA%97%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0%E5%B8%82%E6%96%B0%E8%A5%BF%E5%8E%9F2-32-11",
             "officialWebsite": "https://www.kappasushi.jp/shop/0378"
           },
           "plan": [
-            "🍣 DESTINO ACORDADO: Kappa Sushi Kawaguchiko Inter (かっぱ寿司 河口湖インター店), NO las otras cadenas.",
-            "🚗 Teléfono para búsqueda del GPS del coche: 0555-20-1125. Dirección 〒403-0017 山梨県富士吉田市新西原2-32-11, o usar Google Maps desde el botón. No hay MAPCODE fiable verificado de esta sucursal.",
-            "🅿️ Hay aparcamiento, descrito como gratuito (無料) por Ekiten. Verificar la señalización del propio parking antes de dejar el coche.",
-            "⏱️ Después Oishi Park y helado de arándano/lavanda antes de las 16:45; luego Lawson famoso, y vuelta a Tokio antes de las 21:00."
+            "Comieron sushi económico en Kappa Sushi Kawaguchiko Inter.",
+            "Aparcamiento del local y teléfono GPS 0555-20-1125 como referencia.",
+            "Desde aquí continuaron a Oishi Park, en el lago Kawaguchiko."
           ]
         },
         {
           "id": "oishi",
-          "title": "🍦 DESPUÉS DE COMER · Lago Kawaguchiko · Oishi Park + helado",
+          "title": "Lago Kawaguchiko · Oishi Park y helado 🍦",
           "category": "mirador",
-          "status": "plan",
-          "notes": "PARADA CONFIRMADA POR EL GRUPO (9/10 ~13:44): después del almuerzo de sushi previsto en Kappa Sushi Kawaguchiko Inter, iremos al LAGO KAWAGUCHIKO (河口湖), Oishi Park (大石公園), orilla norte, y al helado del Oishi Park Café en Kawaguchiko Natural Living Center (河口湖自然生活館). Horario del helado confirmado en web oficial: 09:15–16:45 (octubre). Parking gratuito; MAPCODE 59 089 356*28 orientativo (entrada no comprobada). La visita sigue planeada, no realizada.",
+          "status": "confirmado",
+          "notes": "VISITA Y HELADO CONFIRMADOS por el grupo: fueron a Oishi Park en la orilla del LAGO KAWAGUCHIKO y tomaron el helado en Kawaguchiko Natural Living Center / Oishi Park Café. La hora prevista inicialmente era aproximadamente las 15:30, pero NO se ha confirmado la hora real. Helado de arándano/lavanda recomendado; no se ha especificado el sabor que tomó cada persona. MAPCODE de aparcamiento 59 089 356*28 orientativo. En octubre el café anuncia cierre a las 16:45.",
           "locationQuery": "Oishi Park Kawaguchiko",
-          "time": "Objetivo ~15:30 · helado antes 16:45",
           "plan": [
-            "1. 🚗 Después de comer en Kappa Sushi Kawaguchiko Inter, ir a Oishi Park, lago Kawaguchiko. MAPCODE orientativo del parque 59 089 356*28.",
-            "2. 🏞️ Fotografiar el Fuji desde la orilla norte del lago (la visibilidad es muy buena desde Oshino a las 13:44).",
-            "3. 🍦 Oishi Park Café dentro del Natural Living Center: helado de arándano (ブルーベリー) o lavanda (ラベンダー), antes del cierre de las 16:45.",
-            "4. 📸 Después Lawson Kawaguchiko Ekimae, y volver a Tokio para devolver el coche a tiempo."
+            "🏞️ Lago Kawaguchiko: paseo y vistas del Fuji desde Oishi Park.",
+            "🍦 Helado tomado en Oishi Park Café, dentro del Kawaguchiko Natural Living Center.",
+            "La hora prevista originalmente era ~15:30 (no es una hora real confirmada)."
           ],
           "parking": {
             "name": "大石公園 · parking junto al parque",
@@ -1414,17 +1424,15 @@
         },
         {
           "id": "lawson-kawaguchiko",
-          "title": "📸 DESPUÉS · LAWSON famoso de Kawaguchiko · Fuji detrás",
+          "title": "Lawson famoso de Kawaguchiko · visto de paso, sin parada",
           "category": "otro",
-          "status": "plan",
-          "notes": "PARADA CONFIRMADA POR EL GRUPO (9/10 ~13:44): visitar DESPUÉS de Oishi Park y su helado el LAWSON famoso de la foto del Fuji detrás de la tienda. Tienda exacta: ローソン河口湖駅前店 (Lawson Kawaguchiko Ekimae), 3495-2 Funatsu, Fujikawaguchiko. MAPCODE 161 272 403*58 corresponde a la TIENDA, NO a un aparcamiento público garantizado. Fotografiar solo desde zonas habilitadas, respetar señales, barreras y propiedades privadas. Tras la parada iniciar el regreso a Tokio: coche de alquiler se devuelve antes de las 21:00.",
+          "status": "confirmado",
+          "notes": "El grupo confirma que PASARON POR DELANTE del famoso Lawson Kawaguchiko Ekimae, con el Fuji detrás de la tienda, pero NO pararon para hacer la foto porque había demasiada gente. La hora originalmente prevista era aproximadamente 16:30–17:00; no se ha comunicado la hora real. Esto debe quedar como 'visto de paso', no como parada fotográfica completada. MAPCODE 161 272 403*58 de la TIENDA, no de parking público; respetar barreras y seguridad si se visita otra vez.",
           "locationQuery": "ローソン河口湖駅前店 〒401-0301 山梨県南都留郡富士河口湖町船津3495-2",
-          "time": "Objetivo ~16:30–17:00 · después del helado",
           "plan": [
-            "1. 📸 Desde Oishi Park, dirigirse al Lawson Kawaguchiko Ekimae, la tienda azul y blanca del Fuji de fondo.",
-            "2. MAPCODE 161 272 403*58: referencia de la tienda. No asumir parking público; comprobar opciones legales para parar el coche.",
-            "3. Desde el lugar permitido, fotografiar la tienda con el Fuji detrás sin cruzar indebidamente la calle ni entrar en propiedad privada.",
-            "4. 🚗 Después, regreso a Nippon Rent-A-Car Yaesu, Tokio. Hora límite de devolución: 21:00."
+            "🚗 Se pasó por el Lawson de la foto famosa del Fuji, pero no se hizo parada.",
+            "Había demasiada gente en la zona; se decidió continuar.",
+            "Para otra visita: solo fotos desde lugares permitidos, sin bloquear la carretera ni propiedad privada."
           ],
           "parking": {
             "name": "ローソン河口湖駅前店 · Lawson Station",
@@ -1447,7 +1455,6 @@
           "category": "mirador",
           "status": "opcional",
           "locationQuery": "Fujisan Yume no Ohashi",
-          "time": "Opcional descartable · desvío largo",
           "plan": [
             "Parada fotográfica opcional si la visibilidad sigue buena y vamos de hora.",
             "Saltarla sin problema si supone demasiado desvío."
@@ -1461,7 +1468,8 @@
             "sourceUrl": "https://yume-no-ohashi.com/",
             "arrived": false
           },
-          "notes": "NO es parte de la ruta de hoy acordada: el plan operativo desde Oshino es Kawaguchiko/Oishi Park → Lawson → regreso a Tokio. El puente en Fuji City supondría un desvío grande y amenaza la devolución del coche antes de las 21:00. Se conserva solo como referencia opcional, no conducir hasta allí salvo que decidáis cambiar los planes."
+          "notes": "No se incluyó en la ruta real del grupo: desvío grande hasta Fuji City, Shizuoka, y devolución del coche en Tokio antes de las 21:00. Se mantiene como referencia para un viaje futuro, no como parada realizada.",
+          "skipped": true
         }
       ],
       "switchLabel": "🗻 Fuji",
@@ -1496,37 +1504,37 @@
           "note": "Parking frente al santuario"
         },
         {
-          "title": "📍 AHORA · Oshino Hakkai · 8 estanques",
+          "title": "Oshino Hakkai · 8 estanques (visitado)",
           "locationQuery": "忍野八海池本駐車場 忍草354 忍野村",
           "mapcode": "161 130 848*74",
           "mapcodeKind": "parking",
-          "note": "Grupo en Oshino ~13:44; Fuji muy visible según foto. Próximo: Kawaguchiko"
+          "note": "Visita confirmada ~13:44; Fuji despejado."
         },
         {
-          "title": "🍣 COMIDA · Kappa Sushi Kawaguchiko Inter (parking gratis)",
+          "title": "Kappa Sushi · comida realizada",
           "locationQuery": "かっぱ寿司 河口湖インター店 山梨県富士吉田市新西原2丁目32-11",
-          "note": "Parking (ficha Ekiten: gratuito). GPS por teléfono 0555-20-1125 o dirección; MAPCODE no confirmado."
+          "note": "Comieron en el restaurante. GPS teléfono 0555-20-1125. Sin MAPCODE verificado."
         },
         {
-          "title": "🍦 DESPUÉS DE COMER · Lago Kawaguchiko · Oishi Park",
+          "title": "Oishi Park · lago y helado (realizados)",
           "locationQuery": "大石公園 駐車場 2585 大石 富士河口湖町",
           "mapcode": "59 089 356*28",
           "mapcodeKind": "reference",
-          "note": "Tras Kappa Sushi: helado Oishi Park Café antes de 16:45; Mapcode parking de referencia"
+          "note": "Lago y helado confirmados; MAPCODE aproximado."
         },
         {
-          "title": "📸 DESPUÉS · LAWSON famoso, foto del Fuji detrás",
+          "title": "Lawson Kawaguchiko · visto de paso",
           "locationQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
           "mapcode": "161 272 403*58",
           "mapcodeKind": "reference",
-          "note": "Confirmado: ir después de Oishi Park. MAPCODE de la tienda, no aparcamiento público"
+          "note": "Pasaron sin detenerse por la multitud; no hubo foto."
         },
         {
           "title": "REGRESO Nippon Rent-A-Car · Yaesu",
           "locationQuery": "Nippon Rent-A-Car 東京駅八重洲南口営業所 東京都中央区八重洲2-1",
           "mapcode": "647 076*21",
           "mapcodeKind": "parking",
-          "note": "⚠️ Devolución antes de las 21:00 · Mapcode oficial"
+          "note": "Oficina de devolución en Yaesu, límite contratado 21:00 (devolución real no confirmada)"
         }
       ]
     },
@@ -1534,17 +1542,30 @@
       "date": "2026-10-10",
       "title": "Tokio → Nagoya → Osaka",
       "status": "confirmado",
-      "note": "Parada en Nagoya: Castillo de Nagoya + comida. Ghibli Park está descartado y no debe aparecer en el planning.",
+      "note": "Confirmado por el grupo para mañana 10/10: salida desde Hotel SUI Ginza Kyobashi, Tokio, a las 08:30. El horario anterior del shinkansen (~08:00) era incompatible y queda invalidado. Tren, visita a Nagoya, restaurante recomendado por Alberto y enlace hacia Osaka requieren revisión antes de dar por cerradas las horas. Nagoya/Osaka aún están pendientes de revisar conjuntamente.",
       "activities": [
+        {
+          "id": "salida-hotel-tokio-0830-1010",
+          "title": "Salida del hotel de Tokio · dirección Nagoya",
+          "category": "transporte",
+          "status": "confirmado",
+          "time": "08:30",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
+          "notes": "Hora de salida del HOTEL acordada con las chicas: 08:30 del sábado 10 de octubre. No equivale a tener reserva de tren a esa hora. Tren y detalles del día de Nagoya se revisarán después.",
+          "plan": [
+            "08:30: salir del Hotel SUI Ginza Kyobashi con las maletas y comprobar habitaciones.",
+            "Caminar a Tokyo Station por la entrada Yaesu (~7–10 min según acceso).",
+            "Elegir shinkansen a Nagoya con margen; horario definitivo pendiente de revisar."
+          ]
+        },
         {
           "id": "shinkansen-nagoya",
           "title": "Shinkansen a Nagoya",
           "category": "transporte",
-          "status": "confirmado",
+          "status": "plan",
           "locationQuery": "Nagoya Station",
-          "time": "~08:00",
           "plan": [
-            "Salir de Tokio con margen y subir al shinkansen hacia Nagoya.",
+            "Salir del Hotel SUI Ginza Kyobashi a las 08:30 (hora comunicada al grupo), caminar hasta Tokyo Station y tomar un shinkansen con horario aún pendiente de elegir.",
             "Llevar equipaje organizado para no perder tiempo en el transbordo/consigna."
           ],
           "transit": {
@@ -1557,7 +1578,8 @@
               "Tomar Nozomi o Hikari con parada en Nagoya.",
               "Guardar equipaje/seguir directamente hacia el castillo según la hora real."
             ]
-          }
+          },
+          "notes": "El grupo ha confirmado salida del HOTEL DE TOKIO a las 08:30, no el tren exacto. No presentar shinkansen a las ~08:00 como salida válida. Horarios de Nagoya por revisar."
         },
         {
           "id": "nagoya-castle",
