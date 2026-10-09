@@ -63,6 +63,16 @@ const transitSchema = z.object({
   note: z.string().optional(),
 });
 
+const parkingSchema = z.object({
+  name: z.string(),
+  mapcode: z.string(),
+  kind: z.enum(['parking', 'reference']),
+  mapsQuery: z.string(),
+  notes: z.string().optional(),
+  sourceUrl: z.string().url().optional(),
+  arrived: z.boolean().optional(),
+});
+
 const activitySchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -72,6 +82,7 @@ const activitySchema = z.object({
   plan: z.array(z.string()).optional(),
   transit: transitSchema.optional(),
   flightJourney: flightJourneySchema.optional(),
+  parking: parkingSchema.optional(),
   address: z.string().optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),
@@ -99,6 +110,8 @@ const routeStopSchema = z.object({
   title: z.string(),
   locationQuery: z.string(),
   note: z.string().optional(),
+  mapcode: z.string().optional(),
+  mapcodeKind: z.enum(['parking', 'reference']).optional(),
 });
 
 const daySchema = z.object({
