@@ -1196,7 +1196,7 @@
       "date": "2026-10-09",
       "title": "Fuji u Okutama · según visibilidad",
       "status": "plan",
-      "note": "Fuji sigue siendo el plan preferente del 9 según visibilidad. Coche ya reservado: recogida 07:00 y devolución 21:00 en Tokyo Station Yaesu South Exit. Si Fuji amanece realmente tapado, usar el toggle a Okutama.",
+      "note": "9/10 · Ruta en coche para ver Fuji. A las ~10:01 ya habéis aparcado en el parking de Chureito / Arakurayama Sengen Park (P1 según el aparcamiento recomendado). Cada actividad del plan Fuji incluye su MAPCODE (si existe), nombre japonés del parking, botón Maps y opción de copiar. Los códigos marcados «referencia» no certifican la entrada del aparcamiento. Fujisan Yume no Ōhashi queda como desvío muy opcional; para devolver el coche en Yaesu antes de las 21:00, usar el MAPCODE oficial 647 076*21.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1251,6 +1251,15 @@
               "Caminar hacia Tokyo Station Yaesu / Yaesu-nishi Parking.",
               "Estar en la oficina antes de las 07:00."
             ]
+          },
+          "parking": {
+            "name": "Nippon Rent-A-Car · Yaesu South Exit",
+            "mapcode": "647 076*21",
+            "kind": "parking",
+            "mapsQuery": "Nippon Rent-A-Car 東京駅八重洲南口営業所 東京都中央区八重洲2-1",
+            "notes": "Código de devolución oficial del alquiler. Devolver antes de las 21:00; el acceso está en el aparcamiento subterráneo Yaesu-nishi, no en la calle.",
+            "sourceUrl": "https://store.nipponrentacar.co.jp/b/nrs/info/511504/",
+            "arrived": false
           }
         },
         {
@@ -1265,7 +1274,17 @@
             "Llegar pronto y subir al mirador antes de que se llene.",
             "Hacer fotos y seguir; no gastar aquí media mañana."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "parking": {
+            "name": "Arakurayama Sengen Park · Parking P1",
+            "mapcode": "161 276 580*70",
+            "kind": "reference",
+            "mapsQuery": "新倉山浅間公園 第1駐車場 山梨県富士吉田市浅間2丁目4-1",
+            "notes": "Ya estáis aparcados aquí según el mensaje de las 10:01. La dirección del P1 está confirmada por el ayuntamiento; el Mapcode anterior es orientativo y no he podido corroborar que coincida exactamente con la entrada.",
+            "sourceUrl": "https://www.city.fujiyoshida.yamanashi.jp/page/13062.html",
+            "arrived": true
+          },
+          "notes": "✅ Aparcamiento de la pagoda: llegada y estacionamiento comunicados hacia las 10:01 del 9 de octubre. Esto no significa que la visita al mirador ya esté completada."
         },
         {
           "id": "fujiyoshida-retro",
@@ -1277,7 +1296,16 @@
           "plan": [
             "Recorrer la calle con vistas al Fuji y hacer las fotos principales.",
             "Parada corta de paseo antes del santuario."
-          ]
+          ],
+          "parking": {
+            "name": "本町通り駐車場 · Honcho Street",
+            "mapcode": "161 246 625*83",
+            "kind": "parking",
+            "mapsQuery": "本町通り駐車場 富士吉田市 下吉田2丁目1",
+            "notes": "Parking municipal pequeño (12 plazas). Para GPS por dirección: 下吉田2-1-26; la entrada está justo al sur de ese edificio. Publicado por Mapion y el ayuntamiento.",
+            "sourceUrl": "https://www.mapion.co.jp/phonebook/M08002/19202/ILSP0060315739_ipclm/",
+            "arrived": false
+          }
         },
         {
           "id": "kitaguchi",
@@ -1291,7 +1319,16 @@
             "Recorrer la entrada de cedros y el santuario.",
             "Hacer goshuin antes de continuar hacia Oshino."
           ],
-          "goshuin": true
+          "goshuin": true,
+          "parking": {
+            "name": "北口本宮冨士浅間神社 · Parking P1",
+            "mapcode": "161 185 356*86",
+            "kind": "parking",
+            "mapsQuery": "北口本宮冨士浅間神社 第1駐車場 上吉田5588 富士吉田",
+            "notes": "P1 enfrente del santuario, junto a la carretera 138 (50 plazas). El Mapcode aparece en una guía secundaria; la web oficial confirma el parking, no el código.",
+            "sourceUrl": "https://www.sengenjinja.jp/access/index.html",
+            "arrived": false
+          }
         },
         {
           "id": "oshino",
@@ -1303,7 +1340,16 @@
           "plan": [
             "Pasear por los estanques y el pueblo.",
             "Comer/picar algo si cuadra, pero sin retrasar demasiado Oishi Park."
-          ]
+          ],
+          "parking": {
+            "name": "忍野八海池本駐車場 · Ikemoto Parking",
+            "mapcode": "161 130 848*74",
+            "kind": "parking",
+            "mapsQuery": "忍野八海池本駐車場 忍草354 忍野村",
+            "notes": "Parking de pago próximo a los estanques. Mapcode contrastado en Mapion.",
+            "sourceUrl": "https://www.mapion.co.jp/phonebook/M08002/19424/ILSP0084830904_ipclm/",
+            "arrived": false
+          }
         },
         {
           "id": "oishi",
@@ -1316,7 +1362,16 @@
           "plan": [
             "Pasear junto al lago y aprovechar las vistas al Fuji.",
             "Parada tranquila para helado/café antes de seguir."
-          ]
+          ],
+          "parking": {
+            "name": "大石公園 · parking junto al parque",
+            "mapcode": "59 089 356*28",
+            "kind": "reference",
+            "mapsQuery": "大石公園 駐車場 2585 大石 富士河口湖町",
+            "notes": "Código anterior orientativo de zona de aparcamiento, no contrastado para su entrada. Mapion confirma como alternativa el Mapcode del PARQUE 59 089 357*06. Abrir Maps al aparcamiento antes de conducir.",
+            "sourceUrl": "https://www.mapion.co.jp/phonebook/M04010/19430/ILSP0058818576_ipclm/",
+            "arrived": false
+          }
         },
         {
           "id": "yume-ohashi",
@@ -1328,7 +1383,17 @@
           "plan": [
             "Parada fotográfica opcional si la visibilidad sigue buena y vamos de hora.",
             "Saltarla sin problema si supone demasiado desvío."
-          ]
+          ],
+          "parking": {
+            "name": "富士山夢の大橋 · parking específico (17 plazas)",
+            "mapcode": "72 231 705*85",
+            "kind": "reference",
+            "mapsQuery": "富士山夢の大橋 専用駐車場 富士市蓼原",
+            "notes": "IMPORTANTE: ese Mapcode antiguo apunta al PUENTE, no al parking. Utilizar el enlace Maps del aparcamiento. Está en Fuji City (Shizuoka), un desvío grande respecto a Kawaguchiko; saltar si hay que devolver el coche antes de las 21:00.",
+            "sourceUrl": "https://yume-no-ohashi.com/",
+            "arrived": false
+          },
+          "notes": "Parada muy opcional y alejada de Kawaguchiko; el puente tiene parking dedicado de 17 plazas. No seguir el Mapcode del puente como si fuese la entrada al parking; usar el enlace específico y priorizar volver a tiempo a Tokio."
         },
         {
           "id": "lawson-kawaguchiko",
@@ -1341,10 +1406,77 @@
           "plan": [
             "Parada rápida para la foto si no hay problemas de acceso o señalización.",
             "No alargar: después hay que iniciar la vuelta a Tokio para devolver el coche con margen antes de las 21:00."
-          ]
+          ],
+          "parking": {
+            "name": "ローソン河口湖駅前店 · Lawson Station",
+            "mapcode": "161 272 403*58",
+            "kind": "reference",
+            "mapsQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
+            "notes": "Mapcode confirmado para la tienda, NO para un aparcamiento público garantizado. Respetar los accesos y cualquier restricción de fotografías.",
+            "sourceUrl": "https://www.mapion.co.jp/phonebook/M02005/19430/ILSP0058259686_ipclm/",
+            "arrived": false
+          }
         }
       ],
-      "switchLabel": "🗻 Fuji"
+      "switchLabel": "🗻 Fuji",
+      "routeStops": [
+        {
+          "title": "Nippon Rent-A-Car · Yaesu (salida)",
+          "locationQuery": "Nippon Rent-A-Car 東京駅八重洲南口営業所 東京都中央区八重洲2-1",
+          "mapcode": "647 076*21",
+          "mapcodeKind": "parking",
+          "note": "Oficina de alquiler 07:00"
+        },
+        {
+          "title": "Chureito · Parking P1",
+          "locationQuery": "新倉山浅間公園 第1駐車場 山梨県富士吉田市浅間2丁目4-1",
+          "mapcode": "161 276 580*70",
+          "mapcodeKind": "reference",
+          "note": "✅ Ya aparcados ~10:01"
+        },
+        {
+          "title": "Fujiyoshida · Honcho Street Parking",
+          "locationQuery": "本町通り駐車場 富士吉田市 下吉田2丁目1",
+          "mapcode": "161 246 625*83",
+          "mapcodeKind": "parking",
+          "note": "Parking municipal 12 plazas"
+        },
+        {
+          "title": "Kitaguchi Sengen Jinja · Parking P1",
+          "locationQuery": "北口本宮冨士浅間神社 第1駐車場 上吉田5588 富士吉田",
+          "mapcode": "161 185 356*86",
+          "mapcodeKind": "parking",
+          "note": "Parking frente al santuario"
+        },
+        {
+          "title": "Oshino Hakkai · Parking Ikemoto",
+          "locationQuery": "忍野八海池本駐車場 忍草354 忍野村",
+          "mapcode": "161 130 848*74",
+          "mapcodeKind": "parking",
+          "note": "Aparcamiento de pago"
+        },
+        {
+          "title": "Oishi Park · zona aparcamiento",
+          "locationQuery": "大石公園 駐車場 2585 大石 富士河口湖町",
+          "mapcode": "59 089 356*28",
+          "mapcodeKind": "reference",
+          "note": "Mapcode de referencia, revisar acceso"
+        },
+        {
+          "title": "LAWSON Kawaguchiko Station",
+          "locationQuery": "ローソン河口湖駅前店 船津3495-2 富士河口湖町",
+          "mapcode": "161 272 403*58",
+          "mapcodeKind": "reference",
+          "note": "Mapcode de tienda, no parking garantizado"
+        },
+        {
+          "title": "REGRESO Nippon Rent-A-Car · Yaesu",
+          "locationQuery": "Nippon Rent-A-Car 東京駅八重洲南口営業所 東京都中央区八重洲2-1",
+          "mapcode": "647 076*21",
+          "mapcodeKind": "parking",
+          "note": "⚠️ Devolución antes de las 21:00 · Mapcode oficial"
+        }
+      ]
     },
     {
       "date": "2026-10-10",

@@ -27,6 +27,7 @@ const flightRouteSummary = activity.flightJourney
 
 const hasExtra = Boolean(
   activity.flightJourney ||
+  activity.parking ||
   activity.transit ||
   activity.plan?.length ||
   activity.notes ||
@@ -138,6 +139,32 @@ const hasExtra = Boolean(
         </div>
       )}
 
+      {activity.parking && (
+        <div class="mt-3 rounded-2xl border border-sky-200 bg-sky-50 p-3" data-parking-info>
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <p class="text-xs font-black uppercase tracking-[0.12em] text-sky-900">🅿️ Aparcamiento para esta parada</p>
+            {activity.parking.arrived && <span class="rounded-full bg-emerald-100 px-2 py-1 text-[11px] font-bold text-emerald-900">✓ Ya aparcados</span>}
+          </div>
+          <p class="mt-2 text-sm font-bold text-slate-950">{activity.parking.name}</p>
+          <div class="mt-3 flex flex-wrap items-center gap-2">
+            <div class="rounded-xl bg-white px-3 py-2">
+              <p class="text-[10px] font-bold uppercase text-slate-500">MAPCODE · navegador del coche</p>
+              <code class="text-lg font-black tracking-wide text-slate-950">{activity.parking.mapcode}</code>
+            </div>
+            <button type="button" data-parking-mapcode={activity.parking.mapcode} class="tap-target rounded-xl border border-sky-300 bg-white px-3 py-3 text-sm font-bold text-sky-900">📋 Copiar código</button>
+          </div>
+          {activity.parking.kind === 'reference' && (
+            <p class="mt-2 text-xs font-bold text-amber-800">⚠️ Código de referencia: NO garantiza que señale la entrada del aparcamiento.</p>
+          )}
+          {activity.parking.notes && <p class="mt-2 text-xs leading-relaxed text-slate-600">{activity.parking.notes}</p>}
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(activity.parking.mapsQuery)}`} target="_blank" rel="noopener noreferrer" class="tap-target rounded-xl bg-blue-700 px-3 py-2 text-sm font-bold text-white">🅿️ Ver parking en Maps</a>
+            <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(activity.parking.mapsQuery)}&travelmode=driving`} target="_blank" rel="noopener noreferrer" class="tap-target rounded-xl bg-emerald-100 px-3 py-2 text-sm font-bold text-emerald-900">🚗 Cómo llegar en coche</a>
+          </div>
+          {activity.parking.sourceUrl && <a href={activity.parking.sourceUrl} target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-[11px] font-semibold text-sky-700 underline">Ficha de referencia</a>}
+        </div>
+      )}
+
       {activity.transit && (
         <div class="rounded-xl border border-emerald-200 bg-emerald-50/70 p-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
@@ -235,6 +262,21 @@ const hasExtra = Boolean(
       if (card.getAttribute('data-activity-ready') === 'true') return;
       card.setAttribute('data-activity-ready', 'true');
 
+      card.querySelectorAll('[data-parking-mapcode]').forEach((copyButton) => {
+        copyButton.addEventListener('click', async () => {
+          const code = copyButton.getAttribute('data-parking-mapcode') || '';
+          if (!code) return;
+          try {
+            await navigator.clipboard.writeText(code);
+            const label = copyButton.textContent;
+            copyButton.textContent = '✓ Copiado';
+            window.setTimeout(() => { copyButton.textContent = label; }, 1600);
+          } catch {
+            // Seleccionar manualmente el código visible cuando el portapapeles no esté disponible.
+            copyButton.textContent = 'Selecciona el MAPCODE visible';
+          }
+        });
+      });
       const id = card.getAttribute('data-activity-id');
       const button = card.querySelector('[data-complete-toggle]');
       const badge = card.querySelector('[data-done-badge]');
