@@ -1540,9 +1540,9 @@
     },
     {
       "date": "2026-10-10",
-      "title": "Tokio → Nagoya → Osaka",
+      "title": "Nagoya · castillo y misokatsu → noche de Osaka",
       "status": "confirmado",
-      "note": "Confirmado por el grupo para mañana 10/10: salida desde Hotel SUI Ginza Kyobashi, Tokio, a las 08:30. El horario anterior del shinkansen (~08:00) era incompatible y queda invalidado. Tren, visita a Nagoya, restaurante recomendado por Alberto y enlace hacia Osaka requieren revisión antes de dar por cerradas las horas. Nagoya/Osaka aún están pendientes de revisar conjuntamente.",
+      "note": "PLAN REALISTA DE HOY, SÁBADO 10/10: salida CONFIRMADA del Hotel SUI Ginza Kyobashi a las 08:30. Shinkansen Tokio→Nagoya SIN HORA RESERVADA COMUNICADA: buscar salida aprox. 09:00–09:30 y llegada aprox. 10:45–11:20 (NO horario garantizado). Dejar equipaje en consigna de Nagoya Station y visitar Nagoya Castle (torre principal CERRADA AL INTERIOR; palacio Honmaru y jardines visitables; entrada 1.000 ¥ desde 1/10/2026). Comer misokatsu en Yabaton Nagoya Castle Kinshachi Yokocho, RESTAURANTE REAL ABIERTO HOY 10:30–17:30. Si hay mucha cola o se retrasa la visita: Yabaton ESCA 11:00–22:00, o Kitchen Nagoya Central 10:30–22:00, AMBOS EN LA ESTACIÓN. Importante: Yabaton JR Nagoya Station (sin especificar ESCA) es SOLO PARA LLEVAR, no restaurante con mesas. Tras recoger maletas, tren Nagoya→Shin-Osaka y alojamiento GN98 Saiwaicho (Sakuragawa). NOCHE APROVECHABLE: paseo y cena por Dōtonbori + Hozenji Yokocho; crucero o Minatomachi River Place opcionales. Los horarios intermedios son ORIENTATIVOS, sujetos a tren, cola, equipaje y cansancio. El viaje cae en un sábado de fin de semana festivo: dejar margen en taquillas y restaurantes.",
       "activities": [
         {
           "id": "salida-hotel-tokio-0830-1010",
@@ -1551,101 +1551,304 @@
           "status": "confirmado",
           "time": "08:30",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Hora de salida del HOTEL acordada con las chicas: 08:30 del sábado 10 de octubre. No equivale a tener reserva de tren a esa hora. Tren y detalles del día de Nagoya se revisarán después.",
+          "notes": "Salida del HOTEL de Tokio a las 08:30 comunicada al grupo para el 10/10. Aún no se ha confirmado número, horario ni reserva de shinkansen. El tren posterior se decide en Tokyo Station; no confundir salida de hotel con tren.",
           "plan": [
-            "08:30: salir del Hotel SUI Ginza Kyobashi con las maletas y comprobar habitaciones.",
-            "Caminar a Tokyo Station por la entrada Yaesu (~7–10 min según acceso).",
-            "Elegir shinkansen a Nagoya con margen; horario definitivo pendiente de revisar."
+            "08:30 salir del Hotel SUI Ginza Kyobashi con todo el equipaje, confirmar check-out.",
+            "Caminar unos 7–12 minutos hasta Tokyo Station, acceso Yaesu. Localizar la entrada Tōkaidō Shinkansen.",
+            "Elegir un Nozomi/Hikari con destino Nagoya (objetivo aproximado salida 09:00–09:30), dejando margen para billetes y andén."
           ]
         },
         {
           "id": "shinkansen-nagoya",
-          "title": "Shinkansen a Nagoya",
+          "title": "Tokyo Station → Nagoya · Tōkaidō Shinkansen",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "Nagoya Station",
           "plan": [
-            "Salir del Hotel SUI Ginza Kyobashi a las 08:30 (hora comunicada al grupo), caminar hasta Tokyo Station y tomar un shinkansen con horario aún pendiente de elegir.",
-            "Llevar equipaje organizado para no perder tiempo en el transbordo/consigna."
+            "Después de salir del hotel a las 08:30, entrar en Tokyo Station y consultar trenes Tōkaidō Shinkansen a Nagoya (Nozomi/Hikari).",
+            "Objetivo salir de Tokio ~09:00–09:30 y llegar ~10:45–11:20; confirmar hora REAL en la estación y no darla por reservada.",
+            "Para maletas cuya suma de alto+ancho+fondo supere 160 cm, consultar reserva de asiento con espacio para equipaje sobredimensionado.",
+            "Al llegar a Nagoya Station, dejar las maletas en coin lockers grandes o servicio de consigna; apunta zona/número de taquilla y NO salir con el equipaje hacia el castillo."
           ],
           "transit": {
-            "from": "Hotel SUI Ginza Kyobashi",
-            "summary": "Caminar a Tokyo Station → Tokaido Shinkansen (Nozomi/Hikari) → Nagoya Station.",
-            "approximateDuration": "~2 h incluyendo acceso y margen",
+            "from": "Hotel SUI Ginza Kyobashi · Tokyo Station",
+            "summary": "Hotel 08:30 → caminar a Tokyo Station (Yaesu) → Tōkaidō Shinkansen Nozomi/Hikari → Nagoya. Horario exacto pendiente de billetes.",
+            "approximateDuration": "~2 h 15–2 h 45 con margen",
             "steps": [
-              "Caminar ~7–10 min a Tokyo Station por Yaesu.",
-              "Entrar a los andenes del Tokaido Shinkansen.",
-              "Tomar Nozomi o Hikari con parada en Nagoya.",
-              "Guardar equipaje/seguir directamente hacia el castillo según la hora real."
+              "Hotel 08:30 → Tokyo Station por Yaesu.",
+              "Comprar/validar billetes y comprobar andén de Nozomi/Hikari a Nagoya.",
+              "Aproximadamente 1 h 40 de tren, dependiendo del servicio.",
+              "Consigna en estación de Nagoya antes del castillo."
             ]
           },
-          "notes": "El grupo ha confirmado salida del HOTEL DE TOKIO a las 08:30, no el tren exacto. No presentar shinkansen a las ~08:00 como salida válida. Horarios de Nagoya por revisar."
+          "notes": "Objetivo estimado, NO billete confirmado: buscar salida de Tokyo Station hacia 09:00–09:30, trayecto Nozomi habitual ~1h40. Llegada orientativa Nagoya 10:45–11:20. Revisar pantalla/billete real antes de dar las horas por buenas. Lleváis equipaje: JR Central exige reserva de asiento con espacio para equipaje sobredimensionado si el total de las 3 dimensiones supera 160 cm (hasta 250 cm). No suponer que el Shinkansen para en «Osaka Station»: la terminal de alta velocidad en Osaka es Shin-Osaka.",
+          "time": "~09:00–09:30",
+          "links": {
+            "officialWebsite": "https://jr-central.co.jp/en/"
+          }
+        },
+        {
+          "id": "nagoya-lockers-1010",
+          "title": "Consigna de maletas · Nagoya Station",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~11:00–11:30",
+          "locationQuery": "Nagoya Station coin lockers JR Central",
+          "notes": "Antes del castillo. Hay coin lockers de varios tamaños en Nagoya Station y consigna atendida de pago en JR Nagoya Takashimaya (1F, zona norte cerca de Delicious Court; horario anunciado 10:00–20:00). Comprobar capacidad y condiciones en persona, especialmente si lleváis maletas grandes. Guardar foto de la ubicación y recoger TODO antes del tren a Osaka.",
+          "plan": [
+            "Al bajar del shinkansen buscar «コインロッカー / Coin lockers». Hay tamaños distintos; grandes pueden llenarse los sábados.",
+            "Alternativa: servicio de consigna temporal en JR Nagoya Takashimaya 1F, 10:00–20:00, si las taquillas no sirven.",
+            "Foto del número y ubicación, guardar recibo/código. Recoger maletas al volver del castillo antes del tren a Shin-Osaka."
+          ],
+          "links": {
+            "officialWebsite": "https://www.nagoya-info.jp/useful/locker/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Nagoya%20Station%20coin%20lockers"
+          }
         },
         {
           "id": "nagoya-castle",
-          "title": "Castillo de Nagoya",
+          "title": "Castillo de Nagoya · palacio Honmaru",
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "notes": "Visita principal de la parada en Nagoya antes de comer y continuar a Osaka.",
+          "notes": "VISITA CONFIRMADA COMO PLAN, aún no realizada. Nagoya-jō: construido por orden de Tokugawa Ieyasu a comienzos del siglo XVII. La TORRE PRINCIPAL (tenshu) sigue CERRADA AL INTERIOR por seguridad/restauración: NO vender como visita a la torre. Sí se puede visitar el reconstruido Hommaru Palace y recorrer jardines, murallas y exteriores del castillo. Apertura durante hoy 10/10 (festival de otoño): 09:00–16:30, salida 17:00; palacio admite hasta 16:00 según calendario de temporada. Entrada 1.000 ¥ adultos desde 01/10/2026. El castillo tiene dos accesos principales; para comer después en Yabaton de Kinshachi Yokocho conviene salir hacia la PUERTA PRINCIPAL (正門).",
           "locationQuery": "Nagoya Castle",
-          "time": "~10:30",
+          "time": "~12:00–13:45",
           "plan": [
-            "Ir directo al castillo y hacer la visita principal de Nagoya.",
-            "No añadir desvíos grandes: después toca comer y continuar a Osaka."
+            "Entrar al Castillo de Nagoya: según hora real, objetivo ~12:00. La torre grande NO se puede visitar por dentro; NO hacer cola para acceder al tenshu.",
+            "Priorizar Hommaru Palace (本丸御殿), reconstrucción de la residencia señorial; caminar después por murallas y jardines. Contar 75–105 minutos según colas.",
+            "Entrada adulta 1.000 ¥ desde octubre 2026. Hoy abre 09:00–16:30, salida hasta 17:00; última entrada al palacio 16:00.",
+            "Al terminar salir por la PUERTA PRINCIPAL (正門) hacia Yabaton en Kinshachi Yokocho (義直ゾーン / Yoshinao Zone), junto a esa entrada. Si vais cortos de tiempo, priorizar el palacio sobre paseos extra."
           ],
           "transit": {
-            "from": "Nagoya Station",
-            "summary": "Sakura-dori Line → Hisaya-odori; cambio a Meijo Line → Nagoyajo Station; caminar al castillo.",
-            "approximateDuration": "20–25 min"
+            "from": "Nagoya Station tras la consigna",
+            "summary": "Sakura-dori Line Nagoya → Hisaya-odori; transbordo Meijo Line → Nagoyajo. 5–10 min andando hacia el acceso al castillo. Objetivo ~25–35 min incluyendo espera/caminar.",
+            "approximateDuration": "~25–35 min",
+            "steps": [
+              "Subir en la línea Sakura-dori hasta Hisaya-odori.",
+              "Cambiar a la línea Meijo hasta Nagoyajo.",
+              "Ir a la entrada del castillo y, dentro, visitar Hommaru Palace."
+            ]
+          },
+          "description": "El castillo de Nagoya fue levantado por orden de Tokugawa Ieyasu y se completó en 1615 como centro estratégico del linaje Owari-Tokugawa. Sus legendarios shachihoko dorados —criaturas con cabeza de tigre y cuerpo de pez— coronan el tejado como símbolos protectores. La torre se destruyó en la Segunda Guerra Mundial y fue reconstruida, pero hoy su interior no recibe visitas. El gran tesoro visitable es el Hommaru Palace, reconstruido minuciosamente con estancias de recepción, pinturas decorativas y espacios de ceremonia samurái. El recorrido exterior permite ver las murallas, los fosos y las puertas históricas; mira los shachihoko y los paneles dorados del palacio.",
+          "links": {
+            "officialWebsite": "https://www.nagoyajo.city.nagoya.jp/en/information/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Nagoya%20Castle%20Main%20Gate"
           }
         },
         {
           "id": "yabaton",
-          "title": "Misokatsu Yabaton",
+          "title": "🍛 Misokatsu · Yabaton del Castillo (Kinshachi Yokocho)",
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "Comer misokatsu de Nagoya. En la estación hay varias sucursales; este enlace apunta a JR Nagoya Station.",
-          "locationQuery": "Misokatsu Yabaton Nagoya Station",
-          "nearestStation": "Nagoya",
-          "approximatePrice": "¥1.000–2.000",
+          "notes": "RESTAURANTE PRINCIPAL RECOMENDADO: sucursal oficial de Yabaton «名古屋城 金シャチ横丁店», restaurante con mesas en la ZONA YOSHINAO, junto a la ENTRADA PRINCIPAL del castillo, NO la tienda de la estación JR (que es solo para llevar). Verificada en web oficial de la cadena: 10:30–17:30 hoy, 72 plazas, tel. 052-231-8810, dirección 三の丸1-2-5. Plato típico «わらじとんかつ» (waraji tonkatsu) con miso rojo espeso, o misokatsu de lomo. Precios orientativos de carta ~1.660–2.310 ¥; varían por plato. Las colas son posibles el sábado festivo: si superan 45 minutos o vais retrasados, volver a Nagoya Station y comer en la alternativa Yabaton ESCA o Kitchen Nagoya. Fuente oficial https://www.yabaton.com/stores/nagoyajo-kinshachi-yokocho.",
+          "locationQuery": "矢場とん 名古屋城 金シャチ横丁店 名古屋市中区三の丸1-2-5",
+          "approximatePrice": "Aprox. 1.660–2.310 ¥ por menú (según plato)",
           "links": {
-            "tabelog": "https://tabelog.com/en/aichi/A2301/A230101/23078795/",
-            "officialWebsite": "https://www.yabaton.com/"
+            "officialWebsite": "https://www.yabaton.com/stores/nagoyajo-kinshachi-yokocho",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E7%9F%A2%E5%A0%B4%E3%81%A8%E3%82%93%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%9F%8E%20%E9%87%91%E3%82%B7%E3%83%A3%E3%83%81%E6%A8%AA%E4%B8%81%E5%BA%97",
+            "tabelog": "https://tabelog.com/aichi/A2301/A230103/23066965/"
           },
-          "time": "~14:00",
+          "time": "~13:45–14:45",
           "plan": [
-            "Comer misokatsu como plato típico de Nagoya.",
-            "Elegir la sucursal que mejor encaje con la estación y el tren posterior."
+            "🍛 Justo al terminar el castillo, salir por la PUERTA PRINCIPAL (正門). La sucursal de Yabaton está fuera, en la zona tradicional Yoshinao de Kinshachi Yokocho.",
+            "Horario oficial 10:30–17:30; no depende de una sucursal antigua ni de la tienda JR que solo vende para llevar.",
+            "Pedir misokatsu de cerdo con salsa de miso rojo de Nagoya: «わらじとんかつ» (waraji), o rosu tonkatsu/menú de lomo. Presupuesto habitual alrededor de 1.600–2.300 ¥.",
+            "Si la cola es excesiva, no perder el tren a Osaka por ello: Yabaton ESCA y Kitchen Nagoya están junto a los andenes al volver a Nagoya Station."
           ],
           "transit": {
-            "from": "Nagoya Castle",
-            "summary": "Nagoyajo → Hisaya-odori por Meijo Line; cambio a Sakura-dori Line → Nagoya Station. Comer en la sucursal que mejor encaje con la estación.",
-            "approximateDuration": "20–25 min"
+            "from": "Nagoya Castle · puerta principal (正門)",
+            "summary": "A PIE desde el castillo al Yabaton de Kinshachi Yokocho, zona Yoshinao junto a la puerta principal. No volver a la estación para comer salvo que haya demasiada cola.",
+            "approximateDuration": "~2–5 min"
+          },
+          "address": "〒460-0001 愛知県名古屋市中区三の丸1-2-5"
+        },
+        {
+          "id": "yabaton-esca-nagoya-optional-1010",
+          "title": "🍛 Plan B · Yabaton ESCA (comer en estación)",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "矢場とん 名古屋駅エスカ店 名古屋市中村区椿町6-9",
+          "address": "〒453-0015 愛知県名古屋市中村区椿町6-9 エスカ地下街",
+          "approximatePrice": "Aprox. 1.600–2.300 ¥/persona según pedido",
+          "notes": "PLAN B VERIFICADO, NO segunda comida obligatoria: restaurante para comer SENTADOS en la galería subterránea ESCA, en el lado de shinkansen de Nagoya Station. Horario oficial 11:00–22:00 (último pedido 21:30), tel. 052-452-6500. Distinto del local «JR Nagoya Station» de Yabaton, que es EXCLUSIVAMENTE PARA LLEVAR. Elegir ESTE si el restaurante del castillo tiene mucha cola o los tiempos aprietan.",
+          "plan": [
+            "Usar solo si no se come en Yabaton Kinshachi Yokocho.",
+            "Entrar a ESCA desde el lado del Shinkansen de Nagoya Station y buscar 矢場とん 名古屋駅エスカ店.",
+            "Comer aquí y salir hacia Shin-Osaka. No confundir con la tienda JR de takeaway."
+          ],
+          "links": {
+            "officialWebsite": "https://www.yabaton.com/stores/nagoyaeki-esca",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E7%9F%A2%E5%A0%B4%E3%81%A8%E3%82%93%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%A7%85%E3%82%A8%E3%82%B9%E3%82%AB%E5%BA%97"
           }
         },
         {
-          "id": "nagoya-osaka",
-          "title": "Continuar a Osaka",
-          "category": "transporte",
-          "status": "confirmado",
-          "locationQuery": "Osaka Station",
-          "time": "~16:00",
+          "id": "kitchen-nagoya-central-optional-1010",
+          "title": "🍛 Plan C · Kitchen Nagoya, en la estación",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "キッチンなごや 中央通り 名古屋駅うまいもん通り",
+          "address": "〒450-0002 名古屋市中村区名駅1-1-4 名古屋うまいもん通り",
+          "approximatePrice": "Plato combinado típico «Nagoya Zeitaku» ~2.100 ¥",
+          "notes": "PLAN C VERIFICADO: restaurante Kitchen Nagoya (中央通り), dentro de Nagoya Station, Umainon-dori Central; no confundir con locales ya cerrados. Su web operadora JR Tokai Food Service publica 10:30–22:00 (último pedido 21:30), sin día fijo de cierre. Tiene misokatsu y platos combinados típicos de Nagoya (miso-katsu, tebasaki y doteni). Es práctico si hay colas en Yabaton, ya habéis vuelto a buscar las maletas y queréis subir pronto al shinkansen.",
           "plan": [
-            "Volver a Nagoya Station y continuar a Osaka.",
-            "Llegar al alojamiento y dejar el resto de la tarde/noche ligera."
+            "Alternativa a Yabaton, no visita doble. Desde la salida central de JR Nagoya, buscar うまいもん通り / Kitchen Nagoya 中央通り.",
+            "La opción «Nagoya Zeitaku» mezcla misokatsu, alitas tebasaki y doteni; precios y disponibilidad sujetos a carta actual.",
+            "Recoger todo el equipaje de la consigna y embarcar a Shin-Osaka."
+          ],
+          "links": {
+            "officialWebsite": "https://www.jrt-food-service.co.jp/store/343/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%81%AA%E3%81%94%E3%82%84%20%E4%B8%AD%E5%A4%AE%E9%80%9A%E3%82%8A"
+          }
+        },
+        {
+          "id": "nagoya-recoger-maletas-1010",
+          "title": "Recoger maletas · Nagoya Station",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~15:15–15:45",
+          "locationQuery": "Nagoya Station coin lockers",
+          "notes": "Recuperar el equipaje guardado tras llegar a Nagoya antes de dirigirse a Shin-Osaka. Si coméis en la estación, intercambiar el orden de recogida y restaurante según posición de taquillas.",
+          "plan": [
+            "Volver al mismo pasillo/taquillas JR Nagoya Station; revisar foto del número, recibo o QR.",
+            "Contar todo el equipaje y dirigirse a andenes Tōkaidō Shinkansen → Shin-Osaka.",
+            "No dejar el equipaje en Nagoya por ir con prisa a Osaka."
+          ]
+        },
+        {
+          "id": "nagoya-osaka",
+          "title": "Nagoya → Shin-Osaka → alojamiento GN98",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "Shin-Osaka Station",
+          "time": "~16:00–16:45",
+          "plan": [
+            "Recoger todas las maletas en Nagoya Station.",
+            "Tomar un Nozomi/Hikari con parada en Shin-Osaka, no en Osaka Station; revisar billete real.",
+            "En Shin-Osaka: Midosuji → Namba; cambiar a Sennichimae → Sakuragawa. Caminar al alojamiento GN98 Saiwaicho, 3-3-14 Saiwaicho.",
+            "Dejar equipaje, descansar un poco y salir andando hacia Dōtonbori si el grupo tiene ganas. No dar el día por perdido."
           ],
           "transit": {
             "from": "Nagoya Station",
-            "summary": "Tokaido Shinkansen → Shin-Osaka; Midosuji Line → Namba; cambio a Sennichimae Line → Sakuragawa; caminar ~5–6 min a GN98 Saiwaicho.",
-            "approximateDuration": "~1 h 40–2 h",
+            "summary": "Tōkaidō Shinkansen a SHIN-OSAKA (~50–60 min) → Metro Midosuji hasta Namba → transbordo línea Sennichimae a Sakuragawa → GN98 Saiwaicho a pie.",
+            "approximateDuration": "~1 h 30–1 h 50 con metro y maletas",
             "steps": [
-              "Shinkansen Nagoya → Shin-Osaka.",
-              "Osaka Metro Midosuji Line Shin-Osaka → Namba.",
-              "Cambiar a Sennichimae Line Namba → Sakuragawa.",
-              "Caminar al alojamiento GN98 Saiwaicho."
+              "Shinkansen desde Nagoya a Shin-Osaka.",
+              "Metro Midosuji Shin-Osaka → Namba.",
+              "Metro Sennichimae Namba → Sakuragawa.",
+              "Paseo a GN98 Saiwaicho."
             ]
+          },
+          "notes": "TREN PENDIENTE DE CONFIRMAR: tras comer (en Yabaton del Castillo o alternativa en estación), recoger maletas y tomar shinkansen Nagoya→SHIN-OSAKA (~50–60 min, según servicio). NO buscar Osaka Station como parada de shinkansen. Desde Shin-Osaka: Osaka Metro Midosuji Line a Namba, transbordo a Sennichimae a Sakuragawa y paseo al GN98 Saiwaicho (3-3-14 Saiwaicho). Prever ~30–45 min de transporte urbano y maletas tras el tren. Llegada orientativa al alojamiento 17:45–18:45; puede ser más tarde por trenes o colas. En destino, check-in y descargar equipaje. Después SÍ hay planes nocturnos."
+        },
+        {
+          "id": "gn98-llegada-noche-1010",
+          "title": "Osaka · check-in GN98 Saiwaicho",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~18:00–19:00",
+          "locationQuery": "GN98 Saiwaicho 3-3-14 Saiwaicho Osaka",
+          "address": "3-3-14 Saiwaicho, Naniwa-ku, Osaka",
+          "notes": "Objetivo orientativo, NO llegada confirmada. El alojamiento está en Saiwaicho, cerca de Sakuragawa, con acceso cómodo a la ribera occidental de Dōtonbori. Descargar maletas y salir a dar un paseo por la noche. Si el viaje se retrasa, priorizar check-in y cenar cerca; el resto del recorrido es flexible.",
+          "plan": [
+            "Hacer check-in y dejar maletas en el GN98 Saiwaicho. Comprobar instrucciones de acceso recibidas en la reserva.",
+            "Descansar 15–30 min si hace falta.",
+            "Dōtonbori queda hacia el este; paseo aproximado 20–30 min según ruta y ritmo, o Metro a Namba."
+          ],
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=GN98%20Saiwaicho%203-3-14%20Osaka"
+          }
+        },
+        {
+          "id": "osaka-minatomachi-1010-optional",
+          "title": "🌉 Minatomachi River Place · paseo junto al río",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "~19:15",
+          "locationQuery": "Minatomachi River Place Osaka",
+          "notes": "OPCIONAL CÓMODO para empezar la noche: está en la zona occidental de Dōtonbori, próxima a JR Namba y al alojamiento de Sakuragawa. Plaza y pasarela junto al río iluminado, buena primera vista de Osaka sin entrar aún en el gentío de Ebisubashi. Si hay cansancio, es una alternativa al paseo largo, no obligación.",
+          "plan": [
+            "Desde GN98/Sakuragawa acercarse al río por Minatomachi River Place.",
+            "Ver las luces reflejadas en el agua y continuar hacia el este por Tonbori Riverwalk si apetece.",
+            "No depende de horarios de tienda; algunos locales de la zona sí cierran a distintas horas."
+          ],
+          "links": {
+            "officialWebsite": "https://osaka-info.jp/en/spot/minatomachi-river-place/"
+          }
+        },
+        {
+          "id": "osaka-dotonbori-first-night-1010",
+          "title": "🌃 Dōtonbori de noche · Glico y neones",
+          "category": "barrio",
+          "status": "plan",
+          "priority": "must",
+          "time": "~19:30–21:00",
+          "locationQuery": "Ebisubashi Bridge Glico Sign Dotonbori Osaka",
+          "notes": "PLAN DE NOCHE AL LLEGAR A OSAKA: no perder la tarde-noche. Paseo a pie desde GN98/Sakuragawa hacia Dōtonbori Riverwalk y Ebisubashi (foto del Glico Man). Se puede cenar takoyaki, okonomiyaki o kushikatsu en esta zona; cada establecimiento tiene sus propios horarios. Objetivo orientativo desde ~19:30, adaptable. Ya hay otra tarjeta Dōtonbori el 11/10: esta es una primera noche fotográfica/cena sin sustituir la visita más completa del día siguiente.",
+          "plan": [
+            "Desde GN98 Saiwaicho, caminar hacia Minatomachi River Place y seguir la ribera hasta Ebisubashi (puente del cartel Glico).",
+            "📸 Foto clásica del Glico Man, neones y grandes fachadas iluminadas de Dōtonbori.",
+            "🍽️ Cenar algo típico de Osaka —takoyaki, kushikatsu u okonomiyaki— eligiendo local según cola y hambre; no inventar reserva.",
+            "Si el grupo se encuentra cansado, hacer solo Ebisubashi y cena; no es imprescindible seguir con todas las opciones posteriores."
+          ],
+          "links": {
+            "officialWebsite": "https://www.osaka-info.jp/en/spot/dotonbori/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Dotonbori%20Glico%20sign%20Ebisubashi%20Osaka"
+          }
+        },
+        {
+          "id": "osaka-hozenji-yokocho-1010-optional",
+          "title": "🏮 Hozenji Yokocho · callejón nocturno",
+          "category": "templo",
+          "status": "opcional",
+          "time": "~20:30",
+          "locationQuery": "Hozenji Yokocho Osaka",
+          "notes": "OPCIONAL, a pocos minutos andando de Ebisubashi. Callejón estrecho de adoquines con faroles, tabernas y el templo Hōzen-ji. Muy buena forma de terminar la noche con ambiente tradicional y ver la estatua de Fudō cubierta de musgo. Horarios de restaurantes variables; la calle se puede recorrer sin comprar nada. Si os encontráis cansados después del viaje, saltarlo sin problema.",
+          "description": "Hōzen-ji es un pequeño templo de la tradición budista Jōdo escondido en el barrio de Namba, célebre por su estatua Mizukake Fudō Myōō. Fudō es una figura protectora que simboliza la firmeza de la sabiduría y la voluntad de apartar los obstáculos espirituales. Los visitantes vierten agua sobre su imagen como ofrenda y, con los años, la escultura se ha cubierto completamente de musgo. El callejón Hozenji Yokocho se desarrolló alrededor de los puestos que atendían a los peregrinos, sobrevivió a grandes cambios urbanos y hoy evoca el ambiente histórico de Osaka entre faroles y adoquines. Fíjate en el contraste entre el silencio del templo y los neones cercanos.",
+          "plan": [
+            "Desde el Glico ir andando al callejón Hozenji Yokocho (法善寺横丁).",
+            "Ver los adoquines, faroles y la imagen de Mizukake Fudō en Hōzen-ji; respeto a quienes estén rezando.",
+            "Tomar algo o cenar en la zona si aún tenéis hambre; volver cuando os apetezca."
+          ],
+          "links": {
+            "officialWebsite": "https://osaka-info.jp/es/spot/hozenji-yokocho/"
+          }
+        },
+        {
+          "id": "osaka-tombori-cruise-1010-optional",
+          "title": "🚤 Crucero nocturno Dōtonbori · 20 minutos",
+          "category": "ocio",
+          "status": "opcional",
+          "time": "Hasta ~21:00",
+          "locationQuery": "Tombori River Cruise Tazaemonbashi pier Dotonbori",
+          "approximatePrice": "Consultar tarifa actual y plazas antes de reservar",
+          "notes": "OPCIONAL SI HAY ENERGÍA Y PLAZAS: Tombori River Cruise por Dōtonbori, recorrido de ~20 min iluminado desde el agua. El operador Ipponmatsu Kaun publica salidas entre 11:00 y 21:00, a las horas y medias; el último turno puede variar, cancelarse por clima/eventos y agotarse. Embarque junto al río, al lado de Don Quijote Dōtonbori y su noria amarilla. No afirmar reserva. No desplazar la cena ni el descanso si vais tarde.",
+          "plan": [
+            "Si llegáis con margen, mirar disponibilidad para una salida vespertina, antes de las ~21:00.",
+            "Localizar el embarque Tazaemonbashi al lado del Don Quijote Dōtonbori (noria amarilla).",
+            "Crucero 20 min por los puentes iluminados y paseo posterior. Saltar si no hay plazas, hay cola o está cancelado."
+          ],
+          "links": {
+            "officialWebsite": "https://www.ipponmatsu.co.jp/cruise/tombori.html",
+            "reservation": "https://www.ipponmatsu.co.jp/support/reserve.html"
+          }
+        },
+        {
+          "id": "osaka-amerikamura-1010-optional",
+          "title": "🎧 Amerikamura · paseo y ambiente nocturno",
+          "category": "barrio",
+          "status": "opcional",
+          "time": "Desde ~21:00",
+          "locationQuery": "Amerikamura Triangle Park Osaka",
+          "notes": "EXTENSIÓN NOCTURNA OPCIONAL si aún quedan fuerzas. Zona de ambiente juvenil al norte de Dōtonbori, con murales, Triangle Park, bares y música; horarios de locales muy variados. No hace falta comprar entrada para pasear por el barrio. Para un grupo cansado, mejor volver al GN98 sin añadir el desvío. No prometer actividad específica de club sin comprobar esa noche.",
+          "plan": [
+            "Desde Ebisubashi subir hacia Shinsaibashi/Amerikamura y Triangle Park.",
+            "Ver ambiente, calles y bares abiertos si apetece; volver en taxi/metro o andando según situación.",
+            "Si cansancio, el paseo Dōtonbori + cena ya aprovecha la noche de llegada."
+          ],
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Amerikamura%20Triangle%20Park%20Osaka"
           }
         }
       ]
