@@ -68,6 +68,7 @@ const parkingSchema = z.object({
   mapcode: z.string(),
   kind: z.enum(['parking', 'reference']),
   mapsQuery: z.string(),
+  spotQuery: z.string().optional(),
   notes: z.string().optional(),
   sourceUrl: z.string().url().optional(),
   arrived: z.boolean().optional(),
@@ -112,6 +113,7 @@ const routeStopSchema = z.object({
   note: z.string().optional(),
   mapcode: z.string().optional(),
   mapcodeKind: z.enum(['parking', 'reference']).optional(),
+  spotQuery: z.string().optional(),
 });
 
 const daySchema = z.object({
