@@ -1194,9 +1194,9 @@
     },
     {
       "date": "2026-10-09",
-      "title": "🗻 Fuji despejado · Oshino → sushi → lago y helado → Lawson",
+      "title": "🗻 Fuji despejado · Oshino → Kappa Sushi → lago y helado → Lawson",
       "status": "plan",
-      "note": "ACTUALIZACIÓN EN DIRECTO · 9 de octubre, desde ~13:44 JST: grupo en OSHINO HAKKAI; foto desde los estanques con FUJI MUY DESPEJADO. RUTA DECIDIDA: (1) terminar en Oshino, (2) 🍣 COMER ANTES DEL LAGO en Sushiro Kawaguchiko BELL (sushi económico, aparcamiento disponible, objetivo ~14:15–15:00, no confirmado como realizado), (3) Lago Kawaguchiko / Oishi Park + helado en Oishi Park Café antes de 16:45, (4) Lawson Kawaguchiko Ekimae de la foto del Fuji detrás, (5) devolver coche en Tokyo Station Yaesu antes de 21:00. Lago YAMANAKAKO DESCARTADO y Fujisan Yume no Ōhashi fuera del recorrido principal. Sushiro: MAPCODE 161 242 392*76 del restaurante (Mapion), NO entrada confirmada del parking; también disponible enlace Google Maps. Horarios intermedios orientativos según tráfico, colas y lo que tarde la visita.",
+      "note": "ACTUALIZACIÓN EN DIRECTO · 9 de octubre: grupo en Oshino Hakkai con excelente visibilidad del Fuji. La comida acordada ahora es 🍣 KAPPA SUSHI KAWAGUCHIKO INTER (新西原2-32-11, parking descrito como gratuito; GPS por teléfono 0555-20-1125; sin MAPCODE fiable verificado). Comida prevista, no afirmada como realizada. Después: (1) lago Kawaguchiko/Oishi Park y helado de Oishi Park Café antes de 16:45; (2) foto del Lawson Kawaguchiko Ekimae; (3) regreso para devolver coche en Tokyo Station Yaesu antes de 21:00. Lago Yamanakako descartado, Yume no Ōhashi fuera de la ruta. Los demás Mapcodes confirmados se mantienen.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1362,46 +1362,37 @@
           "notes": "📍 GRUPO EN LOS ESTANQUES AHORA (9/10, ~13:44 JST). Confirmada la llegada; no significa que se hayan recorrido ya los ocho. La fotografía enviada desde Oshino Hakkai muestra el Fuji muy despejado y nítido, con excelente visibilidad. Aquí hay ocho ESTANQUES de manantial, no ocho lagos. La próxima parada acordada es el LAGO KAWAGUCHIKO, Oishi Park + helado, y después el LAWSON de la foto famosa. Lago Yamanakako descartado."
         },
         {
-          "id": "almuerzo-sushiro-kawaguchiko-bell-1009",
-          "title": "🍣 COMER AHORA · Sushiro Kawaguchiko BELL (sushi económico)",
-          "time": "Objetivo ~14:15–15:00",
+          "id": "almuerzo-kappa-sushi-kawaguchiko-inter-1009",
+          "title": "🍣 COMER · Kappa Sushi Kawaguchiko Inter (parking gratis)",
+          "time": "Después de Oshino · al llegar",
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "スシロー 河口湖BELL店 山梨県南都留郡富士河口湖町船津2986",
-          "address": "〒401-0301 山梨県南都留郡富士河口湖町船津2986",
-          "approximatePrice": "Desde 120 ¥/plato · aprox. 1.000–2.000 ¥ por persona",
-          "notes": "PARADA DE COMIDA PREVISTA (9/10): sushi en Sushiro Kawaguchiko BELL, 2986 Funatsu, después de Oshino Hakkai y antes del lago Kawaguchiko/Oishi Park. MAPCODE DEL RESTAURANTE 161 242 392*76, comprobado en Mapion; no está verificada la entrada del parking. Sushiro confirma que tiene aparcamiento y abre viernes 11:00–22:30, platos desde 120 ¥. No se ha confirmado que ya hayáis comido. Si hay cola, no retrasar el helado de Oishi Park (cierra 16:45) ni la devolución en Tokio (antes de las 21:00).",
+          "locationQuery": "かっぱ寿司 河口湖インター店 山梨県富士吉田市新西原2丁目32-11",
+          "address": "〒403-0017 山梨県富士吉田市新西原2-32-11",
+          "approximatePrice": "Aprox. 1.000–2.000 ¥ por persona",
+          "notes": "ELECCIÓN DEL GRUPO 9/10: comer sushi en KAPPA SUSHI KAWAGUCHIKO INTER (かっぱ寿司 河口湖インター店), Fujiyoshida, 新西原2-32-11, después de Oshino y antes del lago Kawaguchiko/Oishi Park. PARKING: sí; aparece como GRATUITO (無料) en la ficha de Ekiten, aunque conviene comprobar las señales actuales a la llegada. Teléfono para GPS por número: 0555-20-1125. No se ha localizado un MAPCODE contrastado de esta sucursal: NO utilizar el anterior de otro restaurante. Horario viernes 10:30–23:00. Comida decidida, no confirmada como realizada. Después: Oishi Park y helado antes de las 16:45, Lawson y devolución del coche en Tokio antes de las 21:00.",
           "links": {
-            "officialWebsite": "https://www.akindo-sushiro.co.jp/shop/detail.php?id=1993",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%82%B7%E3%83%AD%E3%83%BC%20%E6%B2%B3%E5%8F%A3%E6%B9%96BELL%E5%BA%97%20%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E8%88%B9%E6%B4%A52986"
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%81%8B%E3%81%A3%E3%81%B1%E5%AF%BF%E5%8F%B8%20%E6%B2%B3%E5%8F%A3%E6%B9%96%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E5%BA%97%20%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0%E5%B8%82%E6%96%B0%E8%A5%BF%E5%8E%9F2-32-11",
+            "officialWebsite": "https://www.kappasushi.jp/shop/0378"
           },
           "plan": [
-            "1. 🍣 Ir al Sushiro Kawaguchiko BELL (船津2986). Introducir MAPCODE 161 242 392*76 para localizar el RESTAURANTE, y seguir las señales de acceso a BELL 駐車場 para aparcar (no se ha contrastado la entrada exacta).",
-            "2. Objetivo orientativo: comer hacia las 14:15–15:00; si tardáis en salir de Oshino, las horas se desplazan. Sushi desde 120 ¥ el plato según la web oficial.",
-            "3. Después ir DIRECTAMENTE a Oishi Park, lago Kawaguchiko, para las vistas y el helado en Oishi Park Café antes de que cierre a las 16:45.",
-            "4. Luego LAWSON de la foto del Fuji, y regreso a Tokio para devolver el coche antes de las 21:00. Si vais justos, acortar esta parada y la del Lawson."
-          ],
-          "parking": {
-            "name": "スシロー 河口湖BELL店 · aparcamiento del centro comercial BELL",
-            "mapcode": "161 242 392*76",
-            "kind": "reference",
-            "mapsQuery": "スシロー 河口湖BELL店 山梨県南都留郡富士河口湖町船津2986",
-            "notes": "MAPCODE del restaurante Sushiro publicado por Mapion; NO confirma que apunte directamente a la entrada del aparcamiento. El centro comercial BELL dispone de aparcamiento (superficie y subterráneo). Si el navegador apunta al restaurante o una zona sin acceso directo, seguir indicaciones a BELL 駐車場.",
-            "sourceUrl": "https://www.mapion.co.jp/phonebook/M01022/19430/G7633601-001/",
-            "arrived": false
-          }
+            "🍣 DESTINO ACORDADO: Kappa Sushi Kawaguchiko Inter (かっぱ寿司 河口湖インター店), NO las otras cadenas.",
+            "🚗 Teléfono para búsqueda del GPS del coche: 0555-20-1125. Dirección 〒403-0017 山梨県富士吉田市新西原2-32-11, o usar Google Maps desde el botón. No hay MAPCODE fiable verificado de esta sucursal.",
+            "🅿️ Hay aparcamiento, descrito como gratuito (無料) por Ekiten. Verificar la señalización del propio parking antes de dejar el coche.",
+            "⏱️ Después Oishi Park y helado de arándano/lavanda antes de las 16:45; luego Lawson famoso, y vuelta a Tokio antes de las 21:00."
+          ]
         },
         {
           "id": "oishi",
           "title": "🍦 DESPUÉS DE COMER · Lago Kawaguchiko · Oishi Park + helado",
           "category": "mirador",
           "status": "plan",
-          "notes": "PARADA CONFIRMADA POR EL GRUPO (9/10 ~13:44): después del almuerzo de sushi previsto en Sushiro Kawaguchiko BELL, iremos al LAGO KAWAGUCHIKO (河口湖), Oishi Park (大石公園), orilla norte, y al helado del Oishi Park Café en Kawaguchiko Natural Living Center (河口湖自然生活館). Horario del helado confirmado en web oficial: 09:15–16:45 (octubre). Parking gratuito; MAPCODE 59 089 356*28 orientativo (entrada no comprobada). La visita sigue planeada, no realizada.",
+          "notes": "PARADA CONFIRMADA POR EL GRUPO (9/10 ~13:44): después del almuerzo de sushi previsto en Kappa Sushi Kawaguchiko Inter, iremos al LAGO KAWAGUCHIKO (河口湖), Oishi Park (大石公園), orilla norte, y al helado del Oishi Park Café en Kawaguchiko Natural Living Center (河口湖自然生活館). Horario del helado confirmado en web oficial: 09:15–16:45 (octubre). Parking gratuito; MAPCODE 59 089 356*28 orientativo (entrada no comprobada). La visita sigue planeada, no realizada.",
           "locationQuery": "Oishi Park Kawaguchiko",
           "time": "Objetivo ~15:30 · helado antes 16:45",
           "plan": [
-            "1. 🚗 Después de comer en Sushiro Kawaguchiko BELL, ir a Oishi Park, lago Kawaguchiko. MAPCODE orientativo del parque 59 089 356*28.",
+            "1. 🚗 Después de comer en Kappa Sushi Kawaguchiko Inter, ir a Oishi Park, lago Kawaguchiko. MAPCODE orientativo del parque 59 089 356*28.",
             "2. 🏞️ Fotografiar el Fuji desde la orilla norte del lago (la visibilidad es muy buena desde Oshino a las 13:44).",
             "3. 🍦 Oishi Park Café dentro del Natural Living Center: helado de arándano (ブルーベリー) o lavanda (ラベンダー), antes del cierre de las 16:45.",
             "4. 📸 Después Lawson Kawaguchiko Ekimae, y volver a Tokio para devolver el coche a tiempo."
@@ -1512,18 +1503,16 @@
           "note": "Grupo en Oshino ~13:44; Fuji muy visible según foto. Próximo: Kawaguchiko"
         },
         {
-          "title": "🍣 COMIDA · Sushiro Kawaguchiko BELL · parking del centro comercial",
-          "locationQuery": "スシロー 河口湖BELL店 山梨県南都留郡富士河口湖町船津2986",
-          "note": "MAPCODE del restaurante (Mapion), NO de la entrada del parking; BELL tiene aparcamiento.",
-          "mapcode": "161 242 392*76",
-          "mapcodeKind": "reference"
+          "title": "🍣 COMIDA · Kappa Sushi Kawaguchiko Inter (parking gratis)",
+          "locationQuery": "かっぱ寿司 河口湖インター店 山梨県富士吉田市新西原2丁目32-11",
+          "note": "Parking (ficha Ekiten: gratuito). GPS por teléfono 0555-20-1125 o dirección; MAPCODE no confirmado."
         },
         {
           "title": "🍦 DESPUÉS DE COMER · Lago Kawaguchiko · Oishi Park",
           "locationQuery": "大石公園 駐車場 2585 大石 富士河口湖町",
           "mapcode": "59 089 356*28",
           "mapcodeKind": "reference",
-          "note": "Tras Sushiro: helado Oishi Park Café antes de 16:45; Mapcode parking de referencia"
+          "note": "Tras Kappa Sushi: helado Oishi Park Café antes de 16:45; Mapcode parking de referencia"
         },
         {
           "title": "📸 DESPUÉS · LAWSON famoso, foto del Fuji detrás",
