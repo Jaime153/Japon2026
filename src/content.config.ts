@@ -80,6 +80,7 @@ const activitySchema = z.object({
   time: z.string().optional(),
   links: activityLinksSchema.optional(),
   notes: z.string().optional(),
+  description: z.string().optional(),
   plan: z.array(z.string()).optional(),
   transit: transitSchema.optional(),
   flightJourney: flightJourneySchema.optional(),
