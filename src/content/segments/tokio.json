@@ -1851,6 +1851,53 @@
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Amerikamura%20Triangle%20Park%20Osaka"
           }
         }
+      ],
+      "routeStops": [
+        {
+          "title": "08:30 · Salir Hotel SUI Ginza Kyobashi",
+          "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST Tokyo",
+          "note": "A pie hasta Tokyo Station; salida del hotel confirmada"
+        },
+        {
+          "title": "Tokyo Station · Shinkansen a Nagoya",
+          "locationQuery": "Tokyo Station Tokaido Shinkansen Yaesu",
+          "note": "Billete/horario reales por confirmar"
+        },
+        {
+          "title": "Nagoya Station · consigna de maletas",
+          "locationQuery": "Nagoya Station JR Central coin lockers",
+          "note": "Dejar equipaje antes de visitar castillo"
+        },
+        {
+          "title": "Castillo de Nagoya · Hommaru Palace",
+          "locationQuery": "名古屋城 本丸御殿",
+          "note": "Palacio abierto; TORRE principal cerrada al interior"
+        },
+        {
+          "title": "MISOKATSU · Yabaton Kinshachi Yokocho",
+          "locationQuery": "矢場とん 名古屋城 金シャチ横丁店 三の丸1-2-5",
+          "note": "Principal y ABIERTO 10:30–17:30; puerta principal del castillo. Planes B/C en fichas, NO en ruta obligatoria"
+        },
+        {
+          "title": "Nagoya Station · recuperar maletas",
+          "locationQuery": "Nagoya Station JR Central",
+          "note": "Recoger equipaje; salir en tren a Shin-Osaka"
+        },
+        {
+          "title": "Shin-Osaka Station · llegada shinkansen",
+          "locationQuery": "Shin-Osaka Station",
+          "note": "Metro Midosuji → Namba, Sennichimae → Sakuragawa"
+        },
+        {
+          "title": "Osaka · alojamiento GN98 Saiwaicho",
+          "locationQuery": "GN98 Saiwaicho 3-3-14 Osaka",
+          "note": "Check-in, dejar maletas"
+        },
+        {
+          "title": "Dōtonbori · Glico y cena",
+          "locationQuery": "Ebisubashi Bridge Glico Sign Osaka",
+          "note": "Paseo nocturno; Hozenji, crucero, Amerikamura y River Place son opcionales"
+        }
       ]
     }
   ],
