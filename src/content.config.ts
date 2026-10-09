@@ -77,7 +77,8 @@ const parkingSchema = z.object({
 const activitySchema = z.object({
   id: z.string(),
   title: z.string(),
-  time: z.string().optional(),
+  // Solo horarios breves en las cabeceras; explicaciones largas en 'notes'.
+  time: z.string().max(16, 'La hora de una tarjeta debe ser breve (máximo 16 caracteres); mover explicaciones a observaciones').optional(),
   links: activityLinksSchema.optional(),
   notes: z.string().optional(),
   description: z.string().optional(),
