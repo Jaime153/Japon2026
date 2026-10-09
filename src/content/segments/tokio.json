@@ -1196,7 +1196,7 @@
       "date": "2026-10-09",
       "title": "Fuji u Okutama · según visibilidad",
       "status": "plan",
-      "note": "9/10 · Ruta en coche para ver Fuji. A las ~10:01 ya habéis aparcado en el parking de Chureito / Arakurayama Sengen Park (P1 según el aparcamiento recomendado). Cada actividad del plan Fuji incluye su MAPCODE (si existe), nombre japonés del parking, botón Maps y opción de copiar. Los códigos marcados «referencia» no certifican la entrada del aparcamiento. Fujisan Yume no Ōhashi queda como desvío muy opcional; para devolver el coche en Yaesu antes de las 21:00, usar el MAPCODE oficial 647 076*21.",
+      "note": "9/10 · Ruta en coche para ver Fuji. A las ~10:01 ya habéis aparcado en el parking de Chureito / Arakurayama Sengen Park (P1 según el aparcamiento recomendado). Cada actividad del plan Fuji incluye su MAPCODE (si existe), nombre japonés del parking, botón Maps y opción de copiar. Los códigos marcados «referencia» no certifican la entrada del aparcamiento. Fujisan Yume no Ōhashi queda como desvío muy opcional; para devolver el coche en Yaesu antes de las 21:00, usar el MAPCODE oficial 647 076*21. Nota sobre los lagos: Oishi Park ya es la parada principal del lago Kawaguchiko e incluye el helado típico de Oishi Park Café (arándano/lavanda; mostrador hasta 16:45). Lago Yamanakako (Nagaike) se ofrece como segundo lago opcional, sin incluirlo en el recorrido de conducción automático para no desviaros si vais tarde.",
       "activities": [
         {
           "id": "fuji-weather-check",
@@ -1352,16 +1352,47 @@
           }
         },
         {
+          "id": "yamanakako-nagaike-optional",
+          "title": "Lago Yamanakako · Nagaike Shinsui Park (segundo lago)",
+          "time": "Opcional tras Oshino",
+          "category": "mirador",
+          "status": "opcional",
+          "priority": "nice",
+          "locationQuery": "長池親水公園駐車場 山中湖村平野3214-1",
+          "address": "長池親水公園駐車場 · 3214-1 Hirano, Yamanakako, Yamanashi",
+          "notes": "Segundo lago opcional entre Oshino Hakkai y el Kawaguchiko/Oishi Park. Fotografía del Fuji sobre el agua desde la orilla norte; aparcamiento gratuito con aproximadamente 80 plazas según Turismo Yamanakako. Es un desvío: saltar si ya vais tarde o el Fuji está tapado. No se incluye en la ruta principal del mapa para no darlo por obligatorio.",
+          "plan": [
+            "Solo si vais con margen después de Oshino Hakkai y antes de Oishi Park.",
+            "Aparcar en Nagaike Shinsui Park, hacer las fotos del Fuji sobre el lago Yamanaka y continuar hacia Kawaguchiko.",
+            "MAPCODE de aparcamiento procedente de una guía local, no validado por el ayuntamiento para la puerta exacta. Comprobar en el navegador del coche que lleva a 長池親水公園駐車場.",
+            "Si son ya más de las 14:00 y seguís lejos de Oishi, priorizar el helado de Oishi Park Café (cierra 16:45) y omitir este segundo lago."
+          ],
+          "parking": {
+            "name": "長池親水公園駐車場 · Nagaike Shinsui Park",
+            "mapcode": "161 015 723*24",
+            "kind": "reference",
+            "mapsQuery": "長池親水公園駐車場 山梨県南都留郡山中湖村平野3214-1",
+            "notes": "Parking junto al lago, gratuito. Hay aparcamientos en dos zonas. MAPCODE publicado por una guía local de aparcamientos, sin comprobación independiente de la entrada exacta. En Mapion el código del propio parque es distinto.",
+            "sourceUrl": "https://tozanguchi-p.com/nakgaike_p/"
+          },
+          "links": {
+            "officialWebsite": "https://lake-yamanakako.com/spot/10351"
+          }
+        },
+        {
           "id": "oishi",
-          "title": "Oishi Park",
+          "title": "Lago Kawaguchiko · Oishi Park + helado de arándano/lavanda",
           "category": "mirador",
           "status": "plan",
-          "notes": "Parada de lago / helado.",
+          "notes": "Paseo clásico por la orilla norte del lago Kawaguchiko, fotos del Fuji con agua y kochia otoñal. HELADO CONCRETO: Oishi Park Café, dentro de Kawaguchiko Natural Living Center (河口湖自然生活館), en el propio parque. Soft-serve de arándano o lavanda; horario oficial octubre: 09:15–16:45. Aparcamiento del parque gratuito. El MAPCODE del parking sigue marcado como referencia, no acceso certificado.",
           "locationQuery": "Oishi Park Kawaguchiko",
           "time": "~14:30",
           "plan": [
-            "Pasear junto al lago y aprovechar las vistas al Fuji.",
-            "Parada tranquila para helado/café antes de seguir."
+            "Pasear por la orilla del lago Kawaguchiko y sacar las fotos típicas de Fuji + agua + flores/kochia.",
+            "Entrar a Kawaguchiko Natural Living Center (河口湖自然生活館), junto al lago.",
+            "🍦 Pedir un soft-serve del Oishi Park Café: probar arándano (ブルーベリー) o lavanda (ラベンダー). Cierra a las 16:45 según su web oficial.",
+            "Si el Fuji está despejado, aprovechar las vistas desde el café; comprar regalos o mermelada de arándano solo si apetece.",
+            "No convertirlo en parada maratoniana: queda la vuelta al coche de Tokio antes de las 21:00."
           ],
           "parking": {
             "name": "大石公園 · parking junto al parque",
@@ -1371,6 +1402,10 @@
             "notes": "Código anterior orientativo de zona de aparcamiento, no contrastado para su entrada. Mapion confirma como alternativa el Mapcode del PARQUE 59 089 357*06. Abrir Maps al aparcamiento antes de conducir.",
             "sourceUrl": "https://www.mapion.co.jp/phonebook/M04010/19430/ILSP0058818576_ipclm/",
             "arrived": false
+          },
+          "links": {
+            "officialWebsite": "https://www.fkchannel.jp/facility-03",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko%20Natural%20Living%20Center%20Oishi%20Park%202585%20Oishi"
           }
         },
         {
