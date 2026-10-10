@@ -136,6 +136,16 @@ export function createMapDays(segments) {
     } else {
       stages = normalStages(included, actualStart, end);
     }
+    const alternatives = entries.flatMap(({seg}) =>
+      (seg.candidateModules || []).filter(alt => alt.forDate && iso(alt.forDate) === date)
+        .map(alt => {
+          const altStops = alt.activities.filter(a => !a.skipped && a.status !== 'pendiente').map(activityStop).filter(a => a.query);
+          return {
+            id: alt.id,
+            label: alt.switchLabel || alt.title,
+            stages: [stage('alternative', alt.title, date === '2026-10-09' ? 'drive' : 'mixed', [actualStart, ...altStops, end])],
+          };
+        }));
     return {
       date,
       title: entries.map(x => x.day.title || x.seg.city).join(' · '),
@@ -143,7 +153,7 @@ export function createMapDays(segments) {
       stages: stages.filter(s => s.stops.length > 0),
       optional,
       mainLabel: firstDay.switchLabel || 'Plan',
-      variants: [], // Las alternativas existentes se construyen abajo.
+      variants: alternatives,
       hotelStart: startHotel?.name || null,
       hotelEnd: endHotel?.name || null,
     };
