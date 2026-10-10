@@ -13,10 +13,23 @@
   "days": [
     {
       "date": "2026-10-11",
-      "title": "Osaka imprescindible · Namba Yasaka, Tsūtenkaku y Dōtonbori",
+      "title": "Osaka · desde 07:45: Namba Yasaka, Shinsekai y Dōtonbori",
       "status": "plan",
-      "note": "Primer día completo de Osaka para las chicas. Lo más importante: cabeza de león de Namba Yasaka por la mañana, Shinsekai y Tsūtenkaku al mediodía, y Dōtonbori/Glico por la tarde-noche. Kuromon y Shinsaibashi encajan de paso. Sumiyoshi se queda opcional porque es un desvío.",
+      "note": "Salimos del GN98 a las 07:45. Sobre las 08:10 llegamos a Namba Yasaka para hacer fotos de la cabeza de león antes de que se llene; el goshuin empieza a las 09:00. Kuromon a media mañana (algunos puestos cierran los domingos). Después Shinsekai y la torre Tsūtenkaku POR FUERA, sin subir ni comprar entradas. Comemos kushikatsu y dejamos Dōtonbori/Glico para la tarde-noche. Si sobra tiempo, Den Den Town es opcional; Sumiyoshi también.",
       "activities": [
+        {
+          "id": "salida-gn98-0745-1011",
+          "title": "Salir del GN98 · empezar temprano",
+          "category": "transporte",
+          "status": "plan",
+          "time": "07:45",
+          "locationQuery": "34.668712,135.485405",
+          "notes": "Hemos quedado en salir del GN98 a las 07:45. Desayunar algo antes o cogerlo por el camino. El objetivo es aprovechar bien el día sin tener que correr.",
+          "plan": [
+            "Salir sobre las 07:45 con agua y algo de desayuno.",
+            "Consultar la ruta del mapa del día antes de salir."
+          ]
+        },
         {
           "id": "namba-yasaka",
           "title": "Namba Yasaka · santuario de la cabeza de león",
@@ -24,10 +37,11 @@
           "status": "plan",
           "locationQuery": "Namba Yasaka Jinja",
           "plan": [
-            "Primera visita del día al santuario de la cabeza de león, que queda junto a Namba.",
-            "Hacer fotos y seguir hacia Kuromon Market."
+            "Llegar sobre las 08:10 y visitar el recinto; hacer fotos antes de que haya tanta gente.",
+            "A las 09:00 ir a por el goshuin. Si hay cola, dejar un margen.",
+            "Salir hacia Kuromon sobre las 09:15–09:30."
           ],
-          "time": "09:00",
+          "time": "~08:10–09:15",
           "transit": {
             "from": "Sumiyoshi Taisha",
             "summary": "Nankai Main Line Sumiyoshitaisha → Namba; desde Nankai Namba caminar a Namba Yasaka Jinja.",
@@ -36,18 +50,19 @@
           "goshuin": true,
           "description": "Namba Yasaka Jinja es un santuario sintoísta de Osaka dedicado principalmente a Susanoo-no-Mikoto, el kami vinculado a tormentas, protección y relatos de victoria frente al mal. No se conoce con certeza la fecha de su fundación y sus tradiciones están ligadas al antiguo culto de Gion. Lo más reconocible es una gigantesca cabeza de león de unos 12 metros, el Ema-den, cuya boca abierta se interpreta popularmente como capaz de engullir la mala suerte y atraer oportunidades. La estructura es moderna, de la década de 1970: aunque parezca un antiguo monumento, no es medieval. Fíjate en los enormes dientes y en el espacio dedicado a ofrendas y deseos.",
           "priority": "must",
-          "notes": "Imprescindible de las chicas: el santuario famoso por su enorme cabeza de LEÓN (no dragón). Entramos a verlo por la mañana. Abre el recinto 06:00–17:00 y la atención de 09:00–16:50."
+          "notes": "Llegamos temprano para hacer fotos del gran león sin tanta gente. El recinto abre a las 06:00, pero para el goshuin esperamos a que empiecen a atender a las 09:00. El santuario es la cabeza de LEÓN, no de dragón."
         },
         {
           "id": "kuromon-market-1011",
           "title": "Kuromon Ichiba · mercado y picoteo",
           "category": "comida",
           "status": "plan",
-          "time": "~10:30",
+          "time": "~09:45–10:45",
           "locationQuery": "Kuromon Ichiba Market Osaka",
-          "notes": "Un paseo y algo de comer por el mercado de Kuromon. Si salimos más tarde de la cuenta, esta es la primera parada que podemos acortar, sin tocar los imprescindibles.",
+          "notes": "Mercado para pasear y picar algo. La mayoría de puestos turísticos empiezan sobre las 09:00, pero es domingo y puede haber puestos cerrados. Si no hay mucho ambiente, hacemos una visita más corta y seguimos.",
           "plan": [
-            "Dar una vuelta por el mercado y picar algo si apetece.",
+            "Pasear por el mercado y comprar algo si apetece.",
+            "No quedarnos demasiado si muchas tiendas están cerradas: es domingo.",
             "Continuar hacia Shinsekai."
           ]
         },
@@ -58,31 +73,31 @@
           "status": "plan",
           "locationQuery": "Shinsekai Osaka",
           "plan": [
-            "Llegar a Shinsekai después de Kuromon.",
-            "Dar una vuelta por las calles con los neones, los restaurantes y la torre Tsūtenkaku.",
-            "Comer algo típico de la zona y seguir luego a Namba/Dōtonbori."
+            "Recorrer Shinsekai y mirar la torre Tsūtenkaku desde abajo.",
+            "Hacer fotos de las calles y carteles.",
+            "Buscar un sitio de kushikatsu al terminar el paseo."
           ],
-          "time": "~12:30",
+          "time": "~11:30–12:30",
           "transit": {
             "from": "Namba Yasaka Jinja",
             "summary": "Caminar a Daikokucho (M21) → Midosuji Line una parada hasta Dobutsuen-mae (M22); salir hacia Shinsekai.",
             "approximateDuration": "15–20 min"
           },
           "priority": "must",
-          "notes": "Paseo por Shinsekai entre carteles, restaurantes de kushikatsu y la torre Tsūtenkaku. No hace falta recorrerlo entero: el objetivo es disfrutar del ambiente y subir a la torre si tenemos entrada."
+          "notes": "Pasear por Shinsekai, los carteles y la zona de la torre Tsūtenkaku. No vamos a subir a la torre. Ver el barrio por fuera, hacer fotos y comer kushikatsu."
         },
         {
           "id": "tsutenkaku-1011",
-          "title": "Tsūtenkaku · subir a la torre",
-          "category": "mirador",
+          "title": "Tsūtenkaku · verla por fuera (sin subir)",
+          "category": "otro",
           "status": "plan",
-          "time": "~13:30",
+          "time": "~12:00",
           "locationQuery": "Tsutenkaku Tower Osaka",
           "priority": "must",
-          "notes": "Imprescindible del grupo. Horario oficial 09:00–21:45, última entrada al mirador general 21:15; requiere reservar hora de acceso y conviene hacerlo antes o mirar al llegar. Entrada general adulta 1.500 ¥ (precio de octubre 2026).",
+          "notes": "No vamos a subir al mirador de Tsūtenkaku. Solo queremos verla desde Shinsekai, pasear por el barrio y sacar fotos de la torre. No comprar entradas ni reservar hora.",
           "plan": [
-            "Ver la torre desde Shinsekai y subir al mirador si hay entrada.",
-            "Reservar una franja o comprobar disponibilidad para no perder tiempo haciendo cola."
+            "Ver Tsūtenkaku desde la calle y hacer fotos.",
+            "Seguir dando una vuelta por Shinsekai, sin colas ni entradas."
           ]
         },
         {
@@ -90,9 +105,9 @@
           "title": "Comer kushikatsu en Shinsekai",
           "category": "comida",
           "status": "plan",
-          "time": "~14:30",
+          "time": "~12:30–13:30",
           "locationQuery": "Shinsekai Osaka kushikatsu restaurants",
-          "notes": "Después de la torre, comer kushikatsu por Shinsekai. Elegir sitio al pasar, sin fijar una reserva de restaurante.",
+          "notes": "Comer kushikatsu por Shinsekai después de pasear. Sin reservar local ni ir con prisas.",
           "plan": [
             "Probar kushikatsu o comer donde nos apetezca.",
             "Luego movernos hacia Namba/Dōtonbori."
@@ -109,21 +124,21 @@
             "Foto del Glico Man en Ebisubashi y recorrer los neones.",
             "Cenar por la zona: takoyaki, okonomiyaki, kushikatsu o lo que nos apetezca."
           ],
-          "time": "~17:00",
+          "time": "~16:45–18:30",
           "transit": {
             "from": "Shinsekai",
             "summary": "Dobutsuen-mae (M22) → Namba (M20) por Midosuji Line; caminar a Dōtonbori.",
             "approximateDuration": "15–20 min"
           },
           "priority": "must",
-          "notes": "Lo pasamos de la noche del sábado al domingo. Foto del Glico Man desde Ebisubashi, paseo por Dōtonbori y cena por la zona. El objetivo es verlo de noche antes de irnos de Osaka."
+          "notes": "Foto del cartel Glico en Ebisubashi, paseo por Dōtonbori y neones cuando empiece a oscurecer. En Osaka el sol se pone sobre las 17:29 el domingo 11, así que esta hora encaja para ver la zona de día y de noche."
         },
         {
           "id": "hozenji-yokocho-1011",
           "title": "Hozenji Yokocho · callejón y templo",
           "category": "templo",
           "status": "plan",
-          "time": "~18:30",
+          "time": "~18:30–19:00",
           "locationQuery": "Hozenji Yokocho Osaka",
           "notes": "Está junto a Dōtonbori y encaja en el paseo nocturno. Ver los faroles del callejón y el pequeño templo Hōzen-ji con la estatua cubierta de musgo.",
           "plan": [
@@ -137,7 +152,7 @@
           "title": "Shinsaibashi-suji · paseo y tiendas",
           "category": "compras",
           "status": "plan",
-          "time": "~19:15",
+          "time": "~19:00",
           "locationQuery": "Shinsaibashi-suji Shopping Street Osaka",
           "notes": "Calle comercial cubierta que empieza cerca de Dōtonbori. Si las tiendas están abiertas, podemos echar un vistazo; el paseo también merece la pena de noche. No hace falta comprar nada.",
           "plan": [
@@ -163,6 +178,18 @@
           "goshuin": true,
           "description": "Sumiyoshi Taisha es uno de los santuarios sintoístas más antiguos de Japón; según la tradición fue fundado en el siglo III, antes de que el budismo llegara al archipiélago. Venera a las tres deidades Sumiyoshi, protectoras de navegantes, comerciantes marítimos y viajeros, y a la emperatriz Jingū. Su arquitectura Sumiyoshi-zukuri es considerada una de las formas autóctonas de construcción de santuarios, con tejados rectos y adornos tradicionales. Se conservan cuatro santuarios principales alineados de forma singular. El puente rojo arqueado Sorihashi, también llamado Taikobashi, simboliza el paso hacia un espacio sagrado. Osaka fue siempre ciudad portuaria, así que este santuario conecta directamente con su historia comercial.",
           "notes": "Se queda como visita opcional para otro momento. Está al sur y ahora es más importante que las chicas puedan ver Namba Yasaka, Tsūtenkaku, Dōtonbori, el castillo y Umeda antes de marcharse a Kioto."
+        },
+        {
+          "id": "den-den-town-1011-optional",
+          "title": "Opcional · Den Den Town (anime y videojuegos)",
+          "category": "compras",
+          "status": "opcional",
+          "locationQuery": "Nipponbashi Denden Town Osaka",
+          "notes": "Si terminamos temprano en Shinsekai, podemos pasar por Den Den Town antes de ir a Dōtonbori. Tiendas de manga, figuras y videojuegos. No es imprescindible para las chicas y no hay que ir si prefieren descansar.",
+          "plan": [
+            "Opcional entre Shinsekai y Dōtonbori, solo si hay ganas de tiendas.",
+            "Si no interesa, dar más tiempo a Namba y al paseo de la tarde."
+          ]
         }
       ],
       "mapStages": [
@@ -203,9 +230,35 @@
     },
     {
       "date": "2026-10-12",
-      "title": "Osaka imprescindible · Castillo y Umeda Sky",
+      "title": "Osaka · desde 07:45: Castillo y Umeda Sky",
       "status": "plan",
       "activities": [
+        {
+          "id": "salida-gn98-0745-1012",
+          "title": "Salir del GN98 · empezar temprano",
+          "category": "transporte",
+          "status": "plan",
+          "time": "07:45",
+          "locationQuery": "34.668712,135.485405",
+          "notes": "Hemos quedado en salir del GN98 a las 07:45. Desayunar algo antes o cogerlo por el camino. El objetivo es aprovechar bien el día sin tener que correr.",
+          "plan": [
+            "Salir sobre las 07:45 con agua y algo de desayuno.",
+            "Consultar la ruta del mapa del día antes de salir."
+          ]
+        },
+        {
+          "id": "osaka-castle-park-early-1012",
+          "title": "Parque del Castillo de Osaka · fotos temprano",
+          "category": "naturaleza",
+          "status": "plan",
+          "time": "~08:25",
+          "locationQuery": "Osaka Castle Park Sakuramon Gate Osaka",
+          "notes": "Salir del GN98 a las 07:45. Podemos pasear por el parque y ver el castillo por fuera antes de que abra el museo de la torre a las 09:00. No hace falta esperar en el alojamiento hasta que abra.",
+          "plan": [
+            "Llegar al parque del castillo sobre las 08:25.",
+            "Ver el exterior y hacer fotos antes de entrar al museo cuando abra."
+          ]
+        },
         {
           "id": "osaka-castle",
           "title": "Castillo de Osaka · torre y parque",
@@ -213,25 +266,25 @@
           "status": "plan",
           "locationQuery": "Osaka Castle",
           "plan": [
-            "Ir pronto al Castillo de Osaka.",
-            "Visitar el museo de la torre y las vistas desde arriba (aprox. 1,5–2 h).",
-            "Pasear por la zona del parque antes de ir a Umeda."
+            "Primero fotos y paseo por Osaka Castle Park antes de las 09:00.",
+            "A las 09:00 entrar a la torre/museo y ver las exposiciones y vistas.",
+            "Salir con margen para ir a Umeda, comer y pasear."
           ],
-          "time": "09:00",
+          "time": "09:00–10:45",
           "transit": {
             "from": "GN98 Saiwaicho",
             "summary": "Sakuragawa (S15) → Awaza (S13) por Sennichimae Line; cambio a Chuo Line → Morinomiya (C19); caminar al castillo.",
             "approximateDuration": "30–40 min"
           },
           "priority": "must",
-          "notes": "Imprescindible para las chicas. Torre/museo abierto 09:00–18:00, última entrada 17:30. Entrada adulta 1.200 ¥. Ir a primera hora para aprovechar el día y evitar parte de la cola del festivo."
+          "notes": "El museo de la torre del Castillo de Osaka abre a las 09:00; entramos pronto, después de recorrer un poco el parque. Entrada general 1.200 ¥. Con el lunes festivo (Día del Deporte), mejor evitar la hora punta."
         },
         {
           "id": "umeda-grand-front-1012",
           "title": "Umeda · Grand Front y estación Osaka",
           "category": "barrio",
           "status": "plan",
-          "time": "~13:30",
+          "time": "~12:30–15:30",
           "locationQuery": "Grand Front Osaka",
           "notes": "Después del castillo, ir a la zona de Osaka/Umeda, comer y dar una vuelta por Grand Front. De aquí vamos andando hacia el Umeda Sky Building.",
           "plan": [
@@ -268,7 +321,7 @@
             "approximateDuration": "25–35 min"
           },
           "priority": "must",
-          "notes": "Imprescindible: subir al Kuchu Teien Observatory del Umeda Sky Building. Abre 09:30–22:30, última entrada 22:00; entrada adulta 2.000 ¥. Objetivo llegar antes del atardecer para ver Osaka de día y con las luces encendidas. Comprar entrada con margen si hay mucha gente por el festivo."
+          "notes": "Subir al mirador del Umeda Sky Building para ver Osaka de día y al atardecer; el 12/10 el sol se pone aproximadamente a las 17:27. Intentar estar arriba antes, con margen para colas por el festivo."
         },
         {
           "id": "umeda-dinner-1012",
@@ -284,7 +337,7 @@
           ]
         }
       ],
-      "note": "Último día completo de Osaka antes de ir a Kioto. El castillo por la mañana, Umeda al mediodía y el mirador Umeda Sky Building para el atardecer. El 12/10 es festivo en Japón (Día del Deporte), así que conviene dejar margen para colas. Las chicas verán todos los imprescindibles entre el domingo y el lunes.",
+      "note": "Salimos del GN98 a las 07:45. Sobre las 08:25 damos una vuelta por el parque del Castillo de Osaka y entramos al museo cuando abra a las 09:00. Después pasamos a Umeda para comer y pasear sin prisas. Umeda Sky Building hacia las 16:30 para el atardecer de las 17:27. Es el segundo día completo en Osaka antes de ir a Kioto el martes 13.",
       "mapStages": [
         {
           "id": "osaka-castle",
@@ -292,6 +345,7 @@
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
+            "osaka-castle-park-early-1012",
             "osaka-castle"
           ]
         },
