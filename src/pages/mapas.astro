@@ -1,73 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { getDayAlternatives, isoDate } from '../lib/segments';
+import { isoDate } from '../lib/segments';
+import { createMapDays } from '../lib/map-planner.mjs';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
 
-const routes = segments.flatMap((segment) =>
-  segment.data.days.map((day) => {
-    const mainStops = day.routeStops?.length
-      ? day.routeStops.map((stop, index) => ({
-          id: `route-stop-${index}`,
-          title: stop.title,
-          query: stop.locationQuery,
-          category: 'otro',
-          time: '',
-          tabelog: '',
-          mapcode: stop.mapcode ?? '',
-          mapcodeKind: stop.mapcodeKind ?? '',
-          note: stop.note ?? '',
-          spotQuery: stop.spotQuery ?? '',
-        }))
-      : day.activities
-          .filter((activity) => activity.locationQuery || activity.address)
-          .map((activity) => ({
-            id: activity.id,
-            title: activity.title,
-            query: activity.locationQuery ?? activity.address ?? activity.title,
-            category: activity.category,
-            time: activity.time ?? '',
-            tabelog: activity.links?.tabelog ?? '',
-            mapcode: activity.parking?.mapcode ?? '',
-            mapcodeKind: activity.parking?.kind ?? '',
-            note: activity.parking?.name ?? '',
-            spotQuery: activity.parking?.spotQuery ?? '',
-          }));
-
-    const alternatives = getDayAlternatives(segment.data, day.date).map((alternative) => ({
-      id: alternative.id,
-      label: alternative.switchLabel ?? alternative.title,
-      stops: alternative.activities
-        .filter((activity) => activity.locationQuery || activity.address)
-        .map((activity) => ({
-          id: activity.id,
-          title: activity.title,
-          query: activity.locationQuery ?? activity.address ?? activity.title,
-          category: activity.category,
-          time: activity.time ?? '',
-          tabelog: activity.links?.tabelog ?? '',
-          mapcode: activity.parking?.mapcode ?? '',
-          mapcodeKind: activity.parking?.kind ?? '',
-          note: activity.parking?.name ?? '',
-          spotQuery: activity.parking?.spotQuery ?? '',
-        })),
-    }));
-
-    const date = isoDate(day.date);
-    const isFujiDay = date === '2026-10-09';
-    const isMultimodalDay = date === '2026-10-10';
-
-    return {
-      date,
-      city: segment.data.legLabel ?? segment.data.city,
-      title: day.title ?? segment.data.city,
-      mainLabel: day.switchLabel ?? 'Plan',
-      routingMode: isMultimodalDay ? 'multimodal' : (isFujiDay ? 'car' : 'foot'),
-      variants: [{ id: 'main', label: day.switchLabel ?? 'Plan', stops: mainStops }, ...alternatives],
-    };
-  }),
-).filter((route) => route.variants.some((variant) => variant.stops.length > 0));
+const routes = createMapDays(segments.map((segment) => segment.data));
 
 const placeMap = new Map<string, { title: string; query: string; city: string; firstDate: string; category: string; tabelog: string }>();
 
@@ -143,8 +82,9 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
     <span class="shrink-0 text-xl text-red-700">→</span>
   </a>
 
+
   <section class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
-    <div class="flex gap-2 overflow-x-auto pb-2" id="route-days">
+    <div class="flex gap-2 overflow-x-auto pb-2" id="route-days" aria-label="Seleccionar día del viaje">
       {routes.map((route, index) => (
         <button
           type="button"
@@ -156,30 +96,35 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       ))}
     </div>
 
-    <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
-      <div>
-        <p id="route-city" class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400"></p>
-        <h2 id="route-title" class="text-xl font-black"></h2>
+    <div class="mt-3 flex flex-wrap items-start justify-between gap-2">
+      <div class="min-w-0">
+        <p id="route-city" class="text-xs font-bold uppercase tracking-wide text-slate-500"></p>
+        <h2 id="route-title" class="mt-1 break-words text-lg font-black leading-snug"></h2>
       </div>
-      <button id="locate-me" type="button" class="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-700">◎ Estoy aquí</button>
+      <button id="locate-me" type="button" class="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold">◎ Estoy aquí</button>
     </div>
 
-    <div id="route-variants" class="mt-3 hidden gap-2"></div>
+    <div id="route-variants" class="mt-3 hidden flex-wrap gap-2" aria-label="Elegir ruta alternativa"></div>
 
-    <div id="route-map-status" class="mt-3 rounded-xl bg-slate-100 px-3 py-2 text-xs text-slate-600">
+    <div class="mt-4 grid grid-cols-2 gap-2 rounded-2xl bg-slate-100 p-1" id="map-mode-buttons">
+      <button type="button" data-map-mode="complete" class="rounded-xl px-3 py-3 text-sm font-black" aria-pressed="true">🗺️ Día completo</button>
+      <button type="button" data-map-mode="parts" class="rounded-xl px-3 py-3 text-sm font-black" aria-pressed="false">🧩 Por tramos</button>
+    </div>
+    <div id="route-parts" class="mt-3 hidden flex-wrap gap-2" aria-label="Seleccionar tramo del día"></div>
+    <p id="route-summary" class="mt-3 text-xs leading-relaxed text-slate-600"></p>
+
+    <div id="route-options" class="mt-3"></div>
+
+    <div id="route-map-status" role="status" aria-live="polite" class="mt-3 rounded-xl bg-slate-100 px-3 py-2 text-xs text-slate-600">
       Preparando mapa…
     </div>
+    <div id="trip-route-map" class="mt-3 h-[45vh] min-h-[330px] overflow-hidden rounded-2xl bg-slate-100"></div>
 
-    <div id="trip-route-map" class="mt-3 h-[48vh] min-h-[360px] overflow-hidden rounded-2xl bg-slate-100"></div>
-
-    <div class="mt-3 flex flex-wrap gap-2">
-      <a id="open-google-route" href="#" target="_blank" rel="noopener noreferrer" class="rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">
-        🧭 Abrir ruta real en Google Maps
-      </a>
-      <span class="self-center text-xs text-slate-400">La web intenta seguir calles/carreteras; Google Maps queda como navegación final en tiempo real.</span>
-    </div>
-
-    <ol id="route-stops" class="mt-5 grid gap-2"></ol>
+    <p class="mt-3 text-xs leading-relaxed text-slate-500">
+      Los puntos del día están ordenados. El recorrido a pie o en coche solo se dibuja en tramos de ese tipo;
+      para metro, tren y desplazamientos largos tienes el enlace entre paradas. No se inventan líneas rectas.
+    </p>
+    <div id="route-stage-list" class="mt-4 grid gap-3"></div>
   </section>
 
   <section class="mt-8">
