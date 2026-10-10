@@ -87,6 +87,31 @@ assert(mapSource.includes('fallbacks.forEach(line => { line.remove(); provisiona
 assert(mapSource.includes("distanceKm(from, to) > 25"),
   'No dibujar falsas líneas de tren entre ciudades');
 
+// Regresión: antes un botón enviaba TODOS los waypoints a Google Maps.
+// La lista plegada no debe alterar las paradas de navegación.
+assert(mapSource.includes("function fullGoogleRoute(stage)"),
+  'Falta la navegación completa de Google Maps');
+assert(mapSource.includes("const middle = queries.slice(1, -1).join('|')") &&
+  mapSource.includes("url += '&waypoints=' + encodeURIComponent(middle)"),
+  'Google Maps debe recibir TODOS los waypoints, no solo origen/destino');
+assert(mapSource.includes("[...stage.stops, stage.stops[0]]"),
+  'La ruta circular debe regresar al inicio en Google Maps');
+assert(mapSource.includes("esc(fullGoogleRoute(stage))") &&
+  mapSource.includes("🧭 Abrir ruta completa en Google Maps"),
+  'Falta el botón por tramo para abrir ruta completa');
+assert(mapSource.includes('id="active-stage-google-route"') &&
+  mapSource.includes("activeRouteButton.href = fullGoogleRoute(single)"),
+  'Falta el botón junto al mapa al seleccionar un tramo');
+if (asakusa) {
+  const shichi = asakusa.stages.find(s => s.id === 'shichifukujin');
+  if (shichi) {
+    const waypoints = shichi.stops.map(s => s.query);
+    assert(waypoints.length === 9 && shichi.closeLoop,
+      'La ruta Google Maps de los nueve templos debe volver al inicio');
+    assert(waypoints.slice(1).length === 8, 'Los ocho templos restantes deben ser waypoints');
+  }
+}
+
 if (failures.length) {
   console.error('Fallo en el nuevo mapa:\n- ' + failures.join('\n- '));
   process.exit(1);
