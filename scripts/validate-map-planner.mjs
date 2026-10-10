@@ -75,6 +75,25 @@ if (monday) {
     'Lunes 12: deben estar el castillo de Osaka y Umeda Sky');
   assert(monday.stages.at(-1).stops.at(-1).kind === 'hotel', 'Lunes debe terminar en GN98');
 }
+// Domingo temprano: tsutenkaku solo desde fuera, sin mirador ni entradas.
+const osakaSegment = segments.find(seg => seg.hotel?.name === 'GN98 Saiwaicho');
+if (osakaSegment) {
+  const sundayDay = osakaSegment.days.find(day => day.date === '2026-10-11');
+  const mondayDay = osakaSegment.days.find(day => day.date === '2026-10-12');
+  const getActivity = (day, id) => day?.activities.find(a => a.id === id);
+  assert(getActivity(sundayDay, 'salida-gn98-0745-1011')?.time === '07:45',
+    'Domingo 11: salida del alojamiento debe figurar a las 07:45');
+  assert(getActivity(sundayDay, 'namba-yasaka')?.time?.startsWith('~08:10') &&
+    getActivity(sundayDay, 'namba-yasaka')?.notes?.includes('09:00'),
+    'Namba Yasaka: llegar antes para fotos y esperar al goshuin de las 09:00');
+  const tower = getActivity(sundayDay, 'tsutenkaku-1011');
+  assert(tower?.notes?.includes('No vamos a subir') && tower?.category !== 'mirador',
+    'Tsutenkaku: se ve por fuera, no hay entradas ni subida');
+  assert(getActivity(mondayDay, 'salida-gn98-0745-1012')?.time === '07:45',
+    'Lunes 12: salida temprana a las 07:45');
+  assert(getActivity(mondayDay, 'osaka-castle-park-early-1012')?.time === '~08:25',
+    'Castillo Osaka: ver parque antes de abrir a las 09:00');
+}
 const transfer = get('2026-10-13');
 if (transfer) {
   assert(transfer.hotelStart.includes('GN98') && transfer.hotelEnd.includes('RESI STAY'),
