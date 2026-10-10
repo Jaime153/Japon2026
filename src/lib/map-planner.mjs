@@ -3,14 +3,21 @@
  * Un tramo "transit/mixed" muestra paradas y enlaces entre puntos, no una línea a pie.
  */
 const iso = (value) => value instanceof Date ? value.toISOString().slice(0, 10) : String(value).slice(0, 10);
-const hotelStop = (hotel, kind) => hotel && ({
-  id: '@hotel-' + kind,
-  title: (kind === 'start' ? 'Salir de ' : 'Volver a / llegar a ') + hotel.name,
-  query: hotel.address || hotel.name,
-  note: hotel.address || '',
-  category: 'transporte',
-  kind: 'hotel',
-});
+const hotelStop = (hotel, kind) => {
+  if (!hotel) return null;
+  // El nombre GN98 no siempre localiza bien el edificio; preferir el pin verificado.
+  const coded = hotel.mapsUrl?.match(/[?&]query=([^&]+)/)?.[1];
+  const parsed = coded ? decodeURIComponent(coded.replace(/\+/g, ' ')) : '';
+  const query = /^\d{2}\.\d+,\s*\d{3}\.\d+$/.test(parsed) ? parsed : (hotel.address || hotel.name);
+  return {
+    id: '@hotel-' + kind,
+    title: (kind === 'start' ? 'Salir de ' : 'Volver a / llegar a ') + hotel.name,
+    query,
+    note: hotel.address || '',
+    category: 'transporte',
+    kind: 'hotel',
+  };
+};
 const activityStop = (a) => ({
   id: a.id,
   title: a.title,
