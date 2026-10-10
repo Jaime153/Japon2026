@@ -42,10 +42,10 @@ if (fuji) {
 }
 const nagoya = get('2026-10-10');
 if (nagoya) {
-  assert(nagoya.stages.length === 4, 'Viaje Nagoya/Osaka: deben ser cuatro tramos');
+  assert(nagoya.stages.length === 3, 'Hoy 10/10: tras cancelar la noche, solo deben quedar tres tramos');
   const trip = nagoya.stages.flatMap(s => s.stops.map(p => p.title));
   const yamato = trip.findIndex(s => s.includes('Kuroneko Yamato'));
-  const gn98 = trip.findIndex(s => s.includes('alojamiento GN98'));
+  const gn98 = trip.findIndex(s => s.includes('GN98'));
   assert(yamato >= 0 && gn98 > yamato, 'Hoy: Yamato debe ir antes del apartamento GN98');
   assert(nagoya.hotelStart.includes('SUI') && nagoya.hotelEnd.includes('GN98'),
     '10/10: hotel origen Tokio y destino Osaka diferentes');
@@ -53,6 +53,57 @@ if (nagoya) {
     '10/10: un tramo tiene modo inválido');
   assert(nagoya.stages.some(s => s.stops.some(p => p.query === '34.668712,135.485405')),
     'GN98: no se usan coordenadas verificadas');
+  assert(nagoya.stages.at(-1).stops.at(-1).title.includes('GN98'),
+    'La ruta del día debe terminar en GN98, no en Dōtonbori');
+  assert(!nagoya.stages.some(s => s.id === 'noche-osaka'),
+    'Hoy no puede aparecer un tramo nocturno cancelado');
+}
+// Imprescindibles de Osaka antes de viajar a Kioto.
+const sunday = get('2026-10-11');
+if (sunday) {
+  const ids = sunday.stages.flatMap(s => s.stops.map(p => p.id));
+  for (const id of ['namba-yasaka', 'shinsekai', 'tsutenkaku-1011', 'dotonbori']) {
+    assert(ids.includes(id), 'Domingo 11: falta imprescindible ' + id);
+  }
+  assert(!ids.includes('sumiyoshi'), 'Sumiyoshi se queda opcional para no quitar tiempo');
+  assert(sunday.stages.at(-1).stops.at(-1).kind === 'hotel', 'Domingo debe terminar en GN98');
+}
+const monday = get('2026-10-12');
+if (monday) {
+  const ids = monday.stages.flatMap(s => s.stops.map(p => p.id));
+  assert(ids.includes('osaka-castle') && ids.includes('umeda-sky'),
+    'Lunes 12: deben estar el castillo de Osaka y Umeda Sky');
+  assert(monday.stages.at(-1).stops.at(-1).kind === 'hotel', 'Lunes debe terminar en GN98');
+}
+// Domingo temprano: tsutenkaku solo desde fuera, sin mirador ni entradas.
+const osakaSegment = segments.find(seg => seg.hotel?.name === 'GN98 Saiwaicho');
+if (osakaSegment) {
+  const sundayDay = osakaSegment.days.find(day => day.date === '2026-10-11');
+  const mondayDay = osakaSegment.days.find(day => day.date === '2026-10-12');
+  const getActivity = (day, id) => day?.activities.find(a => a.id === id);
+  assert(getActivity(sundayDay, 'salida-gn98-0745-1011')?.time === '07:45',
+    'Domingo 11: salida del alojamiento debe figurar a las 07:45');
+  assert(getActivity(sundayDay, 'namba-yasaka')?.time === '~08:45–09:15' &&
+    getActivity(sundayDay, 'namba-yasaka')?.notes?.includes('09:00'),
+    'Namba Yasaka: 30 minutos en el santuario, con goshuin desde las 09:00');
+  assert(getActivity(sundayDay, 'desayuno-namba-1011')?.time === '~08:10–08:35',
+    'Antes del santuario, desayuno por Namba en lugar de esperar 1 hora');
+  const buySky = getActivity(sundayDay, 'comprar-entradas-umeda-sky-1012');
+  const sky = getActivity(mondayDay, 'umeda-sky');
+  assert(buySky?.status === 'plan' && buySky?.links?.reservation?.includes('asoview.com'),
+    'Las entradas Umeda Sky deben figurar pendientes y con compra directa');
+  assert(sky?.links?.reservation?.includes('asoview.com') &&
+    sky?.notes?.includes('No consta ninguna compra'),
+    'Mirador Umeda: botón de reserva oficial sin inventar entradas compradas');
+  assert(sky?.notes?.includes('17:28'),
+    'Atardecer Umeda del 12/10 es a las 17:28 y debe figurar en el planning');
+  const tower = getActivity(sundayDay, 'tsutenkaku-1011');
+  assert(tower?.notes?.includes('No vamos a subir') && tower?.category !== 'mirador',
+    'Tsutenkaku: se ve por fuera, no hay entradas ni subida');
+  assert(getActivity(mondayDay, 'salida-gn98-0745-1012')?.time === '07:45',
+    'Lunes 12: salida temprana a las 07:45');
+  assert(getActivity(mondayDay, 'osaka-castle-park-early-1012')?.time === '~08:25',
+    'Castillo Osaka: ver parque antes de abrir a las 09:00');
 }
 const transfer = get('2026-10-13');
 if (transfer) {

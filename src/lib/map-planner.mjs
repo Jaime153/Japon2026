@@ -97,14 +97,19 @@ function nagoyaStages(day, start, end) {
   if (stops.length < 8) return normalStages(day.activities.filter(a => !a.skipped && a.status !== 'opcional'), start, end);
   const nagoya = stops.findIndex(s => /Nagoya Station.*consigna|Nagoya Station.*maletas/i.test(s.title));
   const osaka = stops.findIndex(s => /Shin-Osaka Station/.test(s.title));
-  const lastStay = stops.findIndex(s => /alojamiento GN98/.test(s.title));
+  const lastStay = stops.findIndex(s => /GN98/.test(s.title));
   if (nagoya < 1 || osaka <= nagoya || lastStay <= osaka) return [stage('transfer', 'Tokio → Nagoya → Osaka', 'mixed', [start, ...stops, end])];
-  return [
+  const segments = [
     stage('tokio-nagoya', 'Hotel Tokio → Nagoya', 'transit', [start, ...stops.slice(0, nagoya + 1)]),
     stage('nagoya', 'Castillo y misokatsu', 'mixed', stops.slice(nagoya, osaka)),
-    stage('nagoya-osaka', 'Nagoya → hotel Osaka', 'transit', [stops[osaka - 1], ...stops.slice(osaka, lastStay + 1)]),
-    stage('noche-osaka', 'Noche en Osaka y vuelta', 'walk', [stops[lastStay], ...stops.slice(lastStay + 1), end]),
+    stage('nagoya-osaka', 'Nagoya → Yamato → GN98', 'transit', [stops[osaka - 1], ...stops.slice(osaka, lastStay + 1)]),
   ];
+  // Si se canceló la noche, la ruta acaba en el hotel.
+  if (stops.length > lastStay + 1) {
+    segments.push(stage('noche-osaka', 'Noche en Osaka y vuelta', 'walk',
+      [stops[lastStay], ...stops.slice(lastStay + 1), end]));
+  }
+  return segments;
 }
 
 /**
