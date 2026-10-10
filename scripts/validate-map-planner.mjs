@@ -60,7 +60,9 @@ if (transfer) {
 for (const day of dates) {
   assert(day.stages.length > 0, day.date + ': sin tramos');
   for (const stage of day.stages) {
-    assert(stage.stops.length >= 2, day.date + ': tramo corto ' + stage.id);
+    // Algunos días solo tienen una visita localizada (o están por completar).
+    // Mantener un marcador aislado es correcto; inventar un segundo punto no.
+    assert(stage.stops.length >= 1, day.date + ': tramo sin ubicaciones ' + stage.id);
     for (const stop of stage.stops) {
       assert(Boolean(stop.query), day.date + ': parada sin destino ' + stop.title);
     }
