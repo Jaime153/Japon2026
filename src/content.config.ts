@@ -124,6 +124,7 @@ const mapStageSchema = z.object({
   mode: z.enum(['walk', 'transit', 'drive', 'mixed']),
   activityIds: z.array(z.string()).min(2),
   expandable: z.boolean().optional(),
+  closeLoop: z.boolean().optional(),
 });
 
 const daySchema = z.object({
