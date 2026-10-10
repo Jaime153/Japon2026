@@ -712,6 +712,55 @@
           "locationQuery": "Kappabashi Dougu Street Tokyo",
           "note": "Después de comer"
         }
+      ],
+      "mapStages": [
+        {
+          "id": "hotel-asakusa",
+          "title": "Hotel → Asakusa",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "sensoji"
+          ]
+        },
+        {
+          "id": "shichifukujin",
+          "title": "Shichifukujin · 9 templos",
+          "mode": "walk",
+          "expandable": true,
+          "activityIds": [
+            "sensoji",
+            "asakusa-shrine-shichifukujin",
+            "matsuchiyama-shoden",
+            "imado-shrine",
+            "hashiba-fudoin",
+            "ishihama-shrine",
+            "otori-shrine",
+            "yoshiwara-shrine",
+            "yasaki-inari"
+          ]
+        },
+        {
+          "id": "kappabashi",
+          "title": "Nakamise, comida y Kappabashi",
+          "mode": "walk",
+          "activityIds": [
+            "yasaki-inari",
+            "nakamise-return",
+            "tonkatsu-oribe-asakusa",
+            "kappabashi"
+          ]
+        },
+        {
+          "id": "skytree",
+          "title": "Skytree → hotel",
+          "mode": "transit",
+          "activityIds": [
+            "kappabashi",
+            "skytree",
+            "@hotel-end"
+          ]
+        }
       ]
     },
     {
