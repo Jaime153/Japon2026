@@ -444,11 +444,12 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
           ? [...stage.stops, stage.stops[0]] : stage.stops;
         const color = colors[stage.mode] || '#64748b';
         const fallbacks = [];
-        for (let i = 1; i < ordered.length; i++) {
-          const from = geo.get(ordered[i - 1].query), to = geo.get(ordered[i].query);
-          if (!from || !to) { skippedLinks++; continue; }
-          // En viajes de tren largos NO dibujar una falsa línea recta
-          // por todo Japón. La navegación real está en «Desde anterior».
+        // Si falla la ubicación de un templo intermedio, seguimos uniendo las
+        // paradas que SÍ se pudieron localizar. Nunca dejamos toda la ruta vacía.
+        const foundStops = ordered.filter(point => geo.has(point.query));
+        for (let i = 1; i < foundStops.length; i++) {
+          const from = geo.get(foundStops[i - 1].query), to = geo.get(foundStops[i].query);
+          // No inventar conexiones de transporte entre ciudades lejanas.
           if ((stage.mode === 'transit' || stage.mode === 'mixed') &&
               distanceKm(from, to) > 25) { skippedLinks++; continue; }
           const guide = leaflet.polyline([[from.lat, from.lon], [to.lat, to.lon]], {
