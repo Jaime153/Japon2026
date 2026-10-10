@@ -725,7 +725,7 @@
         },
         {
           "id": "shichifukujin",
-          "title": "Shichifukujin · 9 templos",
+          "title": "Shichifukujin · ruta circular de 9 templos",
           "mode": "walk",
           "expandable": true,
           "activityIds": [
@@ -738,14 +738,15 @@
             "otori-shrine",
             "yoshiwara-shrine",
             "yasaki-inari"
-          ]
+          ],
+          "closeLoop": true
         },
         {
           "id": "kappabashi",
           "title": "Nakamise, comida y Kappabashi",
           "mode": "walk",
           "activityIds": [
-            "yasaki-inari",
+            "sensoji",
             "nakamise-return",
             "tonkatsu-oribe-asakusa",
             "kappabashi"
