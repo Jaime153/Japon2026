@@ -45,7 +45,7 @@ if (nagoya) {
   assert(nagoya.stages.length === 3, 'Hoy 10/10: tras cancelar la noche, solo deben quedar tres tramos');
   const trip = nagoya.stages.flatMap(s => s.stops.map(p => p.title));
   const yamato = trip.findIndex(s => s.includes('Kuroneko Yamato'));
-  const gn98 = trip.findIndex(s => s.includes('alojamiento GN98'));
+  const gn98 = trip.findIndex(s => s.includes('GN98'));
   assert(yamato >= 0 && gn98 > yamato, 'Hoy: Yamato debe ir antes del apartamento GN98');
   assert(nagoya.hotelStart.includes('SUI') && nagoya.hotelEnd.includes('GN98'),
     '10/10: hotel origen Tokio y destino Osaka diferentes');
