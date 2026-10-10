@@ -1747,6 +1747,25 @@
           "notes": "Después de recuperar las maletas, buscar un shinkansen hacia Shin-Osaka, idealmente entre las 16:30 y las 17:15. Todavía no hay billete confirmado para este tramo. Desde Shin-Osaka: metro Midosuji hasta Namba, cambio a Sennichimae hasta Sakuragawa, y a pie al GN98 Saiwaicho."
         },
         {
+          "id": "yamato-recoger-maletas-sakuragawa-1010",
+          "title": "Recoger maletas en Kuroneko Yamato · Sakuragawa",
+          "category": "transporte",
+          "status": "plan",
+          "time": "Antes de 21:00",
+          "locationQuery": "ヤマト運輸 浪速営業所 桜川 大阪市浪速区桜川3-8-59",
+          "address": "〒556-0022 大阪府大阪市浪速区桜川3-8-59 汐見橋ビル",
+          "notes": "Pasar por Kuroneko Yamato Naniwa-Sakuragawa, código de OFICINA 060151, a recoger las maletas enviadas desde Tokio, si el seguimiento confirma que ya están allí. Hoy sábado abre 08:00–21:00. Importante: el corte de envíos 19:00 no es el cierre de recogidas. Llevar número de seguimiento y documento de identidad; comprobar antes si se hizo el envío, porque en el planning antiguo seguía pendiente de confirmar. Oficina cerca del GN98.",
+          "plan": [
+            "Antes de pasar, mirar el seguimiento y comprobar que las maletas estén listas para recoger.",
+            "Ir a Yamato 浪速営業所（桜川）, 桜川3-8-59 (código de oficina 060151). Abre hasta las 21:00.",
+            "Presentar número de seguimiento y documento si lo piden. Después ir al apartamento GN98 Saiwaicho."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/prt/060151/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E6%B5%AA%E9%80%9F%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%A1%9C%E5%B7%9D%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%B5%AA%E9%80%9F%E5%8C%BA%E6%A1%9C%E5%B7%9D3-8-59"
+          }
+        },
+        {
           "id": "gn98-llegada-noche-1010",
           "title": "Llegar al GN98 y dejar las maletas",
           "category": "transporte",
@@ -1756,6 +1775,7 @@
           "address": "〒556-0021 大阪府大阪市浪速区幸町3-3-14",
           "notes": "Alojamiento GN98 Saiwaicho Osaka, 幸町3-3-14, Naniwa-ku, Osaka. Para navegar, usar el pin por coordenadas 34.668712, 135.485405 (captura de Maps), que coincide con el edificio de la reserva; el registro municipal sitúa el mismo inmueble a unos metros. Desde Shin-Osaka: metro Midosuji hasta Namba, cambio a Sennichimae hasta Sakuragawa. Desde la estación, ir andando al GN98. La hora de llegada sigue siendo aproximada.",
           "plan": [
+            "Si están disponibles, recoger primero las maletas en Yamato Sakuragawa (cierra 21:00).",
             "Desde Shin-Osaka, Midosuji a Namba y cambio a Sennichimae hasta Sakuragawa.",
             "Al salir del metro, pulsar «🧭 Cómo llegar»: abre la ruta al punto exacto por coordenadas, no por nombre del apartamento.",
             "Dirección japonesa: 〒556-0021 大阪府大阪市浪速区幸町3-3-14. Dejar las maletas y salir un rato por Osaka si apetece."
@@ -1865,6 +1885,11 @@
           "title": "Shin-Osaka Station · llegada shinkansen",
           "locationQuery": "Shin-Osaka Station",
           "note": "Buscar tren desde Nagoya ~16:30–17:15, sin billete aún."
+        },
+        {
+          "title": "Kuroneko Yamato Sakuragawa · recoger maletas",
+          "locationQuery": "ヤマト運輸 浪速営業所 桜川 大阪市浪速区桜川3-8-59",
+          "note": "Antes de 21:00. Código OFICINA 060151 (no MAPCODE); comprobar seguimiento antes de ir."
         },
         {
           "title": "Osaka · alojamiento GN98 Saiwaicho",
