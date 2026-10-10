@@ -112,6 +112,36 @@ if (asakusa) {
   }
 }
 
+// No es una función especial de Shichifukujin: toda ruta del itinerario
+// debe ofrecer navegación con TODOS los puntos del tramo.
+assert(mapSource.includes("function drawGoogleRoutes(route, stages)") &&
+  mapSource.includes("drawGoogleRoutes(route, stages);"),
+  'El mapa completo debe listar enlaces Google Maps para cada tramo');
+assert(mapSource.includes("stages.forEach(stage => {") &&
+  mapSource.includes("link.href = fullGoogleRoute(stage)"),
+  'Los enlaces de ruta completa deben generarse para CADA tramo de CADA día');
+assert(mapSource.includes("function wholeDayGoogleRoute(stages, route)") &&
+  mapSource.includes("action.textContent = '🧭 Abrir día completo en Google Maps"),
+  'Falta botón de día completo cuando el itinerario cabe en Maps');
+assert(mapSource.includes('id="day-google-routes"'),
+  'Falta la barra de navegación general situada encima del mapa');
+assert(mapSource.includes("stops.at(-1)?.query !== stop.query"),
+  'Al unir tramos, los puntos repetidos consecutivos no deben duplicarse');
+assert(mapSource.includes("if (stops.length < 2 || stops.length > 11) return null;"),
+  'Los días muy largos deben conservar sus tramos en lugar de cortar visitas');
+assert(mapSource.includes("stages.some(s => s.mode === 'mixed')"),
+  'No lanzar una ruta de día completo engañosa cuando hay transportes mixtos');
+for (const day of dates) {
+  const stageLinks = day.stages.filter(s => s.stops.some(p => p.query));
+  assert(stageLinks.length > 0,
+    day.date + ': ningún tramo tiene paradas para enviar a Google Maps');
+}
+// Comprobar una ruta distinta de la peregrinación: Fuji y traslado a Osaka
+assert(fuji?.stages.some(s => s.id === 'fuji' && s.stops.length >= 9),
+  'Google Maps también debe ofrecer la ruta de aparcamientos del Fuji');
+assert(nagoya?.stages.some(s => s.id === 'nagoya' && s.stops.length >= 2),
+  'Google Maps debe ofrecer el tramo de Nagoya, no solo Asakusa');
+
 if (failures.length) {
   console.error('Fallo en el nuevo mapa:\n- ' + failures.join('\n- '));
   process.exit(1);
