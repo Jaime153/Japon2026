@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { isoDate } from '../lib/segments';
 import { createMapDays } from '../lib/map-planner.mjs';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
