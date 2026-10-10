@@ -139,6 +139,8 @@ const candidateModuleSchema = z.object({
 const hotelSchema = z.object({
   name: z.string(),
   mapsUrl: z.string().url().optional(),
+  directionsUrl: z.string().url().optional(),
+  address: z.string().optional(),
   checkIn: z.string().optional(),
   checkOut: z.string().optional(),
 });
