@@ -13,9 +13,9 @@
   "days": [
     {
       "date": "2026-10-11",
-      "title": "Osaka · desde 07:45: Namba Yasaka, Shinsekai y Dōtonbori",
+      "title": "Osaka · 07:45: Namba, Shinsekai y Dōtonbori",
       "status": "plan",
-      "note": "Salimos del GN98 a las 07:45. Sobre las 08:10 llegamos a Namba Yasaka para hacer fotos de la cabeza de león antes de que se llene; el goshuin empieza a las 09:00. Kuromon a media mañana (algunos puestos cierran los domingos). Después Shinsekai y la torre Tsūtenkaku POR FUERA, sin subir ni comprar entradas. Comemos kushikatsu y dejamos Dōtonbori/Glico para la tarde-noche. Si sobra tiempo, Den Den Town es opcional; Sumiyoshi también.",
+      "note": "Salir del GN98 a las 07:45. Desayunar por Namba 08:10–08:35 y entrar a Namba Yasaka sobre las 08:45: 15–20 minutos de fotos y goshuin desde las 09:00, terminando sobre 09:10–09:15. No perder dos horas esperando en el santuario. Después Kuromon, Shinsekai con Tsūtenkaku solo por fuera, kushikatsu y Dōtonbori para ver los neones. RECORDATORIO: comprar 4 entradas de Umeda Sky para el lunes 12 (enlace en el planning, compra todavía pendiente).",
       "activities": [
         {
           "id": "salida-gn98-0745-1011",
@@ -24,10 +24,23 @@
           "status": "plan",
           "time": "07:45",
           "locationQuery": "34.668712,135.485405",
-          "notes": "Hemos quedado en salir del GN98 a las 07:45. Desayunar algo antes o cogerlo por el camino. El objetivo es aprovechar bien el día sin tener que correr.",
+          "notes": "Salir del GN98 a las 07:45. No hay que llegar una hora antes al santuario: primero desayunamos por Namba y después entramos a Namba Yasaka justo antes del goshuin de las 09:00.",
           "plan": [
-            "Salir sobre las 07:45 con agua y algo de desayuno.",
-            "Consultar la ruta del mapa del día antes de salir."
+            "07:45: salir del GN98 hacia Namba.",
+            "08:10–08:35: desayuno rápido o konbini por Namba.",
+            "08:45: entrar a Namba Yasaka, fotos y goshuin a las 09:00. Salir sobre las 09:10–09:15."
+          ]
+        },
+        {
+          "id": "desayuno-namba-1011",
+          "title": "Desayunar por Namba antes del templo",
+          "category": "comida",
+          "status": "plan",
+          "time": "~08:10–08:35",
+          "notes": "Desayunamos en un konbini o cafetería que ya esté abierta por Namba. No merece la pena quedarnos esperando una hora dentro de Namba Yasaka: iremos hacia las 08:45 para hacer fotos y recoger el goshuin cuando abra la atención a las 09:00.",
+          "plan": [
+            "Desayuno rápido de camino a Namba Yasaka.",
+            "Ir al santuario a las 08:45; no hace falta ocupar allí toda la mañana."
           ]
         },
         {
@@ -37,11 +50,11 @@
           "status": "plan",
           "locationQuery": "Namba Yasaka Jinja",
           "plan": [
-            "Llegar sobre las 08:10 y visitar el recinto; hacer fotos antes de que haya tanta gente.",
-            "A las 09:00 ir a por el goshuin. Si hay cola, dejar un margen.",
-            "Salir hacia Kuromon sobre las 09:15–09:30."
+            "08:45: entrar al santuario y hacer fotos de la cabeza de león.",
+            "09:00: solicitar el goshuin, siempre que estén atendiendo.",
+            "Salir hacia Kuromon sobre 09:10–09:15. Si hay mucha cola, decidir si compensa esperar."
           ],
-          "time": "~08:10–09:15",
+          "time": "~08:45–09:15",
           "transit": {
             "from": "Sumiyoshi Taisha",
             "summary": "Nankai Main Line Sumiyoshitaisha → Namba; desde Nankai Namba caminar a Namba Yasaka Jinja.",
@@ -50,16 +63,16 @@
           "goshuin": true,
           "description": "Namba Yasaka Jinja es un santuario sintoísta de Osaka dedicado principalmente a Susanoo-no-Mikoto, el kami vinculado a tormentas, protección y relatos de victoria frente al mal. No se conoce con certeza la fecha de su fundación y sus tradiciones están ligadas al antiguo culto de Gion. Lo más reconocible es una gigantesca cabeza de león de unos 12 metros, el Ema-den, cuya boca abierta se interpreta popularmente como capaz de engullir la mala suerte y atraer oportunidades. La estructura es moderna, de la década de 1970: aunque parezca un antiguo monumento, no es medieval. Fíjate en los enormes dientes y en el espacio dedicado a ofrendas y deseos.",
           "priority": "must",
-          "notes": "Llegamos temprano para hacer fotos del gran león sin tanta gente. El recinto abre a las 06:00, pero para el goshuin esperamos a que empiecen a atender a las 09:00. El santuario es la cabeza de LEÓN, no de dragón."
+          "notes": "Visita corta: 15–20 minutos de fotos a la cabeza de león y el recinto. El goshuin se atiende a partir de las 09:00 según el recorrido de Osaka Metro. Recogerlo al abrir y salir sobre 09:10–09:15, según cola. No vamos a estar una o dos horas en el templo."
         },
         {
           "id": "kuromon-market-1011",
           "title": "Kuromon Ichiba · mercado y picoteo",
           "category": "comida",
           "status": "plan",
-          "time": "~09:45–10:45",
+          "time": "~09:40–10:30",
           "locationQuery": "Kuromon Ichiba Market Osaka",
-          "notes": "Mercado para pasear y picar algo. La mayoría de puestos turísticos empiezan sobre las 09:00, pero es domingo y puede haber puestos cerrados. Si no hay mucho ambiente, hacemos una visita más corta y seguimos.",
+          "notes": "Después de Namba Yasaka, acercarnos a Kuromon Ichiba. Hay puestos que abren sobre las 09:00; en domingo pueden cerrar algunos. Estar unos 45–50 minutos y seguir hacia Nipponbashi/Shinsekai si ya hemos visto suficiente.",
           "plan": [
             "Pasear por el mercado y comprar algo si apetece.",
             "No quedarnos demasiado si muchas tiendas están cerradas: es domingo.",
@@ -77,7 +90,7 @@
             "Hacer fotos de las calles y carteles.",
             "Buscar un sitio de kushikatsu al terminar el paseo."
           ],
-          "time": "~11:30–12:30",
+          "time": "~11:15–12:15",
           "transit": {
             "from": "Namba Yasaka Jinja",
             "summary": "Caminar a Daikokucho (M21) → Midosuji Line una parada hasta Dobutsuen-mae (M22); salir hacia Shinsekai.",
@@ -91,7 +104,7 @@
           "title": "Tsūtenkaku · verla por fuera (sin subir)",
           "category": "otro",
           "status": "plan",
-          "time": "~12:00",
+          "time": "~11:45",
           "locationQuery": "Tsutenkaku Tower Osaka",
           "priority": "must",
           "notes": "No vamos a subir al mirador de Tsūtenkaku. Solo queremos verla desde Shinsekai, pasear por el barrio y sacar fotos de la torre. No comprar entradas ni reservar hora.",
@@ -105,7 +118,7 @@
           "title": "Comer kushikatsu en Shinsekai",
           "category": "comida",
           "status": "plan",
-          "time": "~12:30–13:30",
+          "time": "~12:15–13:15",
           "locationQuery": "Shinsekai Osaka kushikatsu restaurants",
           "notes": "Comer kushikatsu por Shinsekai después de pasear. Sin reservar local ni ir con prisas.",
           "plan": [
@@ -190,6 +203,25 @@
             "Opcional entre Shinsekai y Dōtonbori, solo si hay ganas de tiendas.",
             "Si no interesa, dar más tiempo a Namba y al paseo de la tarde."
           ]
+        },
+        {
+          "id": "comprar-entradas-umeda-sky-1012",
+          "title": "Comprar entradas Umeda Sky para el lunes",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "time": "Antes del lunes",
+          "notes": "PENDIENTE. Comprar 4 entradas de adulto para el lunes 12 de octubre en la web oficial (redirige a Asoview). Precio oficial 2.000 ¥ por adulto, total 8.000 ¥. No están compradas ni reservadas. El objetivo es estar en el mirador hacia las 16:30 para ver el atardecer de las 17:28. Si el ticket ofrecido pide una hora, elegir una que permita llegar antes del atardecer. También hay taquilla presencial en la planta 39.",
+          "plan": [
+            "Abrir «Reservar» y seleccionar fecha 12/10/2026.",
+            "Elegir 4 adultos y leer las condiciones del billete antes de pagar.",
+            "Guardar los códigos/QR cuando confirméis la compra. Hasta entonces queda pendiente."
+          ],
+          "links": {
+            "officialWebsite": "https://www.skybldg.co.jp/observatory/information/",
+            "reservation": "https://www.asoview.com/channel/tickets/J1uJNuIbLa/"
+          },
+          "approximatePrice": "8.000 ¥ total por 4 adultos"
         }
       ],
       "mapStages": [
@@ -310,9 +342,10 @@
           "status": "plan",
           "locationQuery": "Umeda Sky Building",
           "plan": [
-            "Pasar la tarde por Umeda y subir al observatorio con tiempo.",
-            "Ver las vistas al atardecer y esperar un poco a que se ilumine Osaka.",
-            "Cenar por Umeda o volver al GN98 cuando nos apetezca."
+            "ANTES DE LA VISITA: comprar 4 entradas de adulto para el 12/10 desde el botón de reserva de esta ficha (o comprobar taquilla).",
+            "Al llegar al edificio, buscar la entrada específica del observatorio en la planta 3 y subir para validar las entradas en la planta 39.",
+            "Intentar entrar sobre las 16:15–16:30 para estar arriba antes del atardecer de las 17:28.",
+            "Quedarnos a ver las luces de Osaka y bajar sin necesidad de ir con prisas."
           ],
           "time": "~16:30–18:00",
           "transit": {
@@ -321,7 +354,12 @@
             "approximateDuration": "25–35 min"
           },
           "priority": "must",
-          "notes": "Subir al mirador del Umeda Sky Building para ver Osaka de día y al atardecer; el 12/10 el sol se pone aproximadamente a las 17:27. Intentar estar arriba antes, con margen para colas por el festivo."
+          "notes": "ENTRADAS POR COMPRAR: elegir el lunes 12/10/2026 para 4 adultos en la venta web enlazada desde la web oficial de Umeda Sky (Asoview). Total de referencia 8.000 ¥. No consta ninguna compra todavía. La web oficial permite comprar anticipadamente para una fecha concreta o en la taquilla del día (planta 39); comprobar si la modalidad elegida exige hora o permite entrar durante el día. Llegar al acceso sobre 16:15–16:30 para intentar estar arriba antes de la puesta del sol a las 17:28. El lunes 12 es festivo, puede haber cola.",
+          "links": {
+            "officialWebsite": "https://www.skybldg.co.jp/observatory/information/",
+            "reservation": "https://www.asoview.com/channel/tickets/J1uJNuIbLa/"
+          },
+          "approximatePrice": "2.000 ¥/adulto · 8.000 ¥ los 4"
         },
         {
           "id": "umeda-dinner-1012",
@@ -337,7 +375,7 @@
           ]
         }
       ],
-      "note": "Salimos del GN98 a las 07:45. Sobre las 08:25 damos una vuelta por el parque del Castillo de Osaka y entramos al museo cuando abra a las 09:00. Después pasamos a Umeda para comer y pasear sin prisas. Umeda Sky Building hacia las 16:30 para el atardecer de las 17:27. Es el segundo día completo en Osaka antes de ir a Kioto el martes 13.",
+      "note": "Salir del GN98 a las 07:45, fotos del parque de Osaka Castle desde las 08:25 y entrada al museo cuando abra a las 09:00. Después ir a Umeda para comer y pasear. Umeda Sky al atardecer: entradas por comprar para 4 adultos, enlace oficial en la ficha. El sol se pone a las 17:28; objetivo llegar al observatorio sobre las 16:15–16:30. Lunes 12 festivo en Japón: dejar margen para colas.",
       "mapStages": [
         {
           "id": "osaka-castle",
