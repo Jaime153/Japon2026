@@ -1703,15 +1703,16 @@
           "category": "transporte",
           "status": "plan",
           "time": "~18:30–19:30",
-          "locationQuery": "GN98 Saiwaicho 3-3-14 Saiwaicho Osaka",
-          "address": "3-3-14 Saiwaicho, Naniwa-ku, Osaka",
-          "notes": "Si todo va bien, podemos llegar al alojamiento sobre las 18:30–19:30, aunque depende del tren de Nagoya y del metro. Dejamos las maletas y, si estamos bien, salimos a dar una vuelta.",
+          "locationQuery": "34.668712,135.485405",
+          "address": "〒556-0021 大阪府大阪市浪速区幸町3-3-14",
+          "notes": "Alojamiento GN98 Saiwaicho Osaka, 幸町3-3-14, Naniwa-ku, Osaka. Para navegar, usar el pin por coordenadas 34.668712, 135.485405 (captura de Maps), que coincide con el edificio de la reserva; el registro municipal sitúa el mismo inmueble a unos metros. Desde Shin-Osaka: metro Midosuji hasta Namba, cambio a Sennichimae hasta Sakuragawa. Desde la estación, ir andando al GN98. La hora de llegada sigue siendo aproximada.",
           "plan": [
-            "Llegar al GN98 Saiwaicho y dejar las maletas.",
-            "Descansar un poco y salir hacia Dōtonbori si apetece."
+            "Desde Shin-Osaka, Midosuji a Namba y cambio a Sennichimae hasta Sakuragawa.",
+            "Al salir del metro, pulsar «🧭 Cómo llegar»: abre la ruta al punto exacto por coordenadas, no por nombre del apartamento.",
+            "Dirección japonesa: 〒556-0021 大阪府大阪市浪速区幸町3-3-14. Dejar las maletas y salir un rato por Osaka si apetece."
           ],
           "links": {
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=GN98%20Saiwaicho%203-3-14%20Osaka"
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=34.668712%2C135.485405"
           }
         },
         {
@@ -1818,8 +1819,8 @@
         },
         {
           "title": "Osaka · alojamiento GN98 Saiwaicho",
-          "locationQuery": "GN98 Saiwaicho 3-3-14 Osaka",
-          "note": "Llegada orientativa al GN98 ~18:30–19:30."
+          "locationQuery": "34.668712,135.485405",
+          "note": "GN98 Saiwaicho: 〒556-0021 大阪府大阪市浪速区幸町3-3-14. Pin contrastado 34.668712,135.485405; abrir Google Maps del propio punto."
         },
         {
           "title": "Dōtonbori · paseo y cena",
