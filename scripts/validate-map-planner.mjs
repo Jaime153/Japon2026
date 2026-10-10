@@ -83,9 +83,20 @@ if (osakaSegment) {
   const getActivity = (day, id) => day?.activities.find(a => a.id === id);
   assert(getActivity(sundayDay, 'salida-gn98-0745-1011')?.time === '07:45',
     'Domingo 11: salida del alojamiento debe figurar a las 07:45');
-  assert(getActivity(sundayDay, 'namba-yasaka')?.time?.startsWith('~08:10') &&
+  assert(getActivity(sundayDay, 'namba-yasaka')?.time === '~08:45–09:15' &&
     getActivity(sundayDay, 'namba-yasaka')?.notes?.includes('09:00'),
-    'Namba Yasaka: llegar antes para fotos y esperar al goshuin de las 09:00');
+    'Namba Yasaka: 30 minutos en el santuario, con goshuin desde las 09:00');
+  assert(getActivity(sundayDay, 'desayuno-namba-1011')?.time === '~08:10–08:35',
+    'Antes del santuario, desayuno por Namba en lugar de esperar 1 hora');
+  const buySky = getActivity(sundayDay, 'comprar-entradas-umeda-sky-1012');
+  const sky = getActivity(mondayDay, 'umeda-sky');
+  assert(buySky?.status === 'plan' && buySky?.links?.reservation?.includes('asoview.com'),
+    'Las entradas Umeda Sky deben figurar pendientes y con compra directa');
+  assert(sky?.links?.reservation?.includes('asoview.com') &&
+    sky?.notes?.includes('No consta ninguna compra'),
+    'Mirador Umeda: botón de reserva oficial sin inventar entradas compradas');
+  assert(sky?.notes?.includes('17:28'),
+    'Atardecer Umeda del 12/10 es a las 17:28 y debe figurar en el planning');
   const tower = getActivity(sundayDay, 'tsutenkaku-1011');
   assert(tower?.notes?.includes('No vamos a subir') && tower?.category !== 'mirador',
     'Tsutenkaku: se ve por fuera, no hay entradas ni subida');
