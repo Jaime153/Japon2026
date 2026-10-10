@@ -6,7 +6,9 @@
   "endDate": "2026-10-13",
   "hotel": {
     "name": "GN98 Saiwaicho",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=GN98%20Saiwaicho%20Osaka"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=34.668712%2C135.485405",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.668712%2C135.485405&travelmode=transit",
+    "address": "〒556-0021 大阪府大阪市浪速区幸町3-3-14"
   },
   "days": [
     {
