@@ -22,8 +22,10 @@ if (asakusa) {
   assert(asakusa.stages.length === 4, 'Asakusa: deben ser cuatro tramos');
   assert(asakusa.stages[0].stops[0].kind === 'hotel', 'Asakusa: empieza en hotel Tokio');
   const shichi = asakusa.stages.find(s => s.id === 'shichifukujin');
-  assert(shichi?.stops.length === 9 && shichi?.expandable && shichi?.mode === 'walk',
-    'Shichifukujin: deben estar los nueve templos a pie y desplegables');
+  assert(shichi?.stops.length === 9 && shichi?.expandable && shichi?.mode === 'walk' && shichi?.closeLoop,
+    'Shichifukujin: nueve templos, recorrido a pie desplegable y cierre del circuito');
+  assert(asakusa.stages.find(s => s.id === 'kappabashi')?.stops[0].id === 'sensoji',
+    'Tras el circuito, la visita Nakamise debe continuar desde Sensō-ji');
   const dayStops = asakusa.stages.flatMap(s => s.stops.map(p => p.id));
   assert(dayStops.includes('tonkatsu-oribe-asakusa') && dayStops.includes('kappabashi')
     && dayStops.includes('skytree'), 'Asakusa: falta comida, Kappabashi o Skytree');
@@ -68,6 +70,23 @@ for (const day of dates) {
     }
   }
 }
+// Regresión real reportada desde Android: plegar Shichifukujin ocultaba
+// las paradas intermedias del mapa y suprimía incluso la línea completa.
+const mapSource = readFileSync('src/pages/mapas.astro', 'utf8');
+assert(mapSource.includes('for (const stage of stages) for (const point of stage.stops)'),
+  'El mapa debe localizar las paradas reales de cada tramo, no solo las mostradas en la lista');
+assert(!mapSource.includes('stage.expandable && shown(stage).length < stage.stops.length)) continue'),
+  'Plegar la lista NO debe impedir trazar las líneas del mapa');
+assert(mapSource.includes('[...stage.stops, stage.stops[0]]'),
+  'Los circuitos como Shichifukujin deben cerrar la ruta en el punto de salida');
+assert(mapSource.includes("dashArray: '7 9'") &&
+  mapSource.includes("Conexión orientativa · no sigue las calles"),
+  'Si falla el motor de rutas, debe quedar visible la unión orientativa, a trazos');
+assert(mapSource.includes('fallbacks.forEach(line => { line.remove(); provisionalLines--; })'),
+  'El recorrido real debe reemplazar las conexiones provisionales cuando se pueda');
+assert(mapSource.includes("distanceKm(from, to) > 25"),
+  'No dibujar falsas líneas de tren entre ciudades');
+
 if (failures.length) {
   console.error('Fallo en el nuevo mapa:\n- ' + failures.join('\n- '));
   process.exit(1);

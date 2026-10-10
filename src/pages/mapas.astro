@@ -113,8 +113,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
     <div id="trip-route-map" class="mt-3 h-[45vh] min-h-[330px] overflow-hidden rounded-2xl bg-slate-100"></div>
 
     <p class="mt-3 text-xs leading-relaxed text-slate-500">
-      Los puntos del día están ordenados. El recorrido a pie o en coche solo se dibuja en tramos de ese tipo;
-      para metro, tren y desplazamientos largos tienes el enlace entre paradas. No se inventan líneas rectas.
+      Las líneas continuas siguen las calles. Las discontinuas solo unen paradas por orden cuando no se puede calcular el camino; no son indicaciones para navegar. Los trenes largos se consultan con los botones de Google Maps.
     </p>
     <div id="route-stage-list" class="mt-4 grid gap-3"></div>
   </section>
@@ -311,7 +310,8 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
         html += '<button type="button" data-expand="' + esc(stage.id) +
           '" class="mt-2 rounded-lg bg-amber-100 px-3 py-2 text-xs font-bold text-amber-900">' +
           (isOpen ? '− Resumir recorrido' : '+ Ver las ' + stage.stops.length + ' paradas') + '</button>' +
-          (!isOpen ? '<p class="mt-2 text-xs text-amber-700">Resumen: solo inicio y final. Abre el detalle para dibujar todo el recorrido.</p>' : '');
+          (!isOpen ? '<p class="mt-2 text-xs text-amber-700">Lista resumida. En el mapa se ven las ' + stage.stops.length + ' paradas y su recorrido.</p>' : '');
+      if (stage.closeLoop) html += '<p class="mt-2 text-xs font-medium text-slate-600">Ruta circular: se vuelve al primer punto del recorrido.</p>';
       html += '<ol class="mt-3 grid gap-2">';
       visible.forEach((stop, i) => {
         const prev = visible[i - 1], dir = prev ? directions(prev.query, stop.query, stage.mode) : '';
@@ -396,10 +396,18 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       const leaflet = window.L, layer = leaflet.layerGroup().addTo(map);
       routeLayer = layer;
       const geo = new Map(), unique = [];
-      for (const stage of stages) for (const point of shown(stage))
+
+      // La lista puede estar plegada, pero el mapa SIEMPRE necesita todas las
+      // paradas del tramo para pintar la ruta y sus puntos intermedios.
+      // No usar shown(stage) aquí: solo sirve para acortar la lista de texto.
+      for (const stage of stages) for (const point of stage.stops) {
         if (point.query && !unique.some(x => x.query === point.query)) unique.push(point);
-      if (!unique.length) { statusEl.textContent = 'No hay ubicaciones en este tramo.'; return; }
-      statusEl.textContent = 'Buscando lugares (0/' + unique.length + ')…';
+      }
+      if (!unique.length) {
+        statusEl.textContent = 'No hay ubicaciones en este tramo.';
+        return;
+      }
+      statusEl.textContent = 'Localizando las ' + unique.length + ' paradas de la ruta…';
       for (let i = 0; i < unique.length; i++) {
         const stop = unique[i];
         const coords = await geocode(stop.query);
@@ -411,43 +419,84 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
             html: '<span style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid white;border-radius:100%;background:#0f172a;color:white;font-weight:bold;font-size:12px;box-shadow:0 1px 5px #64748b">' + (i + 1) + '</span>',
             iconSize: [28, 28], iconAnchor: [14, 14]
           });
-          leaflet.marker([coords.lat, coords.lon], { icon: pin }).bindPopup('<strong>' +
-            esc(stop.title) + '</strong><p>' + esc(stop.note || '') + '</p>').addTo(layer);
+          leaflet.marker([coords.lat, coords.lon], { icon: pin })
+            .bindPopup('<strong>' + esc(stop.title) + '</strong><p>' + esc(stop.note || '') + '</p>')
+            .addTo(layer);
         }
-        statusEl.textContent = 'Buscando lugares (' + (i + 1) + '/' + unique.length + ')…';
+        statusEl.textContent = geo.size + '/' + unique.length + ' lugares localizados…';
       }
-      let traced = 0;
+
+      // Trazamos primero la unión entre puntos. Así no desaparece la ruta si el
+      // proveedor de routing no responde o una calle no está disponible.
+      // Las líneas de respaldo son discontinuas: indican ORDEN, no navegación.
+      const colors = { walk: '#2563eb', drive: '#047857', transit: '#64748b', mixed: '#a16207' };
+      const distanceKm = (a, b) => {
+        const radians = Math.PI / 180;
+        const dLat = (b.lat - a.lat) * radians, dLon = (b.lon - a.lon) * radians;
+        const h = Math.sin(dLat / 2) ** 2 +
+          Math.cos(a.lat * radians) * Math.cos(b.lat * radians) * Math.sin(dLon / 2) ** 2;
+        return 12742 * Math.asin(Math.min(1, Math.sqrt(h)));
+      };
+      let exactRoutes = 0, provisionalLines = 0, skippedLinks = 0, failedPoints = unique.length - geo.size;
       for (const stage of stages) {
-        // Con la subruta cerrada solo mostramos sus extremos, sin trazar un atajo falso.
-        if (!['walk', 'drive'].includes(stage.mode) ||
-            (stage.expandable && shown(stage).length < stage.stops.length)) continue;
-        const route = shown(stage);
-        if (route.length < 2 || route.length > 18 || route.some(x => !geo.has(x.query))) continue;
-        const points = route.map(stop => {
-          const g = geo.get(stop.query); return g.lon + ',' + g.lat;
+        // La ruta circular vuelve al inicio al terminar la última parada.
+        const ordered = stage.closeLoop && stage.stops.length > 2
+          ? [...stage.stops, stage.stops[0]] : stage.stops;
+        const color = colors[stage.mode] || '#64748b';
+        const fallbacks = [];
+        // Si falla la ubicación de un templo intermedio, seguimos uniendo las
+        // paradas que SÍ se pudieron localizar. Nunca dejamos toda la ruta vacía.
+        const foundStops = ordered.filter(point => geo.has(point.query));
+        for (let i = 1; i < foundStops.length; i++) {
+          const from = geo.get(foundStops[i - 1].query), to = geo.get(foundStops[i].query);
+          // No inventar conexiones de transporte entre ciudades lejanas.
+          if ((stage.mode === 'transit' || stage.mode === 'mixed') &&
+              distanceKm(from, to) > 25) { skippedLinks++; continue; }
+          const guide = leaflet.polyline([[from.lat, from.lon], [to.lat, to.lon]], {
+            color, weight: 4, opacity: 0.75, dashArray: '7 9', lineCap: 'round'
+          }).bindTooltip('Conexión orientativa · no sigue las calles').addTo(layer);
+          fallbacks.push(guide);
+          provisionalLines++;
+        }
+        if (!['walk', 'drive'].includes(stage.mode)) continue;
+        if (ordered.length < 2 || ordered.length > 18 ||
+            ordered.some(point => !geo.has(point.query))) continue;
+
+        // Si el proveedor ofrece una ruta por calles, reemplazamos las
+        // líneas orientativas por el trazado real; si falla, se mantienen.
+        const points = ordered.map(stop => {
+          const g = geo.get(stop.query);
+          return g.lon + ',' + g.lat;
         }).join(';');
         const profile = stage.mode === 'walk' ? 'routed-foot' : 'routed-car';
         const url = 'https://routing.openstreetmap.de/' + profile +
           '/route/v1/driving/' + points + '?overview=full&geometries=geojson&steps=false';
         try {
-          const res = await fetch(url);
+          const response = await fetch(url);
           if (token !== sequence) return;
-          if (!res.ok) continue;
-          const data = await res.json();
-          if (data?.routes?.[0]?.geometry) {
-            leaflet.geoJSON(data.routes[0].geometry, { style: { weight: 4, opacity: .85 } }).addTo(layer);
-            traced++;
+          if (!response.ok) continue;
+          const payload = await response.json();
+          if (payload?.code === 'Ok' && payload?.routes?.[0]?.geometry) {
+            fallbacks.forEach(line => { line.remove(); provisionalLines--; });
+            leaflet.geoJSON(payload.routes[0].geometry, {
+              style: { color, weight: 5, opacity: .95 }
+            }).bindTooltip('Recorrido por calles').addTo(layer);
+            exactRoutes++;
           }
-        } catch {}
+        } catch {
+          // Sin red, API caída o CORS: conservar líneas de respaldo.
+        }
       }
       if (token !== sequence) return;
       if (geo.size) {
         const bounds = leaflet.latLngBounds([...geo.values()].map(c => [c.lat, c.lon]));
         map.fitBounds(bounds.pad(.17), { maxZoom: 14 });
       }
-      statusEl.textContent = geo.size + '/' + unique.length + ' lugares localizados. ' +
-        (traced ? traced + ' tramo(s) trazados por calles. ' : '') +
-        'El tren y metro se abren entre paradas; no dibujamos líneas ficticias.';
+      statusEl.textContent = geo.size + '/' + unique.length + ' lugares. ' +
+        (exactRoutes ? exactRoutes + ' ruta(s) por calles. ' : '') +
+        (provisionalLines ? provisionalLines + ' unión(es) orientativa(s) a trazos. ' : '') +
+        (skippedLinks || failedPoints ? 'Algunas conexiones no se han podido localizar. ' : '') +
+        'Línea continua = calles; línea discontinua = orden de visitas, no navegación.';
     }
 
     function render() {

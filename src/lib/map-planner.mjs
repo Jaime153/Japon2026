@@ -39,8 +39,8 @@ const routeStop = (s, index) => ({
 function uniqueConsecutive(stops) {
   return stops.filter((s, i) => s?.query && (!i || stops[i - 1]?.query !== s.query));
 }
-const stage = (id, label, mode, stops, expandable = false) =>
-  ({ id, label, mode, stops: uniqueConsecutive(stops), expandable });
+const stage = (id, label, mode, stops, expandable = false, closeLoop = false) =>
+  ({ id, label, mode, stops: uniqueConsecutive(stops), expandable, closeLoop });
 
 function clockPart(a, fallback) {
   const match = String(a.time || '').match(/(?:^|[^\d])(\d{1,2}):(\d\d)/);
@@ -81,7 +81,7 @@ function detailedStages(day, start, end) {
     return activityStop(a);
   };
   return day.mapStages.map(def => stage(def.id, def.title, def.mode,
-    def.activityIds.map(resolve).filter(Boolean), Boolean(def.expandable)));
+    def.activityIds.map(resolve).filter(Boolean), Boolean(def.expandable), Boolean(def.closeLoop)));
 }
 function fujiStages(day, start, end) {
   const stops = day.routeStops.map(routeStop);
