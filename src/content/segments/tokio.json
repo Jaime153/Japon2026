@@ -1540,9 +1540,9 @@
     },
     {
       "date": "2026-10-10",
-      "title": "Nagoya: castillo y misokatsu → Osaka por la noche",
+      "title": "Kodama 815 → Nagoya (12:07) → Osaka",
       "status": "confirmado",
-      "note": "Salimos del hotel de Tokio a las 8:30. La idea es llegar a Nagoya, dejar las maletas, ver el castillo y comer misokatsu junto a la entrada. Si hay mucha cola, tenemos dos sitios cerca de la estación. Por la tarde seguimos a Osaka, dejamos las maletas en GN98 y salimos por Dōtonbori. Las horas de los trenes son orientativas hasta que cojamos los billetes.",
+      "note": "Ya vamos en el Kodama 815, en asientos sin reserva. A las 10:50 estábamos en Shizuoka y Google Maps marca llegada a Nagoya a las 12:07. Al llegar: dejar maletas, ir al castillo, comer misokatsu en Yabaton junto a la puerta principal, recoger equipaje y continuar a Shin-Osaka. Por la noche, Dōtonbori si tenemos ganas. Las horas a partir de Nagoya son aproximadas; todavía no tenemos tren elegido a Osaka.",
       "activities": [
         {
           "id": "salida-hotel-tokio-0830-1010",
@@ -1551,37 +1551,35 @@
           "status": "confirmado",
           "time": "08:30",
           "locationQuery": "Hotel SUI Ginza Kyobashi by ABEST",
-          "notes": "Hemos quedado en salir del hotel a las 8:30. El horario del tren todavía no está fijado.",
+          "notes": "Habíamos quedado en salir del hotel de Tokio a las 8:30. Ya vamos de camino a Nagoya en el Kodama 815; no tenemos confirmada la hora exacta a la que salimos del hotel.",
           "plan": [
-            "Salir a las 8:30 del Hotel SUI Ginza Kyobashi con las maletas.",
-            "Ir andando hasta Tokyo Station, por el lado de Yaesu (unos 10 min).",
-            "Buscar el shinkansen hacia Nagoya. Si podemos, uno entre las 9:00 y las 9:30."
+            "Hora acordada para dejar el Hotel SUI Ginza Kyobashi: 08:30.",
+            "Ya estamos en el Kodama 815 rumbo a Nagoya."
           ]
         },
         {
           "id": "shinkansen-nagoya",
-          "title": "Shinkansen Tokio → Nagoya",
+          "title": "Kodama 815 · hacia Nagoya (sin reserva)",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "locationQuery": "Nagoya Station",
           "plan": [
-            "Entrar a los andenes del Tōkaidō Shinkansen y coger un Nozomi o Hikari que pare en Nagoya.",
-            "Comprobar la hora en el billete; deberíamos llegar sobre las 10:45–11:20 si salimos en la franja prevista.",
-            "Al llegar, buscar dónde dejar las maletas antes de ir al castillo."
+            "Ya estamos en el Kodama 815, en asientos Non-Reserved.",
+            "A las 10:50 paramos en Shizuoka. Google Maps marca Nagoya a las 12:07.",
+            "Al llegar, lo primero es buscar consigna para las maletas y después ir al castillo."
           ],
           "transit": {
-            "from": "Hotel SUI Ginza Kyobashi · Tokyo Station",
-            "summary": "Hotel 08:30 → caminar a Tokyo Station (Yaesu) → Tōkaidō Shinkansen Nozomi/Hikari → Nagoya. Horario exacto pendiente de billetes.",
-            "approximateDuration": "~2 h 15–2 h 45 con margen",
+            "from": "Tokyo Station · Kodama 815",
+            "summary": "Tōkaidō Shinkansen Kodama 815 → Nagoya. En marcha; llegada prevista a las 12:07 según Google Maps.",
+            "approximateDuration": "Llegada 12:07",
             "steps": [
-              "Hotel 08:30 → Tokyo Station por Yaesu.",
-              "Comprar/validar billetes y comprobar andén de Nozomi/Hikari a Nagoya.",
-              "Aproximadamente 1 h 40 de tren, dependiendo del servicio.",
-              "Consigna en estación de Nagoya antes del castillo."
+              "Kodama 815, vagones Non-Reserved.",
+              "10:50: parada en Shizuoka.",
+              "12:07: llegada prevista a Nagoya."
             ]
           },
-          "notes": "Calcular unos 100 minutos de tren. La salida de 9:00–9:30 es una idea, no una reserva. Ojo con las maletas grandes: si las tres medidas suman más de 160 cm, hay que reservar espacio para equipaje.",
-          "time": "~09:00–09:30",
+          "notes": "Ya estamos subidos al Kodama 815, en los vagones sin reserva (Non-Reserved). A las 10:50 estábamos en Shizuoka. La captura de Google Maps muestra llegada prevista a Nagoya a las 12:07, no llegada confirmada todavía. Es un Kodama con varias paradas, no el Nozomi que habíamos calculado.",
+          "time": "12:07 llegada",
           "links": {
             "officialWebsite": "https://jr-central.co.jp/en/"
           }
@@ -1591,13 +1589,13 @@
           "title": "Dejar las maletas en Nagoya Station",
           "category": "transporte",
           "status": "plan",
-          "time": "~11:00–11:30",
+          "time": "~12:15–12:40",
           "locationQuery": "Nagoya Station coin lockers JR Central",
-          "notes": "Buscar coin lockers grandes en la estación. Si no hay hueco, probar la consigna de JR Nagoya Takashimaya (1.ª planta, anunciada de 10:00 a 20:00). Hacer una foto de dónde hemos dejado todo.",
+          "notes": "Al llegar sobre las 12:07, dejar las maletas en las taquillas de Nagoya Station. Si las grandes están llenas, mirar la consigna de JR Nagoya Takashimaya. Hacer una foto de la ubicación para recogerlas a la vuelta.",
           "plan": [
-            "Buscar los coin lockers de Nagoya Station.",
-            "Si no entra alguna maleta, preguntar en la consigna de Takashimaya.",
-            "Guardar el recibo o código y apuntar dónde están las taquillas; volvemos después de comer."
+            "Al salir del tren, buscar coin lockers para las maletas.",
+            "Si no caben, probar la consigna de JR Nagoya Takashimaya.",
+            "Guardar foto y localización de las taquillas. Después vamos al castillo."
           ],
           "links": {
             "officialWebsite": "https://www.nagoya-info.jp/useful/locker/",
@@ -1610,13 +1608,13 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "notes": "La torre principal está cerrada por dentro. Lo que sí podemos ver es el palacio Honmaru y el recinto del castillo. Entrada: 1.000 ¥. El palacio admite hasta las 16:00 y el recinto cierra las entradas a las 16:30. Después vamos a comer por la puerta principal.",
+          "notes": "Desde la estación, calcular unos 25–35 min en metro hasta el castillo. La torre principal sigue cerrada por dentro; sí podemos visitar el palacio Honmaru y el recinto. Entrada: 1.000 ¥. Con la llegada a Nagoya a las 12:07, intentar estar en el castillo sobre las 13:10 y salir a comer hacia las 14:30.",
           "locationQuery": "Nagoya Castle",
-          "time": "~12:00–13:45",
+          "time": "~13:10–14:30",
           "plan": [
-            "Ir al castillo desde la estación; metro Sakura-dori hasta Hisaya-odori y cambio a la Meijo hasta Nagoyajo.",
-            "Ver el palacio Honmaru y, si da tiempo, pasear por el resto del recinto (aprox. 1–1,5 h).",
-            "Salir por la puerta principal: justo allí está Kinshachi Yokocho, donde vamos a comer."
+            "Desde Nagoya Station, metro Sakura-dori hasta Hisaya-odori; cambiar a la Meijo hasta Nagoyajo.",
+            "Entrar al palacio Honmaru y dar una vuelta por el recinto si da tiempo (sobre 1 h–1 h 20).",
+            "Salir por la puerta principal hacia Yabaton Kinshachi Yokocho para comer."
           ],
           "transit": {
             "from": "Nagoya Station tras la consigna",
@@ -1640,7 +1638,7 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "notes": "El Yabaton de Kinshachi Yokocho, junto a la puerta principal del castillo. Abre de 10:30 a 17:30 y tiene mesas. Pedir el misokatsu con salsa de miso rojo; el waraji tonkatsu es la opción grande. Calculamos unos 1.600–2.300 ¥. Si hay una cola enorme, comemos en la estación.",
+          "notes": "Vamos a comer misokatsu en el Yabaton de Kinshachi Yokocho, al lado de la puerta principal del castillo. Abre hasta las 17:30. Objetivo comer sobre las 14:30–15:30. Si hay una cola muy larga, mejor volver a Nagoya Station y usar Yabaton ESCA o Kitchen Nagoya para no salir muy tarde hacia Osaka.",
           "locationQuery": "矢場とん 名古屋城 金シャチ横丁店 名古屋市中区三の丸1-2-5",
           "approximatePrice": "Aprox. 1.660–2.310 ¥ por menú (según plato)",
           "links": {
@@ -1648,11 +1646,11 @@
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E7%9F%A2%E5%A0%B4%E3%81%A8%E3%82%93%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%9F%8E%20%E9%87%91%E3%82%B7%E3%83%A3%E3%83%81%E6%A8%AA%E4%B8%81%E5%BA%97",
             "tabelog": "https://tabelog.com/aichi/A2301/A230103/23066965/"
           },
-          "time": "~13:45–14:45",
+          "time": "~14:30–15:30",
           "plan": [
-            "Salir del castillo por la puerta principal y entrar a Kinshachi Yokocho, zona Yoshinao.",
-            "Comer en Yabaton. Pedir waraji tonkatsu o misokatsu de lomo.",
-            "Si hay demasiada cola, seguir hacia Nagoya Station: tenemos Yabaton ESCA o Kitchen Nagoya."
+            "Salir del castillo por la puerta principal y entrar en Kinshachi Yokocho.",
+            "Comer en Yabaton: waraji tonkatsu o misokatsu de lomo.",
+            "Si hay demasiada cola, volver a la estación y comer allí en una de las alternativas."
           ],
           "transit": {
             "from": "Nagoya Castle · puerta principal (正門)",
@@ -1702,12 +1700,13 @@
           "title": "Volver a por las maletas",
           "category": "transporte",
           "status": "plan",
-          "time": "~15:15–15:45",
+          "time": "~16:00–16:30",
           "locationQuery": "Nagoya Station coin lockers",
-          "notes": "Antes de coger el tren a Osaka, pasar por la consigna donde las hemos dejado. Si comemos en la estación, ajustar el orden según dónde estén las taquillas.",
+          "notes": "Después de comer, volver a Nagoya Station y recoger las maletas. Calcular margen porque volvemos desde la zona del castillo.",
           "plan": [
-            "Volver a la taquilla o consigna de Nagoya Station.",
-            "Recoger todas las maletas y dirigirnos al shinkansen de Shin-Osaka."
+            "Volver a Nagoya Station.",
+            "Recoger las maletas de la consigna.",
+            "Buscar el siguiente shinkansen que nos venga bien hacia Shin-Osaka."
           ]
         },
         {
@@ -1716,11 +1715,11 @@
           "category": "transporte",
           "status": "plan",
           "locationQuery": "Shin-Osaka Station",
-          "time": "~16:00–16:45",
+          "time": "~16:30–17:15",
           "plan": [
-            "Coger el shinkansen de Nagoya a Shin-Osaka (unos 50–60 min).",
-            "Metro Midosuji hasta Namba; cambio a Sennichimae y bajarse en Sakuragawa.",
-            "Ir andando al alojamiento GN98 Saiwaicho, 3-3-14 Saiwaicho."
+            "Al recoger las maletas, comprobar salidas a Shin-Osaka; no tenemos una hora reservada.",
+            "Shinkansen Nagoya → Shin-Osaka (unos 50–60 min según tren).",
+            "Metro Midosuji → Namba, cambio a Sennichimae → Sakuragawa, y andando al GN98."
           ],
           "transit": {
             "from": "Nagoya Station",
@@ -1733,20 +1732,20 @@
               "Paseo a GN98 Saiwaicho."
             ]
           },
-          "notes": "Buscar un tren hacia las 16:00–16:45, según cómo vayamos de tiempo. El shinkansen llega a Shin-Osaka, no a Osaka Station. Desde allí, metro Midosuji a Namba, cambio a Sennichimae hasta Sakuragawa y a pie al GN98."
+          "notes": "Después de recuperar las maletas, buscar un shinkansen hacia Shin-Osaka, idealmente entre las 16:30 y las 17:15. Todavía no hay billete confirmado para este tramo. Desde Shin-Osaka: metro Midosuji hasta Namba, cambio a Sennichimae hasta Sakuragawa, y a pie al GN98 Saiwaicho."
         },
         {
           "id": "gn98-llegada-noche-1010",
           "title": "Llegar al GN98 y dejar las maletas",
           "category": "transporte",
           "status": "plan",
-          "time": "~18:00–19:00",
+          "time": "~18:30–19:30",
           "locationQuery": "GN98 Saiwaicho 3-3-14 Saiwaicho Osaka",
           "address": "3-3-14 Saiwaicho, Naniwa-ku, Osaka",
-          "notes": "Si todo va más o menos según lo previsto, llegaremos sobre las 18:00–19:00, aunque puede variar. Dejamos las maletas y salimos un rato por Osaka.",
+          "notes": "Si todo va bien, podemos llegar al alojamiento sobre las 18:30–19:30, aunque depende del tren de Nagoya y del metro. Dejamos las maletas y, si estamos bien, salimos a dar una vuelta.",
           "plan": [
-            "Hacer el check-in y dejar las cosas.",
-            "Descansar un poco si hace falta y salir hacia Dōtonbori; se puede ir andando en unos 20–30 min."
+            "Llegar al GN98 Saiwaicho y dejar las maletas.",
+            "Descansar un poco y salir hacia Dōtonbori si apetece."
           ],
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=GN98%20Saiwaicho%203-3-14%20Osaka"
@@ -1757,9 +1756,8 @@
           "title": "Opcional: paseo por Minatomachi River Place",
           "category": "mirador",
           "status": "opcional",
-          "time": "~19:15",
           "locationQuery": "Minatomachi River Place Osaka",
-          "notes": "Nos pilla de camino desde Sakuragawa a Dōtonbori. Podemos empezar por aquí, pasear junto al río y seguir hacia el centro si nos apetece.",
+          "notes": "Si tenemos tiempo, podemos pasar por Minatomachi River Place de camino a Dōtonbori. No hace falta hacerlo si llegamos tarde.",
           "plan": [
             "Pasear un rato por la zona del río.",
             "Seguir hacia Dōtonbori o volver al hotel si estamos cansados."
@@ -1774,13 +1772,13 @@
           "category": "barrio",
           "status": "plan",
           "priority": "must",
-          "time": "~19:30–21:00",
+          "time": "Desde ~20:00",
           "locationQuery": "Ebisubashi Bridge Glico Sign Dotonbori Osaka",
-          "notes": "Primera noche en Osaka. Después de dejar las maletas, podemos ir a ver el cartel de Glico y los neones y cenar por allí. Mañana también tenemos Dōtonbori, así que hoy no hace falta recorrerlo entero.",
+          "notes": "Con el Kodama llegando a Nagoya a las 12:07, seguramente llegaremos a Osaka algo más tarde de lo previsto. Si nos quedan ganas, vamos a Dōtonbori a ver el Glico, dar una vuelta y cenar. Mañana también lo tenemos en el planning.",
           "plan": [
-            "Ir andando hacia Dōtonbori pasando por la zona del río.",
-            "Hacer la foto del Glico Man y dar una vuelta por las calles iluminadas.",
-            "Cenar takoyaki, kushikatsu u okonomiyaki donde nos apetezca. Si estamos cansados, volvemos al hotel."
+            "Después del check-in, acercarnos a Dōtonbori y ver el Glico iluminado.",
+            "Cenar por la zona si tenemos hambre.",
+            "Si llegamos muy tarde, cenar cerca y dejar Dōtonbori para mañana."
           ],
           "links": {
             "officialWebsite": "https://www.osaka-info.jp/en/spot/dotonbori/",
@@ -1792,9 +1790,8 @@
           "title": "Opcional: Hozenji Yokocho",
           "category": "templo",
           "status": "opcional",
-          "time": "~20:30",
           "locationQuery": "Hozenji Yokocho Osaka",
-          "notes": "Callejón con faroles y restaurantes, muy cerca de Dōtonbori. Si nos apetece, pasamos a ver el pequeño templo Hōzen-ji y la estatua cubierta de musgo.",
+          "notes": "Si vamos con tiempo después de Dōtonbori, podemos pasar por Hozenji Yokocho. Si no, lo dejamos para otro día.",
           "description": "Hozenji Yokocho es un callejón pequeño de Namba, con faroles y restaurantes. Está al lado del templo budista Hōzen-ji, donde hay una estatua de Fudō Myōō completamente cubierta de musgo. La gente le echa agua como ofrenda, y de ahí viene el musgo. Está a pocos minutos de Dōtonbori, así que podemos acercarnos a verlo si nos apetece, sin hacer un desvío grande.",
           "plan": [
             "Acercarnos desde Dōtonbori y dar una vuelta por el callejón.",
@@ -1809,9 +1806,8 @@
           "title": "Opcional: Amerikamura",
           "category": "barrio",
           "status": "opcional",
-          "time": "Desde ~21:00",
           "locationQuery": "Amerikamura Triangle Park Osaka",
-          "notes": "Si todavía tenemos ganas, subir un rato a Amerikamura, por Triangle Park. Hay bares, música y ambiente por la noche. Si no, volvemos al hotel.",
+          "notes": "Solo si nos quedan ganas de salir por la noche. Si no, nos vamos a descansar.",
           "plan": [
             "Pasear por Amerikamura y Triangle Park.",
             "Tomar algo si encontramos un sitio que nos guste, o volver al alojamiento."
@@ -1828,44 +1824,44 @@
           "note": "A pie hasta Tokyo Station; salida del hotel confirmada"
         },
         {
-          "title": "Tokyo Station · Shinkansen a Nagoya",
-          "locationQuery": "Tokyo Station Tokaido Shinkansen Yaesu",
-          "note": "Aún no tenemos un tren concreto elegido."
+          "title": "Kodama 815 · llegada Nagoya 12:07",
+          "locationQuery": "Nagoya Station Tokaido Shinkansen",
+          "note": "En el tren ahora, vagones Non-Reserved. 10:50 en Shizuoka; llegada prevista 12:07."
         },
         {
           "title": "Nagoya Station · consigna de maletas",
           "locationQuery": "Nagoya Station JR Central coin lockers",
-          "note": "Dejar las maletas antes del castillo."
+          "note": "Al llegar ~12:07, dejar maletas (~12:15–12:40)."
         },
         {
           "title": "Castillo de Nagoya · palacio Honmaru",
           "locationQuery": "名古屋城 本丸御殿",
-          "note": "La torre está cerrada por dentro, pero se puede visitar el palacio."
+          "note": "Después de la consigna, hacia 13:10–14:30; visitar palacio Honmaru."
         },
         {
           "title": "Comer · Yabaton junto al castillo",
           "locationQuery": "矢場とん 名古屋城 金シャチ横丁店 三の丸1-2-5",
-          "note": "Yabaton Kinshachi Yokocho (10:30–17:30). Si hay mucha cola, comer cerca de la estación."
+          "note": "Comer ~14:30–15:30. Si hay mucha cola, alternativas en Nagoya Station."
         },
         {
           "title": "Nagoya Station · recuperar maletas",
           "locationQuery": "Nagoya Station JR Central",
-          "note": "Recoger maletas antes del tren a Shin-Osaka."
+          "note": "Volver de comer y recoger equipaje ~16:00–16:30."
         },
         {
           "title": "Shin-Osaka Station · llegada shinkansen",
           "locationQuery": "Shin-Osaka Station",
-          "note": "Desde aquí, metro hasta Sakuragawa."
+          "note": "Buscar tren desde Nagoya ~16:30–17:15, sin billete aún."
         },
         {
           "title": "Osaka · alojamiento GN98 Saiwaicho",
           "locationQuery": "GN98 Saiwaicho 3-3-14 Osaka",
-          "note": "Dejar las maletas y salir un rato por Osaka."
+          "note": "Llegada orientativa al GN98 ~18:30–19:30."
         },
         {
           "title": "Dōtonbori · paseo y cena",
           "locationQuery": "Ebisubashi Bridge Glico Sign Osaka",
-          "note": "Ir a ver el Glico y cenar; Hozenji, Minatomachi y Amerikamura, opcionales."
+          "note": "Dōtonbori y cena desde ~20:00, o dejarlo para mañana si hay cansancio."
         }
       ]
     }
