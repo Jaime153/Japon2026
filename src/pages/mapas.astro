@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { isoDate } from '../lib/segments';
 import { createMapDays } from '../lib/map-planner.mjs';
 
 const segments = (await getCollection('segments')).sort((a, b) => a.data.order - b.data.order);
@@ -70,18 +69,10 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
 
 <Layout title="Ruta · Japón 2026">
   <header class="mb-5">
-    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Nuestra lista canónica</p>
-    <h1 class="text-3xl font-black tracking-tight">Ruta Japón 2026</h1>
-    <p class="mt-2 text-sm leading-relaxed text-slate-500">
-      Solo aparecen lugares de nuestro planning. Las listas de terceros ya no alimentan el mapa principal.
-    </p>
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Japón 2026</p>
+    <h1 class="text-3xl font-black tracking-tight">Mapa del viaje</h1>
+    <p class="mt-2 text-sm leading-relaxed text-slate-500">Elige el día completo o un tramo. Toca cada parada para ver dónde está y cómo llegar.</p>
   </header>
-
-  <a href={import.meta.env.BASE_URL + "fotos-tokyo-tower/"} class="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-red-200 bg-red-50 p-4 shadow-sm">
-    <div><p class="text-xs font-black uppercase tracking-wide text-red-700">📸 TikTok · Tokyo Tower</p><p class="mt-1 font-black text-slate-950">Los 8 spots de fotos, con mapa y coordenadas</p><p class="mt-1 text-xs text-slate-600">Incluye las famosas escaleras y enlaces para llegar andando.</p></div>
-    <span class="shrink-0 text-xl text-red-700">→</span>
-  </a>
-
 
   <section class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
     <div class="flex gap-2 overflow-x-auto pb-2" id="route-days" aria-label="Seleccionar día del viaje">
@@ -126,6 +117,11 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
     </p>
     <div id="route-stage-list" class="mt-4 grid gap-3"></div>
   </section>
+
+  <a href={import.meta.env.BASE_URL + "fotos-tokyo-tower/"} class="mt-4 flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white p-3 text-xs font-bold text-slate-700 shadow-sm">
+    <span>📸 Fotos de Tokyo Tower · mapa de los 8 sitios</span>
+    <span aria-hidden="true">→</span>
+  </a>
 
   <section class="mt-8">
     <div class="mb-3 flex items-end justify-between gap-3">
@@ -396,7 +392,8 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
         return;
       }
       if (routeLayer) { routeLayer.remove(); routeLayer = null; }
-      const leaflet = window.L, layer = leaflet.layerGroup();
+      const leaflet = window.L, layer = leaflet.layerGroup().addTo(map);
+      routeLayer = layer;
       const geo = new Map(), unique = [];
       for (const stage of stages) for (const point of shown(stage))
         if (point.query && !unique.some(x => x.query === point.query)) unique.push(point);
@@ -443,7 +440,6 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
         } catch {}
       }
       if (token !== sequence) return;
-      layer.addTo(map); routeLayer = layer;
       if (geo.size) {
         const bounds = leaflet.latLngBounds([...geo.values()].map(c => [c.lat, c.lon]));
         map.fitBounds(bounds.pad(.17), { maxZoom: 14 });
