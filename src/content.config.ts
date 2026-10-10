@@ -118,8 +118,17 @@ const routeStopSchema = z.object({
   spotQuery: z.string().optional(),
 });
 
+const mapStageSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  mode: z.enum(['walk', 'transit', 'drive', 'mixed']),
+  activityIds: z.array(z.string()).min(2),
+  expandable: z.boolean().optional(),
+});
+
 const daySchema = z.object({
   date: z.coerce.date(),
+  mapStages: z.array(mapStageSchema).optional(),
   title: z.string().optional(),
   note: z.string().optional(),
   switchLabel: z.string().optional(),
