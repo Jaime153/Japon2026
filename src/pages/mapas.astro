@@ -161,299 +161,386 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
   </section>
 
   <script is:inline define:vars={{ routes, places }}>
-    let map;
-    let routeLayer;
-    let currentRoute = 0;
-    let currentVariant = 'main';
-    let userMarker;
+    // La pestaña Mapa usa los días del itinerario y sus tramos, sin crear trayectos ficticios.
+    let map, routeLayer, userMarker;
+    let currentRoute = 0, currentVariant = 'main', viewMode = 'complete', selectedPart = 0;
+    let sequence = 0, showOptional = false;
+    const expanded = new Set(), selectedExtras = new Map(), geocodeCache = new Map();
+    let geocodeQueue = Promise.resolve(), lastRequest = 0;
+    const $ = (selector) => document.querySelector(selector);
+    const statusEl = $('#route-map-status'), titleEl = $('#route-title');
+    const cityEl = $('#route-city'), summaryEl = $('#route-summary');
+    const stagesEl = $('#route-stage-list'), variantsEl = $('#route-variants');
+    const partsEl = $('#route-parts'), optionsEl = $('#route-options');
+    const dayButtons = Array.from(document.querySelectorAll('.route-day'));
+    const modeButtons = Array.from(document.querySelectorAll('[data-map-mode]'));
+    const esc = (value) => String(value ?? '').replace(/[&<>"']/g, ch =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    const maps = (query) => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query);
+    const directions = (a, b, mode) => 'https://www.google.com/maps/dir/?api=1&origin=' +
+      encodeURIComponent(a) + '&destination=' + encodeURIComponent(b) +
+      '&travelmode=' + (mode === 'walk' ? 'walking' : mode === 'drive' ? 'driving' : 'transit');
+    const read = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
+    const save = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
+    const current = () => routes[currentRoute];
+    const extras = () => {
+      if (!selectedExtras.has(current().date)) selectedExtras.set(current().date, new Set());
+      return selectedExtras.get(current().date);
+    };
 
-    const statusEl = document.querySelector('#route-map-status');
-    const titleEl = document.querySelector('#route-title');
-    const cityEl = document.querySelector('#route-city');
-    const stopsEl = document.querySelector('#route-stops');
-    const googleRouteEl = document.querySelector('#open-google-route');
-    const variantEl = document.querySelector('#route-variants');
-    const dayButtons = [...document.querySelectorAll('.route-day')];
-
-    function loadLeaflet() {
-      return new Promise((resolve, reject) => {
-        if (window.L) return resolve(window.L);
-
-        if (!document.querySelector('link[data-leaflet]')) {
-          const css = document.createElement('link');
-          css.rel = 'stylesheet';
-          css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-          css.setAttribute('data-leaflet', 'true');
-          document.head.appendChild(css);
-        }
-
-        const existing = document.querySelector('script[data-leaflet]');
-        if (existing) {
-          existing.addEventListener('load', () => resolve(window.L), { once: true });
-          existing.addEventListener('error', reject, { once: true });
-          return;
-        }
-
-        const script = document.createElement('script');
-        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-        script.setAttribute('data-leaflet', 'true');
-        script.onload = () => resolve(window.L);
-        script.onerror = reject;
-        document.head.appendChild(script);
-      });
-    }
-
-    async function initMap() {
-      const L = await loadLeaflet();
-      map = L.map('trip-route-map', { zoomControl: true }).setView([35.6812, 139.7671], 11);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; OpenStreetMap contributors',
-      }).addTo(map);
-      await renderRoute();
-    }
-
-    function sleep(ms) {
-      return new Promise((resolve) => window.setTimeout(resolve, ms));
-    }
-
-    async function geocode(query) {
-      const key = 'japon2026:geocode:' + query.toLocaleLowerCase();
-      try {
-        const cached = localStorage.getItem(key);
-        if (cached) return JSON.parse(cached);
-      } catch {}
-
-      const url = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=jp&q=' + encodeURIComponent(query);
-      const response = await fetch(url, { headers: { 'Accept-Language': 'en,ja;q=0.8' } });
-      if (!response.ok) throw new Error('Geocoding failed');
-      const data = await response.json();
-      if (!data.length) return null;
-
-      const result = { lat: Number(data[0].lat), lon: Number(data[0].lon) };
-      try { localStorage.setItem(key, JSON.stringify(result)); } catch {}
-      await sleep(1100);
+    function currentStages(route) {
+      const alternate = route.variants.find(v => v.id === currentVariant);
+      const result = (alternate?.stages ?? route.stages).map(s => ({ ...s, stops: [...s.stops] }));
+      if (!alternate && extras().size && result.length) {
+        const last = result[result.length - 1];
+        const lastIsHotel = last.stops.at(-1)?.kind === 'hotel';
+        const hotel = lastIsHotel ? last.stops.pop() : null;
+        last.stops.push(...route.optional.filter(s => extras().has(s.id)));
+        if (hotel) last.stops.push(hotel);
+        last.mode = 'mixed'; // Añadidos manualmente: no sabemos qué transporte elegir.
+      }
       return result;
     }
+    const shown = (stage) => stage.expandable && !expanded.has(current().date + ':' + stage.id)
+      && stage.stops.length > 2 ? [stage.stops[0], stage.stops.at(-1)] : stage.stops;
 
-    function routeUrl(stops) {
-      if (!stops.length) return '#';
-      if (stops.length === 1) {
-        return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(stops[0].query);
-      }
-      const first = stops[0].query;
-      const last = stops[stops.length - 1].query;
-      const middle = stops.slice(1, -1).map((stop) => stop.query).join('|');
-      let url = 'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(first) + '&destination=' + encodeURIComponent(last);
-      if (middle) url += '&waypoints=' + encodeURIComponent(middle);
-      return url;
-    }
-
-    function getVariant(route) {
-      const savedKey = 'japon2026:day-plan:' + route.date;
-      let saved = currentVariant;
-      try { saved = localStorage.getItem(savedKey) ?? currentVariant; } catch {}
-      return route.variants.find((variant) => variant.id === saved) ?? route.variants[0];
-    }
-
-    function renderVariantButtons(route, activeVariant) {
-      if (route.variants.length <= 1) {
-        variantEl.classList.add('hidden');
-        variantEl.innerHTML = '';
-        return;
-      }
-      variantEl.classList.remove('hidden');
-      variantEl.classList.add('flex');
-      variantEl.innerHTML = route.variants.map((variant) => {
-        const active = variant.id === activeVariant.id;
-        return `<button type="button" class="route-variant rounded-xl border px-3 py-2 text-sm font-bold ${active ? 'border-slate-950 bg-slate-950 text-white' : 'border-slate-200 bg-white text-slate-700'}" data-variant="${variant.id}">${variant.label}</button>`;
-      }).join('');
-
-      variantEl.querySelectorAll('[data-variant]').forEach((button) => {
-        button.addEventListener('click', async () => {
-          currentVariant = button.getAttribute('data-variant') ?? 'main';
-          try { localStorage.setItem('japon2026:day-plan:' + route.date, currentVariant); } catch {}
-          await renderRoute();
-        });
-      });
-    }
-
-    async function renderRoute() {
-      if (!map) return;
-      const route = routes[currentRoute];
-      const variant = getVariant(route);
-      currentVariant = variant.id;
-
-      dayButtons.forEach((button, index) => {
-        const active = index === currentRoute;
+    function drawControls(route, stages) {
+      dayButtons.forEach((button, i) => {
+        const active = i === currentRoute;
         button.classList.toggle('bg-slate-950', active);
         button.classList.toggle('text-white', active);
         button.classList.toggle('bg-white', !active);
         button.classList.toggle('text-slate-700', !active);
+        button.setAttribute('aria-pressed', String(active));
       });
-
-      titleEl.textContent = route.title;
       cityEl.textContent = route.date + ' · ' + route.city;
-      renderVariantButtons(route, variant);
-      const multimodal = route.routingMode === 'multimodal';
-      // No ofrecer como «ruta real» una conexión que mezclaría trenes de alta velocidad, metro y tramos a pie.
-      googleRouteEl.classList.toggle('hidden', multimodal);
-      googleRouteEl.setAttribute('href', multimodal ? '#' : routeUrl(variant.stops));
-
-      stopsEl.innerHTML = variant.stops.map((stop, index) => {
-        const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(stop.query);
-        const tabelog = stop.tabelog ? `<a href="${stop.tabelog}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-orange-50 px-2 py-1 text-xs font-bold text-orange-800">Tabelog</a>` : '';
-        const streetLink = stop.spotQuery ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.spotQuery)}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-amber-100 px-2 py-1 text-xs font-bold text-amber-900">📸 Ir a la calle · a pie</a>` : '';
-        const mapcode = stop.mapcode ? `<div class="mt-2 flex flex-wrap items-center gap-2"><span class="rounded-lg bg-white px-2 py-1 text-sm font-black">${stop.mapcode}</span><button type="button" data-copy-route-mapcode="${stop.mapcode}" class="rounded-lg bg-slate-200 px-2 py-1 text-xs font-bold">📋 Copiar MAPCODE</button>${stop.mapcodeKind === 'reference' ? '<span class="text-[11px] font-semibold text-amber-700">⚠️ Referencia, no acceso confirmado</span>' : ''}</div>` : '';
-        return `<li class="grid grid-cols-[2rem_1fr] gap-2 rounded-xl border border-slate-200 bg-slate-50 p-3">
-          <span class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-950 text-xs font-black text-white">${index + 1}</span>
-          <div>
-            <div class="flex items-start justify-between gap-2"><strong class="text-sm text-slate-950">${stop.title}</strong><span class="text-xs text-slate-400">${stop.time || ''}</span></div>
-            ${stop.note ? '<p class="mt-1 text-xs text-slate-500">' + stop.note + '</p>' : ''}
-            ${mapcode}
-            <div class="mt-2 flex flex-wrap gap-2"><a href="${maps}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-blue-50 px-2 py-1 text-xs font-bold text-blue-800">🅿️ Ir al parking</a>${streetLink}${tabelog}</div>
-          </div>
-        </li>`;
-      }).join('');
-      stopsEl.querySelectorAll('[data-copy-route-mapcode]').forEach((button) => {
-        button.addEventListener('click', async () => {
-          const value = button.getAttribute('data-copy-route-mapcode');
-          if (!value) return;
-          try { await navigator.clipboard.writeText(value); button.textContent = '✓ Copiado'; }
-          catch { button.textContent = 'Copia el código de al lado'; }
+      titleEl.textContent = route.title;
+      variantsEl.innerHTML = '';
+      if (route.variants.length) {
+        variantsEl.classList.remove('hidden');
+        variantsEl.classList.add('flex');
+        [{ id: 'main', label: route.mainLabel }, ...route.variants].forEach(item => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.textContent = item.label;
+          button.setAttribute('aria-pressed', String(item.id === currentVariant));
+          button.className = 'rounded-xl border px-3 py-2 text-xs font-bold ' +
+            (item.id === currentVariant ? 'border-slate-950 bg-slate-950 text-white' :
+              'border-slate-200 bg-white text-slate-700');
+          button.addEventListener('click', () => {
+            currentVariant = item.id;
+            selectedPart = 0;
+            save('japon2026:day-plan:' + route.date, currentVariant);
+            render();
+          });
+          variantsEl.appendChild(button);
         });
+      } else variantsEl.classList.add('hidden');
+      modeButtons.forEach(button => {
+        const on = button.dataset.mapMode === viewMode;
+        button.className = 'rounded-xl px-3 py-3 text-sm font-black ' +
+          (on ? 'bg-slate-950 text-white shadow-sm' : 'bg-transparent text-slate-600');
+        button.setAttribute('aria-pressed', String(on));
       });
-
-      if (routeLayer) {
-        routeLayer.remove();
-        routeLayer = null;
+      partsEl.innerHTML = '';
+      partsEl.classList.toggle('hidden', viewMode !== 'parts');
+      if (viewMode === 'parts') {
+        partsEl.classList.add('flex');
+        stages.forEach((stage, i) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.textContent = stage.label;
+          button.className = 'rounded-xl border px-3 py-2 text-xs font-bold ' +
+            (selectedPart === i ? 'border-blue-700 bg-blue-50 text-blue-900' :
+              'border-slate-200 bg-white text-slate-700');
+          button.setAttribute('aria-pressed', String(selectedPart === i));
+          button.addEventListener('click', () => { selectedPart = i; render(); });
+          partsEl.appendChild(button);
+        });
       }
-
-      statusEl.textContent = 'Calculando posiciones de la ruta…';
-      const coords = [];
-      for (let i = 0; i < variant.stops.length; i++) {
-        const stop = variant.stops[i];
-        try {
-          const point = await geocode(stop.query);
-          if (point) coords.push({ ...point, stop, index: i });
-        } catch {}
-      }
-
-      if (!coords.length) {
-        statusEl.textContent = 'No he podido dibujar la ruta ahora. El botón de Google Maps sigue funcionando.';
-        return;
-      }
-
-      const L = window.L;
-      const group = L.layerGroup();
-      coords.forEach((point) => {
-        const marker = L.marker([point.lat, point.lon]);
-        marker.bindPopup(`<strong>${point.index + 1}. ${point.stop.title}</strong>`);
-        marker.addTo(group);
-      });
-
-      let routeGeometry = null;
-      if (coords.length > 1 && route.routingMode !== 'multimodal') {
-        const coordinates = coords.map((point) => `${point.lon},${point.lat}`).join(';');
-        const router = route.routingMode === 'car' ? 'routed-car' : 'routed-foot';
-        const routeEndpoint = `https://routing.openstreetmap.de/${router}/route/v1/driving/${coordinates}?overview=full&geometries=geojson&steps=false`;
-
-        try {
-          statusEl.textContent = route.routingMode === 'car'
-            ? 'Calculando ruta por carretera…'
-            : 'Calculando recorrido por calles y caminos…';
-          const response = await fetch(routeEndpoint);
-          if (!response.ok) throw new Error('Routing failed');
-          const data = await response.json();
-          routeGeometry = data?.routes?.[0]?.geometry ?? null;
-        } catch {}
-      }
-
-      if (routeGeometry) {
-        L.geoJSON(routeGeometry, { style: { weight: 5, opacity: 0.85 } }).addTo(group);
-      } else if (coords.length > 1 && route.routingMode !== 'multimodal') {
-        L.polyline(coords.map((point) => [point.lat, point.lon]), { weight: 3, opacity: 0.45, dashArray: '6 8' }).addTo(group);
-      }
-
-      group.addTo(map);
-      routeLayer = group;
-      const bounds = routeGeometry
-        ? L.geoJSON(routeGeometry).getBounds()
-        : L.latLngBounds(coords.map((point) => [point.lat, point.lon]));
-      map.fitBounds(bounds.pad(0.18), { maxZoom: 14 });
-      statusEl.textContent = route.routingMode === 'multimodal'
-        ? `Viaje multimodal (shinkansen + metro + a pie): ${coords.length}/${variant.stops.length} paradas localizadas. Usa los enlaces individuales de cada parada; no existe una ruta única por carretera válida.`
-        : routeGeometry
-          ? `Ruta real sobre la red viaria · ${coords.length}/${variant.stops.length} paradas localizadas.`
-          : `No se pudo calcular el trazado real; mostrando unión orientativa entre ${coords.length}/${variant.stops.length} paradas. Google Maps sigue disponible para navegar.`;
+      summaryEl.textContent = route.hotelStart && route.hotelEnd
+        ? 'De ' + route.hotelStart + ' a ' + route.hotelEnd +
+          '. Las paradas opcionales no entran salvo que las añadas.'
+        : 'Ruta del día con las paradas del planning. Opcionales aparte.';
     }
 
-    dayButtons.forEach((button, index) => {
-      button.addEventListener('click', async () => {
-        currentRoute = index;
-        currentVariant = 'main';
-        try { localStorage.setItem('japon2026:selected-date', routes[index].date); } catch {}
-        await renderRoute();
-        button.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    function drawOptional(route) {
+      optionsEl.innerHTML = '';
+      if (!route.optional.length || currentVariant !== 'main') return;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold';
+      button.textContent = (showOptional ? '▴ Ocultar' : '▾ Mostrar') +
+        ' opcionales (' + extras().size + '/' + route.optional.length + ')';
+      button.addEventListener('click', () => { showOptional = !showOptional; render(); });
+      optionsEl.appendChild(button);
+      if (!showOptional) return;
+      const list = document.createElement('div');
+      list.className = 'mt-2 grid gap-2';
+      route.optional.forEach(stop => {
+        const row = document.createElement('div');
+        row.className = 'flex min-w-0 items-center justify-between gap-2 rounded-xl bg-slate-50 p-2';
+        const title = document.createElement('span');
+        title.className = 'min-w-0 break-words text-xs font-semibold text-slate-700';
+        title.textContent = stop.title;
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'shrink-0 rounded-lg bg-slate-950 px-3 py-2 text-xs font-bold text-white';
+        toggle.textContent = extras().has(stop.id) ? '✓ Quitar' : '+ Añadir';
+        toggle.addEventListener('click', () => {
+          const chosen = extras();
+          if (chosen.has(stop.id)) chosen.delete(stop.id); else chosen.add(stop.id);
+          render();
+        });
+        row.append(title, toggle);
+        list.appendChild(row);
       });
-    });
+      optionsEl.appendChild(list);
+      const note = document.createElement('p');
+      note.className = 'mt-2 text-xs text-amber-700';
+      note.textContent = 'Se añade antes de volver al hotel. Revisa el orden y el transporte si decides ir.';
+      optionsEl.appendChild(note);
+    }
 
-    document.querySelector('#locate-me')?.addEventListener('click', () => {
+    function card(stage, index) {
+      const visible = shown(stage);
+      const modeLabel = { walk: 'A pie', drive: 'Coche', transit: 'Transporte público',
+        mixed: 'Varios transportes' }[stage.mode] ?? 'Transporte por elegir';
+      const isOpen = expanded.has(current().date + ':' + stage.id);
+      let html = '<article class="min-w-0 rounded-2xl border border-slate-200 bg-slate-50 p-3">' +
+        '<p class="text-xs font-bold text-slate-500">Tramo ' + (index + 1) + ' · ' + esc(modeLabel) + '</p>' +
+        '<h3 class="mt-1 break-words text-base font-black">' + esc(stage.label) + '</h3>';
+      if (stage.expandable && stage.stops.length > 2)
+        html += '<button type="button" data-expand="' + esc(stage.id) +
+          '" class="mt-2 rounded-lg bg-amber-100 px-3 py-2 text-xs font-bold text-amber-900">' +
+          (isOpen ? '− Resumir recorrido' : '+ Ver las ' + stage.stops.length + ' paradas') + '</button>' +
+          (!isOpen ? '<p class="mt-2 text-xs text-amber-700">Resumen: solo inicio y final. Abre el detalle para dibujar todo el recorrido.</p>' : '');
+      html += '<ol class="mt-3 grid gap-2">';
+      visible.forEach((stop, i) => {
+        const prev = visible[i - 1], dir = prev ? directions(prev.query, stop.query, stage.mode) : '';
+        html += '<li class="min-w-0 rounded-xl border border-slate-200 bg-white p-3">' +
+          '<p class="break-words text-sm font-bold">' + (i + 1) + '. ' + esc(stop.title) + '</p>';
+        if (stop.time || stop.note) html += '<p class="mt-1 break-words text-xs leading-relaxed text-slate-500">' +
+          esc([stop.time, stop.note].filter(Boolean).join(' · ')) + '</p>';
+        if (stop.mapcode) html += '<div class="mt-2 flex flex-wrap items-center gap-2">' +
+          '<span class="text-sm font-black">' + esc(stop.mapcode) + '</span>' +
+          '<button data-mapcode="' + esc(stop.mapcode) +
+          '" type="button" class="rounded-lg bg-slate-100 px-2 py-1 text-xs font-bold">Copiar MAPCODE</button>' +
+          (stop.mapcodeKind === 'reference' ? '<span class="text-[11px] text-amber-700">Referencia aproximada</span>' : '') + '</div>';
+        html += '<div class="mt-2 flex flex-wrap gap-2">' +
+          '<a href="' + esc(maps(stop.query)) + '" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-blue-50 px-3 py-2 text-xs font-bold text-blue-800">📍 Ver</a>' +
+          (dir ? '<a href="' + esc(dir) + '" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-emerald-50 px-3 py-2 text-xs font-bold text-emerald-900">🧭 Desde anterior</a>' : '') +
+          (stop.spotQuery ? '<a href="' + esc(maps(stop.spotQuery)) + '" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-amber-50 px-3 py-2 text-xs font-bold">📸 Punto de foto</a>' : '') +
+          '</div></li>';
+      });
+      return html + '</ol></article>';
+    }
+
+    function addHandlers() {
+      stagesEl.querySelectorAll('[data-expand]').forEach(button => button.addEventListener('click', () => {
+        const key = current().date + ':' + button.getAttribute('data-expand');
+        if (expanded.has(key)) expanded.delete(key); else expanded.add(key);
+        render();
+      }));
+      stagesEl.querySelectorAll('[data-mapcode]').forEach(button => button.addEventListener('click', async () => {
+        try { await navigator.clipboard.writeText(button.getAttribute('data-mapcode')); button.textContent = '✓ Copiado'; }
+        catch { button.textContent = 'Copia el código de al lado'; }
+      }));
+    }
+
+    function directCoords(text) {
+      const m = String(text).trim().match(/^(-?\d{1,2}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)$/);
+      if (!m) return null;
+      const lat = Number(m[1]), lon = Number(m[2]);
+      return lat >= 20 && lat <= 50 && lon >= 120 && lon <= 155 ? { lat, lon } : null;
+    }
+    async function geocode(query) {
+      const exact = directCoords(query);
+      if (exact) return exact;
+      const key = query.toLowerCase();
+      if (geocodeCache.has(key)) return geocodeCache.get(key);
+      const previous = read('japon2026:geocode:' + key);
+      if (previous) {
+        try {
+          const cached = JSON.parse(previous);
+          if (Number.isFinite(cached.lat) && Number.isFinite(cached.lon)) {
+            geocodeCache.set(key, cached); return cached;
+          }
+        } catch {}
+      }
+      // Nominatim: secuenciar peticiones y respetar 1 solicitud por segundo.
+      const pending = geocodeQueue.then(async () => {
+        const pause = Math.max(0, 1200 - (Date.now() - lastRequest));
+        if (pause) await new Promise(r => setTimeout(r, pause));
+        lastRequest = Date.now();
+        try {
+          const endpoint = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=jp&q=' + encodeURIComponent(query);
+          const response = await fetch(endpoint, { headers: { 'Accept-Language': 'ja,en;q=0.8' } });
+          if (!response.ok) return null;
+          const result = await response.json();
+          if (!result[0]) return null;
+          const coords = { lat: Number(result[0].lat), lon: Number(result[0].lon) };
+          if (!Number.isFinite(coords.lat) || !Number.isFinite(coords.lon)) return null;
+          geocodeCache.set(key, coords);
+          save('japon2026:geocode:' + key, JSON.stringify(coords));
+          return coords;
+        } catch { return null; }
+      });
+      geocodeQueue = pending.then(() => {}, () => {});
+      return pending;
+    }
+
+    async function drawMap(stages, token) {
+      if (!map) {
+        statusEl.textContent = 'Mapa no disponible. Los botones de Google Maps sí funcionan.';
+        return;
+      }
+      if (routeLayer) { routeLayer.remove(); routeLayer = null; }
+      const leaflet = window.L, layer = leaflet.layerGroup();
+      const geo = new Map(), unique = [];
+      for (const stage of stages) for (const point of shown(stage))
+        if (point.query && !unique.some(x => x.query === point.query)) unique.push(point);
+      if (!unique.length) { statusEl.textContent = 'No hay ubicaciones en este tramo.'; return; }
+      statusEl.textContent = 'Buscando lugares (0/' + unique.length + ')…';
+      for (let i = 0; i < unique.length; i++) {
+        const stop = unique[i];
+        const coords = await geocode(stop.query);
+        if (token !== sequence) return;
+        if (coords) {
+          geo.set(stop.query, coords);
+          const pin = leaflet.divIcon({
+            className: '',
+            html: '<span style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid white;border-radius:100%;background:#0f172a;color:white;font-weight:bold;font-size:12px;box-shadow:0 1px 5px #64748b">' + (i + 1) + '</span>',
+            iconSize: [28, 28], iconAnchor: [14, 14]
+          });
+          leaflet.marker([coords.lat, coords.lon], { icon: pin }).bindPopup('<strong>' +
+            esc(stop.title) + '</strong><p>' + esc(stop.note || '') + '</p>').addTo(layer);
+        }
+        statusEl.textContent = 'Buscando lugares (' + (i + 1) + '/' + unique.length + ')…';
+      }
+      let traced = 0;
+      for (const stage of stages) {
+        // Con la subruta cerrada solo mostramos sus extremos, sin trazar un atajo falso.
+        if (!['walk', 'drive'].includes(stage.mode) ||
+            (stage.expandable && shown(stage).length < stage.stops.length)) continue;
+        const route = shown(stage);
+        if (route.length < 2 || route.length > 18 || route.some(x => !geo.has(x.query))) continue;
+        const points = route.map(stop => {
+          const g = geo.get(stop.query); return g.lon + ',' + g.lat;
+        }).join(';');
+        const profile = stage.mode === 'walk' ? 'routed-foot' : 'routed-car';
+        const url = 'https://routing.openstreetmap.de/' + profile +
+          '/route/v1/driving/' + points + '?overview=full&geometries=geojson&steps=false';
+        try {
+          const res = await fetch(url);
+          if (token !== sequence) return;
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data?.routes?.[0]?.geometry) {
+            leaflet.geoJSON(data.routes[0].geometry, { style: { weight: 4, opacity: .85 } }).addTo(layer);
+            traced++;
+          }
+        } catch {}
+      }
+      if (token !== sequence) return;
+      layer.addTo(map); routeLayer = layer;
+      if (geo.size) {
+        const bounds = leaflet.latLngBounds([...geo.values()].map(c => [c.lat, c.lon]));
+        map.fitBounds(bounds.pad(.17), { maxZoom: 14 });
+      }
+      statusEl.textContent = geo.size + '/' + unique.length + ' lugares localizados. ' +
+        (traced ? traced + ' tramo(s) trazados por calles. ' : '') +
+        'El tren y metro se abren entre paradas; no dibujamos líneas ficticias.';
+    }
+
+    function render() {
+      const route = current();
+      if (!route) return;
+      if (!route.variants.some(v => v.id === currentVariant)) currentVariant = 'main';
+      const stages = currentStages(route);
+      if (!stages.length) return;
+      selectedPart = Math.max(0, Math.min(selectedPart, stages.length - 1));
+      const visible = viewMode === 'complete' ? stages : [stages[selectedPart]];
+      drawControls(route, stages);
+      drawOptional(route);
+      stagesEl.innerHTML = visible.map(s => card(s, stages.indexOf(s))).join('');
+      addHandlers();
+      const token = ++sequence;
+      drawMap(visible, token).catch(() => {
+        if (token === sequence) statusEl.textContent = 'Error del mapa. Los enlaces de cada parada siguen disponibles.';
+      });
+    }
+
+    modeButtons.forEach(button => button.addEventListener('click', () => {
+      viewMode = button.dataset.mapMode;
+      save('japon2026:map:view', viewMode);
+      render();
+    }));
+    dayButtons.forEach((button, i) => button.addEventListener('click', () => {
+      currentRoute = i;
+      currentVariant = read('japon2026:day-plan:' + current().date) || 'main';
+      selectedPart = 0;
+      save('japon2026:selected-date', current().date);
+      render();
+      button.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }));
+    $('#locate-me')?.addEventListener('click', () => {
       if (!navigator.geolocation || !map) return;
-      navigator.geolocation.getCurrentPosition(
-        ({ coords }) => {
-          const L = window.L;
-          if (userMarker) userMarker.remove();
-          userMarker = L.circleMarker([coords.latitude, coords.longitude], { radius: 8, weight: 3 }).addTo(map).bindPopup('Estoy aquí');
-          map.setView([coords.latitude, coords.longitude], 14);
-        },
-        () => { statusEl.textContent = 'No se pudo acceder a tu ubicación. Revisa el permiso del navegador.'; },
-        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 },
-      );
+      navigator.geolocation.getCurrentPosition(({ coords }) => {
+        if (userMarker) userMarker.remove();
+        userMarker = window.L.circleMarker([coords.latitude, coords.longitude], { radius: 8, weight: 3 })
+          .addTo(map).bindPopup('Estoy aquí');
+        map.setView([coords.latitude, coords.longitude], 14);
+      }, () => { statusEl.textContent = 'No se pudo acceder a tu ubicación.'; },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 });
     });
-
-    const search = document.querySelector('#place-search');
-    const placeCards = [...document.querySelectorAll('.our-place')];
-    const exportPlaces = document.querySelector('#export-places');
+    const search = $('#place-search');
+    const cards = Array.from(document.querySelectorAll('.our-place'));
     search?.addEventListener('input', () => {
-      const q = search.value.trim().toLocaleLowerCase();
-      placeCards.forEach((card) => card.classList.toggle('hidden', q && !(card.getAttribute('data-search') ?? '').includes(q)));
+      const q = search.value.trim().toLowerCase();
+      cards.forEach(c => c.classList.toggle('hidden',
+        Boolean(q && !(c.getAttribute('data-search') || '').includes(q))));
     });
-
-    exportPlaces?.addEventListener('click', () => {
-      const escapeCsv = (value) => '"' + String(value ?? '').replaceAll('"', '""') + '"';
-      const rows = [
-        ['Fecha', 'Ciudad', 'Lugar', 'Búsqueda Maps', 'Google Maps'],
-        ...places.map((place) => [
-          place.firstDate,
-          place.city,
-          place.title,
-          place.query,
-          'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.query),
-        ]),
-      ];
-      const csv = '\uFEFF' + rows.map((row) => row.map(escapeCsv).join(',')).join('\n');
-      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
+    $('#export-places')?.addEventListener('click', () => {
+      const quote = v => '"' + String(v ?? '').replaceAll('"', '""') + '"';
+      const rows = [['Fecha', 'Ciudad', 'Lugar', 'Búsqueda Maps', 'Google Maps'],
+        ...places.map(p => [p.firstDate, p.city, p.title, p.query, maps(p.query)])];
+      const csv = '\uFEFF' + rows.map(row => row.map(quote).join(',')).join('\n');
+      const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
       const link = document.createElement('a');
-      link.href = url;
-      link.download = 'Japon2026_lugares.csv';
-      link.click();
-      URL.revokeObjectURL(url);
+      link.href = url; link.download = 'Japon2026_lugares.csv'; link.click(); URL.revokeObjectURL(url);
     });
+    const queryDate = new URLSearchParams(window.location.search).get('date');
+    const today = new Intl.DateTimeFormat('en-CA', {
+      year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Asia/Tokyo'
+    }).format(new Date());
+    const preferred = queryDate || read('japon2026:selected-date');
+    const index = routes.findIndex(r => r.date === preferred);
+    const future = routes.findIndex(r => r.date >= today);
+    currentRoute = index >= 0 ? index : (future >= 0 ? future : Math.max(0, routes.length - 1));
+    currentVariant = read('japon2026:day-plan:' + current().date) || 'main';
+    viewMode = read('japon2026:map:view') === 'parts' ? 'parts' : 'complete';
+    loadMap();
 
-    const today = new Date();
-    const todayIso = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, '0'), String(today.getDate()).padStart(2, '0')].join('-');
-    const requestedDate = new URLSearchParams(window.location.search).get('date');
-    let rememberedDate = '';
-    try { rememberedDate = localStorage.getItem('japon2026:selected-date') ?? ''; } catch {}
-    const preferredDate = requestedDate || rememberedDate;
-    const preferredIndex = preferredDate ? routes.findIndex((route) => route.date === preferredDate) : -1;
-    const upcoming = routes.findIndex((route) => route.date >= todayIso);
-    currentRoute = preferredIndex >= 0 ? preferredIndex : (upcoming >= 0 ? upcoming : Math.max(0, routes.length - 1));
-
-    initMap().catch(() => {
-      statusEl.textContent = 'No se pudo cargar el mapa interactivo. Los enlaces de Google Maps siguen disponibles.';
-    });
+    function loadMap() {
+      if (window.L) return initMap(window.L);
+      if (!document.querySelector('link[data-leaflet]')) {
+        const css = document.createElement('link');
+        css.rel = 'stylesheet'; css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        css.dataset.leaflet = 'yes'; document.head.appendChild(css);
+      }
+      const js = document.createElement('script');
+      js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      js.onload = () => initMap(window.L);
+      js.onerror = () => render();
+      document.head.appendChild(js);
+    }
+    function initMap(L) {
+      map = L.map('trip-route-map').setView([35.6812, 139.7671], 11);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19, attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+      render();
+    }
   </script>
 </Layout>
