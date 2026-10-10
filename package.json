@@ -9,7 +9,7 @@
     "build": "npm run check:content && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check:content": "node scripts/validate-itinerary.mjs"
+    "check:content": "node scripts/validate-itinerary.mjs && node scripts/validate-map-planner.mjs"
   },
   "dependencies": {
     "astro": "^7.3.3",
