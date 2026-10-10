@@ -107,6 +107,12 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
 
     <div id="route-options" class="mt-3"></div>
 
+    <div id="day-google-routes" class="mt-3 hidden grid gap-2" aria-label="Abrir rutas del día en Google Maps"></div>
+
+    <a id="active-stage-google-route" href="#" target="_blank" rel="noopener noreferrer"
+      class="mt-3 hidden items-center justify-center rounded-xl bg-slate-950 px-4 py-3 text-center text-sm font-black text-white">
+      🧭 Abrir ruta completa del tramo en Google Maps
+    </a>
     <div id="route-map-status" role="status" aria-live="polite" class="mt-3 rounded-xl bg-slate-100 px-3 py-2 text-xs text-slate-600">
       Preparando mapa…
     </div>
@@ -176,6 +182,93 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
     const directions = (a, b, mode) => 'https://www.google.com/maps/dir/?api=1&origin=' +
       encodeURIComponent(a) + '&destination=' + encodeURIComponent(b) +
       '&travelmode=' + (mode === 'walk' ? 'walking' : mode === 'drive' ? 'driving' : 'transit');
+
+    // Restituido del mapa anterior: enlace que entrega TODOS los waypoints a
+    // Google Maps. No sustituir por enlaces «Desde anterior» de dos puntos.
+    // El panel puede estar plegado; SIEMPRE se usan stage.stops, nunca shown(stage).
+    function fullGoogleRoute(stage) {
+      const points = stage.closeLoop && stage.stops.length > 2
+        ? [...stage.stops, stage.stops[0]] : stage.stops;
+      const queries = points.map(s => s.query).filter(Boolean);
+      if (!queries.length) return '#';
+      if (queries.length === 1) return maps(queries[0]);
+      const first = queries[0], last = queries.at(-1);
+      const middle = queries.slice(1, -1).join('|');
+      let url = 'https://www.google.com/maps/dir/?api=1&origin=' +
+        encodeURIComponent(first) + '&destination=' + encodeURIComponent(last);
+      if (middle) url += '&waypoints=' + encodeURIComponent(middle);
+      // Viajes mixtos y trayectos de varias paradas sin modo fijo:
+      // Google Maps permite elegir el medio; no forzar metro o coche.
+      if (stage.mode === 'walk' || stage.mode === 'drive' ||
+          (stage.mode === 'transit' && queries.length === 2)) {
+        url += '&travelmode=' + (stage.mode === 'walk' ? 'walking' :
+          stage.mode === 'drive' ? 'driving' : 'transit');
+      }
+      return url;
+    }
+
+    function wholeDayGoogleRoute(stages, route) {
+      if (!stages.length || stages.some(s => s.mode === 'mixed') ||
+          route.city.includes('→') || route.date === '2026-10-10') return null;
+      const stops = [];
+      for (const stage of stages) {
+        // En una ruta circular hay que incluir la vuelta al origen, antes
+        // de continuar hacia el siguiente tramo del mismo día.
+        const all = stage.closeLoop && stage.stops.length > 2
+          ? [...stage.stops, stage.stops[0]] : stage.stops;
+        for (const stop of all) {
+          if (stop.query && stops.at(-1)?.query !== stop.query) stops.push(stop);
+        }
+      }
+      // Se mantiene el botón con TODOS los puntos, sin truncar los waypoints.
+      // Los días muy largos se abren por tramos, para no perder visitas.
+      if (stops.length < 2 || stops.length > 11) return null;
+      const modes = new Set(stages.map(stage => stage.mode));
+      const commonMode = modes.size === 1 && (modes.has('walk') || modes.has('drive'))
+        ? stages[0].mode : 'choose';
+      return { url: fullGoogleRoute({ stops, mode: commonMode }), count: stops.length };
+    }
+
+    function drawGoogleRoutes(route, stages) {
+      const container = $('#day-google-routes');
+      if (!container) return;
+      container.replaceChildren();
+      const showAll = viewMode === 'complete' && stages.length > 1;
+      container.classList.toggle('hidden', !showAll);
+      if (!showAll) return;
+      const daily = wholeDayGoogleRoute(stages, route);
+      if (daily) {
+        const action = document.createElement('a');
+        action.href = daily.url;
+        action.target = '_blank';
+        action.rel = 'noopener noreferrer';
+        action.className = 'block rounded-xl bg-slate-950 px-4 py-3 text-center text-sm font-black text-white';
+        action.textContent = '🧭 Abrir día completo en Google Maps · ' + daily.count + ' paradas';
+        container.appendChild(action);
+      }
+      const heading = document.createElement('p');
+      heading.className = 'text-xs font-bold text-slate-600';
+      heading.textContent = daily ? 'O abre un tramo concreto:' :
+        'Abrir en Google Maps por tramos (sin mezclar transportes):';
+      container.appendChild(heading);
+      const row = document.createElement('div');
+      row.className = 'flex flex-wrap gap-2';
+      stages.forEach(stage => {
+        if (!stage.stops.some(stop => stop.query)) return;
+        const link = document.createElement('a');
+        link.href = fullGoogleRoute(stage);
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.className = 'inline-flex min-w-0 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-bold text-blue-900';
+        link.textContent = '🧭 ' + stage.label + ' (' + stage.stops.length + ')';
+        row.appendChild(link);
+      });
+      container.appendChild(row);
+      const note = document.createElement('p');
+      note.className = 'text-xs text-slate-500';
+      note.textContent = 'Se incluyen todas las paradas de cada tramo, también las de listas plegadas. Si Google Maps pide elegir el transporte, escoge el que corresponda.';
+      container.appendChild(note);
+    }
     const read = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
     const save = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
     const current = () => routes[currentRoute];
@@ -312,6 +405,11 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
           (isOpen ? '− Resumir recorrido' : '+ Ver las ' + stage.stops.length + ' paradas') + '</button>' +
           (!isOpen ? '<p class="mt-2 text-xs text-amber-700">Lista resumida. En el mapa se ven las ' + stage.stops.length + ' paradas y su recorrido.</p>' : '');
       if (stage.closeLoop) html += '<p class="mt-2 text-xs font-medium text-slate-600">Ruta circular: se vuelve al primer punto del recorrido.</p>';
+      // Acción principal recuperada del mapa anterior: todas las paradas
+      // incluso si la tarjeta está plegada, y vuelta al origen si es circular.
+      html += '<a href="' + esc(fullGoogleRoute(stage)) +
+        '" target="_blank" rel="noopener noreferrer" class="mt-3 block rounded-xl bg-slate-950 px-4 py-3 text-center text-sm font-black text-white">🧭 Abrir ruta completa en Google Maps (' +
+        stage.stops.length + ' paradas)</a>';
       html += '<ol class="mt-3 grid gap-2">';
       visible.forEach((stop, i) => {
         const prev = visible[i - 1], dir = prev ? directions(prev.query, stop.query, stage.mode) : '';
@@ -509,6 +607,19 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       const visible = viewMode === 'complete' ? stages : [stages[selectedPart]];
       drawControls(route, stages);
       drawOptional(route);
+      drawGoogleRoutes(route, stages);
+      // Atajo junto al mapa en modo «Por tramos», además del botón de cada
+      // tarjeta en «Día completo». Recupera la ruta original de 9 templos.
+      const activeRouteButton = $('#active-stage-google-route');
+      if (activeRouteButton) {
+        const single = viewMode === 'parts' ? stages[selectedPart] : (stages.length === 1 ? stages[0] : null);
+        activeRouteButton.classList.toggle('hidden', !single);
+        activeRouteButton.classList.toggle('flex', Boolean(single));
+        if (single) {
+          activeRouteButton.href = fullGoogleRoute(single);
+          activeRouteButton.textContent = '🧭 Abrir ruta completa en Google Maps · ' + single.stops.length + ' paradas';
+        }
+      }
       stagesEl.innerHTML = visible.map(s => card(s, stages.indexOf(s))).join('');
       addHandlers();
       const token = ++sequence;
