@@ -97,6 +97,33 @@ if (osakaSegment) {
     'Mirador Umeda: botón de reserva oficial sin inventar entradas compradas');
   assert(sky?.notes?.includes('17:28'),
     'Atardecer Umeda del 12/10 es a las 17:28 y debe figurar en el planning');
+  // Cambio real del 11/10: comida confirmada a las 13:20, goshuin
+  // antes del cierre de las 16:00 y Dotonbori a la tarde-noche.
+  const ebisu = getActivity(sundayDay, 'kushikatsu-shinsekai-1011');
+  const isshinji = getActivity(sundayDay, 'isshinji-goshuin-1011');
+  const shiten = getActivity(sundayDay, 'shitennoji-goshuin-1011');
+  const hozen = getActivity(sundayDay, 'hozenji-yokocho-1011');
+  const doton = getActivity(sundayDay, 'dotonbori');
+  assert(ebisu?.status === 'confirmado' && ebisu?.notes?.includes('13:20') &&
+    ebisu?.address?.includes('恵美須東2-1-20'),
+    'Shinsekai: restaurante exacto y comida todavía en curso a las 13:20');
+  assert(isshinji?.time === '~14:05–14:30' && shiten?.time === '~14:45–15:40',
+    'Templos de la tarde deben figurar antes de cerrar los goshuin');
+  assert(isshinji?.goshuin && shiten?.goshuin && hozen?.goshuin &&
+    [isshinji,shiten,hozen].every(t => t.status === 'plan' && t.description?.length >= 200),
+    'Templos aún por hacer y con historia/goshuin previstos');
+  assert(hozen?.time === '~16:10–16:45' && doton?.time === '~17:15–19:00',
+    'Dotonbori debe ser DESPUÉS de todos los goshuin');
+  const order = sundayDay.activities.map(a => a.id);
+  assert(order.indexOf(ebisu.id) < order.indexOf(isshinji.id) &&
+    order.indexOf(isshinji.id) < order.indexOf(shiten.id) &&
+    order.indexOf(shiten.id) < order.indexOf(hozen.id) &&
+    order.indexOf(hozen.id) < order.indexOf(doton.id),
+    'Orden del planning: comida → Isshin-ji → Shitennoji → Hozenji → Dotonbori');
+  assert(sundayDay.mapStages.some(t => t.id === 'templos-tarde' &&
+    t.activityIds.includes('isshinji-goshuin-1011') &&
+    t.activityIds.includes('shitennoji-goshuin-1011')),
+    'Mapas: faltan nuevos templos y goshuin de la tarde');
   const tower = getActivity(sundayDay, 'tsutenkaku-1011');
   assert(tower?.notes?.includes('No vamos a subir') && tower?.category !== 'mirador',
     'Tsutenkaku: se ve por fuera, no hay entradas ni subida');
