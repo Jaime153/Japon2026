@@ -330,7 +330,7 @@
     },
     {
       "date": "2026-10-12",
-      "title": "Osaka · desde 07:45: Castillo y Umeda Sky",
+      "title": "Osaka · castillo exterior, Umeda Sky y compras",
       "status": "plan",
       "activities": [
         {
@@ -340,89 +340,64 @@
           "status": "plan",
           "time": "07:45",
           "locationQuery": "34.668712,135.485405",
-          "notes": "Hemos quedado en salir del GN98 a las 07:45. Desayunar algo antes o cogerlo por el camino. El objetivo es aprovechar bien el día sin tener que correr.",
+          "notes": "Salimos sobre las 07:45 para aprovechar el día. Castillo de Osaka por fuera, Umeda Sky un rato y el resto de la tarde para comprar por Shinsaibashi y Dōtonbori.",
           "plan": [
-            "Salir sobre las 07:45 con agua y algo de desayuno.",
-            "Consultar la ruta del mapa del día antes de salir."
+            "Salir del GN98 sobre las 07:45, desayunados o con algo para el camino.",
+            "Primera parada: exterior del Castillo de Osaka y su parque."
           ]
         },
         {
           "id": "osaka-castle-park-early-1012",
-          "title": "Parque del Castillo de Osaka · fotos temprano",
+          "title": "Parque del Castillo de Osaka · fotos",
           "category": "naturaleza",
           "status": "plan",
           "time": "~08:25",
           "locationQuery": "Osaka Castle Park Sakuramon Gate Osaka",
-          "notes": "Salir del GN98 a las 07:45. Podemos pasear por el parque y ver el castillo por fuera antes de que abra el museo de la torre a las 09:00. No hace falta esperar en el alojamiento hasta que abra.",
+          "notes": "Paseo por el parque, los fosos y murallas para ver el castillo por fuera y hacer fotos. No hace falta esperar a las 09:00, porque NO vamos al museo.",
           "plan": [
-            "Llegar al parque del castillo sobre las 08:25.",
-            "Ver el exterior y hacer fotos antes de entrar al museo cuando abra."
+            "Dar una vuelta por el parque y acercarnos al castillo.",
+            "Sacar fotos de los exteriores y después ir a Umeda."
           ]
         },
         {
           "id": "osaka-castle",
-          "title": "Castillo de Osaka · torre y parque",
+          "title": "Castillo de Osaka · solo por fuera",
           "category": "otro",
           "status": "plan",
           "locationQuery": "Osaka Castle",
           "plan": [
-            "Primero fotos y paseo por Osaka Castle Park antes de las 09:00.",
-            "A las 09:00 entrar a la torre/museo y ver las exposiciones y vistas.",
-            "Salir con margen para ir a Umeda, comer y pasear."
+            "Ver el castillo desde fuera, con sus murallas, foso y jardines.",
+            "Hacer fotos y seguir hacia Umeda, sin entrar ni hacer colas."
           ],
-          "time": "09:00–10:45",
+          "time": "~08:45–09:30",
           "transit": {
             "from": "GN98 Saiwaicho",
             "summary": "Sakuragawa (S15) → Awaza (S13) por Sennichimae Line; cambio a Chuo Line → Morinomiya (C19); caminar al castillo.",
             "approximateDuration": "30–40 min"
           },
           "priority": "must",
-          "notes": "El museo de la torre del Castillo de Osaka abre a las 09:00; entramos pronto, después de recorrer un poco el parque. Entrada general 1.200 ¥. Con el lunes festivo (Día del Deporte), mejor evitar la hora punta."
-        },
-        {
-          "id": "umeda-grand-front-1012",
-          "title": "Umeda · Grand Front y estación Osaka",
-          "category": "barrio",
-          "status": "plan",
-          "time": "~12:30–15:30",
-          "locationQuery": "Grand Front Osaka",
-          "notes": "Después del castillo, ir a la zona de Osaka/Umeda, comer y dar una vuelta por Grand Front. De aquí vamos andando hacia el Umeda Sky Building.",
-          "plan": [
-            "Comer algo por la zona de Osaka Station / Grand Front.",
-            "Pasear por el barrio y continuar hasta el Umeda Sky Building."
-          ]
-        },
-        {
-          "id": "osaka-flex",
-          "title": "Compras o tiempo libre por Umeda",
-          "category": "compras",
-          "status": "opcional",
-          "notes": "Solo si queda tiempo entre el castillo y el mirador. El objetivo es no ir corriendo el último día completo de Osaka con las chicas.",
-          "plan": [
-            "Usar este bloque como colchón: compras, descanso o repetir algo que haya gustado.",
-            "No añadir una visita obligatoria nueva; el objetivo es recuperar energía."
-          ]
+          "notes": "Ver la torre del castillo desde fuera, hacer fotos y seguir. NO entrar al museo, NO comprar entrada ni reservar hora. Calcular salida hacia Umeda sobre las 09:30."
         },
         {
           "id": "umeda-sky",
-          "title": "Umeda Sky Building · mirador al atardecer",
+          "title": "Umeda Sky Building · mirador",
           "category": "mirador",
           "status": "plan",
           "locationQuery": "Umeda Sky Building",
           "plan": [
-            "ANTES DE LA VISITA: comprar 4 entradas de adulto para el 12/10 desde el botón de reserva de esta ficha (o comprobar taquilla).",
-            "Al llegar al edificio, buscar la entrada específica del observatorio en la planta 3 y subir para validar las entradas en la planta 39.",
-            "Intentar entrar sobre las 16:15–16:30 para estar arriba antes del atardecer de las 17:28.",
-            "Quedarnos a ver las luces de Osaka y bajar sin necesidad de ir con prisas."
+            "Después del castillo, ir a Umeda Sky Building y llegar sobre las 10:15.",
+            "Subir al mirador y ver las vistas durante unos 45–60 min.",
+            "Si compramos las entradas de Klook, revisar condiciones de acceso y guardar los cuatro QR; de momento no consta compra.",
+            "Bajar y continuar a Shinsaibashi para las compras."
           ],
-          "time": "~16:30–18:00",
+          "time": "~10:15–11:30",
           "transit": {
-            "from": "Osaka Castle",
-            "summary": "Desde JR Morinomiya/Osakajokoen, Osaka Loop Line → Osaka Station; caminar al Umeda Sky Building.",
-            "approximateDuration": "25–35 min"
+            "from": "Osaka Castle Park",
+            "summary": "Desde Morinomiya/Osakajokoen, Osaka Loop Line hasta Osaka Station y caminar a Umeda Sky. Comprobar conexión concreta en Maps.",
+            "approximateDuration": "~30–40 min"
           },
           "priority": "must",
-          "notes": "ENTRADAS POR COMPRAR: elegir el lunes 12/10/2026 para 4 adultos en la venta web enlazada desde la web oficial de Umeda Sky (Asoview). Total de referencia 8.000 ¥. No consta ninguna compra todavía. La web oficial permite comprar anticipadamente para una fecha concreta o en la taquilla del día (planta 39); comprobar si la modalidad elegida exige hora o permite entrar durante el día. Llegar al acceso sobre 16:15–16:30 para intentar estar arriba antes de la puesta del sol a las 17:28. El lunes 12 es festivo, puede haber cola.",
+          "notes": "Subir un rato después del castillo. El mirador abre a las 09:30. En la captura de Klook había 4 entradas para el 12/10 por 44,76 € sin selector de hora; COMPRA AÚN NO CONFIRMADA. No añadir el suplemento «Sky Pass + juguete». Lo hacemos antes de comer para dejar la tarde libre a Shinsaibashi y Dōtonbori, sin esperar al atardecer.",
           "links": {
             "officialWebsite": "https://www.skybldg.co.jp/observatory/information/",
             "reservation": "https://www.asoview.com/channel/tickets/J1uJNuIbLa/"
@@ -430,24 +405,61 @@
           "approximatePrice": "2.000 ¥/adulto · 8.000 ¥ los 4"
         },
         {
-          "id": "umeda-dinner-1012",
-          "title": "Cena por Umeda y regreso al hotel",
-          "category": "comida",
+          "id": "osaka-shinsaibashi-shopping-1012",
+          "title": "Shinsaibashi + Dōtonbori · compras",
+          "category": "compras",
           "status": "plan",
-          "time": "~19:00",
-          "locationQuery": "Osaka Station City restaurants",
-          "notes": "Después del mirador, cenar por Umeda si seguimos con energía. Si no, metro de vuelta al GN98. Mañana vamos hacia Kioto, así que mejor no terminar muy tarde.",
+          "locationQuery": "Shinsaibashi-suji Shopping Street Osaka",
+          "notes": "Un único bloque largo para ropa, skincare y cosmética por Shinsaibashi-suji y Dōtonbori. Sin horarios rígidos: comemos cuando tengamos hambre. Seguimos después hacia Donki y Glico.",
           "plan": [
-            "Cenar por Umeda o volver directamente a Sakuragawa.",
-            "Preparar las maletas para salir a Kioto el 13."
+            "Tras Umeda Sky, ir a Shinsaibashi-suji.",
+            "Entrar a las tiendas de ropa, skincare y cosmética que nos apetezcan.",
+            "Caminar hacia Dōtonbori, Donki y el Glico. Comer/cenar cuando encaje."
+          ],
+          "priority": "must",
+          "time": "Desde ~12:30"
+        },
+        {
+          "id": "osaka-dotonbori-shopping-1012",
+          "title": "Dōtonbori · Glico y tiendas",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Dotonbori Glico Sign Ebisubashi Osaka",
+          "notes": "Continuación del mismo bloque de compras de Shinsaibashi. Fotos del Glico, neones, tiendas y paseo sin una hora fija.",
+          "plan": [
+            "Desde Shinsaibashi-suji llegar a Dōtonbori y el puente Ebisubashi.",
+            "Seguir mirando tiendas y cenar aquí si nos apetece."
+          ]
+        },
+        {
+          "id": "osaka-donki-dotonbori-1012",
+          "title": "Don Quijote Dōtonbori · skincare y regalos",
+          "category": "compras",
+          "status": "plan",
+          "locationQuery": "Don Quijote Dotonbori Store Osaka",
+          "notes": "Parada de compras dentro del mismo paseo. Mirar skincare, cosmética, snacks y regalos, sin hora fija.",
+          "plan": [
+            "Entrar al Donki de Dōtonbori para las compras.",
+            "Volver al hotel cuando terminemos."
+          ]
+        },
+        {
+          "id": "osaka-comida-flex-1012",
+          "title": "Comer cuando tengamos hambre",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "Shinsaibashi-suji Shopping Street Osaka",
+          "notes": "Sin reserva ni hora fija: si apetece comemos por Shinsaibashi/Dōtonbori o de camino, sin detener las compras a las 12:30.",
+          "plan": [
+            "Elegir dónde comer sobre la marcha."
           ]
         }
       ],
-      "note": "Salir del GN98 a las 07:45, fotos del parque de Osaka Castle desde las 08:25 y entrada al museo cuando abra a las 09:00. Después ir a Umeda para comer y pasear. Umeda Sky al atardecer: entradas por comprar para 4 adultos, enlace oficial en la ficha. El sol se pone a las 17:28; objetivo llegar al observatorio sobre las 16:15–16:30. Lunes 12 festivo en Japón: dejar margen para colas.",
+      "note": "Salir del GN98 sobre las 07:45. Castillo de Osaka SOLO POR FUERA: fotos, parque y murallas, sin museo ni entrada. Subir un rato a Umeda Sky sobre las 10:15–11:30; 4 entradas para el 12/10 pendientes de comprar, Klook mostraba 44,76 € sin seleccionar hora. Después, toda la tarde para compras en Shinsaibashi-suji y Dōtonbori: ropa, skincare, cosmética, Donki y Glico. Comemos cuando nos entre hambre, sin horario fijo. No pasar el día en Umeda. El 12 es festivo (Día del Deporte): puede haber colas.",
       "mapStages": [
         {
-          "id": "osaka-castle",
-          "title": "GN98 → Castillo de Osaka",
+          "id": "castillo-exterior",
+          "title": "GN98 → Castillo de Osaka por fuera",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
@@ -456,22 +468,31 @@
           ]
         },
         {
-          "id": "castillo-umeda",
-          "title": "Castillo → Umeda",
+          "id": "castillo-a-umeda",
+          "title": "Castillo → Umeda Sky",
           "mode": "transit",
           "activityIds": [
             "osaka-castle",
-            "umeda-grand-front-1012"
+            "umeda-sky"
           ]
         },
         {
-          "id": "umeda-mirador",
-          "title": "Umeda · paseo, mirador y vuelta",
-          "mode": "mixed",
+          "id": "umeda-a-shinsaibashi",
+          "title": "Umeda Sky → Shinsaibashi",
+          "mode": "transit",
           "activityIds": [
-            "umeda-grand-front-1012",
             "umeda-sky",
-            "umeda-dinner-1012",
+            "osaka-shinsaibashi-shopping-1012"
+          ]
+        },
+        {
+          "id": "compras-namba",
+          "title": "Compras Shinsaibashi + Dōtonbori + Donki → hotel",
+          "mode": "walk",
+          "activityIds": [
+            "osaka-shinsaibashi-shopping-1012",
+            "osaka-dotonbori-shopping-1012",
+            "osaka-donki-dotonbori-1012",
             "@hotel-end"
           ]
         }
