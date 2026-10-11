@@ -13,9 +13,9 @@
   "days": [
     {
       "date": "2026-10-11",
-      "title": "Osaka · 07:45: Namba, Shinsekai y Dōtonbori",
+      "title": "Osaka · Shinsekai, templos y Dōtonbori de noche",
       "status": "plan",
-      "note": "Salir del GN98 a las 07:45. Desayunar por Namba 08:10–08:35 y entrar a Namba Yasaka sobre las 08:45: 15–20 minutos de fotos y goshuin desde las 09:00, terminando sobre 09:10–09:15. No perder dos horas esperando en el santuario. Después Kuromon, Shinsekai con Tsūtenkaku solo por fuera, kushikatsu y Dōtonbori para ver los neones. RECORDATORIO: comprar 4 entradas de Umeda Sky para el lunes 12 (enlace en el planning, compra todavía pendiente).",
+      "note": "Domingo 11/10. A las 13:20 estamos comiendo en 初代エビス 別館 en Shinsekai. Hemos pedido kushikatsu, okonomiyaki y fuwatama yakisoba. Calculamos terminar sobre las 13:50. Después haremos Isshin-ji y Shitennō-ji antes de que cierren los goshuin, seguiremos por Hōzen-ji y dejaremos Dōtonbori para la tarde-noche. Los horarios posteriores son aproximados: no marcar los templos como visitados hasta que vayamos. Mañana está pendiente comprar entradas de Umeda Sky.",
       "activities": [
         {
           "id": "salida-gn98-0745-1011",
@@ -56,9 +56,9 @@
           ],
           "time": "~08:45–09:15",
           "transit": {
-            "from": "Sumiyoshi Taisha",
-            "summary": "Nankai Main Line Sumiyoshitaisha → Namba; desde Nankai Namba caminar a Namba Yasaka Jinja.",
-            "approximateDuration": "20–30 min"
+            "from": "Desayuno por Namba",
+            "summary": "Caminar hasta el santuario desde la zona de Namba.",
+            "approximateDuration": "~10–20 min"
           },
           "goshuin": true,
           "description": "Namba Yasaka Jinja es un santuario sintoísta de Osaka dedicado principalmente a Susanoo-no-Mikoto, el kami vinculado a tormentas, protección y relatos de victoria frente al mal. No se conoce con certeza la fecha de su fundación y sus tradiciones están ligadas al antiguo culto de Gion. Lo más reconocible es una gigantesca cabeza de león de unos 12 metros, el Ema-den, cuya boca abierta se interpreta popularmente como capaz de engullir la mala suerte y atraer oportunidades. La estructura es moderna, de la década de 1970: aunque parezca un antiguo monumento, no es medieval. Fíjate en los enormes dientes y en el espacio dedicado a ofrendas y deseos.",
@@ -115,16 +115,80 @@
         },
         {
           "id": "kushikatsu-shinsekai-1011",
-          "title": "Comer kushikatsu en Shinsekai",
+          "title": "Comiendo en 初代エビス 別館 · kushikatsu y okonomiyaki",
           "category": "comida",
-          "status": "plan",
-          "time": "~12:15–13:15",
-          "locationQuery": "Shinsekai Osaka kushikatsu restaurants",
-          "notes": "Comer kushikatsu por Shinsekai después de pasear. Sin reservar local ni ir con prisas.",
+          "status": "confirmado",
+          "time": "~13:00–13:50",
+          "locationQuery": "新世界串かつ 大阪お好み焼き もんじゃ焼 初代エビス 別館 恵美須東2-1-20",
+          "notes": "Hoy 11/10 estamos comiendo en 初代エビス 別館 (Shodai Ebisu Bekkan), en Shinsekai. A las 13:20 seguíamos en la mesa. No sabemos la hora exacta de entrada. En las fotos aparecen surtido de 10 kushikatsu (10本盛り合わせ), okonomiyaki de cerdo (豚玉 / butatama) y fuwatama yakisoba (fideos envueltos en tortilla). No está confirmado quién pidió cada plato. Calculamos terminar sobre las 13:50 para ir a los templos.",
           "plan": [
-            "Probar kushikatsu o comer donde nos apetezca.",
-            "Luego movernos hacia Namba/Dōtonbori."
-          ]
+            "Estamos comiendo en 初代エビス 別館, en Shinsekai (恵美須東2-1-20).",
+            "Fotos de un surtido de 10 kushikatsu, okonomiyaki de cerdo y fuwatama yakisoba.",
+            "Seguíamos comiendo a las 13:20. Calcular salida sobre las 13:50; no consta hora exacta."
+          ],
+          "address": "〒556-0002 大阪府大阪市浪速区恵美須東2-1-20",
+          "links": {
+            "officialWebsite": "https://tabelog.com/osaka/A2701/A270206/27143350/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E4%B8%96%E7%95%8C%E4%B8%B2%E3%81%8B%E3%81%A4%20%E3%81%8A%E5%A5%BD%E3%81%BF%E7%84%BC%20%E5%88%9D%E4%BB%A3%E3%82%A8%E3%83%93%E3%82%B9%20%E5%88%A5%E9%A4%A8%20%E6%81%B5%E7%BE%8E%E9%A0%88%E6%9D%B12-1-20"
+          }
+        },
+        {
+          "id": "isshinji-goshuin-1011",
+          "title": "Isshin-ji · primer goshuin de la tarde",
+          "category": "templo",
+          "status": "plan",
+          "time": "~14:05–14:30",
+          "goshuin": true,
+          "locationQuery": "一心寺 大阪市天王寺区逢阪2-8-69",
+          "address": "〒543-0062 大阪市天王寺区逢阪2-8-69",
+          "notes": "A unos 10–15 minutos andando del restaurante. El templo atiende de 09:00 a 16:00 y ofrece goshuin, pero hay que comprobar la disponibilidad en el momento. No está visitado todavía.",
+          "description": "Isshin-ji es un templo budista de la escuela Jōdo, relacionado con el monje Hōnen y fundado tradicionalmente en 1185. Es conocido como el templo de los okotsubutsu: imágenes de Buda realizadas con restos de personas fallecidas que sus familias han confiado al templo. La entrada moderna contrasta con el recinto antiguo. Se visita especialmente para rendir homenaje a los difuntos y rezar. Para el goshuin hay que preguntar por la oficina, sin interrumpir ceremonias.",
+          "plan": [
+            "Salir sobre las 13:50 y llegar andando a Isshin-ji hacia las 14:05.",
+            "Pedir el goshuin antes del cierre de atención a las 16:00.",
+            "Ver el templo unos 20 minutos y seguir a Shitennō-ji."
+          ],
+          "links": {
+            "officialWebsite": "https://www.isshinji.or.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E5%BF%83%E5%AF%BA%20%E5%A4%A7%E9%98%AA%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%AF%BA%E5%8C%BA%E9%80%A2%E9%98%AA2-8-69"
+          }
+        },
+        {
+          "id": "shitennoji-goshuin-1011",
+          "title": "Shitennō-ji · templo y goshuin",
+          "category": "templo",
+          "status": "plan",
+          "time": "~14:45–15:40",
+          "goshuin": true,
+          "locationQuery": "四天王寺 大阪市天王寺区四天王寺1-11-18",
+          "address": "〒543-0051 大阪市天王寺区四天王寺1-11-18",
+          "notes": "Vamos desde Isshin-ji andando, unos 10–15 minutos. En octubre el recinto central abre de 08:30 a 16:00. Los goshuin se solicitan en el nōkyōsho (納経所); mejor empezar por ahí, sin apurar el cierre.",
+          "description": "Shitennō-ji es uno de los templos budistas más antiguos de Japón. Según la tradición, el príncipe Shōtoku lo mandó construir en el año 593, cuando el budismo empezaba a extenderse por Japón. Está dedicado a los Cuatro Reyes Celestiales, protectores de las cuatro direcciones. Aunque se ha reconstruido varias veces, conserva la disposición tradicional del complejo, con la puerta, la pagoda de cinco pisos y los salones principales alineados. Es uno de los grandes templos históricos de Osaka.",
+          "plan": [
+            "Ir andando desde Isshin-ji a Shitennō-ji.",
+            "Primero buscar el nōkyōsho (納経所) para pedir goshuin.",
+            "Visitar la pagoda y el recinto antes del cierre de las 16:00."
+          ],
+          "links": {
+            "officialWebsite": "https://www.shitennoji.or.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E5%9B%9B%E5%A4%A9%E7%8E%8B%E5%AF%BA%20%E5%A4%A7%E9%98%AA%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%AF%BA%E5%8C%BA%E5%9B%9B%E5%A4%A9%E7%8E%8B%E5%AF%BA1-11-18"
+          }
+        },
+        {
+          "id": "hozenji-yokocho-1011",
+          "title": "Hōzen-ji · goshuin y callejón",
+          "category": "templo",
+          "status": "plan",
+          "time": "~16:10–16:45",
+          "locationQuery": "法善寺 大阪府大阪市中央区難波1-2-16",
+          "notes": "Después de Shitennō-ji vamos a Namba, al templo Hōzen-ji. El recinto se puede visitar también por la noche, pero el goshuin se atiende habitualmente entre las 10:00 y las 18:00. Intentamos conseguirlo ahora y después vamos a Dōtonbori.",
+          "plan": [
+            "Desde Shitennō-ji, ir hacia Namba (unos 25–30 minutos combinando metro y paseo).",
+            "Solicitar el goshuin y ver la estatua de Fudō cubierta de musgo.",
+            "Después pasar a Dōtonbori y ver el Glico."
+          ],
+          "description": "Hozenji Yokocho es un callejón pequeño de Namba, con faroles y restaurantes. Está junto al templo budista Hōzen-ji, conocido por su estatua de Fudō Myōō cubierta de musgo. La gente vierte agua sobre ella como ofrenda y, con los años, ha quedado verde. El callejón conserva parte del ambiente del Osaka antiguo, aunque esté al lado de los neones de Dōtonbori. Es una visita corta que encaja muy bien por la noche.",
+          "goshuin": true
         },
         {
           "id": "dotonbori",
@@ -133,41 +197,27 @@
           "status": "plan",
           "locationQuery": "Dotonbori Osaka",
           "plan": [
-            "Paseo por Dōtonbori al caer la tarde.",
-            "Foto del Glico Man en Ebisubashi y recorrer los neones.",
-            "Cenar por la zona: takoyaki, okonomiyaki, kushikatsu o lo que nos apetezca."
+            "Ir al Glico Man en Ebisubashi después del último templo.",
+            "Pasear por Dōtonbori al atardecer y ver los neones.",
+            "Seguir hacia Shinsaibashi cuando nos apetezca."
           ],
-          "time": "~16:45–18:30",
+          "time": "~17:15–19:00",
           "transit": {
             "from": "Shinsekai",
             "summary": "Dobutsuen-mae (M22) → Namba (M20) por Midosuji Line; caminar a Dōtonbori.",
             "approximateDuration": "15–20 min"
           },
           "priority": "must",
-          "notes": "Foto del cartel Glico en Ebisubashi, paseo por Dōtonbori y neones cuando empiece a oscurecer. En Osaka el sol se pone sobre las 17:29 el domingo 11, así que esta hora encaja para ver la zona de día y de noche."
-        },
-        {
-          "id": "hozenji-yokocho-1011",
-          "title": "Hozenji Yokocho · callejón y templo",
-          "category": "templo",
-          "status": "plan",
-          "time": "~18:30–19:00",
-          "locationQuery": "Hozenji Yokocho Osaka",
-          "notes": "Está junto a Dōtonbori y encaja en el paseo nocturno. Ver los faroles del callejón y el pequeño templo Hōzen-ji con la estatua cubierta de musgo.",
-          "plan": [
-            "Pasar por el callejón de faroles.",
-            "Ver la estatua de Fudō con musgo y continuar por Namba."
-          ],
-          "description": "Hozenji Yokocho es un callejón pequeño de Namba, con faroles y restaurantes. Está junto al templo budista Hōzen-ji, conocido por su estatua de Fudō Myōō cubierta de musgo. La gente vierte agua sobre ella como ofrenda y, con los años, ha quedado verde. El callejón conserva parte del ambiente del Osaka antiguo, aunque esté al lado de los neones de Dōtonbori. Es una visita corta que encaja muy bien por la noche."
+          "notes": "Dōtonbori va después de los templos porque los goshuin cierran antes. Llegaremos aproximadamente hacia las 17:15–17:30 para ver el Glico y las calles encenderse. Como ya hemos comido en Shinsekai, ahora toca pasear y picar algo solo si apetece."
         },
         {
           "id": "shinsaibashi-suji-1011",
           "title": "Shinsaibashi-suji · paseo y tiendas",
           "category": "compras",
           "status": "plan",
-          "time": "~19:00",
+          "time": "~19:00–20:00",
           "locationQuery": "Shinsaibashi-suji Shopping Street Osaka",
-          "notes": "Calle comercial cubierta que empieza cerca de Dōtonbori. Si las tiendas están abiertas, podemos echar un vistazo; el paseo también merece la pena de noche. No hace falta comprar nada.",
+          "notes": "Después de Dōtonbori, paseo por Shinsaibashi-suji si las tiendas están abiertas. No hay más horarios de templos que cumplir.",
           "plan": [
             "Desde Dōtonbori subir a Shinsaibashi-suji.",
             "Dar una vuelta por las tiendas que sigan abiertas y regresar al hotel."
@@ -190,7 +240,7 @@
           },
           "goshuin": true,
           "description": "Sumiyoshi Taisha es uno de los santuarios sintoístas más antiguos de Japón; según la tradición fue fundado en el siglo III, antes de que el budismo llegara al archipiélago. Venera a las tres deidades Sumiyoshi, protectoras de navegantes, comerciantes marítimos y viajeros, y a la emperatriz Jingū. Su arquitectura Sumiyoshi-zukuri es considerada una de las formas autóctonas de construcción de santuarios, con tejados rectos y adornos tradicionales. Se conservan cuatro santuarios principales alineados de forma singular. El puente rojo arqueado Sorihashi, también llamado Taikobashi, simboliza el paso hacia un espacio sagrado. Osaka fue siempre ciudad portuaria, así que este santuario conecta directamente con su historia comercial.",
-          "notes": "Se queda como visita opcional para otro momento. Está al sur y ahora es más importante que las chicas puedan ver Namba Yasaka, Tsūtenkaku, Dōtonbori, el castillo y Umeda antes de marcharse a Kioto."
+          "notes": "Se queda como alternativa, no visita adicional: queda al sur y hoy no tenemos margen para meterlo además de Isshin-ji y Shitennō-ji sin comprometer los goshuin."
         },
         {
           "id": "den-den-town-1011-optional",
@@ -236,8 +286,8 @@
           ]
         },
         {
-          "id": "shinsekai-mediodia",
-          "title": "Shinsekai y Tsūtenkaku",
+          "id": "shinsekai-comida",
+          "title": "Shinsekai → restaurante Ebisu",
           "mode": "walk",
           "activityIds": [
             "kuromon-market-1011",
@@ -247,13 +297,31 @@
           ]
         },
         {
-          "id": "noche-dotonbori",
-          "title": "Dōtonbori y vuelta al GN98",
-          "mode": "mixed",
+          "id": "templos-tarde",
+          "title": "Isshin-ji → Shitennō-ji · goshuin",
+          "mode": "walk",
           "activityIds": [
             "kushikatsu-shinsekai-1011",
-            "dotonbori",
+            "isshinji-goshuin-1011",
+            "shitennoji-goshuin-1011"
+          ]
+        },
+        {
+          "id": "templo-hozenji",
+          "title": "Shitennō-ji → Hōzen-ji",
+          "mode": "transit",
+          "activityIds": [
+            "shitennoji-goshuin-1011",
+            "hozenji-yokocho-1011"
+          ]
+        },
+        {
+          "id": "noche-dotonbori",
+          "title": "Dōtonbori → Shinsaibashi → hotel",
+          "mode": "mixed",
+          "activityIds": [
             "hozenji-yokocho-1011",
+            "dotonbori",
             "shinsaibashi-suji-1011",
             "@hotel-end"
           ]
