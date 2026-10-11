@@ -93,10 +93,10 @@ if (osakaSegment) {
   assert(buySky?.status === 'plan' && buySky?.links?.reservation?.includes('asoview.com'),
     'Las entradas Umeda Sky deben figurar pendientes y con compra directa');
   assert(sky?.links?.reservation?.includes('asoview.com') &&
-    sky?.notes?.includes('No consta ninguna compra'),
-    'Mirador Umeda: botón de reserva oficial sin inventar entradas compradas');
-  assert(sky?.notes?.includes('17:28'),
-    'Atardecer Umeda del 12/10 es a las 17:28 y debe figurar en el planning');
+    sky?.notes?.includes('COMPRA AÚN NO CONFIRMADA'),
+    'Umeda Sky: conservar enlace de compra sin dar entradas como compradas');
+  assert(sky?.time === '~10:15–11:30' && !sky.notes?.includes('17:28'),
+    'Umeda Sky: visita corta por la mañana, sin esperar al atardecer');
   // Cambio real del 11/10: comida confirmada a las 13:20, goshuin
   // antes del cierre de las 16:00 y Dotonbori a la tarde-noche.
   const ebisu = getActivity(sundayDay, 'kushikatsu-shinsekai-1011');
@@ -131,6 +131,24 @@ if (osakaSegment) {
     'Lunes 12: salida temprana a las 07:45');
   assert(getActivity(mondayDay, 'osaka-castle-park-early-1012')?.time === '~08:25',
     'Castillo Osaka: ver parque antes de abrir a las 09:00');
+  const castleMonday = getActivity(mondayDay, 'osaka-castle');
+  assert(castleMonday?.notes?.includes('NO entrar al museo') &&
+    castleMonday?.time === '~08:45–09:30',
+    'Lunes 12: Castillo de Osaka solo por fuera; no entrar al museo');
+  assert(!mondayDay.activities.some(a => a.id === 'umeda-grand-front-1012' || a.id === 'umeda-dinner-1012'),
+    'Lunes 12: no dedicar toda la tarde a Umeda ni cenar obligatoriamente allí');
+  assert(['osaka-shinsaibashi-shopping-1012','osaka-dotonbori-shopping-1012',
+    'osaka-donki-dotonbori-1012'].every(id => getActivity(mondayDay,id)?.status === 'plan'),
+    'Lunes 12: ropa, skincare y Donki forman el bloque principal de compras');
+  assert(getActivity(mondayDay, 'osaka-comida-flex-1012')?.status === 'opcional' &&
+    !getActivity(mondayDay, 'osaka-comida-flex-1012')?.time,
+    'Lunes 12: no fijar una hora de comida');
+  const shoppingStage = mondayDay.mapStages.find(st => st.id === 'compras-namba');
+  assert(shoppingStage?.activityIds.includes('osaka-shinsaibashi-shopping-1012') &&
+    shoppingStage.activityIds.includes('osaka-dotonbori-shopping-1012') &&
+    shoppingStage.activityIds.includes('osaka-donki-dotonbori-1012') &&
+    shoppingStage.activityIds.includes('@hotel-end'),
+    'Mapa lunes: Shinsaibashi, Dotonbori y Donki en un mismo tramo, de regreso al hotel');
 }
 const transfer = get('2026-10-13');
 if (transfer) {
