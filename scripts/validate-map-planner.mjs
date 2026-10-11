@@ -147,8 +147,12 @@ if (osakaSegment) {
   assert(shoppingStage?.activityIds.includes('osaka-shinsaibashi-shopping-1012') &&
     shoppingStage.activityIds.includes('osaka-dotonbori-shopping-1012') &&
     shoppingStage.activityIds.includes('osaka-donki-dotonbori-1012') &&
-    shoppingStage.activityIds.includes('@hotel-end'),
-    'Mapa lunes: Shinsaibashi, Dotonbori y Donki en un mismo tramo, de regreso al hotel');
+    shoppingStage.activityIds.at(-1) === 'osaka-gn98-hacer-maletas-1012',
+    'Mapa lunes: compras Shinsaibashi, Dotonbori y Donki → GN98 antes de enviar las maletas');
+  const shippingStage = mondayDay.mapStages.find(st => st.id === 'yamato-envio-kyoto');
+  assert(shippingStage?.activityIds.includes('yamato-osaka-kyoto-gion-send-1012') &&
+    shippingStage.activityIds.at(-1) === '@hotel-end',
+    'Mapa lunes: GN98 → Yamato → regreso GN98 antes de terminar el día');
 }
 // Festivo 12/10: compras de Donki ANTES de cerrar maletas y depositarlas
 // con salida del día en Yamato Sakuragawa. Destino: Kyoto Gion 162620.
