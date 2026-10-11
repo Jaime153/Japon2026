@@ -14,6 +14,25 @@
       "status": "plan",
       "activities": [
         {
+          "id": "yamato-kyoto-gion-pickup-1013",
+          "title": "Recoger maletas en Yamato Kyoto Gion",
+          "category": "transporte",
+          "status": "plan",
+          "time": "Según tracking",
+          "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
+          "address": "〒605-0074 京都府京都市東山区祇園町南側570-228",
+          "notes": "Recogida prevista martes 13 en la oficina Yamato Kyoto Gion (código 162620), a poca distancia de RESI STAY Yasaka. Abre martes 08:00–19:00. La recogida NO está confirmada: dependerá de haber enviado el lunes 12 dentro del corte de Sakuragawa y de que el tracking indique que ya llegaron. No suponer disponibles las maletas desde las 08:00.",
+          "plan": [
+            "Verificar el estado de seguimiento de cada maleta antes de acudir.",
+            "Solo cuando indique disponible en oficina, acudir a Kyoto Gion Center, código 162620, Gionmachi Minamigawa 570-228.",
+            "Llevar resguardo y documento. Recoger antes de las 19:00 y llevar al RESI STAY Yasaka."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/162620/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E4%BA%AC%E9%83%BD%E7%A5%87%E5%9C%92%E5%96%B6%E6%A5%AD%E6%89%80%20%E7%A5%87%E5%9C%92%E7%94%BA%E5%8D%97%E5%81%B4570-228"
+          }
+        },
+        {
           "id": "chionin",
           "title": "Chion-in",
           "time": "~12:30",
@@ -167,7 +186,7 @@
           }
         }
       ],
-      "note": "En 2025 hicimos muchos templos de Higashiyama y faltaban en 2026. Este día los recupera caminando. Si llegamos tarde desde Osaka: proteger Kiyomizu, Yasaka Pagoda y Yasaka; Shōren-in es el primer recorte."
+      "note": "En 2025 hicimos muchos templos de Higashiyama y faltaban en 2026. Este día los recupera caminando. Si llegamos tarde desde Osaka: proteger Kiyomizu, Yasaka Pagoda y Yasaka; Shōren-in es el primer recorte. El martes 13 también tenemos que recoger las maletas en Yamato Kyoto Gion, oficina 162620, cuando el tracking confirme llegada y antes de las 19:00. No perder los goshuin de Higashiyama esperando en la oficina si todavía no han llegado."
     },
     {
       "date": "2026-10-14",

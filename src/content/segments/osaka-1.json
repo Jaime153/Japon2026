@@ -410,14 +410,14 @@
           "category": "compras",
           "status": "plan",
           "locationQuery": "Shinsaibashi-suji Shopping Street Osaka",
-          "notes": "Un único bloque largo para ropa, skincare y cosmética por Shinsaibashi-suji y Dōtonbori. Sin horarios rígidos: comemos cuando tengamos hambre. Seguimos después hacia Donki y Glico.",
+          "notes": "Después de Umeda, tarde de ropa, skincare y cosmética por Shinsaibashi. Hay que reservar un rato para Donki y volver al apartamento para enviar las maletas a Kioto antes de las 19:00.",
           "plan": [
-            "Tras Umeda Sky, ir a Shinsaibashi-suji.",
-            "Entrar a las tiendas de ropa, skincare y cosmética que nos apetezcan.",
-            "Caminar hacia Dōtonbori, Donki y el Glico. Comer/cenar cuando encaje."
+            "Después de Umeda Sky, ir a Shinsaibashi a mirar tiendas.",
+            "Comer cuando tengamos hambre y continuar hacia Dōtonbori.",
+            "Dejar Donki para el final de las compras antes de volver al GN98."
           ],
           "priority": "must",
-          "time": "Desde ~12:30"
+          "time": "~12:30–14:45"
         },
         {
           "id": "osaka-dotonbori-shopping-1012",
@@ -425,23 +425,66 @@
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Dotonbori Glico Sign Ebisubashi Osaka",
-          "notes": "Continuación del mismo bloque de compras de Shinsaibashi. Fotos del Glico, neones, tiendas y paseo sin una hora fija.",
+          "notes": "Pasear por el Glico y las tiendas de Dōtonbori. Luego Donki, y después hay que mandar las maletas a Kioto.",
           "plan": [
             "Desde Shinsaibashi-suji llegar a Dōtonbori y el puente Ebisubashi.",
             "Seguir mirando tiendas y cenar aquí si nos apetece."
-          ]
+          ],
+          "time": "~14:45–15:00"
         },
         {
           "id": "osaka-donki-dotonbori-1012",
-          "title": "Don Quijote Dōtonbori · skincare y regalos",
+          "title": "Don Quijote Dōtonbori · compras antes del envío",
           "category": "compras",
           "status": "plan",
-          "locationQuery": "Don Quijote Dotonbori Store Osaka",
-          "notes": "Parada de compras dentro del mismo paseo. Mirar skincare, cosmética, snacks y regalos, sin hora fija.",
+          "locationQuery": "ドン・キホーテ 道頓堀店 大阪市中央区宗右衛門町7-13",
+          "notes": "Comprar skincare, cosmética, snacks y regalos ANTES de enviar las maletas. Donki Dōtonbori abre 24 h, también el festivo. Para que quepan las compras en las maletas y salga el envío el lunes, terminar sobre las 15:45 y regresar al GN98.",
           "plan": [
-            "Entrar al Donki de Dōtonbori para las compras.",
-            "Volver al hotel cuando terminemos."
+            "Acabar las compras sobre las 15:45 para no ir apurados.",
+            "Volver al GN98, meter las compras en las maletas y llevarlas a Kuroneko Yamato Sakuragawa.",
+            "Donki abre 24 horas, pero el envío de Yamato tiene hora límite."
+          ],
+          "time": "~15:00–15:45",
+          "links": {
+            "officialWebsite": "https://www.donki.com/en/store/shop_detail.php?shop_id=110",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E9%81%93%E9%A0%93%E5%A0%80%E5%BA%97%207-13%20%E5%AE%97%E5%8F%B3%E8%A1%9B%E9%96%80%E7%94%BA%20%E5%A4%A7%E9%98%AA%E5%B8%82"
+          }
+        },
+        {
+          "id": "osaka-gn98-hacer-maletas-1012",
+          "title": "Volver al GN98 y meter las compras en las maletas",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~16:00–16:30",
+          "locationQuery": "34.668712,135.485405",
+          "notes": "Después de Donki, volver al apartamento, repartir las compras y cerrar las maletas para enviarlas a Kioto. Guardar aparte documentación, medicación y lo necesario para el 13; la entrega al día siguiente no está garantizada hasta que la confirme Yamato.",
+          "plan": [
+            "Volver al GN98 con todas las compras de Donki.",
+            "Meterlo todo en las maletas que vamos a enviar a Kioto y conservar una mochila con lo imprescindible por si el envío se retrasa.",
+            "Salir hacia Yamato Sakuragawa antes de las 16:45."
           ]
+        },
+        {
+          "id": "yamato-osaka-kyoto-gion-send-1012",
+          "title": "Yamato Sakuragawa · enviar maletas a Kioto",
+          "category": "transporte",
+          "status": "plan",
+          "priority": "must",
+          "time": "16:30–17:00",
+          "locationQuery": "ヤマト運輸 浪速営業所 桜川3丁目8-59",
+          "address": "〒556-0022 大阪府大阪市浪速区桜川3-8-59 汐見橋ビル",
+          "notes": "IMPRESCINDIBLE MAÑANA LUNES 12 (festivo): enviar las maletas de Osaka a la oficina Yamato Kyoto Gion (código de DESTINO 162620) para recogerlas el martes 13. La oficina de ORIGEN Naniwa-Sakuragawa es la misma donde las recogimos, código 060151. Abre festivos 08:00–21:00; el último depósito para que el paquete salga ese día es 19:00. Objetivo entregar 16:30–17:00; no apurar más allá de 18:00. El servicio de equipaje de Yamato contempla entrega al día siguiente Osaka→Kyoto, pero antes de pagar pedir que confirmen llegada 13/10 en el resguardo; no prometer disponibilidad a primera hora.",
+          "plan": [
+            "Ir después de Donki y de guardar las compras en las maletas. Objetivo: estar en la oficina sobre 16:30–17:00.",
+            "ORIGEN: 浪速営業所（桜川） / Naniwa-Sakuragawa, código 060151. En festivo abierto 08:00–21:00, salida del mismo día hasta las 19:00.",
+            "DESTINO: 京都祇園営業所 (Kyoto Gion), código 162620. Dirección: 〒605-0074 京都府京都市東山区祇園町南側570-228. Pedir 営業所止め (recoger en oficina), NO entrega al hotel RESI STAY.",
+            "Confirmar con el personal que el envío del 12/10 (festivo) estará listo para RECOGER el martes 13/10; exigir que la fecha figure en el recibo. Si no es viable, no enviar lo imprescindible.",
+            "Guardar fotos de los resguardos y números de seguimiento. El martes 13 solo ir cuando el tracking diga que ya ha llegado a Kyoto Gion."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/060151/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E6%B5%AA%E9%80%9F%E5%96%B6%E6%A5%AD%E6%89%80%20%E6%A1%9C%E5%B7%9D%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%98%EF%BC%8D%EF%BC%95%EF%BC%99"
+          }
         },
         {
           "id": "osaka-comida-flex-1012",
@@ -455,7 +498,7 @@
           ]
         }
       ],
-      "note": "Salir del GN98 sobre las 07:45. Castillo de Osaka SOLO POR FUERA: fotos, parque y murallas, sin museo ni entrada. Subir un rato a Umeda Sky sobre las 10:15–11:30; 4 entradas para el 12/10 pendientes de comprar, Klook mostraba 44,76 € sin seleccionar hora. Después, toda la tarde para compras en Shinsaibashi-suji y Dōtonbori: ropa, skincare, cosmética, Donki y Glico. Comemos cuando nos entre hambre, sin horario fijo. No pasar el día en Umeda. El 12 es festivo (Día del Deporte): puede haber colas.",
+      "note": "Lunes 12/10 (festivo): salir del GN98 07:45, ver el castillo de Osaka por fuera, Umeda Sky por la mañana y después compras por Shinsaibashi y Dōtonbori. Donki sobre las 15:00–15:45. Volver al GN98, meter las compras en las maletas y entregarlas en Kuroneko Yamato Sakuragawa entre las 16:30 y 17:00. La oficina abre en festivos y el corte de salida es a las 19:00. El destino es Yamato Kyoto Gion (162620), para recogerlas el martes 13 SOLO si el personal confirma la fecha de llegada y el seguimiento indica que están disponibles. No enviarlas al apartamento.",
       "mapStages": [
         {
           "id": "castillo-exterior",
@@ -487,12 +530,22 @@
         },
         {
           "id": "compras-namba",
-          "title": "Compras Shinsaibashi + Dōtonbori + Donki → hotel",
-          "mode": "walk",
+          "title": "Shinsaibashi → Dōtonbori → Donki → GN98",
+          "mode": "mixed",
           "activityIds": [
             "osaka-shinsaibashi-shopping-1012",
             "osaka-dotonbori-shopping-1012",
             "osaka-donki-dotonbori-1012",
+            "osaka-gn98-hacer-maletas-1012"
+          ]
+        },
+        {
+          "id": "yamato-envio-kyoto",
+          "title": "GN98 → Yamato Sakuragawa → GN98",
+          "mode": "walk",
+          "activityIds": [
+            "osaka-gn98-hacer-maletas-1012",
+            "yamato-osaka-kyoto-gion-send-1012",
             "@hotel-end"
           ]
         }
@@ -510,9 +563,10 @@
           "status": "confirmado",
           "locationQuery": "Kyoto Station",
           "plan": [
-            "Salir relativamente temprano de Osaka para aprovechar la tarde completa en Higashiyama.",
-            "Dejar equipaje en RESI STAY Yasaka antes de empezar el paseo de templos.",
-            "Objetivo: estar listos para empezar Kyoto sobre mediodía/primera hora de la tarde."
+            "Viajar a Kioto con mochila ligera; si el envío no pudo garantizarse, llevar lo imprescindible con nosotros.",
+            "Primero pasar por RESI STAY Yasaka para orientarnos; check-in desde las 15:00 según reserva.",
+            "Revisar seguimiento. Solo cuando aparezca disponible, recoger en Yamato Kyoto Gion (162620), abierta el martes 08:00–19:00; llevar resguardo e identificación.",
+            "Mantener las visitas de Higashiyama, pero si el envío llega tarde hay que ir a recogerlo antes de las 19:00."
           ],
           "time": "~09:00",
           "transit": {
@@ -527,7 +581,8 @@
               "Desde Kyoto Station: City Bus 206 hacia Higashiyama/Gion y bajar en Higashiyama Yasui (el hotel está a ~1 min), o taxi si vamos cargados."
             ],
             "note": "Con 4 personas y maletas, taxi GN98 → Osaka Station o Kyoto Station → hotel puede compensar para ahorrar transbordos."
-          }
+          },
+          "notes": "Salimos de Osaka hacia Kioto. El día anterior planeamos enviar las maletas a Yamato Kyoto Gion (oficina 162620): NO dar por recibido el envío hasta que lo indique el tracking. El check-in de RESI STAY Yasaka comienza a las 15:00. Si llegan después de nuestro paseo, recogerlas antes de que cierre Yamato Gion a las 19:00."
         },
         {
           "id": "yasaka-evening",

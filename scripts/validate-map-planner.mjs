@@ -147,8 +147,32 @@ if (osakaSegment) {
   assert(shoppingStage?.activityIds.includes('osaka-shinsaibashi-shopping-1012') &&
     shoppingStage.activityIds.includes('osaka-dotonbori-shopping-1012') &&
     shoppingStage.activityIds.includes('osaka-donki-dotonbori-1012') &&
-    shoppingStage.activityIds.includes('@hotel-end'),
-    'Mapa lunes: Shinsaibashi, Dotonbori y Donki en un mismo tramo, de regreso al hotel');
+    shoppingStage.activityIds.at(-1) === 'osaka-gn98-hacer-maletas-1012',
+    'Mapa lunes: compras Shinsaibashi, Dotonbori y Donki → GN98 antes de enviar las maletas');
+  const shippingStage = mondayDay.mapStages.find(st => st.id === 'yamato-envio-kyoto');
+  assert(shippingStage?.activityIds.includes('yamato-osaka-kyoto-gion-send-1012') &&
+    shippingStage.activityIds.at(-1) === '@hotel-end',
+    'Mapa lunes: GN98 → Yamato → regreso GN98 antes de terminar el día');
+}
+// Festivo 12/10: compras de Donki ANTES de cerrar maletas y depositarlas
+// con salida del día en Yamato Sakuragawa. Destino: Kyoto Gion 162620.
+const monday12 = get('2026-10-12');
+if (monday12) {
+  const ids = monday12.stages.flatMap(stage => stage.stops.map(x => x.id));
+  const donki = ids.indexOf('osaka-donki-dotonbori-1012');
+  const pack = ids.indexOf('osaka-gn98-hacer-maletas-1012');
+  const send = ids.indexOf('yamato-osaka-kyoto-gion-send-1012');
+  assert(donki >= 0 && pack > donki && send > pack,
+    '12/10: ruta debe pasar por Donki → preparar maletas GN98 → Yamato');
+  assert(monday12.stages.some(stage => stage.id === 'yamato-envio-kyoto'),
+    '12/10: falta tramo específico al Yamato desde el GN98');
+  assert(monday12.stages.at(-1).stops.at(-1).kind === 'hotel',
+    '12/10: ruta debe regresar al GN98 después de Yamato');
+}
+const kyoto13 = get('2026-10-13');
+if (kyoto13) {
+  assert(kyoto13.stages.some(s => s.stops.some(p => p.id === 'yamato-kyoto-gion-pickup-1013')),
+    '13/10: falta recogida de maletas en Yamato Kyoto Gion');
 }
 const transfer = get('2026-10-13');
 if (transfer) {
