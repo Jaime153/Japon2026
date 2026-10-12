@@ -766,9 +766,9 @@
     },
     {
       "date": "2026-10-16",
-      "title": "Nara · Kōfuku-ji · Haru · parque y templos",
+      "title": "Nara · día completo para los cuatro",
       "status": "plan",
-      "note": "Ruta optimizada para intentar Haru a la apertura: Kintetsu-Nara → Kōfuku-ji → Haru 11:00 → Nara Park → Tōdai-ji → Kasuga Taisha. Volver por Kintetsu-Tambabashi + Keihan a Gion-Shijo.",
+      "note": "Viernes 16: Nara es una excursión de día completo para los cuatro, sin tatuajes ni otros planes de Kioto. Salir del RESI Yasaka ~07:30, Kōfuku-ji sobre 09:15, llegar a Yoshoku Haru antes de abrir a las 11:00 (recomendación de Alberto), luego Nara Park, Tōdai-ji, Kasuga Taisha y regreso a Kioto por la tarde. Nigatsu-dō solo si queda tiempo. No usar el Café Haru de Bishamoncho por error: el restaurante original está en 公納堂町14.",
       "activities": [
         {
           "id": "kofukuji",
@@ -780,7 +780,7 @@
             "Hacer Kōfuku-ji primero porque queda de camino a Naramachi/Haru.",
             "Después bajar andando hacia Yoshoku Haru para llegar antes de la apertura."
           ],
-          "time": "~09:30",
+          "time": "~09:15",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar a Gion-Shijo → Keihan Main Line hasta Tambabashi; conexión peatonal a Kintetsu-Tambabashi → Kintetsu Express hasta Kintetsu-Nara; después caminar a Kōfuku-ji.",
@@ -794,7 +794,9 @@
             ]
           },
           "goshuin": true,
-          "description": "Kōfuku-ji nació en el siglo VII y se convirtió en el templo protector del poderoso clan Fujiwara, una de las familias más influyentes de la corte japonesa. Al trasladarse la capital a Nara en 710, el conjunto pasó a ser uno de sus grandes centros budistas, asociado a la escuela Hossō. Su pagoda de cinco pisos es símbolo del paisaje histórico de Nara, aunque puede estar cubierta por obras de restauración. La colección escultórica es extraordinaria: entre sus obras destaca el célebre Ashura de seis brazos y tres rostros. Visitarlo permite entender la estrecha relación entre política aristocrática, religión y arte en el Japón antiguo."
+          "description": "Kōfuku-ji nació en el siglo VII y se convirtió en el templo protector del poderoso clan Fujiwara, una de las familias más influyentes de la corte japonesa. Al trasladarse la capital a Nara en 710, el conjunto pasó a ser uno de sus grandes centros budistas, asociado a la escuela Hossō. Su pagoda de cinco pisos es símbolo del paisaje histórico de Nara, aunque puede estar cubierta por obras de restauración. La colección escultórica es extraordinaria: entre sus obras destaca el célebre Ashura de seis brazos y tres rostros. Visitarlo permite entender la estrecha relación entre política aristocrática, religión y arte en el Japón antiguo.",
+          "priority": "must",
+          "notes": "Llegar desde Gion-Shijo por Keihan/Kintetsu, paseo por Kōfuku-ji antes de entrar en Naramachi."
         },
         {
           "id": "haru-nara",
@@ -806,10 +808,10 @@
           "locationQuery": "洋食 春 奈良市公納堂町14",
           "nearestStation": "Kintetsu-Nara · ~15 min andando",
           "approximatePrice": "¥1.000–3.000 aprox.",
-          "notes": "Recomendación de Alberto. No admite reservas y puede terminar cuando se agotan ingredientes; el viernes 16 está dentro de sus días habituales de apertura.",
+          "notes": "洋食 春 (Yoshoku Haru) original, 14 Konodocho, Nara. Viernes abre a las 11:00, último pedido 15:00; cerrado martes/miércoles. Estar allí hacia 10:40–10:50 para reducir cola. No confundir con el CAFÉ 春, que está en otra dirección.",
           "links": {
             "officialWebsite": "https://haru-nara.com/store.html",
-            "tabelog": "https://tabelog.com/nara/A2901/A290101/29006904/"
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E6%B4%8B%E9%A3%9F%20%E6%98%A5%20%E5%A5%88%E8%89%AF%E5%B8%82%E5%85%AC%E7%B4%8D%E5%A0%82%E7%94%BA14"
           },
           "transit": {
             "from": "Kōfuku-ji",
@@ -832,12 +834,13 @@
             "Llegar a Nara y recorrer el parque enlazando los templos principales a pie.",
             "Interactuar con los ciervos sin perder demasiado tiempo al inicio."
           ],
-          "time": "~12:15",
+          "time": "~12:30",
           "transit": {
             "from": "Yoshoku Haru",
             "summary": "Volver andando hacia Nara Park atravesando Naramachi/centro.",
             "approximateDuration": "15–20 min"
-          }
+          },
+          "notes": "Paseo con ciervos por Nara Park después de comer. No dedicar todo el día a la primera zona de ciervos."
         },
         {
           "id": "todaiji",
@@ -849,7 +852,7 @@
             "Hacer la visita principal del día en Tōdai-ji.",
             "Después seguir hacia Kasuga Taisha sin volver atrás."
           ],
-          "time": "~13:00",
+          "time": "~13:30",
           "priority": "must",
           "transit": {
             "from": "Nara Park",
@@ -857,7 +860,21 @@
             "approximateDuration": "15–20 min"
           },
           "goshuin": true,
-          "description": "Tōdai-ji surgió en el siglo VIII por iniciativa del emperador Shōmu, que quiso fortalecer la paz y la cohesión del país mediante el budismo. Su Daibutsu, gran imagen de bronce de Vairocana Buda, fue consagrado en 752 y representa la luz universal de la sabiduría. La enorme sala Daibutsuden da una idea de la ambición del proyecto, realizado con aportaciones de todo Japón. Antes de llegar se atraviesa Nandaimon, puerta protegida por dos imponentes esculturas Niō de época medieval. Es un centro fundamental para entender la primera capital permanente de Japón y el budismo patrocinado por el Estado."
+          "description": "Tōdai-ji surgió en el siglo VIII por iniciativa del emperador Shōmu, que quiso fortalecer la paz y la cohesión del país mediante el budismo. Su Daibutsu, gran imagen de bronce de Vairocana Buda, fue consagrado en 752 y representa la luz universal de la sabiduría. La enorme sala Daibutsuden da una idea de la ambición del proyecto, realizado con aportaciones de todo Japón. Antes de llegar se atraviesa Nandaimon, puerta protegida por dos imponentes esculturas Niō de época medieval. Es un centro fundamental para entender la primera capital permanente de Japón y el budismo patrocinado por el Estado.",
+          "notes": "Gran Buda y Daibutsuden, prioridad del día. Contar 1–1,5 h."
+        },
+        {
+          "id": "nigatsudo-1016",
+          "title": "Nigatsu-dō · mirador junto al Tōdai-ji",
+          "category": "templo",
+          "status": "opcional",
+          "time": "~15:00",
+          "locationQuery": "Nigatsudo Hall Todaiji Nara",
+          "notes": "Mirador de Nara y parte del complejo Tōdai-ji, muy cerca del Gran Buda. Opcional; no retrasar Kasuga.",
+          "plan": [
+            "Subir a Nigatsu-dō si vamos bien de tiempo y luego seguir al bosque de Kasuga."
+          ],
+          "description": "Nigatsu-dō es un pabellón religioso del conjunto de Tōdai-ji. Desde su terraza se ven los tejados y el paisaje de Nara. Es conocido por el ritual budista Omizutori, que se celebra en marzo y utiliza grandes antorchas como símbolo de purificación. Su nombre significa «pabellón del segundo mes», por el calendario lunar de la ceremonia. Aunque suele recibir menos gente que el Gran Buda, forma parte de la historia del mismo templo."
         },
         {
           "id": "kasuga",
@@ -869,20 +886,68 @@
             "Recorrer el santuario y el camino de faroles.",
             "Después volver hacia Kintetsu-Nara; si estamos cansados, bus local desde la zona del parque."
           ],
-          "time": "~14:30",
+          "time": "~15:45",
           "transit": {
             "from": "Tōdai-ji",
             "summary": "Atravesar Nara Park a pie hacia Kasuga Taisha.",
             "approximateDuration": "25–35 min"
           },
           "goshuin": true,
-          "description": "Kasuga Taisha se estableció en 768 bajo el patrocinio del clan Fujiwara para venerar cuatro grandes kami protectores de la capital de Nara. Según su tradición, la divinidad Takemikazuchi llegó montada sobre un ciervo blanco; por eso los ciervos de Nara se consideran mensajeros sagrados y son un símbolo de la ciudad. Los caminos del santuario están llenos de faroles de piedra y el recinto conserva faroles de bronce que se iluminan en festividades especiales. Su arquitectura de bermellón contrasta con el bosque ancestral de Kasugayama. Esta visita completa la historia de Nara junto a Kōfuku-ji y Tōdai-ji."
+          "description": "Kasuga Taisha se estableció en 768 bajo el patrocinio del clan Fujiwara para venerar cuatro grandes kami protectores de la capital de Nara. Según su tradición, la divinidad Takemikazuchi llegó montada sobre un ciervo blanco; por eso los ciervos de Nara se consideran mensajeros sagrados y son un símbolo de la ciudad. Los caminos del santuario están llenos de faroles de piedra y el recinto conserva faroles de bronce que se iluminan en festividades especiales. Su arquitectura de bermellón contrasta con el bosque ancestral de Kasugayama. Esta visita completa la historia de Nara junto a Kōfuku-ji y Tōdai-ji.",
+          "priority": "must",
+          "notes": "Kasuga Taisha y sus faroles; si vamos cansados, mejor recortar el opcional Nigatsu-dō."
+        },
+        {
+          "id": "nara-regreso-1016",
+          "title": "Volver de Nara a RESI STAY Yasaka",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~17:30",
+          "locationQuery": "Kintetsu Nara Station",
+          "notes": "Regreso desde Kintetsu-Nara vía Kintetsu-Tambabashi y Keihan Tambabashi hasta Gion-Shijo, después paseo al hotel. Contar 1 h 20–1 h 40 aprox.",
+          "plan": [
+            "Volver a Kintetsu-Nara, tren a Kintetsu-Tambabashi.",
+            "Cambiar a Keihan, bajar en Gion-Shijo y caminar a RESI Yasaka."
+          ]
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "nara-ida",
+          "title": "Hotel → Kōfuku-ji → Haru",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "kofukuji",
+            "haru-nara"
+          ]
+        },
+        {
+          "id": "nara-parque",
+          "title": "Ciervos, Gran Buda y Kasuga",
+          "mode": "walk",
+          "activityIds": [
+            "haru-nara",
+            "nara-park",
+            "todaiji",
+            "kasuga"
+          ]
+        },
+        {
+          "id": "nara-vuelta",
+          "title": "Kasuga → tren → hotel",
+          "mode": "transit",
+          "activityIds": [
+            "kasuga",
+            "nara-regreso-1016",
+            "@hotel-end"
+          ]
         }
       ]
     },
     {
       "date": "2026-10-17",
-      "title": "Kinkaku-ji · noroeste",
+      "title": "Kinkaku-ji, jardín zen y tatuajes",
       "status": "plan",
       "activities": [
         {
@@ -896,7 +961,7 @@
             "Llegar temprano y hacer el recorrido principal del pabellón.",
             "No alargar compras/souvenirs para mantener el eje Kinkaku → Ryōan-ji → Ninna-ji."
           ],
-          "time": "~08:30",
+          "time": "~09:00",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar a la parada Gion → Kyoto City Bus 12 directo hacia Kinkakuji Temple → bajar en Kinkakuji-michi.",
@@ -904,26 +969,28 @@
             "note": "Bus 12 es directo desde Gion. Si Kyoto está muy cargado de tráfico, taxi para 4 puede ahorrar bastante tiempo."
           },
           "goshuin": true,
-          "description": "Kinkaku-ji es el nombre popular de Rokuon-ji, un templo zen Rinzai cuyo célebre Pabellón Dorado fue originalmente parte de la villa del shōgun Ashikaga Yoshimitsu a finales del siglo XIV. Tras su muerte se convirtió en templo budista. El edificio actual fue reconstruido en 1955 después de un incendio en 1950; sus plantas superiores están recubiertas de pan de oro, que se refleja sobre el estanque Kyōko-chi. El paisaje está concebido como un conjunto de arquitectura, islas, piedras y jardines para la contemplación. La lámina de agua multiplica la imagen del pabellón y conecta el poder histórico de los shōgun con el universo del budismo zen."
+          "description": "Kinkaku-ji es el nombre popular de Rokuon-ji, un templo zen Rinzai cuyo célebre Pabellón Dorado fue originalmente parte de la villa del shōgun Ashikaga Yoshimitsu a finales del siglo XIV. Tras su muerte se convirtió en templo budista. El edificio actual fue reconstruido en 1955 después de un incendio en 1950; sus plantas superiores están recubiertas de pan de oro, que se refleja sobre el estanque Kyōko-chi. El paisaje está concebido como un conjunto de arquitectura, islas, piedras y jardines para la contemplación. La lámina de agua multiplica la imagen del pabellón y conecta el poder histórico de los shōgun con el universo del budismo zen.",
+          "notes": "Kinkaku-ji abre 09:00. Salir del alojamiento sobre 07:45–08:00; bus 12 desde Gion o taxi si compensa entre cuatro."
         },
         {
           "id": "ryoanji",
           "title": "Ryōan-ji",
           "category": "templo",
-          "status": "opcional",
+          "status": "plan",
           "locationQuery": "Ryoan-ji",
           "plan": [
             "Visitar el templo y el jardín con calma.",
             "Mantener la visita contenida para llegar bien a Ninna-ji."
           ],
-          "time": "~10:15",
+          "time": "~10:45",
           "transit": {
             "from": "Kinkaku-ji",
             "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
             "approximateDuration": "10–15 min"
           },
           "goshuin": true,
-          "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista."
+          "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista.",
+          "notes": "Templo zen con jardín de piedras, en el mismo sector que Kinkaku. Si el estudio confirma una cita temprana, acortar."
         },
         {
           "id": "ninnaji",
@@ -935,23 +1002,92 @@
             "Cerrar el recorrido del noroeste aquí.",
             "Después volver al centro de Kyoto y dejar la tarde/noche flexible."
           ],
-          "time": "~11:30",
+          "time": "~12:00",
           "transit": {
             "from": "Ryōan-ji",
             "summary": "Kyoto City Bus 59 → Omuro Ninnaji.",
             "approximateDuration": "10–15 min"
           },
           "goshuin": true,
-          "description": "Ninna-ji fue fundado en 888 por el emperador Uda y se convirtió en uno de los templos budistas con relaciones más estrechas con la familia imperial. Pertenece al budismo Shingon y está vinculado a la escuela Omuro, por lo que también se conoce como Omuro Gosho. Fue habitual que príncipes imperiales dirigieran el templo como monjes. Conserva una pagoda de cinco plantas del siglo XVII, puertas monumentales y elegantes residencias con jardines. Sus cerezos Omuro son famosos por florecer más tarde y crecer más bajos que otros sakura. Es una parada distinta de Kinkaku y Ryōan, que muestra cómo el poder de la corte se integró en el budismo."
+          "description": "Ninna-ji fue fundado en 888 por el emperador Uda y se convirtió en uno de los templos budistas con relaciones más estrechas con la familia imperial. Pertenece al budismo Shingon y está vinculado a la escuela Omuro, por lo que también se conoce como Omuro Gosho. Fue habitual que príncipes imperiales dirigieran el templo como monjes. Conserva una pagoda de cinco plantas del siglo XVII, puertas monumentales y elegantes residencias con jardines. Sus cerezos Omuro son famosos por florecer más tarde y crecer más bajos que otros sakura. Es una parada distinta de Kinkaku y Ryōan, que muestra cómo el poder de la corte se integró en el budismo.",
+          "notes": "Ninna-ji, siguiendo el bus 59 desde Ryōan-ji. Primera visita que saltamos si la cita del tatuaje se adelanta."
+        },
+        {
+          "id": "comer-regreso-kawaramachi-1017",
+          "title": "Comer y volver hacia Gion",
+          "category": "comida",
+          "status": "plan",
+          "time": "~13:15",
+          "locationQuery": "Kyoto Kawaramachi Station",
+          "notes": "Comer en el camino de vuelta y acercarse al estudio con tiempo. La prioridad de la tarde son los tatuajes, sin tener que volver al noroeste.",
+          "plan": [
+            "Comer donde encaje, consultar confirmación y dirección del estudio.",
+            "Llegar a Gion/Kawaramachi con margen."
+          ]
+        },
+        {
+          "id": "tatuajes-gion-1017",
+          "title": "Tatuajes de las chicas · cita pendiente",
+          "category": "ocio",
+          "status": "plan",
+          "time": "~15:00–18:00",
+          "locationQuery": "GION DARUMA Tattoo Studio Kyoto 281-1 Gionmachi Kitagawa",
+          "notes": "Buscar con antelación una cita de tatuaje para Lorena, Vilma y Marga; GION DARUMA cerca de Gion-Shijo (sábado 11:00–20:00; cierra jueves y tercer domingo). Objetivo sobre 14:30–15:00, pero NADA RESERVADO. Confirmar que pueden atender a tres personas, duración, diseño, precio y condiciones. Llevar pasaportes, imágenes y dinero. Después de tatuarse evitar bañarse en piscina/onsen hasta cicatrizar; el onsen previsto es el jueves 15.",
+          "plan": [
+            "Contactar previamente con GION DARUMA para explicar que son tres personas y pedir hueco el 17 por la tarde.",
+            "Enviar diseños, tamaño y zona del cuerpo para saber precio, duración y si pueden atenderlas seguidas.",
+            "Si no hay hueco en Gion, probar KYOTO WALK-IN TATTOO STUDIO, Ichinocho 253-1 (Kawaramachi).",
+            "Seguir las instrucciones de curación de su tatuador y evitar sol, roces y sumergir el tatuaje nuevo."
+          ],
+          "priority": "must",
+          "links": {
+            "officialWebsite": "https://giondaruma.com/studio/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=GION%20DARUMA%20Tattoo%20Studio%20Kyoto"
+          }
+        },
+        {
+          "id": "tattoo-walkin-kawaramachi-1017",
+          "title": "Alternativa: Kyoto Walk-in Tattoo Studio",
+          "category": "ocio",
+          "status": "opcional",
+          "time": "Opcional",
+          "locationQuery": "KYOTO WALK-IN TATTOO STUDIO 253-1 Ichinocho Kyoto",
+          "notes": "Solo si Gion Daruma no tiene hueco. Está en Kawaramachi y admite visitas sin cita, pero para tres personas es mejor preguntar antes.",
+          "plan": [
+            "Confirmar por mensaje si tienen disponibilidad para tres personas, diseño y presupuesto."
+          ]
         }
       ],
-      "note": "Ruta noroeste igual que 2025, pero ya con transporte indicado: Bus 12 desde Gion a Kinkaku-ji y Bus 59 para encadenar Ryōan-ji y Ninna-ji."
+      "note": "Sábado 17: salir del RESI Yasaka sobre 07:45–08:00 para llegar a Kinkaku-ji a su apertura de las 09:00. Ver Ryōan-ji y quizá Ninna-ji; después volver al centro y dejar toda la tarde para que las chicas puedan tatuarse sin prisas (objetivo ~14:30–15:00, CITA AÚN PENDIENTE). Estudio GION DARUMA, abierto sábado 11:00–20:00 y cerrado tercer domingo, así que el 17 encaja mejor que el 18. Plan B: KYOTO WALK-IN TATTOO STUDIO en Kawaramachi. Contactar cuanto antes para saber si pueden atender a las tres. Ya habrán hecho el onsen el 15.",
+      "mapStages": [
+        {
+          "id": "kyoto-noroeste",
+          "title": "Hotel → Kinkaku → Ryōan-ji",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "kinkaku",
+            "ryoanji"
+          ]
+        },
+        {
+          "id": "kyoto-tattoos",
+          "title": "Vuelta al centro y estudio",
+          "mode": "transit",
+          "activityIds": [
+            "ryoanji",
+            "comer-regreso-kawaramachi-1017",
+            "tatuajes-gion-1017",
+            "@hotel-end"
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-18",
-      "title": "Ginkaku-ji · Philosopher's Path · despedida Vilma y Marga",
+      "title": "Ginkaku-ji y despedida Vilma/Marga",
       "status": "confirmado",
-      "note": "Último bloque de templos para las tres antes del vuelo. Ginkaku + Philosopher's Path sí; si el reloj se tuerce, recortar el paseo, nunca el margen del bus a KIX.",
+      "note": "Domingo 18: Ginkaku-ji temprano y paseo corto del Filósofo, regreso al hotel con margen para recuperar maletas y traslado a Kyoto Station Hachijo-guchi. Vilma/Marga: estar en la parada H2/KY2 junto a Kyoto Avanti al menos 20–30 min antes del bus objetivo 14:20 (comprobar horario y billete). Vuelo KIX a las 19:00. No meter tatuajes ni visitas largas este día.",
       "activities": [
         {
           "id": "ginkakuji",
@@ -961,7 +1097,7 @@
           "status": "plan",
           "priority": "must",
           "locationQuery": "Ginkaku-ji Kyoto",
-          "notes": "Visitado en 2025 y faltaba en 2026. Se mete temprano el día 18, con hora límite clara para no comprometer el bus a KIX.",
+          "notes": "Primera hora de apertura, sin alargar demasiado. Volver a recoger equipaje para KIX.",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar a Gion-Shijo → Keihan hasta Demachiyanagi; City Bus 7 o 203 → Ginkakuji-michi.",
@@ -982,7 +1118,7 @@
         {
           "id": "philosophers-path",
           "title": "Philosopher's Path",
-          "time": "~09:40",
+          "time": "~09:45",
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Philosopher's Path Kyoto",
@@ -994,24 +1130,26 @@
           "plan": [
             "Paseo corto/medio, sin intentar llegar obligatoriamente hasta el final si el reloj aprieta.",
             "Hora límite: empezar regreso hacia Gion/hotel sobre las 10:30–10:45."
-          ]
+          ],
+          "notes": "Paseo breve por el canal, no hacerlo entero. Empezar regreso al hotel sobre 10:30–10:45."
         },
         {
           "id": "kyoto-morning-flex",
           "title": "Regreso al hotel · preparar salida de Vilma y Marga",
-          "category": "barrio",
+          "category": "transporte",
           "status": "plan",
           "plan": [
             "Volver al alojamiento con margen.",
             "Vilma y Marga recogen equipaje; Jaime y Lorena se quedan en Kyoto.",
             "Salir hacia Kyoto Station con tiempo suficiente para estar en H2/KY2 antes de las 14:20."
           ],
-          "time": "~11:15",
+          "time": "~11:30",
           "transit": {
             "from": "Philosopher's Path",
             "summary": "Bus 203 hacia Gion/Shijo Kawaramachi o taxi al RESI STAY Yasaka.",
             "approximateDuration": "20–30 min"
-          }
+          },
+          "notes": "Regresar al RESI Yasaka a recoger maletas de Vilma y Marga; después taxi/transporte a Kyoto Station con suficiente margen."
         },
         {
           "id": "kyoto-station-h2",
@@ -1020,8 +1158,8 @@
           "category": "transporte",
           "status": "confirmado",
           "priority": "must",
-          "notes": "Objetivo: dejar a Vilma y Marga en el Airport Limousine Bus a KIX. Parada H2 junto a Kyoto Avanti.",
-          "locationQuery": "Kyoto Station Hachijo-dori Airport Limousine Bus H2",
+          "notes": "Parada H2/KY2 de Airport Limousine Bus hacia KIX, en Hachijo-guchi (Kyoto Avanti), coordenadas oficiales 34.983902,135.760799. Objetivo del planning 14:20: comprobar billete y salida real y ESTAR EN LA PARADA 20–30 min antes.",
+          "locationQuery": "34.983902,135.760799",
           "plan": [
             "Llegar a Hachijo-guchi con margen y localizar la parada H2/KY2 junto a Kyoto Avanti.",
             "Dejar a Vilma y Marga ya situadas para el Airport Limousine Bus a KIX."
@@ -1104,6 +1242,29 @@
               }
             ]
           }
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "ginkaku-ultima-manana",
+          "title": "Hotel → Ginkaku → sendero",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "ginkakuji",
+            "philosophers-path"
+          ]
+        },
+        {
+          "id": "kix-traslado-chicas",
+          "title": "Hotel → bus H2 → KIX",
+          "mode": "transit",
+          "activityIds": [
+            "philosophers-path",
+            "kyoto-morning-flex",
+            "kyoto-station-h2",
+            "kix-vilma-marga"
+          ]
         }
       ]
     },
