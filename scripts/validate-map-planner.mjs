@@ -211,8 +211,8 @@ if (kyoto13) {
     '13/10: la ruta termina en RESI STAY Yasaka');
   const hotelIndex = steps.indexOf('resi-yasaka-checkin-1013');
   const yamatoIndex = steps.indexOf('yamato-kyoto-gion-pickup-1013');
-  assert(yamatoIndex > hotelIndex,
-    '13/10: recoger el envío después de llegar al alojamiento');
+  assert(yamatoIndex >= 0 && hotelIndex > yamatoIndex,
+    '13/10: recoger maletas en Yamato ANTES de entrar al apartamento, sin ir dos veces');
 }
 const sourceDays = readFileSync('src/lib/segments.ts', 'utf8');
 assert(sourceDays.includes('grouped.get(key)!.push(entry)') &&
@@ -255,6 +255,26 @@ if (kyoto18) {
   assert(ids.includes('ginkakuji') && ids.includes('kyoto-station-h2') && ids.includes('kix-vilma-marga'),
     '18/10: ruta del vuelo de Vilma y Marga');
 }
+// Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
+// registro y se dejan bolsas, pero la habitación se ocupa más tarde.
+// Yamato Kyoto Gion debe estar en el MISMO trayecto final al apartamento,
+// nunca después de ir primero al hotel y volver a salir.
+const kyotoSegment = segments.find(s => s.city === 'Kioto' || s.hotel?.name === 'RESI STAY Yasaka');
+const kyotoDayLogistics13 = kyotoSegment?.days?.find(d => d.date === '2026-10-13');
+assert(kyotoDayLogistics13?.activities.find(a => a.id === 'osaka-kyoto-tren-1013')?.time === '08:00 salida',
+  '13/10: falta salida a las 08:00');
+const reception13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-recepcion-kioto-1013');
+const room13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-yasaka-checkin-1013');
+assert(Boolean(reception13) && Boolean(room13), '13/10: faltan recepción y habitación separadas');
+assert(reception13?.time?.startsWith('~09:45') && room13?.time?.startsWith('~16:30'),
+  '13/10: hay que separar consigna matinal de entrada a la habitación');
+const part13 = kyotoDayLogistics13?.mapStages?.find(s => s.id === 'yasaka-yamato-alojamiento');
+assert(part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') >= 0 &&
+  part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') <
+  part13?.activityIds.indexOf('resi-yasaka-checkin-1013'),
+  '13/10: Yamato Gion debe estar ANTES de entrar al alojamiento');
+assert(kyotoDayLogistics13?.mapStages?.at(-1)?.activityIds.at(-1) === '@hotel-end',
+  '13/10: la ruta debe terminar en el alojamiento de Kioto');
 const transfer = get('2026-10-13');
 if (transfer) {
   assert(transfer.hotelStart.includes('GN98') && transfer.hotelEnd.includes('RESI STAY'),
