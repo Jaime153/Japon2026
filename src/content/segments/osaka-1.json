@@ -553,22 +553,21 @@
     },
     {
       "date": "2026-10-13",
-      "title": "Osaka → Kyoto",
-      "status": "confirmado",
+      "title": "Salida Osaka → llegada a Kioto (ver ruta completa)",
+      "status": "plan",
       "activities": [
         {
           "id": "transfer-kyoto",
-          "title": "Traslado a Kyoto",
+          "title": "GN98 → Kyoto Station · salida a Kioto",
           "category": "transporte",
-          "status": "confirmado",
+          "status": "plan",
           "locationQuery": "Kyoto Station",
           "plan": [
-            "Viajar a Kioto con mochila ligera; si el envío no pudo garantizarse, llevar lo imprescindible con nosotros.",
-            "Primero pasar por RESI STAY Yasaka para orientarnos; check-in desde las 15:00 según reserva.",
-            "Revisar seguimiento. Solo cuando aparezca disponible, recoger en Yamato Kyoto Gion (162620), abierta el martes 08:00–19:00; llevar resguardo e identificación.",
-            "Mantener las visitas de Higashiyama, pero si el envío llega tarde hay que ir a recogerlo antes de las 19:00."
+            "Salir del GN98 hacia las 07:45, Sakuragawa → Namba → Umeda/JR Osaka → Kyoto Station.",
+            "Buscar el mostrador RESI STAY cerca de Kyoto Station (ON Building 5F), comprobar check-in y dejar maletas.",
+            "Después ver Kiyomizu y Gion; volver a recoger equipaje si no se ha enviado al hotel."
           ],
-          "time": "~09:00",
+          "time": "~07:45",
           "transit": {
             "from": "GN98 Saiwaicho",
             "summary": "Sakuragawa → Namba → Umeda/Osaka → Kyoto; desde Kyoto Station, bus 206 hasta Higashiyama Yasui o taxi corto al RESI STAY Yasaka.",
@@ -582,20 +581,7 @@
             ],
             "note": "Con 4 personas y maletas, taxi GN98 → Osaka Station o Kyoto Station → hotel puede compensar para ahorrar transbordos."
           },
-          "notes": "Salimos de Osaka hacia Kioto. El día anterior planeamos enviar las maletas a Yamato Kyoto Gion (oficina 162620): NO dar por recibido el envío hasta que lo indique el tracking. El check-in de RESI STAY Yasaka comienza a las 15:00. Si llegan después de nuestro paseo, recogerlas antes de que cierre Yamato Gion a las 19:00."
-        },
-        {
-          "id": "yasaka-evening",
-          "title": "Yasaka Shrine y Gion al llegar",
-          "category": "templo",
-          "status": "plan",
-          "locationQuery": "Yasaka Shrine Kyoto",
-          "plan": [
-            "Pasear por Yasaka y Gion ya instalados en Kyoto.",
-            "Tomarlo como primera toma de contacto, no como visita exhaustiva."
-          ],
-          "goshuin": true,
-          "description": "Yasaka Jinja, en Gion, es un santuario sintoísta venerado en Kioto desde hace más de un milenio. Está especialmente ligado a Susanoo y a la protección ante epidemias: de este trasfondo procede el Gion Matsuri, el gran festival de la ciudad cuyos orígenes rituales se sitúan en 869. La puerta roja marca el paso al recinto sagrado; por la noche destacan los faroles del pabellón central y el ambiente animado junto a Gion. A diferencia de Kiyomizu-dera, es un santuario de kami, no un templo budista. Esta parada nocturna es un primer encuentro con la tradición espiritual de Kioto; la visita detallada se conserva en el día de Higashiyama."
+          "notes": "Traslado de Osaka a Kioto previsto para el martes 13. NO es viaje ya realizado. Salida objetivo del GN98 07:45. En Kyoto Station lo primero es pasar por el mostrador RESI STAY ON Building 5F y dejar equipaje en consigna. La ruta completa de Higashiyama y la recogida en Yamato están en el planning de Kyoto del mismo día."
         }
       ]
     }
