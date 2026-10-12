@@ -139,8 +139,12 @@ export function createMapDays(segments) {
       included[0]?.locationQuery?.toLowerCase().includes('airport');
     const actualStart = arrival ? null : start;
     let stages;
-    if (entries.length === 1 && firstDay.mapStages?.length) {
-      stages = detailedStages(firstDay, actualStart, end);
+    // En días de cambio de ciudad hay dos entradas (origen y destino).
+    // Si el destino tiene mapa detallado, usarlo con el HOTEL DE ORIGEN y
+    // el HOTEL NUEVO. De lo contrario se perdían los tramos del día 13.
+    const destinationDay = entries.at(-1).day;
+    if (destinationDay.mapStages?.length) {
+      stages = detailedStages(destinationDay, actualStart, end);
     } else if (date === '2026-10-09' && firstDay.routeStops?.length) {
       stages = fujiStages(firstDay, start, end);
     } else if (date === '2026-10-10' && firstDay.routeStops?.length) {

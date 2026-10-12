@@ -169,10 +169,55 @@ if (monday12) {
   assert(monday12.stages.at(-1).stops.at(-1).kind === 'hotel',
     '12/10: ruta debe regresar al GN98 después de Yamato');
 }
+// Revisión completa Kioto 13–18. En el día 13 se superponen los segmentos
+// Osaka y Kyoto: el mapa debe usar el origen GN98 y destino RESI Yasaka.
 const kyoto13 = get('2026-10-13');
 if (kyoto13) {
-  assert(kyoto13.stages.some(s => s.stops.some(p => p.id === 'yamato-kyoto-gion-pickup-1013')),
-    '13/10: falta recogida de maletas en Yamato Kyoto Gion');
+  assert(kyoto13.stages.length === 3, '13/10: tres tramos de tren, Higashiyama y recogida');
+  assert(kyoto13.stages[0].stops[0].kind === 'hotel' &&
+    kyoto13.stages[0].stops[0].title.includes('GN98'),
+    '13/10: ruta empieza en el hotel de Osaka');
+  assert(kyoto13.stages.at(-1).stops.at(-1).title.includes('RESI STAY Yasaka'),
+    '13/10: ruta debe terminar en el hotel de Kioto');
+  const ids = kyoto13.stages.flatMap(s => s.stops.map(p => p.id));
+  for (const id of ['resi-recepcion-kioto-1013', 'kiyomizu', 'yasaka-pagoda',
+    'yamato-kyoto-gion-pickup-1013', 'resi-yasaka-checkin-1013']) {
+    assert(ids.includes(id), '13/10: falta el paso ' + id);
+  }
+  assert(kyoto13.hotelStart.includes('GN98') && kyoto13.hotelEnd.includes('RESI STAY'),
+    '13/10: error en el cambio de hotel');
+}
+const kyoto14 = get('2026-10-14');
+if (kyoto14) {
+  const ids = kyoto14.stages.flatMap(s => s.stops.map(p => p.id));
+  for (const id of ['fushimi','sanjusangendo','nishiki','tobichi-kyoto','baikoan-matcha-2025'])
+    assert(ids.includes(id), '14/10: falta imprescindible '+id);
+}
+const kyoto15 = get('2026-10-15');
+if (kyoto15) {
+  const ids = kyoto15.stages.flatMap(s => s.stops.map(p => p.id));
+  for (const id of ['otagi','adashino','bamboo','tenryuji-1015','togetsukyo-1015','arashiyama-onsen'])
+    assert(ids.includes(id), '15/10 Arashiyama: falta '+id);
+  assert(ids.indexOf('arashiyama-onsen')>ids.indexOf('togetsukyo-1015'),
+    '15/10: onsen después del puente');
+}
+const kyoto16 = get('2026-10-16');
+if (kyoto16) {
+  const ids = kyoto16.stages.flatMap(s => s.stops.map(p => p.id));
+  for (const id of ['kofukuji','haru-nara','todaiji','kasuga'])
+    assert(ids.includes(id), '16/10 Nara: falta '+id);
+}
+const kyoto17 = get('2026-10-17');
+if (kyoto17) {
+  const ids = kyoto17.stages.flatMap(s => s.stops.map(p => p.id));
+  assert(ids.includes('kinkaku') && ids.includes('tatuajes-gion-1017'),
+    '17/10: Kinkaku y tatuajes previstos con hueco por confirmar');
+}
+const kyoto18 = get('2026-10-18');
+if (kyoto18) {
+  const ids = kyoto18.stages.flatMap(s => s.stops.map(p => p.id));
+  assert(ids.includes('ginkakuji') && ids.includes('kyoto-station-h2') && ids.includes('kix-vilma-marga'),
+    '18/10: ruta del vuelo de Vilma y Marga');
 }
 const transfer = get('2026-10-13');
 if (transfer) {
