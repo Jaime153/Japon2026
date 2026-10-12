@@ -43,7 +43,10 @@ export function isoDate(date: Date): string {
 }
 
 export function flattenDays(segments: SegmentEntry[]) {
-  return segments.flatMap((segment) =>
+  // Varias etapas pueden compartir fecha al cambiar de ciudad. «Hoy» debe
+  // mostrar UNA ficha con traslado + visitas; antes enseñaba solo el primer
+  // segmento y ocultaba todo el plan del destino.
+  const ordered = segments.flatMap((segment) =>
     segment.data.days.map((day) => ({
       segmentId: segment.id,
       segmentTitle: segment.data.legLabel ?? segment.data.city,
@@ -52,4 +55,31 @@ export function flattenDays(segments: SegmentEntry[]) {
       alternatives: getDayAlternatives(segment.data, day.date),
     })),
   ).sort((a, b) => a.day.date.getTime() - b.day.date.getTime());
+
+  const grouped = new Map<string, typeof ordered>();
+  for (const entry of ordered) {
+    const key = isoDate(entry.day.date);
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key)!.push(entry);
+  }
+
+  return [...grouped.values()].map((entries) => {
+    if (entries.length === 1) return entries[0];
+    const origin = entries[0];
+    const destination = entries[entries.length - 1];
+    const activities = entries.flatMap(entry => entry.day.activities);
+    const notes = entries.map(entry => entry.day.note).filter(Boolean);
+    return {
+      ...destination,
+      city: entries.map(entry => entry.city).filter((city, i, cities) => cities.indexOf(city) === i).join(' → '),
+      segmentTitle: entries.map(entry => entry.city).filter((city, i, cities) => cities.indexOf(city) === i).join(' → '),
+      day: {
+        ...destination.day,
+        title: (origin.day.title ?? origin.city) + ' · ' + (destination.day.title ?? destination.city),
+        note: notes.join(' '),
+        activities,
+      },
+      alternatives: entries.flatMap(entry => entry.alternatives),
+    };
+  });
 }

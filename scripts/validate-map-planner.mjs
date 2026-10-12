@@ -173,7 +173,7 @@ if (monday12) {
 // Osaka y Kyoto: el mapa debe usar el origen GN98 y destino RESI Yasaka.
 const kyoto13 = get('2026-10-13');
 if (kyoto13) {
-  assert(kyoto13.stages.length === 3, '13/10: tres tramos de tren, Higashiyama y recogida');
+  assert(kyoto13.stages.length === 4, '13/10: cuatro tramos completos con llegada al hotel');
   assert(kyoto13.stages[0].stops[0].kind === 'hotel' &&
     kyoto13.stages[0].stops[0].title.includes('GN98'),
     '13/10: ruta empieza en el hotel de Osaka');
@@ -187,6 +187,42 @@ if (kyoto13) {
   assert(kyoto13.hotelStart.includes('GN98') && kyoto13.hotelEnd.includes('RESI STAY'),
     '13/10: error en el cambio de hotel');
 }
+// 13/10: BUG REAL en «Hoy»: Osaka tenía una ficha antigua con un único
+// traslado y Kioto tenía otra ficha con todas las visitas. El día debe existir
+// una sola vez y conservar la ruta de Higashiyama y la recogida de la tarde.
+const october13 = segments.flatMap(seg => seg.days.filter(d => d.date === '2026-10-13'));
+assert(october13.length === 1 && october13[0]?.activities.length >= 10,
+  '13/10: no duplicar una ficha vacía de Osaka que tape el planning de Kioto');
+assert(october13[0]?.activities.some(a => a.id === 'kiyomizu') &&
+  october13[0]?.activities.some(a => a.id === 'yamato-kyoto-gion-pickup-1013'),
+  '13/10: en Hoy deben aparecer Kiyomizu y Yamato Gion');
+if (kyoto13) {
+  assert(kyoto13.stages.length === 4,
+    '13/10: deben existir recepción, Higashiyama, llegada al hotel y maletas');
+  const steps = kyoto13.stages.flatMap(st => st.stops.map(stop => stop.id));
+  for (const id of ['kiyomizu', 'ninenzaka-sannenzaka','yasaka-pagoda',
+    'comida-higashiyama-1013', 'yasaka', 'resi-yasaka-checkin-1013',
+    'yamato-kyoto-gion-pickup-1013', 'gion']) {
+    assert(steps.includes(id), '13/10: falta visita o trámite importante: '+id);
+  }
+  assert(kyoto13.stages[0].stops[0].title.includes('GN98'),
+    '13/10: salir desde GN98, aunque ya no haya un día duplicado en Osaka');
+  assert(kyoto13.stages.at(-1).stops.at(-1).kind === 'hotel',
+    '13/10: la ruta termina en RESI STAY Yasaka');
+  const hotelIndex = steps.indexOf('resi-yasaka-checkin-1013');
+  const yamatoIndex = steps.indexOf('yamato-kyoto-gion-pickup-1013');
+  assert(yamatoIndex > hotelIndex,
+    '13/10: recoger el envío después de llegar al alojamiento');
+}
+const sourceDays = readFileSync('src/lib/segments.ts', 'utf8');
+assert(sourceDays.includes('grouped.get(key)!.push(entry)') &&
+  sourceDays.includes('activities = entries.flatMap(entry => entry.day.activities)'),
+  'La pantalla Hoy debe agrupar las fichas de origen/destino y mostrar todas las visitas');
+for (const date of ['2026-10-20','2026-10-23']) {
+  const matches = segments.flatMap(seg => seg.days.filter(d => d.date === date));
+  assert(matches.length === 2, date + ': las etapas origen y destino deben conservarse');
+}
+
 const kyoto14 = get('2026-10-14');
 if (kyoto14) {
   const ids = kyoto14.stages.flatMap(s => s.stops.map(p => p.id));

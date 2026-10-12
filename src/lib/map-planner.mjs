@@ -127,7 +127,9 @@ export function createMapDays(segments) {
   }
   return [...dates.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([date, entries]) => {
     const currentSegments = ordered.filter(s => iso(s.startDate) <= date && iso(s.endDate) >= date && s.hotel);
-    const startHotel = entries[0].seg.hotel || currentSegments[0]?.hotel;
+    // En días de traslado hay un hotel anterior y otro nuevo. Aunque el
+    // segmento antiguo no tenga ficha para el día, debe ser el punto de salida.
+    const startHotel = currentSegments[0]?.hotel || entries[0].seg.hotel;
     const endHotel = currentSegments.at(-1)?.hotel || entries.at(-1).seg.hotel;
     const start = hotelStop(startHotel, 'start');
     const end = hotelStop(endHotel, 'end');
@@ -165,7 +167,9 @@ export function createMapDays(segments) {
     return {
       date,
       title: entries.map(x => x.day.title || x.seg.city).join(' · '),
-      city: entries.map(x => x.seg.city).filter((v, i, a) => a.indexOf(v) === i).join(' → '),
+      city: currentSegments.length > 1 && currentSegments[0].city !== currentSegments.at(-1).city
+        ? currentSegments[0].city + ' → ' + currentSegments.at(-1).city
+        : entries.map(x => x.seg.city).filter((v, i, a) => a.indexOf(v) === i).join(' → '),
       stages: stages.filter(s => s.stops.length > 0),
       optional,
       mainLabel: firstDay.switchLabel || 'Plan',
