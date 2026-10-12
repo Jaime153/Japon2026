@@ -309,9 +309,9 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Fushimi Inari · templos del sureste · Nishiki · matcha 2025",
+      "title": "Fushimi, Sanjūsangendō, Nishiki y compras",
       "status": "plan",
-      "note": "Día deliberadamente temple-heavy porque en 2025 esta parte fue muy buena. Orden de recorte si vamos lentos: Imakumano → Sennyū-ji → Kennin-ji. No recortar Fushimi, Sanjūsangendō, Nishiki ni Baikoan.",
+      "note": "Salir del hotel sobre las 06:30 para Fushimi Inari temprano. Después Tōfuku-ji si da tiempo, Sanjūsangendō (prioridad), comer por Nishiki y comprar la agenda de Lorena en TOBICHI y el matcha de la tienda del viaje 2025 (Baikoan todavía sin confirmar visualmente). Sennyū-ji, Imakumano, Tō-ji y Kennin-ji opcionales: no vamos a cruzar Kyoto para meterlo todo en un día. Si Yamato no tenía las maletas el día 13, recuperarlas hoy antes de 19:00 solo al confirmar tracking.",
       "activities": [
         {
           "id": "fushimi",
@@ -324,7 +324,7 @@
             "Llegar temprano y recorrer los torii hasta el punto que el grupo quiera subir.",
             "Priorizar la experiencia sin obsesionarse con completar toda la montaña si consume demasiado tiempo."
           ],
-          "time": "~06:30",
+          "time": "~07:15",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
@@ -336,16 +336,17 @@
             ]
           },
           "goshuin": true,
-          "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido."
+          "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido.",
+          "notes": "Salir del RESI Yasaka sobre 06:30 para llegar pronto a Fushimi Inari. No hace falta subir toda la montaña."
         },
         {
           "id": "tofukuji",
           "title": "Tōfuku-ji",
-          "time": "~09:15",
+          "time": "~09:30",
           "category": "templo",
           "status": "plan",
           "locationQuery": "Tofuku-ji Kyoto",
-          "notes": "Visitado en 2025: puente Tsūtenkyō y jardines zen.",
+          "notes": "Seguir a Tōfuku-ji, puente Tsūtenkyō y jardín zen. Si Fushimi se alarga, saltar Tōfuku-ji y llegar a Sanjūsangendō.",
           "transit": {
             "from": "Fushimi Inari",
             "summary": "Keihan Fushimi-Inari (KH34) → Tofukuji (KH36), dos paradas; después caminar al templo.",
@@ -361,7 +362,7 @@
         {
           "id": "sennyuji",
           "title": "Sennyū-ji",
-          "time": "~10:30",
+          "time": "Opcional",
           "category": "templo",
           "status": "opcional",
           "locationQuery": "Sennyu-ji Kyoto",
@@ -381,7 +382,7 @@
         {
           "id": "imakumano-kannonji",
           "title": "Imakumano Kannon-ji",
-          "time": "~11:15",
+          "time": "Opcional",
           "category": "templo",
           "status": "opcional",
           "locationQuery": "Imakumano Kannon-ji Kyoto",
@@ -401,12 +402,12 @@
         {
           "id": "sanjusangendo",
           "title": "Sanjūsangendō",
-          "time": "~12:15",
+          "time": "~11:15",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Sanjusangendo Kyoto",
-          "notes": "Visitado en 2025; sala de los 1.001 Kannon.",
+          "notes": "Las 1.001 estatuas de Kannon: visita esencial. Dentro no se permite hacer fotos.",
           "transit": {
             "from": "Sennyū-ji / Imakumano Kannon-ji",
             "summary": "Bajar hacia Higashiyama Nanajo. Se puede caminar; si vamos cansados, bus/taxi corto.",
@@ -420,27 +421,6 @@
           "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior."
         },
         {
-          "id": "toji",
-          "title": "Tō-ji",
-          "time": "~13:30",
-          "category": "templo",
-          "status": "plan",
-          "locationQuery": "To-ji Kyoto",
-          "notes": "También visitado en 2025; pagoda de cinco pisos.",
-          "transit": {
-            "from": "Sanjūsangendō",
-            "summary": "City Bus 206 desde Higashiyama Nanajo → Kyoto Station; Kintetsu Kyoto Line una parada Kyoto → Toji.",
-            "approximateDuration": "25–35 min",
-            "note": "Si vamos 4 y cansados, un taxi directo puede ahorrar bastante tiempo."
-          },
-          "plan": [
-            "Ver la pagoda y el recinto principal.",
-            "No alargar porque Nishiki y Baikoan tienen horario comercial."
-          ],
-          "goshuin": true,
-          "description": "Tō-ji («templo del Este») fue uno de los templos de protección de la capital Heian a finales del siglo VIII y en el siglo IX quedó ligado a Kūkai (Kōbō Daishi), introductor del budismo esotérico Shingon en Japón. Su pagoda de cinco pisos, reconstruida en el siglo XVII, alcanza unos 55 metros y se ha convertido en símbolo de Kioto. En el Kōdō hay grupos escultóricos organizados como un mandala tridimensional, representación visual de la visión budista del cosmos. También son importantes los edificios de oración y los jardines. La pagoda no suele abrirse por dentro salvo ocasiones especiales; merece la pena contemplarla desde el estanque."
-        },
-        {
           "id": "nishiki",
           "title": "Nishiki Market",
           "category": "comida",
@@ -450,24 +430,26 @@
             "Usarlo también como comida tardía/picoteo.",
             "No entretenerse demasiado: la tienda de matcha de 2025 es prioridad máxima después."
           ],
-          "time": "~14:45",
+          "time": "~13:00",
           "transit": {
             "from": "Tō-ji",
             "summary": "Kintetsu Toji → Kyoto (1 parada); metro Karasuma Line Kyoto → Shijo; caminar a Nishiki Market.",
             "approximateDuration": "20–25 min"
-          }
+          },
+          "priority": "must",
+          "notes": "Comer/picar en Nishiki Market y continuar con las compras importantes."
         },
         {
           "id": "tobichi-kyoto",
           "title": "TOBICHI Kyoto · agenda Hobonichi",
-          "time": "~15:30",
+          "time": "~14:30",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "TOBICHI Kyoto",
           "address": "Kotobuki Building 5F, 251-2 Ichinocho, Kawaramachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto",
           "nearestStation": "Kyoto-Kawaramachi / Gion-Shijo",
-          "notes": "Movido desde Tokio para no cruzar la ciudad mañana. TOBICHI Kyoto también es tienda oficial Hobonichi y tiene la gama completa; encaja mucho mejor junto a Nishiki/Gion.",
+          "notes": "Tienda oficial Hobonichi, mirar la agenda de Lorena y sus accesorios.",
           "plan": [
             "Ir a por la agenda Hobonichi que quiere Lorena.",
             "Mirar fundas y accesorios; no hace falta hacer el desvío de Kanda en Tokio."
@@ -479,10 +461,10 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "time": "~16:15",
+          "time": "~15:30",
           "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
           "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
-          "notes": "Parada SÍ O SÍ por recuerdo del viaje 2025: pequeña tienda de té/matcha atendida por un señor mayor. La identificación como Baikoan es muy probable por la descripción, pero el itinerario 2025 no guardó el nombre; confirmar por foto/recuerdo si aparece antes del viaje.",
+          "notes": "Buscar la tienda de matcha del señor mayor del viaje 2025. Baikoan es una identificación PROBABLE, no confirmada: al verla comprobar que coincide con tu recuerdo.",
           "plan": [
             "Parada SÍ O SÍ: volver a la tienda del señor mayor de 2025.",
             "Pedir que nos recomiende matcha/té y comprar para llevar.",
@@ -500,6 +482,27 @@
           }
         },
         {
+          "id": "toji",
+          "title": "Tō-ji",
+          "time": "Opcional",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "To-ji Kyoto",
+          "notes": "No lo metemos como parada obligatoria porque es un desvío considerable. Solo si queda tiempo en algún momento de Kyoto.",
+          "transit": {
+            "from": "Sanjūsangendō",
+            "summary": "City Bus 206 desde Higashiyama Nanajo → Kyoto Station; Kintetsu Kyoto Line una parada Kyoto → Toji.",
+            "approximateDuration": "25–35 min",
+            "note": "Si vamos 4 y cansados, un taxi directo puede ahorrar bastante tiempo."
+          },
+          "plan": [
+            "Ver la pagoda y el recinto principal.",
+            "No alargar porque Nishiki y Baikoan tienen horario comercial."
+          ],
+          "goshuin": true,
+          "description": "Tō-ji («templo del Este») fue uno de los templos de protección de la capital Heian a finales del siglo VIII y en el siglo IX quedó ligado a Kūkai (Kōbō Daishi), introductor del budismo esotérico Shingon en Japón. Su pagoda de cinco pisos, reconstruida en el siglo XVII, alcanza unos 55 metros y se ha convertido en símbolo de Kioto. En el Kōdō hay grupos escultóricos organizados como un mandala tridimensional, representación visual de la visión budista del cosmos. También son importantes los edificios de oración y los jardines. La pagoda no suele abrirse por dentro salvo ocasiones especiales; merece la pena contemplarla desde el estanque."
+        },
+        {
           "id": "kenninji",
           "title": "Kennin-ji",
           "category": "templo",
@@ -509,8 +512,8 @@
             "Hacer una visita tranquila al templo y jardines.",
             "Usarlo como parada cultural antes de continuar por Gion."
           ],
-          "time": "~17:15",
-          "notes": "Solo si hemos recortado secundarios y volvemos a Gion con tiempo. No sacrificar Baikoan por Kennin-ji.",
+          "time": "Opcional",
+          "notes": "Solo si ha quedado tiempo y sigue abierto; no sacrificar Hobonichi ni matcha.",
           "transit": {
             "from": "Baikoan",
             "summary": "Volver hacia Gion en taxi o transporte urbano; con 4 personas el taxi puede compensar.",
@@ -536,14 +539,63 @@
             "Si encaja, cenar okonomiyaki; si no, elegir alternativa cercana sin bloquear el día."
           ],
           "time": "~19:00"
+        },
+        {
+          "id": "yamato-gion-respaldo-1014",
+          "title": "Yamato Gion · respaldo si llegan maletas el 14",
+          "category": "transporte",
+          "status": "opcional",
+          "time": "Antes de 19:00",
+          "locationQuery": "ヤマト運輸 京都祇園営業所 祇園町南側570-228",
+          "notes": "Solo si las maletas NO estaban disponibles el martes. Código 162620; ir antes de las 19:00 en cuanto lo confirme seguimiento.",
+          "plan": [
+            "Comprobar seguimiento y acercarse solo si las maletas están disponibles.",
+            "Llevar resguardo/documentación, recoger y dejar en RESI STAY Yasaka."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/162620/"
+          }
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "fushimi-kyoto",
+          "title": "Hotel → Fushimi y Tōfuku-ji",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "fushimi",
+            "tofukuji"
+          ]
+        },
+        {
+          "id": "sanjusangendo-nishiki",
+          "title": "Tōfuku-ji → Sanjūsangendō → Nishiki",
+          "mode": "transit",
+          "activityIds": [
+            "tofukuji",
+            "sanjusangendo",
+            "nishiki"
+          ]
+        },
+        {
+          "id": "nishiki-tiendas",
+          "title": "Nishiki → Hobonichi → matcha → hotel",
+          "mode": "mixed",
+          "activityIds": [
+            "nishiki",
+            "tobichi-kyoto",
+            "baikoan-matcha-2025",
+            "@hotel-end"
+          ]
         }
       ]
     },
     {
       "date": "2026-10-15",
-      "title": "Arashiyama profundo",
+      "title": "Arashiyama completo · bambú, templos y onsen",
       "status": "plan",
-      "note": "Ruta de fuera hacia dentro. Final previsto en Fufu no Yu: las tres chicas juntas en el baño femenino y Jaime en el masculino.",
+      "note": "Jueves 15: salir ~07:45–08:00, llegar a JR Saga-Arashiyama y subir en taxi a Otagi (el templo recomienda comenzar allí y caminar cuesta abajo). Otagi → Adashino → bosque de bambú → Tenryū-ji → comida y puente Togetsukyō → onsen Fufu no Yu desde las 15:30. Las chicas pueden usar juntas el baño femenino, Jaime el masculino. NO se admiten tatuajes: hacer onsen antes de tatuarse el sábado 17. Otagi cierra miércoles y sábados, pero el 15 es jueves.",
       "activities": [
         {
           "id": "otagi",
@@ -555,7 +607,7 @@
             "Empezar por Otagi para hacer Arashiyama de fuera hacia dentro.",
             "Recorrer el recinto con calma y continuar después hacia Adashino."
           ],
-          "time": "~09:30",
+          "time": "~09:15",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar a Kyoto-Kawaramachi → Hankyu Kyoto Line hasta Katsura → cambio a Hankyu Arashiyama Line → Arashiyama; desde allí taxi/bus corto a Otagi para empezar de fuera hacia dentro.",
@@ -568,7 +620,9 @@
             ]
           },
           "goshuin": true,
-          "description": "Otagi Nenbutsu-ji fue fundado originalmente en el siglo VIII, pero sufrió inundaciones y daños y terminó trasladándose a su ubicación actual en Arashiyama. Su gran peculiaridad son las 1.200 estatuas de rakan, discípulos iluminados de Buda, talladas principalmente por personas corrientes desde la década de 1980 bajo la dirección del monje y escultor Kōchō Nishimura. Por eso no hay dos rostros iguales: unas figuras rezan, otras sonríen o muestran gestos cotidianos. El proyecto quiso unir espiritualidad, comunidad y creatividad. La imagen principal del templo es Kannon, protectora frente a desgracias. Fíjate en los musgos, expresiones y pequeños detalles humorísticos."
+          "description": "Otagi Nenbutsu-ji fue fundado originalmente en el siglo VIII, pero sufrió inundaciones y daños y terminó trasladándose a su ubicación actual en Arashiyama. Su gran peculiaridad son las 1.200 estatuas de rakan, discípulos iluminados de Buda, talladas principalmente por personas corrientes desde la década de 1980 bajo la dirección del monje y escultor Kōchō Nishimura. Por eso no hay dos rostros iguales: unas figuras rezan, otras sonríen o muestran gestos cotidianos. El proyecto quiso unir espiritualidad, comunidad y creatividad. La imagen principal del templo es Kannon, protectora frente a desgracias. Fíjate en los musgos, expresiones y pequeños detalles humorísticos.",
+          "priority": "must",
+          "notes": "Otagi abre 09:00–16:00 y cierra miércoles y sábados; jueves 15 sí encaja. Ir desde Saga-Arashiyama en taxi (aprox. 1.500 ¥/5 min) y bajar andando durante el día."
         },
         {
           "id": "adashino",
@@ -587,7 +641,8 @@
             "approximateDuration": "15–20 min"
           },
           "goshuin": true,
-          "description": "Adashino Nenbutsu-ji está en una zona de Arashiyama donde, antiguamente, se dejaban y enterraban a personas sin grandes monumentos funerarios. Las miles de pequeñas piedras y estelas reunidas en Sai no Kawara recuerdan a quienes murieron y simbolizan el cuidado budista de los difuntos. La tradición del lugar está vinculada a rituales de memoria y a figuras como Kūkai y Hōnen. «Nenbutsu» alude a la invocación devocional de Amida Buda. No es simplemente un jardín de rocas decorativas, sino un espacio memorial: conviene visitarlo con respeto y observar las restricciones de fotografía. También tiene un pequeño paseo de bambú."
+          "description": "Adashino Nenbutsu-ji está en una zona de Arashiyama donde, antiguamente, se dejaban y enterraban a personas sin grandes monumentos funerarios. Las miles de pequeñas piedras y estelas reunidas en Sai no Kawara recuerdan a quienes murieron y simbolizan el cuidado budista de los difuntos. La tradición del lugar está vinculada a rituales de memoria y a figuras como Kūkai y Hōnen. «Nenbutsu» alude a la invocación devocional de Amida Buda. No es simplemente un jardín de rocas decorativas, sino un espacio memorial: conviene visitarlo con respeto y observar las restricciones de fotografía. También tiene un pequeño paseo de bambú.",
+          "notes": "Bajar por Saga-Toriimoto hacia el templo memorial de Adashino."
         },
         {
           "id": "bamboo",
@@ -599,27 +654,68 @@
             "Recorrer el Bamboo Forest Trail cuando ya venimos bajando hacia la zona central.",
             "Fotos y paseo; evitar convertirlo en el único objetivo del día."
           ],
-          "time": "~13:00",
+          "time": "~11:45",
           "transit": {
             "from": "Adashino Nenbutsuji",
             "summary": "Seguir bajando a pie hacia la zona central de Arashiyama y Bamboo Forest.",
             "approximateDuration": "30–45 min con paradas"
-          }
+          },
+          "priority": "must",
+          "notes": "Bosque de bambú de Arashiyama, fotos y paseo; seguir después a Tenryū-ji."
+        },
+        {
+          "id": "tenryuji-1015",
+          "title": "Tenryū-ji · templo y jardines",
+          "category": "templo",
+          "status": "plan",
+          "time": "~12:30",
+          "locationQuery": "Tenryu-ji Temple Kyoto",
+          "notes": "Templo zen y jardín con estanque; justo junto al bosque de bambú. Entrar al jardín si no queremos alargar mucho.",
+          "plan": [
+            "Visitar los jardines de Tenryū-ji y disfrutar del paisaje de Arashiyama.",
+            "Salir a comer a la calle comercial antes del puente."
+          ],
+          "priority": "must",
+          "description": "Tenryū-ji es uno de los grandes templos zen de Kioto y forma parte del Patrimonio Mundial. Lo fundó el shōgun Ashikaga Takauji en el siglo XIV para recordar al emperador Go-Daigo. Su jardín gira alrededor de un estanque y utiliza las montañas de Arashiyama como parte del paisaje. Los edificios han sufrido distintos incendios, pero el jardín conserva elementos históricos y permite ver cómo el budismo zen combina naturaleza, arquitectura y contemplación."
+        },
+        {
+          "id": "arashiyama-comida-1015",
+          "title": "Comer en Arashiyama",
+          "category": "comida",
+          "status": "plan",
+          "time": "~13:30",
+          "locationQuery": "Arashiyama Kyoto restaurants",
+          "notes": "Comer por la zona comercial de Arashiyama, sin restaurante reservado. Dejar tiempo para el puente y el onsen.",
+          "plan": [
+            "Elegir sitio según hambre y cola; dedicar unos 45–60 minutos."
+          ]
+        },
+        {
+          "id": "togetsukyo-1015",
+          "title": "Puente Togetsukyō y río",
+          "category": "mirador",
+          "status": "plan",
+          "time": "~14:45",
+          "locationQuery": "Togetsukyo Bridge Kyoto",
+          "notes": "Ver el puente típico de Arashiyama, el río y las montañas. Desde aquí caminar hacia Fufu no Yu.",
+          "plan": [
+            "Pasear por el puente y sacar fotos.",
+            "Ir hacia Hankyu Arashiyama y al onsen."
+          ]
         },
         {
           "id": "arashiyama-onsen",
           "title": "Fufu no Yu · onsen público en Arashiyama",
           "category": "ocio",
           "status": "plan",
-          "notes": "Objetivo principal: que Lorena, Vilma y Marga hagan juntas la experiencia de onsen público en el baño femenino. Jaime entra por separado al baño masculino. No hace falta baño privado.",
+          "notes": "Fufu no Yu, onsen público separado por sexo. Abre 12:00–22:00 (última entrada 21:30); precio oficial publicado 1.100 ¥ entre semana (+ toallas). Las tres chicas juntas en el baño femenino y Jaime en el masculino. Prohíbe tatuajes y stickers: imprescindible ANTES de tatuarse el sábado 17.",
           "plan": [
-            "Terminar el día de Arashiyama aquí después de Otagi, Adashino y Bamboo Forest.",
-            "Lorena, Vilma y Marga entran juntas al baño público femenino; Jaime usa el masculino.",
-            "Tiene onsen natural interior y rotenburo exterior. No requiere baño privado para cumplir el objetivo del grupo.",
-            "Horario actual 12:00–22:00, última entrada 21:30. Si alguna lleva tatuajes, Fufu no permite la entrada."
+            "Terminar Arashiyama aquí después del puente Togetsukyō. Disfrutar unas 2 h si apetece.",
+            "Ellas juntas en la zona femenina, Jaime en la masculina; quedar a la salida.",
+            "Volver a Gion al terminar y cenar. El establecimiento no admite tatuajes."
           ],
           "priority": "must",
-          "time": "~18:00",
+          "time": "~15:30–18:00",
           "locationQuery": "Fufu no Yu Arashiyama Kyoto",
           "nearestStation": "Hankyu Arashiyama · ~1–2 min andando",
           "approximatePrice": "¥1.100 adulto entre semana",
@@ -631,6 +727,40 @@
             "summary": "Caminar hacia Hankyu Arashiyama y Fufu no Yu.",
             "approximateDuration": "20–25 min"
           }
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "arashiyama-subida",
+          "title": "Hotel → Otagi y Adashino",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "otagi",
+            "adashino"
+          ]
+        },
+        {
+          "id": "arashiyama-paseo",
+          "title": "Bambú → Tenryū-ji → puente",
+          "mode": "walk",
+          "activityIds": [
+            "adashino",
+            "bamboo",
+            "tenryuji-1015",
+            "arashiyama-comida-1015",
+            "togetsukyo-1015"
+          ]
+        },
+        {
+          "id": "arashiyama-onsen-traslado",
+          "title": "Puente → Fufu no Yu → hotel",
+          "mode": "mixed",
+          "activityIds": [
+            "togetsukyo-1015",
+            "arashiyama-onsen",
+            "@hotel-end"
+          ]
         }
       ]
     },
