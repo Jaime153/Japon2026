@@ -211,8 +211,8 @@ if (kyoto13) {
     '13/10: la ruta termina en RESI STAY Yasaka');
   const hotelIndex = steps.indexOf('resi-yasaka-checkin-1013');
   const yamatoIndex = steps.indexOf('yamato-kyoto-gion-pickup-1013');
-  assert(yamatoIndex > hotelIndex,
-    '13/10: recoger el envío después de llegar al alojamiento');
+  assert(yamatoIndex >= 0 && hotelIndex > yamatoIndex,
+    '13/10: recoger maletas en Yamato ANTES de entrar al apartamento, sin ir dos veces');
 }
 const sourceDays = readFileSync('src/lib/segments.ts', 'utf8');
 assert(sourceDays.includes('grouped.get(key)!.push(entry)') &&
