@@ -169,11 +169,6 @@ if (monday12) {
   assert(monday12.stages.at(-1).stops.at(-1).kind === 'hotel',
     '12/10: ruta debe regresar al GN98 después de Yamato');
 }
-const kyoto13 = get('2026-10-13');
-if (kyoto13) {
-  assert(kyoto13.stages.some(s => s.stops.some(p => p.id === 'yamato-kyoto-gion-pickup-1013')),
-    '13/10: falta recogida de maletas en Yamato Kyoto Gion');
-}
 // Revisión completa Kioto 13–18. En el día 13 se superponen los segmentos
 // Osaka y Kyoto: el mapa debe usar el origen GN98 y destino RESI Yasaka.
 const kyoto13 = get('2026-10-13');
