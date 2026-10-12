@@ -550,40 +550,6 @@
           ]
         }
       ]
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Salida Osaka → llegada a Kioto (ver ruta completa)",
-      "status": "plan",
-      "activities": [
-        {
-          "id": "transfer-kyoto",
-          "title": "GN98 → Kyoto Station · salida a Kioto",
-          "category": "transporte",
-          "status": "plan",
-          "locationQuery": "Kyoto Station",
-          "plan": [
-            "Salir del GN98 hacia las 07:45, Sakuragawa → Namba → Umeda/JR Osaka → Kyoto Station.",
-            "Buscar el mostrador RESI STAY cerca de Kyoto Station (ON Building 5F), comprobar check-in y dejar maletas.",
-            "Después ver Kiyomizu y Gion; volver a recoger equipaje si no se ha enviado al hotel."
-          ],
-          "time": "~07:45",
-          "transit": {
-            "from": "GN98 Saiwaicho",
-            "summary": "Sakuragawa → Namba → Umeda/Osaka → Kyoto; desde Kyoto Station, bus 206 hasta Higashiyama Yasui o taxi corto al RESI STAY Yasaka.",
-            "approximateDuration": "~1 h 30–2 h con equipaje",
-            "steps": [
-              "Caminar ~5 min a Sakuragawa (S15).",
-              "Sennichimae Line una parada hasta Namba (S16).",
-              "Cambiar a Midosuji Line hasta Umeda y seguir los carteles a JR Osaka Station.",
-              "JR Kyoto Line Special Rapid Osaka → Kyoto.",
-              "Desde Kyoto Station: City Bus 206 hacia Higashiyama/Gion y bajar en Higashiyama Yasui (el hotel está a ~1 min), o taxi si vamos cargados."
-            ],
-            "note": "Con 4 personas y maletas, taxi GN98 → Osaka Station o Kyoto Station → hotel puede compensar para ahorrar transbordos."
-          },
-          "notes": "Traslado de Osaka a Kioto previsto para el martes 13. NO es viaje ya realizado. Salida objetivo del GN98 07:45. En Kyoto Station lo primero es pasar por el mostrador RESI STAY ON Building 5F y dejar equipaje en consigna. La ruta completa de Higashiyama y la recogida en Yamato están en el planning de Kyoto del mismo día."
-        }
-      ]
     }
   ],
   "candidateModules": []
