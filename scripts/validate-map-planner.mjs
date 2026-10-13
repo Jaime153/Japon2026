@@ -24,6 +24,15 @@ if (asakusa) {
   const shichi = asakusa.stages.find(s => s.id === 'shichifukujin');
   assert(shichi?.stops.length === 9 && shichi?.expandable && shichi?.mode === 'walk' && shichi?.closeLoop,
     'Shichifukujin: nueve templos, recorrido a pie desplegable y cierre del circuito');
+  // Los dos templos que Nominatim no localizaba se anclan con coordenadas
+  // reales de OpenStreetMap, para evitar que la ruta vuelva a quedarse 7/9.
+  const hash = shichi?.stops.find(s => s.id === 'hashiba-fudoin');
+  const yoshi = shichi?.stops.find(s => s.id === 'yoshiwara-shrine');
+  assert(hash?.mapCoords?.lat === 35.7270249 && hash?.mapCoords?.lon === 139.8079148,
+    'Hashiba Fudōin necesita su ubicación exacta de OSM (no una búsqueda fallida)');
+  assert(yoshi?.mapCoords?.lat === 35.72285 && yoshi?.mapCoords?.lon === 139.79336,
+    'Yoshiwara Shrine necesita su ubicación de OSM');
+
   assert(asakusa.stages.find(s => s.id === 'kappabashi')?.stops[0].id === 'sensoji',
     'Tras el circuito, la visita Nakamise debe continuar desde Sensō-ji');
   const dayStops = asakusa.stages.flatMap(s => s.stops.map(p => p.id));
@@ -357,6 +366,9 @@ for (const day of dates) {
 // Regresión real reportada desde Android: plegar Shichifukujin ocultaba
 // las paradas intermedias del mapa y suprimía incluso la línea completa.
 const mapSource = readFileSync('src/pages/mapas.astro', 'utf8');
+assert(mapSource.includes('async function geocode(query, pinned = null)') &&
+  mapSource.includes('geocode(stop.query, stop.mapCoords)'),
+  'Leaflet debe usar las coordenadas verificadas sin depender de Nominatim');
 assert(mapSource.includes('for (const stage of stages) for (const point of stage.stops)'),
   'El mapa debe localizar las paradas reales de cada tramo, no solo las mostradas en la lista');
 assert(!mapSource.includes('stage.expandable && shown(stage).length < stage.stops.length)) continue'),
