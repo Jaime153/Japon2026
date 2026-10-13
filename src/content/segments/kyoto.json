@@ -97,7 +97,7 @@
           "category": "comida",
           "status": "plan",
           "time": "~13:30–14:30",
-          "notes": "Decidir según hambre y cola. Cerca de Kōdai-ji: Hashiba (yuba, tofu, menús de unos 3.300 ¥, último pedido 14:30). Si aguantamos hasta Yasaka: Gion Gombei (soba/udon, aprox. 1.000–2.000 ¥, cierra a las 15:00 hoy martes). Ambas opciones están como fichas aparte; no hay reserva ni comida ya confirmada.",
+          "notes": "Decidir según hambre y cola. Cerca de Kōdai-ji: Hashiba (yuba, tofu, menús de unos 3.300 ¥, último pedido 14:30). Si aguantamos hasta Yasaka: Gion Gombei (soba/udon, aprox. 1.000–2.000 ¥, el turno de mediodía termina a las 15:00 hoy martes (reabre para cenar a las 17:00)). Ambas opciones están como fichas aparte; no hay reserva ni comida ya confirmada.",
           "plan": [
             "Comer algo cerca de Chion-in y del parque Maruyama.",
             "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
@@ -315,7 +315,6 @@
           "title": "Estación Kioto → Kōdai-ji",
           "mode": "transit",
           "activityIds": [
-            "@hotel-start",
             "resi-recepcion-kioto-1013",
             "kodaiji-1013-optional"
           ]
