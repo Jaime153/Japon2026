@@ -13,36 +13,31 @@
   "days": [
     {
       "date": "2026-10-13",
-      "title": "Kioto · Kiyomizu, Higashiyama, Yamato y alojamiento",
+      "title": "Kioto · llegada 10:45, Kiyomizu e Higashiyama",
       "status": "plan",
       "activities": [
         {
           "id": "osaka-kyoto-tren-1013",
-          "title": "Salir del GN98 de Osaka hacia Kioto",
+          "title": "Traslado Osaka → Kioto · ya realizado",
           "category": "transporte",
-          "status": "plan",
-          "time": "08:00 salida",
+          "status": "confirmado",
           "locationQuery": "34.668712,135.485405",
-          "notes": "Salir del GN98 a las 08:00. Llegada orientativa a Kyoto Station ~09:30–09:45, según transbordos. Ruta posible: Sakuragawa → Namba → Umeda, caminar a JR Osaka y tomar Special Rapid a Kioto. Los trenes concretos no están reservados.",
+          "notes": "Ya hemos llegado al alojamiento de Kioto a las 10:45. La hora exacta de salida de Osaka y el transporte utilizado no están confirmados; no conservar la estimación anterior como hora real.",
           "plan": [
-            "Salir del GN98 a las 08:00 con las bolsas que no enviamos por Yamato.",
-            "Metro Sakuragawa → Namba → Umeda; pasar a JR Osaka y tomar Special Rapid hasta Kyoto Station.",
-            "Primera parada: recepción de RESI STAY para registro y dejar equipaje."
+            "Traslado desde GN98 Saiwaicho en Osaka a Kioto realizado.",
+            "10:45: ya estamos en RESI STAY Yasaka, donde dejamos las maletas."
           ]
         },
         {
           "id": "resi-recepcion-kioto-1013",
-          "title": "RESI STAY · recepción y dejar equipaje",
+          "title": "Comprobar registro RESI STAY (si falta)",
           "category": "transporte",
-          "status": "plan",
-          "time": "~09:45–10:15",
+          "status": "pendiente",
           "locationQuery": "RESI STAY Reception Counter ON Building 5F 544-2 Higashishiokojicho Kyoto",
-          "notes": "RESI STAY Reception Counter, ON Building planta 5, junto a Kyoto Station. El registro de huéspedes se hace aquí, con pasaportes y reserva; abre 08:00–20:00. Permiten guardar el equipaje gratis. La habitación del apartamento Yasaka NO está disponible hasta las 15:00. Preguntar si nos pueden llevar las bolsas al alojamiento (puede tener coste según la reserva). Si se quedan en recepción sin traslado, volver a por ellas antes de las 20:00.",
+          "notes": "Habéis dicho que llegasteis al hotel y dejasteis las maletas a las 10:45. Eso no confirma si hicisteis el registro obligatorio. Si os faltan instrucciones de entrada o registro en la recepción del ON Building junto a Kyoto Station, consultad con RESI STAY antes de volver a desplazaros. Su recepción está anunciada de 08:00 a 20:00.",
           "plan": [
-            "Ir al RESI STAY Reception Counter del ON Building 5F al llegar a Kyoto Station.",
-            "Hacer el registro obligatorio y dejar las bolsas; preguntar si se pueden enviar al apartamento.",
-            "No ir ahora a RESI STAY Yasaka: la habitación es desde las 15:00.",
-            "Si no trasladan nuestras bolsas, habrá que volver a la recepción a por ellas antes de las 20:00."
+            "Comprobar si el registro ya está hecho y tenéis las instrucciones de acceso a la habitación.",
+            "Solo si os indican que falta, pasar por el mostrador de RESI STAY en Kyoto Station; no es parada obligatoria por defecto."
           ],
           "links": {
             "officialWebsite": "https://resistay.jp/en/reception/",
@@ -51,28 +46,37 @@
           "address": "〒600-8216 京都市下京区東塩小路町544-2 ON Building 5F"
         },
         {
+          "id": "resi-yasaka-llegada-maletas-1045-1013",
+          "title": "RESI STAY Yasaka · dejamos las maletas",
+          "category": "transporte",
+          "status": "confirmado",
+          "time": "10:45",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "address": "〒605-0812 京都府京都市東山区毘沙門町28",
+          "notes": "Llegamos al alojamiento de Kioto y dejamos las maletas a las 10:45, según lo confirmado desde allí. No dar por hecha la entrada a la habitación, disponible normalmente desde las 15:00. Desde aquí podemos ir andando a Kiyomizu-dera.",
+          "plan": [
+            "10:45: llegada al alojamiento y maletas dejadas.",
+            "Empezar el paseo de Higashiyama desde aquí, sin regresar a Kyoto Station."
+          ]
+        },
+        {
           "id": "kiyomizu",
           "title": "Kiyomizu-dera",
-          "time": "~11:00–12:15",
+          "time": "~11:15–12:25",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Kiyomizu-dera Kyoto",
-          "notes": "Primera visita importante en Kioto. El templo abre a las 06:00 y cierra a las 18:00 en octubre; los goshuin se atienden desde aproximadamente las 08:00, según su web oficial. Priorizar la terraza principal y las vistas; bajar después por Sannenzaka y Ninenzaka. Calculad el traslado desde Kyoto Station (autobús o taxi, según tráfico) y la subida hasta la entrada.",
+          "notes": "Desde RESI STAY Yasaka, subir andando por Higashiyama hasta Kiyomizu-dera (aprox. 20–30 min según ritmo). Visitar la terraza principal y pedir goshuin. En octubre el templo abre hasta las 18:00. Como ya hemos dejado el equipaje, no hace falta pasar por Kyoto Station.",
           "transit": {
-            "from": "RESI STAY Reception, Kyoto Station",
-            "summary": "Bus urbano o taxi hasta la zona de Kiyomizu-michi / Gojo-zaka y subida a pie por Kiyomizu-zaka; confirmar recorrido y tráfico en Maps.",
-            "approximateDuration": "~30–45 min con subida",
-            "steps": [
-              "Salir desde Kyoto Station tras el registro.",
-              "Elegir bus o taxi hacia Higashiyama/Kiyomizu según colas.",
-              "Última parte cuesta arriba a pie hasta Kiyomizu-dera."
-            ]
+            "from": "RESI STAY Yasaka, Bishamoncho 28",
+            "summary": "Subida a pie desde el alojamiento por las calles de Higashiyama hasta Kiyomizu-dera.",
+            "approximateDuration": "~20–30 min a pie"
           },
           "plan": [
-            "Desde la recepción de Kyoto Station ir hacia Kiyomizu-zaka (transporte público o taxi) y subir andando al templo.",
-            "Ver la gran terraza, visitar el recinto y pedir el goshuin antes de bajar.",
-            "Bajar con calma por Sannenzaka y Ninenzaka. No hay prisa por llegar a la habitación antes de las 15:00."
+            "Salir del alojamiento a pie y subir hacia Kiyomizu-dera por Higashiyama.",
+            "Ver la terraza y el recinto y pedir el goshuin.",
+            "Bajar después por Sannenzaka y Ninenzaka."
           ],
           "goshuin": true,
           "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO."
@@ -80,7 +84,7 @@
         {
           "id": "ninenzaka-sannenzaka",
           "title": "Sannenzaka y Ninenzaka · calles tradicionales",
-          "time": "~12:15–13:00",
+          "time": "~12:25–13:15",
           "category": "barrio",
           "status": "plan",
           "locationQuery": "Ninenzaka Sannenzaka Kyoto",
@@ -94,17 +98,17 @@
             "Pasear, hacer fotos y parar en alguna tienda si apetece.",
             "Seguir bajando hacia la pagoda de Yasaka y el barrio de Higashiyama."
           ],
-          "notes": "Bajamos desde Kiyomizu por las dos cuestas históricas, con casas de madera, dulces y tiendas. Después seguiremos hacia Yasaka Pagoda. No es necesario entrar en cada comercio."
+          "notes": "Tras Kiyomizu, bajar por Sannenzaka y Ninenzaka. Fotos y tiendas por el camino; acabar cerca de la pagoda Yasaka."
         },
         {
           "id": "yasaka-pagoda",
           "title": "Yasaka Pagoda · Hōkan-ji",
-          "time": "~13:00–13:25",
+          "time": "~13:15–13:40",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
-          "notes": "Parada de fotos en la famosa calle donde se ve la pagoda de cinco pisos. No damos por segura la entrada al interior ni que podamos conseguir goshuin aquí: depende de que el pequeño templo esté abierto. Seguimos hacia el almuerzo.",
+          "notes": "Parada de fotos desde la calle con la pagoda Yasaka/Hōkan-ji. La entrada y el goshuin dependen de que el templo esté abierto; no contamos con ellos como seguro.",
           "transit": {
             "from": "Ninenzaka",
             "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
@@ -123,9 +127,9 @@
           "title": "Comer por Higashiyama",
           "category": "comida",
           "status": "plan",
-          "time": "~13:30–14:20",
+          "time": "~13:40–14:30",
           "locationQuery": "Yasaka Pagoda Higashiyama Kyoto",
-          "notes": "Comer algo por las calles entre la pagoda Yasaka y el santuario Yasaka, sin reservar. Ya habremos hecho el templo y la parte más bonita de las cuestas; una pausa antes de terminar las visitas de la tarde.",
+          "notes": "Comer por Higashiyama cerca de la pagoda Yasaka. Sin restaurante reservado; luego seguimos a pie al santuario Yasaka.",
           "plan": [
             "Buscar restaurante sencillo por Higashiyama, cerca de Yasaka Pagoda.",
             "Después seguimos andando hasta Yasaka Shrine para pedir el goshuin."
@@ -138,11 +142,11 @@
           "status": "plan",
           "locationQuery": "Yasaka Shrine Kyoto",
           "plan": [
-            "Ver el santuario y pedir el goshuin.",
-            "Comprobar el seguimiento de las maletas antes de salir.",
-            "Si ya llegaron, ir primero a Yamato y después al apartamento."
+            "Recorrer Yasaka Jinja y preguntar por el goshuin.",
+            "Mirar el tracking de Yamato Gion antes de desplazarnos.",
+            "Si está listo, recoger el envío de camino al alojamiento; si no, volver directamente."
           ],
-          "time": "~14:35–15:20",
+          "time": "~14:45–15:30",
           "priority": "must",
           "transit": {
             "from": "Yasaka Pagoda / comida en Higashiyama",
@@ -151,22 +155,21 @@
           },
           "goshuin": true,
           "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
-          "notes": "Visitar Yasaka Shrine y pedir el goshuin en el mostrador si sigue abierto (09:00–17:00). Desde aquí iremos a Yamato Kyoto Gion para recoger las maletas, SI aparecen disponibles en el seguimiento, y después directamente al apartamento. No entrar antes en el hotel."
+          "notes": "Visitar Yasaka Shrine y pedir goshuin antes del cierre del mostrador, si está atendiendo. Después comprobar el seguimiento de las maletas que enviamos a Yamato Gion. Si no están allí todavía, volver directamente a RESI STAY Yasaka."
         },
         {
           "id": "yamato-kyoto-gion-pickup-1013",
           "title": "Yamato Kyoto Gion · recoger maletas si llegaron",
           "category": "transporte",
-          "status": "plan",
+          "status": "pendiente",
           "time": "~15:45–16:15",
           "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
           "address": "〒605-0074 京都府京都市東山区祇園町南側570-228",
-          "notes": "Yamato Kyoto Gion, código 162620, 〒605-0074 京都市東山区祇園町南側570-228. Abre 08:00–19:00. Pasar justo ANTES de entrar a RESI STAY Yasaka, para llevar las maletas de una vez al apartamento. El envío desde Osaka no está confirmado como entregado: mirar el seguimiento de todos los bultos antes de venir. Si no han llegado, saltar la parada y recogerlas el día 14.",
+          "notes": "Recogida solo si el seguimiento indica que el envío desde Osaka ya está disponible. Yamato Kyoto Gion, código 162620, 祇園町南側570-228, abre hasta las 19:00. Las maletas que dejasteis en el hotel a las 10:45 son una gestión distinta. Si las enviadas no han llegado, no hacer el desvío hoy; queda la ficha de respaldo del miércoles 14.",
           "plan": [
-            "Comprobar el tracking antes de ir a Yamato Kyoto Gion.",
-            "Si han llegado, pasar por la oficina 162620 con resguardos y documentación; cierra a las 19:00.",
-            "Desde Yamato ir directamente a RESI STAY Yasaka y entrar en la habitación.",
-            "Si no están disponibles, saltar Yamato y recoger el día siguiente."
+            "Comprobar el tracking: solo desplazarnos si marca llegada a Yamato Kyoto Gion.",
+            "Si están allí, recoger con resguardo y llevarlas al alojamiento.",
+            "Si no llegaron, ir directamente al hotel y reintentarlo el miércoles."
           ],
           "links": {
             "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/162620/",
@@ -179,13 +182,13 @@
           "title": "RESI STAY Yasaka · entrar en la habitación",
           "category": "transporte",
           "status": "plan",
-          "time": "~16:30–17:00",
+          "time": "Desde 15:00",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "Entramos al apartamento RESI STAY Yasaka (Bishamoncho 28), disponible desde las 15:00. El registro previo ya se hizo en el mostrador de Kyoto Station. Si hemos recogido las maletas en Yamato, venimos directamente con ellas y no duplicamos el trayecto. Si dejamos bolsas en recepción sin envío, hay que recogerlas antes de las 20:00.",
+          "notes": "La llegada a las 10:45 y haber dejado maletas ya está confirmado, pero NO que la habitación esté disponible ni que hayáis entrado. Según la reserva, se puede acceder desde las 15:00. Volver después de Higashiyama y comprobar las instrucciones de acceso. Si Yamato ya tiene las otras maletas, recogerlas antes de volver; si no, ir directamente.",
           "plan": [
-            "Después de Yamato Kyoto Gion, entrar en RESI STAY Yasaka con las maletas. Si no llegaron a Yamato, ir directamente al apartamento.",
-            "Dejar las cosas y descansar.",
-            "Si se quedaron bolsas en Kyoto Station sin traslado, recogerlas antes de las 20:00."
+            "A partir de las 15:00, entrar en la habitación cuando el alojamiento confirme que se puede.",
+            "Si las maletas de Yamato estaban listas, traerlas de camino; si no, no retrasar la vuelta.",
+            "Si aún faltan indicaciones de registro, contactar con RESI STAY."
           ],
           "priority": "must",
           "links": {
@@ -201,16 +204,16 @@
           "status": "plan",
           "locationQuery": "Gion Kyoto",
           "plan": [
-            "Dar una vuelta por Gion/Hanamikoji después de entrar en el apartamento.",
-            "Cenar por la zona o descansar."
+            "Dar una vuelta por Gion/Hanamikoji si nos apetece.",
+            "Cenar por la zona o descansar; no hay reservas."
           ],
-          "time": "~17:30–19:30",
+          "time": "~17:00–19:00",
           "transit": {
             "from": "Kiyomizu-dera",
             "summary": "Bajar andando por Higashiyama hacia Gion; no hace falta transporte.",
             "approximateDuration": "25–35 min con paseo"
           },
-          "notes": "Tras dejar las maletas en RESI STAY Yasaka, paseo por Gion y cena si quedan ganas. No es obligatorio salir si estamos cansados."
+          "notes": "Paseo y cena cerca de Gion solo si queda energía después del traslado y Kiyomizu. Si no, descansamos en el alojamiento."
         },
         {
           "id": "chionin",
@@ -284,36 +287,44 @@
           "notes": "Opcional si apetece salir a cenar o dar una vuelta después de Gion; no es necesario para completar el día."
         }
       ],
-      "note": "Martes 13/10: salimos del GN98 de Osaka a las 08:00. En Kyoto Station pasamos por la recepción de RESI STAY a hacer el registro obligatorio y dejar las bolsas. Eso NO es entrar en la habitación: RESI STAY Yasaka se ocupa desde las 15:00. Visitamos Kiyomizu, Sannenzaka/Ninenzaka, la pagoda Yasaka, comemos y vamos a Yasaka Shrine. Sobre las 16:00 recogeremos las maletas en Yamato Kyoto Gion (162620), si el seguimiento confirma que están disponibles, y desde allí iremos directamente al apartamento. Si aún no han llegado, vamos al alojamiento y recogemos las maletas el 14. Gion y cena quedan libres.",
+      "note": "A las 10:45 ya estábamos en el alojamiento de Kioto y dejamos las maletas. La habitación figura disponible desde las 15:00; no hemos confirmado si el registro ya está hecho. Salimos desde RESI STAY Yasaka hacia Kiyomizu, bajamos por Sannenzaka y Ninenzaka, vemos la pagoda Yasaka, comemos y visitamos el santuario Yasaka. Antes de ir a Yamato Kyoto Gion (162620) mirar si las maletas enviadas están disponibles. Si no han llegado, vamos directamente al apartamento. Gion y cena, si quedan ganas.",
       "mapStages": [
         {
           "id": "osaka-a-kyoto",
-          "title": "GN98 → Kyoto Station · dejar equipaje",
+          "title": "Osaka → RESI STAY · llegada 10:45",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
             "osaka-kyoto-tren-1013",
-            "resi-recepcion-kioto-1013"
+            "resi-yasaka-llegada-maletas-1045-1013"
           ]
         },
         {
-          "id": "higashiyama-kiyomizu",
-          "title": "Kiyomizu → calles → pagoda Yasaka",
-          "mode": "mixed",
+          "id": "hotel-kiyomizu-higashiyama",
+          "title": "Hotel → Kiyomizu → cuestas → pagoda",
+          "mode": "walk",
           "activityIds": [
-            "resi-recepcion-kioto-1013",
+            "resi-yasaka-llegada-maletas-1045-1013",
             "kiyomizu",
             "ninenzaka-sannenzaka",
+            "yasaka-pagoda"
+          ]
+        },
+        {
+          "id": "higashiyama-comida-yasaka",
+          "title": "Comida → santuario Yasaka",
+          "mode": "walk",
+          "activityIds": [
             "yasaka-pagoda",
-            "comida-higashiyama-1013"
+            "comida-higashiyama-1013",
+            "yasaka"
           ]
         },
         {
           "id": "yasaka-yamato-alojamiento",
-          "title": "Yasaka Shrine → Yamato → apartamento",
+          "title": "Yasaka → Yamato (si llegó) → apartamento",
           "mode": "walk",
           "activityIds": [
-            "comida-higashiyama-1013",
             "yasaka",
             "yamato-kyoto-gion-pickup-1013",
             "resi-yasaka-checkin-1013"
