@@ -216,7 +216,7 @@ if (october13.length === 1) {
     '13/10: Chion-in debe visitarse antes del cierre');
   assert(get13('heian-jingu-1013-extra')?.status === 'opcional',
     '13/10: Heian Jingū solo si queda tarde y no urge Yamato');
-  assert(get13('yamato-kyoto-gion-pickup-1013')?.status === 'plan' &&
+  assert(get13('yamato-kyoto-gion-pickup-1013')?.status === 'opcional' &&
     get13('yamato-kyoto-gion-pickup-1013')?.notes?.includes('seguimiento'),
     '13/10: recoger maletas únicamente si el seguimiento las confirma');
   assert(!activities.some(a => ['kiyomizu','ninenzaka-sannenzaka','yasaka-pagoda'].includes(a.id)),
