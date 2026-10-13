@@ -312,9 +312,10 @@
       "mapStages": [
         {
           "id": "kyoto-recepcion-kodaiji",
-          "title": "Estación Kioto → Kōdai-ji",
+          "title": "GN98 → recepción Kioto → Kōdai-ji",
           "mode": "transit",
           "activityIds": [
+            "@hotel-start",
             "resi-recepcion-kioto-1013",
             "kodaiji-1013-optional"
           ]
