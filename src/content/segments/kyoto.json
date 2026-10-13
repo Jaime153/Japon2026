@@ -407,144 +407,177 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Kioto con lluvia · Sanjūsangendō, Nishiki, tiendas y Fushimi",
+      "title": "Ginkaku-ji, Camino del Filósofo y templos del noreste",
       "status": "plan",
-      "note": "Miércoles 14/10: desayunamos tranquilos y salimos del RESI Yasaka sobre las 08:30, NO antes ni hace falta estar en la puerta de ningún templo a las 09:00. Previsión consultada el 13 por la noche: chubascos por la mañana, posible tormenta eléctrica hasta las 12:00 y mejoría desde las 13:00. Sanjūsangendō primero sobre las 09:15 (abre 08:30 de abril a noviembre y buena parte de la visita es cubierta); Nishiki ~10:50, sabiendo que muchas tiendas cierran los miércoles; TOBICHI ~12:10 (11:00–18:00), Baikoan ~13:15 (10:00–19:00) y Fushimi Inari ~14:30 cuando se seque, sin hacer la subida entera. Tōfuku-ji pasa a opcional. Revisar radar/avisos al despertar: si hay rayos, evitar escaleras y zonas expuestas. Si el envío de Yamato sigue pendiente, no inventar recogida: comprobar seguimiento antes de hacer otro desplazamiento.",
+      "note": "Miércoles 14/10: ruta por el NORESTE, de norte a sur, para que Ginkaku-ji lo puedan ver los cuatro antes del vuelo de las chicas. Salir del RESI ~08:00 y entrar en Ginkaku-ji sobre las 08:45. Luego Hōnen-in, Camino del Filósofo, Eikan-dō, comida y Nanzen-ji con su acueducto. Si queda tiempo, Heian Jingū y Chion-in antes de regresar por Gion. Lluvia débil a primera hora y aviso de tormenta eléctrica hasta las 12:00: si hay rayos, suspender paseos expuestos y esperar bajo techo. Fushimi Inari pasa al viernes 16 al amanecer antes de Nara. Sanjūsangendō, Nishiki, TOBICHI y la tienda de té se guardan para el 19 con Lorena, sin marcarlos como visitados.",
       "activities": [
         {
           "id": "salida-resi-0830-1014",
-          "title": "Salir del RESI STAY Yasaka",
-          "time": "08:30",
+          "title": "Salir del RESI → Pabellón Plateado",
+          "time": "08:00",
           "status": "plan",
           "category": "transporte",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "Desayunar tranquilamente y salir del alojamiento sobre las 08:30. No hace falta estar en el templo justo a las 09:00. Primera parada Sanjūsangendō, al que queremos llegar sobre las 09:15; si sigue lloviendo, no correr ni forzar el trayecto.",
+          "notes": "Hoy vamos a la zona noreste de Kioto. Salir sobre las 08:00 y acercarnos al Ginkaku-ji en bus o taxi, objetivo entrar cerca de la apertura de las 08:30. Si hay tormenta eléctrica, esperar bajo techo hasta que sea seguro caminar por jardines y senderos.",
           "plan": [
-            "Desayunar sin prisas y salir del RESI sobre las 08:30.",
-            "Ir hacia Sanjūsangendō en bus/taxi o andando según lluvia; calcular margen para llegar sobre 09:15."
+            "Salir del RESI STAY Yasaka sobre las 08:00, si el tiempo lo permite.",
+            "Ir directamente a Ginkaku-ji en transporte público o taxi; después se puede hacer la ruta hacia el sur andando.",
+            "No vamos hoy a Fushimi Inari: lo hacemos al amanecer antes de Nara el viernes."
           ]
         },
         {
-          "id": "sanjusangendo",
-          "title": "Sanjūsangendō",
-          "time": "~09:15–10:15",
+          "id": "ginkakuji",
+          "title": "Ginkaku-ji · Pabellón de Plata",
+          "time": "~08:45–09:35",
           "category": "templo",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Sanjusangendo Kyoto",
-          "notes": "Primera visita de mañana. Abre a las 08:30 del 1 de abril al 15 de noviembre (oficial), así que llegar a las 09:15 va bien. Su pabellón cubierto con 1.001 estatuas de Kannon es ideal si siguen los chubascos. Dentro no se permite hacer fotos.",
-          "transit": {
-            "from": "Sennyū-ji / Imakumano Kannon-ji",
-            "summary": "Bajar hacia Higashiyama Nanajo. Se puede caminar; si vamos cansados, bus/taxi corto.",
-            "approximateDuration": "20–25 min"
-          },
-          "plan": [
-            "Llegar sobre las 09:15 después de desayunar y salir a las 08:30.",
-            "Visitar el pabellón de las 1.001 estatuas; calcular cerca de una hora.",
-            "Si hay tormenta eléctrica, esperar a que pase antes de desplazarnos por la calle."
-          ],
-          "goshuin": true,
-          "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior.",
-          "links": {
-            "officialWebsite": "https://www.sanjusangendo.jp/"
-          }
-        },
-        {
-          "id": "nishiki",
-          "title": "Nishiki Market",
-          "category": "comida",
-          "status": "plan",
-          "locationQuery": "Nishiki Market Kyoto",
-          "plan": [
-            "Ir hacia Nishiki desde Sanjūsangendō.",
-            "Mirar los puestos que estén abiertos y comer algo sin alargarlo demasiado.",
-            "Si hay muchas persianas bajadas por ser miércoles, pasar directamente a TOBICHI o a las galerías cercanas."
-          ],
-          "time": "~10:50–12:00",
-          "transit": {
-            "from": "Tō-ji",
-            "summary": "Kintetsu Toji → Kyoto (1 parada); metro Karasuma Line Kyoto → Shijo; caminar a Nishiki Market.",
-            "approximateDuration": "20–25 min"
-          },
-          "priority": "must",
-          "notes": "Después de Sanjūsangendō, ir a Nishiki y picar/comer algo. Está cubierto en buena parte, pero la asociación oficial avisa de que MUCHAS tiendas cierran los miércoles: no prometemos un mercado lleno ni que esté abierta cada tienda. Si vemos poco movimiento, acortamos y seguimos a TOBICHI.",
-          "links": {
-            "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/contact/"
-          }
-        },
-        {
-          "id": "tobichi-kyoto",
-          "title": "TOBICHI Kyoto · agenda Hobonichi",
-          "time": "~12:10–12:45",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "TOBICHI Kyoto",
-          "address": "Kotobuki Building 5F, 251-2 Ichinocho, Kawaramachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto",
-          "nearestStation": "Kyoto-Kawaramachi / Gion-Shijo",
-          "notes": "Pasar por TOBICHI Kyoto (Hobonichi) a mirar la agenda de Lorena y accesorios. Dirección oficial: 河原町通四条下ル市之町251-2 寿ビル5F. Horario habitual 11:00–18:00, cierre irregular: comprobar al llegar.",
-          "plan": [
-            "Ir andando desde Nishiki a la tienda TOBICHI Kyoto (planta 5).",
-            "Mirar agenda Hobonichi y accesorios; si está cerrada, no perder tiempo esperando."
-          ],
-          "links": {
-            "officialWebsite": "https://www.1101.com/tobichi/"
-          }
-        },
-        {
-          "id": "baikoan-matcha-2025",
-          "title": "Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)",
-          "category": "compras",
-          "status": "plan",
-          "priority": "must",
-          "time": "~13:15–13:45",
-          "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
-          "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
-          "notes": "Buscar la tienda de té de 2025: probablemente Baikoan (梅香庵茶舗), 46-1 Tachibanacho. La asociación de comerciantes del té indica horario 10:00–19:00 y cierre domingo/festivo; miércoles debería abrir, pero la identificación como aquella tienda sigue sin confirmar.",
-          "plan": [
-            "Desde TOBICHI ir hacia Baikoan; comprobar al verla que es la del recuerdo de 2025.",
-            "Comprar matcha solo si es la tienda correcta; si no lo es, no afirmarlo en el diario."
-          ],
-          "links": {
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto",
-            "officialWebsite": "https://www.kyoto-tea.net/membersindex/baikouan"
-          },
-          "transit": {
-            "from": "Nishiki Market",
-            "summary": "Caminar a Shijo Station → Karasuma Line una parada hasta Gojo; desde Gojo caminar ~10 min a Baikoan, en Matsubara/Aburanokoji.",
-            "approximateDuration": "20–25 min",
-            "note": "La asociación de té de Kyoto publica 10:00–19:00 y cierre domingos/festivos; aun así el pequeño comercio puede tener variaciones, así que no apurar a última hora."
-          }
-        },
-        {
-          "id": "fushimi",
-          "title": "Fushimi Inari Taisha",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Fushimi Inari Taisha",
-          "plan": [
-            "Tras las tiendas y cuando haya pasado la lluvia fuerte, ir a Fushimi Inari en transporte público.",
-            "Recorrer los torii y el tramo bajo del monte sin obligarnos a hacer la ruta completa.",
-            "Si sigue habiendo tormenta eléctrica, no subir: mover la visita a otro día y volver tranquilos."
-          ],
-          "time": "~14:30–16:15",
+          "locationQuery": "Ginkaku-ji Kyoto",
+          "notes": "Primera visita: Ginkaku-ji abre a las 08:30 en octubre, entrada adulta 1.000 ¥ desde abril 2026. Ver Pabellón Plateado, jardín de arena y musgo y mirador. El pabellón NO está recubierto de plata. Si hay relámpagos, esperar a que pase la tormenta antes de entrar a zonas expuestas.",
           "transit": {
             "from": "RESI STAY Yasaka",
-            "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
-            "approximateDuration": "~30–35 min puerta a puerta",
+            "summary": "Caminar a Gion-Shijo → Keihan hasta Demachiyanagi; City Bus 7 o 203 → Ginkakuji-michi.",
+            "approximateDuration": "35–45 min",
             "steps": [
-              "Caminar a Gion-Shijo.",
-              "Tomar Keihan Main Line hacia el sur; evitar los Limited Express que no paran en Fushimi-Inari.",
-              "Bajar en Fushimi-Inari y caminar ~5 min al santuario."
+              "Gion-Shijo → Demachiyanagi por Keihan.",
+              "Desde Demachiyanagi tomar bus 7 o 203 hasta Ginkakuji-michi.",
+              "Caminar al templo."
             ]
           },
+          "plan": [
+            "Entrar a primera hora y hacer el recorrido principal.",
+            "No alargar: este día tiene la salida de Vilma y Marga como ancla."
+          ],
           "goshuin": true,
-          "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido.",
-          "notes": "Dejamos Fushimi Inari para la TARDE porque el 14/10 se prevén chubascos y posible tormenta eléctrica hasta mediodía, y desde ~13:00 la previsión mejora. Llegar sobre 14:30 desde la tienda de té, recorrer los torii hasta donde el grupo quiera, sin hacer la subida completa ni caminar si hay rayos. El recinto está abierto 24 h, pero los goshuin/puestos de atención tienen horario limitado (aprox. hasta 17:00).",
-          "links": {
-            "officialWebsite": "https://inari.jp/en/"
-          }
+          "description": "Ginkaku-ji, cuyo nombre formal es Jishō-ji, surgió de la villa de retiro del shōgun Ashikaga Yoshimasa a finales del siglo XV y se transformó en templo zen tras su muerte. Aunque se llama «Pabellón de Plata», nunca fue recubierto de plata: el nombre se popularizó por contraste con Kinkaku-ji. La belleza aquí es más discreta y se relaciona con la cultura Higashiyama, el té, la caligrafía y los jardines contemplativos. El jardín de arena blanca incluye un cono y una amplia superficie rastrillada; sus significados exactos tienen distintas interpretaciones. Sube al mirador del jardín para ver Kioto desde arriba."
+        },
+        {
+          "id": "honenin-1014",
+          "title": "Hōnen-in · templo entre árboles",
+          "time": "~09:45–10:15",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "法然院 京都市左京区鹿ケ谷御所ノ段町30",
+          "description": "Hōnen-in es un templo budista de Kioto asociado a Hōnen, el monje que difundió la devoción a Amida en Japón. Su entrada tiene una puerta de techo vegetal, cubierta de musgo, y dos montículos de arena blanca que se rastrillan en diferentes diseños. El recinto es pequeño y muy tranquilo; los jardines exteriores son el principal atractivo, mientras que algunos edificios interiores solo abren en períodos especiales. Merece la pena fijarse en la puerta y en el contraste del bosque con los montículos de arena.",
+          "notes": "Desvío corto desde el Camino del Filósofo. Los jardines del recinto se pueden visitar desde las 06:00 hasta las 16:00; no es necesario hacer una visita larga. Entrada al recinto exterior gratuita.",
+          "plan": [
+            "Salir de Ginkaku-ji y caminar hacia el sur.",
+            "Desviarnos unos minutos hasta la puerta de Hōnen-in y sus montículos de arena.",
+            "Volver al Camino del Filósofo para seguir hacia Eikan-dō."
+          ]
+        },
+        {
+          "id": "philosophers-path",
+          "title": "Philosopher's Path",
+          "time": "~10:00–11:15",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Philosopher's Path Kyoto",
+          "transit": {
+            "from": "Ginkaku-ji",
+            "summary": "Salir del templo y recorrer a pie el canal hacia el sur.",
+            "approximateDuration": "30–45 min"
+          },
+          "plan": [
+            "Paseo corto/medio, sin intentar llegar obligatoriamente hasta el final si el reloj aprieta.",
+            "Hora límite: empezar regreso hacia Gion/hotel sobre las 10:30–10:45."
+          ],
+          "notes": "Camino del Filósofo hacia el SUR por el canal, unos 2 km en total desde Ginkaku-ji hacia Eikan-dō/Nanzen-ji. Pasamos por Hōnen-in y seguimos bajando: no hace falta volver al norte. Si llueve mucho, acortar o parar bajo techo."
+        },
+        {
+          "id": "eikando-1014",
+          "title": "Eikan-dō · jardines y Amida",
+          "time": "~11:20–12:15",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "永観堂 禅林寺 京都市左京区永観堂町48",
+          "description": "Eikan-dō, cuyo nombre formal es Zenrin-ji, es un templo budista Jōdo conocido por la imagen de Mikaeri Amida, un Buda Amida con la cabeza girada hacia atrás. Según la tradición, la figura se volvió hacia el monje Eikan durante un ritual para animarlo a seguir. El complejo tiene salas conectadas por corredores, estanques y jardines de arces que se vuelven rojos al avanzar el otoño. Es uno de los templos más conocidos de la zona del Camino del Filósofo y su visita mezcla escultura, pasarelas y paisaje.",
+          "notes": "Al final del paseo del Filósofo, antes de Nanzen-ji. Abre 09:00–17:00, última entrada 16:00. Contar unos 45–60 minutos; si vamos tarde, ver solo un recinto y seguir.",
+          "plan": [
+            "Seguir por el Camino del Filósofo hacia Eikan-dō.",
+            "Ver el conjunto y los jardines con calma.",
+            "Después vamos a Nanzen-ji, que queda cerca."
+          ]
+        },
+        {
+          "id": "comer-higashiyama-noreste-1014",
+          "title": "Comer cerca de Eikan-dō/Nanzen-ji",
+          "time": "~12:15–13:15",
+          "category": "comida",
+          "status": "plan",
+          "locationQuery": "Nanzenji Eikando michi Kyoto",
+          "notes": "Elegir un restaurante o udon/soba por el barrio al llegar; sin reserva ni restaurante concreto confirmado.",
+          "plan": [
+            "Comer tranquilamente en la zona antes de Nanzen-ji.",
+            "Después visitar puerta y acueducto."
+          ]
+        },
+        {
+          "id": "nanzenji-1014",
+          "title": "Nanzen-ji · puerta y acueducto",
+          "time": "~13:15–14:30",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "南禅寺 京都市左京区南禅寺福地町86",
+          "description": "Nanzen-ji es uno de los grandes templos zen de la escuela Rinzai, construido sobre el antiguo palacio de retiro del emperador Kameyama a finales del siglo XIII. Su enorme puerta Sanmon domina la entrada; dentro del recinto está el Suirokaku, un acueducto de ladrillo rojo construido durante la modernización de Japón en el siglo XIX para transportar agua del lago Biwa. El contraste del acueducto de estilo occidental con los edificios budistas es muy característico. Los jardines del Hōjō también reflejan la estética zen.",
+          "notes": "Prioridad del tramo sur: ver la puerta Sanmon y el acueducto Suirokaku. El exterior de ambos se puede ver sin pagar; hay entradas separadas para subir a la puerta y entrar a los jardines. Horario de interiores en octubre 08:40–17:00.",
+          "plan": [
+            "Desde Eikan-dō caminar hacia Nanzen-ji.",
+            "Ver puerta Sanmon y hacer fotos en el acueducto de ladrillo.",
+            "Si nos apetece entrar a un jardín, reservar tiempo; si no, continuar hacia Heian."
+          ]
+        },
+        {
+          "id": "heian-jingu-1014",
+          "title": "Heian Jingū · santuario y gran torii",
+          "time": "~15:00–15:40",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
+          "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
+          "notes": "Si todavía hay ganas después de Nanzen-ji: el recinto abre a las 06:00 y en octubre cierra a las 17:30. Podemos ver el gran torii y el santuario sin necesidad de entrar al jardín de pago.",
+          "plan": [
+            "Caminar desde Nanzen-ji hacia el gran torii de Heian Jingū.",
+            "Ver el santuario; jardín Shin'en solo si interesa.",
+            "Después bajar hacia Chion-in/Gion y el alojamiento."
+          ]
+        },
+        {
+          "id": "chionin-1014",
+          "title": "Chion-in · si da tiempo al bajar",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Chion-in Kyoto",
+          "notes": "Está al sur de Heian Jingū, cerca del RESI. Ayer 13/10 no llegamos a entrar. Si estamos cerca antes del cierre de atención, entrar; si no, basta con ver la puerta Sanmon por fuera y dejar el resto para otro día.",
+          "transit": {
+            "from": "Parque Maruyama",
+            "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
+            "approximateDuration": "~5 min"
+          },
+          "plan": [
+            "Bajar desde Heian Jingū hacia Chion-in, si tenemos tiempo.",
+            "Ver la puerta Sanmon y, si sigue abierto, el templo principal.",
+            "Seguir por Yasaka y Gion hacia el RESI."
+          ],
+          "goshuin": true,
+          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales.",
+          "skipped": true,
+          "time": "~16:00"
+        },
+        {
+          "id": "regreso-resi-1014",
+          "title": "Regresar al RESI STAY Yasaka",
+          "time": "~17:15",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "notes": "Al terminar por Higashiyama o Gion, volver al apartamento. Ninguna visita queda confirmada hasta que contemos lo que hemos hecho.",
+          "plan": [
+            "Volver al alojamiento por la zona de Gion.",
+            "Cenar por la zona si apetece."
+          ]
         },
         {
           "id": "tofukuji",
@@ -666,41 +699,42 @@
       ],
       "mapStages": [
         {
-          "id": "hotel-sanjusangendo-1014",
-          "title": "08:30 hotel → Sanjūsangendō",
+          "id": "hotel-ginkaku-1014",
+          "title": "RESI → Ginkaku-ji",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "salida-resi-0830-1014",
-            "sanjusangendo"
+            "ginkakuji"
           ]
         },
         {
-          "id": "sanjusangendo-nishiki-1014",
-          "title": "Sanjūsangendō → Nishiki",
-          "mode": "transit",
+          "id": "filosofo-1014",
+          "title": "Ginkaku-ji → Hōnen-in → Filósofo → Eikan-dō",
+          "mode": "walk",
           "activityIds": [
-            "sanjusangendo",
-            "nishiki"
+            "ginkakuji",
+            "honenin-1014",
+            "philosophers-path",
+            "eikando-1014"
           ]
         },
         {
-          "id": "centro-compras-1014",
-          "title": "Nishiki → TOBICHI → matcha",
-          "mode": "mixed",
+          "id": "nanzen-1014",
+          "title": "Eikan-dō → comer → Nanzen-ji",
+          "mode": "walk",
           "activityIds": [
-            "nishiki",
-            "tobichi-kyoto",
-            "baikoan-matcha-2025"
+            "eikando-1014",
+            "comer-higashiyama-noreste-1014",
+            "nanzenji-1014"
           ]
         },
         {
-          "id": "fushimi-tarde-1014",
-          "title": "Tiendas → Fushimi Inari → hotel",
-          "mode": "transit",
+          "id": "heian-regreso-1014",
+          "title": "Nanzen-ji → Heian Jingū → RESI",
+          "mode": "walk",
           "activityIds": [
-            "baikoan-matcha-2025",
-            "fushimi",
+            "nanzenji-1014",
+            "heian-jingu-1014",
             "@hotel-end"
           ]
         }
@@ -881,10 +915,40 @@
     },
     {
       "date": "2026-10-16",
-      "title": "Nara · día completo para los cuatro",
+      "title": "Fushimi Inari al amanecer → Nara completo",
       "status": "plan",
-      "note": "Viernes 16: Nara es una excursión de día completo para los cuatro, sin tatuajes ni otros planes de Kioto. Salir del RESI Yasaka ~07:30, Kōfuku-ji sobre 09:15, llegar a Yoshoku Haru antes de abrir a las 11:00 (recomendación de Alberto), luego Nara Park, Tōdai-ji, Kasuga Taisha y regreso a Kioto por la tarde. Nigatsu-dō solo si queda tiempo. No usar el Café Haru de Bishamoncho por error: el restaurante original está en 公納堂町14.",
+      "note": "Viernes 16: madrugamos para ver Fushimi Inari con poca gente ANTES de Nara. Salir del RESI hacia 05:45–06:00, estar en Fushimi Inari ~06:20–07:30 y continuar por la línea JR Nara desde Inari hacia Nara, consultando el tren y posibles transbordos. Mantener Kōfuku-ji ~09:15 y estar en Yoshoku Haru (公納堂町14) sobre 10:45, antes de abrir a las 11:00. Después Nara Park, Tōdai-ji y Kasuga Taisha. No hacer la subida completa de Fushimi si perjudica la excursión.",
       "activities": [
+        {
+          "id": "fushimi",
+          "title": "Fushimi Inari · torii al amanecer",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Fushimi Inari Taisha",
+          "plan": [
+            "Salir del hotel sobre las 05:45–06:00 hacia Fushimi Inari, preferiblemente en Keihan desde Gion-Shijo o Kiyomizu-Gojo.",
+            "Visitar los torii al amanecer sobre las 06:20–07:30, sin subir a toda la montaña.",
+            "Desde JR Inari continuar hacia Nara en la línea JR Nara (consultar tren real y transbordos) y llegar a Kōfuku-ji sobre las 09:15."
+          ],
+          "time": "~06:20–07:30",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
+            "approximateDuration": "~30–35 min puerta a puerta",
+            "steps": [
+              "Caminar a Gion-Shijo.",
+              "Tomar Keihan Main Line hacia el sur; evitar los Limited Express que no paran en Fushimi-Inari.",
+              "Bajar en Fushimi-Inari y caminar ~5 min al santuario."
+            ]
+          },
+          "goshuin": true,
+          "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido.",
+          "notes": "Vamos al amanecer para evitar las multitudes, ANTES de la excursión a Nara. Salir del RESI aprox. 05:45–06:00. Llegar a Fushimi Inari sobre 06:20, subir hasta donde dé tiempo entre los torii y salir hacia JR Inari sobre 07:30. No hacemos la subida completa de la montaña: debemos llegar a Nara para Yoshoku Haru, que abre a las 11:00. Si vamos tarde, acortar la subida.",
+          "links": {
+            "officialWebsite": "https://inari.jp/en/"
+          }
+        },
         {
           "id": "kofukuji",
           "title": "Kōfuku-ji",
@@ -1028,11 +1092,20 @@
       ],
       "mapStages": [
         {
-          "id": "nara-ida",
-          "title": "Hotel → Kōfuku-ji → Haru",
+          "id": "inari-manana-1016",
+          "title": "Hotel → Fushimi Inari al amanecer",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
+            "fushimi"
+          ]
+        },
+        {
+          "id": "inari-nara-1016",
+          "title": "Fushimi Inari → Nara → Haru",
+          "mode": "transit",
+          "activityIds": [
+            "fushimi",
             "kofukuji",
             "haru-nara"
           ]
@@ -1413,63 +1486,101 @@
     },
     {
       "date": "2026-10-19",
-      "title": "Ginkaku-ji y Camino del Filósofo · Jaime y Lorena",
+      "title": "Kioto pendiente · Sanjūsangendō, Nishiki y tiendas",
       "status": "plan",
-      "note": "Lunes 19/10, ya solo Jaime y Lorena. Hemos pasado aquí Ginkaku-ji y el paseo corto del Filósofo para liberar la mañana del 18 y que las chicas hagan Kiyomizu y las compras de palillos. Previsión consultada el 13/10: de mañana nublado, con lluvia baja (~5–7 %); por la tarde riesgo de tormenta (~50 % desde las 13:00). Hacer Ginkaku y el paseo a primera hora, terminar antes de mediodía y dejar la tarde cubierta/descanso. Reconfirmar el tiempo esa mañana.",
+      "note": "Lunes 19, Jaime y Lorena: Ginkaku-ji, Camino del Filósofo, Hōnen-in, Eikan-dō y Nanzen-ji ya están previstos para el miércoles 14 con las chicas, así que no duplicarlos aquí. Este día podemos recuperar Sanjūsangendō, Nishiki Market, TOBICHI (agenda de Lorena) y la tienda de té probable Baikoan, todas pendientes. Ajustar según lo que realmente logremos visitar del 14 al 18. Onsen y restaurantes como opcionales.",
       "activities": [
         {
-          "id": "ginkakuji",
-          "title": "Ginkaku-ji · Pabellón de Plata",
-          "time": "~08:30",
+          "id": "sanjusangendo",
+          "title": "Sanjūsangendō",
+          "time": "~08:30–09:30",
           "category": "templo",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Ginkaku-ji Kyoto",
-          "notes": "19/10, solo Jaime y Lorena: visitar Ginkaku-ji a primera hora mientras siga seco. El día 18 se reserva para las fotos de Kiyomizu con las chicas.",
+          "locationQuery": "Sanjusangendo Kyoto",
+          "notes": "Pendiente desde el 14. Sanjūsangendō abre 08:30 en octubre, tiene las 1.001 estatuas de Kannon y la visita se hace en buena parte bajo techo. No confundir con visita realizada.",
           "transit": {
-            "from": "RESI STAY Yasaka",
-            "summary": "Caminar a Gion-Shijo → Keihan hasta Demachiyanagi; City Bus 7 o 203 → Ginkakuji-michi.",
-            "approximateDuration": "35–45 min",
-            "steps": [
-              "Gion-Shijo → Demachiyanagi por Keihan.",
-              "Desde Demachiyanagi tomar bus 7 o 203 hasta Ginkakuji-michi.",
-              "Caminar al templo."
-            ]
+            "from": "Sennyū-ji / Imakumano Kannon-ji",
+            "summary": "Bajar hacia Higashiyama Nanajo. Se puede caminar; si vamos cansados, bus/taxi corto.",
+            "approximateDuration": "20–25 min"
           },
           "plan": [
-            "Entrar a primera hora y hacer el recorrido principal.",
-            "No alargar: este día tiene la salida de Vilma y Marga como ancla."
+            "Llegar sobre las 09:15 después de desayunar y salir a las 08:30.",
+            "Visitar el pabellón de las 1.001 estatuas; calcular cerca de una hora.",
+            "Si hay tormenta eléctrica, esperar a que pase antes de desplazarnos por la calle."
           ],
           "goshuin": true,
-          "description": "Ginkaku-ji, cuyo nombre formal es Jishō-ji, surgió de la villa de retiro del shōgun Ashikaga Yoshimasa a finales del siglo XV y se transformó en templo zen tras su muerte. Aunque se llama «Pabellón de Plata», nunca fue recubierto de plata: el nombre se popularizó por contraste con Kinkaku-ji. La belleza aquí es más discreta y se relaciona con la cultura Higashiyama, el té, la caligrafía y los jardines contemplativos. El jardín de arena blanca incluye un cono y una amplia superficie rastrillada; sus significados exactos tienen distintas interpretaciones. Sube al mirador del jardín para ver Kioto desde arriba."
+          "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior.",
+          "links": {
+            "officialWebsite": "https://www.sanjusangendo.jp/"
+          }
         },
         {
-          "id": "philosophers-path",
-          "title": "Philosopher's Path",
-          "time": "~09:45",
-          "category": "barrio",
+          "id": "nishiki",
+          "title": "Nishiki Market",
+          "category": "comida",
           "status": "plan",
-          "locationQuery": "Philosopher's Path Kyoto",
-          "transit": {
-            "from": "Ginkaku-ji",
-            "summary": "Salir del templo y recorrer a pie el canal hacia el sur.",
-            "approximateDuration": "30–45 min"
-          },
+          "locationQuery": "Nishiki Market Kyoto",
           "plan": [
-            "Paseo corto/medio, sin intentar llegar obligatoriamente hasta el final si el reloj aprieta.",
-            "Hora límite: empezar regreso hacia Gion/hotel sobre las 10:30–10:45."
+            "Ir hacia Nishiki desde Sanjūsangendō.",
+            "Mirar los puestos que estén abiertos y comer algo sin alargarlo demasiado.",
+            "Si hay muchas persianas bajadas por ser miércoles, pasar directamente a TOBICHI o a las galerías cercanas."
           ],
-          "notes": "Paseo corto después de Ginkaku-ji, si el tiempo aguanta. El 19 hay riesgo de tormentas por la tarde; mejor terminar la ruta exterior antes de comer."
+          "time": "~10:15–11:30",
+          "transit": {
+            "from": "Tō-ji",
+            "summary": "Kintetsu Toji → Kyoto (1 parada); metro Karasuma Line Kyoto → Shijo; caminar a Nishiki Market.",
+            "approximateDuration": "20–25 min"
+          },
+          "priority": "must",
+          "notes": "Paseo por Nishiki Market. El 19 es lunes; la mayoría de tiendas abre, aunque cada una tiene su propio horario. Priorizar solo si todavía no lo hemos visitado.",
+          "links": {
+            "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/contact/"
+          }
         },
         {
-          "id": "kyoto-pendiente",
-          "title": "Recuperar lo que haya quedado pendiente",
-          "category": "otro",
+          "id": "tobichi-kyoto",
+          "title": "TOBICHI Kyoto · agenda Hobonichi",
+          "time": "~11:45–12:30",
+          "category": "compras",
           "status": "plan",
+          "priority": "must",
+          "locationQuery": "TOBICHI Kyoto",
+          "address": "Kotobuki Building 5F, 251-2 Ichinocho, Kawaramachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto",
+          "nearestStation": "Kyoto-Kawaramachi / Gion-Shijo",
+          "notes": "Agenda Hobonichi de Lorena pendiente del 14. TOBICHI Kyoto normalmente abre 11:00–18:00, cierre irregular; comprobar antes de ir.",
           "plan": [
-            "Revisar lo que haya quedado sin hacer de los días anteriores.",
-            "Elegir solo una prioridad real en vez de convertir el día en una lista de recuperaciones."
-          ]
+            "Ir andando desde Nishiki a la tienda TOBICHI Kyoto (planta 5).",
+            "Mirar agenda Hobonichi y accesorios; si está cerrada, no perder tiempo esperando."
+          ],
+          "links": {
+            "officialWebsite": "https://www.1101.com/tobichi/"
+          }
+        },
+        {
+          "id": "baikoan-matcha-2025",
+          "title": "Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)",
+          "category": "compras",
+          "status": "plan",
+          "priority": "must",
+          "time": "~13:00",
+          "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
+          "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
+          "notes": "Buscar la tienda de matcha del viaje de 2025, probablemente Baikoan (梅香庵茶舗), 46-1 Tachibanacho. Identidad de tienda todavía no confirmada; consultar sobre el terreno.",
+          "plan": [
+            "Desde TOBICHI ir hacia Baikoan; comprobar al verla que es la del recuerdo de 2025.",
+            "Comprar matcha solo si es la tienda correcta; si no lo es, no afirmarlo en el diario."
+          ],
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto",
+            "officialWebsite": "https://www.kyoto-tea.net/membersindex/baikouan"
+          },
+          "transit": {
+            "from": "Nishiki Market",
+            "summary": "Caminar a Shijo Station → Karasuma Line una parada hasta Gojo; desde Gojo caminar ~10 min a Baikoan, en Matsubara/Aburanokoji.",
+            "approximateDuration": "20–25 min",
+            "note": "La asociación de té de Kyoto publica 10:00–19:00 y cierre domingos/festivos; aun así el pequeño comercio puede tener variaciones, así que no apurar a última hora."
+          }
         },
         {
           "id": "onsen-kyoto",
@@ -1519,21 +1630,31 @@
       ],
       "mapStages": [
         {
-          "id": "ginkaku-manana",
-          "title": "Hotel → Ginkaku-ji y paseo del Filósofo",
+          "id": "sanjusangendo-1019",
+          "title": "Hotel → Sanjūsangendō",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "ginkakuji",
-            "philosophers-path"
+            "sanjusangendo"
           ]
         },
         {
-          "id": "kyoto19-vuelta",
-          "title": "Camino del Filósofo → hotel",
+          "id": "nishiki-1019",
+          "title": "Sanjūsangendō → Nishiki",
           "mode": "transit",
           "activityIds": [
-            "philosophers-path",
+            "sanjusangendo",
+            "nishiki"
+          ]
+        },
+        {
+          "id": "tiendas-1019",
+          "title": "Nishiki → TOBICHI → matcha → hotel",
+          "mode": "mixed",
+          "activityIds": [
+            "nishiki",
+            "tobichi-kyoto",
+            "baikoan-matcha-2025",
             "@hotel-end"
           ]
         }
