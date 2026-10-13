@@ -97,6 +97,22 @@
           "notes": "Bajamos desde Kiyomizu por las dos cuestas históricas, con casas de madera, dulces y tiendas. Después seguiremos hacia Yasaka Pagoda. No es necesario entrar en cada comercio."
         },
         {
+          "id": "yasaka-koshindo-1013",
+          "title": "Yasaka Kōshin-dō · pasamos sin goshuin",
+          "time": "~11:00",
+          "status": "confirmado",
+          "category": "templo",
+          "locationQuery": "八坂庚申堂 京都市東山区金園町390",
+          "address": "〒605-0828 京都府京都市東山区金園町390",
+          "goshuin": false,
+          "notes": "Pasamos por Yasaka Kōshin-dō durante la mañana del 13/10. No cogimos goshuin. Aviso enviado sobre las 11:02, así que la hora de la visita queda aproximada. Después vamos hacia la pagoda Yasaka (Hōkan-ji), que todavía no hemos confirmado como visitada.",
+          "description": "Yasaka Kōshin-dō es un templo pequeño del barrio de Higashiyama. Su nombre oficial es Kongō-ji y está dedicado a Shōmen Kongō, una figura ligada a la tradición Kōshin. Lo que más llama la atención son los kukurizaru, los pequeños muñecos de tela de colores que cuelgan por todas partes. Representan monos con las manos y los pies atados: simbolizan contener un deseo para intentar cumplir otro. Es una parada corta, muy cerca de la pagoda Yasaka.",
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%9D%82%E5%BA%9A%E7%94%B3%E5%A0%82%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E9%87%91%E5%9C%92%E7%94%BA390",
+            "officialWebsite": "https://ja.kyoto.travel/tourism/single01.php?category_id=7&tourism_id=2007"
+          }
+        },
+        {
           "id": "yasaka-pagoda",
           "title": "Yasaka Pagoda · Hōkan-ji",
           "time": "~13:00–13:25",
@@ -284,7 +300,7 @@
           "notes": "Opcional si apetece salir a cenar o dar una vuelta después de Gion; no es necesario para completar el día."
         }
       ],
-      "note": "Martes 13/10: salimos del GN98 de Osaka a las 08:00. En Kyoto Station pasamos por la recepción de RESI STAY a hacer el registro obligatorio y dejar las bolsas. Eso NO es entrar en la habitación: RESI STAY Yasaka se ocupa desde las 15:00. Visitamos Kiyomizu, Sannenzaka/Ninenzaka, la pagoda Yasaka, comemos y vamos a Yasaka Shrine. Sobre las 16:00 recogeremos las maletas en Yamato Kyoto Gion (162620), si el seguimiento confirma que están disponibles, y desde allí iremos directamente al apartamento. Si aún no han llegado, vamos al alojamiento y recogemos las maletas el 14. Gion y cena quedan libres.",
+      "note": "Martes 13/10: salimos del GN98 de Osaka a las 08:00. En Kyoto Station pasamos por la recepción de RESI STAY a hacer el registro obligatorio y dejar las bolsas. Eso NO es entrar en la habitación: RESI STAY Yasaka se ocupa desde las 15:00. Visitamos Kiyomizu, Sannenzaka/Ninenzaka, la pagoda Yasaka, comemos y vamos a Yasaka Shrine. Sobre las 16:00 recogeremos las maletas en Yamato Kyoto Gion (162620), si el seguimiento confirma que están disponibles, y desde allí iremos directamente al apartamento. Si aún no han llegado, vamos al alojamiento y recogemos las maletas el 14. Gion y cena quedan libres.\nDiario 13/10, sobre las 11:00: pasamos por Yasaka Kōshin-dō (sin goshuin). Siguiente: pagoda Yasaka, pendiente de confirmar.",
       "mapStages": [
         {
           "id": "osaka-a-kyoto",
@@ -304,6 +320,7 @@
             "resi-recepcion-kioto-1013",
             "kiyomizu",
             "ninenzaka-sannenzaka",
+            "yasaka-koshindo-1013",
             "yasaka-pagoda",
             "comida-higashiyama-1013"
           ]
