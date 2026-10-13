@@ -173,7 +173,7 @@ if (monday12) {
 // Osaka y Kyoto: el mapa debe usar el origen GN98 y destino RESI Yasaka.
 const kyoto13 = get('2026-10-13');
 if (kyoto13) {
-  assert(kyoto13.stages.length === 5, '13/10: cinco tramos, incluida llegada y templos reales');
+  assert(kyoto13.stages.length === 3, '13/10: tras Kōdai-ji no hubo más visitas: solo tres tramos');
   assert(kyoto13.hotelStart.includes('GN98') && kyoto13.hotelEnd.includes('RESI STAY'),
     '13/10: origen Osaka, destino Kioto');
   assert(kyoto13.stages[0].stops[0].query === '34.668712,135.485405',
@@ -181,15 +181,15 @@ if (kyoto13) {
   assert(kyoto13.stages.at(-1).stops.at(-1).kind === 'hotel',
     '13/10: terminamos en RESI STAY Yasaka');
   const ids = kyoto13.stages.flatMap(s => s.stops.map(p => p.id));
-  const main = ['resi-yasaka-llegada-maletas-1045-1013','yasaka-koshindo-1013',
-    'ryozen-kannon-1013','kodaiji-1013-optional','nene-no-michi-1013',
-    'maruyama-park-1013','yasaka','chionin','resi-yasaka-checkin-1013'];
-  for (const id of main) assert(ids.includes(id), '13/10: falta en el mapa: ' + id);
-  assert(ids.indexOf('yasaka-koshindo-1013') < ids.indexOf('ryozen-kannon-1013') &&
-    ids.indexOf('ryozen-kannon-1013') < ids.indexOf('kodaiji-1013-optional') &&
-    ids.indexOf('maruyama-park-1013') < ids.indexOf('yasaka') &&
-    ids.indexOf('yasaka') < ids.indexOf('chionin'),
-    '13/10: el orden debe reflejar lo realmente visitado y la ruta anunciada');
+  const visited = ['resi-yasaka-llegada-maletas-1045-1013','yasaka-koshindo-1013',
+    'ryozen-kannon-1013','kodaiji-1013-optional'];
+  for (const id of visited) assert(ids.includes(id), '13/10: falta visita realizada: ' + id);
+  for (const id of ['nene-no-michi-1013','maruyama-park-1013','yasaka','chionin',
+    'resi-yasaka-checkin-1013']) {
+    assert(!ids.includes(id), '13/10: incluir solo visitas hechas, no ' + id);
+  }
+  assert(visited.every((id, i) => i === 0 || ids.indexOf(visited[i - 1]) < ids.indexOf(id)),
+    '13/10: respetar orden de llegada a Kioto y Kōdai-ji');
   for (const id of ['resi-recepcion-kioto-1013','yamato-kyoto-gion-pickup-1013',
     'kiyomizu','ninenzaka-sannenzaka','yasaka-pagoda']) {
     assert(!ids.includes(id), '13/10: parada condicional o pospuesta no debe imponerse: ' + id);
@@ -211,9 +211,8 @@ if (october13.length === 1) {
     '13/10: llegada a Ryōzen Kannon confirmada, visita aún en curso');
   assert(get13('resi-yasaka-llegada-maletas-1045-1013')?.status === 'confirmado',
     '13/10: llegada al alojamiento y maletas 10:45 confirmadas');
-  assert(get13('chionin')?.status === 'plan' &&
-    get13('chionin')?.notes?.includes('16:00'),
-    '13/10: Chion-in debe visitarse antes del cierre');
+  assert(get13('chionin')?.skipped === true && get13('yasaka')?.skipped === true,
+    '13/10: Yasaka y Chion-in no se visitaron después de Kōdai-ji');
   assert(get13('heian-jingu-1013-extra')?.status === 'opcional',
     '13/10: Heian Jingū solo si queda tarde y no urge Yamato');
   assert(get13('yamato-kyoto-gion-pickup-1013')?.status === 'opcional' &&
