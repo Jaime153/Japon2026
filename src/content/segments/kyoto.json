@@ -29,6 +29,20 @@
           ]
         },
         {
+          "id": "resi-yasaka-llegada-maletas-1045-1013",
+          "title": "RESI STAY Yasaka · dejamos las maletas",
+          "category": "transporte",
+          "status": "confirmado",
+          "time": "10:45",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "address": "〒605-0812 京都府京都市東山区毘沙門町28",
+          "notes": "Llegamos al alojamiento de Kioto y dejamos las maletas a las 10:45, según lo confirmado desde allí. No dar por hecha la entrada a la habitación, disponible normalmente desde las 15:00. Desde aquí podemos ir andando a Kiyomizu-dera.",
+          "plan": [
+            "10:45: llegada al alojamiento y maletas dejadas.",
+            "Empezar el paseo de Higashiyama desde aquí, sin regresar a Kyoto Station."
+          ]
+        },
+        {
           "id": "resi-recepcion-kioto-1013",
           "title": "Comprobar registro RESI STAY (si falta)",
           "category": "transporte",
@@ -44,20 +58,6 @@
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=RESI%20STAY%20Reception%20Counter%20Kyoto"
           },
           "address": "〒600-8216 京都市下京区東塩小路町544-2 ON Building 5F"
-        },
-        {
-          "id": "resi-yasaka-llegada-maletas-1045-1013",
-          "title": "RESI STAY Yasaka · dejamos las maletas",
-          "category": "transporte",
-          "status": "confirmado",
-          "time": "10:45",
-          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "address": "〒605-0812 京都府京都市東山区毘沙門町28",
-          "notes": "Llegamos al alojamiento de Kioto y dejamos las maletas a las 10:45, según lo confirmado desde allí. No dar por hecha la entrada a la habitación, disponible normalmente desde las 15:00. Desde aquí podemos ir andando a Kiyomizu-dera.",
-          "plan": [
-            "10:45: llegada al alojamiento y maletas dejadas.",
-            "Empezar el paseo de Higashiyama desde aquí, sin regresar a Kyoto Station."
-          ]
         },
         {
           "id": "kiyomizu",
