@@ -15,32 +15,20 @@
       "date": "2026-10-11",
       "title": "Osaka · Shinsekai, templos y Dōtonbori de noche",
       "status": "plan",
-      "note": "Domingo 11/10. A las 13:20 estamos comiendo en 初代エビス 別館 en Shinsekai. Hemos pedido kushikatsu, okonomiyaki y fuwatama yakisoba. Calculamos terminar sobre las 13:50. Después haremos Isshin-ji y Shitennō-ji antes de que cierren los goshuin, seguiremos por Hōzen-ji y dejaremos Dōtonbori para la tarde-noche. Los horarios posteriores son aproximados: no marcar los templos como visitados hasta que vayamos. Mañana está pendiente comprar entradas de Umeda Sky.",
+      "note": "Domingo 11/10: habíamos quedado en salir del GN98 a las 08:30, no a las 07:45. A las 13:20 estamos comiendo en 初代エビス 別館 en Shinsekai: kushikatsu, okonomiyaki y fuwatama yakisoba. Después estaban previstos Isshin-ji, Shitennō-ji, Hōzen-ji y Dōtonbori. Los horarios de esas visitas son orientativos, sin confirmación de que se realizaran.",
       "activities": [
         {
-          "id": "salida-gn98-0745-1011",
-          "title": "Salir del GN98 · empezar temprano",
+          "id": "salida-gn98-0830-1011",
+          "title": "Salir del GN98 a las 08:30",
           "category": "transporte",
           "status": "plan",
-          "time": "07:45",
+          "time": "08:30",
           "locationQuery": "34.668712,135.485405",
-          "notes": "Salir del GN98 a las 07:45. No hay que llegar una hora antes al santuario: primero desayunamos por Namba y después entramos a Namba Yasaka justo antes del goshuin de las 09:00.",
+          "notes": "Habíamos quedado en salir del GN98 a las 08:30. Esta es la hora acordada, no una hora real de salida confirmada. Vamos hacia Namba Yasaka para el goshuin de las 09:00; no hay desayuno fijado antes de salir.",
           "plan": [
-            "07:45: salir del GN98 hacia Namba.",
-            "08:10–08:35: desayuno rápido o konbini por Namba.",
-            "08:45: entrar a Namba Yasaka, fotos y goshuin a las 09:00. Salir sobre las 09:10–09:15."
-          ]
-        },
-        {
-          "id": "desayuno-namba-1011",
-          "title": "Desayunar por Namba antes del templo",
-          "category": "comida",
-          "status": "plan",
-          "time": "~08:10–08:35",
-          "notes": "Desayunamos en un konbini o cafetería que ya esté abierta por Namba. No merece la pena quedarnos esperando una hora dentro de Namba Yasaka: iremos hacia las 08:45 para hacer fotos y recoger el goshuin cuando abra la atención a las 09:00.",
-          "plan": [
-            "Desayuno rápido de camino a Namba Yasaka.",
-            "Ir al santuario a las 08:45; no hace falta ocupar allí toda la mañana."
+            "08:30: hora acordada para salir del GN98 con las chicas.",
+            "Ir hacia Namba Yasaka. El objetivo es llegar cerca de las 09:00, cuando empieza la atención del goshuin.",
+            "Desayunar después o comprar algo de camino solo si encaja; no hemos quedado antes de las 08:30."
           ]
         },
         {
@@ -50,29 +38,40 @@
           "status": "plan",
           "locationQuery": "Namba Yasaka Jinja",
           "plan": [
-            "08:45: entrar al santuario y hacer fotos de la cabeza de león.",
-            "09:00: solicitar el goshuin, siempre que estén atendiendo.",
-            "Salir hacia Kuromon sobre 09:10–09:15. Si hay mucha cola, decidir si compensa esperar."
+            "Salir del GN98 a las 08:30 y acercarnos a Namba Yasaka.",
+            "Ver la cabeza de león y pedir el goshuin a partir de las 09:00 si ya están atendiendo.",
+            "Continuar hacia Kuromon; no hace falta alargar mucho el santuario."
           ],
-          "time": "~08:45–09:15",
+          "time": "~09:00–09:30",
           "transit": {
-            "from": "Desayuno por Namba",
-            "summary": "Caminar hasta el santuario desde la zona de Namba.",
-            "approximateDuration": "~10–20 min"
+            "from": "GN98 Saiwaicho",
+            "summary": "Caminar desde el alojamiento hacia Namba Yasaka (aprox. 20–30 min, según ruta).",
+            "approximateDuration": "~20–30 min"
           },
           "goshuin": true,
           "description": "Namba Yasaka Jinja es un santuario sintoísta de Osaka dedicado principalmente a Susanoo-no-Mikoto, el kami vinculado a tormentas, protección y relatos de victoria frente al mal. No se conoce con certeza la fecha de su fundación y sus tradiciones están ligadas al antiguo culto de Gion. Lo más reconocible es una gigantesca cabeza de león de unos 12 metros, el Ema-den, cuya boca abierta se interpreta popularmente como capaz de engullir la mala suerte y atraer oportunidades. La estructura es moderna, de la década de 1970: aunque parezca un antiguo monumento, no es medieval. Fíjate en los enormes dientes y en el espacio dedicado a ofrendas y deseos.",
           "priority": "must",
-          "notes": "Visita corta: 15–20 minutos de fotos a la cabeza de león y el recinto. El goshuin se atiende a partir de las 09:00 según el recorrido de Osaka Metro. Recogerlo al abrir y salir sobre 09:10–09:15, según cola. No vamos a estar una o dos horas en el templo."
+          "notes": "El objetivo era llegar después de salir del GN98 a las 08:30, ver la cabeza de león y, si atendían desde las 09:00, pedir el goshuin. Hora orientativa, no llegada confirmada. Visita corta."
+        },
+        {
+          "id": "desayuno-namba-1011",
+          "title": "Desayuno si nos apetece por Namba",
+          "category": "comida",
+          "status": "opcional",
+          "notes": "Si no hemos desayunado, coger algo por Namba cuando venga bien. No hay desayuno programado a las 08:10: del hotel salimos a las 08:30.",
+          "plan": [
+            "Parar a comprar desayuno solo si nos apetece y no nos retrasa las visitas.",
+            "También podemos picar algo en Kuromon Ichiba."
+          ]
         },
         {
           "id": "kuromon-market-1011",
           "title": "Kuromon Ichiba · mercado y picoteo",
           "category": "comida",
           "status": "plan",
-          "time": "~09:40–10:30",
+          "time": "~09:50–10:40",
           "locationQuery": "Kuromon Ichiba Market Osaka",
-          "notes": "Después de Namba Yasaka, acercarnos a Kuromon Ichiba. Hay puestos que abren sobre las 09:00; en domingo pueden cerrar algunos. Estar unos 45–50 minutos y seguir hacia Nipponbashi/Shinsekai si ya hemos visto suficiente.",
+          "notes": "Después de Namba Yasaka, dar una vuelta por Kuromon Ichiba y picar algo si apetece. Es una previsión; como luego estuvimos comiendo en Shinsekai a las 13:20, no marcar como hora de visita confirmada.",
           "plan": [
             "Pasear por el mercado y comprar algo si apetece.",
             "No quedarnos demasiado si muchas tiendas están cerradas: es domingo.",
