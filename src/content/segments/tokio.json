@@ -466,7 +466,11 @@
             "Pedir el sello/goshuin de Hotei.",
             "Parada corta y continuar hacia Ishihama Shrine."
           ],
-          "description": "Hashiba Fudō-in es un pequeño templo budista de Asakusa dedicado a Fudō Myōō, el «Rey de la Sabiduría Inamovible». Su aspecto severo y su espada representan la decisión de cortar la ignorancia y proteger la práctica espiritual, no una deidad malvada. Es un lugar discreto frente a los grandes templos de Tokio y conserva el ambiente de culto de barrio. En el circuito Asakusa Shichifukujin se asocia a Hotei, figura sonriente ligada a alegría, generosidad y satisfacción. Busca la imagen protectora de Fudō y el rincón de Hotei."
+          "description": "Hashiba Fudō-in es un pequeño templo budista de Asakusa dedicado a Fudō Myōō, el «Rey de la Sabiduría Inamovible». Su aspecto severo y su espada representan la decisión de cortar la ignorancia y proteger la práctica espiritual, no una deidad malvada. Es un lugar discreto frente a los grandes templos de Tokio y conserva el ambiente de culto de barrio. En el circuito Asakusa Shichifukujin se asocia a Hotei, figura sonriente ligada a alegría, generosidad y satisfacción. Busca la imagen protectora de Fudō y el rincón de Hotei.",
+          "mapCoords": {
+            "lat": 35.7270249,
+            "lon": 139.8079148
+          }
         },
         {
           "id": "ishihama-shrine",
@@ -529,7 +533,11 @@
             "Pedir el sello/goshuin de Benzaiten.",
             "Último tramo hacia Yasaki Inari."
           ],
-          "description": "Yoshiwara Jinja reúne el culto a varios pequeños santuarios de Inari relacionados históricamente con el antiguo barrio de Yoshiwara, célebre distrito de entretenimiento del período Edo. Es importante recordar que detrás de la imagen artística del barrio hubo también vidas condicionadas por sistemas de explotación. En la peregrinación Asakusa Shichifukujin se asocia a Benzaiten, deidad de agua, música, elocuencia y artes, de origen budista y adaptada a la religiosidad japonesa. Los zorros que puedan aparecer en torno a Inari se consideran mensajeros, no el propio kami. Observa el contexto urbano de este santuario pequeño."
+          "description": "Yoshiwara Jinja reúne el culto a varios pequeños santuarios de Inari relacionados históricamente con el antiguo barrio de Yoshiwara, célebre distrito de entretenimiento del período Edo. Es importante recordar que detrás de la imagen artística del barrio hubo también vidas condicionadas por sistemas de explotación. En la peregrinación Asakusa Shichifukujin se asocia a Benzaiten, deidad de agua, música, elocuencia y artes, de origen budista y adaptada a la religiosidad japonesa. Los zorros que puedan aparecer en torno a Inari se consideran mensajeros, no el propio kami. Observa el contexto urbano de este santuario pequeño.",
+          "mapCoords": {
+            "lat": 35.72285,
+            "lon": 139.79336
+          }
         },
         {
           "id": "yasaki-inari",
