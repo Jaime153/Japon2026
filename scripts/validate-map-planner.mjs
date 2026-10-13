@@ -233,8 +233,13 @@ for (const date of ['2026-10-20','2026-10-23']) {
 const kyoto14 = get('2026-10-14');
 if (kyoto14) {
   const ids = kyoto14.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['fushimi','sanjusangendo','nishiki','tobichi-kyoto','baikoan-matcha-2025'])
-    assert(ids.includes(id), '14/10: falta imprescindible '+id);
+  for (const id of ['ginkakuji','honenin-1014','philosophers-path','eikando-1014','nanzenji-1014','heian-jingu-1014'])
+    assert(ids.includes(id), '14/10 noreste: falta imprescindible '+id);
+  assert(!ids.includes('fushimi'), '14/10: Fushimi al amanecer otro día, no hoy');
+  assert(kyoto14.stages[0].stops.at(-1)?.id === 'ginkakuji',
+    '14/10: el primer destino debe ser Ginkaku-ji');
+  assert(kyoto14.stages.at(-1).stops.at(-1).kind === 'hotel',
+    '14/10: ruta de norte a sur termina en RESI Yasaka');
 }
 const kyoto15 = get('2026-10-15');
 if (kyoto15) {
@@ -247,8 +252,11 @@ if (kyoto15) {
 const kyoto16 = get('2026-10-16');
 if (kyoto16) {
   const ids = kyoto16.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['kofukuji','haru-nara','todaiji','kasuga'])
-    assert(ids.includes(id), '16/10 Nara: falta '+id);
+  for (const id of ['fushimi','kofukuji','haru-nara','todaiji','kasuga'])
+    assert(ids.includes(id), '16/10 Fushimi/Nara: falta '+id);
+  assert(ids.indexOf('fushimi') < ids.indexOf('kofukuji') &&
+    ids.indexOf('kofukuji') < ids.indexOf('haru-nara'),
+    '16/10: Fushimi al amanecer, luego Kofuku-ji y Yoshoku Haru');
 }
 const kyoto17 = get('2026-10-17');
 if (kyoto17) {
@@ -262,15 +270,16 @@ if (kyoto18) {
   for (const id of ['kiyomizu-1018','ninenzaka-palillos-fotos-1018','yasaka-pagoda-fotos-1018','kyoto-station-h2','kix-vilma-marga'])
     assert(ids.includes(id), '18/10: falta visita/fotos o transporte '+id);
   assert(!ids.includes('ginkakuji'),
-    '18/10: Ginkaku queda para Jaime y Lorena el 19, para poder hacer Kiyomizu en grupo');
+    '18/10: Ginkaku ya se organiza el día 14 para las cuatro personas');
   assert(ids.indexOf('kiyomizu-1018') < ids.indexOf('ninenzaka-palillos-fotos-1018'),
     '18/10: primero fotos al templo y después tiendas de palillos');
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
   const ids = kyoto19.stages.flatMap(s => s.stops.map(p => p.id));
-  assert(ids.includes('ginkakuji') && ids.includes('philosophers-path'),
-    '19/10: Ginkaku y Camino del Filósofo recuperados, no perdidos');
+  for (const id of ['sanjusangendo','nishiki','tobichi-kyoto','baikoan-matcha-2025'])
+    assert(ids.includes(id), '19/10: falta visita o compra pendiente '+id);
+  assert(!ids.includes('ginkakuji'), '19/10: no repetir el Ginkaku ya previsto para las cuatro personas el 14');
   assert(kyoto19.stages.at(-1).stops.at(-1).kind === 'hotel',
     '19/10: volver a RESI STAY desde la ruta de Ginkaku');
 }
@@ -296,34 +305,35 @@ assert(kyotoDayLogistics13?.mapStages?.at(-1)?.activityIds.at(-1) === '@hotel-en
   '13/10: el mapa debe terminar en RESI STAY Yasaka');
 assert(!kyotoDayLogistics13?.mapStages?.some(s => s.activityIds.includes('yamato-kyoto-gion-pickup-1013')),
   '13/10: no imponer recogida Yamato hasta confirmación del seguimiento');
-// Kioto 13-14: jornada real cerrada tras Kōdai-ji y día de lluvia
-// reorganizado con desayuno tranquilo y salida a las 08:30.
+// Kioto 13-14: Kōdai-ji fue la última visita real del 13.
+// El 14 se organiza la ruta del norte; no marcarla como visitada.
 const kyotoSeg = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
 const tue = kyotoSeg?.days.find(day => day.date === '2026-10-13');
 const wed = kyotoSeg?.days.find(day => day.date === '2026-10-14');
 assert(Boolean(tue) && Boolean(wed), 'Faltan días 13 y 14 de Kioto');
 if (tue) {
   assert(tue.activities.find(a => a.id === 'kodaiji-1013-optional')?.status === 'confirmado',
-    'El 13 Kōdai-ji fue visitado');
+    '13/10: Kōdai-ji fue visitado');
   for (const id of ['yasaka', 'chionin', 'maruyama-park-1013', 'nene-no-michi-1013']) {
     assert(tue.activities.find(a => a.id === id)?.skipped === true,
       '13/10: ' + id + ' no se visitó después de Kōdai-ji');
   }
 }
 if (wed) {
-  const order = ['salida-resi-0830-1014', 'sanjusangendo', 'nishiki',
-    'tobichi-kyoto', 'baikoan-matcha-2025', 'fushimi'];
+  const order = ['salida-resi-0830-1014', 'ginkakuji', 'honenin-1014',
+    'philosophers-path', 'eikando-1014', 'comer-higashiyama-noreste-1014',
+    'nanzenji-1014', 'heian-jingu-1014'];
   assert(wed.activities.slice(0, order.length).map(a => a.id).join(',') === order.join(','),
-    '14/10: las tarjetas deben estar ordenadas Sanjū → Nishiki → TOBICHI → Baikoan → Fushimi');
-  assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.time === '08:30',
-    '14/10: salida hotel a las 08:30, no 06:30');
-  assert(wed.activities.find(a => a.id === 'tofukuji')?.status === 'opcional',
-    'Tōfuku-ji queda opcional por mal tiempo');
+    '14/10: Ginkaku → Honen-in → Filósofo → Eikan-do → Nanzen-ji → Heian');
+  assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.time === '08:00',
+    '14/10: salir hacia Ginkaku sobre las 08:00 si el tiempo lo permite');
+  assert(!wed.activities.some(a => a.id === 'fushimi'),
+    '14/10: Fushimi Inari se hace temprano el viernes 16');
   const mapped = get('2026-10-14');
-  assert(mapped?.stages?.[0]?.stops?.some(p => p.id === 'sanjusangendo'),
-    '14/10: primer templo del mapa debe ser Sanjūsangendō');
-  assert(mapped?.stages?.at(-1)?.stops?.some(p => p.id === 'fushimi'),
-    '14/10: Fushimi Inari debe quedar por la tarde');
+  assert(mapped?.stages?.[0]?.stops?.some(p => p.id === 'ginkakuji'),
+    '14/10: primer templo del mapa debe ser Ginkaku-ji');
+  assert(mapped?.stages?.at(-1)?.stops?.some(p => p.kind === 'hotel'),
+    '14/10: ruta termina en el alojamiento');
 }
 
 const transfer = get('2026-10-13');
