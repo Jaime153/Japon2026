@@ -173,14 +173,15 @@ if (monday12) {
 // Osaka y Kyoto: el mapa debe usar el origen GN98 y destino RESI Yasaka.
 const kyoto13 = get('2026-10-13');
 if (kyoto13) {
-  assert(kyoto13.stages.length === 3, '13/10: tres tramos de Yasaka, templos próximos y llegada al hotel');
+  assert(kyoto13.stages.length === 4, '13/10: cuatro tramos de Kōdai-ji, Maruyama, Yasaka y llegada al hotel');
   assert(kyoto13.stages[0].stops[0].kind === 'hotel' &&
     kyoto13.stages[0].stops[0].title.includes('GN98'),
     '13/10: ruta empieza en el hotel de Osaka');
   assert(kyoto13.stages.at(-1).stops.at(-1).title.includes('RESI STAY Yasaka'),
     '13/10: ruta debe terminar en el hotel de Kioto');
   const ids = kyoto13.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['resi-recepcion-kioto-1013', 'yasaka','maruyama-park-1013','chionin',
+  for (const id of ['resi-recepcion-kioto-1013', 'kodaiji-1013-optional',
+    'nene-no-michi-1013', 'maruyama-park-1013', 'yasaka',
     'yamato-kyoto-gion-pickup-1013', 'resi-yasaka-checkin-1013']) {
     assert(ids.includes(id), '13/10: falta el paso ' + id);
   }
@@ -195,17 +196,28 @@ assert(october13.length === 1 && october13[0]?.activities.length >= 10,
   '13/10: no duplicar una ficha vacía de Osaka que tape el planning de Kioto');
 assert(!october13[0]?.activities.some(a => ['kiyomizu','ninenzaka-sannenzaka','yasaka-pagoda'].includes(a.id)) &&
   october13[0]?.activities.some(a => a.id === 'yamato-kyoto-gion-pickup-1013') &&
-  october13[0]?.note.includes('NO hemos ido a Kiyomizu'),
+  october13[0]?.note.includes('Kiyomizu-dera no se hizo hoy'),
   '13/10: Kiyomizu no debe seguir como ficha hoy, pero sí quedar anotado el aplazamiento y Yamato');
 if (kyoto13) {
-  assert(kyoto13.stages.length === 3,
-    '13/10: ruta a Yasaka, Chion-in y Yamato con llegada al hotel');
+  assert(kyoto13.stages.length === 4,
+    '13/10: Kōdai-ji → Nene-no-Michi → Maruyama → Yasaka y traslado al RESI');
   const steps = kyoto13.stages.flatMap(st => st.stops.map(stop => stop.id));
-  for (const id of ['yasaka','maruyama-park-1013','chionin','shorenin',
-    'comida-higashiyama-1013','resi-yasaka-checkin-1013',
+  for (const id of ['kodaiji-1013-optional','nene-no-michi-1013',
+    'maruyama-park-1013','yasaka', 'resi-yasaka-checkin-1013',
     'yamato-kyoto-gion-pickup-1013','gion']) {
-    assert(steps.includes(id), '13/10: falta visita o trámite importante: '+id);
+    assert(steps.includes(id), '13/10: falta visita o trámite principal: '+id);
   }
+  const activities = october13[0]?.activities ?? [];
+  for (const id of ['entokuin-1013', 'chionin', 'shorenin',
+    'comida-higashiyama-1013', 'almuerzo-hashiba-kodaiji-1013',
+    'almuerzo-gion-gombei-1013']) {
+    assert(activities.some(a => a.id === id),
+      '13/10: falta ficha de templo o comida opcional: ' + id);
+  }
+  assert(steps.indexOf('kodaiji-1013-optional') < steps.indexOf('nene-no-michi-1013') &&
+    steps.indexOf('nene-no-michi-1013') < steps.indexOf('maruyama-park-1013') &&
+    steps.indexOf('maruyama-park-1013') < steps.indexOf('yasaka'),
+    '13/10: respetar el orden real Kōdai-ji → Nene-no-Michi → Maruyama → Yasaka');
   for (const id of ['kiyomizu','ninenzaka-sannenzaka','yasaka-pagoda'])
     assert(!steps.includes(id), '13/10: visita pospuesta a 18/10 no debe aparecer en mapa: '+id);
   assert(kyoto13.stages[0].stops[0].title.includes('GN98'),
