@@ -173,14 +173,14 @@ if (monday12) {
 // Osaka y Kyoto: el mapa debe usar el origen GN98 y destino RESI Yasaka.
 const kyoto13 = get('2026-10-13');
 if (kyoto13) {
-  assert(kyoto13.stages.length === 4, '13/10: cuatro tramos completos con llegada al hotel');
+  assert(kyoto13.stages.length === 3, '13/10: tres tramos de Yasaka, templos próximos y llegada al hotel');
   assert(kyoto13.stages[0].stops[0].kind === 'hotel' &&
     kyoto13.stages[0].stops[0].title.includes('GN98'),
     '13/10: ruta empieza en el hotel de Osaka');
   assert(kyoto13.stages.at(-1).stops.at(-1).title.includes('RESI STAY Yasaka'),
     '13/10: ruta debe terminar en el hotel de Kioto');
   const ids = kyoto13.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['resi-recepcion-kioto-1013', 'kiyomizu', 'yasaka-pagoda',
+  for (const id of ['resi-recepcion-kioto-1013', 'yasaka','maruyama-park-1013','chionin',
     'yamato-kyoto-gion-pickup-1013', 'resi-yasaka-checkin-1013']) {
     assert(ids.includes(id), '13/10: falta el paso ' + id);
   }
@@ -193,18 +193,20 @@ if (kyoto13) {
 const october13 = segments.flatMap(seg => seg.days.filter(d => d.date === '2026-10-13'));
 assert(october13.length === 1 && october13[0]?.activities.length >= 10,
   '13/10: no duplicar una ficha vacía de Osaka que tape el planning de Kioto');
-assert(october13[0]?.activities.some(a => a.id === 'kiyomizu') &&
+assert(october13[0]?.activities.some(a => a.id === 'kiyomizu' && a.status === 'pendiente') &&
   october13[0]?.activities.some(a => a.id === 'yamato-kyoto-gion-pickup-1013'),
-  '13/10: en Hoy deben aparecer Kiyomizu y Yamato Gion');
+  '13/10: Kiyomizu debe figurar pospuesto, con Yamato Gion conservado');
 if (kyoto13) {
-  assert(kyoto13.stages.length === 4,
-    '13/10: deben existir recepción, Higashiyama, llegada al hotel y maletas');
+  assert(kyoto13.stages.length === 3,
+    '13/10: ruta a Yasaka, Chion-in y Yamato con llegada al hotel');
   const steps = kyoto13.stages.flatMap(st => st.stops.map(stop => stop.id));
-  for (const id of ['kiyomizu', 'ninenzaka-sannenzaka','yasaka-pagoda',
-    'comida-higashiyama-1013', 'yasaka', 'resi-yasaka-checkin-1013',
-    'yamato-kyoto-gion-pickup-1013', 'gion']) {
+  for (const id of ['yasaka','maruyama-park-1013','chionin','shorenin',
+    'comida-higashiyama-1013','resi-yasaka-checkin-1013',
+    'yamato-kyoto-gion-pickup-1013','gion']) {
     assert(steps.includes(id), '13/10: falta visita o trámite importante: '+id);
   }
+  for (const id of ['kiyomizu','ninenzaka-sannenzaka','yasaka-pagoda'])
+    assert(!steps.includes(id), '13/10: visita pospuesta a 18/10 no debe aparecer en mapa: '+id);
   assert(kyoto13.stages[0].stops[0].title.includes('GN98'),
     '13/10: salir desde GN98, aunque ya no haya un día duplicado en Osaka');
   assert(kyoto13.stages.at(-1).stops.at(-1).kind === 'hotel',
@@ -252,8 +254,20 @@ if (kyoto17) {
 const kyoto18 = get('2026-10-18');
 if (kyoto18) {
   const ids = kyoto18.stages.flatMap(s => s.stops.map(p => p.id));
-  assert(ids.includes('ginkakuji') && ids.includes('kyoto-station-h2') && ids.includes('kix-vilma-marga'),
-    '18/10: ruta del vuelo de Vilma y Marga');
+  for (const id of ['kiyomizu-1018','ninenzaka-palillos-fotos-1018','yasaka-pagoda-fotos-1018','kyoto-station-h2','kix-vilma-marga'])
+    assert(ids.includes(id), '18/10: falta visita/fotos o transporte '+id);
+  assert(!ids.includes('ginkakuji'),
+    '18/10: Ginkaku queda para Jaime y Lorena el 19, para poder hacer Kiyomizu en grupo');
+  assert(ids.indexOf('kiyomizu-1018') < ids.indexOf('ninenzaka-palillos-fotos-1018'),
+    '18/10: primero fotos al templo y después tiendas de palillos');
+}
+const kyoto19 = get('2026-10-19');
+if (kyoto19) {
+  const ids = kyoto19.stages.flatMap(s => s.stops.map(p => p.id));
+  assert(ids.includes('ginkakuji') && ids.includes('philosophers-path'),
+    '19/10: Ginkaku y Camino del Filósofo recuperados, no perdidos');
+  assert(kyoto19.stages.at(-1).stops.at(-1).kind === 'hotel',
+    '19/10: volver a RESI STAY desde la ruta de Ginkaku');
 }
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
@@ -268,7 +282,7 @@ const room13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-yasaka-c
 assert(Boolean(reception13) && Boolean(room13), '13/10: faltan recepción y habitación separadas');
 assert(reception13?.time?.startsWith('~09:45') && room13?.time?.startsWith('~16:30'),
   '13/10: hay que separar consigna matinal de entrada a la habitación');
-const part13 = kyotoDayLogistics13?.mapStages?.find(s => s.id === 'yasaka-yamato-alojamiento');
+const part13 = kyotoDayLogistics13?.mapStages?.find(s => s.id === 'gion-yamato-apartamento');
 assert(part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') >= 0 &&
   part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') <
   part13?.activityIds.indexOf('resi-yasaka-checkin-1013'),
