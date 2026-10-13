@@ -13,7 +13,7 @@
   "days": [
     {
       "date": "2026-10-13",
-      "title": "Kioto · Yasaka, Maruyama, Chion-in y Gion",
+      "title": "Kioto · Kōdai-ji, Nene-no-Michi, Maruyama y Yasaka",
       "status": "plan",
       "activities": [
         {
@@ -51,34 +51,66 @@
           "address": "〒600-8216 京都市下京区東塩小路町544-2 ON Building 5F"
         },
         {
-          "id": "yasaka",
-          "title": "Yasaka Shrine · santuario y goshuin",
+          "id": "kodaiji-1013-optional",
+          "title": "Kōdai-ji · templo y jardines de Nene",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Yasaka Shrine Kyoto",
+          "time": "~12:15–13:15",
+          "locationQuery": "Kodaiji Zen Temple Kyoto",
+          "notes": "Vamos hacia Kōdai-ji ahora (mensaje a las 12:07 del 13/10), visita todavía NO confirmada. Templo zen fundado por Nene en memoria de Hideyoshi; tiene jardines zen y un pequeño bosque de bambú. Abre 09:00–17:00 (cierra 17:30), entrada 800 ¥. Entoku-in está al lado y existe entrada conjunta de 1.200 ¥. Después pasear por Nene-no-Michi hacia Maruyama y Yasaka.",
           "plan": [
-            "Ir a Yasaka y pedir el goshuin si hay atención.",
-            "Salir por detrás hacia el parque Maruyama y continuar al templo Chion-in."
+            "Si os apetece más Higashiyama y menos ir hacia el norte, visitar Kōdai-ji en vez de Shōren-in.",
+            "Recorrer los jardines y después seguir hacia Gion y Yamato."
           ],
-          "time": "~12:00",
-          "priority": "must",
-          "transit": {
-            "from": "Zona Higashiyama/Gion",
-            "summary": "Ir directamente a Yasaka Jinja; el santuario queda junto al parque Maruyama.",
-            "approximateDuration": "A pie según posición actual"
+          "description": "Kōdai-ji se fundó en 1606 por iniciativa de Nene (Kita-no-Mandokoro), esposa de Toyotomi Hideyoshi, para recordar a su marido después de su muerte. Es un templo budista zen de la escuela Rinzai en Higashiyama, cerca del parque Maruyama. Conserva jardines con estanques, pabellones y objetos relacionados con Hideyoshi y Nene. Su visita sirve para entender la historia de la unificación de Japón en el siglo XVI y también para pasear por unos jardines generalmente más tranquilos que las calles de Kiyomizu. El templo cobra entrada y no hace falta hacerlo si vamos cortos de tiempo.",
+          "links": {
+            "officialWebsite": "https://www.kodaiji.com/e_fee.html"
           },
-          "goshuin": true,
-          "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
-          "notes": "Vamos ahora hacia Yasaka Jinja (13/10, sobre las 12:00). Ver el santuario y pedir el goshuin: la oficina abre 09:00–17:00. Después seguir al parque Maruyama y Chion-in, sin ir hoy a Kiyomizu."
+          "priority": "must"
+        },
+        {
+          "id": "entokuin-1013",
+          "title": "Entoku-in · jardines de Nene",
+          "category": "templo",
+          "status": "opcional",
+          "time": "~13:15",
+          "locationQuery": "圓徳院 京都市東山区高台寺下河原町530",
+          "notes": "Justo al lado de Kōdai-ji. En Entoku-in vivió Nene durante sus últimos años. Jardines zen muy bonitos, visita de unos 30 minutos. Abre 10:00–17:00 (cierra 17:30). Entrada 500 ¥; si entramos también en Kōdai-ji, preguntar por la entrada conjunta de 1.200 ¥. No hace falta entrar si vamos con hambre o tenemos prisa.",
+          "description": "Entoku-in es un subtemplo zen situado frente a Kōdai-ji. Se relaciona con Nene, viuda de Toyotomi Hideyoshi, que vivió aquí durante sus últimos años. Su jardín norte procede de un jardín trasladado del castillo de Fushimi y conserva el estilo del período Momoyama, con grandes piedras y árboles distribuidos en un espacio pequeño. También destaca su vinculación con las pinturas de Hasegawa Tōhaku. Es un sitio tranquilo para ver jardines japoneses tradicionales sin alejarse de la ruta entre Kōdai-ji y Yasaka.",
+          "links": {
+            "officialWebsite": "https://www.kodaiji.com/entoku-in/haikan.html",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E5%9C%93%E5%BE%B3%E9%99%A2%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E9%AB%98%E5%8F%B0%E5%AF%BA%E4%B8%8B%E6%B2%B3%E5%8E%9F%E7%94%BA530"
+          }
+        },
+        {
+          "id": "nene-no-michi-1013",
+          "title": "Nene-no-Michi · calle tradicional",
+          "category": "barrio",
+          "status": "plan",
+          "time": "~13:20",
+          "locationQuery": "ねねの道 高台寺 京都市東山区",
+          "notes": "Pasear por la calle empedrada Nene-no-Michi junto a Kōdai-ji y Entoku-in rumbo al parque Maruyama. No hay entrada ni hace falta reservar. Si nos pilla de paso, ver el callejón Ishibe-kōji, respetando las restricciones de fotos."
+        },
+        {
+          "id": "comida-higashiyama-1013",
+          "title": "Comer por Kōdai-ji o Yasaka",
+          "category": "comida",
+          "status": "plan",
+          "time": "~13:30–14:30",
+          "notes": "Decidir según hambre y cola. Cerca de Kōdai-ji: Hashiba (yuba, tofu, menús de unos 3.300 ¥, último pedido 14:30). Si aguantamos hasta Yasaka: Gion Gombei (soba/udon, aprox. 1.000–2.000 ¥, el turno de mediodía termina a las 15:00 hoy martes (reabre para cenar a las 17:00)). Ambas opciones están como fichas aparte; no hay reserva ni comida ya confirmada.",
+          "plan": [
+            "Comer algo cerca de Chion-in y del parque Maruyama.",
+            "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
+          ]
         },
         {
           "id": "maruyama-park-1013",
-          "title": "Parque Maruyama · paseo corto",
+          "title": "Maruyama Park · paseo camino de Yasaka",
           "category": "naturaleza",
           "status": "plan",
-          "time": "~12:35",
+          "time": "~14:40",
           "locationQuery": "Maruyama Park Kyoto",
-          "notes": "El parque está justo detrás de Yasaka. Paseo corto a la sombra y seguir a la gran puerta de Chion-in, que está al norte. No hace falta quedarse horas.",
+          "notes": "Venimos de Kōdai-ji por Nene-no-Michi. Cruzar el parque Maruyama tranquilamente hacia Yasaka. Chion-in queda en la parte norte: podemos subir a ver la puerta Sanmon si aún tenemos ganas, y volver después a Yasaka.",
           "plan": [
             "Cruzar Maruyama desde Yasaka.",
             "Continuar a Chion-in; está al lado."
@@ -87,11 +119,11 @@
         {
           "id": "chionin",
           "title": "Chion-in",
-          "time": "~12:50",
+          "time": "~15:00",
           "category": "templo",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Chion-in Kyoto",
-          "notes": "Templo budista junto al parque Maruyama. Ver el enorme Sanmon y el recinto principal; entrada general gratuita. El acceso se cierra sobre las 16:00; los jardines tienen entradas aparte. No forzar la visita a todos los pabellones.",
+          "notes": "Opcional muy bueno si tenemos tiempo: justo al norte de Maruyama está la enorme puerta Sanmon (1621), una de las grandes puertas de madera de Japón. El recinto general es gratuito y abre de 09:00 a 15:50, cerrando el acceso 16:30. Priorizar Yasaka y el goshuin si vamos tarde; no hacer un desvío largo a Shōren-in.",
           "transit": {
             "from": "Parque Maruyama",
             "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
@@ -105,26 +137,33 @@
           "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
         },
         {
-          "id": "comida-higashiyama-1013",
-          "title": "Comer por Yasaka / Chion-in",
-          "category": "comida",
+          "id": "yasaka",
+          "title": "Yasaka Shrine · santuario y goshuin",
+          "category": "templo",
           "status": "plan",
-          "time": "~13:45",
-          "locationQuery": "Chion-in Temple Higashiyama Kyoto restaurants",
-          "notes": "Pausa para comer por la zona de Yasaka y Chion-in. Elegir un restaurante que nos pille de paso, sin reservas ni grandes desvíos.",
+          "locationQuery": "Yasaka Shrine Kyoto",
           "plan": [
-            "Comer algo cerca de Chion-in y del parque Maruyama.",
-            "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
-          ]
+            "Ir a Yasaka y pedir el goshuin si hay atención.",
+            "Salir por detrás hacia el parque Maruyama y continuar al templo Chion-in."
+          ],
+          "time": "~15:20–15:50",
+          "priority": "must",
+          "transit": {
+            "from": "Zona Higashiyama/Gion",
+            "summary": "Ir directamente a Yasaka Jinja; el santuario queda junto al parque Maruyama.",
+            "approximateDuration": "A pie según posición actual"
+          },
+          "goshuin": true,
+          "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
+          "notes": "Después de Kōdai-ji y paseo por Nene-no-Michi/Maruyama. Ver Yasaka Jinja y preguntar por el goshuin; la oficina atiende de día, horario previsto hasta las 17:00. Si no hemos comido, ver si hay fideos por Gion antes de que cierren los restaurantes de mediodía."
         },
         {
           "id": "shorenin",
           "title": "Shōren-in",
-          "time": "~14:30",
           "category": "templo",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Shoren-in Temple Kyoto",
-          "notes": "Templo más tranquilo unos minutos al norte de Chion-in. Abre 09:00–17:00 (último acceso 16:30), entrada 600 ¥. Si vamos cansados o tardamos mucho en comer, se puede saltar sin cambiar el resto del plan.",
+          "notes": "Opcional si terminamos pronto Chion-in y Yasaka. Queda más al norte, así que supone alargar el paseo. Abre 09:00–17:00 (última admisión 16:30). Mejor no meterlo por obligación si tenemos que recoger maletas o ir al alojamiento.",
           "transit": {
             "from": "Chion-in",
             "summary": "Caminar hacia el norte por Jingu-michi, 5–10 min.",
@@ -195,6 +234,29 @@
           "address": "〒605-0812 京都府京都市東山区毘沙門町28"
         },
         {
+          "id": "almuerzo-hashiba-kodaiji-1013",
+          "title": "Comida opcional · Kōdai-ji Hashiba (yuba)",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "高台寺 羽柴 京都市東山区下河原町530",
+          "notes": "En Nene-no-Michi, al lado de Kōdai-ji. Cocina de Kioto con yuba, tofu y tempura. Menú típico de yuba por unos 3.300 ¥ según carta oficial. Almuerzo 11:00–15:00, último pedido 14:30. Si queremos comer antes del parque, es cómodo, pero bastante más caro que unos fideos por Gion.",
+          "links": {
+            "officialWebsite": "https://www.kodaiji-hashiba.co.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E5%8F%B0%E5%AF%BA%20%E7%BE%BD%E6%9F%B4%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E4%B8%8B%E6%B2%B3%E5%8E%9F%E7%94%BA530"
+          }
+        },
+        {
+          "id": "almuerzo-gion-gombei-1013",
+          "title": "Comida opcional · Gion Gombei (soba/udon)",
+          "category": "comida",
+          "status": "opcional",
+          "locationQuery": "権兵衛 祇園 京都市東山区祇園町北側254",
+          "notes": "Cerca de Yasaka, para comer más tarde y sin gastar tanto. Soba, udon y donburi, alrededor de 1.000–2.000 ¥ por persona. Hoy martes el horario publicado es 11:30–15:00, así que hay que llegar con margen. La espera puede variar; comprobar al pasar.",
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%20%E6%A8%A9%E5%85%B5%E8%A1%9B%20%E7%A5%87%E5%9C%92%E7%94%BA%E5%8C%97%E5%81%B4254"
+          }
+        },
+        {
           "id": "kenninji",
           "title": "Kennin-ji",
           "category": "templo",
@@ -213,23 +275,6 @@
           },
           "goshuin": true,
           "description": "Kennin-ji fue fundado en 1202 por el monje Eisai, impulsor de la escuela zen Rinzai y de la cultura del té en Japón, y se considera el templo zen más antiguo de Kioto. Está en el corazón de Gion, pero sus jardines secos y pasillos invitan a bajar el ritmo. Uno de sus atractivos es la gran pintura de dos dragones que cubre el techo de un salón: los dragones se relacionan con la protección de la enseñanza budista. También destaca el motivo de los dioses del Viento y el Trueno, célebre en el arte japonés. Aquí importa observar cómo el zen transforma piedra, grava, vacío y arquitectura en meditación."
-        },
-        {
-          "id": "kodaiji-1013-optional",
-          "title": "Kōdai-ji · templo de Nene",
-          "category": "templo",
-          "status": "opcional",
-          "time": "Opcional",
-          "locationQuery": "Kodaiji Zen Temple Kyoto",
-          "notes": "Alternativa cerca del parque Maruyama y de Yasaka. Templo zen con jardines fundado por Nene en memoria de Hideyoshi; abre 09:00–17:00 (cierra 17:30), entrada 800 ¥. Solo si preferimos caminar hacia el sur en vez de Shōren-in.",
-          "plan": [
-            "Si os apetece más Higashiyama y menos ir hacia el norte, visitar Kōdai-ji en vez de Shōren-in.",
-            "Recorrer los jardines y después seguir hacia Gion y Yamato."
-          ],
-          "description": "Kōdai-ji se fundó en 1606 por iniciativa de Nene (Kita-no-Mandokoro), esposa de Toyotomi Hideyoshi, para recordar a su marido después de su muerte. Es un templo budista zen de la escuela Rinzai en Higashiyama, cerca del parque Maruyama. Conserva jardines con estanques, pabellones y objetos relacionados con Hideyoshi y Nene. Su visita sirve para entender la historia de la unificación de Japón en el siglo XVI y también para pasear por unos jardines generalmente más tranquilos que las calles de Kiyomizu. El templo cobra entrada y no hace falta hacerlo si vamos cortos de tiempo.",
-          "links": {
-            "officialWebsite": "https://www.kodaiji.com/e_fee.html"
-          }
         },
         {
           "id": "resi-consigna-recoger-1013",
@@ -263,37 +308,43 @@
           "notes": "Opcional si apetece salir a cenar o dar una vuelta después de Gion; no es necesario para completar el día."
         }
       ],
-      "note": "Martes 13/10. Cambiamos el plan: NO hemos ido a Kiyomizu-dera porque estaba demasiado concurrido para las fotos y las compras de palillos. Queda pospuesto al domingo 18 a primera hora. Ahora vamos a Yasaka y seguimos por el parque Maruyama, Chion-in y, si da tiempo, Shōren-in; después Gion, Yamato Kyoto Gion si han llegado las maletas y RESI STAY Yasaka. Kennin-ji o Kōdai-ji son alternativas, no paradas obligatorias. Tiempo consultado a las 11:46: soleado, 27–29 °C y 0 % de lluvia previsto durante la tarde. Revisar la previsión cada mañana: mañana 14 hay lluvia probable entre 07:00 y 10:00.",
+      "note": "Martes 13/10. A las 12:07 nos dirigimos a Kōdai-ji; después queremos pasear por el parque Maruyama y visitar Yasaka Jinja. Metemos Nene-no-Michi de camino y Entoku-in como opción al lado de Kōdai-ji. Si nos da tiempo, podemos acercarnos a la gran puerta de Chion-in; Shōren-in queda opcional para no apurar los goshuin ni la recogida de maletas. Para comer tenemos Kōdai-ji Hashiba junto a Nene-no-Michi o Gion Gombei cerca de Yasaka, sin reserva. Kiyomizu-dera no se hizo hoy por aglomeraciones y sigue previsto para el 18/10; no moverlo. Recoger en Yamato Kyoto Gion solo si el seguimiento confirma que las maletas están disponibles y después ir al RESI STAY Yasaka.",
       "mapStages": [
         {
-          "id": "osaka-a-kyoto",
-          "title": "GN98 → Kyoto Station · recepción",
+          "id": "kyoto-recepcion-kodaiji",
+          "title": "GN98 → recepción Kioto → Kōdai-ji",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "osaka-kyoto-tren-1013",
-            "resi-recepcion-kioto-1013"
+            "resi-recepcion-kioto-1013",
+            "kodaiji-1013-optional"
           ]
         },
         {
-          "id": "yasaka-maruyama-chionin",
-          "title": "Yasaka, Maruyama y Chion-in",
-          "mode": "mixed",
+          "id": "kodaiji-maruyama",
+          "title": "Kōdai-ji → Nene-no-Michi → Maruyama",
+          "mode": "walk",
           "activityIds": [
-            "resi-recepcion-kioto-1013",
-            "yasaka",
+            "kodaiji-1013-optional",
+            "nene-no-michi-1013",
+            "maruyama-park-1013"
+          ]
+        },
+        {
+          "id": "maruyama-yasaka",
+          "title": "Maruyama → Yasaka Jinja",
+          "mode": "walk",
+          "activityIds": [
             "maruyama-park-1013",
-            "chionin"
+            "yasaka"
           ]
         },
         {
           "id": "gion-yamato-apartamento",
-          "title": "Comida, Shōren-in, Gion → Yamato → RESI",
-          "mode": "walk",
+          "title": "Yasaka → Gion → Yamato → RESI",
+          "mode": "mixed",
           "activityIds": [
-            "chionin",
-            "comida-higashiyama-1013",
-            "shorenin",
+            "yasaka",
             "gion",
             "yamato-kyoto-gion-pickup-1013",
             "resi-yasaka-checkin-1013",
