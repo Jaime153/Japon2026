@@ -102,12 +102,11 @@
           "category": "comida",
           "status": "plan",
           "time": "~13:40–14:20",
-          "notes": "Comer por Nene-no-Michi tras Kōdai-ji, antes de seguir a Yasaka. Kōdai-ji Hashiba sirve yuba y cocina de Kioto, último pedido 14:30 (cierra 15:00); si no interesa la cola o el precio, buscar algo rápido por la zona. Aún no hemos comido.",
+          "notes": "Después de Kōdai-ji podemos comer por Nene-no-Michi si tenemos hambre, sin elegir restaurante de antemano. Hashiba, justo al lado, sirve yuba y cocina de Kioto (último pedido 14:30); si está lleno o sale caro, buscar algo rápido por la zona. No marcar comida realizada hasta que se confirme.",
           "plan": [
             "Comer algo cerca de Chion-in y del parque Maruyama.",
             "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
-          ],
-          "locationQuery": "高台寺 羽柴 京都市東山区下河原町530"
+          ]
         },
         {
           "id": "nene-no-michi-1013",
@@ -177,7 +176,7 @@
           "id": "yamato-kyoto-gion-pickup-1013",
           "title": "Yamato Kyoto Gion · recoger maletas si llegaron",
           "category": "transporte",
-          "status": "plan",
+          "status": "opcional",
           "time": "Antes de 19:00",
           "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
           "address": "〒605-0074 京都府京都市東山区祇園町南側570-228",
@@ -374,7 +373,7 @@
           }
         }
       ],
-      "note": "Martes 13/10: llegamos a RESI STAY Yasaka y dejamos maletas a las 10:45. Sobre las 11:00 visitamos Yasaka Kōshin-dō, templo de muñecos de colores, sin goshuin. A las 12:21 llegamos a Ryōzen Kannon, gran estatua blanca junto a Kōdai-ji (visita en curso). De allí vamos a Kōdai-ji, a comer por Nene-no-Michi, Maruyama Park y Yasaka Jinja; después Chion-in antes del cierre a las 16:00. Opcional Heian Jingū si nos da tiempo y no tenemos que recoger las maletas. Yamato Kyoto Gion (162620) solo si el seguimiento confirma maletas disponibles, oficina hasta 19:00; luego check-in en RESI desde 15:00. Kiyomizu-dera sigue pendiente para el 18/10 y hoy solo paseamos por las calles de la zona. No dar por realizadas las visitas siguientes ni Yamato.",
+      "note": "Martes 13/10: llegamos a RESI STAY Yasaka y dejamos maletas a las 10:45. Sobre las 11:00 visitamos Yasaka Kōshin-dō, templo de muñecos de colores, sin goshuin. A las 12:21 llegamos a Ryōzen Kannon, gran estatua blanca junto a Kōdai-ji (visita en curso). De allí vamos a Kōdai-ji, a comer por Nene-no-Michi, Maruyama Park y Yasaka Jinja; después Chion-in antes del cierre a las 16:00. Opcional Heian Jingū si nos da tiempo y no tenemos que recoger las maletas. Yamato Kyoto Gion (162620) es parada OPCIONAL solo si el seguimiento confirma maletas disponibles, oficina hasta 19:00; luego check-in en RESI desde 15:00. Kiyomizu-dera sigue pendiente para el 18/10 y hoy solo paseamos por las calles de la zona. No dar por realizadas las visitas siguientes ni Yamato.",
       "mapStages": [
         {
           "id": "osaka-kyoto-1013",
