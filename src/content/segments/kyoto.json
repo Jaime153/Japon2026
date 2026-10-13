@@ -13,7 +13,7 @@
   "days": [
     {
       "date": "2026-10-13",
-      "title": "Kioto · Kiyomizu, Higashiyama, Yamato y alojamiento",
+      "title": "Kioto · Yasaka, Maruyama, Chion-in y Gion",
       "status": "plan",
       "activities": [
         {
@@ -51,122 +51,122 @@
           "address": "〒600-8216 京都市下京区東塩小路町544-2 ON Building 5F"
         },
         {
-          "id": "kiyomizu",
-          "title": "Kiyomizu-dera",
-          "time": "~11:00–12:15",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Kiyomizu-dera Kyoto",
-          "notes": "Primera visita importante en Kioto. El templo abre a las 06:00 y cierra a las 18:00 en octubre; los goshuin se atienden desde aproximadamente las 08:00, según su web oficial. Priorizar la terraza principal y las vistas; bajar después por Sannenzaka y Ninenzaka. Calculad el traslado desde Kyoto Station (autobús o taxi, según tráfico) y la subida hasta la entrada.",
-          "transit": {
-            "from": "RESI STAY Reception, Kyoto Station",
-            "summary": "Bus urbano o taxi hasta la zona de Kiyomizu-michi / Gojo-zaka y subida a pie por Kiyomizu-zaka; confirmar recorrido y tráfico en Maps.",
-            "approximateDuration": "~30–45 min con subida",
-            "steps": [
-              "Salir desde Kyoto Station tras el registro.",
-              "Elegir bus o taxi hacia Higashiyama/Kiyomizu según colas.",
-              "Última parte cuesta arriba a pie hasta Kiyomizu-dera."
-            ]
-          },
-          "plan": [
-            "Desde la recepción de Kyoto Station ir hacia Kiyomizu-zaka (transporte público o taxi) y subir andando al templo.",
-            "Ver la gran terraza, visitar el recinto y pedir el goshuin antes de bajar.",
-            "Bajar con calma por Sannenzaka y Ninenzaka. No hay prisa por llegar a la habitación antes de las 15:00."
-          ],
-          "goshuin": true,
-          "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO."
-        },
-        {
-          "id": "ninenzaka-sannenzaka",
-          "title": "Sannenzaka y Ninenzaka · calles tradicionales",
-          "time": "~12:15–13:00",
-          "category": "barrio",
-          "status": "plan",
-          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
-          "transit": {
-            "from": "Kiyomizu-dera",
-            "summary": "Bajada andando por Kiyomizu-zaka, Sannenzaka y Ninenzaka.",
-            "approximateDuration": "~40–50 min con fotos"
-          },
-          "plan": [
-            "Bajar de Kiyomizu por Sannenzaka y Ninenzaka.",
-            "Pasear, hacer fotos y parar en alguna tienda si apetece.",
-            "Seguir bajando hacia la pagoda de Yasaka y el barrio de Higashiyama."
-          ],
-          "notes": "Bajamos desde Kiyomizu por las dos cuestas históricas, con casas de madera, dulces y tiendas. Después seguiremos hacia Yasaka Pagoda. No es necesario entrar en cada comercio."
-        },
-        {
-          "id": "yasaka-pagoda",
-          "title": "Yasaka Pagoda · Hōkan-ji",
-          "time": "~13:00–13:25",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
-          "notes": "Parada de fotos en la famosa calle donde se ve la pagoda de cinco pisos. No damos por segura la entrada al interior ni que podamos conseguir goshuin aquí: depende de que el pequeño templo esté abierto. Seguimos hacia el almuerzo.",
-          "transit": {
-            "from": "Ninenzaka",
-            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
-            "approximateDuration": "~5–10 min"
-          },
-          "plan": [
-            "Desde Ninenzaka bajar hasta el entorno de la pagoda Yasaka/Hōkan-ji.",
-            "Hacer la foto desde las calles tradicionales, sin bloquear el paso a vecinos.",
-            "El acceso al recinto es variable; si está abierto, preguntar por el goshuin, pero no depender de ello."
-          ],
-          "goshuin": true,
-          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos."
-        },
-        {
-          "id": "comida-higashiyama-1013",
-          "title": "Comer por Higashiyama",
-          "category": "comida",
-          "status": "plan",
-          "time": "~13:30–14:20",
-          "locationQuery": "Yasaka Pagoda Higashiyama Kyoto",
-          "notes": "Comer algo por las calles entre la pagoda Yasaka y el santuario Yasaka, sin reservar. Ya habremos hecho el templo y la parte más bonita de las cuestas; una pausa antes de terminar las visitas de la tarde.",
-          "plan": [
-            "Buscar restaurante sencillo por Higashiyama, cerca de Yasaka Pagoda.",
-            "Después seguimos andando hasta Yasaka Shrine para pedir el goshuin."
-          ]
-        },
-        {
           "id": "yasaka",
           "title": "Yasaka Shrine · santuario y goshuin",
           "category": "templo",
           "status": "plan",
           "locationQuery": "Yasaka Shrine Kyoto",
           "plan": [
-            "Ver el santuario y pedir el goshuin.",
-            "Comprobar el seguimiento de las maletas antes de salir.",
-            "Si ya llegaron, ir primero a Yamato y después al apartamento."
+            "Ir a Yasaka y pedir el goshuin si hay atención.",
+            "Salir por detrás hacia el parque Maruyama y continuar al templo Chion-in."
           ],
-          "time": "~14:35–15:20",
+          "time": "~12:00",
           "priority": "must",
           "transit": {
-            "from": "Yasaka Pagoda / comida en Higashiyama",
-            "summary": "Bajar andando por las calles de Higashiyama hasta la entrada de Yasaka Jinja.",
-            "approximateDuration": "~10–15 min"
+            "from": "Zona Higashiyama/Gion",
+            "summary": "Ir directamente a Yasaka Jinja; el santuario queda junto al parque Maruyama.",
+            "approximateDuration": "A pie según posición actual"
           },
           "goshuin": true,
           "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
-          "notes": "Visitar Yasaka Shrine y pedir el goshuin en el mostrador si sigue abierto (09:00–17:00). Desde aquí iremos a Yamato Kyoto Gion para recoger las maletas, SI aparecen disponibles en el seguimiento, y después directamente al apartamento. No entrar antes en el hotel."
+          "notes": "Vamos ahora hacia Yasaka Jinja (13/10, sobre las 12:00). Ver el santuario y pedir el goshuin: la oficina abre 09:00–17:00. Después seguir al parque Maruyama y Chion-in, sin ir hoy a Kiyomizu."
+        },
+        {
+          "id": "maruyama-park-1013",
+          "title": "Parque Maruyama · paseo corto",
+          "category": "naturaleza",
+          "status": "plan",
+          "time": "~12:35",
+          "locationQuery": "Maruyama Park Kyoto",
+          "notes": "El parque está justo detrás de Yasaka. Paseo corto a la sombra y seguir a la gran puerta de Chion-in, que está al norte. No hace falta quedarse horas.",
+          "plan": [
+            "Cruzar Maruyama desde Yasaka.",
+            "Continuar a Chion-in; está al lado."
+          ]
+        },
+        {
+          "id": "chionin",
+          "title": "Chion-in",
+          "time": "~12:50",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Chion-in Kyoto",
+          "notes": "Templo budista junto al parque Maruyama. Ver el enorme Sanmon y el recinto principal; entrada general gratuita. El acceso se cierra sobre las 16:00; los jardines tienen entradas aparte. No forzar la visita a todos los pabellones.",
+          "transit": {
+            "from": "Parque Maruyama",
+            "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
+            "approximateDuration": "~5 min"
+          },
+          "plan": [
+            "Ver la puerta Sanmon y el pabellón principal de Chion-in.",
+            "Continuar andando hacia Shōren-in si vamos bien de tiempo."
+          ],
+          "goshuin": true,
+          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
+        },
+        {
+          "id": "comida-higashiyama-1013",
+          "title": "Comer por Yasaka / Chion-in",
+          "category": "comida",
+          "status": "plan",
+          "time": "~13:45",
+          "locationQuery": "Chion-in Temple Higashiyama Kyoto restaurants",
+          "notes": "Pausa para comer por la zona de Yasaka y Chion-in. Elegir un restaurante que nos pille de paso, sin reservas ni grandes desvíos.",
+          "plan": [
+            "Comer algo cerca de Chion-in y del parque Maruyama.",
+            "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
+          ]
+        },
+        {
+          "id": "shorenin",
+          "title": "Shōren-in",
+          "time": "~14:30",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Shoren-in Temple Kyoto",
+          "notes": "Templo más tranquilo unos minutos al norte de Chion-in. Abre 09:00–17:00 (último acceso 16:30), entrada 600 ¥. Si vamos cansados o tardamos mucho en comer, se puede saltar sin cambiar el resto del plan.",
+          "transit": {
+            "from": "Chion-in",
+            "summary": "Caminar hacia el norte por Jingu-michi, 5–10 min.",
+            "approximateDuration": "~5–10 min"
+          },
+          "plan": [
+            "Entrar a ver los jardines y salas si vamos con tiempo.",
+            "Luego bajar tranquilamente hacia Gion y Yamato; si llevamos retraso, saltarlo."
+          ],
+          "goshuin": true,
+          "description": "Shōren-in es un templo de la tradición budista Tendai asociado durante siglos a miembros de la familia imperial que ejercieron como superiores religiosos. Su origen está ligado a la expansión del budismo Tendai de Enryaku-ji en Kioto. A diferencia de los grandes santuarios de multitudes, aquí importan el silencio, las pinturas interiores, los jardines de musgo y estanques y los enormes alcanforeros próximos a la entrada. Su paisaje refleja la búsqueda de armonía entre arquitectura, naturaleza y contemplación. Fíjate en cómo las habitaciones del templo enmarcan el jardín como si fueran cuadros: representa otra forma, más serena, de conocer Kioto."
+        },
+        {
+          "id": "gion",
+          "title": "Gion · paseo de camino a Yamato",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Gion Kyoto",
+          "plan": [
+            "Bajar hacia las calles de Gion y pasear sin prisas.",
+            "Ir a Yamato para recoger las maletas solo si el seguimiento dice que están listas. Después al apartamento."
+          ],
+          "time": "~15:15",
+          "transit": {
+            "from": "Kiyomizu-dera",
+            "summary": "Bajar andando por Higashiyama hacia Gion; no hace falta transporte.",
+            "approximateDuration": "25–35 min con paseo"
+          },
+          "notes": "Pasear por el barrio de Gion al bajar desde los templos, sin entrar en calles privadas ni bloquear fotos. De camino a Yamato Gion y al RESI STAY Yasaka. Cena después solo si apetece."
         },
         {
           "id": "yamato-kyoto-gion-pickup-1013",
           "title": "Yamato Kyoto Gion · recoger maletas si llegaron",
           "category": "transporte",
           "status": "plan",
-          "time": "~15:45–16:15",
+          "time": "~16:00",
           "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
           "address": "〒605-0074 京都府京都市東山区祇園町南側570-228",
-          "notes": "Yamato Kyoto Gion, código 162620, 〒605-0074 京都市東山区祇園町南側570-228. Abre 08:00–19:00. Pasar justo ANTES de entrar a RESI STAY Yasaka, para llevar las maletas de una vez al apartamento. El envío desde Osaka no está confirmado como entregado: mirar el seguimiento de todos los bultos antes de venir. Si no han llegado, saltar la parada y recogerlas el día 14.",
+          "notes": "Yamato Kyoto Gion, código de oficina 162620, 祇園町南側570-228. Recoger las maletas solo si el seguimiento confirma que han llegado. Abre hasta las 19:00. Después ir directamente a RESI STAY Yasaka.",
           "plan": [
-            "Comprobar el tracking antes de ir a Yamato Kyoto Gion.",
-            "Si han llegado, pasar por la oficina 162620 con resguardos y documentación; cierra a las 19:00.",
-            "Desde Yamato ir directamente a RESI STAY Yasaka y entrar en la habitación.",
-            "Si no están disponibles, saltar Yamato y recoger el día siguiente."
+            "Consultar tracking antes de ir. Si están, recoger las maletas en Yamato Gion (oficina 162620).",
+            "Después ir al RESI STAY Yasaka; no pasar dos veces por el apartamento."
           ],
           "links": {
             "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/162620/",
@@ -179,9 +179,9 @@
           "title": "RESI STAY Yasaka · entrar en la habitación",
           "category": "transporte",
           "status": "plan",
-          "time": "~16:30–17:00",
+          "time": "~16:30",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "Entramos al apartamento RESI STAY Yasaka (Bishamoncho 28), disponible desde las 15:00. El registro previo ya se hizo en el mostrador de Kyoto Station. Si hemos recogido las maletas en Yamato, venimos directamente con ellas y no duplicamos el trayecto. Si dejamos bolsas en recepción sin envío, hay que recogerlas antes de las 20:00.",
+          "notes": "Ir al alojamiento RESI STAY Yasaka, disponible desde las 15:00. Si las maletas estaban en Yamato, llegar con ellas; si aún no han llegado, consultar entrega el 14. El registro de huéspedes se realiza aparte en la recepción de Kyoto Station.",
           "plan": [
             "Después de Yamato Kyoto Gion, entrar en RESI STAY Yasaka con las maletas. Si no llegaron a Yamato, ir directamente al apartamento.",
             "Dejar las cosas y descansar.",
@@ -195,62 +195,103 @@
           "address": "〒605-0812 京都府京都市東山区毘沙門町28"
         },
         {
-          "id": "gion",
-          "title": "Gion · paseo de tarde y cena",
-          "category": "barrio",
-          "status": "plan",
-          "locationQuery": "Gion Kyoto",
+          "id": "kiyomizu",
+          "title": "Kiyomizu-dera",
+          "category": "templo",
+          "status": "pendiente",
+          "priority": "must",
+          "locationQuery": "Kiyomizu-dera Kyoto",
+          "notes": "No lo hemos visitado hoy 13/10. Lo dejamos para el domingo 18 temprano, con el grupo completo. A primera hora hay menos gente para las fotos; horario oficial desde las 06:00. La previsión consultada el 13/10 anuncia tiempo seco por la mañana, pero hay que volver a comprobarlo la víspera.",
+          "transit": {
+            "from": "RESI STAY Reception, Kyoto Station",
+            "summary": "Bus urbano o taxi hasta la zona de Kiyomizu-michi / Gojo-zaka y subida a pie por Kiyomizu-zaka; confirmar recorrido y tráfico en Maps.",
+            "approximateDuration": "~30–45 min con subida",
+            "steps": [
+              "Salir desde Kyoto Station tras el registro.",
+              "Elegir bus o taxi hacia Higashiyama/Kiyomizu según colas.",
+              "Última parte cuesta arriba a pie hasta Kiyomizu-dera."
+            ]
+          },
           "plan": [
-            "Dar una vuelta por Gion/Hanamikoji después de entrar en el apartamento.",
-            "Cenar por la zona o descansar."
+            "Lo dejamos para la mañana del domingo 18, cuando hay más margen para hacer fotos y comprar palillos.",
+            "Hoy no hay que desplazarse hasta Kiyomizu."
           ],
-          "time": "~17:30–19:30",
+          "goshuin": true,
+          "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO."
+        },
+        {
+          "id": "ninenzaka-sannenzaka",
+          "title": "Sannenzaka y Ninenzaka · calles tradicionales",
+          "category": "barrio",
+          "status": "pendiente",
+          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
           "transit": {
             "from": "Kiyomizu-dera",
-            "summary": "Bajar andando por Higashiyama hacia Gion; no hace falta transporte.",
-            "approximateDuration": "25–35 min con paseo"
-          },
-          "notes": "Tras dejar las maletas en RESI STAY Yasaka, paseo por Gion y cena si quedan ganas. No es obligatorio salir si estamos cansados."
-        },
-        {
-          "id": "chionin",
-          "title": "Chion-in",
-          "time": "~15:15",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Chion-in Kyoto",
-          "notes": "Opcional para otro día si tenemos tiempo. Mañana priorizamos Kiyomizu, las calles de Higashiyama, Yasaka y la recogida de maletas.",
-          "transit": {
-            "from": "RESI STAY Yasaka",
-            "summary": "Ir andando desde el hotel por Higashiyama/Yasaka; no merece la pena usar transporte.",
-            "approximateDuration": "15–20 min"
+            "summary": "Bajada andando por Kiyomizu-zaka, Sannenzaka y Ninenzaka.",
+            "approximateDuration": "~40–50 min con fotos"
           },
           "plan": [
-            "Entrar por el gran Sanmon y ver el complejo principal.",
-            "No alargar demasiado los jardines si vamos justos: este día tiene una ruta larga por Higashiyama."
+            "Lo dejamos para la mañana del domingo 18, cuando hay más margen para hacer fotos y comprar palillos.",
+            "Hoy no hay que desplazarse hasta Kiyomizu."
           ],
-          "goshuin": true,
-          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
+          "notes": "Hoy no hacemos estas calles para no ir corriendo ni sufrir la multitud. Las dejamos para el domingo 18 después de Kiyomizu: hacer fotos y comprar palillos con las tiendas abiertas, sin obligarse a entrar en todas."
         },
         {
-          "id": "shorenin",
-          "title": "Shōren-in",
-          "time": "~15:45",
+          "id": "yasaka-pagoda",
+          "title": "Yasaka Pagoda · Hōkan-ji",
           "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Shoren-in Temple Kyoto",
-          "notes": "Opcional: no meterlo a la fuerza el día de llegada, con equipaje y check-in.",
+          "status": "pendiente",
+          "priority": "must",
+          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
+          "notes": "No visitada hoy 13/10: la dejamos para la ruta de fotos del domingo 18, junto con Kiyomizu y las cuestas tradicionales. No asumir que se podrá entrar en el templo.",
           "transit": {
-            "from": "Chion-in",
-            "summary": "Caminar hacia el norte; Shōren-in está a pocos minutos de Chion-in.",
-            "approximateDuration": "5–10 min"
+            "from": "Ninenzaka",
+            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
+            "approximateDuration": "~5–10 min"
           },
           "plan": [
-            "Entrar si vamos bien de hora; es un templo más tranquilo que los grandes iconos.",
-            "Si la llegada desde Osaka se retrasa, este es el primero que se puede sacrificar."
+            "Lo dejamos para la mañana del domingo 18, cuando hay más margen para hacer fotos y comprar palillos.",
+            "Hoy no hay que desplazarse hasta Kiyomizu."
           ],
           "goshuin": true,
-          "description": "Shōren-in es un templo de la tradición budista Tendai asociado durante siglos a miembros de la familia imperial que ejercieron como superiores religiosos. Su origen está ligado a la expansión del budismo Tendai de Enryaku-ji en Kioto. A diferencia de los grandes santuarios de multitudes, aquí importan el silencio, las pinturas interiores, los jardines de musgo y estanques y los enormes alcanforeros próximos a la entrada. Su paisaje refleja la búsqueda de armonía entre arquitectura, naturaleza y contemplación. Fíjate en cómo las habitaciones del templo enmarcan el jardín como si fueran cuadros: representa otra forma, más serena, de conocer Kioto."
+          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos."
+        },
+        {
+          "id": "kenninji",
+          "title": "Kennin-ji",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Kennin-ji Kyoto",
+          "plan": [
+            "Entrar si todavía hay tiempo y ganas, sin retrasar Yamato.",
+            "Ver jardines y la pintura de los dos dragones."
+          ],
+          "time": "Opcional",
+          "notes": "Templo zen de Gion: por si al bajar de Yasaka y Chion-in os apetece uno más. Abre 10:00–17:00 (última admisión 16:30). Mejor no meterlo si hay que recoger maletas.",
+          "transit": {
+            "from": "Gion",
+            "summary": "Está al sur de Gion, a pie.",
+            "approximateDuration": "~10–15 min"
+          },
+          "goshuin": true,
+          "description": "Kennin-ji fue fundado en 1202 por el monje Eisai, impulsor de la escuela zen Rinzai y de la cultura del té en Japón, y se considera el templo zen más antiguo de Kioto. Está en el corazón de Gion, pero sus jardines secos y pasillos invitan a bajar el ritmo. Uno de sus atractivos es la gran pintura de dos dragones que cubre el techo de un salón: los dragones se relacionan con la protección de la enseñanza budista. También destaca el motivo de los dioses del Viento y el Trueno, célebre en el arte japonés. Aquí importa observar cómo el zen transforma piedra, grava, vacío y arquitectura en meditación."
+        },
+        {
+          "id": "kodaiji-1013-optional",
+          "title": "Kōdai-ji · templo de Nene",
+          "category": "templo",
+          "status": "opcional",
+          "time": "Opcional",
+          "locationQuery": "Kodaiji Zen Temple Kyoto",
+          "notes": "Alternativa cerca del parque Maruyama y de Yasaka. Templo zen con jardines fundado por Nene en memoria de Hideyoshi; abre 09:00–17:00 (cierra 17:30), entrada 800 ¥. Solo si preferimos caminar hacia el sur en vez de Shōren-in.",
+          "plan": [
+            "Si os apetece más Higashiyama y menos ir hacia el norte, visitar Kōdai-ji en vez de Shōren-in.",
+            "Recorrer los jardines y después seguir hacia Gion y Yamato."
+          ],
+          "description": "Kōdai-ji se fundó en 1606 por iniciativa de Nene (Kita-no-Mandokoro), esposa de Toyotomi Hideyoshi, para recordar a su marido después de su muerte. Es un templo budista zen de la escuela Rinzai en Higashiyama, cerca del parque Maruyama. Conserva jardines con estanques, pabellones y objetos relacionados con Hideyoshi y Nene. Su visita sirve para entender la historia de la unificación de Japón en el siglo XVI y también para pasear por unos jardines generalmente más tranquilos que las calles de Kiyomizu. El templo cobra entrada y no hace falta hacerlo si vamos cortos de tiempo.",
+          "links": {
+            "officialWebsite": "https://www.kodaiji.com/e_fee.html"
+          }
         },
         {
           "id": "resi-consigna-recoger-1013",
@@ -284,11 +325,11 @@
           "notes": "Opcional si apetece salir a cenar o dar una vuelta después de Gion; no es necesario para completar el día."
         }
       ],
-      "note": "Martes 13/10: salimos del GN98 de Osaka a las 08:00. En Kyoto Station pasamos por la recepción de RESI STAY a hacer el registro obligatorio y dejar las bolsas. Eso NO es entrar en la habitación: RESI STAY Yasaka se ocupa desde las 15:00. Visitamos Kiyomizu, Sannenzaka/Ninenzaka, la pagoda Yasaka, comemos y vamos a Yasaka Shrine. Sobre las 16:00 recogeremos las maletas en Yamato Kyoto Gion (162620), si el seguimiento confirma que están disponibles, y desde allí iremos directamente al apartamento. Si aún no han llegado, vamos al alojamiento y recogemos las maletas el 14. Gion y cena quedan libres.",
+      "note": "Martes 13/10. Cambiamos el plan: NO hemos ido a Kiyomizu-dera porque estaba demasiado concurrido para las fotos y las compras de palillos. Queda pospuesto al domingo 18 a primera hora. Ahora vamos a Yasaka y seguimos por el parque Maruyama, Chion-in y, si da tiempo, Shōren-in; después Gion, Yamato Kyoto Gion si han llegado las maletas y RESI STAY Yasaka. Kennin-ji o Kōdai-ji son alternativas, no paradas obligatorias. Tiempo consultado a las 11:46: soleado, 27–29 °C y 0 % de lluvia previsto durante la tarde. Revisar la previsión cada mañana: mañana 14 hay lluvia probable entre 07:00 y 10:00.",
       "mapStages": [
         {
           "id": "osaka-a-kyoto",
-          "title": "GN98 → Kyoto Station · dejar equipaje",
+          "title": "GN98 → Kyoto Station · recepción",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
@@ -297,35 +338,27 @@
           ]
         },
         {
-          "id": "higashiyama-kiyomizu",
-          "title": "Kiyomizu → calles → pagoda Yasaka",
+          "id": "yasaka-maruyama-chionin",
+          "title": "Yasaka, Maruyama y Chion-in",
           "mode": "mixed",
           "activityIds": [
             "resi-recepcion-kioto-1013",
-            "kiyomizu",
-            "ninenzaka-sannenzaka",
-            "yasaka-pagoda",
-            "comida-higashiyama-1013"
-          ]
-        },
-        {
-          "id": "yasaka-yamato-alojamiento",
-          "title": "Yasaka Shrine → Yamato → apartamento",
-          "mode": "walk",
-          "activityIds": [
-            "comida-higashiyama-1013",
             "yasaka",
-            "yamato-kyoto-gion-pickup-1013",
-            "resi-yasaka-checkin-1013"
+            "maruyama-park-1013",
+            "chionin"
           ]
         },
         {
-          "id": "apartamento-gion",
-          "title": "Apartamento → Gion → volver",
+          "id": "gion-yamato-apartamento",
+          "title": "Comida, Shōren-in, Gion → Yamato → RESI",
           "mode": "walk",
           "activityIds": [
-            "resi-yasaka-checkin-1013",
+            "chionin",
+            "comida-higashiyama-1013",
+            "shorenin",
             "gion",
+            "yamato-kyoto-gion-pickup-1013",
+            "resi-yasaka-checkin-1013",
             "@hotel-end"
           ]
         }
@@ -335,7 +368,7 @@
       "date": "2026-10-14",
       "title": "Fushimi, Sanjūsangendō, Nishiki y compras",
       "status": "plan",
-      "note": "Salir del hotel sobre las 06:30 para Fushimi Inari temprano. Después Tōfuku-ji si da tiempo, Sanjūsangendō (prioridad), comer por Nishiki y comprar la agenda de Lorena en TOBICHI y el matcha de la tienda del viaje 2025 (Baikoan todavía sin confirmar visualmente). Sennyū-ji, Imakumano, Tō-ji y Kennin-ji opcionales: no vamos a cruzar Kyoto para meterlo todo en un día. Si Yamato no tenía las maletas el día 13, recuperarlas hoy antes de 19:00 solo al confirmar tracking.",
+      "note": "Miércoles 14/10: la previsión consultada el 13/10 indica CHUBASCOS entre ~05:00 y ~10:00 (probabilidad de lluvia hasta 66 % a las 09:00), despejando desde primera hora de la tarde. ANTES DE SALIR, revisar radar/previsión. Si llueve fuerte, NO subir las escaleras de Fushimi Inari con prisas: empezar por Sanjūsangendō y tiendas a cubierto y dejar Fushimi para primera hora de la tarde, cuando baje la lluvia, aunque habrá más gente. Si amanece seco, mantener salida ~06:30 para Fushimi y el resto original. Prioridad siempre a Sanjūsangendō, Nishiki, TOBICHI y el matcha; Tōfuku-ji se salta si hace falta. Si Yamato no tenía las maletas el 13, recogerlas solo cuando el seguimiento lo confirme.",
       "activities": [
         {
           "id": "fushimi",
@@ -525,26 +558,6 @@
           ],
           "goshuin": true,
           "description": "Tō-ji («templo del Este») fue uno de los templos de protección de la capital Heian a finales del siglo VIII y en el siglo IX quedó ligado a Kūkai (Kōbō Daishi), introductor del budismo esotérico Shingon en Japón. Su pagoda de cinco pisos, reconstruida en el siglo XVII, alcanza unos 55 metros y se ha convertido en símbolo de Kioto. En el Kōdō hay grupos escultóricos organizados como un mandala tridimensional, representación visual de la visión budista del cosmos. También son importantes los edificios de oración y los jardines. La pagoda no suele abrirse por dentro salvo ocasiones especiales; merece la pena contemplarla desde el estanque."
-        },
-        {
-          "id": "kenninji",
-          "title": "Kennin-ji",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Kennin-ji Kyoto",
-          "plan": [
-            "Hacer una visita tranquila al templo y jardines.",
-            "Usarlo como parada cultural antes de continuar por Gion."
-          ],
-          "time": "Opcional",
-          "notes": "Solo si ha quedado tiempo y sigue abierto; no sacrificar Hobonichi ni matcha.",
-          "transit": {
-            "from": "Baikoan",
-            "summary": "Volver hacia Gion en taxi o transporte urbano; con 4 personas el taxi puede compensar.",
-            "approximateDuration": "15–25 min"
-          },
-          "goshuin": true,
-          "description": "Kennin-ji fue fundado en 1202 por el monje Eisai, impulsor de la escuela zen Rinzai y de la cultura del té en Japón, y se considera el templo zen más antiguo de Kioto. Está en el corazón de Gion, pero sus jardines secos y pasillos invitan a bajar el ritmo. Uno de sus atractivos es la gran pintura de dos dragones que cubre el techo de un salón: los dragones se relacionan con la protección de la enseñanza budista. También destaca el motivo de los dioses del Viento y el Trueno, célebre en el arte japonés. Aquí importa observar cómo el zen transforma piedra, grava, vacío y arquitectura en meditación."
         },
         {
           "id": "gion-tanto",
@@ -1109,53 +1122,71 @@
     },
     {
       "date": "2026-10-18",
-      "title": "Ginkaku-ji y despedida Vilma/Marga",
+      "title": "Kiyomizu temprano, fotos/palillos y salida al aeropuerto",
       "status": "confirmado",
-      "note": "Domingo 18: Ginkaku-ji temprano y paseo corto del Filósofo, regreso al hotel con margen para recuperar maletas y traslado a Kyoto Station Hachijo-guchi. Vilma/Marga: estar en la parada H2/KY2 junto a Kyoto Avanti al menos 20–30 min antes del bus objetivo 14:20 (comprobar horario y billete). Vuelo KIX a las 19:00. No meter tatuajes ni visitas largas este día.",
+      "note": "Domingo 18/10, último día de las cuatro juntas antes del vuelo KIX de Vilma y Marga a las 19:00: sustituimos Ginkaku-ji por Kiyomizu temprano porque el 13 no pudimos hacerlo y quieren fotos y palillos. Pronóstico revisado el 13/10: seco de 06:00 a 11:00 (prob. lluvia 0 %); volver a consultar el 17 por la noche. Salir hacia Kiyomizu ~06:00–06:20, fotos desde ~06:30; bajar por Sannenzaka/Ninenzaka y comprar palillos cuando abran las tiendas. Volver al RESI Yasaka hacia 11:15 para maletas y bus. Servicio objetivo desde H2/KY2 14:20, aún por comprobar en billete. Ginkaku y Philosopher's Path pasan al 19, ya solo Jaime y Lorena.",
       "activities": [
         {
-          "id": "ginkakuji",
-          "title": "Ginkaku-ji · Pabellón de Plata",
-          "time": "~08:30",
+          "id": "kiyomizu-1018",
+          "title": "Kiyomizu-dera · fotos temprano",
           "category": "templo",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Ginkaku-ji Kyoto",
-          "notes": "Primera hora de apertura, sin alargar demasiado. Volver a recoger equipaje para KIX.",
+          "locationQuery": "Kiyomizu-dera Kyoto",
+          "notes": "Reprogramado del 13/10 para todo el grupo. Kiyomizu abre a las 06:00; ir sobre las 06:30–07:00 para tener mejores fotos y menos gente antes de que lleguen los autobuses. La previsión consultada el 13/10 marca 0 % de lluvia de 06:00 a 11:00 el domingo, pero verificarla el sábado 17 por la noche. El goshuin puede empezar más tarde que la apertura.",
           "transit": {
             "from": "RESI STAY Yasaka",
-            "summary": "Caminar a Gion-Shijo → Keihan hasta Demachiyanagi; City Bus 7 o 203 → Ginkakuji-michi.",
-            "approximateDuration": "35–45 min",
-            "steps": [
-              "Gion-Shijo → Demachiyanagi por Keihan.",
-              "Desde Demachiyanagi tomar bus 7 o 203 hasta Ginkakuji-michi.",
-              "Caminar al templo."
-            ]
+            "summary": "Ir andando temprano desde Bishamoncho 28, cuesta arriba hacia Kiyomizu-zaka.",
+            "approximateDuration": "~20–30 min según ritmo"
           },
           "plan": [
-            "Entrar a primera hora y hacer el recorrido principal.",
-            "No alargar: este día tiene la salida de Vilma y Marga como ancla."
+            "Salir del RESI STAY temprano para llegar a Kiyomizu hacia 06:30–07:00.",
+            "Fotos, terraza del templo y vistas antes de las multitudes.",
+            "Luego bajar por Sannenzaka/Ninenzaka cuando comiencen a abrir los comercios."
           ],
           "goshuin": true,
-          "description": "Ginkaku-ji, cuyo nombre formal es Jishō-ji, surgió de la villa de retiro del shōgun Ashikaga Yoshimasa a finales del siglo XV y se transformó en templo zen tras su muerte. Aunque se llama «Pabellón de Plata», nunca fue recubierto de plata: el nombre se popularizó por contraste con Kinkaku-ji. La belleza aquí es más discreta y se relaciona con la cultura Higashiyama, el té, la caligrafía y los jardines contemplativos. El jardín de arena blanca incluye un cono y una amplia superficie rastrillada; sus significados exactos tienen distintas interpretaciones. Sube al mirador del jardín para ver Kioto desde arriba."
+          "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO.",
+          "time": "~06:30–08:00"
         },
         {
-          "id": "philosophers-path",
-          "title": "Philosopher's Path",
-          "time": "~09:45",
+          "id": "ninenzaka-palillos-fotos-1018",
+          "title": "Ninenzaka/Sannenzaka · fotos y palillos",
           "category": "barrio",
           "status": "plan",
-          "locationQuery": "Philosopher's Path Kyoto",
+          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
           "transit": {
-            "from": "Ginkaku-ji",
-            "summary": "Salir del templo y recorrer a pie el canal hacia el sur.",
-            "approximateDuration": "30–45 min"
+            "from": "Kiyomizu-dera",
+            "summary": "Bajada andando por Kiyomizu-zaka, Sannenzaka y Ninenzaka.",
+            "approximateDuration": "~40–50 min con fotos"
           },
           "plan": [
-            "Paseo corto/medio, sin intentar llegar obligatoriamente hasta el final si el reloj aprieta.",
-            "Hora límite: empezar regreso hacia Gion/hotel sobre las 10:30–10:45."
+            "Fotos tempranas por Sannenzaka y Ninenzaka.",
+            "Cuando abran las tiendas, buscar palillos y regalos para las chicas; no fijar una tienda sin comprobar horario.",
+            "No perder la vuelta al apartamento y la salida a Kyoto Station."
           ],
-          "notes": "Paseo breve por el canal, no hacerlo entero. Empezar regreso al hotel sobre 10:30–10:45."
+          "notes": "Bajar por las calles históricas y hacer fotos con las chicas. Ir mirando tiendas de palillos cuando abran (muchas sobre las 09:00–10:00; horario exacto depende de cada tienda). Si queréis grabado de nombres, preguntar por el tiempo que tardan y no retrasar el autobús al aeropuerto.",
+          "time": "~08:15–09:45"
+        },
+        {
+          "id": "yasaka-pagoda-fotos-1018",
+          "title": "Yasaka Pagoda · Hōkan-ji",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
+          "notes": "Foto de la pagoda Yasaka/Hōkan-ji desde la calle, sin colapsar la calle ni entrar en propiedades privadas. Si hay demasiada gente, hacer una foto rápida y volver al apartamento.",
+          "transit": {
+            "from": "Ninenzaka",
+            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
+            "approximateDuration": "~5–10 min"
+          },
+          "plan": [
+            "Foto desde la calle de Yasaka-dōri.",
+            "Volver al RESI STAY con tiempo para las maletas del vuelo de las 19:00."
+          ],
+          "goshuin": true,
+          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos.",
+          "time": "~09:45–10:10"
         },
         {
           "id": "kyoto-morning-flex",
@@ -1167,13 +1198,13 @@
             "Vilma y Marga recogen equipaje; Jaime y Lorena se quedan en Kyoto.",
             "Salir hacia Kyoto Station con tiempo suficiente para estar en H2/KY2 antes de las 14:20."
           ],
-          "time": "~11:30",
+          "time": "~11:15",
           "transit": {
-            "from": "Philosopher's Path",
-            "summary": "Bus 203 hacia Gion/Shijo Kawaramachi o taxi al RESI STAY Yasaka.",
-            "approximateDuration": "20–30 min"
+            "from": "Yasaka Pagoda / Higashiyama",
+            "summary": "Volver caminando al RESI STAY Yasaka; después taxi o transporte a Kyoto Station.",
+            "approximateDuration": "~10–20 min andando"
           },
-          "notes": "Regresar al RESI Yasaka a recoger maletas de Vilma y Marga; después taxi/transporte a Kyoto Station con suficiente margen."
+          "notes": "Vuelta al RESI STAY Yasaka con margen después de Kiyomizu y las compras. Vilma y Marga recogen maletas y comprobamos el billete del Airport Limousine Bus; objetivo seguir en la parada H2/KY2 20–30 min antes del servicio elegido (en el plan se apunta 14:20, pero no está confirmada la reserva del bus)."
         },
         {
           "id": "kyoto-station-h2",
@@ -1270,22 +1301,32 @@
       ],
       "mapStages": [
         {
-          "id": "ginkaku-ultima-manana",
-          "title": "Hotel → Ginkaku → sendero",
-          "mode": "transit",
+          "id": "kiyomizu-amanecer",
+          "title": "Hotel → Kiyomizu antes de multitudes",
+          "mode": "walk",
           "activityIds": [
             "@hotel-start",
-            "ginkakuji",
-            "philosophers-path"
+            "kiyomizu-1018"
           ]
         },
         {
-          "id": "kix-traslado-chicas",
-          "title": "Hotel → bus H2 → KIX",
+          "id": "fotos-compras-palillos",
+          "title": "Sannenzaka, Ninenzaka y pagoda · vuelta",
+          "mode": "walk",
+          "activityIds": [
+            "kiyomizu-1018",
+            "ninenzaka-palillos-fotos-1018",
+            "yasaka-pagoda-fotos-1018",
+            "kyoto-morning-flex",
+            "@hotel-end"
+          ]
+        },
+        {
+          "id": "salida-kix",
+          "title": "Hotel → parada H2 → vuelo KIX",
           "mode": "transit",
           "activityIds": [
-            "philosophers-path",
-            "kyoto-morning-flex",
+            "@hotel-start",
             "kyoto-station-h2",
             "kix-vilma-marga"
           ]
@@ -1294,10 +1335,54 @@
     },
     {
       "date": "2026-10-19",
-      "title": "Kyoto · Jaime y Lorena",
+      "title": "Ginkaku-ji y Camino del Filósofo · Jaime y Lorena",
       "status": "plan",
-      "note": "Día colchón Jaime + Lorena. El onsen aquí ya no es obligatorio: Fufu no Yu del 15 es el plan principal del grupo.",
+      "note": "Lunes 19/10, ya solo Jaime y Lorena. Hemos pasado aquí Ginkaku-ji y el paseo corto del Filósofo para liberar la mañana del 18 y que las chicas hagan Kiyomizu y las compras de palillos. Previsión consultada el 13/10: de mañana nublado, con lluvia baja (~5–7 %); por la tarde riesgo de tormenta (~50 % desde las 13:00). Hacer Ginkaku y el paseo a primera hora, terminar antes de mediodía y dejar la tarde cubierta/descanso. Reconfirmar el tiempo esa mañana.",
       "activities": [
+        {
+          "id": "ginkakuji",
+          "title": "Ginkaku-ji · Pabellón de Plata",
+          "time": "~08:30",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Ginkaku-ji Kyoto",
+          "notes": "19/10, solo Jaime y Lorena: visitar Ginkaku-ji a primera hora mientras siga seco. El día 18 se reserva para las fotos de Kiyomizu con las chicas.",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar a Gion-Shijo → Keihan hasta Demachiyanagi; City Bus 7 o 203 → Ginkakuji-michi.",
+            "approximateDuration": "35–45 min",
+            "steps": [
+              "Gion-Shijo → Demachiyanagi por Keihan.",
+              "Desde Demachiyanagi tomar bus 7 o 203 hasta Ginkakuji-michi.",
+              "Caminar al templo."
+            ]
+          },
+          "plan": [
+            "Entrar a primera hora y hacer el recorrido principal.",
+            "No alargar: este día tiene la salida de Vilma y Marga como ancla."
+          ],
+          "goshuin": true,
+          "description": "Ginkaku-ji, cuyo nombre formal es Jishō-ji, surgió de la villa de retiro del shōgun Ashikaga Yoshimasa a finales del siglo XV y se transformó en templo zen tras su muerte. Aunque se llama «Pabellón de Plata», nunca fue recubierto de plata: el nombre se popularizó por contraste con Kinkaku-ji. La belleza aquí es más discreta y se relaciona con la cultura Higashiyama, el té, la caligrafía y los jardines contemplativos. El jardín de arena blanca incluye un cono y una amplia superficie rastrillada; sus significados exactos tienen distintas interpretaciones. Sube al mirador del jardín para ver Kioto desde arriba."
+        },
+        {
+          "id": "philosophers-path",
+          "title": "Philosopher's Path",
+          "time": "~09:45",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Philosopher's Path Kyoto",
+          "transit": {
+            "from": "Ginkaku-ji",
+            "summary": "Salir del templo y recorrer a pie el canal hacia el sur.",
+            "approximateDuration": "30–45 min"
+          },
+          "plan": [
+            "Paseo corto/medio, sin intentar llegar obligatoriamente hasta el final si el reloj aprieta.",
+            "Hora límite: empezar regreso hacia Gion/hotel sobre las 10:30–10:45."
+          ],
+          "notes": "Paseo corto después de Ginkaku-ji, si el tiempo aguanta. El 19 hay riesgo de tormentas por la tarde; mejor terminar la ruta exterior antes de comer."
+        },
         {
           "id": "kyoto-pendiente",
           "title": "Recuperar lo que haya quedado pendiente",
@@ -1351,6 +1436,27 @@
           "plan": [
             "Comprobar apertura y disponibilidad antes de desplazarnos.",
             "Priorizarlo si encaja porque tiene pocas plazas; si no, no sacrificar medio día esperando."
+          ]
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "ginkaku-manana",
+          "title": "Hotel → Ginkaku-ji y paseo del Filósofo",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "ginkakuji",
+            "philosophers-path"
+          ]
+        },
+        {
+          "id": "kyoto19-vuelta",
+          "title": "Camino del Filósofo → hotel",
+          "mode": "transit",
+          "activityIds": [
+            "philosophers-path",
+            "@hotel-end"
           ]
         }
       ]
