@@ -193,9 +193,10 @@ if (kyoto13) {
 const october13 = segments.flatMap(seg => seg.days.filter(d => d.date === '2026-10-13'));
 assert(october13.length === 1 && october13[0]?.activities.length >= 10,
   '13/10: no duplicar una ficha vacía de Osaka que tape el planning de Kioto');
-assert(october13[0]?.activities.some(a => a.id === 'kiyomizu' && a.status === 'pendiente') &&
-  october13[0]?.activities.some(a => a.id === 'yamato-kyoto-gion-pickup-1013'),
-  '13/10: Kiyomizu debe figurar pospuesto, con Yamato Gion conservado');
+assert(!october13[0]?.activities.some(a => ['kiyomizu','ninenzaka-sannenzaka','yasaka-pagoda'].includes(a.id)) &&
+  october13[0]?.activities.some(a => a.id === 'yamato-kyoto-gion-pickup-1013') &&
+  october13[0]?.note.includes('NO hemos ido a Kiyomizu'),
+  '13/10: Kiyomizu no debe seguir como ficha hoy, pero sí quedar anotado el aplazamiento y Yamato');
 if (kyoto13) {
   assert(kyoto13.stages.length === 3,
     '13/10: ruta a Yasaka, Chion-in y Yamato con llegada al hotel');
