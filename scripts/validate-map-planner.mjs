@@ -297,6 +297,36 @@ assert(kyotoDayLogistics13?.mapStages?.at(-1)?.activityIds.at(-1) === '@hotel-en
   '13/10: el mapa debe terminar en RESI STAY Yasaka');
 assert(!kyotoDayLogistics13?.mapStages?.some(s => s.activityIds.includes('yamato-kyoto-gion-pickup-1013')),
   '13/10: no imponer recogida Yamato hasta confirmación del seguimiento');
+// Kioto 13-14: jornada real cerrada tras Kōdai-ji y día de lluvia
+// reorganizado con desayuno tranquilo y salida a las 08:30.
+const kyotoSeg = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
+const tue = kyotoSeg?.days.find(day => day.date === '2026-10-13');
+const wed = kyotoSeg?.days.find(day => day.date === '2026-10-14');
+assert(Boolean(tue) && Boolean(wed), 'Faltan días 13 y 14 de Kioto');
+if (tue) {
+  assert(tue.activities.find(a => a.id === 'kodaiji-1013-optional')?.status === 'confirmado',
+    'El 13 Kōdai-ji fue visitado');
+  for (const id of ['yasaka', 'chionin', 'maruyama-park-1013', 'nene-no-michi-1013']) {
+    assert(tue.activities.find(a => a.id === id)?.skipped === true,
+      '13/10: ' + id + ' no se visitó después de Kōdai-ji');
+  }
+}
+if (wed) {
+  const order = ['salida-resi-0830-1014', 'sanjusangendo', 'nishiki',
+    'tobichi-kyoto', 'baikoan-matcha-2025', 'fushimi'];
+  assert(wed.activities.slice(0, order.length).map(a => a.id).join(',') === order.join(','),
+    '14/10: las tarjetas deben estar ordenadas Sanjū → Nishiki → TOBICHI → Baikoan → Fushimi');
+  assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.time === '08:30',
+    '14/10: salida hotel a las 08:30, no 06:30');
+  assert(wed.activities.find(a => a.id === 'tofukuji')?.status === 'opcional',
+    'Tōfuku-ji queda opcional por mal tiempo');
+  const mapped = get('2026-10-14');
+  assert(mapped?.stages?.[0]?.stops?.some(p => p.id === 'sanjusangendo'),
+    '14/10: primer templo del mapa debe ser Sanjūsangendō');
+  assert(mapped?.stages?.at(-1)?.stops?.some(p => p.id === 'fushimi'),
+    '14/10: Fushimi Inari debe quedar por la tarde');
+}
+
 const transfer = get('2026-10-13');
 if (transfer) {
   assert(transfer.hotelStart.includes('GN98') && transfer.hotelEnd.includes('RESI STAY'),
