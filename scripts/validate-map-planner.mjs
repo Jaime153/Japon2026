@@ -180,7 +180,8 @@ if (kyoto13) {
   assert(kyoto13.stages.at(-1).stops.at(-1).title.includes('RESI STAY Yasaka'),
     '13/10: ruta debe terminar en el hotel de Kioto');
   const ids = kyoto13.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['resi-recepcion-kioto-1013', 'kiyomizu', 'yasaka-pagoda',
+  for (const id of ['resi-yasaka-llegada-maletas-1045-1013', 'kiyomizu',
+    'yasaka-koshindo-1013', 'yasaka-pagoda', 'ryozen-kannon-1013',
     'yamato-kyoto-gion-pickup-1013', 'resi-yasaka-checkin-1013']) {
     assert(ids.includes(id), '13/10: falta el paso ' + id);
   }
@@ -266,8 +267,13 @@ assert(kyotoDayLogistics13?.activities.find(a => a.id === 'osaka-kyoto-tren-1013
 const reception13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-recepcion-kioto-1013');
 const room13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-yasaka-checkin-1013');
 assert(Boolean(reception13) && Boolean(room13), '13/10: faltan recepción y habitación separadas');
-assert(reception13?.time?.startsWith('~09:45') && room13?.time?.startsWith('~16:30'),
-  '13/10: hay que separar consigna matinal de entrada a la habitación');
+const arrival13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-yasaka-llegada-maletas-1045-1013');
+assert(arrival13?.status === 'confirmado' && arrival13?.time === '10:45' &&
+  reception13?.status === 'pendiente' && room13?.time?.startsWith('~16:30'),
+  '13/10: llegada real 10:45 y recepción pendiente separadas de la entrada a la habitación');
+assert(kyotoDayLogistics13?.activities.find(a => a.id === 'ryozen-kannon-1013')?.time === '~12:21' &&
+  kyotoDayLogistics13?.activities.find(a => a.id === 'yasaka-koshindo-1013')?.status === 'confirmado',
+  '13/10: incluir visita en curso a Ryōzen Kannon y Kōshin-dō realizado');
 const part13 = kyotoDayLogistics13?.mapStages?.find(s => s.id === 'yasaka-yamato-alojamiento');
 assert(part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') >= 0 &&
   part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') <
