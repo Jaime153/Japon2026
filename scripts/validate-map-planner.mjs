@@ -277,24 +277,26 @@ if (kyoto19) {
 }
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
-// Yamato Kyoto Gion debe estar en el MISMO trayecto final al apartamento,
-// nunca después de ir primero al hotel y volver a salir.
+// La planificación anterior tenía horas previstas, pero el viaje ya ocurrió.
+// Ahora la realidad manda: llegada a RESI a las 10:45, registro por comprobar,
+// recogida Yamato condicional (no dibujar desvíos como obligatorios).
 const kyotoSegment = segments.find(s => s.city === 'Kioto' || s.hotel?.name === 'RESI STAY Yasaka');
 const kyotoDayLogistics13 = kyotoSegment?.days?.find(d => d.date === '2026-10-13');
-assert(kyotoDayLogistics13?.activities.find(a => a.id === 'osaka-kyoto-tren-1013')?.time === '08:00 salida',
-  '13/10: falta salida a las 08:00');
+const outbound13 = kyotoDayLogistics13?.activities.find(a => a.id === 'osaka-kyoto-tren-1013');
+const arrived13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-yasaka-llegada-maletas-1045-1013');
 const reception13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-recepcion-kioto-1013');
 const room13 = kyotoDayLogistics13?.activities.find(a => a.id === 'resi-yasaka-checkin-1013');
-assert(Boolean(reception13) && Boolean(room13), '13/10: faltan recepción y habitación separadas');
-assert(reception13?.time?.startsWith('~09:45') && room13?.time?.startsWith('~16:30'),
-  '13/10: hay que separar consigna matinal de entrada a la habitación');
-const part13 = kyotoDayLogistics13?.mapStages?.find(s => s.id === 'gion-yamato-apartamento');
-assert(part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') >= 0 &&
-  part13?.activityIds.indexOf('yamato-kyoto-gion-pickup-1013') <
-  part13?.activityIds.indexOf('resi-yasaka-checkin-1013'),
-  '13/10: Yamato Gion debe estar ANTES de entrar al alojamiento');
+assert(outbound13?.status === 'confirmado' && !outbound13?.time,
+  '13/10: traslado realizado pero no inventar hora real del tren');
+assert(arrived13?.time === '10:45' && arrived13?.status === 'confirmado',
+  '13/10: RESI Yasaka llegó y dejó maletas a las 10:45');
+assert(reception13?.status === 'pendiente' && !reception13?.time &&
+  room13?.time === 'Desde 15:00',
+  '13/10: separar llegada, registro pendiente y entrada en habitación');
 assert(kyotoDayLogistics13?.mapStages?.at(-1)?.activityIds.at(-1) === '@hotel-end',
-  '13/10: la ruta debe terminar en el alojamiento de Kioto');
+  '13/10: el mapa debe terminar en RESI STAY Yasaka');
+assert(!kyotoDayLogistics13?.mapStages?.some(s => s.activityIds.includes('yamato-kyoto-gion-pickup-1013')),
+  '13/10: no imponer recogida Yamato hasta confirmación del seguimiento');
 const transfer = get('2026-10-13');
 if (transfer) {
   assert(transfer.hotelStart.includes('GN98') && transfer.hotelEnd.includes('RESI STAY'),
