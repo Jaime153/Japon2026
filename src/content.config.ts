@@ -87,6 +87,7 @@ const activitySchema = z.object({
   flightJourney: flightJourneySchema.optional(),
   parking: parkingSchema.optional(),
   address: z.string().optional(),
+  mapCoords: z.object({lat: z.number().min(20).max(50), lon: z.number().min(120).max(155)}).optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),
   approximatePrice: z.string().optional(),
