@@ -449,7 +449,10 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       const lat = Number(m[1]), lon = Number(m[2]);
       return lat >= 20 && lat <= 50 && lon >= 120 && lon <= 155 ? { lat, lon } : null;
     }
-    async function geocode(query) {
+    async function geocode(query, pinned = null) {
+      // El dato verificado del itinerario tiene prioridad sobre Nominatim.
+      // Mantener 'query' con el nombre real para los enlaces de Google Maps.
+      if (pinned && Number.isFinite(pinned.lat) && Number.isFinite(pinned.lon)) return pinned;
       const exact = directCoords(query);
       if (exact) return exact;
       const key = query.toLowerCase();
@@ -508,7 +511,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       statusEl.textContent = 'Localizando las ' + unique.length + ' paradas de la ruta…';
       for (let i = 0; i < unique.length; i++) {
         const stop = unique[i];
-        const coords = await geocode(stop.query);
+        const coords = await geocode(stop.query, stop.mapCoords);
         if (token !== sequence) return;
         if (coords) {
           geo.set(stop.query, coords);
