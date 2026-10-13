@@ -13,17 +13,16 @@
   "days": [
     {
       "date": "2026-10-13",
-      "title": "Kioto · Kōdai-ji, Nene-no-Michi, Maruyama y Yasaka",
+      "title": "Kioto · Kōshin-dō, Ryōzen Kannon, Kōdai-ji, Yasaka y Chion-in",
       "status": "plan",
       "activities": [
         {
           "id": "osaka-kyoto-tren-1013",
           "title": "Salir del GN98 de Osaka hacia Kioto",
           "category": "transporte",
-          "status": "plan",
-          "time": "08:00 salida",
+          "status": "confirmado",
           "locationQuery": "34.668712,135.485405",
-          "notes": "Salir del GN98 a las 08:00. Llegada orientativa a Kyoto Station ~09:30–09:45, según transbordos. Ruta posible: Sakuragawa → Namba → Umeda, caminar a JR Osaka y tomar Special Rapid a Kioto. Los trenes concretos no están reservados.",
+          "notes": "Traslado desde Osaka realizado: a las 10:45 ya estábamos en el alojamiento de Kioto. No consta el horario real del tren.",
           "plan": [
             "Salir del GN98 a las 08:00 con las bolsas que no enviamos por Yamato.",
             "Metro Sakuragawa → Namba → Umeda; pasar a JR Osaka y tomar Special Rapid hasta Kyoto Station.",
@@ -31,13 +30,195 @@
           ]
         },
         {
-          "id": "resi-recepcion-kioto-1013",
-          "title": "RESI STAY · recepción y dejar equipaje",
+          "id": "resi-yasaka-llegada-maletas-1045-1013",
+          "title": "RESI STAY Yasaka · dejamos las maletas",
+          "category": "transporte",
+          "status": "confirmado",
+          "time": "10:45",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "address": "〒605-0812 京都府京都市東山区毘沙門町28",
+          "notes": "Llegamos al RESI STAY Yasaka a las 10:45 y dejamos maletas. No está confirmado si ya se hizo el registro obligatorio en recepción ni la entrada en la habitación (desde las 15:00).",
+          "plan": [
+            "10:45: llegada al alojamiento y maletas dejadas.",
+            "Empezar el paseo de Higashiyama desde aquí, sin regresar a Kyoto Station."
+          ]
+        },
+        {
+          "id": "yasaka-koshindo-1013",
+          "title": "Yasaka Kōshin-dō · pasamos sin goshuin",
+          "time": "~11:00",
+          "status": "confirmado",
+          "category": "templo",
+          "locationQuery": "八坂庚申堂 金剛寺 京都市東山区金園町390",
+          "address": "〒605-0828 京都府京都市東山区金園町390",
+          "goshuin": false,
+          "notes": "Visita realizada sobre las 11:00 al pequeño templo de los kukurizaru de colores, al pasar por las calles cercanas a Kiyomizu-dera. No cogimos goshuin. No entramos a Kiyomizu-dera; queda para el día 18.",
+          "description": "Yasaka Kōshin-dō es un templo pequeño del barrio de Higashiyama. Su nombre oficial es Kongō-ji y está dedicado a Shōmen Kongō, una figura ligada a la tradición Kōshin. Lo que más llama la atención son los kukurizaru, los pequeños muñecos de tela de colores que cuelgan por todas partes. Representan monos con las manos y los pies atados: simbolizan contener un deseo para intentar cumplir otro. Es una parada corta, muy cerca de la pagoda Yasaka.",
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%9D%82%E5%BA%9A%E7%94%B3%E5%A0%82%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E9%87%91%E5%9C%92%E7%94%BA390",
+            "officialWebsite": "https://ja.kyoto.travel/tourism/single01.php?category_id=7&tourism_id=2007"
+          }
+        },
+        {
+          "id": "ryozen-kannon-1013",
+          "title": "Ryōzen Kannon · estatua blanca de Kannon",
+          "category": "templo",
+          "status": "plan",
+          "time": "12:21",
+          "locationQuery": "霊山観音 京都市東山区下河原町526-2",
+          "address": "〒605-0825 京都府京都市東山区下河原町526-2",
+          "notes": "Llegamos aquí a las 12:21; visita en curso, aún no confirmada como terminada. Gran estatua blanca de Kannon junto a Kōdai-ji. Entrada 300 ¥, abre 08:40–16:20 (última entrada 16:00). Después vamos andando a Kōdai-ji.",
+          "description": "Ryōzen Kannon es la gran estatua blanca de Kannon, de 24 metros, que se ve desde Higashiyama. Se construyó en 1955 para recordar a las personas fallecidas durante la Segunda Guerra Mundial y pedir por la paz. Kannon es el bodhisattva budista de la compasión. Dentro del monumento hay otras imágenes religiosas, y en el recinto también hay pequeños lugares para dejar ofrendas y rezar. Es una parada muy cerca de Kōdai-ji, distinta de los templos antiguos de la zona.",
+          "plan": [
+            "Ver la gran estatua blanca de Kannon y recorrer el recinto.",
+            "Después podemos seguir por Higashiyama, comer por la zona y acercarnos a Yasaka."
+          ],
+          "links": {
+            "officialWebsite": "http://www.ryozen-kwannon.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E9%9C%8A%E5%B1%B1%E8%A6%B3%E9%9F%B3%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E4%B8%8B%E6%B2%B3%E5%8E%9F%E7%94%BA526-2"
+          }
+        },
+        {
+          "id": "kodaiji-1013-optional",
+          "title": "Kōdai-ji · templo y jardines de Nene",
+          "category": "templo",
+          "status": "plan",
+          "time": "~12:40–13:40",
+          "locationQuery": "Kodaiji Zen Temple Kyoto",
+          "notes": "Siguiente visita desde Ryōzen Kannon, que está justo al lado. Templo de Nene, jardines y bambú. Entrada 800 ¥; 09:00–17:00 (cierre 17:30). Visita todavía no confirmada.",
+          "plan": [
+            "Si os apetece más Higashiyama y menos ir hacia el norte, visitar Kōdai-ji en vez de Shōren-in.",
+            "Recorrer los jardines y después seguir hacia Gion y Yamato."
+          ],
+          "description": "Kōdai-ji se fundó en 1606 por iniciativa de Nene (Kita-no-Mandokoro), esposa de Toyotomi Hideyoshi, para recordar a su marido después de su muerte. Es un templo budista zen de la escuela Rinzai en Higashiyama, cerca del parque Maruyama. Conserva jardines con estanques, pabellones y objetos relacionados con Hideyoshi y Nene. Su visita sirve para entender la historia de la unificación de Japón en el siglo XVI y también para pasear por unos jardines generalmente más tranquilos que las calles de Kiyomizu. El templo cobra entrada y no hace falta hacerlo si vamos cortos de tiempo.",
+          "links": {
+            "officialWebsite": "https://www.kodaiji.com/e_fee.html"
+          },
+          "priority": "must"
+        },
+        {
+          "id": "comida-higashiyama-1013",
+          "title": "Comer cerca de Kōdai-ji",
+          "category": "comida",
+          "status": "plan",
+          "time": "~13:40–14:20",
+          "notes": "Comer por Nene-no-Michi tras Kōdai-ji, antes de seguir a Yasaka. Kōdai-ji Hashiba sirve yuba y cocina de Kioto, último pedido 14:30 (cierra 15:00); si no interesa la cola o el precio, buscar algo rápido por la zona. Aún no hemos comido.",
+          "plan": [
+            "Comer algo cerca de Chion-in y del parque Maruyama.",
+            "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
+          ],
+          "locationQuery": "高台寺 羽柴 京都市東山区下河原町530"
+        },
+        {
+          "id": "nene-no-michi-1013",
+          "title": "Nene-no-Michi · calle tradicional",
+          "category": "barrio",
+          "status": "plan",
+          "time": "~14:20",
+          "locationQuery": "ねねの道 高台寺 京都市東山区",
+          "notes": "Pasear por la calle empedrada Nene-no-Michi junto a Kōdai-ji y Entoku-in rumbo al parque Maruyama. No hay entrada ni hace falta reservar. Si nos pilla de paso, ver el callejón Ishibe-kōji, respetando las restricciones de fotos."
+        },
+        {
+          "id": "maruyama-park-1013",
+          "title": "Maruyama Park · paseo camino de Yasaka",
+          "category": "naturaleza",
+          "status": "plan",
+          "time": "~14:35",
+          "locationQuery": "Maruyama Park Kyoto",
+          "notes": "Venimos de Kōdai-ji por Nene-no-Michi. Cruzar el parque Maruyama tranquilamente hacia Yasaka. Chion-in queda en la parte norte: podemos subir a ver la puerta Sanmon si aún tenemos ganas, y volver después a Yasaka.",
+          "plan": [
+            "Cruzar Maruyama desde Yasaka.",
+            "Continuar a Chion-in; está al lado."
+          ]
+        },
+        {
+          "id": "yasaka",
+          "title": "Yasaka Shrine · santuario y goshuin",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Yasaka Shrine Kyoto",
+          "plan": [
+            "Ir a Yasaka y pedir el goshuin si hay atención.",
+            "Salir por detrás hacia el parque Maruyama y continuar al templo Chion-in."
+          ],
+          "time": "~14:45–15:10",
+          "priority": "must",
+          "transit": {
+            "from": "Zona Higashiyama/Gion",
+            "summary": "Ir directamente a Yasaka Jinja; el santuario queda junto al parque Maruyama.",
+            "approximateDuration": "A pie según posición actual"
+          },
+          "goshuin": true,
+          "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
+          "notes": "Desde Maruyama Park llegamos al santuario Yasaka. Si queremos goshuin, la oficina atiende de 09:00 a 17:00. No dar la visita por hecha hasta confirmación."
+        },
+        {
+          "id": "chionin",
+          "title": "Chion-in",
+          "time": "~15:15–15:55",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Chion-in Kyoto",
+          "notes": "Después de Yasaka, subir por el extremo norte del parque Maruyama a Chion-in: Sanmon, escaleras y pabellones. El acceso al templo CIERRA a las 16:00 (recepción desde 09:00), así que conviene no entretenerse demasiado en otros sitios.",
+          "transit": {
+            "from": "Parque Maruyama",
+            "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
+            "approximateDuration": "~5 min"
+          },
+          "plan": [
+            "Ir al norte desde Yasaka/Maruyama.",
+            "Ver Sanmon y el pabellón principal antes del cierre a las 16:00.",
+            "Decidir si se va a Heian Jingū o hay que pasar por Yamato y regresar al alojamiento."
+          ],
+          "goshuin": true,
+          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
+        },
+        {
+          "id": "yamato-kyoto-gion-pickup-1013",
+          "title": "Yamato Kyoto Gion · recoger maletas si llegaron",
           "category": "transporte",
           "status": "plan",
-          "time": "~09:45–10:15",
+          "time": "Antes de 19:00",
+          "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
+          "address": "〒605-0074 京都府京都市東山区祇園町南側570-228",
+          "notes": "Oficina Yamato Kyoto Gion, código 162620, 祇園町南側570-228. Abre hasta las 19:00. Recoger SOLAMENTE si el seguimiento confirma que han llegado las maletas ENVIADAS desde Osaka; son distintas de las que dejamos en RESI a las 10:45. Si no están, pasar mañana cuando el seguimiento lo indique.",
+          "plan": [
+            "Consultar tracking antes de ir. Si están, recoger las maletas en Yamato Gion (oficina 162620).",
+            "Después ir al RESI STAY Yasaka; no pasar dos veces por el apartamento."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/162620/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E4%BA%AC%E9%83%BD%E7%A5%87%E5%9C%92%E5%96%B6%E6%A5%AD%E6%89%80%20%E7%A5%87%E5%9C%92%E7%94%BA%E5%8D%97%E5%81%B4570-228"
+          },
+          "priority": "must"
+        },
+        {
+          "id": "resi-yasaka-checkin-1013",
+          "title": "RESI STAY Yasaka · entrar en la habitación",
+          "category": "transporte",
+          "status": "plan",
+          "time": "Desde 15:00",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "notes": "Ya dejamos maletas aquí a las 10:45; la habitación abre desde las 15:00. Tras Chion-in, o Yamato si el seguimiento confirma envío disponible, volver y entrar. No está confirmado el registro ni el check-in definitivo.",
+          "plan": [
+            "Después de Yamato Kyoto Gion, entrar en RESI STAY Yasaka con las maletas. Si no llegaron a Yamato, ir directamente al apartamento.",
+            "Dejar las cosas y descansar.",
+            "Si se quedaron bolsas en Kyoto Station sin traslado, recogerlas antes de las 20:00."
+          ],
+          "priority": "must",
+          "links": {
+            "officialWebsite": "https://resistay.jp/en/facilities/yasaka/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=RESI%20STAY%20YASAKA%2028%20Bishamoncho%20Higashiyama%20Kyoto"
+          },
+          "address": "〒605-0812 京都府京都市東山区毘沙門町28"
+        },
+        {
+          "id": "resi-recepcion-kioto-1013",
+          "title": "Registro RESI STAY (solo si falta)",
+          "category": "transporte",
+          "status": "pendiente",
           "locationQuery": "RESI STAY Reception Counter ON Building 5F 544-2 Higashishiokojicho Kyoto",
-          "notes": "RESI STAY Reception Counter, ON Building planta 5, junto a Kyoto Station. El registro de huéspedes se hace aquí, con pasaportes y reserva; abre 08:00–20:00. Permiten guardar el equipaje gratis. La habitación del apartamento Yasaka NO está disponible hasta las 15:00. Preguntar si nos pueden llevar las bolsas al alojamiento (puede tener coste según la reserva). Si se quedan en recepción sin traslado, volver a por ellas antes de las 20:00.",
+          "notes": "Llegamos al alojamiento a las 10:45 y dejamos maletas, pero aún no consta si está completo el registro de huéspedes. RESI STAY indica recepción central junto a Kyoto Station (ON Building 5F, 08:00–20:00). Comprobar antes de volver a la estación.",
           "plan": [
             "Ir al RESI STAY Reception Counter del ON Building 5F al llegar a Kyoto Station.",
             "Hacer el registro obligatorio y dejar las bolsas; preguntar si se pueden enviar al apartamento.",
@@ -49,24 +230,6 @@
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=RESI%20STAY%20Reception%20Counter%20Kyoto"
           },
           "address": "〒600-8216 京都市下京区東塩小路町544-2 ON Building 5F"
-        },
-        {
-          "id": "kodaiji-1013-optional",
-          "title": "Kōdai-ji · templo y jardines de Nene",
-          "category": "templo",
-          "status": "plan",
-          "time": "~12:15–13:15",
-          "locationQuery": "Kodaiji Zen Temple Kyoto",
-          "notes": "Vamos hacia Kōdai-ji ahora (mensaje a las 12:07 del 13/10), visita todavía NO confirmada. Templo zen fundado por Nene en memoria de Hideyoshi; tiene jardines zen y un pequeño bosque de bambú. Abre 09:00–17:00 (cierra 17:30), entrada 800 ¥. Entoku-in está al lado y existe entrada conjunta de 1.200 ¥. Después pasear por Nene-no-Michi hacia Maruyama y Yasaka.",
-          "plan": [
-            "Si os apetece más Higashiyama y menos ir hacia el norte, visitar Kōdai-ji en vez de Shōren-in.",
-            "Recorrer los jardines y después seguir hacia Gion y Yamato."
-          ],
-          "description": "Kōdai-ji se fundó en 1606 por iniciativa de Nene (Kita-no-Mandokoro), esposa de Toyotomi Hideyoshi, para recordar a su marido después de su muerte. Es un templo budista zen de la escuela Rinzai en Higashiyama, cerca del parque Maruyama. Conserva jardines con estanques, pabellones y objetos relacionados con Hideyoshi y Nene. Su visita sirve para entender la historia de la unificación de Japón en el siglo XVI y también para pasear por unos jardines generalmente más tranquilos que las calles de Kiyomizu. El templo cobra entrada y no hace falta hacerlo si vamos cortos de tiempo.",
-          "links": {
-            "officialWebsite": "https://www.kodaiji.com/e_fee.html"
-          },
-          "priority": "must"
         },
         {
           "id": "entokuin-1013",
@@ -81,81 +244,6 @@
             "officialWebsite": "https://www.kodaiji.com/entoku-in/haikan.html",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E5%9C%93%E5%BE%B3%E9%99%A2%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E9%AB%98%E5%8F%B0%E5%AF%BA%E4%B8%8B%E6%B2%B3%E5%8E%9F%E7%94%BA530"
           }
-        },
-        {
-          "id": "nene-no-michi-1013",
-          "title": "Nene-no-Michi · calle tradicional",
-          "category": "barrio",
-          "status": "plan",
-          "time": "~13:20",
-          "locationQuery": "ねねの道 高台寺 京都市東山区",
-          "notes": "Pasear por la calle empedrada Nene-no-Michi junto a Kōdai-ji y Entoku-in rumbo al parque Maruyama. No hay entrada ni hace falta reservar. Si nos pilla de paso, ver el callejón Ishibe-kōji, respetando las restricciones de fotos."
-        },
-        {
-          "id": "comida-higashiyama-1013",
-          "title": "Comer por Kōdai-ji o Yasaka",
-          "category": "comida",
-          "status": "plan",
-          "time": "~13:30–14:30",
-          "notes": "Decidir según hambre y cola. Cerca de Kōdai-ji: Hashiba (yuba, tofu, menús de unos 3.300 ¥, último pedido 14:30). Si aguantamos hasta Yasaka: Gion Gombei (soba/udon, aprox. 1.000–2.000 ¥, el turno de mediodía termina a las 15:00 hoy martes (reabre para cenar a las 17:00)). Ambas opciones están como fichas aparte; no hay reserva ni comida ya confirmada.",
-          "plan": [
-            "Comer algo cerca de Chion-in y del parque Maruyama.",
-            "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
-          ]
-        },
-        {
-          "id": "maruyama-park-1013",
-          "title": "Maruyama Park · paseo camino de Yasaka",
-          "category": "naturaleza",
-          "status": "plan",
-          "time": "~14:40",
-          "locationQuery": "Maruyama Park Kyoto",
-          "notes": "Venimos de Kōdai-ji por Nene-no-Michi. Cruzar el parque Maruyama tranquilamente hacia Yasaka. Chion-in queda en la parte norte: podemos subir a ver la puerta Sanmon si aún tenemos ganas, y volver después a Yasaka.",
-          "plan": [
-            "Cruzar Maruyama desde Yasaka.",
-            "Continuar a Chion-in; está al lado."
-          ]
-        },
-        {
-          "id": "chionin",
-          "title": "Chion-in",
-          "time": "~15:00",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Chion-in Kyoto",
-          "notes": "Opcional muy bueno si tenemos tiempo: justo al norte de Maruyama está la enorme puerta Sanmon (1621), una de las grandes puertas de madera de Japón. El recinto general es gratuito y abre de 09:00 a 15:50, cerrando el acceso 16:30. Priorizar Yasaka y el goshuin si vamos tarde; no hacer un desvío largo a Shōren-in.",
-          "transit": {
-            "from": "Parque Maruyama",
-            "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
-            "approximateDuration": "~5 min"
-          },
-          "plan": [
-            "Ver la puerta Sanmon y el pabellón principal de Chion-in.",
-            "Continuar andando hacia Shōren-in si vamos bien de tiempo."
-          ],
-          "goshuin": true,
-          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
-        },
-        {
-          "id": "yasaka",
-          "title": "Yasaka Shrine · santuario y goshuin",
-          "category": "templo",
-          "status": "plan",
-          "locationQuery": "Yasaka Shrine Kyoto",
-          "plan": [
-            "Ir a Yasaka y pedir el goshuin si hay atención.",
-            "Salir por detrás hacia el parque Maruyama y continuar al templo Chion-in."
-          ],
-          "time": "~15:20–15:50",
-          "priority": "must",
-          "transit": {
-            "from": "Zona Higashiyama/Gion",
-            "summary": "Ir directamente a Yasaka Jinja; el santuario queda junto al parque Maruyama.",
-            "approximateDuration": "A pie según posición actual"
-          },
-          "goshuin": true,
-          "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
-          "notes": "Después de Kōdai-ji y paseo por Nene-no-Michi/Maruyama. Ver Yasaka Jinja y preguntar por el goshuin; la oficina atiende de día, horario previsto hasta las 17:00. Si no hemos comido, ver si hay fideos por Gion antes de que cierren los restaurantes de mediodía."
         },
         {
           "id": "shorenin",
@@ -180,13 +268,12 @@
           "id": "gion",
           "title": "Gion · paseo de camino a Yamato",
           "category": "barrio",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Gion Kyoto",
           "plan": [
             "Bajar hacia las calles de Gion y pasear sin prisas.",
             "Ir a Yamato para recoger las maletas solo si el seguimiento dice que están listas. Después al apartamento."
           ],
-          "time": "~15:15",
           "transit": {
             "from": "Kiyomizu-dera",
             "summary": "Bajar andando por Higashiyama hacia Gion; no hace falta transporte.",
@@ -195,51 +282,12 @@
           "notes": "Pasear por el barrio de Gion al bajar desde los templos, sin entrar en calles privadas ni bloquear fotos. De camino a Yamato Gion y al RESI STAY Yasaka. Cena después solo si apetece."
         },
         {
-          "id": "yamato-kyoto-gion-pickup-1013",
-          "title": "Yamato Kyoto Gion · recoger maletas si llegaron",
-          "category": "transporte",
-          "status": "plan",
-          "time": "~16:00",
-          "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
-          "address": "〒605-0074 京都府京都市東山区祇園町南側570-228",
-          "notes": "Yamato Kyoto Gion, código de oficina 162620, 祇園町南側570-228. Recoger las maletas solo si el seguimiento confirma que han llegado. Abre hasta las 19:00. Después ir directamente a RESI STAY Yasaka.",
-          "plan": [
-            "Consultar tracking antes de ir. Si están, recoger las maletas en Yamato Gion (oficina 162620).",
-            "Después ir al RESI STAY Yasaka; no pasar dos veces por el apartamento."
-          ],
-          "links": {
-            "officialWebsite": "https://locations.kuronekoyamato.co.jp/smt/yamato01/inf/162620/",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8%20%E4%BA%AC%E9%83%BD%E7%A5%87%E5%9C%92%E5%96%B6%E6%A5%AD%E6%89%80%20%E7%A5%87%E5%9C%92%E7%94%BA%E5%8D%97%E5%81%B4570-228"
-          },
-          "priority": "must"
-        },
-        {
-          "id": "resi-yasaka-checkin-1013",
-          "title": "RESI STAY Yasaka · entrar en la habitación",
-          "category": "transporte",
-          "status": "plan",
-          "time": "~16:30",
-          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "Ir al alojamiento RESI STAY Yasaka, disponible desde las 15:00. Si las maletas estaban en Yamato, llegar con ellas; si aún no han llegado, consultar entrega el 14. El registro de huéspedes se realiza aparte en la recepción de Kyoto Station.",
-          "plan": [
-            "Después de Yamato Kyoto Gion, entrar en RESI STAY Yasaka con las maletas. Si no llegaron a Yamato, ir directamente al apartamento.",
-            "Dejar las cosas y descansar.",
-            "Si se quedaron bolsas en Kyoto Station sin traslado, recogerlas antes de las 20:00."
-          ],
-          "priority": "must",
-          "links": {
-            "officialWebsite": "https://resistay.jp/en/facilities/yasaka/",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=RESI%20STAY%20YASAKA%2028%20Bishamoncho%20Higashiyama%20Kyoto"
-          },
-          "address": "〒605-0812 京都府京都市東山区毘沙門町28"
-        },
-        {
           "id": "almuerzo-hashiba-kodaiji-1013",
           "title": "Comida opcional · Kōdai-ji Hashiba (yuba)",
           "category": "comida",
           "status": "opcional",
           "locationQuery": "高台寺 羽柴 京都市東山区下河原町530",
-          "notes": "En Nene-no-Michi, al lado de Kōdai-ji. Cocina de Kioto con yuba, tofu y tempura. Menú típico de yuba por unos 3.300 ¥ según carta oficial. Almuerzo 11:00–15:00, último pedido 14:30. Si queremos comer antes del parque, es cómodo, pero bastante más caro que unos fideos por Gion.",
+          "notes": "Kōdai-ji Hashiba, en Nene-no-Michi: cocina de Kioto, yuba y tofu. Comida opcional; último pedido 14:30 y cierre 15:00. No hay reserva ni comida confirmada.",
           "links": {
             "officialWebsite": "https://www.kodaiji-hashiba.co.jp/",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E5%8F%B0%E5%AF%BA%20%E7%BE%BD%E6%9F%B4%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E4%B8%8B%E6%B2%B3%E5%8E%9F%E7%94%BA530"
@@ -251,7 +299,7 @@
           "category": "comida",
           "status": "opcional",
           "locationQuery": "権兵衛 祇園 京都市東山区祇園町北側254",
-          "notes": "Cerca de Yasaka, para comer más tarde y sin gastar tanto. Soba, udon y donburi, alrededor de 1.000–2.000 ¥ por persona. Hoy martes el horario publicado es 11:30–15:00, así que hay que llegar con margen. La espera puede variar; comprobar al pasar.",
+          "notes": "Gion Gombei cerca de Yasaka, soba/udon; los martes abre 11:30–15:00. Solo opción si llegamos antes del cierre, no planificarlo después de Chion-in.",
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E7%A5%87%E5%9C%92%20%E6%A8%A9%E5%85%B5%E8%A1%9B%20%E7%A5%87%E5%9C%92%E7%94%BA%E5%8C%97%E5%81%B4254"
           }
@@ -306,47 +354,75 @@
             "approximateDuration": "10–15 min"
           },
           "notes": "Opcional si apetece salir a cenar o dar una vuelta después de Gion; no es necesario para completar el día."
+        },
+        {
+          "id": "heian-jingu-1013-extra",
+          "title": "Heian Jingū · si queda tarde",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
+          "notes": "Solo si acabamos Chion-in antes de las 16:00, ya hemos comido y NO urge recoger maletas ni hacer el registro. Está hacia el norte, aprox. 20–25 min a pie de Chion-in. En octubre el santuario cierra a las 17:30 y el jardín Shin'en admite entradas hasta las 17:00.",
+          "description": "Heian Jingū se construyó en 1895 por el 1100 aniversario de Kioto como capital. Su enorme torii conduce al barrio de Okazaki y los edificios rojos recuerdan el antiguo palacio imperial del período Heian. El santuario venera a los emperadores Kanmu y Kōmei. Sus jardines Shin'en tienen estanques y puentes y suelen ser una de las mejores partes de la visita. Es mucho más moderno que los templos de Higashiyama, pero permite entender la larga historia de Kioto como capital de Japón.",
+          "plan": [
+            "Ir desde Chion-in solo si hay tiempo y el equipaje puede esperar.",
+            "Entrar al santuario antes de las 17:30; jardines hasta recepción 17:00.",
+            "Regresar al alojamiento después."
+          ],
+          "links": {
+            "officialWebsite": "https://www.heianjingu.or.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E5%AE%89%E7%A5%9E%E5%AE%AE%20%E4%BA%AC%E9%83%BD"
+          }
         }
       ],
-      "note": "Martes 13/10. A las 12:07 nos dirigimos a Kōdai-ji; después queremos pasear por el parque Maruyama y visitar Yasaka Jinja. Metemos Nene-no-Michi de camino y Entoku-in como opción al lado de Kōdai-ji. Si nos da tiempo, podemos acercarnos a la gran puerta de Chion-in; Shōren-in queda opcional para no apurar los goshuin ni la recogida de maletas. Para comer tenemos Kōdai-ji Hashiba junto a Nene-no-Michi o Gion Gombei cerca de Yasaka, sin reserva. Kiyomizu-dera no se hizo hoy por aglomeraciones y sigue previsto para el 18/10; no moverlo. Recoger en Yamato Kyoto Gion solo si el seguimiento confirma que las maletas están disponibles y después ir al RESI STAY Yasaka.",
+      "note": "Martes 13/10: llegamos a RESI STAY Yasaka y dejamos maletas a las 10:45. Sobre las 11:00 visitamos Yasaka Kōshin-dō, templo de muñecos de colores, sin goshuin. A las 12:21 llegamos a Ryōzen Kannon, gran estatua blanca junto a Kōdai-ji (visita en curso). De allí vamos a Kōdai-ji, a comer por Nene-no-Michi, Maruyama Park y Yasaka Jinja; después Chion-in antes del cierre a las 16:00. Opcional Heian Jingū si nos da tiempo y no tenemos que recoger las maletas. Yamato Kyoto Gion (162620) solo si el seguimiento confirma maletas disponibles, oficina hasta 19:00; luego check-in en RESI desde 15:00. Kiyomizu-dera sigue pendiente para el 18/10 y hoy solo paseamos por las calles de la zona. No dar por realizadas las visitas siguientes ni Yamato.",
       "mapStages": [
         {
-          "id": "kyoto-recepcion-kodaiji",
-          "title": "GN98 → recepción Kioto → Kōdai-ji",
+          "id": "osaka-kyoto-1013",
+          "title": "Osaka → RESI Yasaka · llegada 10:45",
           "mode": "transit",
           "activityIds": [
-            "@hotel-start",
-            "resi-recepcion-kioto-1013",
+            "osaka-kyoto-tren-1013",
+            "resi-yasaka-llegada-maletas-1045-1013"
+          ]
+        },
+        {
+          "id": "higashiyama-visitado-1013",
+          "title": "Kōshin-dō → Ryōzen Kannon → Kōdai-ji",
+          "mode": "walk",
+          "activityIds": [
+            "resi-yasaka-llegada-maletas-1045-1013",
+            "yasaka-koshindo-1013",
+            "ryozen-kannon-1013",
             "kodaiji-1013-optional"
           ]
         },
         {
-          "id": "kodaiji-maruyama",
-          "title": "Kōdai-ji → Nene-no-Michi → Maruyama",
+          "id": "kodaiji-yasaka-1013",
+          "title": "Kōdai-ji → comer → Yasaka",
           "mode": "walk",
           "activityIds": [
             "kodaiji-1013-optional",
+            "comida-higashiyama-1013",
             "nene-no-michi-1013",
-            "maruyama-park-1013"
-          ]
-        },
-        {
-          "id": "maruyama-yasaka",
-          "title": "Maruyama → Yasaka Jinja",
-          "mode": "walk",
-          "activityIds": [
             "maruyama-park-1013",
             "yasaka"
           ]
         },
         {
-          "id": "gion-yamato-apartamento",
-          "title": "Yasaka → Gion → Yamato → RESI",
-          "mode": "mixed",
+          "id": "yasaka-chion-1013",
+          "title": "Yasaka → Chion-in (cierra 16:00)",
+          "mode": "walk",
           "activityIds": [
             "yasaka",
-            "gion",
-            "yamato-kyoto-gion-pickup-1013",
+            "chionin"
+          ]
+        },
+        {
+          "id": "chion-hotel-1013",
+          "title": "Chion-in → alojamiento (Yamato opcional)",
+          "mode": "walk",
+          "activityIds": [
+            "chionin",
             "resi-yasaka-checkin-1013",
             "@hotel-end"
           ]
