@@ -13,7 +13,7 @@
   "days": [
     {
       "date": "2026-10-13",
-      "title": "Kioto · Kōshin-dō, Ryōzen Kannon, Kōdai-ji, Yasaka y Chion-in",
+      "title": "Kioto · llegamos al RESI, Kōshin-dō, Ryōzen y Kōdai-ji",
       "status": "plan",
       "activities": [
         {
@@ -82,13 +82,12 @@
           "id": "kodaiji-1013-optional",
           "title": "Kōdai-ji · templo y jardines de Nene",
           "category": "templo",
-          "status": "plan",
-          "time": "~12:40–13:40",
+          "status": "confirmado",
           "locationQuery": "Kodaiji Zen Temple Kyoto",
-          "notes": "Siguiente visita desde Ryōzen Kannon, que está justo al lado. Templo de Nene, jardines y bambú. Entrada 800 ¥; 09:00–17:00 (cierre 17:30). Visita todavía no confirmada.",
+          "notes": "Fuimos a Kōdai-ji después de Ryōzen Kannon. Aquí terminamos las visitas del martes 13: no hicimos las paradas de Yasaka, Chion-in, Maruyama ni las calles previstas después. No hemos anotado la hora exacta de salida.",
           "plan": [
-            "Si os apetece más Higashiyama y menos ir hacia el norte, visitar Kōdai-ji en vez de Shōren-in.",
-            "Recorrer los jardines y después seguir hacia Gion y Yamato."
+            "Visitamos Kōdai-ji, templo de Nene, con sus jardines.",
+            "Después de aquí ya no hicimos más visitas ese día."
           ],
           "description": "Kōdai-ji se fundó en 1606 por iniciativa de Nene (Kita-no-Mandokoro), esposa de Toyotomi Hideyoshi, para recordar a su marido después de su muerte. Es un templo budista zen de la escuela Rinzai en Higashiyama, cerca del parque Maruyama. Conserva jardines con estanques, pabellones y objetos relacionados con Hideyoshi y Nene. Su visita sirve para entender la historia de la unificación de Japón en el siglo XVI y también para pasear por unos jardines generalmente más tranquilos que las calles de Kiyomizu. El templo cobra entrada y no hace falta hacerlo si vamos cortos de tiempo.",
           "links": {
@@ -101,34 +100,34 @@
           "title": "Comer cerca de Kōdai-ji",
           "category": "comida",
           "status": "plan",
-          "time": "~13:40–14:20",
-          "notes": "Después de Kōdai-ji podemos comer por Nene-no-Michi si tenemos hambre, sin elegir restaurante de antemano. Hashiba, justo al lado, sirve yuba y cocina de Kioto (último pedido 14:30); si está lleno o sale caro, buscar algo rápido por la zona. No marcar comida realizada hasta que se confirme.",
+          "notes": "No hicimos esta parada el 13/10: después de Kōdai-ji terminamos las visitas. Queda pendiente si encaja otro día.",
           "plan": [
             "Comer algo cerca de Chion-in y del parque Maruyama.",
             "Después, decidir si nos apetece entrar en Shōren-in o preferimos bajar hacia Gion."
-          ]
+          ],
+          "skipped": true
         },
         {
           "id": "nene-no-michi-1013",
           "title": "Nene-no-Michi · calle tradicional",
           "category": "barrio",
           "status": "plan",
-          "time": "~14:20",
           "locationQuery": "ねねの道 高台寺 京都市東山区",
-          "notes": "Pasear por la calle empedrada Nene-no-Michi junto a Kōdai-ji y Entoku-in rumbo al parque Maruyama. No hay entrada ni hace falta reservar. Si nos pilla de paso, ver el callejón Ishibe-kōji, respetando las restricciones de fotos."
+          "notes": "No hicimos esta parada el 13/10: después de Kōdai-ji terminamos las visitas. Queda pendiente si encaja otro día.",
+          "skipped": true
         },
         {
           "id": "maruyama-park-1013",
           "title": "Maruyama Park · paseo camino de Yasaka",
           "category": "naturaleza",
           "status": "plan",
-          "time": "~14:35",
           "locationQuery": "Maruyama Park Kyoto",
-          "notes": "Venimos de Kōdai-ji por Nene-no-Michi. Cruzar el parque Maruyama tranquilamente hacia Yasaka. Chion-in queda en la parte norte: podemos subir a ver la puerta Sanmon si aún tenemos ganas, y volver después a Yasaka.",
+          "notes": "No hicimos esta parada el 13/10: después de Kōdai-ji terminamos las visitas. Queda pendiente si encaja otro día.",
           "plan": [
             "Cruzar Maruyama desde Yasaka.",
             "Continuar a Chion-in; está al lado."
-          ]
+          ],
+          "skipped": true
         },
         {
           "id": "yasaka",
@@ -140,7 +139,6 @@
             "Ir a Yasaka y pedir el goshuin si hay atención.",
             "Salir por detrás hacia el parque Maruyama y continuar al templo Chion-in."
           ],
-          "time": "~14:45–15:10",
           "priority": "must",
           "transit": {
             "from": "Zona Higashiyama/Gion",
@@ -149,16 +147,16 @@
           },
           "goshuin": true,
           "description": "Yasaka Jinja (八坂神社) es uno de los santuarios sintoístas principales de Kioto. Sus orígenes se sitúan en los primeros siglos de la ciudad, aunque varias fechas de fundación proceden de tradiciones locales. Está dedicado a Susanoo-no-Mikoto, asociado a la protección frente a enfermedades y calamidades, junto con Kushinadahime y sus descendientes. En 869 se celebraron ceremonias de protección contra epidemias en Kioto, tradición que acabaría dando origen al famoso Gion Matsuri, con sus enormes carrozas veraniegas. El santuario adoptó su nombre actual tras los cambios entre budismo y sintoísmo del período Meiji. El gran pabellón principal del siglo XVII reúne el espacio de oración y el santuario bajo un techo de estilo Gion-zukuri; vale la pena fijarse en los faroles con los nombres de comercios y donantes. Es un lugar de culto que sigue muy vivo: podemos presentar nuestros respetos y pedir el goshuin durante el horario de la oficina.",
-          "notes": "Desde Maruyama Park llegamos al santuario Yasaka. Si queremos goshuin, la oficina atiende de 09:00 a 17:00. No dar la visita por hecha hasta confirmación."
+          "notes": "No hicimos esta parada el 13/10: después de Kōdai-ji terminamos las visitas. Queda pendiente si encaja otro día.",
+          "skipped": true
         },
         {
           "id": "chionin",
           "title": "Chion-in",
-          "time": "~15:15–15:55",
           "category": "templo",
           "status": "plan",
           "locationQuery": "Chion-in Kyoto",
-          "notes": "Después de Yasaka, subir por el extremo norte del parque Maruyama a Chion-in: Sanmon, escaleras y pabellones. El acceso al templo CIERRA a las 16:00 (recepción desde 09:00), así que conviene no entretenerse demasiado en otros sitios.",
+          "notes": "No hicimos esta parada el 13/10: después de Kōdai-ji terminamos las visitas. Queda pendiente si encaja otro día.",
           "transit": {
             "from": "Parque Maruyama",
             "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
@@ -170,7 +168,8 @@
             "Decidir si se va a Heian Jingū o hay que pasar por Yamato y regresar al alojamiento."
           ],
           "goshuin": true,
-          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales."
+          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales.",
+          "skipped": true
         },
         {
           "id": "yamato-kyoto-gion-pickup-1013",
@@ -373,7 +372,7 @@
           }
         }
       ],
-      "note": "Martes 13/10: llegamos a RESI STAY Yasaka y dejamos maletas a las 10:45. Sobre las 11:00 visitamos Yasaka Kōshin-dō, templo de muñecos de colores, sin goshuin. A las 12:21 llegamos a Ryōzen Kannon, gran estatua blanca junto a Kōdai-ji (visita en curso). De allí vamos a Kōdai-ji, a comer por Nene-no-Michi, Maruyama Park y Yasaka Jinja; después Chion-in antes del cierre a las 16:00. Opcional Heian Jingū si nos da tiempo y no tenemos que recoger las maletas. Yamato Kyoto Gion (162620) es parada OPCIONAL solo si el seguimiento confirma maletas disponibles, oficina hasta 19:00; luego check-in en RESI desde 15:00. Kiyomizu-dera sigue pendiente para el 18/10 y hoy solo paseamos por las calles de la zona. No dar por realizadas las visitas siguientes ni Yamato.",
+      "note": "Martes 13/10: llegamos al RESI STAY Yasaka y dejamos las maletas a las 10:45. Pasamos por Yasaka Kōshin-dō sobre las 11:00 (sin goshuin); a las 12:21 llegamos a Ryōzen Kannon y después fuimos a Kōdai-ji. Ahí se terminó el turismo del día. NO hicimos Maruyama Park, Yasaka Jinja ni Chion-in, ni las calles y visitas que venían después. La recogida de maletas en Yamato Gion y el registro/check-in definitivo siguen sin confirmar: no marcarlos como realizados.",
       "mapStages": [
         {
           "id": "osaka-kyoto-1013",
@@ -386,7 +385,7 @@
         },
         {
           "id": "higashiyama-visitado-1013",
-          "title": "Kōshin-dō → Ryōzen Kannon → Kōdai-ji",
+          "title": "Kōshin-dō → Ryōzen → Kōdai-ji",
           "mode": "walk",
           "activityIds": [
             "resi-yasaka-llegada-maletas-1045-1013",
@@ -396,33 +395,11 @@
           ]
         },
         {
-          "id": "kodaiji-yasaka-1013",
-          "title": "Kōdai-ji → comer → Yasaka",
+          "id": "fin-visitas-1013",
+          "title": "Fin de visitas · regreso al alojamiento",
           "mode": "walk",
           "activityIds": [
             "kodaiji-1013-optional",
-            "comida-higashiyama-1013",
-            "nene-no-michi-1013",
-            "maruyama-park-1013",
-            "yasaka"
-          ]
-        },
-        {
-          "id": "yasaka-chion-1013",
-          "title": "Yasaka → Chion-in (cierra 16:00)",
-          "mode": "walk",
-          "activityIds": [
-            "yasaka",
-            "chionin"
-          ]
-        },
-        {
-          "id": "chion-hotel-1013",
-          "title": "Chion-in → alojamiento (Yamato opcional)",
-          "mode": "walk",
-          "activityIds": [
-            "chionin",
-            "resi-yasaka-checkin-1013",
             "@hotel-end"
           ]
         }
@@ -430,10 +407,23 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Fushimi, Sanjūsangendō, Nishiki y compras",
+      "title": "Kioto con lluvia · Sanjūsangendō, Nishiki, tiendas y Fushimi",
       "status": "plan",
-      "note": "Miércoles 14/10: la previsión consultada el 13/10 indica CHUBASCOS entre ~05:00 y ~10:00 (probabilidad de lluvia hasta 66 % a las 09:00), despejando desde primera hora de la tarde. ANTES DE SALIR, revisar radar/previsión. Si llueve fuerte, NO subir las escaleras de Fushimi Inari con prisas: empezar por Sanjūsangendō y tiendas a cubierto y dejar Fushimi para primera hora de la tarde, cuando baje la lluvia, aunque habrá más gente. Si amanece seco, mantener salida ~06:30 para Fushimi y el resto original. Prioridad siempre a Sanjūsangendō, Nishiki, TOBICHI y el matcha; Tōfuku-ji se salta si hace falta. Si Yamato no tenía las maletas el 13, recogerlas solo cuando el seguimiento lo confirme.",
+      "note": "Miércoles 14/10: desayunamos tranquilos y salimos del RESI Yasaka sobre las 08:30, NO antes ni hace falta estar en la puerta de ningún templo a las 09:00. Previsión consultada el 13 por la noche: chubascos por la mañana, posible tormenta eléctrica hasta las 12:00 y mejoría desde las 13:00. Sanjūsangendō primero sobre las 09:15 (abre 08:30 de abril a noviembre y buena parte de la visita es cubierta); Nishiki ~10:50, sabiendo que muchas tiendas cierran los miércoles; TOBICHI ~12:10 (11:00–18:00), Baikoan ~13:15 (10:00–19:00) y Fushimi Inari ~14:30 cuando se seque, sin hacer la subida entera. Tōfuku-ji pasa a opcional. Revisar radar/avisos al despertar: si hay rayos, evitar escaleras y zonas expuestas. Si el envío de Yamato sigue pendiente, no inventar recogida: comprobar seguimiento antes de hacer otro desplazamiento.",
       "activities": [
+        {
+          "id": "salida-resi-0830-1014",
+          "title": "Salir del RESI STAY Yasaka",
+          "time": "08:30",
+          "status": "plan",
+          "category": "transporte",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "notes": "Desayunar tranquilamente y salir del alojamiento sobre las 08:30. No hace falta estar en el templo justo a las 09:00. Primera parada Sanjūsangendō, al que queremos llegar sobre las 09:15; si sigue lloviendo, no correr ni forzar el trayecto.",
+          "plan": [
+            "Desayunar sin prisas y salir del RESI sobre las 08:30.",
+            "Ir hacia Sanjūsangendō en bus/taxi o andando según lluvia; calcular margen para llegar sobre 09:15."
+          ]
+        },
         {
           "id": "fushimi",
           "title": "Fushimi Inari Taisha",
@@ -442,10 +432,11 @@
           "priority": "must",
           "locationQuery": "Fushimi Inari Taisha",
           "plan": [
-            "Llegar temprano y recorrer los torii hasta el punto que el grupo quiera subir.",
-            "Priorizar la experiencia sin obsesionarse con completar toda la montaña si consume demasiado tiempo."
+            "Tras las tiendas y cuando haya pasado la lluvia fuerte, ir a Fushimi Inari en transporte público.",
+            "Recorrer los torii y el tramo bajo del monte sin obligarnos a hacer la ruta completa.",
+            "Si sigue habiendo tormenta eléctrica, no subir: mover la visita a otro día y volver tranquilos."
           ],
-          "time": "~07:15",
+          "time": "~14:30–16:15",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
@@ -458,27 +449,32 @@
           },
           "goshuin": true,
           "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido.",
-          "notes": "Salir del RESI Yasaka sobre 06:30 para llegar pronto a Fushimi Inari. No hace falta subir toda la montaña."
+          "notes": "Dejamos Fushimi Inari para la TARDE porque el 14/10 se prevén chubascos y posible tormenta eléctrica hasta mediodía, y desde ~13:00 la previsión mejora. Llegar sobre 14:30 desde la tienda de té, recorrer los torii hasta donde el grupo quiera, sin hacer la subida completa ni caminar si hay rayos. El recinto está abierto 24 h, pero los goshuin/puestos de atención tienen horario limitado (aprox. hasta 17:00).",
+          "links": {
+            "officialWebsite": "https://inari.jp/en/"
+          }
         },
         {
           "id": "tofukuji",
           "title": "Tōfuku-ji",
-          "time": "~09:30",
           "category": "templo",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Tofuku-ji Kyoto",
-          "notes": "Seguir a Tōfuku-ji, puente Tsūtenkyō y jardín zen. Si Fushimi se alarga, saltar Tōfuku-ji y llegar a Sanjūsangendō.",
+          "notes": "Tōfuku-ji queda como opcional. Abre 09:00–16:00 en octubre y es una visita de exterior y jardines. Con chubascos por la mañana y salida a las 08:30 preferimos Sanjūsangendō y los encargos del centro, y Fushimi después de que mejore. NO meter Tōfuku-ji a costa de perder Fushimi, Nishiki o TOBICHI.",
           "transit": {
             "from": "Fushimi Inari",
             "summary": "Keihan Fushimi-Inari (KH34) → Tofukuji (KH36), dos paradas; después caminar al templo.",
             "approximateDuration": "15–20 min"
           },
           "plan": [
-            "Ver el eje principal, Tsūtenkyō y los jardines sin recrearnos demasiado.",
-            "Desde aquí seguimos a pie por los templos secundarios de la zona."
+            "Solo ir si sobra tiempo y el tiempo acompaña; no forma parte de la ruta principal del 14.",
+            "Si no encaja, dejarlo pendiente sin forzar las visitas."
           ],
           "goshuin": true,
-          "description": "Tōfuku-ji se fundó en 1236 como gran monasterio de budismo zen, y sigue siendo uno de los centros importantes de la escuela Rinzai en Kioto. Su nombre recuerda a dos templos clásicos de Nara, Tōdai-ji y Kōfuku-ji, buscando reunir sus ideales de grandeza y estudio. El gran Sanmon, reconstruido a comienzos del siglo XV, se considera una de las puertas zen monumentales más antiguas del país. El puente Tsūtenkyō atraviesa un valle de arces y en otoño es especialmente célebre. Sus jardines modernos reinterpretan la contemplación zen mediante patrones de piedra y musgo, como el famoso damero verde."
+          "description": "Tōfuku-ji se fundó en 1236 como gran monasterio de budismo zen, y sigue siendo uno de los centros importantes de la escuela Rinzai en Kioto. Su nombre recuerda a dos templos clásicos de Nara, Tōdai-ji y Kōfuku-ji, buscando reunir sus ideales de grandeza y estudio. El gran Sanmon, reconstruido a comienzos del siglo XV, se considera una de las puertas zen monumentales más antiguas del país. El puente Tsūtenkyō atraviesa un valle de arces y en otoño es especialmente célebre. Sus jardines modernos reinterpretan la contemplación zen mediante patrones de piedra y musgo, como el famoso damero verde.",
+          "links": {
+            "officialWebsite": "https://renewal.tofukuji.jp/guide/"
+          }
         },
         {
           "id": "sennyuji",
@@ -523,23 +519,27 @@
         {
           "id": "sanjusangendo",
           "title": "Sanjūsangendō",
-          "time": "~11:15",
+          "time": "~09:15–10:15",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Sanjusangendo Kyoto",
-          "notes": "Las 1.001 estatuas de Kannon: visita esencial. Dentro no se permite hacer fotos.",
+          "notes": "Primera visita de mañana. Abre a las 08:30 del 1 de abril al 15 de noviembre (oficial), así que llegar a las 09:15 va bien. Su pabellón cubierto con 1.001 estatuas de Kannon es ideal si siguen los chubascos. Dentro no se permite hacer fotos.",
           "transit": {
             "from": "Sennyū-ji / Imakumano Kannon-ji",
             "summary": "Bajar hacia Higashiyama Nanajo. Se puede caminar; si vamos cansados, bus/taxi corto.",
             "approximateDuration": "20–25 min"
           },
           "plan": [
-            "Entrar al pabellón principal y ver las 1.001 estatuas.",
-            "Mantenerlo aunque haya que recortar Sennyū-ji o Imakumano."
+            "Llegar sobre las 09:15 después de desayunar y salir a las 08:30.",
+            "Visitar el pabellón de las 1.001 estatuas; calcular cerca de una hora.",
+            "Si hay tormenta eléctrica, esperar a que pase antes de desplazarnos por la calle."
           ],
           "goshuin": true,
-          "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior."
+          "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior.",
+          "links": {
+            "officialWebsite": "https://www.sanjusangendo.jp/"
+          }
         },
         {
           "id": "nishiki",
@@ -548,33 +548,40 @@
           "status": "plan",
           "locationQuery": "Nishiki Market Kyoto",
           "plan": [
-            "Usarlo también como comida tardía/picoteo.",
-            "No entretenerse demasiado: la tienda de matcha de 2025 es prioridad máxima después."
+            "Ir hacia Nishiki desde Sanjūsangendō.",
+            "Mirar los puestos que estén abiertos y comer algo sin alargarlo demasiado.",
+            "Si hay muchas persianas bajadas por ser miércoles, pasar directamente a TOBICHI o a las galerías cercanas."
           ],
-          "time": "~13:00",
+          "time": "~10:50–12:00",
           "transit": {
             "from": "Tō-ji",
             "summary": "Kintetsu Toji → Kyoto (1 parada); metro Karasuma Line Kyoto → Shijo; caminar a Nishiki Market.",
             "approximateDuration": "20–25 min"
           },
           "priority": "must",
-          "notes": "Mercado Nishiki para comer/picar y seguir con Hobonichi y el matcha. Como alternativa a comprar palillos el domingo 18, aquí hay tiendas especializadas como Yuuzen (con grabado de nombres según la web del mercado) y Hashiya Mansaku; mirar si hay tiempo y horario. Si llueve por la mañana, priorizar las paradas bajo techo."
+          "notes": "Después de Sanjūsangendō, ir a Nishiki y picar/comer algo. Está cubierto en buena parte, pero la asociación oficial avisa de que MUCHAS tiendas cierran los miércoles: no prometemos un mercado lleno ni que esté abierta cada tienda. Si vemos poco movimiento, acortamos y seguimos a TOBICHI.",
+          "links": {
+            "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/contact/"
+          }
         },
         {
           "id": "tobichi-kyoto",
           "title": "TOBICHI Kyoto · agenda Hobonichi",
-          "time": "~14:30",
+          "time": "~12:10–12:45",
           "category": "compras",
           "status": "plan",
           "priority": "must",
           "locationQuery": "TOBICHI Kyoto",
           "address": "Kotobuki Building 5F, 251-2 Ichinocho, Kawaramachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto",
           "nearestStation": "Kyoto-Kawaramachi / Gion-Shijo",
-          "notes": "Tienda oficial Hobonichi, mirar la agenda de Lorena y sus accesorios.",
+          "notes": "Pasar por TOBICHI Kyoto (Hobonichi) a mirar la agenda de Lorena y accesorios. Dirección oficial: 河原町通四条下ル市之町251-2 寿ビル5F. Horario habitual 11:00–18:00, cierre irregular: comprobar al llegar.",
           "plan": [
-            "Ir a por la agenda Hobonichi que quiere Lorena.",
-            "Mirar fundas y accesorios; no hace falta hacer el desvío de Kanda en Tokio."
-          ]
+            "Ir andando desde Nishiki a la tienda TOBICHI Kyoto (planta 5).",
+            "Mirar agenda Hobonichi y accesorios; si está cerrada, no perder tiempo esperando."
+          ],
+          "links": {
+            "officialWebsite": "https://www.1101.com/tobichi/"
+          }
         },
         {
           "id": "baikoan-matcha-2025",
@@ -582,18 +589,17 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "time": "~15:30",
+          "time": "~13:15–13:45",
           "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
           "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
-          "notes": "Buscar la tienda de matcha del señor mayor del viaje 2025. Baikoan es una identificación PROBABLE, no confirmada: al verla comprobar que coincide con tu recuerdo.",
+          "notes": "Buscar la tienda de té de 2025: probablemente Baikoan (梅香庵茶舗), 46-1 Tachibanacho. La asociación de comerciantes del té indica horario 10:00–19:00 y cierre domingo/festivo; miércoles debería abrir, pero la identificación como aquella tienda sigue sin confirmar.",
           "plan": [
-            "Parada SÍ O SÍ: volver a la tienda del señor mayor de 2025.",
-            "Pedir que nos recomiende matcha/té y comprar para llevar.",
-            "La identificación como Baikoan encaja ya muy bien con fuentes actuales: pequeña tienda de Uji tea regentada por un señor mayor.",
-            "Si al verla no coincide con tu recuerdo, no dar la tarea por resuelta."
+            "Desde TOBICHI ir hacia Baikoan; comprobar al verla que es la del recuerdo de 2025.",
+            "Comprar matcha solo si es la tienda correcta; si no lo es, no afirmarlo en el diario."
           ],
           "links": {
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto"
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto",
+            "officialWebsite": "https://www.kyoto-tea.net/membersindex/baikouan"
           },
           "transit": {
             "from": "Nishiki Market",
@@ -660,33 +666,41 @@
       ],
       "mapStages": [
         {
-          "id": "fushimi-kyoto",
-          "title": "Hotel → Fushimi y Tōfuku-ji",
+          "id": "hotel-sanjusangendo-1014",
+          "title": "08:30 hotel → Sanjūsangendō",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "fushimi",
-            "tofukuji"
+            "salida-resi-0830-1014",
+            "sanjusangendo"
           ]
         },
         {
-          "id": "sanjusangendo-nishiki",
-          "title": "Tōfuku-ji → Sanjūsangendō → Nishiki",
+          "id": "sanjusangendo-nishiki-1014",
+          "title": "Sanjūsangendō → Nishiki",
           "mode": "transit",
           "activityIds": [
-            "tofukuji",
             "sanjusangendo",
             "nishiki"
           ]
         },
         {
-          "id": "nishiki-tiendas",
-          "title": "Nishiki → Hobonichi → matcha → hotel",
+          "id": "centro-compras-1014",
+          "title": "Nishiki → TOBICHI → matcha",
           "mode": "mixed",
           "activityIds": [
             "nishiki",
             "tobichi-kyoto",
+            "baikoan-matcha-2025"
+          ]
+        },
+        {
+          "id": "fushimi-tarde-1014",
+          "title": "Tiendas → Fushimi Inari → hotel",
+          "mode": "transit",
+          "activityIds": [
             "baikoan-matcha-2025",
+            "fushimi",
             "@hotel-end"
           ]
         }
