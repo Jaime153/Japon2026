@@ -22,6 +22,7 @@ const activityStop = (a) => ({
   id: a.id,
   title: a.title,
   query: a.parking?.mapsQuery || a.locationQuery || a.address || '',
+  mapCoords: a.mapCoords || null,
   note: a.parking?.notes || a.notes?.slice(0, 135) || '',
   time: a.time || '',
   category: a.category,
