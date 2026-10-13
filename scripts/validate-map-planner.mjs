@@ -81,13 +81,15 @@ if (osakaSegment) {
   const sundayDay = osakaSegment.days.find(day => day.date === '2026-10-11');
   const mondayDay = osakaSegment.days.find(day => day.date === '2026-10-12');
   const getActivity = (day, id) => day?.activities.find(a => a.id === id);
-  assert(getActivity(sundayDay, 'salida-gn98-0745-1011')?.time === '07:45',
-    'Domingo 11: salida del alojamiento debe figurar a las 07:45');
-  assert(getActivity(sundayDay, 'namba-yasaka')?.time === '~08:45–09:15' &&
+  // Salida acordada con el grupo: 08:30. No adelantarla unilateralmente.
+  assert(getActivity(sundayDay, 'salida-gn98-0830-1011')?.time === '08:30',
+    'Domingo 11: salida acordada del GN98 a las 08:30');
+  assert(getActivity(sundayDay, 'namba-yasaka')?.time === '~09:00–09:30' &&
     getActivity(sundayDay, 'namba-yasaka')?.notes?.includes('09:00'),
-    'Namba Yasaka: 30 minutos en el santuario, con goshuin desde las 09:00');
-  assert(getActivity(sundayDay, 'desayuno-namba-1011')?.time === '~08:10–08:35',
-    'Antes del santuario, desayuno por Namba en lugar de esperar 1 hora');
+    'Namba Yasaka: ir tras salir a las 08:30 y pedir goshuin desde las 09:00');
+  assert(getActivity(sundayDay, 'desayuno-namba-1011')?.status === 'opcional' &&
+    !getActivity(sundayDay, 'desayuno-namba-1011')?.time,
+    'Domingo: no fijar desayuno antes de la salida del GN98 a las 08:30');
   const buySky = getActivity(sundayDay, 'comprar-entradas-umeda-sky-1012');
   const sky = getActivity(mondayDay, 'umeda-sky');
   assert(buySky?.status === 'plan' && buySky?.links?.reservation?.includes('asoview.com'),
