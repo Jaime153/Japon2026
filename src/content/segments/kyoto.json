@@ -195,68 +195,6 @@
           "address": "〒605-0812 京都府京都市東山区毘沙門町28"
         },
         {
-          "id": "kiyomizu",
-          "title": "Kiyomizu-dera",
-          "category": "templo",
-          "status": "pendiente",
-          "priority": "must",
-          "locationQuery": "Kiyomizu-dera Kyoto",
-          "notes": "No lo hemos visitado hoy 13/10. Lo dejamos para el domingo 18 temprano, con el grupo completo. A primera hora hay menos gente para las fotos; horario oficial desde las 06:00. La previsión consultada el 13/10 anuncia tiempo seco por la mañana, pero hay que volver a comprobarlo la víspera.",
-          "transit": {
-            "from": "RESI STAY Reception, Kyoto Station",
-            "summary": "Bus urbano o taxi hasta la zona de Kiyomizu-michi / Gojo-zaka y subida a pie por Kiyomizu-zaka; confirmar recorrido y tráfico en Maps.",
-            "approximateDuration": "~30–45 min con subida",
-            "steps": [
-              "Salir desde Kyoto Station tras el registro.",
-              "Elegir bus o taxi hacia Higashiyama/Kiyomizu según colas.",
-              "Última parte cuesta arriba a pie hasta Kiyomizu-dera."
-            ]
-          },
-          "plan": [
-            "Lo dejamos para la mañana del domingo 18, cuando hay más margen para hacer fotos y comprar palillos.",
-            "Hoy no hay que desplazarse hasta Kiyomizu."
-          ],
-          "goshuin": true,
-          "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO."
-        },
-        {
-          "id": "ninenzaka-sannenzaka",
-          "title": "Sannenzaka y Ninenzaka · calles tradicionales",
-          "category": "barrio",
-          "status": "pendiente",
-          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
-          "transit": {
-            "from": "Kiyomizu-dera",
-            "summary": "Bajada andando por Kiyomizu-zaka, Sannenzaka y Ninenzaka.",
-            "approximateDuration": "~40–50 min con fotos"
-          },
-          "plan": [
-            "Lo dejamos para la mañana del domingo 18, cuando hay más margen para hacer fotos y comprar palillos.",
-            "Hoy no hay que desplazarse hasta Kiyomizu."
-          ],
-          "notes": "Hoy no hacemos estas calles para no ir corriendo ni sufrir la multitud. Las dejamos para el domingo 18 después de Kiyomizu: hacer fotos y comprar palillos con las tiendas abiertas, sin obligarse a entrar en todas."
-        },
-        {
-          "id": "yasaka-pagoda",
-          "title": "Yasaka Pagoda · Hōkan-ji",
-          "category": "templo",
-          "status": "pendiente",
-          "priority": "must",
-          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
-          "notes": "No visitada hoy 13/10: la dejamos para la ruta de fotos del domingo 18, junto con Kiyomizu y las cuestas tradicionales. No asumir que se podrá entrar en el templo.",
-          "transit": {
-            "from": "Ninenzaka",
-            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
-            "approximateDuration": "~5–10 min"
-          },
-          "plan": [
-            "Lo dejamos para la mañana del domingo 18, cuando hay más margen para hacer fotos y comprar palillos.",
-            "Hoy no hay que desplazarse hasta Kiyomizu."
-          ],
-          "goshuin": true,
-          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos."
-        },
-        {
           "id": "kenninji",
           "title": "Kennin-ji",
           "category": "templo",
