@@ -31,18 +31,29 @@
           ]
         },
         {
-          "id": "resi-recepcion-kioto-1013",
-          "title": "RESI STAY · recepción y dejar equipaje",
+          "id": "resi-yasaka-llegada-maletas-1045-1013",
+          "title": "RESI STAY Yasaka · dejamos las maletas",
           "category": "transporte",
-          "status": "plan",
-          "time": "~09:45–10:15",
-          "locationQuery": "RESI STAY Reception Counter ON Building 5F 544-2 Higashishiokojicho Kyoto",
-          "notes": "RESI STAY Reception Counter, ON Building planta 5, junto a Kyoto Station. El registro de huéspedes se hace aquí, con pasaportes y reserva; abre 08:00–20:00. Permiten guardar el equipaje gratis. La habitación del apartamento Yasaka NO está disponible hasta las 15:00. Preguntar si nos pueden llevar las bolsas al alojamiento (puede tener coste según la reserva). Si se quedan en recepción sin traslado, volver a por ellas antes de las 20:00.",
+          "status": "confirmado",
+          "time": "10:45",
+          "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
+          "address": "〒605-0812 京都府京都市東山区毘沙門町28",
+          "notes": "Llegamos al alojamiento de Kioto y dejamos las maletas a las 10:45, según lo confirmado desde allí. No dar por hecha la entrada a la habitación, disponible normalmente desde las 15:00. Desde aquí podemos ir andando a Kiyomizu-dera.",
           "plan": [
-            "Ir al RESI STAY Reception Counter del ON Building 5F al llegar a Kyoto Station.",
-            "Hacer el registro obligatorio y dejar las bolsas; preguntar si se pueden enviar al apartamento.",
-            "No ir ahora a RESI STAY Yasaka: la habitación es desde las 15:00.",
-            "Si no trasladan nuestras bolsas, habrá que volver a la recepción a por ellas antes de las 20:00."
+            "10:45: llegada al alojamiento y maletas dejadas.",
+            "Empezar el paseo de Higashiyama desde aquí, sin regresar a Kyoto Station."
+          ]
+        },
+        {
+          "id": "resi-recepcion-kioto-1013",
+          "title": "Comprobar registro RESI STAY (si falta)",
+          "category": "transporte",
+          "status": "pendiente",
+          "locationQuery": "RESI STAY Reception Counter ON Building 5F 544-2 Higashishiokojicho Kyoto",
+          "notes": "Ya llegamos al apartamento a las 10:45 y dejamos las maletas. Comprobar si está hecho el registro obligatorio de RESI STAY; no afirmar que se hizo en el mostrador de Kyoto Station.",
+          "plan": [
+            "Preguntar si está todo registrado con los pasaportes y la reserva.",
+            "Solo pasar por la recepción de Kyoto Station si todavía es necesario."
           ],
           "links": {
             "officialWebsite": "https://resistay.jp/en/reception/",
@@ -115,12 +126,11 @@
         {
           "id": "yasaka-pagoda",
           "title": "Yasaka Pagoda · Hōkan-ji",
-          "time": "~13:00–13:25",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
-          "notes": "Parada de fotos en la famosa calle donde se ve la pagoda de cinco pisos. No damos por segura la entrada al interior ni que podamos conseguir goshuin aquí: depende de que el pequeño templo esté abierto. Seguimos hacia el almuerzo.",
+          "notes": "Parada de fotos en la famosa calle donde se ve la pagoda de cinco pisos. No damos por segura la entrada al interior ni que podamos conseguir goshuin aquí: depende de que el pequeño templo esté abierto. Seguimos hacia el almuerzo. La visita a la pagoda no está confirmada aún. A las 12:21 nos han dicho que estamos en Ryōzen Kannon, al lado de Kōdai-ji.",
           "transit": {
             "from": "Ninenzaka",
             "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
@@ -133,6 +143,25 @@
           ],
           "goshuin": true,
           "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos."
+        },
+        {
+          "id": "ryozen-kannon-1013",
+          "title": "Ryōzen Kannon · estatua blanca de Kannon",
+          "category": "templo",
+          "status": "plan",
+          "time": "~12:21",
+          "locationQuery": "霊山観音 京都市東山区下河原町526-2",
+          "address": "〒605-0825 京都府京都市東山区下河原町526-2",
+          "notes": "Estamos aquí ahora, mensaje del martes 13/10 sobre las 12:21. Llegada confirmada, visita en curso; no marcar como terminada. Está junto a Kōdai-ji, en Higashiyama. Horario 08:40–16:20 (última entrada 16:00); entrada de adulto 300 ¥, incluye incienso.",
+          "description": "Ryōzen Kannon es la gran estatua blanca de Kannon, de 24 metros, que se ve desde Higashiyama. Se construyó en 1955 para recordar a las personas fallecidas durante la Segunda Guerra Mundial y pedir por la paz. Kannon es el bodhisattva budista de la compasión. Dentro del monumento hay otras imágenes religiosas, y en el recinto también hay pequeños lugares para dejar ofrendas y rezar. Es una parada muy cerca de Kōdai-ji, distinta de los templos antiguos de la zona.",
+          "plan": [
+            "Ver la gran estatua blanca de Kannon y recorrer el recinto.",
+            "Después podemos seguir por Higashiyama, comer por la zona y acercarnos a Yasaka."
+          ],
+          "links": {
+            "officialWebsite": "http://www.ryozen-kwannon.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E9%9C%8A%E5%B1%B1%E8%A6%B3%E9%9F%B3%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E4%B8%8B%E6%B2%B3%E5%8E%9F%E7%94%BA526-2"
+          }
         },
         {
           "id": "comida-higashiyama-1013",
@@ -300,28 +329,29 @@
           "notes": "Opcional si apetece salir a cenar o dar una vuelta después de Gion; no es necesario para completar el día."
         }
       ],
-      "note": "Martes 13/10: salimos del GN98 de Osaka a las 08:00. En Kyoto Station pasamos por la recepción de RESI STAY a hacer el registro obligatorio y dejar las bolsas. Eso NO es entrar en la habitación: RESI STAY Yasaka se ocupa desde las 15:00. Visitamos Kiyomizu, Sannenzaka/Ninenzaka, la pagoda Yasaka, comemos y vamos a Yasaka Shrine. Sobre las 16:00 recogeremos las maletas en Yamato Kyoto Gion (162620), si el seguimiento confirma que están disponibles, y desde allí iremos directamente al apartamento. Si aún no han llegado, vamos al alojamiento y recogemos las maletas el 14. Gion y cena quedan libres.\nDiario 13/10, sobre las 11:00: pasamos por Yasaka Kōshin-dō (sin goshuin). Siguiente: pagoda Yasaka, pendiente de confirmar.",
+      "note": "Martes 13/10: a las 10:45 llegamos a RESI STAY Yasaka y dejamos las maletas. Sobre las 11:00 pasamos por Yasaka Kōshin-dō (sin goshuin). A las 12:21 estamos en Ryōzen Kannon, junto a Kōdai-ji; la visita sigue en curso. Después queda comer, ir a Yasaka y comprobar si han llegado las maletas a Yamato Gion. No están confirmadas las visitas a Kiyomizu ni a la pagoda Yasaka, ni tampoco la recogida de Yamato.",
       "mapStages": [
         {
           "id": "osaka-a-kyoto",
-          "title": "GN98 → Kyoto Station · dejar equipaje",
+          "title": "GN98 → RESI STAY Yasaka (10:45)",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
             "osaka-kyoto-tren-1013",
-            "resi-recepcion-kioto-1013"
+            "resi-yasaka-llegada-maletas-1045-1013"
           ]
         },
         {
           "id": "higashiyama-kiyomizu",
-          "title": "Kiyomizu → calles → pagoda Yasaka",
+          "title": "RESI Yasaka → Higashiyama → Ryōzen Kannon",
           "mode": "mixed",
           "activityIds": [
-            "resi-recepcion-kioto-1013",
+            "resi-yasaka-llegada-maletas-1045-1013",
             "kiyomizu",
             "ninenzaka-sannenzaka",
             "yasaka-koshindo-1013",
             "yasaka-pagoda",
+            "ryozen-kannon-1013",
             "comida-higashiyama-1013"
           ]
         },
