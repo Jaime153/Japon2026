@@ -264,22 +264,34 @@ if (kyoto15) {
   assert(day?.activities.find(a => a.id === 'arashiyama-onsen')?.priority === 'must',
     '15/10: onsen imprescindible para el grupo');
   const choice = day?.activities.find(a => a.id === 'arashiyama-onsen')?.bathChoices;
-  assert(choice?.defaultId === 'private' && choice?.options?.length === 3,
-    '15/10: el selector debe tener exactamente tres modalidades y privado por defecto');
-  assert(['tattoo-friendly','covered','private'].every(id =>
+  assert(choice?.defaultId === 'sento-nijo' && choice?.options?.length === 5,
+    '15/10: cinco alternativas, Thoron Inari seleccionado por defecto');
+  assert(['sento-nijo','sento-sauna','sento-heritage','tattoo-friendly','private'].every(id =>
     choice?.options?.some(option => option.id === id)),
-    '15/10: falta modalidad: tatuajes admitidos, tapados o privado');
-  assert(choice?.options?.find(o=>o.id==='tattoo-friendly')?.venue==='Kurama Onsen',
-    '15/10: la opción oficialmente tattoo friendly debe ser Kurama');
-  assert(choice?.options?.find(o=>o.id==='private')?.confirmed===false &&
-    choice?.options?.find(o=>o.id==='covered')?.confirmed===false,
-    '15/10: no prometer política ni reserva privada, ni uso de día en Ohara');
+    '15/10: mantener cinco modalidades, incluido Kurama por ID histórico y Hanaikada privado');
+  assert(choice?.options?.find(o=>o.id==='sento-nijo')?.venue.includes('Thoron') &&
+    choice?.options?.find(o=>o.id==='sento-nijo')?.confirmed===true &&
+    choice?.options?.find(o=>o.id==='sento-nijo')?.evidence==='official',
+    '15/10: Thoron tatuajes en web oficial y sento NO termal natural');
+  assert(choice?.options?.find(o=>o.id==='sento-sauna')?.evidence==='tourism' &&
+    choice?.options?.find(o=>o.id==='sento-heritage')?.evidence==='tourism',
+    '15/10: distinguir testimonios Kyo Navi de confirmacion de la propia sede');
+  assert(choice?.options?.find(o=>o.id==='tattoo-friendly')?.venue.includes('Kurama') &&
+    choice?.options?.find(o=>o.id==='tattoo-friendly')?.evidence==='official' &&
+    choice?.options?.find(o=>o.id==='private')?.confirmed===false,
+    '15/10: Kurama natural lejano; Hanaikada privado SIN reserva confirmada');
   assert(!day?.activities.find(a => a.id === 'arashiyama-onsen')?.locationQuery.includes('Fufu'),
     '15/10: no enviar al grupo a Fufu no Yu, que prohíbe tatuajes');
   assert(ids.indexOf('togetsukyo-1015') < ids.indexOf('arashiyama-comida-1015'),
     '15/10: puente antes de almuerzo y onsen (Hanaikada pide comer antes)');
-  assert(day?.activities.find(a => a.id === 'arashiyama-onsen')?.time==='Según reserva',
-    '15/10: no inventar horario para baño sin reserva');
+  assert(kyoto15.stages.find(s=>s.id==='arashiyama-paseo-1015')?.mode==='walk' &&
+    kyoto15.stages.find(s=>s.id==='arashiyama-al-bano-1015')?.mode==='transit',
+    '15/10: solo caminar dentro Arashiyama; ir en transporte a sento urbano');
+  assert(kyoto15.stages.at(-2)?.stops.at(-1)?.bathChoices?.length===5 &&
+    kyoto15.stages.at(-1)?.stops.at(-1)?.kind==='hotel',
+    '15/10: selector 5 baños en mapa y vuelta directa al hotel despues del baño');
+  assert(day?.activities.find(a => a.id === 'arashiyama-onsen')?.time==='Por decidir',
+    '15/10: el horario del baño depende de cuándo acabemos TODAS las visitas');
   assert(day?.activities.find(a => a.id === 'tenryuji-1015')?.status === 'opcional',
     '15/10: Tenryu-ji no puede imponerse');
 }
