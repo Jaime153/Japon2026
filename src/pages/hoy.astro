@@ -55,6 +55,7 @@ const days = flattenDays(segments);
   <noscript><p class="rounded-2xl bg-amber-50 p-4 text-sm">Activa JavaScript para que el modo Hoy seleccione automáticamente la fecha.</p></noscript>
 
   <script>
+    import { japanClock, parseTimeWindow, selectNextActivity } from '../lib/next-activity.mjs';
     const entries = [...document.querySelectorAll('.today-entry')];
     const context = document.querySelector('#today-context');
     const label = document.querySelector('#selected-day-label');
@@ -68,8 +69,7 @@ const days = flattenDays(segments);
     const locateNext = document.querySelector('#locate-next');
     const nextDistance = document.querySelector('#next-distance');
 
-    const pageOpenedAt = new Date();
-    const localIso = [pageOpenedAt.getFullYear(), String(pageOpenedAt.getMonth() + 1).padStart(2, '0'), String(pageOpenedAt.getDate()).padStart(2, '0')].join('-');
+    let localIso = japanClock().date;
     let todayIndex = entries.findIndex((entry) => entry.getAttribute('data-date') === localIso);
     let current = todayIndex;
 
@@ -79,10 +79,8 @@ const days = flattenDays(segments);
     }
 
     function parseMinutes(value) {
-      const normalized = value.replace(/^~/, '');
-      if (!/^\d{1,2}:\d{2}$/.test(normalized)) return null;
-      const [h, m] = normalized.split(':').map(Number);
-      return h * 60 + m;
+      // También admite «~12:25–13:20», no solo «~19:00».
+      return parseTimeWindow(value)?.start ?? null;
     }
 
     function setNextTarget(card) {
@@ -104,8 +102,18 @@ const days = flattenDays(segments);
     function refreshNext(entry) {
       const date = entry.getAttribute('data-date') ?? '';
       const visibleCards = [...entry.querySelectorAll('[data-activity-card]')]
-        .filter((card) => !card.closest('[data-variant-panel].hidden'));
-      const cards = visibleCards.filter((card) => card.getAttribute('data-completed') !== 'true');
+        .filter(card => !card.closest('[data-variant-panel].hidden'));
+      const primary = visibleCards.map(card => ({
+        card,
+        id: card.getAttribute('data-activity-id') ?? '',
+        title: card.getAttribute('data-activity-title') ?? '',
+        time: card.getAttribute('data-activity-time') ?? '',
+        status: card.getAttribute('data-activity-status') ?? 'plan',
+        skipped: card.getAttribute('data-activity-skipped') === 'true',
+        completed: card.getAttribute('data-completed') === 'true',
+      })).filter(item => !item.skipped &&
+        item.status !== 'opcional' && item.status !== 'pendiente');
+      const pending = primary.filter(item => !item.completed);
 
       if (!visibleCards.length) {
         nextKicker.textContent = 'Plan';
@@ -114,57 +122,55 @@ const days = flattenDays(segments);
         setNextTarget(null);
         return;
       }
-
-      if (!cards.length) {
+      if (!primary.length) {
+        nextKicker.textContent = 'Hoy';
+        nextTitle.textContent = 'Sin paradas principales pendientes';
+        nextNote.textContent = 'Las actividades opcionales están en la lista del día.';
+        setNextTarget(null);
+        return;
+      }
+      if (!pending.length) {
         nextKicker.textContent = 'Hoy';
         nextTitle.textContent = 'Plan completado ✓';
-        nextNote.textContent = 'Has marcado todas las paradas de este día como hechas.';
+        nextNote.textContent = 'Has marcado todas las paradas principales como hechas.';
         setNextTarget(null);
         return;
       }
 
       if (date !== localIso) {
         nextKicker.textContent = date > localIso ? 'Próximo día' : 'Día consultado';
-        nextTitle.textContent = cards[0].getAttribute('data-activity-title') ?? 'Primera parada';
-        nextNote.textContent = 'Abre este día para consultar el orden completo.';
-        setNextTarget(cards[0]);
+        nextTitle.textContent = pending[0].title || 'Primera parada';
+        nextNote.textContent = 'Consulta el orden completo de este día.';
+        setNextTarget(pending[0].card);
         return;
       }
 
-      const clock = new Date();
-      const currentMinutes = clock.getHours() * 60 + clock.getMinutes();
-      const timed = cards
-        .map((card) => ({
-          card,
-          time: card.getAttribute('data-activity-time') ?? '',
-          minutes: parseMinutes(card.getAttribute('data-activity-time') ?? ''),
-        }))
-        .filter((item) => item.minutes !== null);
-
-      const upcoming = timed.find((item) => item.minutes >= currentMinutes);
-      if (upcoming) {
+      // Cada minuto se evalúa de nuevo en JST; los intervalos no se descartan.
+      const selection = selectNextActivity(pending, japanClock().minutes);
+      const chosen = selection.activity;
+      if (selection.kind === 'active' && chosen) {
+        nextKicker.textContent = 'Ahora · según planning';
+        nextTitle.textContent = chosen.time + ' · ' + chosen.title;
+        nextNote.textContent = 'Franja prevista; no confirma que ya estéis allí.';
+        setNextTarget(chosen.card);
+      } else if (selection.kind === 'upcoming' && chosen) {
         nextKicker.textContent = 'Siguiente';
-        nextTitle.textContent = `${upcoming.time} · ${upcoming.card.getAttribute('data-activity-title') ?? ''}`;
-        nextNote.textContent = upcoming.time.startsWith('~')
+        nextTitle.textContent = chosen.time + ' · ' + chosen.title;
+        nextNote.textContent = selection.timeWindow?.approximate
           ? 'Hora aproximada del planning; úsala como guía.'
-          : 'Hora fija del planning.';
-        setNextTarget(upcoming.card);
-        return;
-      }
-
-      if (timed.length) {
+          : 'Hora prevista en el planning.';
+        setNextTarget(chosen.card);
+      } else if (selection.kind === 'untimed' && chosen) {
+        nextKicker.textContent = 'Sin hora fijada';
+        nextTitle.textContent = chosen.title;
+        nextNote.textContent = 'No quedan paradas principales con hora posterior; revisa el resto del plan.';
+        setNextTarget(chosen.card);
+      } else {
         nextKicker.textContent = 'Hoy';
         nextTitle.textContent = 'No quedan hitos con hora por delante';
-        nextNote.textContent = 'Las actividades sin hora siguen visibles en el orden del día.';
-        const untimed = cards.find((card) => parseMinutes(card.getAttribute('data-activity-time') ?? '') === null);
-        setNextTarget(untimed ?? null);
-        return;
+        nextNote.textContent = 'Revisa el día: las horas del planning son orientativas.';
+        setNextTarget(null);
       }
-
-      nextKicker.textContent = 'Siguiente del plan';
-      nextTitle.textContent = cards[0].getAttribute('data-activity-title') ?? 'Primera parada';
-      nextNote.textContent = 'Este día todavía no tiene horas estimadas suficientes para calcularlo por reloj.';
-      setNextTarget(cards[0]);
     }
 
     function show(index) {
@@ -287,6 +293,14 @@ const days = flattenDays(segments);
 
     show(current);
     window.setInterval(() => {
+      // Cambio de fecha en Japón mientras la pestaña sigue abierta.
+      const newDate = japanClock().date;
+      if (newDate !== localIso) {
+        localIso = newDate;
+        todayIndex = entries.findIndex(e => e.getAttribute('data-date') === localIso);
+        show(todayIndex >= 0 ? todayIndex : current);
+        return;
+      }
       const entry = entries[current];
       if (entry) refreshNext(entry);
     }, 60000);
