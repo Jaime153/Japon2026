@@ -45,13 +45,17 @@ if (day) {
   ask('13:20', 'comer-higashiyama-noreste-1014', 'upcoming');
   ask('14:22', 'comer-higashiyama-noreste-1014', 'active'); // Comida real desde ~14:12.
   ask('14:40', 'comer-higashiyama-noreste-1014', 'active'); // Salida del café no confirmada.
-  ask('15:15', 'nanzenji-1014', 'active'); // Presencia REAL comunicada en Nanzen-ji.
-  ask('15:30', 'nanzenji-1014', 'active'); // Fin 16:10 solo estimado.
-  ask('16:20', 'regreso-resi-1014', 'upcoming'); // Heian aún no confirmado; opcional.
-  ask('17:30', 'regreso-resi-1014', 'active');
+  ask('15:15', 'nanzenji-1014', 'upcoming'); // Presencia REAL, sin intervalo de salida inventado.
+  ask('15:30', 'heian-jingu-1014', 'upcoming'); // Jaime ha salido de Nanzen-ji.
+  ask('16:20', 'heian-jingu-1014', 'upcoming'); // De camino a Heian; llegada no confirmada.
+  ask('16:45', 'heian-jingu-1014', 'active'); // Franja prevista, no visita comprobada.
+  ask('17:30', 'regreso-resi-1014', 'untimed'); // Regresar SOLO al final del paseo/cena.
   const late = selectNextActivity(activities, at('19:00'));
-  check(late.kind === 'finished' && !late.activity,
-    'Gion Tanto es opcional, no la próxima parada automática');
+  check(late.kind === 'untimed' && late.activity?.id === 'regreso-resi-1014',
+    'Gion Tanto es opcional y el regreso no tiene una hora fija');
+  const heianDone = activities.map(a => a.id === 'heian-jingu-1014' ? {...a, completed: true} : a);
+  check(selectNextActivity(heianDone, at('16:45')).activity?.id === 'regreso-resi-1014',
+    'Cuando Heian se marque hecho, el siguiente hito es el regreso después del paseo');
   const eikandoDone = activities.map(a => a.id === 'eikando-1014' ? {...a, completed: true} : a);
   check(selectNextActivity(eikandoDone, at('12:34')).activity?.id === 'comer-higashiyama-noreste-1014',
     'Marcar Eikan-dō como hecho debe pasar a la comida, sin adelantar Heian');
@@ -62,11 +66,12 @@ if (day) {
     'Hora real de inicio de la comida y final solo estimado deben estar anotados');
   const nanzen = activities.find(a => a.id === 'nanzenji-1014');
   check(parseTimeWindow(nanzen?.time)?.start === at('15:15') &&
-        parseTimeWindow(nanzen?.time)?.end === at('16:10') &&
+        parseTimeWindow(nanzen?.time)?.end === null &&
         nanzen?.status === 'confirmado',
-    'Nanzen-ji real 15:15; fin estimado 16:10 y actividad visible en Hoy');
-  check(activities.find(a => a.id === 'heian-jingu-1014')?.status === 'opcional',
-    'Heian no debe aparecer como visita hecha ni como siguiente automática');
+    'Nanzen-ji real 15:15; hora de salida no comunicada');
+  check(activities.find(a => a.id === 'heian-jingu-1014')?.status === 'plan' &&
+        activities.find(a => a.id === 'heian-jingu-1014')?.completed === false,
+    'Heian debe ser siguiente planificada por decisión real, sin marcar visita hecha');
   const noOptionals = selectNextActivity([
     {id:'solo-opcional',time:'~19:00',status:'opcional'},
     {id:'otro-saltado',time:'~14:30–15:30',status:'plan',skipped:true},
