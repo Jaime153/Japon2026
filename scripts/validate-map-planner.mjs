@@ -243,13 +243,28 @@ if (kyoto14) {
   assert(kyoto14.stages.at(-1).stops.at(-1).kind === 'hotel',
     '14/10: ruta de norte a sur termina en RESI Yasaka');
 }
+// 15/10 compactado: Kinkaku + Arashiyama corto + onsen, sin templos lejanos.
+// Se libera el 17 para Kiyomizu en kimono y ceremonia con las cuatro.
 const kyoto15 = get('2026-10-15');
 if (kyoto15) {
   const ids = kyoto15.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['otagi','adashino','bamboo','tenryuji-1015','togetsukyo-1015','arashiyama-onsen'])
-    assert(ids.includes(id), '15/10 Arashiyama: falta '+id);
-  assert(ids.indexOf('arashiyama-onsen')>ids.indexOf('togetsukyo-1015'),
-    '15/10: onsen después del puente');
+  for (const id of ['kinkaku','bamboo','arashiyama-comida-1015','togetsukyo-1015','arashiyama-onsen'])
+    assert(ids.includes(id), '15/10 compactado: falta visita principal '+id);
+  for (const id of ['otagi','adashino','ryoanji','ninnaji','tenryuji-1015'])
+    assert(!ids.includes(id), '15/10: se ha colado templo opcional que recorta el onsen: '+id);
+  assert(ids.indexOf('kinkaku') < ids.indexOf('bamboo') &&
+    ids.indexOf('bamboo') < ids.indexOf('togetsukyo-1015') &&
+    ids.indexOf('togetsukyo-1015') < ids.indexOf('arashiyama-onsen'),
+    '15/10: orden debe ser Kinkaku → bambú → puente → onsen');
+  assert(kyoto15.stages[0].stops[0].kind === 'hotel' &&
+    kyoto15.stages.at(-1).stops.at(-1).kind === 'hotel',
+    '15/10: salida y regreso al alojamiento');
+  const kyotoData = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
+  const day = kyotoData?.days.find(x => x.date === '2026-10-15');
+  assert(day?.activities.find(a => a.id === 'arashiyama-onsen')?.priority === 'must',
+    '15/10: onsen imprescindible para el grupo');
+  assert(day?.activities.find(a => a.id === 'tenryuji-1015')?.status === 'opcional',
+    '15/10: Tenryu-ji no puede imponerse');
 }
 const kyoto16 = get('2026-10-16');
 if (kyoto16) {
@@ -263,25 +278,34 @@ if (kyoto16) {
 const kyoto17 = get('2026-10-17');
 if (kyoto17) {
   const ids = kyoto17.stages.flatMap(s => s.stops.map(p => p.id));
-  assert(ids.includes('kinkaku') && ids.includes('tatuajes-gion-1017'),
-    '17/10: Kinkaku y tatuajes previstos con hueco por confirmar');
+  for (const id of ['kimono-te-kiyomizu-1017','kiyomizu-1017','ninenzaka-palillos-fotos-1017','yasaka-pagoda-fotos-1017']) {
+    assert(ids.includes(id), '17/10: faltan kimono, té, Kiyomizu o fotos para las cuatro: '+id);
+  }
+  assert(!ids.includes('kinkaku') && !ids.includes('tatuajes-gion-1017'),
+    '17/10: no volver a meter Kinkaku ni tatuajes sin cita confirmada en la ruta principal');
+  const kyotoData = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
+  const day = kyotoData?.days.find(x => x.date === '2026-10-17');
+  assert(day?.activities.find(a => a.id === 'tatuajes-gion-1017')?.status === 'pendiente',
+    '17/10: conservar interés por tatuajes, pero SIN reserva');
+  assert(day?.activities.find(a => a.id === 'kimono-te-kiyomizu-1017')?.notes.includes('no confirmada'),
+    '17/10: NO inventar reserva de kimono/ceremonia');
+  assert(kyoto17.stages.at(-1).stops.at(-1).kind === 'hotel',
+    '17/10: volver a RESI tras Kiyomizu');
 }
 const kyoto18 = get('2026-10-18');
 if (kyoto18) {
   const ids = kyoto18.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['kiyomizu-1018','ninenzaka-palillos-fotos-1018','yasaka-pagoda-fotos-1018','kyoto-station-h2','kix-vilma-marga'])
-    assert(ids.includes(id), '18/10: falta visita/fotos o transporte '+id);
-  assert(!ids.includes('ginkakuji'),
-    '18/10: Ginkaku ya se organiza el día 14 para las cuatro personas');
-  assert(ids.indexOf('kiyomizu-1018') < ids.indexOf('ninenzaka-palillos-fotos-1018'),
-    '18/10: primero fotos al templo y después tiendas de palillos');
-  const kyotoDay18 = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto')?.days.find(day => day.date === '2026-10-18');
-  assert(kyotoDay18?.activities.find(a => a.id === 'kimono-te-kiyomizu-grupo-pendiente')?.status === 'pendiente',
-    '18/10: conservar preferencia kimono/ceremonia sin inventar reserva ni fijar día');
-  assert(kyotoDay18?.activities.find(a => a.id === 'kiyomizu-1018')?.status === 'pendiente',
-    '18/10: Kiyomizu aún requiere día/hora compatibles con el kimono y el aeropuerto');
-  assert(kyotoDay18?.activities.find(a => a.id === 'kyoto-station-h2')?.status !== 'confirmado',
-    '18/10: parada confirmada, pero bus objetivo 14:20 sin billete confirmado');
+  assert(ids.includes('kyoto-station-h2') && ids.includes('kix-vilma-marga'),
+    '18/10: conservar salida H2/KY2 y vuelo KIX de las 19:00');
+  assert(!['kiyomizu-1018','ninenzaka-palillos-fotos-1018','yasaka-pagoda-fotos-1018']
+    .some(id => ids.includes(id)),
+    '18/10: no meter visita exigente antes de vuelo y maletas');
+  const kyotoData = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
+  const day = kyotoData?.days.find(x => x.date === '2026-10-18');
+  assert(day?.activities.find(a => a.id === 'kyoto-station-h2')?.status !== 'confirmado',
+    '18/10: parada confirmada pero autobús 14:20 sigue sin billete');
+  assert(day?.activities.find(a => a.id === 'kix-vilma-marga')?.time === '19:00',
+    '18/10: conservar vuelo a KIX a las 19:00');
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
