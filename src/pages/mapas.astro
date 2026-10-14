@@ -279,7 +279,20 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
 
     function currentStages(route) {
       const alternate = route.variants.find(v => v.id === currentVariant);
-      const result = (alternate?.stages ?? route.stages).map(s => ({ ...s, stops: [...s.stops] }));
+      const result = (alternate?.stages ?? route.stages).map(stage => {
+        const stops = stage.stops.map(stop => {
+          if (!stop.bathChoices?.length) return stop;
+          const selected = read('japon2026:bath-option:' + stop.id);
+          const chosen = stop.bathChoices.find(opt => opt.id === selected) ||
+            stop.bathChoices.find(opt => opt.id === stop.bathDefaultId);
+          return chosen ? { ...stop, query: chosen.locationQuery,
+            title: chosen.venue + ' · opción elegida', note: chosen.policy } : stop;
+        });
+        const offArashiyama = stops.some(stop => stop.id === 'arashiyama-onsen' &&
+          !/hanaikada/i.test(stop.query));
+        return { ...stage, stops,
+          mode: offArashiyama && stage.mode === 'walk' ? 'mixed' : stage.mode };
+      });
       if (!alternate && extras().size && result.length) {
         const last = result[result.length - 1];
         const lastIsHotel = last.stops.at(-1)?.kind === 'hotel';
@@ -633,6 +646,12 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       save('japon2026:map:view', viewMode);
       render();
     }));
+    // En páginas donde el usuario alterna baño y mapa, aplicar el destino
+    // sin borrar el resto de paradas del recorrido.
+    document.addEventListener('japon2026:bath-choice', () => render());
+    window.addEventListener('storage', (event) => {
+      if (event.key?.startsWith('japon2026:bath-option:')) render();
+    });
     dayButtons.forEach((button, i) => button.addEventListener('click', () => {
       currentRoute = i;
       currentVariant = read('japon2026:day-plan:' + current().date) || 'main';
