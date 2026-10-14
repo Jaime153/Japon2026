@@ -659,7 +659,7 @@
       "date": "2026-10-15",
       "title": "Kinkaku-ji → Arashiyama → baño final tattoo-friendly",
       "status": "plan",
-      "note": "Jueves 15/10: completar Kinkaku-ji, Arashiyama (bambú, puente y visitas cercanas que encajen), COMER; **baño únicamente al FINAL** y volver al RESI sin añadir visitas después. Vídeo TikTok aportado con ocho baños: Kurama (único onsen natural del listado y muy lejos de la ruta), Funaoka (sentō histórico, TATTOO OK según Kyo Navi), Gokō-yu (sentō con sauna, TATTOO OK según Kyo Navi), Thoron Inari (agua artificial y TATTOO OK explícito en web oficial), Sauna no Ume-yu (CIERRA los jueves), Hakusan-yu Rokujō (jueves abre 15:00–24:00; tatuajes solo reportados en el vídeo), Hakusan-yu Takatsuji (jueves abre 15:00–24:00, aceptación no confirmada oficial), Hinode-yu (CIERRA jueves). Recomendación principal al volver: Thoron Inari cerca de JR Nijō; otras opciones documentadas en Recomendaciones. Kurama y Hanaikada solo si se eligen expresamente y con logística/reserva. Baños públicos separados por sexo. Si no se confirma ninguno, no añadir ruta ficticia. Viernes 16 Fushimi temprano + Nara. LIMPIEZA DE OPCIONALES (15/10): NO mostrar Otagi, Adashino, Ryōan-ji ni Ninna-ji después del baño. Son excursiones adicionales, no visitas del día compacto; sus horarios (16:00, 16:30, 17:00 y 17:00 respectivamente) y ubicación impiden hacerlas al finalizar. Están en Recomendaciones como candidatos para otro plan. Tenryū-ji sí puede quedar opcional porque está al lado del bambú y se haría ANTES del baño.",
+      "note": "Jueves 15/10: completar Kinkaku-ji, Arashiyama (bambú, puente y visitas cercanas que encajen), COMER; **baño únicamente al FINAL** y volver al RESI sin añadir visitas después. Vídeo TikTok aportado con ocho baños: Kurama (único onsen natural del listado y muy lejos de la ruta), Funaoka (sentō histórico, TATTOO OK según Kyo Navi), Gokō-yu (sentō con sauna, TATTOO OK según Kyo Navi), Thoron Inari (agua artificial y TATTOO OK explícito en web oficial), Sauna no Ume-yu (CIERRA los jueves), Hakusan-yu Rokujō (jueves abre 15:00–24:00; tatuajes solo reportados en el vídeo), Hakusan-yu Takatsuji (jueves abre 15:00–24:00, aceptación no confirmada oficial), Hinode-yu (CIERRA jueves). Recomendación principal al volver: Thoron Inari cerca de JR Nijō; otras opciones documentadas en Recomendaciones. Kurama y Hanaikada solo si se eligen expresamente y con logística/reserva. Baños públicos separados por sexo. Si no se confirma ninguno, no añadir ruta ficticia. Viernes 16 Fushimi temprano + Nara. OPCIONALES GEOGRÁFICOS: Ryōan-ji y Ninna-ji después de Kinkaku; Otagi→Adashino solo si se entra a Arashiyama por Sagano norte, siempre ANTES del bambú y nunca después del baño. No recomendar los cuatro a la vez por defecto; el horario de bambú 11:00 es solo para la ruta corta. Elegir según tiempo y energía, luego puente, comida, baño final y hotel.",
       "activities": [
         {
           "id": "kinkaku",
@@ -684,6 +684,86 @@
           "notes": "Pabellón Dorado: visita prioritaria con las cuatro el jueves 15. Abre 09:00–17:00. Salir del RESI alrededor de las 07:45–08:00 para llegar a la apertura. Después vamos directamente a Arashiyama; sin meter Ryōan-ji en medio."
         },
         {
+          "id": "ryoanji",
+          "title": "Ryōan-ji · cerca de Kinkaku (opcional)",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Ryoan-ji",
+          "plan": [
+            "Valorar solo en su posición geográfica ANTES del bosque y del baño. Después de Kinkaku-ji, antes de Ninna-ji y de Arashiyama. Horario jueves 08:00–17:00; traslado desde Kinkaku ~10–15 min, visita ~35–50 min. SOLO si hay tiempo real; si se elige, retrasar bambú/comida, no el baño como cierre. Fuente https://www.kyoto-kankou.or.jp/info_search/3455",
+            "Si no queda tiempo, saltar esta opción y mantener el itinerario principal."
+          ],
+          "transit": {
+            "from": "Kinkaku-ji",
+            "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
+            "approximateDuration": "10–15 min"
+          },
+          "goshuin": true,
+          "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista.",
+          "notes": "OPCIONAL CONDICIONAL: Después de Kinkaku-ji, antes de Ninna-ji y de Arashiyama. Horario jueves 08:00–17:00; traslado desde Kinkaku ~10–15 min, visita ~35–50 min. SOLO si hay tiempo real; si se elige, retrasar bambú/comida, no el baño como cierre. Fuente https://www.kyoto-kankou.or.jp/info_search/3455",
+          "mapBeforeId": "bamboo"
+        },
+        {
+          "id": "ninnaji",
+          "title": "Ninna-ji · Omuro (opcional)",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Ninna-ji",
+          "plan": [
+            "Valorar solo en su posición geográfica ANTES del bosque y del baño. Después de Ryōan-ji (o directamente desde Kinkaku), antes de Arashiyama. Horario jueves 09:00–17:00, taquilla hasta 16:30; visita ~35–60 min más traslado. No sumar Ryōan+Ninna+Otagi+Adashino por defecto; si se hace esta pareja, probablemente recortar la pareja del norte de Arashiyama. Fuente https://ninnaji.jp/en/",
+            "Si no queda tiempo, saltar esta opción y mantener el itinerario principal."
+          ],
+          "transit": {
+            "from": "Ryōan-ji si se elige; si no desde Kinkaku-ji",
+            "summary": "Moverse por Omuro en bus o taxi; no es una visita después del baño.",
+            "approximateDuration": "~10–25 min según origen"
+          },
+          "goshuin": true,
+          "description": "Ninna-ji fue fundado en 888 por el emperador Uda y se convirtió en uno de los templos budistas con relaciones más estrechas con la familia imperial. Pertenece al budismo Shingon y está vinculado a la escuela Omuro, por lo que también se conoce como Omuro Gosho. Fue habitual que príncipes imperiales dirigieran el templo como monjes. Conserva una pagoda de cinco plantas del siglo XVII, puertas monumentales y elegantes residencias con jardines. Sus cerezos Omuro son famosos por florecer más tarde y crecer más bajos que otros sakura. Es una parada distinta de Kinkaku y Ryōan, que muestra cómo el poder de la corte se integró en el budismo.",
+          "notes": "OPCIONAL CONDICIONAL: Después de Ryōan-ji (o directamente desde Kinkaku), antes de Arashiyama. Horario jueves 09:00–17:00, taquilla hasta 16:30; visita ~35–60 min más traslado. No sumar Ryōan+Ninna+Otagi+Adashino por defecto; si se hace esta pareja, probablemente recortar la pareja del norte de Arashiyama. Fuente https://ninnaji.jp/en/",
+          "mapBeforeId": "bamboo"
+        },
+        {
+          "id": "otagi",
+          "title": "Otagi Nenbutsu-ji · Sagano norte (opcional)",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Otagi Nenbutsuji",
+          "plan": [
+            "Valorar solo en su posición geográfica ANTES del bosque y del baño. Ruta ampliada solo si se entra a Arashiyama por su extremo norte: Otagi → Adashino → bosque, NUNCA después del baño. Horario jueves 09:00–16:00. Hay que subir en bus/taxi desde Saga y bajar después a pie; no es una parada al lado del bambú. Mejor como alternativa al bloque Ryōan/Ninna, no sumarlo por defecto. Fuente https://www.otagiji.com/visit-en",
+            "Si no queda tiempo, saltar esta opción y mantener el itinerario principal."
+          ],
+          "transit": {
+            "from": "Kinkaku u Omuro (si se hizo algún extra)",
+            "summary": "Llegar a Arashiyama y subir hasta Otagi en taxi/bus antes de bajar caminando por Adashino hacia el bosque.",
+            "approximateDuration": "Desvío hacia el extremo norte; ajustar según ruta"
+          },
+          "goshuin": true,
+          "description": "Otagi Nenbutsu-ji fue fundado originalmente en el siglo VIII, pero sufrió inundaciones y daños y terminó trasladándose a su ubicación actual en Arashiyama. Su gran peculiaridad son las 1.200 estatuas de rakan, discípulos iluminados de Buda, talladas principalmente por personas corrientes desde la década de 1980 bajo la dirección del monje y escultor Kōchō Nishimura. Por eso no hay dos rostros iguales: unas figuras rezan, otras sonríen o muestran gestos cotidianos. El proyecto quiso unir espiritualidad, comunidad y creatividad. La imagen principal del templo es Kannon, protectora frente a desgracias. Fíjate en los musgos, expresiones y pequeños detalles humorísticos.",
+          "notes": "OPCIONAL CONDICIONAL: Ruta ampliada solo si se entra a Arashiyama por su extremo norte: Otagi → Adashino → bosque, NUNCA después del baño. Horario jueves 09:00–16:00. Hay que subir en bus/taxi desde Saga y bajar después a pie; no es una parada al lado del bambú. Mejor como alternativa al bloque Ryōan/Ninna, no sumarlo por defecto. Fuente https://www.otagiji.com/visit-en",
+          "mapBeforeId": "bamboo"
+        },
+        {
+          "id": "adashino",
+          "title": "Adashino Nenbutsu-ji · norte de Arashiyama (opcional)",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Adashino Nenbutsuji",
+          "plan": [
+            "Valorar solo en su posición geográfica ANTES del bosque y del baño. Después de Otagi y ANTES del bosque de bambú si se elige la ruta de Sagano norte→sur. Jueves abre 09:00 y última admisión 16:30; visita ~30–40 min, luego ~25–40 min andando hacia el bosque. No subir a Adashino solo para retroceder luego ni dejarlo después del baño. Fuente https://nenbutsuji.jp/eng/",
+            "Si no queda tiempo, saltar esta opción y mantener el itinerario principal."
+          ],
+          "transit": {
+            "from": "Otagi Nenbutsu-ji (solo si elegimos la ruta del norte)",
+            "summary": "Bajar por Saga-Toriimoto hacia Adashino; después seguir hacia el bosque de bambú.",
+            "approximateDuration": "~10–20 min desde Otagi, más el trayecto al bosque"
+          },
+          "goshuin": true,
+          "description": "Adashino Nenbutsu-ji está en una zona de Arashiyama donde, antiguamente, se dejaban y enterraban a personas sin grandes monumentos funerarios. Las miles de pequeñas piedras y estelas reunidas en Sai no Kawara recuerdan a quienes murieron y simbolizan el cuidado budista de los difuntos. La tradición del lugar está vinculada a rituales de memoria y a figuras como Kūkai y Hōnen. «Nenbutsu» alude a la invocación devocional de Amida Buda. No es simplemente un jardín de rocas decorativas, sino un espacio memorial: conviene visitarlo con respeto y observar las restricciones de fotografía. También tiene un pequeño paseo de bambú.",
+          "notes": "OPCIONAL CONDICIONAL: Después de Otagi y ANTES del bosque de bambú si se elige la ruta de Sagano norte→sur. Jueves abre 09:00 y última admisión 16:30; visita ~30–40 min, luego ~25–40 min andando hacia el bosque. No subir a Adashino solo para retroceder luego ni dejarlo después del baño. Fuente https://nenbutsuji.jp/eng/",
+          "mapBeforeId": "bamboo"
+        },
+        {
           "id": "bamboo",
           "title": "Bamboo Forest Trail",
           "category": "naturaleza",
@@ -695,13 +775,13 @@
           ],
           "time": "~11:00–11:40",
           "transit": {
-            "from": "Kinkaku-ji",
-            "summary": "Tras Kinkaku-ji, desplazarse al centro de Arashiyama (Randen desde Kitano-Hakubaichō con transbordo en Katabiranotsuji, o taxi para cuatro si compensa). Desde la estación de Arashiyama, caminar al sendero principal del bosque de bambú. NO pasar por Otagi/Adashino: están fuera del plan compacto.",
-            "approximateDuration": "~40–60 min puerta a puerta, según transporte y tráfico",
-            "note": "No reutilizar la antigua aproximación por el norte (Otagi → Adashino): esos templos no están en la ruta de hoy."
+            "from": "Kinkaku-ji (directo) o Adashino (ruta norte)",
+            "summary": "Sin extras: desde Kinkaku-ji ir al centro de Arashiyama (Randen/taxi). Si se eligen Ryōan/Ninna, visitarlos antes de Arashiyama; si se eligen Otagi/Adashino, subir primero a Sagano norte y bajar al bambú. Son dos ampliaciones alternativas, no obligatorias.",
+            "approximateDuration": "Ruta corta ~40–60 min; con extras sumar visitas y desplazamientos",
+            "note": "La llegada ~11:00 al bambú es estimada para la ruta corta, no si se han elegido opcionales."
           },
           "priority": "must",
-          "notes": "Recorrer el bosque de bambú como parada breve en Arashiyama, después del Pabellón Dorado. El bosque del sendero lateral de Fushimi Inari es otro paseo diferente; no necesitamos un día entero de templos aquí."
+          "notes": "Ruta base desde Kinkaku: llegar al bambú ~11:00 (estimado). Si se añaden opcionales de Omuro o Sagano norte, esa previsión deja de valer y hay que ajustar el resto de la jornada. No sacrificar comida ni el baño, que sigue siendo última parada."
         },
         {
           "id": "tenryuji-1015",
