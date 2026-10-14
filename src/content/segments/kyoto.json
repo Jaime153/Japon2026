@@ -407,9 +407,9 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Kioto · Camino del Filósofo, cafe LCM, Heian y Nanzen-ji",
+      "title": "Kioto · Ginkaku-ji, cafe LCM y Nanzen-ji 15:15",
       "status": "plan",
-      "note": "Miércoles 14/10: salida real del RESI a las 08:30 y bus cogido a las 09:15; llegada indicada a las 09:44, solo estimada. Recorrido de Ginkaku-ji, Hōnen-in, Camino del Filósofo y Eikan-dō todavía sin cierre individual confirmado. A las ~14:12 empezamos a comer en cafe LCM (夷町159, junto a Jingūmichi); a las 14:22 seguíamos comiendo. Calculamos 45–60 min como pausa normal: salida sobre 14:55–15:15, sin hora real confirmada. Después queremos hacer Heian Jingū y Nanzen-ji. Como el restaurante está junto a Heian, pasamos primero por el santuario y luego por Nanzen-ji. Si la comida termina tarde, se acortan las visitas pero no se inventan entradas ni se fuerza el grupo a salir. Heian cierra el recinto a las 17:30 (jardín entrada hasta las 17:00); Nanzen-ji cierra interiores a las 17:00 y suele cerrar taquilla sobre las 16:40. Chion-in no se añade a esta tarde. Fushimi Inari sigue para el viernes 16 antes de Nara; kimono, té y Kiyomizu continúan previstos para el sábado 17, pendientes de reserva.",
+      "note": "Miércoles 14/10: salida real del RESI a las 08:30 y autobús cogido a las 09:15 (ETA 09:44, no llegada confirmada). Ruta prevista Ginkaku-ji, Hōnen-in, Camino del Filósofo y Eikan-dō; no atribuir visitas individuales realizadas sin confirmación. Comimos en cafe LCM junto a Jingūmichi: a las 14:22 seguíamos comiendo y el inicio fue ~14:12. El final del café ~14:45 es estimado. A las 15:15 CONFIRMADO que estamos en Nanzen-ji, no comiendo; salida estimada sobre 16:00–16:15. Heian Jingū queda solo si no lo hemos visitado antes y aún apetece (~16:35–17:10), sin darlo por hecho. Después regreso al RESI (~17:30–18:15, estimado). Sin Chion-in adicional, sin Fushimi hoy y sin cambios en el sábado 17 de kimonos/Kiyomizu.",
       "activities": [
         {
           "id": "salida-resi-0830-1014",
@@ -499,16 +499,16 @@
         },
         {
           "id": "comer-higashiyama-noreste-1014",
-          "title": "cafe LCM · comiendo desde ~14:12",
-          "time": "~14:12–15:10",
+          "title": "cafe LCM · comimos antes de Nanzen-ji",
+          "time": "~14:12–14:45",
           "category": "comida",
           "status": "confirmado",
           "locationQuery": "cafe LCM 京都市東山区夷町159 HOTEL MASTAY 神宮道",
-          "notes": "Comida REAL en curso hoy miércoles 14/10. A las 14:22 avisamos de que llevábamos unos 10 minutos comiendo, por lo que el inicio es ~14:12 (aproximado). La franja 14:12–15:10 es aproximada y sirve para mostrar la comida como actividad en curso; todavía NO está confirmada la salida ni cuánto tardamos en terminar. Reservamos 45–60 min desde el comienzo, como siempre: objetivo terminar sobre 14:55–15:15. Estamos en cafe LCM, HOTEL MASTAY Jingūmichi 1F, muy cerca de Heian Jingū. Si llegamos más tarde a los templos, se ajusta el ritmo sin recortar la comida.",
+          "notes": "La comida en cafe LCM es REAL: a las 14:22 seguíamos comiendo y llevábamos unos 10 minutos, por eso el inicio ~14:12 es aproximado. Ahora sabemos que a las 15:15 ya estábamos en Nanzen-ji. El final ~14:45 es una ESTIMACIÓN para representar el bloque de comida y el traslado, NO una hora de salida confirmada. No confundir las fotos de la comida del 11/10 en Osaka con la visita del 14/10 en Kioto.",
           "plan": [
-            "Estamos comiendo aquí desde aproximadamente las 14:12. No marcar el final hasta confirmarlo.",
-            "Contar una pausa normal de 45–60 minutos, salida estimada 14:55–15:15.",
-            "Al terminar, ir hacia Heian Jingū (queda cerca) y después a Nanzen-ji. No volver a Eikan-dō por inercia."
+            "Comimos en cafe LCM, junto a Jingūmichi; inicio aproximado 14:12, confirmado que seguíamos en la mesa a las 14:22.",
+            "Hora de salida del café no comunicada. El final ~14:45 es solo cálculo para el timeline.",
+            "A las 15:15 ya estábamos en Nanzen-ji."
           ],
           "address": "京都市東山区夷町159 HOTEL MASTAY 神宮道 1F",
           "links": {
@@ -516,34 +516,34 @@
           }
         },
         {
-          "id": "heian-jingu-1014",
-          "title": "Heian Jingū · santuario y gran torii",
-          "time": "~15:15–15:45",
-          "category": "templo",
-          "status": "plan",
-          "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
-          "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
-          "notes": "Después de comer en cafe LCM, ir primero a Heian Jingū: el café está muy cerca y así no hacemos un recorrido de ida y vuelta. Llegada estimada ~15:15–15:30 según la hora REAL en la que terminemos de comer. En octubre el recinto abre hasta las 17:30; la entrada al jardín Shin'en acaba a las 17:00. Queremos verlo hoy, pero la visita aún no está confirmada. Si salimos tarde del café, hacer la visita exterior y seguir hacia Nanzen-ji.",
-          "plan": [
-            "Ir desde cafe LCM al recinto de Heian Jingū, por la zona del gran torii (aprox. 5–15 min andando según salida).",
-            "Ver el santuario y hacer fotos sin alargarlo demasiado; jardín solo si todavía interesa y cabe en el horario.",
-            "Después ir hacia Nanzen-ji. Si terminamos tarde de comer, no vamos a sacrificar la comida ni prometer ambos interiores."
-          ]
-        },
-        {
           "id": "nanzenji-1014",
-          "title": "Nanzen-ji · puerta y acueducto",
-          "time": "~16:05–16:50",
+          "title": "Nanzen-ji · estamos aquí",
+          "time": "15:15–16:10",
           "category": "templo",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
           "locationQuery": "南禅寺 京都市左京区南禅寺福地町86",
           "description": "Nanzen-ji es uno de los grandes templos zen de la escuela Rinzai, construido sobre el antiguo palacio de retiro del emperador Kameyama a finales del siglo XIII. Su enorme puerta Sanmon domina la entrada; dentro del recinto está el Suirokaku, un acueducto de ladrillo rojo construido durante la modernización de Japón en el siglo XIX para transportar agua del lago Biwa. El contraste del acueducto de estilo occidental con los edificios budistas es muy característico. Los jardines del Hōjō también reflejan la estética zen.",
-          "notes": "Nanzen-ji queda para DESPUÉS de Heian Jingū, porque la comida real es en cafe LCM cerca de Heian. Objetivo orientativo llegar sobre las 16:05–16:25, según la hora de salida del café y el paseo entre templos (~20–25 min). El acueducto Suirokaku y la gran puerta se pueden ver por fuera; los interiores en octubre cierran a las 17:00 y la entrada normalmente acaba sobre las 16:40. Si se nos hace tarde, priorizar el recinto exterior y las fotos sin intentar entrar a jardines cerrados. Visita pendiente de confirmar.",
+          "notes": "A las 15:15 del miércoles 14/10 hemos confirmado que estamos en Nanzen-ji (Kyoto). Es la hora REAL comunicada de presencia en el templo, no el inicio de la comida. Calculamos dedicar unos 45–60 min, hasta ~16:00–16:15 (fin ESTIMADO, aún no realizado ni comunicado). Ver Sanmon y el acueducto Suirokaku; interiores/jardines solo si nos apetece y aún admiten entrada (cierre 17:00, última admisión alrededor de 16:40). Heian Jingū queda solo si no lo hemos visto ya y todavía hay ganas.",
           "plan": [
-            "Caminar desde Heian Jingū hasta Nanzen-ji (~20–25 min según paso).",
-            "Ver Sanmon y el acueducto de ladrillo Suirokaku; si llegamos antes de la última admisión y apetece, entrar al jardín.",
-            "Si ya es tarde, visitar los exteriores y volver a RESI. No meter Chion-in hoy además de todo esto."
+            "15:15: estamos en Nanzen-ji (confirmado).",
+            "Visitar la puerta Sanmon, el acueducto Suirokaku y el recinto; si aún podemos entrar en interiores, decidir sobre la marcha.",
+            "Fin orientativo 16:00–16:15, NO confirmado. Después, Heian Jingū solo si queda pendiente; si ya lo vimos, regreso al RESI."
+          ]
+        },
+        {
+          "id": "heian-jingu-1014",
+          "title": "Heian Jingū · solo si no lo vimos antes",
+          "time": "~16:35–17:10",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
+          "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
+          "notes": "A las 15:15 ya estamos en Nanzen-ji. No tenemos confirmación de si pasamos antes por Heian Jingū tras comer en cafe LCM, así que NO marcarlo como hecho. Si aún no lo hemos visto y quedan ganas, podemos ir tras Nanzen-ji (~20–25 min andando), ver el gran torii y el recinto hasta las 17:30. El jardín Shin'en admite entrada hasta las 17:00, así que no planificar visita del jardín tan tarde. Si ya fuimos, saltar esta parada y regresar al hotel.",
+          "plan": [
+            "Solo ir si NO hemos pasado por Heian Jingū anteriormente y todavía nos apetece.",
+            "Desde Nanzen-ji calcular 20–25 min andando; visita corta al recinto y gran torii. No depender de entrar al jardín.",
+            "Si ya lo visitamos, ir directamente al RESI STAY Yasaka."
           ]
         },
         {
@@ -570,15 +570,15 @@
         {
           "id": "regreso-resi-1014",
           "title": "Regresar al RESI STAY Yasaka",
-          "time": "~17:15–18:00",
+          "time": "~17:30–18:15",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "Regreso estimado al RESI STAY Yasaka tras Heian Jingū y Nanzen-ji, sujeto a la hora real de salida de cafe LCM. No marcar la vuelta como realizada hasta que lo comuniquemos.",
+          "notes": "Volver al RESI STAY Yasaka tras Nanzen-ji, o después de una parada breve en Heian Jingū si aún queda pendiente. Regreso objetivo ~17:30–18:15, según cuándo terminemos el templo y si paramos en Heian. NO hay llegada al hotel confirmada.",
           "plan": [
-            "Terminar en el alojamiento de Higashiyama después de Nanzen-ji y, como mucho, un extra opcional.",
-            "Si estamos cansados, volver antes; la tarde no tiene compromiso rígido ni recogida de aeropuerto.",
-            "Cenar cerca del hotel, sin traslados absurdos."
+            "Después de Nanzen-ji (~16:10 previsto), decidir si Heian Jingū sigue pendiente o si volvemos directamente.",
+            "Regresar al RESI STAY Yasaka sin añadir Chion-in ni nuevos desvíos.",
+            "Cena cerca del alojamiento si apetece. El regreso aún no está realizado."
           ]
         },
         {
@@ -722,21 +722,21 @@
         },
         {
           "id": "nanzen-1014",
-          "title": "Eikan-dō → cafe LCM → Heian Jingū",
+          "title": "Eikan-dō → cafe LCM → Nanzen-ji (15:15)",
           "mode": "walk",
           "activityIds": [
             "eikando-1014",
             "comer-higashiyama-noreste-1014",
-            "heian-jingu-1014"
+            "nanzenji-1014"
           ]
         },
         {
           "id": "heian-regreso-1014",
-          "title": "Heian Jingū → Nanzen-ji → RESI",
+          "title": "Nanzen-ji → Heian si pendiente → RESI",
           "mode": "walk",
           "activityIds": [
-            "heian-jingu-1014",
             "nanzenji-1014",
+            "heian-jingu-1014",
             "@hotel-end"
           ]
         }

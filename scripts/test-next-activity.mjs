@@ -45,8 +45,9 @@ if (day) {
   ask('13:20', 'comer-higashiyama-noreste-1014', 'upcoming');
   ask('14:22', 'comer-higashiyama-noreste-1014', 'active'); // Comida real desde ~14:12.
   ask('14:40', 'comer-higashiyama-noreste-1014', 'active'); // Salida del café no confirmada.
-  ask('15:30', 'heian-jingu-1014', 'active'); // Ahora quieren verlo, ya no es opcional.
-  ask('16:20', 'nanzenji-1014', 'active'); // Visita estimada tras Heian.
+  ask('15:15', 'nanzenji-1014', 'active'); // Presencia REAL comunicada en Nanzen-ji.
+  ask('15:30', 'nanzenji-1014', 'active'); // Fin 16:10 solo estimado.
+  ask('16:20', 'regreso-resi-1014', 'upcoming'); // Heian aún no confirmado; opcional.
   ask('17:30', 'regreso-resi-1014', 'active');
   const late = selectNextActivity(activities, at('19:00'));
   check(late.kind === 'finished' && !late.activity,
@@ -56,9 +57,16 @@ if (day) {
     'Marcar Eikan-dō como hecho debe pasar a la comida, sin adelantar Heian');
   const lunch = activities.find(a => a.id === 'comer-higashiyama-noreste-1014');
   check(parseTimeWindow(lunch?.time)?.start === at('14:12') &&
-        parseTimeWindow(lunch?.time)?.end === at('15:10') &&
+        parseTimeWindow(lunch?.time)?.end === at('14:45') &&
         lunch?.status === 'confirmado',
     'Hora real de inicio de la comida y final solo estimado deben estar anotados');
+  const nanzen = activities.find(a => a.id === 'nanzenji-1014');
+  check(parseTimeWindow(nanzen?.time)?.start === at('15:15') &&
+        parseTimeWindow(nanzen?.time)?.end === at('16:10') &&
+        nanzen?.status === 'confirmado',
+    'Nanzen-ji real 15:15; fin estimado 16:10 y actividad visible en Hoy');
+  check(activities.find(a => a.id === 'heian-jingu-1014')?.status === 'opcional',
+    'Heian no debe aparecer como visita hecha ni como siguiente automática');
   const noOptionals = selectNextActivity([
     {id:'solo-opcional',time:'~19:00',status:'opcional'},
     {id:'otro-saltado',time:'~14:30–15:30',status:'plan',skipped:true},
