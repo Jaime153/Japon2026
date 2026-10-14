@@ -407,9 +407,9 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Kioto · Ginkaku-ji, cafe LCM y Nanzen-ji 15:15",
+      "title": "Kioto · Nanzen-ji visitado y hacia Heian Jingū",
       "status": "plan",
-      "note": "Miércoles 14/10: salida real del RESI a las 08:30 y autobús cogido a las 09:15 (ETA 09:44, no llegada confirmada). Ruta prevista Ginkaku-ji, Hōnen-in, Camino del Filósofo y Eikan-dō; no atribuir visitas individuales realizadas sin confirmación. Comimos en cafe LCM junto a Jingūmichi: a las 14:22 seguíamos comiendo y el inicio fue ~14:12. El final del café ~14:45 es estimado. A las 15:15 CONFIRMADO que estamos en Nanzen-ji, no comiendo; salida estimada sobre 16:00–16:15. Heian Jingū queda solo si no lo hemos visitado antes y aún apetece (~16:35–17:10), sin darlo por hecho. Después regreso al RESI (~17:30–18:15, estimado). Sin Chion-in adicional, sin Fushimi hoy y sin cambios en el sábado 17 de kimonos/Kiyomizu.",
+      "note": "Miércoles 14/10: RESI salida REAL 08:30, bus REAL 09:15, ETA 09:44 (sin confirmar llegada). Comida REAL en cafe LCM: comiendo 14:22, inicio ~14:12 y final ~14:45 estimados. Nanzen-ji PRESENCIA REAL 15:15; Jaime confirma que hemos SALIDO del templo, pero hora de salida no comunicada. AHORA de camino a Heian Jingū (llegada/visita no confirmadas); recinto hasta 17:30, jardín última entrada 17:00. Tras Heian bajar a pie hacia Gion/Yasaka y cenar si apetece; NO volver al RESI a mitad de recorrido ni desviarse para entrar en Chion-in/Shōren-in cerrados. Regreso al alojamiento al final de la tarde/noche. 15 Kinkaku + Arashiyama + onsen condicionado; 16 Fushimi temprano + Nara propuesto; 17 kimono/té/Kiyomizu aún sin reserva; 18 bus aeropuerto H2/KY2.",
       "activities": [
         {
           "id": "salida-resi-0830-1014",
@@ -517,42 +517,42 @@
         },
         {
           "id": "nanzenji-1014",
-          "title": "Nanzen-ji · estamos aquí",
-          "time": "15:15–16:10",
+          "title": "Nanzen-ji · visita realizada, ya hemos salido",
+          "time": "15:15",
           "category": "templo",
           "status": "confirmado",
           "priority": "must",
           "locationQuery": "南禅寺 京都市左京区南禅寺福地町86",
           "description": "Nanzen-ji es uno de los grandes templos zen de la escuela Rinzai, construido sobre el antiguo palacio de retiro del emperador Kameyama a finales del siglo XIII. Su enorme puerta Sanmon domina la entrada; dentro del recinto está el Suirokaku, un acueducto de ladrillo rojo construido durante la modernización de Japón en el siglo XIX para transportar agua del lago Biwa. El contraste del acueducto de estilo occidental con los edificios budistas es muy característico. Los jardines del Hōjō también reflejan la estética zen.",
-          "notes": "A las 15:15 del miércoles 14/10 hemos confirmado que estamos en Nanzen-ji (Kyoto). Es la hora REAL comunicada de presencia en el templo, no el inicio de la comida. Calculamos dedicar unos 45–60 min, hasta ~16:00–16:15 (fin ESTIMADO, aún no realizado ni comunicado). Ver Sanmon y el acueducto Suirokaku; interiores/jardines solo si nos apetece y aún admiten entrada (cierre 17:00, última admisión alrededor de 16:40). Heian Jingū queda solo si no lo hemos visto ya y todavía hay ganas.",
+          "notes": "A las 15:15 del miércoles 14/10 confirmamos estar en Nanzen-ji (hora REAL). Posteriormente Jaime confirmó que YA HEMOS SALIDO y vamos hacia Heian Jingū; la hora exacta de salida no se comunicó. El antiguo final 16:10 fue ESTIMADO y NO se puede marcar realizado.",
           "plan": [
-            "15:15: estamos en Nanzen-ji (confirmado).",
-            "Visitar la puerta Sanmon, el acueducto Suirokaku y el recinto; si aún podemos entrar en interiores, decidir sobre la marcha.",
-            "Fin orientativo 16:00–16:15, NO confirmado. Después, Heian Jingū solo si queda pendiente; si ya lo vimos, regreso al RESI."
+            "15:15: presencia en Nanzen-ji confirmada.",
+            "Salida del templo comunicada, pero sin hora exacta.",
+            "Siguiente desplazamiento REAL informado: camino hacia Heian Jingū; llegada a Heian sigue pendiente."
           ]
         },
         {
           "id": "heian-jingu-1014",
-          "title": "Heian Jingū · solo si no lo vimos antes",
-          "time": "~16:35–17:10",
+          "title": "Heian Jingū · en camino desde Nanzen-ji",
+          "time": "~16:35–17:20",
           "category": "templo",
-          "status": "opcional",
+          "status": "plan",
           "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
           "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
-          "notes": "A las 15:15 ya estamos en Nanzen-ji. No tenemos confirmación de si pasamos antes por Heian Jingū tras comer en cafe LCM, así que NO marcarlo como hecho. Si aún no lo hemos visto y quedan ganas, podemos ir tras Nanzen-ji (~20–25 min andando), ver el gran torii y el recinto hasta las 17:30. El jardín Shin'en admite entrada hasta las 17:00, así que no planificar visita del jardín tan tarde. Si ya fuimos, saltar esta parada y regresar al hotel.",
+          "notes": "Jaime confirma que ya hemos salido de Nanzen-ji y vamos de camino a Heian Jingū; NO se ha confirmado aún la llegada ni la visita. En octubre abre el recinto 06:00–17:30 y el jardín Shin'en admite entradas hasta las 17:00. Priorizar el santuario; entrar al jardín solo con tiempo suficiente antes del cierre. Fuente oficial: https://www.heianjingu.or.jp/attention/ . Después bajar hacia Yasaka/Gion por Jingūmichi; no volver al hotel a mitad del paseo.",
           "plan": [
-            "Solo ir si NO hemos pasado por Heian Jingū anteriormente y todavía nos apetece.",
-            "Desde Nanzen-ji calcular 20–25 min andando; visita corta al recinto y gran torii. No depender de entrar al jardín.",
-            "Si ya lo visitamos, ir directamente al RESI STAY Yasaka."
+            "En camino desde Nanzen-ji: desplazamiento confirmado; hora de llegada NO confirmada.",
+            "Recinto abierto hasta las 17:30. Jardín Shin'en: última entrada a las 17:00; no forzar jardines sin margen.",
+            "Tras el santuario, bajar hacia Gion por Jingūmichi para paseo/cena; el hotel queda para el FINAL, no como parada intermedia."
           ]
         },
         {
           "id": "chionin-1014",
-          "title": "Chion-in · si da tiempo al bajar",
+          "title": "Chion-in · cerrado para interiores a esta hora, NO entrar",
           "category": "templo",
           "status": "opcional",
           "locationQuery": "Chion-in Kyoto",
-          "notes": "El martes 13 no se visitó. NO es otra visita interior garantizada después de Heian: el templo principal suele cerrar sobre las 16:00. Alternativa a Heian si se deja Nanzen-ji con margen; si es tarde, ver solo la gran puerta Sanmon exterior al bajar a Gion, o posponer.",
+          "notes": "No es una visita pendiente que haya que completar hoy por la tarde: visitas 09:00–15:50 y cierre de puertas 16:30 según web oficial en inglés (web japonesa anuncia 16:00). Después de Heian, NO se puede planear visita interior ni goshuin. La gran puerta Sanmon exterior puede verse solo si queda al paso hacia Maruyama/Yasaka, sin desvíos; si cansa, omitir. https://www.chion-in.or.jp/en/guide/",
           "transit": {
             "from": "Parque Maruyama",
             "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
@@ -568,17 +568,32 @@
           "time": "Opcional"
         },
         {
+          "id": "yasaka-gion-tarde-1014",
+          "title": "Yasaka Shrine y Gion · paseo y cena si apetece",
+          "category": "barrio",
+          "status": "opcional",
+          "locationQuery": "Yasaka Shrine Kyoto",
+          "notes": "Ruta natural al sur tras Heian Jingū, por Jingūmichi. Shōren-in cierra 17:00 (última entrada 16:30); Chion-in ya no admite visita interior al final de tarde. Evitar desvíos para verlos cerrados. Yasaka Shrine mantiene recinto abierto 24 h, pero oficina/goshuin hasta 17:00; no afirmar visita realizada. Tras pasar por Yasaka/Gion, cenar si apetece y regresar una sola vez al RESI STAY Yasaka.",
+          "plan": [
+            "Bajar hacia el sur desde Heian por Jingūmichi; pasar por el entorno de Shōren-in/Chion-in solo si queda de camino.",
+            "Yasaka Shrine es accesible a cualquier hora; no esperar oficina abierta tras 17:00.",
+            "Pasear/cenar por Gion sin restaurante obligatorio y volver al alojamiento al terminar."
+          ],
+          "links": {
+            "officialWebsite": "https://www.yasaka-jinja.or.jp/access/"
+          }
+        },
+        {
           "id": "regreso-resi-1014",
-          "title": "Regresar al RESI STAY Yasaka",
-          "time": "~17:30–18:15",
+          "title": "RESI STAY Yasaka · volver al terminar paseo/cena",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "Volver al RESI STAY Yasaka tras Nanzen-ji, o después de una parada breve en Heian Jingū si aún queda pendiente. Regreso objetivo ~17:30–18:15, según cuándo terminemos el templo y si paramos en Heian. NO hay llegada al hotel confirmada.",
+          "notes": "No hay llegada al hotel confirmada ni necesidad de interrumpir la ruta para pasar por él. Tras Heian Jingū, bajar por Jingūmichi hacia la zona de Yasaka/Gion, hacer paseo/cena si apetece y REGRESAR una sola vez al RESI al final. Chion-in/Shōren-in sin visita interior por cierre; cena/tiempos no reservados.",
           "plan": [
-            "Después de Nanzen-ji (~16:10 previsto), decidir si Heian Jingū sigue pendiente o si volvemos directamente.",
-            "Regresar al RESI STAY Yasaka sin añadir Chion-in ni nuevos desvíos.",
-            "Cena cerca del alojamiento si apetece. El regreso aún no está realizado."
+            "Desde Heian, bajar a pie hacia Yasaka/Gion sin volver primero al RESI.",
+            "Si hay cansancio, recortar el paseo y elegir cena cercana; no perseguir templos ya cerrados.",
+            "Volver al RESI STAY Yasaka después de cenar o al terminar el paseo; llegada aún NO confirmada."
           ]
         },
         {
@@ -732,11 +747,12 @@
         },
         {
           "id": "heian-regreso-1014",
-          "title": "Nanzen-ji → Heian si pendiente → RESI",
+          "title": "Nanzen-ji → Heian → Yasaka/Gion → RESI (sin hotel intermedio)",
           "mode": "walk",
           "activityIds": [
             "nanzenji-1014",
             "heian-jingu-1014",
+            "yasaka-gion-tarde-1014",
             "@hotel-end"
           ]
         }
