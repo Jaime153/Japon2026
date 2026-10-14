@@ -275,7 +275,7 @@ if (kyoto18) {
     '18/10: Ginkaku ya se organiza el día 14 para las cuatro personas');
   assert(ids.indexOf('kiyomizu-1018') < ids.indexOf('ninenzaka-palillos-fotos-1018'),
     '18/10: primero fotos al templo y después tiendas de palillos');
-  const kyotoDay18 = kyotoSeg?.days.find(day => day.date === '2026-10-18');
+  const kyotoDay18 = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto')?.days.find(day => day.date === '2026-10-18');
   assert(kyotoDay18?.activities.find(a => a.id === 'kimono-te-kiyomizu-grupo-pendiente')?.status === 'pendiente',
     '18/10: conservar preferencia kimono/ceremonia sin inventar reserva ni fijar día');
   assert(kyotoDay18?.activities.find(a => a.id === 'kiyomizu-1018')?.status === 'pendiente',
