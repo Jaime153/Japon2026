@@ -263,6 +263,23 @@ if (kyoto15) {
   const day = kyotoData?.days.find(x => x.date === '2026-10-15');
   assert(day?.activities.find(a => a.id === 'arashiyama-onsen')?.priority === 'must',
     '15/10: onsen imprescindible para el grupo');
+  const choice = day?.activities.find(a => a.id === 'arashiyama-onsen')?.bathChoices;
+  assert(choice?.defaultId === 'private' && choice?.options?.length === 3,
+    '15/10: el selector debe tener exactamente tres modalidades y privado por defecto');
+  assert(['tattoo-friendly','covered','private'].every(id =>
+    choice?.options?.some(option => option.id === id)),
+    '15/10: falta modalidad: tatuajes admitidos, tapados o privado');
+  assert(choice?.options?.find(o=>o.id==='tattoo-friendly')?.venue==='Kurama Onsen',
+    '15/10: la opción oficialmente tattoo friendly debe ser Kurama');
+  assert(choice?.options?.find(o=>o.id==='private')?.confirmed===false &&
+    choice?.options?.find(o=>o.id==='covered')?.confirmed===false,
+    '15/10: no prometer política ni reserva privada, ni uso de día en Ohara');
+  assert(!day?.activities.find(a => a.id === 'arashiyama-onsen')?.locationQuery.includes('Fufu'),
+    '15/10: no enviar al grupo a Fufu no Yu, que prohíbe tatuajes');
+  assert(ids.indexOf('togetsukyo-1015') < ids.indexOf('arashiyama-comida-1015'),
+    '15/10: puente antes de almuerzo y onsen (Hanaikada pide comer antes)');
+  assert(day?.activities.find(a => a.id === 'arashiyama-onsen')?.time==='Según reserva',
+    '15/10: no inventar horario para baño sin reserva');
   assert(day?.activities.find(a => a.id === 'tenryuji-1015')?.status === 'opcional',
     '15/10: Tenryu-ji no puede imponerse');
 }
@@ -464,6 +481,20 @@ assert(fuji?.stages.some(s => s.id === 'fuji' && s.stops.length >= 9),
   'Google Maps también debe ofrecer la ruta de aparcamientos del Fuji');
 assert(nagoya?.stages.some(s => s.id === 'nagoya' && s.stops.length >= 2),
   'Google Maps debe ofrecer el tramo de Nagoya, no solo Asakusa');
+
+const cardsSource = readFileSync('src/components/ActivityCard.astro', 'utf8');
+assert(cardsSource.includes('data-bath-selector') &&
+  cardsSource.includes('data-bath-choice') && cardsSource.includes('data-bath-panel'),
+  'La ficha Hoy debe tener selector y paneles de opciones para el onsen');
+assert(cardsSource.includes('japon2026:bath-option:') &&
+  cardsSource.includes('localStorage.setItem(bathKey, choice)'),
+  'La elección del baño debe persistir de Hoy a Mapa');
+assert(mapSource.includes('japon2026:bath-option:') &&
+  mapSource.includes('chosen.locationQuery'),
+  'El mapa debe usar la ubicación de la modalidad de onsen elegida');
+assert(!cardsSource.includes('Toca para ver qué hacer y acciones') ||
+  cardsSource.includes('bathChoices'),
+  'La ficha de onsen debe poder abrirse para cambiar de modalidad');
 
 if (failures.length) {
   console.error('Fallo en el nuevo mapa:\n- ' + failures.join('\n- '));
