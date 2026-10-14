@@ -112,6 +112,7 @@ const activitySchema = z.object({
   reservationRequired: z.boolean().optional(),
   goshuin: z.boolean().optional(),
   skipped: z.boolean().optional(),
+  mapBeforeId: z.string().optional(), // opcional anclado antes de esta visita
   category: categorySchema,
   status: statusSchema.default('plan'),
   priority: z.enum(['must','nice']).optional(),
