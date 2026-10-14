@@ -74,6 +74,23 @@ const parkingSchema = z.object({
   arrived: z.boolean().optional(),
 });
 
+const bathChoicesSchema = z.object({
+  defaultId: z.string(),
+  options: z.array(z.object({
+    id: z.enum(['tattoo-friendly','covered','private']),
+    label: z.string(),
+    venue: z.string(),
+    locationQuery: z.string(),
+    policy: z.string(),
+    practical: z.string(),
+    price: z.string().optional(),
+    hours: z.string().optional(),
+    confirmed: z.boolean().default(false),
+    officialUrl: z.string().url(),
+    bookingUrl: z.string().url().optional(),
+  })).length(3),
+});
+
 const activitySchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -86,6 +103,7 @@ const activitySchema = z.object({
   transit: transitSchema.optional(),
   flightJourney: flightJourneySchema.optional(),
   parking: parkingSchema.optional(),
+  bathChoices: bathChoicesSchema.optional(),
   address: z.string().optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),
