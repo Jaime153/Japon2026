@@ -294,6 +294,30 @@ if (kyoto15) {
     '15/10: el horario del baño depende de cuándo acabemos TODAS las visitas');
   assert(day?.activities.find(a => a.id === 'tenryuji-1015')?.status === 'opcional',
     '15/10: Tenryu-ji no puede imponerse');
+  // Los cuatro opcionales pertenecen a dos zonas REALES, antes del bambú y del baño.
+  const expected = ['kinkaku','ryoanji','ninnaji','otagi','adashino','bamboo'];
+  const activityIds = day?.activities.map(a => a.id) || [];
+  assert(activityIds.slice(0, expected.length).join(',') === expected.join(','),
+    '15/10: opcionales en orden Kinkaku→Omuro→Sagano norte→Bamboo; no al final');
+  for (const id of ['ryoanji','ninnaji','otagi','adashino']) {
+    const option = day?.activities.find(a => a.id === id);
+    assert(option?.status === 'opcional' && option?.mapBeforeId === 'bamboo' &&
+      !option?.time && option?.notes?.includes('OPCIONAL CONDICIONAL'),
+      '15/10: opcional geográfico, no forzado en calendario ni fuera de orden: '+id);
+  }
+  assert(activityIds.indexOf('bamboo') < activityIds.indexOf('tenryuji-1015') &&
+    activityIds.indexOf('tenryuji-1015') < activityIds.indexOf('togetsukyo-1015') &&
+    activityIds.indexOf('togetsukyo-1015') < activityIds.indexOf('arashiyama-comida-1015') &&
+    activityIds.at(-1) === 'arashiyama-onsen',
+    '15/10: templos opcionales antes de comida y baño como ULTIMA tarjeta');
+  assert(day?.activities.find(a => a.id === 'bamboo')?.transit?.note?.includes('~11:00'),
+    '15/10: la ETA del bambú solo vale sin añadir extras');
+  const optStops = kyoto15.optional.filter(x => ['ryoanji','ninnaji','otagi','adashino'].includes(x.id));
+  assert(optStops.length === 4 && optStops.every(x => x.mapBeforeId === 'bamboo'),
+    '15/10: opciones del mapa deben insertarse antes de Bamboo Forest');
+  assert(['ryoanji','ninnaji','otagi','adashino'].every(id => !ids.includes(id)),
+    '15/10: mapa base sin cuatro paradas opcionales impuestas');
+
 }
 const kyoto16 = get('2026-10-16');
 if (kyoto16) {
@@ -461,6 +485,9 @@ for (const day of dates) {
 // Regresión real reportada desde Android: plegar Shichifukujin ocultaba
 // las paradas intermedias del mapa y suprimía incluso la línea completa.
 const mapSource = readFileSync('src/pages/mapas.astro', 'utf8');
+assert(mapSource.includes('extra.mapBeforeId') && mapSource.includes('part.stops.splice(index, 0, extra)') &&
+  !mapSource.includes('last.stops.push(...route.optional.filter'),
+  'Mapa: incluir los opcionales ANTES de su referencia, sin alargar el tramo tras el hotel');
 assert(mapSource.includes('for (const stage of stages) for (const point of stage.stops)'),
   'El mapa debe localizar las paradas reales de cada tramo, no solo las mostradas en la lista');
 assert(!mapSource.includes('stage.expandable && shown(stage).length < stage.stops.length)) continue'),

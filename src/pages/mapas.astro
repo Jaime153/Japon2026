@@ -294,12 +294,22 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
           mode: offArashiyama && stage.mode === 'walk' ? 'mixed' : stage.mode };
       });
       if (!alternate && extras().size && result.length) {
-        const last = result[result.length - 1];
-        const lastIsHotel = last.stops.at(-1)?.kind === 'hotel';
-        const hotel = lastIsHotel ? last.stops.pop() : null;
-        last.stops.push(...route.optional.filter(s => extras().has(s.id)));
-        if (hotel) last.stops.push(hotel);
-        last.mode = 'mixed'; // Añadidos manualmente: no sabemos qué transporte elegir.
+        const unanchored = [];
+        // Opcionales elegidos solo en su sitio geográfico. Se respeta el orden de day.activities.
+        for (const extra of route.optional.filter(s => extras().has(s.id))) {
+          const part = extra.mapBeforeId
+            ? result.find(stage => stage.stops.some(stop => stop.id === extra.mapBeforeId))
+            : null;
+          if (!part) { unanchored.push(extra); continue; }
+          const index = part.stops.findIndex(stop => stop.id === extra.mapBeforeId);
+          part.stops.splice(index, 0, extra);
+          part.mode = 'mixed'; // Puede haber tramos de transporte y paseos.
+        }
+        // Sin anclaje: marcadores independientes. Jamás prolongar el regreso al hotel.
+        if (unanchored.length) {
+          result.push({ id: 'unanchored-optional', label: 'Opcionales sin tramo asignado',
+            mode: 'mixed', stops: unanchored });
+        }
       }
       return result;
     }
@@ -400,7 +410,7 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       optionsEl.appendChild(list);
       const note = document.createElement('p');
       note.className = 'mt-2 text-xs text-amber-700';
-      note.textContent = 'Se añade antes de volver al hotel. Revisa el orden y el transporte si decides ir.';
+      note.textContent = 'Las opciones con posición conocida se insertan en su zona. Las demás quedan como marcadores independientes; confirma horarios y transporte.';
       optionsEl.appendChild(note);
     }
 
