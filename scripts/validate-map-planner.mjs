@@ -372,22 +372,35 @@ if (tue) {
 if (wed) {
   const order = ['salida-resi-0830-1014', 'ginkakuji', 'honenin-1014',
     'philosophers-path', 'eikando-1014', 'comer-higashiyama-noreste-1014',
-    'nanzenji-1014', 'heian-jingu-1014'];
+    'heian-jingu-1014', 'nanzenji-1014'];
   assert(wed.activities.slice(0, order.length).map(a => a.id).join(',') === order.join(','),
-    '14/10: Ginkaku → Honen-in → Filósofo → Eikan-do → Nanzen-ji → Heian');
+    '14/10: comida en cafe LCM → Heian Jingū → Nanzen-ji según ubicación real');
   assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.time === '08:30' && wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.status === 'confirmado',
     '14/10: salida real 08:30 debe quedar confirmada');
   assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.notes.includes('09:15') && wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.notes.includes('09:44'),
     '14/10: anclar bus tomado 09:15 y ETA 09:44 sin confirmar llegada');
   assert(wed.activities.find(a => a.id === 'ginkakuji')?.time === '~10:00–10:50',
     '14/10: Ginkaku no puede empezar antes de la ETA 09:44 del bus');
-  assert(wed.activities.find(a => a.id === 'heian-jingu-1014')?.status === 'opcional',
-    '14/10: Heian Jingū debe ser extra y no obligación');
+  const lunch = wed.activities.find(a => a.id === 'comer-higashiyama-noreste-1014');
+  assert(lunch?.status === 'confirmado' && lunch?.time === '~14:12',
+    '14/10: cafe LCM, comida empezada aproximadamente a las 14:12');
+  assert(lunch?.notes.includes('NO está confirmada la salida'),
+    '14/10: NO afirmar que han terminado de comer antes de que lo confirmen');
+  assert(lunch?.locationQuery.includes('cafe LCM') && lunch?.address.includes('夷町159'),
+    '14/10: registrar el cafe LCM correcto de Jingūmichi');
+  assert(wed.activities.find(a => a.id === 'heian-jingu-1014')?.status === 'plan' &&
+    wed.activities.find(a => a.id === 'nanzenji-1014')?.status === 'plan',
+    '14/10: el grupo quiere Heian y Nanzen, pero las visitas aún no están confirmadas');
   assert(!wed.activities.find(a => a.id === 'philosophers-path')?.plan.some(p => /Hora límite: empezar regreso/.test(p)),
     '14/10: no poner regreso al hotel a las 10:30 antes de Eikan-do');
   assert(!wed.activities.some(a => a.id === 'fushimi'),
     '14/10: Fushimi Inari se hace temprano el viernes 16');
   const mapped = get('2026-10-14');
+  assert(mapped?.stages?.[2]?.stops?.map(p => p.id).join(',') ===
+    'eikando-1014,comer-higashiyama-noreste-1014,heian-jingu-1014',
+    '14/10: el mapa debe ir de Eikan-dō al cafe LCM y luego a Heian');
+  assert(mapped?.stages?.[3]?.stops?.[1]?.id === 'nanzenji-1014',
+    '14/10: mapa Heian → Nanzen antes de regresar a RESI');
   assert(mapped?.stages?.[0]?.stops?.some(p => p.id === 'ginkakuji'),
     '14/10: primer templo del mapa debe ser Ginkaku-ji');
   assert(mapped?.stages?.at(-1)?.stops?.some(p => p.kind === 'hotel'),
