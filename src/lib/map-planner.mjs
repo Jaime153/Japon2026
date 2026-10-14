@@ -29,6 +29,10 @@ const activityStop = (a) => ({
   mapcode: a.parking?.mapcode || '',
   mapcodeKind: a.parking?.kind || '',
   spotQuery: a.parking?.spotQuery || '',
+  // Opciones del onsen: se seleccionan en el móvil y el mapa usa ese destino.
+  bathChoices: a.bathChoices?.options?.map(({ id, venue, locationQuery, policy }) =>
+    ({ id, venue, locationQuery, policy })) || null,
+  bathDefaultId: a.bathChoices?.defaultId || null,
 });
 const routeStop = (s, index) => ({
   id: 'legacy-' + index, title: s.title, query: s.locationQuery,
