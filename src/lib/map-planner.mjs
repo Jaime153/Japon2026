@@ -26,6 +26,7 @@ const activityStop = (a) => ({
   time: a.time || '',
   category: a.category,
   kind: 'activity',
+  mapBeforeId: a.mapBeforeId || null,
   mapcode: a.parking?.mapcode || '',
   mapcodeKind: a.parking?.kind || '',
   spotQuery: a.parking?.spotQuery || '',
