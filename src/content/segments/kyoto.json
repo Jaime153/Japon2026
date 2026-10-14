@@ -657,9 +657,9 @@
     },
     {
       "date": "2026-10-15",
-      "title": "Kinkaku-ji + Arashiyama corto + onsen",
+      "title": "Kinkaku-ji → Arashiyama → baño final tattoo-friendly",
       "status": "plan",
-      "note": "Jueves 15: Kinkaku-ji ~09:00, traslado a Arashiyama, bosque de bambú ~11:00 y puente ~11:50. ONsen para el grupo obligatorio, pero la sede depende de la opción elegida en la ficha: 1) Kurama Onsen (admite tatuajes oficialmente pero queda lejos de Arashiyama), 2) Ohara no Sato (permite tatuajes cubiertos con toalla, uso de día por confirmar) o 3) Hanaikada en Arashiyama (baño privado 40 min junto al puente, exige comida y RESERVA, tatuajes y aforo de cuatro por confirmar). Fufu no Yu y Tenzan no Yu NO admiten tatuajes; no enviarnos allí. Por defecto se estudia Hanaikada, sin prometer reserva ni fijar hora. Si hay Hanaikada, almuerzo antes de las 12:30 (último pedido) y baño después según disponibilidad. Viernes 16 Fushimi y Nara se mantienen.",
+      "note": "Jueves 15/10: completar Kinkaku-ji, Arashiyama (bambú, puente y visitas cercanas que encajen), COMER; **baño únicamente al FINAL** y volver al RESI sin añadir visitas después. Vídeo TikTok aportado con ocho baños: Kurama (único onsen natural del listado y muy lejos de la ruta), Funaoka (sentō histórico, TATTOO OK según Kyo Navi), Gokō-yu (sentō con sauna, TATTOO OK según Kyo Navi), Thoron Inari (agua artificial y TATTOO OK explícito en web oficial), Sauna no Ume-yu (CIERRA los jueves), Hakusan-yu Rokujō (jueves abre 15:00–24:00; tatuajes solo reportados en el vídeo), Hakusan-yu Takatsuji (jueves abre 15:00–24:00, aceptación no confirmada oficial), Hinode-yu (CIERRA jueves). Recomendación principal al volver: Thoron Inari cerca de JR Nijō; otras opciones documentadas en Recomendaciones. Kurama y Hanaikada solo si se eligen expresamente y con logística/reserva. Baños públicos separados por sexo. Si no se confirma ninguno, no añadir ruta ficticia. Viernes 16 Fushimi temprano + Nara.",
       "activities": [
         {
           "id": "kinkaku",
@@ -722,7 +722,7 @@
           "status": "plan",
           "time": "~11:50–12:10",
           "locationQuery": "Togetsukyo Bridge Kyoto",
-          "notes": "Paseo por el puente Togetsukyō y la orilla del río, antes de comer. Si se confirma el baño privado de Hanaikada, queda junto al puente y permite hacer allí la comida y el onsen sin desvíos.",
+          "notes": "Paseo por el puente y la orilla. Acabar las visitas de Arashiyama antes de ir al baño. Tras comer, desplazarse en tren/bus a un sentō urbano seleccionado o quedarse junto al puente solo si Hanaikada tiene reserva privada confirmada.",
           "plan": [
             "Pasear por el puente y sacar fotos.",
             "Ir hacia Hankyu Arashiyama y al onsen."
@@ -735,66 +735,95 @@
           "status": "plan",
           "time": "~12:15–13:20",
           "locationQuery": "Arashiyama Kyoto restaurants",
-          "notes": "Comer en Arashiyama. Si se elige baño privado en Hanaikada, hace falta reservar comida allí (11:00–14:00, último pedido 12:30), por lo que debemos llegar a comer antes del cierre de pedidos. Si se elige Kurama, es posible comer en Arashiyama antes de desplazarse al norte.",
+          "notes": "Comer al acabar el paseo de Arashiyama, sin precipitarse para llegar antes al baño: el baño será LA ÚLTIMA parada. Si se reserva de verdad Hanaikada, requiere comida (último pedido 12:30) y adaptar el orden; sin reserva comer cuando apetezca y sentō urbano después.",
           "plan": [
             "Elegir sitio según hambre y cola; dedicar unos 45–60 minutos."
           ]
         },
         {
           "id": "arashiyama-onsen",
-          "title": "Onsen imprescindible · elegir opción para Lorena",
+          "title": "Baño del final del día · sentō u onsen con tatuajes",
           "category": "ocio",
           "status": "plan",
-          "notes": "Las chicas quieren onsen sí o sí. Una persona del grupo tiene bastantes tatuajes: Fufu no Yu y Tenzan no Yu NO admiten tatuajes, ni siquiera con parches, así que se descartan. Elegir una de las tres modalidades aquí abajo. Por defecto aparece el baño privado de Hanaikada, junto al puente Togetsukyō, pero TATUAJES, aforo para cuatro y reserva del 15/10 SIN CONFIRMAR. El baño privado de 40 min solo se ofrece vinculado a comida o alojamiento. Si no se confirma a tiempo, elegir baño tattoo-friendly: Kurama Onsen sí permite tatuajes expresamente, aunque queda lejos de Arashiyama; o Daikokuyu, sento cerca del RESI, que admite tatuajes pero NO es onsen termal.",
+          "notes": "PRIORIDAD del grupo, PERO baño DESPUÉS de terminar Kinkaku-ji, bosque, puente y comida en Arashiyama: última actividad relevante del día y luego regreso al RESI; no introducir otra visita después del baño. Recomendado Thoron Onsen Inari (cerca de JR Nijō en ruta de vuelta; 550 ¥; 16:00–23:00 jueves; TATTOO OK textual en su web oficial); es un SENTŌ con agua termal ARTIFICIAL, no un verdadero onsen natural. Gokō-yu y Funaoka son sentō (tatuajes OK en guía oficial Kyo Navi), no agua termal natural. Kurama sí es termal natural pero muy alejado; Hanaikada es privado en Arashiyama, con comida y reserva, aforo y tatuajes por confirmar. Todos los sentō de baños comunes separan hombres y mujeres. No se ha reservado ninguna opción y no se ha confirmado entrada; seleccionar según ritmo real del día.",
           "plan": [
-            "Decidir y confirmar opción ANTES del jueves 15. Con varios tatuajes que cubrir, no sirve improvisar con parches en Fufu no Yu.",
-            "Opción privada en la misma Arashiyama: Hanaikada, comida y baño exclusivo de 40 min, reservas obligatorias; preguntar si admiten tatuajes y a 4 personas en el mismo baño. La comida ha de estar dentro de 11:00–14:00, último pedido 12:30; el plan de horas cambiará según la reserva.",
-            "Opción tattoo-friendly real: Kurama Onsen admite cualquier tatuaje oficialmente, sin reserva para baño diurno y con zonas separadas por sexo, pero está en el norte: habría que recortar Arashiyama o dedicarle muchas horas de traslado.",
-            "Opción con tatuajes cubiertos: Ohara no Sato permite tatuajes bajo toalla según su web, pero la entrada de día NO está confirmada y también está lejos. No contarlo como plan confirmado.",
-            "Si no hay onsen viable, alternativa sin líos de tatuajes: Daikokuyu (sento, NO aguas termales), 550 ¥ y cerca de Gion. No sustituir un verdadero onsen sin consultarlo al grupo."
+            "PRIMERO terminar las visitas en el norte/oeste (Kinkaku-ji → Arashiyama bambú, puente, posibles extras cercanos) y comer. No acortar visitas para llegar antes al baño salvo reserva real.",
+            "AL FINAL de la jornada elegir un baño con tatuajes: recomendado Thoron Inari al volver por JR Saga-Arashiyama → JR Nijō + paseo, abierto jueves 16:00–23:00, 550 ¥; opción más tranquila Gokō-yu o histórica Funaoka (ambas aceptan tatuajes según Kyo Navi).",
+            "Si se quiere auténtica agua termal natural, Kurama admite tatuajes en la web oficial pero obliga a desvío grande: no hacerlo salvo preferencia expresa. Baño privado Hanaikada solo si está CONFIRMADA su reserva/comida, política de tatuajes y aforo.",
+            "Después del baño, regresar al alojamiento. Cena sin obligar a otro desplazamiento; sin visitas ni templos después. Nada de baño mixto grupal en los sentō."
           ],
           "priority": "must",
-          "time": "Según reserva",
-          "locationQuery": "Hanaikada Arashiyama Kyoto",
+          "time": "Por decidir",
+          "locationQuery": "トロン温泉 稲荷湯 京都市中京区今新在家西町4",
           "links": {
-            "officialWebsite": "https://www.hanaikada.co.jp/daytrip/"
+            "officialWebsite": "https://www.thoron-onsen.com/en/"
           },
           "bathChoices": {
-            "defaultId": "private",
+            "defaultId": "sento-nijo",
             "options": [
               {
-                "id": "tattoo-friendly",
-                "label": "Tatuajes permitidos",
-                "venue": "Kurama Onsen",
-                "locationQuery": "Kurama Onsen Kyoto",
-                "policy": "La web oficial permite expresamente los tatuajes. Baños comunes separados por sexo, sin restricción de número publicada.",
-                "practical": "Onsen termal auténtico. 10:00–21:00; no requiere reserva para baño de día. Está lejos de Arashiyama: si lo elegís, hay que reajustar la tarde. Cerca del RESI existe Daikokuyu, pero es sento, NO onsen.",
-                "hours": "10:00–21:00",
-                "price": "Consultar tarifa vigente",
+                "id": "sento-nijo",
+                "label": "Fácil al volver",
+                "venue": "Thoron Onsen Inari · sentō",
+                "locationQuery": "トロン温泉 稲荷湯 京都市中京区今新在家西町4",
+                "policy": "WEB OFICIAL: Tattoo OK. Es un sentō tradicional con AGUA TERMAL ARTIFICIAL, no manantial natural; baños separados por sexo.",
+                "practical": "Recomendación para DESPUÉS de acabar Arashiyama: JR Saga-Arashiyama → Nijō (línea Sagano), luego ~10 min a pie según Kyo Navi. Toalla, jabón, champú gratis. Sin necesidad de reserva para baño habitual.",
+                "hours": "Jueves 16:00–23:00 (viernes cerrado)",
+                "price": "550 ¥ por adulto",
                 "confirmed": true,
-                "officialUrl": "https://kurama-spa.com/"
+                "evidence": "official",
+                "officialUrl": "https://www.thoron-onsen.com/en/"
               },
               {
-                "id": "covered",
-                "label": "Tatuajes tapados",
-                "venue": "Ohara no Sato · pendiente de confirmar",
-                "locationQuery": "Minshuku Ohara no Sato Kyoto",
-                "policy": "La web oficial permite tatuajes si se mantienen cubiertos con una toalla. No equivale a admitir sin cubrir y hay que aclarar cómo aplicarlo durante el baño.",
-                "practical": "Está en Ohara, muy lejos de Arashiyama. No he podido confirmar uso de día para el jueves 15, precio ni cómo aplicar la norma a múltiples tatuajes. Llamar +81 75-744-2917 antes de desplazarse. Fufu no Yu NO permite taparlos.",
-                "price": "Sin tarifa de día confirmada",
+                "id": "sento-sauna",
+                "label": "Más baños/sauna",
+                "venue": "Gokō-yu · sentō con sauna",
+                "locationQuery": "五香湯 京都市下京区柿本町590-12",
+                "policy": "La guía oficial Kyoto Tourist Information Center (Kyo Navi, 15/12/2025) marca TATTOO OK. No se ha comprobado declaración equivalente del propio negocio. Sentō no termal natural.",
+                "practical": "Al volver al centro, si se prefiere sauna y baños variados. Abierto hoy jueves; comprar o llevar champú y toalla (la propia web indica que no se incluyen). No es un baño privado para cuatro.",
+                "hours": "Jueves 14:30–00:30",
+                "price": "550 ¥ por adulto",
                 "confirmed": false,
-                "officialUrl": "https://www.oohara-no-sato.co.jp/english/lp/"
+                "evidence": "tourism",
+                "officialUrl": "https://www.gokouyu.net/annai/"
+              },
+              {
+                "id": "sento-heritage",
+                "label": "Histórico al norte",
+                "venue": "Funaoka Onsen · sentō histórico",
+                "locationQuery": "船岡温泉 京都市北区紫野南舟岡町82-1",
+                "policy": "TATTOO OK según Kyo Navi (15/12/2025); no confirmado de manera independiente por la web del local. Pese al nombre, NO es onsen de manantial natural.",
+                "practical": "Arquitectura histórica y bañera exterior. Cerca de Kinkaku-ji pero abre a las 15:00; si vamos, hacerlo al FINAL después de Arashiyama, lo cual supone volver hacia el norte y después regresar al hotel.",
+                "hours": "Jueves 15:00–23:30",
+                "price": "550 ¥ por adulto",
+                "confirmed": false,
+                "evidence": "tourism",
+                "officialUrl": "https://1010.kyoto/spot/funaokaonsen/"
+              },
+              {
+                "id": "tattoo-friendly",
+                "label": "Onsen termal lejos",
+                "venue": "Kurama Onsen · natural",
+                "locationQuery": "Kurama Onsen Kyoto",
+                "policy": "Los tatuajes están aceptados por su WEB OFICIAL. Auténtico onsen de manantial natural, baños comunes separados por sexo.",
+                "practical": "El desplazamiento hasta Kurama es largo desde Arashiyama: evitarlo si se quiere terminar el itinerario oeste/norte y volver al hotel sin horas adicionales de transporte.",
+                "hours": "10:00–21:00",
+                "price": "Exterior 1.500 ¥ / completo 2.600 ¥ laborables",
+                "confirmed": true,
+                "evidence": "official",
+                "officialUrl": "https://kurama-spa.com/#dayspa"
               },
               {
                 "id": "private",
-                "label": "Baño privado",
-                "venue": "Hanaikada · Arashiyama",
+                "label": "Privado en Arashiyama",
+                "venue": "Hanaikada · reserva necesaria",
                 "locationQuery": "Hanaikada Arashiyama Kyoto",
-                "policy": "Baño privado al aire libre, con reserva y solo si se contrata comida o alojamiento. Hay que confirmar si admiten múltiples tatuajes y si el aforo permite cuatro personas juntas.",
-                "practical": "40 minutos por grupo, no una hora completa. 2.200 ¥ por baño MÁS comida desde 4.100 ¥ por persona; aprox. 18.600 ¥ para cuatro antes de tasas adicionales. Almuerzo 11:00–14:00, último pedido 12:30: habría que comer allí y adelantar el baño respecto a las 14:30. Llamar cuanto antes.",
-                "hours": "Comida 11:00–14:00 · baño privado a confirmar",
-                "price": "40 min 2.200 ¥ + comida desde 4.100 ¥/persona",
+                "policy": "Baño privado de 40 min con comida o alojamiento; NO confirmados tatuajes, aforo para cuatro, ni disponibilidad. Nunca presentarlo como acceso garantizado.",
+                "practical": "Está junto al puente. Solo si consiguen reserva REAL y se adapta el recorrido a la comida (último pedido 12:30). No encaja como baño libre al final del día si no se ha contratado previamente.",
+                "hours": "Comida 11:00–14:00, último pedido 12:30; baño a reservar",
+                "price": "Baño 2.200 ¥ extra + comida desde ~4.100 ¥ por persona",
                 "confirmed": false,
+                "evidence": "pending",
                 "officialUrl": "https://www.hanaikada.co.jp/daytrip/",
                 "bookingUrl": "https://www.hanaikada.co.jp/daytrip/"
               }
@@ -896,7 +925,7 @@
         },
         {
           "id": "kinkaku-arashiyama-1015",
-          "title": "Kinkaku-ji → bosque de Arashiyama",
+          "title": "Kinkaku-ji → Arashiyama",
           "mode": "transit",
           "activityIds": [
             "kinkaku",
@@ -905,18 +934,26 @@
         },
         {
           "id": "arashiyama-paseo-1015",
-          "title": "Bambú → puente → comida → baño",
+          "title": "Arashiyama a pie → bosque, puente y comida",
           "mode": "walk",
           "activityIds": [
             "bamboo",
             "togetsukyo-1015",
+            "arashiyama-comida-1015"
+          ]
+        },
+        {
+          "id": "arashiyama-al-bano-1015",
+          "title": "Después de Arashiyama → baño elegido",
+          "mode": "transit",
+          "activityIds": [
             "arashiyama-comida-1015",
             "arashiyama-onsen"
           ]
         },
         {
-          "id": "arashiyama-regreso-1015",
-          "title": "Onsen → hotel en Gion",
+          "id": "regreso-bano-1015",
+          "title": "Después del baño → RESI (sin más visitas)",
           "mode": "transit",
           "activityIds": [
             "arashiyama-onsen",
