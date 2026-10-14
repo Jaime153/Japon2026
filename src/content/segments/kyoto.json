@@ -516,6 +516,21 @@
           }
         },
         {
+          "id": "heian-jingu-1014",
+          "title": "Heian Jingū · santuario y gran torii",
+          "time": "~15:15–15:45",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
+          "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
+          "notes": "Después de comer en cafe LCM, ir primero a Heian Jingū: el café está muy cerca y así no hacemos un recorrido de ida y vuelta. Llegada estimada ~15:15–15:30 según la hora REAL en la que terminemos de comer. En octubre el recinto abre hasta las 17:30; la entrada al jardín Shin'en acaba a las 17:00. Queremos verlo hoy, pero la visita aún no está confirmada. Si salimos tarde del café, hacer la visita exterior y seguir hacia Nanzen-ji.",
+          "plan": [
+            "Ir desde cafe LCM al recinto de Heian Jingū, por la zona del gran torii (aprox. 5–15 min andando según salida).",
+            "Ver el santuario y hacer fotos sin alargarlo demasiado; jardín solo si todavía interesa y cabe en el horario.",
+            "Después ir hacia Nanzen-ji. Si terminamos tarde de comer, no vamos a sacrificar la comida ni prometer ambos interiores."
+          ]
+        },
+        {
           "id": "nanzenji-1014",
           "title": "Nanzen-ji · puerta y acueducto",
           "time": "~16:05–16:50",
@@ -529,21 +544,6 @@
             "Caminar desde Heian Jingū hasta Nanzen-ji (~20–25 min según paso).",
             "Ver Sanmon y el acueducto de ladrillo Suirokaku; si llegamos antes de la última admisión y apetece, entrar al jardín.",
             "Si ya es tarde, visitar los exteriores y volver a RESI. No meter Chion-in hoy además de todo esto."
-          ]
-        },
-        {
-          "id": "heian-jingu-1014",
-          "title": "Heian Jingū · santuario y gran torii",
-          "time": "~15:15–15:45",
-          "category": "templo",
-          "status": "plan",
-          "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
-          "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
-          "notes": "Después de comer en cafe LCM, ir primero a Heian Jingū: el café está muy cerca y así no hacemos un recorrido de ida y vuelta. Llegada estimada ~15:15–15:30 según la hora REAL en la que terminemos de comer. En octubre el recinto abre hasta las 17:30; la entrada al jardín Shin'en acaba a las 17:00. Queremos verlo hoy, pero la visita aún no está confirmada. Si salimos tarde del café, hacer la visita exterior y seguir hacia Nanzen-ji.",
-          "plan": [
-            "Ir desde cafe LCM al recinto de Heian Jingū, por la zona del gran torii (aprox. 5–15 min andando según salida).",
-            "Ver el santuario y hacer fotos sin alargarlo demasiado; jardín solo si todavía interesa y cabe en el horario.",
-            "Después ir hacia Nanzen-ji. Si terminamos tarde de comer, no vamos a sacrificar la comida ni prometer ambos interiores."
           ]
         },
         {
