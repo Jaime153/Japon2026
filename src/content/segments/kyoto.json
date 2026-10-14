@@ -739,21 +739,124 @@
     },
     {
       "date": "2026-10-15",
-      "title": "Arashiyama completo · bambú, templos y onsen",
+      "title": "Kinkaku-ji + Arashiyama corto + onsen",
       "status": "plan",
-      "note": "Jueves 15: salir ~07:45–08:00, llegar a JR Saga-Arashiyama y subir en taxi a Otagi (el templo recomienda comenzar allí y caminar cuesta abajo). Otagi → Adashino → bosque de bambú → Tenryū-ji → comida y puente Togetsukyō → onsen Fufu no Yu desde las 15:30. Las chicas pueden usar juntas el baño femenino, Jaime el masculino. NO se admiten tatuajes: hacer onsen antes de tatuarse el sábado 17. Otagi cierra miércoles y sábados, pero el 15 es jueves.",
+      "note": "Jueves 15: juntamos el Pabellón Dorado con lo mejor de Arashiyama y el onsen para liberar el sábado 17. Salir del RESI ~07:45–08:00 → Kinkaku-ji a las 09:00 → Randen/taxi hacia Arashiyama (~40–60 min) → bosque de bambú → comer → puente Togetsukyō → Fufu no Yu ~14:30–16:30. ONsen imprescindible antes de los posibles tatuajes del sábado. Se recortan Otagi, Adashino, Ryōan-ji y Ninna-ji; Tenryū-ji solo si sobra tiempo. Horas de transporte orientativas, no reservas.",
       "activities": [
+        {
+          "id": "kinkaku",
+          "title": "Kinkaku-ji",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Kinkaku-ji",
+          "plan": [
+            "Llegar a la apertura a las 09:00 y recorrer el pabellón y los jardines (~45–60 min).",
+            "Salir hacia Arashiyama. Randen desde Kitano-Hakubaichō (con cambio en Katabiranotsuji) o taxi si compensa entre cuatro; unos 40–60 min de puerta a puerta."
+          ],
+          "time": "09:00–09:50",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Caminar a la parada Gion → Kyoto City Bus 12 directo hacia Kinkakuji Temple → bajar en Kinkakuji-michi.",
+            "approximateDuration": "~45–60 min según tráfico",
+            "note": "Bus 12 es directo desde Gion. Si Kyoto está muy cargado de tráfico, taxi para 4 puede ahorrar bastante tiempo."
+          },
+          "goshuin": true,
+          "description": "Kinkaku-ji es el nombre popular de Rokuon-ji, un templo zen Rinzai cuyo célebre Pabellón Dorado fue originalmente parte de la villa del shōgun Ashikaga Yoshimitsu a finales del siglo XIV. Tras su muerte se convirtió en templo budista. El edificio actual fue reconstruido en 1955 después de un incendio en 1950; sus plantas superiores están recubiertas de pan de oro, que se refleja sobre el estanque Kyōko-chi. El paisaje está concebido como un conjunto de arquitectura, islas, piedras y jardines para la contemplación. La lámina de agua multiplica la imagen del pabellón y conecta el poder histórico de los shōgun con el universo del budismo zen.",
+          "notes": "Pabellón Dorado: visita prioritaria con las cuatro el jueves 15. Abre 09:00–17:00. Salir del RESI alrededor de las 07:45–08:00 para llegar a la apertura. Después vamos directamente a Arashiyama; sin meter Ryōan-ji en medio."
+        },
+        {
+          "id": "bamboo",
+          "title": "Bamboo Forest Trail",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Arashiyama Bamboo Forest",
+          "plan": [
+            "Ir al tramo principal del bosque de bambú y hacer fotos.",
+            "Seguir hacia la zona central y el puente; Tenryū-ji solo si apetece y no resta tiempo al onsen."
+          ],
+          "time": "~11:00–11:40",
+          "transit": {
+            "from": "Adashino Nenbutsuji",
+            "summary": "Seguir bajando a pie hacia la zona central de Arashiyama y Bamboo Forest.",
+            "approximateDuration": "30–45 min con paradas"
+          },
+          "priority": "must",
+          "notes": "Recorrer el bosque de bambú como parada breve en Arashiyama, después del Pabellón Dorado. El bosque del sendero lateral de Fushimi Inari es otro paseo diferente; no necesitamos un día entero de templos aquí."
+        },
+        {
+          "id": "tenryuji-1015",
+          "title": "Tenryū-ji · templo y jardines",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Tenryu-ji Temple Kyoto",
+          "notes": "Solo si apetece ver un jardín zen al pasar. Está junto al bosque de bambú; jardín abierto 08:30–17:00, entrada 500 ¥. No es obligatorio: hoy importan Kinkaku-ji y el onsen.",
+          "plan": [
+            "Visitar los jardines de Tenryū-ji y disfrutar del paisaje de Arashiyama.",
+            "Salir a comer a la calle comercial antes del puente."
+          ],
+          "description": "Tenryū-ji es uno de los grandes templos zen de Kioto y forma parte del Patrimonio Mundial. Lo fundó el shōgun Ashikaga Takauji en el siglo XIV para recordar al emperador Go-Daigo. Su jardín gira alrededor de un estanque y utiliza las montañas de Arashiyama como parte del paisaje. Los edificios han sufrido distintos incendios, pero el jardín conserva elementos históricos y permite ver cómo el budismo zen combina naturaleza, arquitectura y contemplación."
+        },
+        {
+          "id": "arashiyama-comida-1015",
+          "title": "Comer en Arashiyama",
+          "category": "comida",
+          "status": "plan",
+          "time": "~12:15–13:15",
+          "locationQuery": "Arashiyama Kyoto restaurants",
+          "notes": "Comer en la zona central de Arashiyama, cerca del puente. Parada tranquila, sin restaurante reservado. Si hay mucha cola, buscar algo rápido, pero no sacrificar el onsen.",
+          "plan": [
+            "Elegir sitio según hambre y cola; dedicar unos 45–60 minutos."
+          ]
+        },
+        {
+          "id": "togetsukyo-1015",
+          "title": "Puente Togetsukyō y río",
+          "category": "mirador",
+          "status": "plan",
+          "time": "~13:15–14:00",
+          "locationQuery": "Togetsukyo Bridge Kyoto",
+          "notes": "Paseo por el puente Togetsukyō y la orilla del río, sin dedicarle mucho más tiempo. Después caminar hacia el onsen cerca de Hankyu Arashiyama.",
+          "plan": [
+            "Pasear por el puente y sacar fotos.",
+            "Ir hacia Hankyu Arashiyama y al onsen."
+          ]
+        },
+        {
+          "id": "arashiyama-onsen",
+          "title": "Fufu no Yu · onsen público en Arashiyama",
+          "category": "ocio",
+          "status": "plan",
+          "notes": "Imprescindible de las chicas. Fufu no Yu abre de 12:00 a 22:00 (última entrada 21:30). Precio de referencia actualizado 2026: 1.200 ¥ en día laborable, toallas aparte. Baños públicos separados por sexo, sin baños privados. No admiten tatuajes, por eso hay que hacerlo ANTES de la posible cita del día 17. No requiere que pasemos antes por otros templos.",
+          "plan": [
+            "Al terminar el puente, ir andando al onsen Fufu no Yu, próximo a Hankyu Arashiyama.",
+            "Reservar unas 1,5–2 h de baño y descanso. Las tres chicas juntas en la zona femenina y Jaime en la masculina.",
+            "Volver al RESI cuando terminemos. Hoy no hay más templos pendientes que completar."
+          ],
+          "priority": "must",
+          "time": "~14:30–16:30",
+          "locationQuery": "Fufu no Yu Arashiyama Kyoto",
+          "nearestStation": "Hankyu Arashiyama · ~1–2 min andando",
+          "approximatePrice": "¥1.100 adulto entre semana",
+          "links": {
+            "officialWebsite": "https://dormy-hotels.com/spa/fufu/"
+          },
+          "transit": {
+            "from": "Bamboo Forest / centro de Arashiyama",
+            "summary": "Caminar hacia Hankyu Arashiyama y Fufu no Yu.",
+            "approximateDuration": "20–25 min"
+          }
+        },
         {
           "id": "otagi",
           "title": "Otagi Nenbutsuji",
           "category": "templo",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Otagi Nenbutsuji",
           "plan": [
             "Empezar por Otagi para hacer Arashiyama de fuera hacia dentro.",
             "Recorrer el recinto con calma y continuar después hacia Adashino."
           ],
-          "time": "~09:15",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar a Kyoto-Kawaramachi → Hankyu Kyoto Line hasta Katsura → cambio a Hankyu Arashiyama Line → Arashiyama; desde allí taxi/bus corto a Otagi para empezar de fuera hacia dentro.",
@@ -767,20 +870,18 @@
           },
           "goshuin": true,
           "description": "Otagi Nenbutsu-ji fue fundado originalmente en el siglo VIII, pero sufrió inundaciones y daños y terminó trasladándose a su ubicación actual en Arashiyama. Su gran peculiaridad son las 1.200 estatuas de rakan, discípulos iluminados de Buda, talladas principalmente por personas corrientes desde la década de 1980 bajo la dirección del monje y escultor Kōchō Nishimura. Por eso no hay dos rostros iguales: unas figuras rezan, otras sonríen o muestran gestos cotidianos. El proyecto quiso unir espiritualidad, comunidad y creatividad. La imagen principal del templo es Kannon, protectora frente a desgracias. Fíjate en los musgos, expresiones y pequeños detalles humorísticos.",
-          "priority": "must",
-          "notes": "Otagi abre 09:00–16:00 y cierra miércoles y sábados; jueves 15 sí encaja. Ir desde Saga-Arashiyama en taxi (aprox. 1.500 ¥/5 min) y bajar andando durante el día."
+          "notes": "Fuera de la ruta compactada del jueves 15. Otagi queda al norte y añade bastante desplazamiento. No subir expresamente desde Saga-Arashiyama: prioridad al Pabellón Dorado, bambú, puente y onsen. Solo para otra visita si sobra un día."
         },
         {
           "id": "adashino",
           "title": "Adashino Nenbutsuji",
           "category": "templo",
-          "status": "plan",
+          "status": "opcional",
           "locationQuery": "Adashino Nenbutsuji",
           "plan": [
             "Visitar el templo y enlazar caminando con el resto de Arashiyama.",
             "Mantener margen para bosque y onsen, que son parte importante del día."
           ],
-          "time": "~10:30",
           "transit": {
             "from": "Otagi Nenbutsuji",
             "summary": "Bajar andando por Saga-Toriimoto hasta Adashino Nenbutsuji.",
@@ -788,122 +889,82 @@
           },
           "goshuin": true,
           "description": "Adashino Nenbutsu-ji está en una zona de Arashiyama donde, antiguamente, se dejaban y enterraban a personas sin grandes monumentos funerarios. Las miles de pequeñas piedras y estelas reunidas en Sai no Kawara recuerdan a quienes murieron y simbolizan el cuidado budista de los difuntos. La tradición del lugar está vinculada a rituales de memoria y a figuras como Kūkai y Hōnen. «Nenbutsu» alude a la invocación devocional de Amida Buda. No es simplemente un jardín de rocas decorativas, sino un espacio memorial: conviene visitarlo con respeto y observar las restricciones de fotografía. También tiene un pequeño paseo de bambú.",
-          "notes": "Bajar por Saga-Toriimoto hacia el templo memorial de Adashino."
+          "notes": "Fuera de la ruta compactada del jueves 15. Adashino añade caminata por la zona de Sagano; dejarlo opcional para otro viaje o un día libre, no meterlo en esta jornada."
         },
         {
-          "id": "bamboo",
-          "title": "Bamboo Forest Trail",
-          "category": "naturaleza",
-          "status": "plan",
-          "locationQuery": "Arashiyama Bamboo Forest",
-          "plan": [
-            "Recorrer el Bamboo Forest Trail cuando ya venimos bajando hacia la zona central.",
-            "Fotos y paseo; evitar convertirlo en el único objetivo del día."
-          ],
-          "time": "~11:45",
-          "transit": {
-            "from": "Adashino Nenbutsuji",
-            "summary": "Seguir bajando a pie hacia la zona central de Arashiyama y Bamboo Forest.",
-            "approximateDuration": "30–45 min con paradas"
-          },
-          "priority": "must",
-          "notes": "Bosque de bambú de Arashiyama, fotos y paseo; seguir después a Tenryū-ji."
-        },
-        {
-          "id": "tenryuji-1015",
-          "title": "Tenryū-ji · templo y jardines",
+          "id": "ryoanji",
+          "title": "Ryōan-ji",
           "category": "templo",
-          "status": "plan",
-          "time": "~12:30",
-          "locationQuery": "Tenryu-ji Temple Kyoto",
-          "notes": "Templo zen y jardín con estanque; justo junto al bosque de bambú. Entrar al jardín si no queremos alargar mucho.",
+          "status": "opcional",
+          "locationQuery": "Ryoan-ji",
           "plan": [
-            "Visitar los jardines de Tenryū-ji y disfrutar del paisaje de Arashiyama.",
-            "Salir a comer a la calle comercial antes del puente."
+            "Visitar el templo y el jardín con calma.",
+            "Mantener la visita contenida para llegar bien a Ninna-ji."
           ],
-          "priority": "must",
-          "description": "Tenryū-ji es uno de los grandes templos zen de Kioto y forma parte del Patrimonio Mundial. Lo fundó el shōgun Ashikaga Takauji en el siglo XIV para recordar al emperador Go-Daigo. Su jardín gira alrededor de un estanque y utiliza las montañas de Arashiyama como parte del paisaje. Los edificios han sufrido distintos incendios, pero el jardín conserva elementos históricos y permite ver cómo el budismo zen combina naturaleza, arquitectura y contemplación."
-        },
-        {
-          "id": "arashiyama-comida-1015",
-          "title": "Comer en Arashiyama",
-          "category": "comida",
-          "status": "plan",
-          "time": "~13:30",
-          "locationQuery": "Arashiyama Kyoto restaurants",
-          "notes": "Comer por la zona comercial de Arashiyama, sin restaurante reservado. Dejar tiempo para el puente y el onsen.",
-          "plan": [
-            "Elegir sitio según hambre y cola; dedicar unos 45–60 minutos."
-          ]
-        },
-        {
-          "id": "togetsukyo-1015",
-          "title": "Puente Togetsukyō y río",
-          "category": "mirador",
-          "status": "plan",
-          "time": "~14:45",
-          "locationQuery": "Togetsukyo Bridge Kyoto",
-          "notes": "Ver el puente típico de Arashiyama, el río y las montañas. Desde aquí caminar hacia Fufu no Yu.",
-          "plan": [
-            "Pasear por el puente y sacar fotos.",
-            "Ir hacia Hankyu Arashiyama y al onsen."
-          ]
-        },
-        {
-          "id": "arashiyama-onsen",
-          "title": "Fufu no Yu · onsen público en Arashiyama",
-          "category": "ocio",
-          "status": "plan",
-          "notes": "Fufu no Yu, onsen público separado por sexo. Abre 12:00–22:00 (última entrada 21:30); precio oficial publicado 1.100 ¥ entre semana (+ toallas). Las tres chicas juntas en el baño femenino y Jaime en el masculino. Prohíbe tatuajes y stickers: imprescindible ANTES de tatuarse el sábado 17.",
-          "plan": [
-            "Terminar Arashiyama aquí después del puente Togetsukyō. Disfrutar unas 2 h si apetece.",
-            "Ellas juntas en la zona femenina, Jaime en la masculina; quedar a la salida.",
-            "Volver a Gion al terminar y cenar. El establecimiento no admite tatuajes."
-          ],
-          "priority": "must",
-          "time": "~15:30–18:00",
-          "locationQuery": "Fufu no Yu Arashiyama Kyoto",
-          "nearestStation": "Hankyu Arashiyama · ~1–2 min andando",
-          "approximatePrice": "¥1.100 adulto entre semana",
-          "links": {
-            "officialWebsite": "https://dormy-hotels.com/spa/fufu/"
-          },
           "transit": {
-            "from": "Bamboo Forest / centro de Arashiyama",
-            "summary": "Caminar hacia Hankyu Arashiyama y Fufu no Yu.",
-            "approximateDuration": "20–25 min"
-          }
+            "from": "Kinkaku-ji",
+            "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
+            "approximateDuration": "10–15 min"
+          },
+          "goshuin": true,
+          "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista.",
+          "notes": "Fuera del jueves compactado. Ryōan-ji es conocido por su jardín seco, pero ir supondría recortar bambú o onsen; solo recuperarlo otro día Jaime y Lorena si interesa."
+        },
+        {
+          "id": "ninnaji",
+          "title": "Ninna-ji",
+          "category": "templo",
+          "status": "opcional",
+          "locationQuery": "Ninna-ji",
+          "plan": [
+            "Cerrar el recorrido del noroeste aquí.",
+            "Después volver al centro de Kyoto y dejar la tarde/noche flexible."
+          ],
+          "transit": {
+            "from": "Ryōan-ji",
+            "summary": "Kyoto City Bus 59 → Omuro Ninnaji.",
+            "approximateDuration": "10–15 min"
+          },
+          "goshuin": true,
+          "description": "Ninna-ji fue fundado en 888 por el emperador Uda y se convirtió en uno de los templos budistas con relaciones más estrechas con la familia imperial. Pertenece al budismo Shingon y está vinculado a la escuela Omuro, por lo que también se conoce como Omuro Gosho. Fue habitual que príncipes imperiales dirigieran el templo como monjes. Conserva una pagoda de cinco plantas del siglo XVII, puertas monumentales y elegantes residencias con jardines. Sus cerezos Omuro son famosos por florecer más tarde y crecer más bajos que otros sakura. Es una parada distinta de Kinkaku y Ryōan, que muestra cómo el poder de la corte se integró en el budismo.",
+          "notes": "Fuera del jueves compactado. Ninna-ji requiere otro desvío por el noroeste de Kioto. No quitar tiempo a Kinkaku-ji ni al onsen."
         }
       ],
       "mapStages": [
         {
-          "id": "arashiyama-subida",
-          "title": "Hotel → Otagi y Adashino",
+          "id": "kinkaku-manana-1015",
+          "title": "RESI → Kinkaku-ji",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "otagi",
-            "adashino"
+            "kinkaku"
           ]
         },
         {
-          "id": "arashiyama-paseo",
-          "title": "Bambú → Tenryū-ji → puente",
+          "id": "kinkaku-arashiyama-1015",
+          "title": "Kinkaku-ji → bosque de Arashiyama",
+          "mode": "transit",
+          "activityIds": [
+            "kinkaku",
+            "bamboo"
+          ]
+        },
+        {
+          "id": "arashiyama-paseo-1015",
+          "title": "Bambú → comer → puente → onsen",
           "mode": "walk",
           "activityIds": [
-            "adashino",
             "bamboo",
-            "tenryuji-1015",
             "arashiyama-comida-1015",
-            "togetsukyo-1015"
+            "togetsukyo-1015",
+            "arashiyama-onsen"
           ]
         },
         {
-          "id": "arashiyama-onsen-traslado",
-          "title": "Puente → Fufu no Yu → hotel",
-          "mode": "mixed",
+          "id": "arashiyama-regreso-1015",
+          "title": "Onsen → hotel en Gion",
+          "mode": "transit",
           "activityIds": [
-            "togetsukyo-1015",
             "arashiyama-onsen",
             "@hotel-end"
           ]
@@ -1132,97 +1193,115 @@
     },
     {
       "date": "2026-10-17",
-      "title": "Kinkaku-ji, jardín zen y tatuajes",
+      "title": "Kiyomizu en kimono + ceremonia del té · tatuajes si hay cita",
       "status": "plan",
       "activities": [
         {
-          "id": "kinkaku",
-          "title": "Kinkaku-ji",
+          "id": "kimono-te-kiyomizu-1017",
+          "title": "Kimono y ceremonia del té · por reservar",
+          "category": "ocio",
+          "status": "plan",
+          "time": "~09:00–11:15",
+          "locationQuery": "KIMONO TEA CEREMONY MAIKOYA GION KIYOMIZU Kyoto",
+          "plan": [
+            "Confirmar reserva real para 17/10, cuatro personas, o tres kimonos y Jaime acompañante, según quieran.",
+            "Candidato: MAIKOYA Gion Kiyomizu, 100-1 Rokurocho, para ceremonia del té con kimono. Confirmar si se visten allí o se necesita tienda aparte.",
+            "No fingir cita: la hora 09:00 es objetivo, no reserva.",
+            "Luego hacer Kiyomizu y las calles históricas con los kimonos puestos, y devolverlos a tiempo."
+          ],
+          "notes": "Sábado 17, CON LAS CUATRO. Buscar y reservar hoy mismo kimono + ceremonia del té, idealmente una misma empresa y zona de Higashiyama/Gion. Hora ~09:00 orientativa, no confirmada ni pagada. MAIKOYA Gion Kiyomizu (100-1 Rokurocho) figura 09:00–18:30 y ofrece ceremonia y kimono. Importante comprobar que haya hueco para cuatro, cómo se hace la devolución, peinado y duración; si solo van con kimono las chicas, indicarlo.",
+          "links": {
+            "officialWebsite": "https://ja.kyoto.travel/tourism/single01.php?category_id=3&tourism_id=3036"
+          },
+          "priority": "must"
+        },
+        {
+          "id": "kiyomizu-1017",
+          "title": "Kiyomizu-dera · con kimono las cuatro",
           "category": "templo",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Kinkaku-ji",
-          "plan": [
-            "Llegar temprano y hacer el recorrido principal del pabellón.",
-            "No alargar compras/souvenirs para mantener el eje Kinkaku → Ryōan-ji → Ninna-ji."
-          ],
-          "time": "~09:00",
+          "locationQuery": "Kiyomizu-dera Kyoto",
+          "notes": "Visita prioritaria que no se hizo el martes 13. Pasamos Kiyomizu al sábado 17 con las cuatro y con kimono, después de la experiencia del té. Kiyomizu abre desde las 06:00, pero empezar temprano SIN kimono no cumple el objetivo del grupo. Horario ~11:45 solo orientativo; ajustar tras reserva real del kimono y té. No llevar esta experiencia al domingo del vuelo.",
           "transit": {
             "from": "RESI STAY Yasaka",
-            "summary": "Caminar a la parada Gion → Kyoto City Bus 12 directo hacia Kinkakuji Temple → bajar en Kinkakuji-michi.",
-            "approximateDuration": "~45–60 min según tráfico",
-            "note": "Bus 12 es directo desde Gion. Si Kyoto está muy cargado de tráfico, taxi para 4 puede ahorrar bastante tiempo."
+            "summary": "Ir andando temprano desde Bishamoncho 28, cuesta arriba hacia Kiyomizu-zaka.",
+            "approximateDuration": "~20–30 min según ritmo"
           },
+          "plan": [
+            "Tras la ceremonia y con los kimonos, subir a Kiyomizu-dera y hacer fotos con calma.",
+            "Visitar el recinto y las vistas sin tener que salir hacia el aeropuerto.",
+            "Bajar luego por Sannenzaka/Ninenzaka para fotos y buscar palillos cuando las tiendas estén abiertas."
+          ],
           "goshuin": true,
-          "description": "Kinkaku-ji es el nombre popular de Rokuon-ji, un templo zen Rinzai cuyo célebre Pabellón Dorado fue originalmente parte de la villa del shōgun Ashikaga Yoshimitsu a finales del siglo XIV. Tras su muerte se convirtió en templo budista. El edificio actual fue reconstruido en 1955 después de un incendio en 1950; sus plantas superiores están recubiertas de pan de oro, que se refleja sobre el estanque Kyōko-chi. El paisaje está concebido como un conjunto de arquitectura, islas, piedras y jardines para la contemplación. La lámina de agua multiplica la imagen del pabellón y conecta el poder histórico de los shōgun con el universo del budismo zen.",
-          "notes": "Kinkaku-ji abre 09:00. Salir del alojamiento sobre 07:45–08:00; bus 12 desde Gion o taxi si compensa entre cuatro."
+          "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO.",
+          "time": "~11:45–13:15"
         },
         {
-          "id": "ryoanji",
-          "title": "Ryōan-ji",
+          "id": "ninenzaka-palillos-fotos-1017",
+          "title": "Sannenzaka y Ninenzaka · fotos y palillos",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
+          "transit": {
+            "from": "Kiyomizu-dera",
+            "summary": "Bajada andando por Kiyomizu-zaka, Sannenzaka y Ninenzaka.",
+            "approximateDuration": "~40–50 min con fotos"
+          },
+          "plan": [
+            "Fotos por Sannenzaka/Ninenzaka con los kimonos y por las tiendas.",
+            "Comprar palillos y souvenirs que buscan las chicas.",
+            "Comer algo por Higashiyama si hace falta y volver hacia la tienda del kimono para devolverlos."
+          ],
+          "notes": "Bajamos desde Kiyomizu-dera por las calles típicas. Fotos en kimono y compras de palillos/regalos cuando las tiendas estén abiertas. No hacerlo a las 06:30 sin kimonos.",
+          "time": "~13:15–15:00"
+        },
+        {
+          "id": "yasaka-pagoda-fotos-1017",
+          "title": "Pagoda Yasaka · foto de recuerdo",
           "category": "templo",
           "status": "plan",
-          "locationQuery": "Ryoan-ji",
-          "plan": [
-            "Visitar el templo y el jardín con calma.",
-            "Mantener la visita contenida para llegar bien a Ninna-ji."
-          ],
-          "time": "~10:45",
+          "priority": "must",
+          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
+          "notes": "Foto con los kimonos desde la calle con vistas a la pagoda Yasaka (Hōkan-ji). Va de paso en Higashiyama. Si el kimono debe devolverse pronto, se acorta.",
           "transit": {
-            "from": "Kinkaku-ji",
-            "summary": "Kyoto City Bus 59 desde Kinkakuji-michi → Ryoanji-mae.",
-            "approximateDuration": "10–15 min"
+            "from": "Ninenzaka",
+            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
+            "approximateDuration": "~5–10 min"
           },
-          "goshuin": true,
-          "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista.",
-          "notes": "Templo zen con jardín de piedras, en el mismo sector que Kinkaku. Si el estudio confirma una cita temprana, acortar."
-        },
-        {
-          "id": "ninnaji",
-          "title": "Ninna-ji",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Ninna-ji",
           "plan": [
-            "Cerrar el recorrido del noroeste aquí.",
-            "Después volver al centro de Kyoto y dejar la tarde/noche flexible."
+            "Hacer la foto de la pagoda desde la calle, si da tiempo.",
+            "Volver a devolver los kimonos a la hora que indique la tienda."
           ],
-          "time": "~12:00",
-          "transit": {
-            "from": "Ryōan-ji",
-            "summary": "Kyoto City Bus 59 → Omuro Ninnaji.",
-            "approximateDuration": "10–15 min"
-          },
           "goshuin": true,
-          "description": "Ninna-ji fue fundado en 888 por el emperador Uda y se convirtió en uno de los templos budistas con relaciones más estrechas con la familia imperial. Pertenece al budismo Shingon y está vinculado a la escuela Omuro, por lo que también se conoce como Omuro Gosho. Fue habitual que príncipes imperiales dirigieran el templo como monjes. Conserva una pagoda de cinco plantas del siglo XVII, puertas monumentales y elegantes residencias con jardines. Sus cerezos Omuro son famosos por florecer más tarde y crecer más bajos que otros sakura. Es una parada distinta de Kinkaku y Ryōan, que muestra cómo el poder de la corte se integró en el budismo.",
-          "notes": "Ninna-ji, siguiendo el bus 59 desde Ryōan-ji. Primera visita que saltamos si la cita del tatuaje se adelanta."
+          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos.",
+          "time": "~15:00"
         },
         {
           "id": "comer-regreso-kawaramachi-1017",
-          "title": "Comer y volver hacia Gion",
+          "title": "Comer / devolver kimonos / descanso",
           "category": "comida",
           "status": "plan",
-          "time": "~13:15",
-          "locationQuery": "Kyoto Kawaramachi Station",
-          "notes": "Comer en el camino de vuelta y acercarse al estudio con tiempo. La prioridad de la tarde son los tatuajes, sin tener que volver al noroeste.",
+          "time": "~15:30–16:15",
+          "locationQuery": "Gion Kyoto",
+          "notes": "Después de Kiyomizu y las fotos, comer algo, devolver los kimonos en el horario acordado y descansar. Si el té ya incluye un bloque largo, adaptar la comida.",
           "plan": [
-            "Comer donde encaje, consultar confirmación y dirección del estudio.",
-            "Llegar a Gion/Kawaramachi con margen."
+            "Comer donde encaje y devolver los kimonos a la hora indicada.",
+            "Dejar la tarde libre si el grupo está cansado o si las sesiones de tatuaje no están confirmadas."
           ]
         },
         {
           "id": "tatuajes-gion-1017",
           "title": "Tatuajes de las chicas · cita pendiente",
           "category": "ocio",
-          "status": "plan",
-          "time": "~15:00–18:00",
+          "status": "pendiente",
+          "time": "Tarde · pendiente",
           "locationQuery": "GION DARUMA Tattoo Studio Kyoto 281-1 Gionmachi Kitagawa",
-          "notes": "Buscar con antelación una cita de tatuaje para Lorena, Vilma y Marga; GION DARUMA cerca de Gion-Shijo (sábado 11:00–20:00; cierra jueves y tercer domingo). Objetivo sobre 14:30–15:00, pero NADA RESERVADO. Confirmar que pueden atender a tres personas, duración, diseño, precio y condiciones. Llevar pasaportes, imágenes y dinero. Después de tatuarse evitar bañarse en piscina/onsen hasta cicatrizar; el onsen previsto es el jueves 15.",
+          "notes": "Los tatuajes de Lorena, Vilma y Marga siguen siendo un deseo del grupo, pero NO HAY CITA CONFIRMADA. El 17 ya incluye kimono, té y Kiyomizu: solo caben tatuajes al final del día si el estudio confirma hueco real, diseños, tiempos y que puede atender a tres. No garantizar 15:00 ni reservar una duración inventada. El 18 tienen traslado a KIX: no arriesgarlo. Onsen se hace el 15 antes de tatuarse.",
           "plan": [
-            "Contactar previamente con GION DARUMA para explicar que son tres personas y pedir hueco el 17 por la tarde.",
-            "Enviar diseños, tamaño y zona del cuerpo para saber precio, duración y si pueden atenderlas seguidas.",
-            "Si no hay hueco en Gion, probar KYOTO WALK-IN TATTOO STUDIO, Ichinocho 253-1 (Kawaramachi).",
-            "Seguir las instrucciones de curación de su tatuador y evitar sol, roces y sumergir el tatuaje nuevo."
+            "Contactar hoy con GION DARUMA o Kyoto Walk-in para confirmar si hay 3 huecos de tarde/noche el sábado 17.",
+            "Pedir horas concretas, duración aproximada por persona, precio y dirección antes de prometer que entra.",
+            "Si no hay hueco, priorizar Kiyomizu+kimono+té y decidir con las chicas si renunciar a tatuarse o buscar otro horario. No arriesgar el vuelo del 18."
           ],
           "priority": "must",
           "links": {
@@ -1237,32 +1316,41 @@
           "status": "opcional",
           "time": "Opcional",
           "locationQuery": "KYOTO WALK-IN TATTOO STUDIO 253-1 Ichinocho Kyoto",
-          "notes": "Solo si Gion Daruma no tiene hueco. Está en Kawaramachi y admite visitas sin cita, pero para tres personas es mejor preguntar antes.",
+          "notes": "Alternativa de tatuaje solo si Gion Daruma confirma que no tiene hueco. No hay reserva; confirmar si pueden tatuar a tres el sábado 17.",
           "plan": [
             "Confirmar por mensaje si tienen disponibilidad para tres personas, diseño y presupuesto."
           ]
         }
       ],
-      "note": "Sábado 17: salir del RESI Yasaka sobre 07:45–08:00 para llegar a Kinkaku-ji a su apertura de las 09:00. Ver Ryōan-ji y quizá Ninna-ji; después volver al centro y dejar toda la tarde para que las chicas puedan tatuarse sin prisas (objetivo ~14:30–15:00, CITA AÚN PENDIENTE). Estudio GION DARUMA, abierto sábado 11:00–20:00 y cerrado tercer domingo, así que el 17 encaja mejor que el 18. Plan B: KYOTO WALK-IN TATTOO STUDIO en Kawaramachi. Contactar cuanto antes para saber si pueden atender a las tres. Ya habrán hecho el onsen el 15.",
+      "note": "Sábado 17 LIBERADO al juntar Kinkaku-ji y Arashiyama el jueves 15. Prioridad de las cuatro: kimono + ceremonia del té (reservas PENDIENTES), visita a Kiyomizu-dera con kimono, fotos y palillos en Sannenzaka/Ninenzaka y pagoda Yasaka. Tatuajes de las tres chicas SOLO si hay cita y caben al final del día: no están reservados. Evitar mover todo al domingo 18 porque Vilma y Marga tienen vuelo KIX a las 19:00.",
       "mapStages": [
         {
-          "id": "kyoto-noroeste",
-          "title": "Hotel → Kinkaku → Ryōan-ji",
-          "mode": "transit",
+          "id": "higashiyama-kimono-1017",
+          "title": "RESI → kimono y ceremonia del té",
+          "mode": "walk",
           "activityIds": [
             "@hotel-start",
-            "kinkaku",
-            "ryoanji"
+            "kimono-te-kiyomizu-1017"
           ]
         },
         {
-          "id": "kyoto-tattoos",
-          "title": "Vuelta al centro y estudio",
-          "mode": "transit",
+          "id": "higashiyama-kiyomizu-1017",
+          "title": "Kimono/té → Kiyomizu-dera",
+          "mode": "walk",
           "activityIds": [
-            "ryoanji",
+            "kimono-te-kiyomizu-1017",
+            "kiyomizu-1017"
+          ]
+        },
+        {
+          "id": "higashiyama-fotos-1017",
+          "title": "Kiyomizu → calles y pagoda → hotel",
+          "mode": "walk",
+          "activityIds": [
+            "kiyomizu-1017",
+            "ninenzaka-palillos-fotos-1017",
+            "yasaka-pagoda-fotos-1017",
             "comer-regreso-kawaramachi-1017",
-            "tatuajes-gion-1017",
             "@hotel-end"
           ]
         }
@@ -1270,99 +1358,19 @@
     },
     {
       "date": "2026-10-18",
-      "title": "Kiyomizu + kimono/té (fecha pendiente) · KIX el 18",
+      "title": "Despedida de Vilma y Marga · aeropuerto KIX",
       "status": "confirmado",
-      "note": "Domingo 18/10, último día de las cuatro juntas antes del vuelo KIX de Vilma y Marga a las 19:00: sustituimos Ginkaku-ji por Kiyomizu temprano porque el 13 no pudimos hacerlo y quieren fotos y palillos. Pronóstico revisado el 13/10: seco de 06:00 a 11:00 (prob. lluvia 0 %); volver a consultar el 17 por la noche. Salir hacia Kiyomizu ~06:00–06:20, fotos desde ~06:30; bajar por Sannenzaka/Ninenzaka y comprar palillos cuando abran las tiendas. Volver al RESI Yasaka hacia 11:15 para maletas y bus. Servicio objetivo desde H2/KY2 14:20, aún por comprobar en billete. Ginkaku y Philosopher's Path pasan al 19, ya solo Jaime y Lorena.",
+      "note": "Domingo 18: ya habremos tenido la jornada de Kiyomizu, kimono y té el sábado 17 SI se consiguen reservas. Hoy no meter visitas exigentes: preparar maletas, check-out y acompañar a Vilma y Marga a la parada H2/KY2 de Kyoto Station para el bus hacia KIX. Vuelo de las chicas a las 19:00. El autobús de las 14:20 sigue siendo solo objetivo, sin billete confirmado. Si falta alguna foto cerca del RESI, sería paseo muy corto y sin comprometer horarios.",
       "activities": [
         {
-          "id": "kimono-te-kiyomizu-grupo-pendiente",
-          "title": "Kimono de las chicas + ceremonia del té · día por cerrar",
-          "category": "ocio",
-          "status": "pendiente",
-          "time": "Por reservar",
-          "locationQuery": "KIMONO TEA CEREMONY MAIKOYA GION KIYOMIZU Kyoto",
-          "plan": [
-            "Las amigas quieren ponerse kimono EL MISMO DÍA que se visite Kiyomizu-dera y hacer una ceremonia del té; priorizar fotos en kimono en Higashiyama.",
-            "Buscar y RESERVAR una experiencia bien ubicada con cambio de ropa y té, idealmente conjunta y a primera hora; comprobar disponibilidad, hora real, duración, peinado y devolución del kimono.",
-            "Candidato de zona (NO reservado): KIMONO TEA CEREMONY MAIKOYA GION KIYOMIZU, 100-1 Rokurocho, Higashiyama; horario publicado 09:00–18:30. No confundir horarios del negocio con horarios disponibles de reservas.",
-            "El domingo 18 es delicado por salida a KIX: si no caben las dos experiencias con margen para devolver kimonos, recoger maletas y llegar a H2/KY2 a tiempo, trasladar toda la jornada de Kiyomizu a otro día CON LAS CUATRO antes del vuelo, revisando Arashiyama/Nara/tatuajes. Nunca sacrificar el traslado a KIX."
-          ],
-          "notes": "PREFERENCIA CONFIRMADA por el grupo el 14/10; fecha, empresa y hora NO confirmadas. Recordatorio situado provisionalmente el 18 porque Kiyomizu estaba allí en la web: NO significa reserva el domingo. Incompatibilidad a resolver: visitas a Kiyomizu a las 06:30 con poca gente frente a alquileres de kimono que suelen empezar sobre las 09:00. Planificar primero la sesión en kimono y el té, después horarios del templo y margen de retorno. Fuente del candidato: https://ja.kyoto.travel/tourism/single01.php?category_id=3&tourism_id=3036",
-          "links": {
-            "officialWebsite": "https://ja.kyoto.travel/tourism/single01.php?category_id=3&tourism_id=3036"
-          }
-        },
-        {
-          "id": "kiyomizu-1018",
-          "title": "Kiyomizu-dera con kimonos · por reprogramar",
-          "category": "templo",
-          "status": "pendiente",
-          "priority": "must",
-          "locationQuery": "Kiyomizu-dera Kyoto",
-          "notes": "Kiyomizu-dera NO visitado el 13. Prioridad expresa: las amigas quieren Kiyomizu en kimono y ceremonia del té el mismo día, no solo fotos sin kimono al amanecer. El domingo 18 es una posibilidad SIN horario cerrado; el viaje de Vilma y Marga hacia KIX impone estar en H2/KY2 con margen para el bus objetivo 14:20. Replantear el día si la experiencia conjunta no cabe. El templo abre a las 06:00, pero eso NO implica alquiler de kimono a esa hora.",
-          "transit": {
-            "from": "RESI STAY Yasaka",
-            "summary": "Ir andando temprano desde Bishamoncho 28, cuesta arriba hacia Kiyomizu-zaka.",
-            "approximateDuration": "~20–30 min según ritmo"
-          },
-          "plan": [
-            "Visita de las cuatro pendiente desde el martes 13; las chicas quieren ir EN KIMONO y hacer una ceremonia del té ese mismo día.",
-            "La propuesta antigua de las 06:30 era para evitar aglomeraciones, pero no cuadra sin más con los comercios de alquiler que abren en torno a las 09:00.",
-            "El 18 sigue como ubicación provisional: antes de confirmar un horario, cuadrar alquiler + peinado + ceremonia + paseo/fotos + devolución + equipaje + parada H2/KY2. Si aprieta, mover la visita a otro día con todo el grupo."
-          ],
-          "goshuin": true,
-          "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO.",
-          "time": "Por confirmar"
-        },
-        {
-          "id": "ninenzaka-palillos-fotos-1018",
-          "title": "Ninenzaka/Sannenzaka · fotos y palillos",
-          "category": "barrio",
-          "status": "plan",
-          "locationQuery": "Ninenzaka Sannenzaka Kyoto",
-          "transit": {
-            "from": "Kiyomizu-dera",
-            "summary": "Bajada andando por Kiyomizu-zaka, Sannenzaka y Ninenzaka.",
-            "approximateDuration": "~40–50 min con fotos"
-          },
-          "plan": [
-            "Fotos tempranas por Sannenzaka y Ninenzaka.",
-            "Cuando abran las tiendas, buscar palillos y regalos para las chicas; no fijar una tienda sin comprobar horario.",
-            "No perder la vuelta al apartamento y la salida a Kyoto Station."
-          ],
-          "notes": "Bajar por las calles históricas y hacer fotos con las chicas. Ir mirando tiendas de palillos cuando abran (muchas sobre las 09:00–10:00; horario exacto depende de cada tienda). Si queréis grabado de nombres, preguntar por el tiempo que tardan y no retrasar el autobús al aeropuerto. Las fotos en kimono son prioridad si se confirma alquiler. Ajustar compras de palillos al margen real: nunca hacer perder el bus al aeropuerto.",
-          "time": "Tras Kiyomizu"
-        },
-        {
-          "id": "yasaka-pagoda-fotos-1018",
-          "title": "Yasaka Pagoda · Hōkan-ji",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
-          "notes": "Foto de la pagoda Yasaka/Hōkan-ji desde la calle, sin colapsar la calle ni entrar en propiedades privadas. Si hay demasiada gente, hacer una foto rápida y volver al apartamento. Si hay kimono + ceremonia del té, esta foto puede recortarse; no obligar a encajar todo.",
-          "transit": {
-            "from": "Ninenzaka",
-            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
-            "approximateDuration": "~5–10 min"
-          },
-          "plan": [
-            "Foto desde la calle de Yasaka-dōri.",
-            "Volver al RESI STAY con tiempo para las maletas del vuelo de las 19:00."
-          ],
-          "goshuin": true,
-          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos.",
-          "time": "Si da tiempo"
-        },
-        {
           "id": "kyoto-morning-flex",
-          "title": "Regreso al hotel · preparar salida de Vilma y Marga",
+          "title": "Mañana tranquila · maletas y salida a Kyoto Station",
           "category": "transporte",
           "status": "plan",
           "plan": [
-            "Volver al alojamiento con margen.",
-            "Vilma y Marga recogen equipaje; Jaime y Lorena se quedan en Kyoto.",
-            "Salir hacia Kyoto Station con tiempo suficiente para estar en H2/KY2 antes de las 14:20."
+            "Desayunar, preparar equipajes y salir hacia Kyoto Station sin prisas.",
+            "Si el bus fuese a las 14:20, intentar estar en H2/KY2 ~13:50–14:00; confirmar hora real de billete.",
+            "Jaime y Lorena siguen en Kioto tras despedirlas."
           ],
           "time": "Antes de 13:00",
           "transit": {
@@ -1370,7 +1378,7 @@
             "summary": "Volver caminando al RESI STAY Yasaka; después taxi o transporte a Kyoto Station.",
             "approximateDuration": "~10–20 min andando"
           },
-          "notes": "Objetivo orientativo: volver al RESI con tiempo para devolver kimonos en su tienda, recoger equipajes y salir hacia Kyoto Station. Si el 18 se planifica con kimono + ceremonia del té, verificar que todo termina lo bastante pronto; si no, mover Kiyomizu a otro día. No asumir que la visita está finalizada."
+          "notes": "Las visitas importantes con las cuatro se reservan para el 17. Hoy dar margen a check-out, desayuno, maletas y traslado hacia Kyoto Station. La parada H2/KY2 está confirmada; 14:20 es solo horario objetivo pendiente de comprobar."
         },
         {
           "id": "kyoto-station-h2",
@@ -1467,33 +1475,12 @@
       ],
       "mapStages": [
         {
-          "id": "kiyomizu-amanecer",
-          "title": "Kimono/té → Kiyomizu (provisional; reservar antes)",
-          "mode": "walk",
-          "activityIds": [
-            "@hotel-start",
-            "kimono-te-kiyomizu-grupo-pendiente",
-            "kiyomizu-1018"
-          ]
-        },
-        {
-          "id": "fotos-compras-palillos",
-          "title": "Sannenzaka, Ninenzaka y pagoda · vuelta",
-          "mode": "walk",
-          "activityIds": [
-            "kiyomizu-1018",
-            "ninenzaka-palillos-fotos-1018",
-            "yasaka-pagoda-fotos-1018",
-            "kyoto-morning-flex",
-            "@hotel-end"
-          ]
-        },
-        {
-          "id": "salida-kix",
-          "title": "Hotel → parada H2 → vuelo KIX",
+          "id": "despedida-kix-1018",
+          "title": "RESI → parada H2/KY2 → aeropuerto",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
+            "kyoto-morning-flex",
             "kyoto-station-h2",
             "kix-vilma-marga"
           ]
