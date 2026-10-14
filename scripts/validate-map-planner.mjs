@@ -411,8 +411,8 @@ if (wed) {
   }
   assert(wed.activities.length === 12, '14/10: evitar una cascada de opcionales que ya no aportan');
   assert(heian?.goshuin === true &&
-    !/goshuin.*(pillado|recogido|en curso)|pillando.*goshuin/i.test(heian?.title + ' ' + heian?.notes),
-    '14/10: goshuin es solo un icono de disponibilidad, sin seguimiento individual');
+    !/goshuin/i.test(heian?.title + ' ' + heian?.notes + ' ' + heian?.plan.join(' ')),
+    '14/10: goshuin se comunica SOLO con el icono, no con textos redundantes en la ficha');
   assert(!wed.activities.find(a => a.id === 'philosophers-path')?.plan.some(p => /Hora límite: empezar regreso/.test(p)),
     '14/10: no introducir regreso al hotel antes de terminar los templos');
   assert(!wed.activities.some(a => a.id === 'fushimi'),
