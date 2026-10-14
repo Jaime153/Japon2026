@@ -1,6 +1,6 @@
 # AGENTS.md — Contexto operativo y reglas de trabajo · Japon2026
 
-**Actualizado: miércoles 14 de octubre de 2026, después de salir de Nanzen-ji (hora de Japón).** Archivo para Codex y cualquier asistente o conversación que trabaje sobre este repositorio. Antes de proponer cambios, leer este documento y la fuente de verdad actual: `src/content/segments/*.json`.
+**Actualizado: miércoles 14 de octubre de 2026, llegada real a Heian Jingū 16:10 (hora de Japón).** Archivo para Codex y cualquier asistente o conversación que trabaje sobre este repositorio. Antes de proponer cambios, leer este documento y la fuente de verdad actual: `src/content/segments/*.json`.
 
 ## Flujo de trabajo obligatorio
 
@@ -12,12 +12,12 @@
 - Recomendaciones y horas: distinguir **HECHO REAL**, **ETA**, **estimación**, **opcional** y **pendiente/reserva no realizada**. No marcar visitas como hechas sin confirmación.
 - Verificar cierres, horarios, distancias, cola, meteorología y desplazamientos antes de construir un día. Optimizar por barrios y trayectos a pie, mantener comida/descansos y un plan recortable. No heredar instrucciones de otro día.
 
-## Miércoles 14/10/2026 — información de calle, actualizada a las 15:55 JST
+## Miércoles 14/10/2026 — información de calle, actualizada con llegada a Heian Jingū 16:10 JST
 
 - **Hechos reales comunicados por Jaime:** salida del RESI STAY Yasaka **08:30**; subida al bus **09:15**; indicador del bus **09:44 ETA** (NO llegada real). La hora de acceso a Ginkaku-ji **~10:00** era estimación. No confirmar Ginkaku-ji, Hōnen-in, Camino del Filósofo ni Eikan-dō individualmente sin comunicación explícita de que se visitaron.
 - **Comida real** en **cafe LCM** (Jingūmichi): estaban comiendo a las **14:22**, comienzo **~14:12** estimado y final sin hora confirmada.
 - **Nanzen-ji:** presencia real confirmada a las **15:15**. Jaime comunica ahora que **YA HAN SALIDO** del templo, pero no ha dado hora exacta de salida: no registrar 16:10 como hecho.
-- **Estado más reciente:** el grupo **VA DE CAMINO a Heian Jingū** desde Nanzen-ji. No afirmar llegada ni visita completada hasta confirmación. Para el **14 de octubre**, Heian Jingū abre hasta **17:30**, y el jardín Shin'en acepta la última entrada a **17:00** (no intentar entrar con prisas si no hay margen). Fuente oficial: https://www.heianjingu.or.jp/attention/ y https://www.heianjingu.or.jp/map/garden/ .
+- **Heian Jingū — dato real nuevo:** el grupo **LLEGÓ a las 16:10** (14/10); a continuación Jaime confirma que **están gestionando el goshuin**. El proceso está **en curso**, NO consta todavía sello entregado/pagado, final de visita ni hora de salida. Mantener esto separado del estado de «hecho». Para el **14 de octubre**, el recinto admite visita hasta **17:30** y el jardín Shin'en última entrada hasta **17:00**; no prometer tiempo de jardines después de recoger el sello. Fuente oficial: https://www.heianjingu.or.jp/attention/ y https://www.heianjingu.or.jp/map/garden/ .
 - **Después de Heian, NO volver al hotel solo para salir otra vez.** Bajar hacia el sur por el eje de Jingūmichi, pasear hacia **Shōren-in (solo exterior si ya es tarde) → zona Chion-in (SIN prometer visita interior) → Maruyama/Yasaka → Gion para cenar**, y volver **al RESI STAY Yasaka al final**. No hacer desvíos por coleccionar exteriores cerrados; el tramo Shōren-in/Chion-in se puede omitir si hay cansancio o ya es de noche. Ruta orientativa, no visita confirmada ni reserva de cena.
 - **Horarios oficiales comprobados:** Shōren-in **09:00–17:00 (última entrada 16:30)** https://www.shorenin.com/english/visiting/ ; Chion-in visita **09:00–15:50** y cierre de puertas **16:30** según guía en inglés https://www.chion-in.or.jp/en/guide/ (web japonesa habla de cierre general 16:00: tratarlo como cerrado a última hora) ; Yasaka Shrine **recinto accesible 24 h, oficina 09:00–17:00** https://www.yasaka-jinja.or.jp/access/ . **No mandar al grupo a Chion-in/Shōren-in después de Heian como visita interior ni prometer goshuin vespertinos.**
 - Hoy **NO** añadir Fushimi Inari, Tōfuku-ji, Sanjūsangendō, Nishiki ni otra excursión. El 14 no hay vuelo al aeropuerto. Mantener tiempos reales/ETA/planes separados.
