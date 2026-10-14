@@ -407,9 +407,9 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Kioto · Nanzen-ji 15:15 y Heian Jingū llegada real 16:10",
+      "title": "Kioto · Nanzen-ji 15:15, Heian Jingū 16:10; tarde libre",
       "status": "plan",
-      "note": "Miércoles 14/10: RESI salida REAL 08:30, bus REAL 09:15, ETA 09:44 (sin confirmar llegada). Comida REAL en cafe LCM: comiendo 14:22, inicio ~14:12 y final ~14:45 estimados. Nanzen-ji PRESENCIA REAL 15:15; Jaime confirma que hemos SALIDO del templo, pero hora de salida no comunicada. Heian Jingū LLEGADA REAL 16:10; a continuación el grupo está gestionando el goshuin (EN CURSO, aún no consta recibido). Hora de salida y final de visita NO confirmadas; recinto hasta 17:30, jardín última entrada 17:00. Tras Heian bajar a pie hacia Gion/Yasaka y cenar si apetece; NO volver al RESI a mitad de recorrido ni desviarse para entrar en Chion-in/Shōren-in cerrados. Regreso al alojamiento al final de la tarde/noche. 15 Kinkaku + Arashiyama + onsen condicionado; 16 Fushimi temprano + Nara propuesto; 17 kimono/té/Kiyomizu aún sin reserva; 18 bus aeropuerto H2/KY2.",
+      "note": "Miércoles 14/10: salida REAL RESI 08:30, autobús REAL 09:15, ETA 09:44 sin confirmación de llegada; comida REAL cafe LCM, comiendo 14:22 (inicio ~14:12 estimado); Nanzen-ji presencia REAL 15:15 y salida confirmada sin hora. Heian Jingū LLEGADA REAL 16:10; objetivo de SALIR ~16:30, NO salida real confirmada. El distintivo Goshuin solo indica disponibilidad en un templo, no su recogida. Después NO meter templos que ya estén cerrados: Chion-in, Shōren-in, Tōfuku-ji, Sennyū-ji, Imakumano Kannon-ji y Tō-ji quedan fuera del día 14. Opcional pasear por Yasaka/Gion (Yasaka recinto abierto) y cenar; si no, regresar al RESI directamente. Regresar al hotel solo al final, sin desvíos innecesarios. 15 Kinkaku + Arashiyama + onsen condicionado; 16 Fushimi temprano + Nara; 17 Kiyomizu en kimono con ceremonia del té (reservas pendientes); 18 traslado al bus H2/KY2 por vuelo 19:00.",
       "activities": [
         {
           "id": "salida-resi-0830-1014",
@@ -533,53 +533,32 @@
         },
         {
           "id": "heian-jingu-1014",
-          "title": "Heian Jingū · llegada real 16:10, goshuin en curso",
+          "title": "Heian Jingū · llegada real 16:10",
           "time": "16:10",
           "category": "templo",
           "status": "confirmado",
           "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
           "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
-          "notes": "LLEGADA REAL a Heian Jingū a las 16:10 del miércoles 14/10. Jaime informa que ESTÁN PILLANDO EL GOSHUIN (gestión en curso); no registrar todavía que se haya entregado/recogido ni dar la visita por terminada. Hora de salida SIN confirmar. Recinto hasta las 17:30, jardín Shin'en última entrada 17:00; entrar al jardín únicamente si el tiempo real disponible lo permite. Al salir, continuar hacia Yasaka/Gion si apetece y volver al hotel al final, sin desvíos a templos cerrados.",
+          "notes": "Llegada REAL al santuario Heian Jingū a las 16:10 (14/10). Objetivo expresado por Jaime: salir hacia las ~16:30; es una previsión, no salida confirmada. El distintivo «Goshuin» de la web indica solo que este santuario ofrece goshuin: no registra solicitud, recepción ni colección. No hay hora real de salida comunicada. Tras Heian ir hacia Gion/Yasaka si al grupo le apetece, sin desvíos a templos cerrados. Recinto de Heian hasta 17:30, jardín Shin'en última entrada a las 17:00.",
           "plan": [
-            "16:10: hemos llegado a Heian Jingū (hora REAL comunicada por Jaime).",
-            "Estamos gestionando el goshuin (EN CURSO); falta confirmar que lo hayamos recibido y cuándo salimos del recinto.",
-            "Recinto hasta las 17:30 y jardín Shin'en con última entrada a las 17:00: según colas, decidir si entrar al jardín o centrarnos en el santuario.",
-            "Después paseo opcional bajando a Yasaka/Gion y regreso al RESI solo al finalizar."
+            "16:10: llegada REAL a Heian Jingū; la hora de salida todavía no está confirmada.",
+            "Hora objetivo de salida: ~16:30, propuesta por Jaime, no hora efectiva. Si el grupo se entretiene, adaptar el paseo.",
+            "En la ficha, el icono Goshuin solo significa que aquí se ofrecen; no significa que lo hayamos comprado.",
+            "Tras salir, paseo libre hacia Yasaka/Gion o regreso directo al alojamiento, según ganas y cansancio."
           ],
           "goshuin": true
         },
         {
-          "id": "chionin-1014",
-          "title": "Chion-in · cerrado para interiores a esta hora, NO entrar",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Chion-in Kyoto",
-          "notes": "No es una visita pendiente que haya que completar hoy por la tarde: visitas 09:00–15:50 y cierre de puertas 16:30 según web oficial en inglés (web japonesa anuncia 16:00). Después de Heian, NO se puede planear visita interior ni goshuin. La gran puerta Sanmon exterior puede verse solo si queda al paso hacia Maruyama/Yasaka, sin desvíos; si cansa, omitir. https://www.chion-in.or.jp/en/guide/",
-          "transit": {
-            "from": "Parque Maruyama",
-            "summary": "A pie desde la parte norte del parque hasta el Sanmon de Chion-in.",
-            "approximateDuration": "~5 min"
-          },
-          "plan": [
-            "Solo plantearlo en sustitución de Heian Jingū y si se puede llegar antes del cierre de las zonas interiores.",
-            "Si ya es tarde, contemplar la puerta por fuera al volver o dejarlo pendiente. Evitar el desvío para una visita cerrada."
-          ],
-          "goshuin": true,
-          "description": "Chion-in es el gran templo central de la escuela Jōdo, el budismo de la Tierra Pura fundado por Hōnen (1133–1212). Hōnen enseñó que recitar con confianza el nombre de Amida Buda —el nembutsu— abría el camino hacia la Tierra Pura. El complejo fue ampliado con apoyo de los Tokugawa durante el período Edo. El enorme Sanmon de madera, del siglo XVII, impresiona por sus dimensiones y anuncia simbólicamente la entrada en el camino budista. También alberga una de las campanas más grandes de Japón. Más que un simple edificio, es un centro vivo de oración y estudio de la compasión de Amida. Mira el Sanmon, las escalinatas y los pabellones principales.",
-          "skipped": true,
-          "time": "Opcional"
-        },
-        {
           "id": "yasaka-gion-tarde-1014",
-          "title": "Yasaka Shrine y Gion · paseo y cena si apetece",
+          "title": "Gion / Yasaka · paseo o cena si apetece",
           "category": "barrio",
           "status": "opcional",
           "locationQuery": "Yasaka Shrine Kyoto",
-          "notes": "Ruta natural al sur tras Heian Jingū, por Jingūmichi. Shōren-in cierra 17:00 (última entrada 16:30); Chion-in ya no admite visita interior al final de tarde. Evitar desvíos para verlos cerrados. Yasaka Shrine mantiene recinto abierto 24 h, pero oficina/goshuin hasta 17:00; no afirmar visita realizada. Tras pasar por Yasaka/Gion, cenar si apetece y regresar una sola vez al RESI STAY Yasaka.",
+          "notes": "Al terminar Heian Jingū (salida objetivo ~16:30, no confirmada), opción natural de bajar hacia Gion/Yasaka y cenar si apetece. Yasaka Shrine tiene recinto accesible las 24 h, sin prometer oficina/goshuin al anochecer. NO incluir Shōren-in, Chion-in ni templos cerrados en esta ruta. Si el grupo está cansado, ir directamente al RESI STAY Yasaka. No dar por realizado paseo, cena ni paso por el santuario.",
           "plan": [
-            "Bajar hacia el sur desde Heian por Jingūmichi; pasar por el entorno de Shōren-in/Chion-in solo si queda de camino.",
-            "Yasaka Shrine es accesible a cualquier hora; no esperar oficina abierta tras 17:00.",
-            "Pasear/cenar por Gion sin restaurante obligatorio y volver al alojamiento al terminar."
+            "Desde Heian, bajar hacia la zona de Yasaka y Gion sin añadir otras visitas a templos cerrados.",
+            "Yasaka tiene recinto abierto incluso por la tarde; Gion sirve para pasear o buscar cena.",
+            "El paseo es OPCIONAL y se puede saltar: si estáis cansados, volver al RESI directamente."
           ],
           "links": {
             "officialWebsite": "https://www.yasaka-jinja.or.jp/access/"
@@ -587,99 +566,16 @@
         },
         {
           "id": "regreso-resi-1014",
-          "title": "RESI STAY Yasaka · volver al terminar paseo/cena",
+          "title": "RESI STAY Yasaka · volver al terminar",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
-          "notes": "No hay llegada al hotel confirmada ni necesidad de interrumpir la ruta para pasar por él. Tras Heian Jingū, bajar por Jingūmichi hacia la zona de Yasaka/Gion, hacer paseo/cena si apetece y REGRESAR una sola vez al RESI al final. Chion-in/Shōren-in sin visita interior por cierre; cena/tiempos no reservados.",
+          "notes": "Regreso al alojamiento al terminar la tarde, desde Heian directamente o tras paseo/cena opcional por Yasaka/Gion. No hay ninguna hora real de regreso confirmada; no fijar la antigua ventana 17:30–18:15. No pasar por el RESI para volver a salir ni desviar la ruta hacia templos cerrados.",
           "plan": [
-            "Desde Heian, bajar a pie hacia Yasaka/Gion sin volver primero al RESI.",
-            "Si hay cansancio, recortar el paseo y elegir cena cercana; no perseguir templos ya cerrados.",
-            "Volver al RESI STAY Yasaka después de cenar o al terminar el paseo; llegada aún NO confirmada."
+            "Al salir de Heian (objetivo ~16:30 no confirmado), decidir si apetece Gion/Yasaka o volver directamente.",
+            "Si se hace Gion, aprovechar para pasear o cenar y volver al RESI al terminar.",
+            "No sumar más templos cerrados ni fijar una hora de regreso inventada."
           ]
-        },
-        {
-          "id": "tofukuji",
-          "title": "Tōfuku-ji",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Tofuku-ji Kyoto",
-          "notes": "Tōfuku-ji queda como opcional. Abre 09:00–16:00 en octubre y es una visita de exterior y jardines. Con chubascos por la mañana y salida a las 08:30 preferimos Sanjūsangendō y los encargos del centro, y Fushimi después de que mejore. NO meter Tōfuku-ji a costa de perder Fushimi, Nishiki o TOBICHI. FUERA del recorrido real del 14/10 (Ginkaku → Hōnen → Filósofo → Eikan-dō → Nanzen-ji); no meter hoy un desvío al sur de Kioto. Pendiente para otro hueco.",
-          "transit": {
-            "from": "Fushimi Inari",
-            "summary": "Keihan Fushimi-Inari (KH34) → Tofukuji (KH36), dos paradas; después caminar al templo.",
-            "approximateDuration": "15–20 min"
-          },
-          "plan": [
-            "No forma parte del día 14; no hacer este desvío hoy.",
-            "Mantener como candidato para un día con ruta compatible si realmente queda tiempo."
-          ],
-          "goshuin": true,
-          "description": "Tōfuku-ji se fundó en 1236 como gran monasterio de budismo zen, y sigue siendo uno de los centros importantes de la escuela Rinzai en Kioto. Su nombre recuerda a dos templos clásicos de Nara, Tōdai-ji y Kōfuku-ji, buscando reunir sus ideales de grandeza y estudio. El gran Sanmon, reconstruido a comienzos del siglo XV, se considera una de las puertas zen monumentales más antiguas del país. El puente Tsūtenkyō atraviesa un valle de arces y en otoño es especialmente célebre. Sus jardines modernos reinterpretan la contemplación zen mediante patrones de piedra y musgo, como el famoso damero verde.",
-          "links": {
-            "officialWebsite": "https://renewal.tofukuji.jp/guide/"
-          }
-        },
-        {
-          "id": "sennyuji",
-          "title": "Sennyū-ji",
-          "time": "Opcional",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Sennyu-ji Kyoto",
-          "notes": "Templo secundario que sí hicimos en 2025. Se mantiene como opcional porque el día ya es muy completo. FUERA del recorrido real del 14/10 (Ginkaku → Hōnen → Filósofo → Eikan-dō → Nanzen-ji); no meter hoy un desvío al sur de Kioto. Pendiente para otro hueco.",
-          "transit": {
-            "from": "Tōfuku-ji",
-            "summary": "Caminar hacia el sureste/noreste por el área de Sennyū-ji; no compensa volver al tren.",
-            "approximateDuration": "15–20 min"
-          },
-          "plan": [
-            "No forma parte del día 14; no hacer este desvío hoy.",
-            "Mantener como candidato para un día con ruta compatible si realmente queda tiempo."
-          ],
-          "goshuin": true,
-          "description": "Sennyū-ji, «templo de la fuente que brota», está muy ligado a la familia imperial japonesa y por eso recibe el sobrenombre de Mi-dera, «templo imperial». Sus antecedentes se remontan al período Heian; en el siglo XIII el monje Shunjō amplió el complejo tras estudiar en China y trajo influencias de la dinastía Song. Desde el entierro del emperador Shijō en 1242, el recinto se relaciona con mausoleos y ceremonias en memoria de emperadores. Destacan el Butsuden, edificios ceremoniales y un ambiente de recogimiento distinto de los templos más turísticos. Es un ejemplo del vínculo entre budismo, cultura cortesana y memoria dinástica."
-        },
-        {
-          "id": "imakumano-kannonji",
-          "title": "Imakumano Kannon-ji",
-          "time": "Opcional",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "Imakumano Kannon-ji Kyoto",
-          "notes": "Otro secundario visitado en 2025; muy fácil de combinar con Sennyū-ji. FUERA del recorrido real del 14/10 (Ginkaku → Hōnen → Filósofo → Eikan-dō → Nanzen-ji); no meter hoy un desvío al sur de Kioto. Pendiente para otro hueco.",
-          "transit": {
-            "from": "Sennyū-ji",
-            "summary": "Continuar a pie dentro del mismo sector de templos.",
-            "approximateDuration": "10–15 min"
-          },
-          "plan": [
-            "No forma parte del día 14; no hacer este desvío hoy.",
-            "Mantener como candidato para un día con ruta compatible si realmente queda tiempo."
-          ],
-          "goshuin": true,
-          "description": "Imakumano Kannon-ji es un templo dedicado a Kannon, bodhisattva de la compasión que escucha el sufrimiento del mundo. Pertenece a la venerada peregrinación de los 33 templos de Kannon del oeste de Japón, llamada Saigoku Kannon. Su historia religiosa se vincula tradicionalmente a Kūkai, fundador del budismo Shingon, y a las montañas del sureste de Kioto. El nombre «Imakumano» recuerda la influencia del culto de Kumano y sus rutas de peregrinación. Es un sitio apropiado para comprender las oraciones por salud, consuelo y bienestar. Observa sus imágenes de Kannon, los árboles y los pequeños elementos votivos."
-        },
-        {
-          "id": "toji",
-          "title": "Tō-ji",
-          "time": "Opcional",
-          "category": "templo",
-          "status": "opcional",
-          "locationQuery": "To-ji Kyoto",
-          "notes": "No lo metemos como parada obligatoria porque es un desvío considerable. Solo si queda tiempo en algún momento de Kyoto. FUERA del recorrido real del 14/10 (Ginkaku → Hōnen → Filósofo → Eikan-dō → Nanzen-ji); no meter hoy un desvío al sur de Kioto. Pendiente para otro hueco.",
-          "transit": {
-            "from": "Sanjūsangendō",
-            "summary": "City Bus 206 desde Higashiyama Nanajo → Kyoto Station; Kintetsu Kyoto Line una parada Kyoto → Toji.",
-            "approximateDuration": "25–35 min",
-            "note": "Si vamos 4 y cansados, un taxi directo puede ahorrar bastante tiempo."
-          },
-          "plan": [
-            "No forma parte del día 14; no hacer este desvío hoy.",
-            "Mantener como candidato para un día con ruta compatible si realmente queda tiempo."
-          ],
-          "goshuin": true,
-          "description": "Tō-ji («templo del Este») fue uno de los templos de protección de la capital Heian a finales del siglo VIII y en el siglo IX quedó ligado a Kūkai (Kōbō Daishi), introductor del budismo esotérico Shingon en Japón. Su pagoda de cinco pisos, reconstruida en el siglo XVII, alcanza unos 55 metros y se ha convertido en símbolo de Kioto. En el Kōdō hay grupos escultóricos organizados como un mandala tridimensional, representación visual de la visión budista del cosmos. También son importantes los edificios de oración y los jardines. La pagoda no suele abrirse por dentro salvo ocasiones especiales; merece la pena contemplarla desde el estanque."
         },
         {
           "id": "gion-tanto",
