@@ -570,7 +570,6 @@
         {
           "id": "yasaka-gion-tarde-1014",
           "title": "Yasaka Shrine y Gion · paseo y cena si apetece",
-          "time": "Al salir de Heian (sin hora fija)",
           "category": "barrio",
           "status": "opcional",
           "locationQuery": "Yasaka Shrine Kyoto",
@@ -587,7 +586,6 @@
         {
           "id": "regreso-resi-1014",
           "title": "RESI STAY Yasaka · volver al terminar paseo/cena",
-          "time": "Después de Gion (hora por decidir)",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "RESI STAY YASAKA 28 Bishamoncho Higashiyama Kyoto",
