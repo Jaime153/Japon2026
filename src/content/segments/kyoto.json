@@ -824,27 +824,63 @@
         },
         {
           "id": "arashiyama-onsen",
-          "title": "Fufu no Yu · onsen público en Arashiyama",
+          "title": "Onsen imprescindible · elegir opción para Lorena",
           "category": "ocio",
           "status": "plan",
-          "notes": "Imprescindible de las chicas. Fufu no Yu abre de 12:00 a 22:00 (última entrada 21:30). Precio de referencia actualizado 2026: 1.200 ¥ en día laborable, toallas aparte. Baños públicos separados por sexo, sin baños privados. No admiten tatuajes, por eso hay que hacerlo ANTES de la posible cita del día 17. No requiere que pasemos antes por otros templos.",
+          "notes": "Las chicas quieren onsen sí o sí. Lorena tiene 15 tatuajes: Fufu no Yu y Tenzan no Yu NO admiten tatuajes, ni siquiera con parches, así que se descartan. Elegir una de las tres modalidades aquí abajo. Por defecto aparece el baño privado de Hanaikada, junto al puente Togetsukyō, pero TATUAJES, aforo para cuatro y reserva del 15/10 SIN CONFIRMAR. El baño privado de 40 min solo se ofrece vinculado a comida o alojamiento. Si no se confirma a tiempo, elegir baño tattoo-friendly: Kurama Onsen sí permite tatuajes expresamente, aunque queda lejos de Arashiyama; o Daikokuyu, sento cerca del RESI, que admite tatuajes pero NO es onsen termal.",
           "plan": [
-            "Al terminar el puente, ir andando al onsen Fufu no Yu, próximo a Hankyu Arashiyama.",
-            "Reservar unas 1,5–2 h de baño y descanso. Las tres chicas juntas en la zona femenina y Jaime en la masculina.",
-            "Volver al RESI cuando terminemos. Hoy no hay más templos pendientes que completar."
+            "Decidir y confirmar opción ANTES del jueves 15. Para Lorena, con 15 tatuajes, no sirve improvisar con parches en Fufu no Yu.",
+            "Opción privada en la misma Arashiyama: Hanaikada, comida y baño exclusivo de 40 min, reservas obligatorias; preguntar si admiten tatuajes y a 4 personas en el mismo baño. La comida ha de estar dentro de 11:00–14:00, último pedido 12:30; el plan de horas cambiará según la reserva.",
+            "Opción tattoo-friendly real: Kurama Onsen admite cualquier tatuaje oficialmente, sin reserva para baño diurno y con zonas separadas por sexo, pero está en el norte: habría que recortar Arashiyama o dedicarle muchas horas de traslado.",
+            "Opción con tatuajes cubiertos: Ohara no Sato permite tatuajes bajo toalla según su web, pero la entrada de día NO está confirmada y también está lejos. No contarlo como plan confirmado.",
+            "Si no hay onsen viable, alternativa sin líos de tatuajes: Daikokuyu (sento, NO aguas termales), 550 ¥ y cerca de Gion. No sustituir un verdadero onsen sin consultarlo al grupo."
           ],
           "priority": "must",
-          "time": "~14:30–16:30",
-          "locationQuery": "Fufu no Yu Arashiyama Kyoto",
-          "nearestStation": "Hankyu Arashiyama · ~1–2 min andando",
-          "approximatePrice": "¥1.100 adulto entre semana",
+          "time": "Por confirmar",
+          "locationQuery": "Hanaikada Arashiyama Kyoto",
           "links": {
-            "officialWebsite": "https://dormy-hotels.com/spa/fufu/"
+            "officialWebsite": "https://www.hanaikada.co.jp/daytrip/"
           },
-          "transit": {
-            "from": "Bamboo Forest / centro de Arashiyama",
-            "summary": "Caminar hacia Hankyu Arashiyama y Fufu no Yu.",
-            "approximateDuration": "20–25 min"
+          "bathChoices": {
+            "defaultId": "private",
+            "options": [
+              {
+                "id": "tattoo-friendly",
+                "label": "Tatuajes permitidos",
+                "venue": "Kurama Onsen",
+                "locationQuery": "Kurama Onsen Kyoto",
+                "policy": "La web oficial permite expresamente los tatuajes. Baños comunes separados por sexo, sin restricción de número publicada.",
+                "practical": "Onsen termal auténtico. 10:00–21:00; no requiere reserva para baño de día. Está lejos de Arashiyama: si lo elegís, hay que reajustar la tarde. Cerca del RESI existe Daikokuyu, pero es sento, NO onsen.",
+                "hours": "10:00–21:00",
+                "price": "Consultar tarifa vigente",
+                "confirmed": true,
+                "officialUrl": "https://kurama-spa.com/"
+              },
+              {
+                "id": "covered",
+                "label": "Tatuajes tapados",
+                "venue": "Ohara no Sato · pendiente de confirmar",
+                "locationQuery": "Minshuku Ohara no Sato Kyoto",
+                "policy": "La web oficial permite tatuajes si se mantienen cubiertos con una toalla. No equivale a admitir sin cubrir y hay que aclarar cómo aplicarlo durante el baño.",
+                "practical": "Está en Ohara, muy lejos de Arashiyama. No he podido confirmar uso de día para el jueves 15, precio ni cómo aplicar la norma a 15 tatuajes. Llamar +81 75-744-2917 antes de desplazarse. Fufu no Yu NO permite taparlos.",
+                "price": "Sin tarifa de día confirmada",
+                "confirmed": false,
+                "officialUrl": "https://www.oohara-no-sato.co.jp/english/lp/"
+              },
+              {
+                "id": "private",
+                "label": "Baño privado",
+                "venue": "Hanaikada · Arashiyama",
+                "locationQuery": "Hanaikada Arashiyama Kyoto",
+                "policy": "Baño privado al aire libre, con reserva y solo si se contrata comida o alojamiento. Hay que confirmar si admiten 15 tatuajes y si el aforo permite cuatro personas juntas.",
+                "practical": "40 minutos por grupo, no una hora completa. 2.200 ¥ por baño MÁS comida desde 4.100 ¥ por persona; aprox. 18.600 ¥ para cuatro antes de tasas adicionales. Almuerzo 11:00–14:00, último pedido 12:30: habría que comer allí y adelantar el baño respecto a las 14:30. Llamar cuanto antes.",
+                "hours": "Comida 11:00–14:00 · baño privado a confirmar",
+                "price": "40 min 2.200 ¥ + comida desde 4.100 ¥/persona",
+                "confirmed": false,
+                "officialUrl": "https://www.hanaikada.co.jp/daytrip/",
+                "bookingUrl": "https://www.hanaikada.co.jp/daytrip/"
+              }
+            ]
           }
         },
         {
@@ -1295,7 +1331,7 @@
           "title": "Tatuajes de las chicas · cita pendiente",
           "category": "ocio",
           "status": "pendiente",
-          "time": "Tarde · pendiente",
+          "time": "Por reservar",
           "locationQuery": "GION DARUMA Tattoo Studio Kyoto 281-1 Gionmachi Kitagawa",
           "notes": "Los tatuajes de Lorena, Vilma y Marga siguen siendo un deseo del grupo, pero NO HAY CITA CONFIRMADA. El 17 ya incluye kimono, té y Kiyomizu: solo caben tatuajes al final del día si el estudio confirma hueco real, diseños, tiempos y que puede atender a tres. No garantizar 15:00 ni reservar una duración inventada. El 18 tienen traslado a KIX: no arriesgarlo. Onsen se hace el 15 antes de tatuarse.",
           "plan": [
