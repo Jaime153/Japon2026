@@ -25,7 +25,7 @@ export interface Recommendation {
 export const RECOMMENDATIONS: Recommendation[] = [
   {
     id: 'kyoto-bath-tiktok-thoron',
-    title: "Thoron Onsen Inari · baño con tatuajes por verificar",
+    title: "Thoron Onsen Inari",
     area: "Nijō, Kioto",
     category: 'experiencia',
     scope: '2026',
@@ -38,7 +38,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-gokoyu',
-    title: "Gokō-yu · baño con tatuajes por verificar",
+    title: "Gokō-yu",
     area: "Shimogyō, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -51,7 +51,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-funaoka',
-    title: "Funaoka Onsen · baño con tatuajes por verificar",
+    title: "Funaoka Onsen",
     area: "Murasakino, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -64,7 +64,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-kurama',
-    title: "Kurama Onsen · baño con tatuajes por verificar",
+    title: "Kurama Onsen",
     area: "Kurama, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -77,7 +77,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-ume-yu',
-    title: "Sauna no Ume-yu · baño con tatuajes por verificar",
+    title: "Sauna no Ume-yu",
     area: "Shimogyō, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -90,7 +90,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-hakusanyu-rokujo',
-    title: "Hakusan-yu Rokujō · baño con tatuajes por verificar",
+    title: "Hakusan-yu Rokujō",
     area: "Shimogyō, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -103,7 +103,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-hakusanyu-takatsuji',
-    title: "Hakusan-yu Takatsuji · baño con tatuajes por verificar",
+    title: "Hakusan-yu Takatsuji",
     area: "Shimogyō, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -116,7 +116,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-hinodeyu',
-    title: "Hinode-yu · baño con tatuajes por verificar",
+    title: "Hinode-yu",
     area: "Minami, Kioto",
     category: 'experiencia',
     scope: 'backup',
@@ -129,7 +129,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
   },
   {
     id: 'kyoto-bath-tiktok-hanaikada-private',
-    title: "Hanaikada · baño con tatuajes por verificar",
+    title: "Hanaikada",
     area: "Arashiyama, Kioto",
     category: 'experiencia',
     scope: 'backup',
