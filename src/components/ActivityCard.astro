@@ -59,6 +59,8 @@ const hasExtra = Boolean(
   data-activity-id={activity.id}
   data-activity-title={activity.title}
   data-activity-time={activity.time ?? ''}
+  data-activity-status={activity.status}
+  data-activity-skipped={activity.skipped ? 'true' : 'false'}
   data-activity-query={query ?? ''}
   data-completed="false"
 >
