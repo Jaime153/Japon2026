@@ -1,6 +1,6 @@
 # AGENTS.md — Contexto operativo y reglas de trabajo · Japon2026
 
-**Actualizado: miércoles 14 de octubre de 2026, llegada real a Heian Jingū 16:10 (hora de Japón).** Archivo para Codex y cualquier asistente o conversación que trabaje sobre este repositorio. Antes de proponer cambios, leer este documento y la fuente de verdad actual: `src/content/segments/*.json`.
+**Actualizado: miércoles 14 de octubre de 2026, plan de salida de Heian ~16:30 (hora de Japón).** Archivo para Codex y cualquier asistente o conversación que trabaje sobre este repositorio. Antes de proponer cambios, leer este documento y la fuente de verdad actual: `src/content/segments/*.json`.
 
 ## Flujo de trabajo obligatorio
 
@@ -12,15 +12,15 @@
 - Recomendaciones y horas: distinguir **HECHO REAL**, **ETA**, **estimación**, **opcional** y **pendiente/reserva no realizada**. No marcar visitas como hechas sin confirmación.
 - Verificar cierres, horarios, distancias, cola, meteorología y desplazamientos antes de construir un día. Optimizar por barrios y trayectos a pie, mantener comida/descansos y un plan recortable. No heredar instrucciones de otro día.
 
-## Miércoles 14/10/2026 — información de calle, actualizada con llegada a Heian Jingū 16:10 JST
+## Miércoles 14/10/2026 — hechos y cierre de la jornada
 
-- **Hechos reales comunicados por Jaime:** salida del RESI STAY Yasaka **08:30**; subida al bus **09:15**; indicador del bus **09:44 ETA** (NO llegada real). La hora de acceso a Ginkaku-ji **~10:00** era estimación. No confirmar Ginkaku-ji, Hōnen-in, Camino del Filósofo ni Eikan-dō individualmente sin comunicación explícita de que se visitaron.
-- **Comida real** en **cafe LCM** (Jingūmichi): estaban comiendo a las **14:22**, comienzo **~14:12** estimado y final sin hora confirmada.
-- **Nanzen-ji:** presencia real confirmada a las **15:15**. Jaime comunica ahora que **YA HAN SALIDO** del templo, pero no ha dado hora exacta de salida: no registrar 16:10 como hecho.
-- **Heian Jingū — dato real nuevo:** el grupo **LLEGÓ a las 16:10** (14/10); a continuación Jaime confirma que **están gestionando el goshuin**. El proceso está **en curso**, NO consta todavía sello entregado/pagado, final de visita ni hora de salida. Mantener esto separado del estado de «hecho». Para el **14 de octubre**, el recinto admite visita hasta **17:30** y el jardín Shin'en última entrada hasta **17:00**; no prometer tiempo de jardines después de recoger el sello. Fuente oficial: https://www.heianjingu.or.jp/attention/ y https://www.heianjingu.or.jp/map/garden/ .
-- **Después de Heian, NO volver al hotel solo para salir otra vez.** Bajar hacia el sur por el eje de Jingūmichi, pasear hacia **Shōren-in (solo exterior si ya es tarde) → zona Chion-in (SIN prometer visita interior) → Maruyama/Yasaka → Gion para cenar**, y volver **al RESI STAY Yasaka al final**. No hacer desvíos por coleccionar exteriores cerrados; el tramo Shōren-in/Chion-in se puede omitir si hay cansancio o ya es de noche. Ruta orientativa, no visita confirmada ni reserva de cena.
-- **Horarios oficiales comprobados:** Shōren-in **09:00–17:00 (última entrada 16:30)** https://www.shorenin.com/english/visiting/ ; Chion-in visita **09:00–15:50** y cierre de puertas **16:30** según guía en inglés https://www.chion-in.or.jp/en/guide/ (web japonesa habla de cierre general 16:00: tratarlo como cerrado a última hora) ; Yasaka Shrine **recinto accesible 24 h, oficina 09:00–17:00** https://www.yasaka-jinja.or.jp/access/ . **No mandar al grupo a Chion-in/Shōren-in después de Heian como visita interior ni prometer goshuin vespertinos.**
-- Hoy **NO** añadir Fushimi Inari, Tōfuku-ji, Sanjūsangendō, Nishiki ni otra excursión. El 14 no hay vuelo al aeropuerto. Mantener tiempos reales/ETA/planes separados.
+- **Hechos confirmados:** salida real del RESI STAY Yasaka **08:30**, subida al autobús **09:15**; **09:44** solo ETA del bus. No convertir en visitas realizadas Ginkaku-ji, Hōnen-in, Filósofo ni Eikan-dō sin confirmación del usuario. En **cafe LCM** estaban comiendo a las **14:22** (comienzo **~14:12** estimado). En **Nanzen-ji** presencia real a las **15:15** y posteriormente SALIERON, sin comunicar hora exacta de salida. En **Heian Jingū** llegada REAL a las **16:10**.
+- **Salida Heian Jingū:** Jaime plantea **salir ~16:30**. Es el objetivo actual, **NO hora real confirmada**. No fijar fin de visita ni modificar automáticamente una llegada real por una ETA. Si tardan algo más, adaptar la tarde.
+- **Goshuin, regla de interfaz:** el chip/icono **📕 Goshuin** debe representar **exclusivamente disponibilidad** del servicio en un templo o santuario, mediante `goshuin: true`. Nunca interpretar el icono como "conseguido"; no escribir "recogiendo", "pillado", "entregado" ni exigir seguimiento por cada visita. Jaime no quiere llevar contabilidad de goshuin.
+- **Después de Heian:** **NO** programar templos cuyo interior ya está cerrado, ni ponerlos como tarjetas opcionales irrelevantes en modo Hoy. Se han quitado **Chion-in, Tōfuku-ji, Sennyū-ji, Imakumano Kannon-ji y Tō-ji** del miércoles 14; **Shōren-in** tampoco se añade. El día no debe convertirse en una lista de visitas cerradas.
+- **Única salida opcional razonable:** bajar hacia **Yasaka/Gion** para pasear/cenar (Yasaka tiene recinto accesible a cualquier hora), y después regresar al RESI STAY Yasaka. Si el grupo está cansado, **Heian → RESI directamente**. Ninguna parada/cena futura se marca como realizada de antemano, ni se vuelve al hotel a mitad de ruta.
+- **Horarios:** Heian Jingū recinto hasta **17:30** y jardín Shin'en última entrada a las **17:00**: https://www.heianjingu.or.jp/attention/ . Shōren-in última entrada **16:30** (cierra **17:00**): https://www.shorenin.com/english/visiting/ . Chion-in interiores cerrados para esta franja: https://www.chion-in.or.jp/en/guide/ . Yasaka Shrine recinto de libre acceso las 24 horas (oficina con cierre temprano): https://www.yasaka-jinja.or.jp/access/ .
+- El **14/10 NO** añadir Fushimi Inari, Sanjūsangendō, Nishiki ni excursiones al otro extremo de Kioto. Mantener espacio para cena y descanso; fotos exteriores de templos cerrados no son una razón para desviarse.
 
 ## Otras decisiones del viaje (NO perdibles)
 
