@@ -42,16 +42,23 @@ if (day) {
   ask('11:10', 'honenin-1014', 'active');
   ask('12:00', 'philosophers-path', 'active');
   ask('12:34', 'eikando-1014', 'active'); // Captura real del usuario.
-  ask('13:20', 'comer-higashiyama-noreste-1014', 'active');
-  ask('14:40', 'nanzenji-1014', 'active');
-  ask('16:20', 'regreso-resi-1014', 'upcoming'); // Heian Jingū es opcional.
+  ask('13:20', 'comer-higashiyama-noreste-1014', 'upcoming');
+  ask('14:22', 'comer-higashiyama-noreste-1014', 'active'); // Comida real desde ~14:12.
+  ask('14:40', 'comer-higashiyama-noreste-1014', 'active'); // Salida del café no confirmada.
+  ask('15:30', 'heian-jingu-1014', 'active'); // Ahora quieren verlo, ya no es opcional.
+  ask('16:20', 'nanzenji-1014', 'active'); // Visita estimada tras Heian.
   ask('17:30', 'regreso-resi-1014', 'active');
   const late = selectNextActivity(activities, at('19:00'));
   check(late.kind === 'finished' && !late.activity,
     'Gion Tanto es opcional, no la próxima parada automática');
   const eikandoDone = activities.map(a => a.id === 'eikando-1014' ? {...a, completed: true} : a);
   check(selectNextActivity(eikandoDone, at('12:34')).activity?.id === 'comer-higashiyama-noreste-1014',
-    'Marcar Eikan-dō como hecho debe pasar a la siguiente parada real');
+    'Marcar Eikan-dō como hecho debe pasar a la comida, sin adelantar Heian');
+  const lunch = activities.find(a => a.id === 'comer-higashiyama-noreste-1014');
+  check(parseTimeWindow(lunch?.time)?.start === at('14:12') &&
+        parseTimeWindow(lunch?.time)?.end === at('15:10') &&
+        lunch?.status === 'confirmado',
+    'Hora real de inicio de la comida y final solo estimado deben estar anotados');
   const noOptionals = selectNextActivity([
     {id:'solo-opcional',time:'~19:00',status:'opcional'},
     {id:'otro-saltado',time:'~14:30–15:30',status:'plan',skipped:true},
