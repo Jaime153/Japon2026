@@ -393,11 +393,16 @@ if (wed) {
   assert(lunch?.locationQuery.includes('cafe LCM') && lunch?.address.includes('夷町159'),
     '14/10: cafe LCM es el de Jingūmichi');
   const nanzen = wed.activities.find(a => a.id === 'nanzenji-1014');
-  assert(nanzen?.status === 'confirmado' && nanzen?.time === '15:15–16:10' &&
-    nanzen?.notes.includes('hora REAL') && nanzen?.notes.includes('ESTIMADO'),
-    '14/10: Nanzen-ji presencia real 15:15, final 16:10 solo estimado');
-  assert(wed.activities.find(a => a.id === 'heian-jingu-1014')?.status === 'opcional',
-    '14/10: Heian aún no confirmado; ir solo si no se hizo antes');
+  assert(nanzen?.status === 'confirmado' && nanzen?.time === '15:15' &&
+    nanzen?.notes.includes('hora REAL') && nanzen?.notes.includes('SALIDO') && nanzen?.notes.includes('ESTIMADO'),
+    '14/10: Nanzen-ji presencia real 15:15; salida confirmada pero SIN hora real');
+  const heian = wed.activities.find(a => a.id === 'heian-jingu-1014');
+  assert(heian?.status === 'plan' && heian?.notes.includes('vamos de camino') &&
+    heian?.notes.includes('17:30') && heian?.notes.includes('17:00'),
+    '14/10: en camino a Heian, SIN llegada confirmada; respetar cierres');
+  assert(wed.activities.find(a => a.id === 'yasaka-gion-tarde-1014')?.status === 'opcional' &&
+    wed.activities.find(a => a.id === 'regreso-resi-1014')?.notes.includes('No hay llegada al hotel confirmada'),
+    '14/10: paseo por Yasaka/Gion, sin vuelta absurda al hotel antes de cenar');
   assert(!wed.activities.find(a => a.id === 'philosophers-path')?.plan.some(p => /Hora límite: empezar regreso/.test(p)),
     '14/10: no introducir regreso al hotel antes de terminar los templos');
   assert(!wed.activities.some(a => a.id === 'fushimi'),
@@ -407,11 +412,8 @@ if (wed) {
     'eikando-1014,comer-higashiyama-noreste-1014,nanzenji-1014',
     '14/10: mapa Eikan-dō → cafe LCM → Nanzen-ji');
   assert(mapped?.stages?.[3]?.stops?.map(p => p.id).join(',') ===
-    'nanzenji-1014,heian-jingu-1014,@hotel-end' ||
-    (mapped?.stages?.[3]?.stops?.[0]?.id === 'nanzenji-1014' &&
-      mapped?.stages?.[3]?.stops?.[1]?.id === 'heian-jingu-1014' &&
-      mapped?.stages?.[3]?.stops?.[2]?.kind === 'hotel'),
-    '14/10: mapa Nanzen → Heian condicional → RESI');
+    'nanzenji-1014,heian-jingu-1014,yasaka-gion-tarde-1014,@hotel-end',
+    '14/10: mapa Nanzen → Heian → Yasaka/Gion → RESI sin retorno intermedio');
   assert(mapped?.stages?.[0]?.stops?.some(p => p.id === 'ginkakuji'),
     '14/10: el primer templo debe ser Ginkaku-ji');
   assert(mapped?.stages?.at(-1)?.stops?.some(p => p.kind === 'hotel'),
