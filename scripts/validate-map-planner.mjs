@@ -397,9 +397,11 @@ if (wed) {
     nanzen?.notes.includes('hora REAL') && nanzen?.notes.includes('SALIDO') && nanzen?.notes.includes('ESTIMADO'),
     '14/10: Nanzen-ji presencia real 15:15; salida confirmada pero SIN hora real');
   const heian = wed.activities.find(a => a.id === 'heian-jingu-1014');
-  assert(heian?.status === 'plan' && heian?.notes.includes('vamos de camino') &&
+  assert(heian?.status === 'confirmado' && heian?.time === '16:10' &&
+    heian?.goshuin === true && heian?.notes.includes('ESTÁN PILLANDO EL GOSHUIN') &&
+    heian?.notes.includes('no registrar todavía') &&
     heian?.notes.includes('17:30') && heian?.notes.includes('17:00'),
-    '14/10: en camino a Heian, SIN llegada confirmada; respetar cierres');
+    '14/10: llegada REAL a Heian 16:10; goshuin EN CURSO, entrega NO confirmada');
   assert(wed.activities.find(a => a.id === 'yasaka-gion-tarde-1014')?.status === 'opcional' &&
     wed.activities.find(a => a.id === 'regreso-resi-1014')?.notes.includes('No hay llegada al hotel confirmada'),
     '14/10: paseo por Yasaka/Gion, sin vuelta absurda al hotel antes de cenar');

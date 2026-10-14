@@ -407,9 +407,9 @@
     },
     {
       "date": "2026-10-14",
-      "title": "Kioto · Nanzen-ji visitado y hacia Heian Jingū",
+      "title": "Kioto · Nanzen-ji 15:15 y Heian Jingū llegada real 16:10",
       "status": "plan",
-      "note": "Miércoles 14/10: RESI salida REAL 08:30, bus REAL 09:15, ETA 09:44 (sin confirmar llegada). Comida REAL en cafe LCM: comiendo 14:22, inicio ~14:12 y final ~14:45 estimados. Nanzen-ji PRESENCIA REAL 15:15; Jaime confirma que hemos SALIDO del templo, pero hora de salida no comunicada. AHORA de camino a Heian Jingū (llegada/visita no confirmadas); recinto hasta 17:30, jardín última entrada 17:00. Tras Heian bajar a pie hacia Gion/Yasaka y cenar si apetece; NO volver al RESI a mitad de recorrido ni desviarse para entrar en Chion-in/Shōren-in cerrados. Regreso al alojamiento al final de la tarde/noche. 15 Kinkaku + Arashiyama + onsen condicionado; 16 Fushimi temprano + Nara propuesto; 17 kimono/té/Kiyomizu aún sin reserva; 18 bus aeropuerto H2/KY2.",
+      "note": "Miércoles 14/10: RESI salida REAL 08:30, bus REAL 09:15, ETA 09:44 (sin confirmar llegada). Comida REAL en cafe LCM: comiendo 14:22, inicio ~14:12 y final ~14:45 estimados. Nanzen-ji PRESENCIA REAL 15:15; Jaime confirma que hemos SALIDO del templo, pero hora de salida no comunicada. Heian Jingū LLEGADA REAL 16:10; a continuación el grupo está gestionando el goshuin (EN CURSO, aún no consta recibido). Hora de salida y final de visita NO confirmadas; recinto hasta 17:30, jardín última entrada 17:00. Tras Heian bajar a pie hacia Gion/Yasaka y cenar si apetece; NO volver al RESI a mitad de recorrido ni desviarse para entrar en Chion-in/Shōren-in cerrados. Regreso al alojamiento al final de la tarde/noche. 15 Kinkaku + Arashiyama + onsen condicionado; 16 Fushimi temprano + Nara propuesto; 17 kimono/té/Kiyomizu aún sin reserva; 18 bus aeropuerto H2/KY2.",
       "activities": [
         {
           "id": "salida-resi-0830-1014",
@@ -528,23 +528,25 @@
           "plan": [
             "15:15: presencia en Nanzen-ji confirmada.",
             "Salida del templo comunicada, pero sin hora exacta.",
-            "Siguiente desplazamiento REAL informado: camino hacia Heian Jingū; llegada a Heian sigue pendiente."
+            "Siguiente parada: Heian Jingū, con llegada REAL confirmada a las 16:10."
           ]
         },
         {
           "id": "heian-jingu-1014",
-          "title": "Heian Jingū · en camino desde Nanzen-ji",
-          "time": "~16:35–17:20",
+          "title": "Heian Jingū · llegada real 16:10, goshuin en curso",
+          "time": "16:10",
           "category": "templo",
-          "status": "plan",
+          "status": "confirmado",
           "locationQuery": "平安神宮 京都市左京区岡崎西天王町97",
           "description": "Heian Jingū se fundó en 1895 para celebrar el aniversario de la antigua capital de Heian, hoy Kioto. Sus edificios reproducen a menor escala el estilo del palacio imperial de la época Heian y destacan por los vivos colores bermellón y verde. El enorme torii de la avenida marca el acceso simbólico al santuario. Está dedicado a los emperadores Kanmu y Kōmei, asociados al nacimiento de la capital y al final del período imperial de Kioto. También tiene un jardín paisajístico Shin'en, de pago y con estanques.",
-          "notes": "Jaime confirma que ya hemos salido de Nanzen-ji y vamos de camino a Heian Jingū; NO se ha confirmado aún la llegada ni la visita. En octubre abre el recinto 06:00–17:30 y el jardín Shin'en admite entradas hasta las 17:00. Priorizar el santuario; entrar al jardín solo con tiempo suficiente antes del cierre. Fuente oficial: https://www.heianjingu.or.jp/attention/ . Después bajar hacia Yasaka/Gion por Jingūmichi; no volver al hotel a mitad del paseo.",
+          "notes": "LLEGADA REAL a Heian Jingū a las 16:10 del miércoles 14/10. Jaime informa que ESTÁN PILLANDO EL GOSHUIN (gestión en curso); no registrar todavía que se haya entregado/recogido ni dar la visita por terminada. Hora de salida SIN confirmar. Recinto hasta las 17:30, jardín Shin'en última entrada 17:00; entrar al jardín únicamente si el tiempo real disponible lo permite. Al salir, continuar hacia Yasaka/Gion si apetece y volver al hotel al final, sin desvíos a templos cerrados.",
           "plan": [
-            "En camino desde Nanzen-ji: desplazamiento confirmado; hora de llegada NO confirmada.",
-            "Recinto abierto hasta las 17:30. Jardín Shin'en: última entrada a las 17:00; no forzar jardines sin margen.",
-            "Tras el santuario, bajar hacia Gion por Jingūmichi para paseo/cena; el hotel queda para el FINAL, no como parada intermedia."
-          ]
+            "16:10: hemos llegado a Heian Jingū (hora REAL comunicada por Jaime).",
+            "Estamos gestionando el goshuin (EN CURSO); falta confirmar que lo hayamos recibido y cuándo salimos del recinto.",
+            "Recinto hasta las 17:30 y jardín Shin'en con última entrada a las 17:00: según colas, decidir si entrar al jardín o centrarnos en el santuario.",
+            "Después paseo opcional bajando a Yasaka/Gion y regreso al RESI solo al finalizar."
+          ],
+          "goshuin": true
         },
         {
           "id": "chionin-1014",
