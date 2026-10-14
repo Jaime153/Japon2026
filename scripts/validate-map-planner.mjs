@@ -398,13 +398,21 @@ if (wed) {
     '14/10: Nanzen-ji presencia real 15:15; salida confirmada pero SIN hora real');
   const heian = wed.activities.find(a => a.id === 'heian-jingu-1014');
   assert(heian?.status === 'confirmado' && heian?.time === '16:10' &&
-    heian?.goshuin === true && heian?.notes.includes('ESTÁN PILLANDO EL GOSHUIN') &&
-    heian?.notes.includes('no registrar todavía') &&
-    heian?.notes.includes('17:30') && heian?.notes.includes('17:00'),
-    '14/10: llegada REAL a Heian 16:10; goshuin EN CURSO, entrega NO confirmada');
+    heian?.goshuin === true && heian?.notes.includes('~16:30') &&
+    heian?.notes.includes('previsión') &&
+    !/en curso|recogiendo|pillando/i.test(heian?.title),
+    '14/10: llegada REAL 16:10; salida ~16:30 PREVISTA; goshuin es SOLO disponibilidad');
   assert(wed.activities.find(a => a.id === 'yasaka-gion-tarde-1014')?.status === 'opcional' &&
-    wed.activities.find(a => a.id === 'regreso-resi-1014')?.notes.includes('No hay llegada al hotel confirmada'),
-    '14/10: paseo por Yasaka/Gion, sin vuelta absurda al hotel antes de cenar');
+    wed.activities.find(a => a.id === 'regreso-resi-1014')?.notes.includes('No hay ninguna hora real de regreso confirmada'),
+    '14/10: Yasaka/Gion opcional, sin pasar por hotel a mitad del recorrido');
+  for (const closedId of ['chionin-1014', 'tofukuji', 'sennyuji', 'imakumano-kannonji', 'toji']) {
+    assert(!wed.activities.some(a => a.id === closedId),
+      '14/10: no enseñar tarjetas de templos cerrados o desviados: ' + closedId);
+  }
+  assert(wed.activities.length === 12, '14/10: evitar una cascada de opcionales que ya no aportan');
+  assert(heian?.goshuin === true &&
+    !/goshuin.*(pillado|recogido|en curso)|pillando.*goshuin/i.test(heian?.title + ' ' + heian?.notes),
+    '14/10: goshuin es solo un icono de disponibilidad, sin seguimiento individual');
   assert(!wed.activities.find(a => a.id === 'philosophers-path')?.plan.some(p => /Hora límite: empezar regreso/.test(p)),
     '14/10: no introducir regreso al hotel antes de terminar los templos');
   assert(!wed.activities.some(a => a.id === 'fushimi'),
