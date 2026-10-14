@@ -294,6 +294,18 @@ if (kyoto15) {
     '15/10: el horario del baño depende de cuándo acabemos TODAS las visitas');
   assert(day?.activities.find(a => a.id === 'tenryuji-1015')?.status === 'opcional',
     '15/10: Tenryu-ji no puede imponerse');
+  // No basta con revisar el mapa: esas tarjetas «opcionales» aparecían
+  // después del baño en «Hoy» y confundían al grupo pese a no estar mapeadas.
+  for (const id of ['otagi','adashino','ryoanji','ninnaji']) {
+    assert(!day?.activities.some(a => a.id === id),
+      '15/10: opcional fuera de ruta NO debe figurar en day.activities/Hoy: '+id);
+  }
+  const ordered = day?.activities.map(a => a.id) || [];
+  assert(ordered.at(-1) === 'arashiyama-onsen',
+    '15/10: el baño debe ser la ULTIMA tarjeta del día, sin templos después');
+  assert(day?.activities.find(a=>a.id === 'bamboo')?.transit?.from === 'Kinkaku-ji' &&
+    !day?.activities.find(a=>a.id === 'bamboo')?.transit?.summary?.includes('Adashino'),
+    '15/10: acceso al bambú debe partir del itinerario REAL desde Kinkaku, no de Adashino');
 }
 const kyoto16 = get('2026-10-16');
 if (kyoto16) {
