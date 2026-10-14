@@ -382,7 +382,7 @@ if (wed) {
   assert(wed.activities.find(a => a.id === 'ginkakuji')?.time === '~10:00–10:50',
     '14/10: Ginkaku no puede empezar antes de la ETA 09:44 del bus');
   const lunch = wed.activities.find(a => a.id === 'comer-higashiyama-noreste-1014');
-  assert(lunch?.status === 'confirmado' && lunch?.time === '~14:12',
+  assert(lunch?.status === 'confirmado' && lunch?.time === '~14:12–15:10',
     '14/10: cafe LCM, comida empezada aproximadamente a las 14:12');
   assert(lunch?.notes.includes('NO está confirmada la salida'),
     '14/10: NO afirmar que han terminado de comer antes de que lo confirmen');
