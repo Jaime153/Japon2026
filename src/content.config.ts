@@ -77,7 +77,7 @@ const parkingSchema = z.object({
 const bathChoicesSchema = z.object({
   defaultId: z.string(),
   options: z.array(z.object({
-    id: z.enum(['tattoo-friendly','covered','private']),
+    id: z.enum(['sento-nijo','sento-sauna','sento-heritage','tattoo-friendly','private']),
     label: z.string(),
     venue: z.string(),
     locationQuery: z.string(),
@@ -86,9 +86,10 @@ const bathChoicesSchema = z.object({
     price: z.string().optional(),
     hours: z.string().optional(),
     confirmed: z.boolean().default(false),
+    evidence: z.enum(['official','tourism','pending']).optional(),
     officialUrl: z.string().url(),
     bookingUrl: z.string().url().optional(),
-  })).length(3),
+  })).min(3).max(5),
 });
 
 const activitySchema = z.object({
