@@ -275,6 +275,13 @@ if (kyoto18) {
     '18/10: Ginkaku ya se organiza el día 14 para las cuatro personas');
   assert(ids.indexOf('kiyomizu-1018') < ids.indexOf('ninenzaka-palillos-fotos-1018'),
     '18/10: primero fotos al templo y después tiendas de palillos');
+  const kyotoDay18 = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto')?.days.find(day => day.date === '2026-10-18');
+  assert(kyotoDay18?.activities.find(a => a.id === 'kimono-te-kiyomizu-grupo-pendiente')?.status === 'pendiente',
+    '18/10: conservar preferencia kimono/ceremonia sin inventar reserva ni fijar día');
+  assert(kyotoDay18?.activities.find(a => a.id === 'kiyomizu-1018')?.status === 'pendiente',
+    '18/10: Kiyomizu aún requiere día/hora compatibles con el kimono y el aeropuerto');
+  assert(kyotoDay18?.activities.find(a => a.id === 'kyoto-station-h2')?.status !== 'confirmado',
+    '18/10: parada confirmada, pero bus objetivo 14:20 sin billete confirmado');
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
@@ -327,8 +334,16 @@ if (wed) {
     'nanzenji-1014', 'heian-jingu-1014'];
   assert(wed.activities.slice(0, order.length).map(a => a.id).join(',') === order.join(','),
     '14/10: Ginkaku → Honen-in → Filósofo → Eikan-do → Nanzen-ji → Heian');
-  assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.time === '08:00',
-    '14/10: salir hacia Ginkaku sobre las 08:00 si el tiempo lo permite');
+  assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.time === '08:30' && wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.status === 'confirmado',
+    '14/10: salida real 08:30 debe quedar confirmada');
+  assert(wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.notes.includes('09:15') && wed.activities.find(a => a.id === 'salida-resi-0830-1014')?.notes.includes('09:44'),
+    '14/10: anclar bus tomado 09:15 y ETA 09:44 sin confirmar llegada');
+  assert(wed.activities.find(a => a.id === 'ginkakuji')?.time === '~10:00–10:50',
+    '14/10: Ginkaku no puede empezar antes de la ETA 09:44 del bus');
+  assert(wed.activities.find(a => a.id === 'heian-jingu-1014')?.status === 'opcional',
+    '14/10: Heian Jingū debe ser extra y no obligación');
+  assert(!wed.activities.find(a => a.id === 'philosophers-path')?.plan.some(p => /Hora límite: empezar regreso/.test(p)),
+    '14/10: no poner regreso al hotel a las 10:30 antes de Eikan-do');
   assert(!wed.activities.some(a => a.id === 'fushimi'),
     '14/10: Fushimi Inari se hace temprano el viernes 16');
   const mapped = get('2026-10-14');
