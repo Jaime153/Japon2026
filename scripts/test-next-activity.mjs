@@ -114,8 +114,10 @@ if (day15) {
   check(selectNextActivity(records, at('16:25'))?.activity?.id === 'hotel-desmaquillarse-1015',
     '16:25 JST: despues del puente PRIMERO hotel para desmaquillarse, no bano directo');
   const doneHotel = records.map(a=>a.id==='hotel-desmaquillarse-1015' ? {...a,completed:true} : a);
-  check(selectNextActivity(doneHotel, at('16:25'))?.activity?.id==='arashiyama-onsen',
-    'Tras salir del hotel, el siguiente hito pasa a ser el bano elegido');
+  check(day15.activities.find(a=>a.id==='arashiyama-onsen')?.visited===true &&
+    day15.activities.find(a=>a.id==='arashiyama-onsen')?.title.includes('Gokō-yu') &&
+    selectNextActivity(doneHotel, at('16:25'))?.activity?.id!=='arashiyama-onsen',
+    'Tras confirmarse el baño en Gokō-yu, no sugerirlo otra vez como pendiente');
 }
 const css = readFileSync('src/styles/global.css', 'utf8');
 check(!css.includes('.activity-done h3') && !css.includes('.activity-done { opacity'),
