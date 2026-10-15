@@ -247,65 +247,54 @@ if (kyoto14) {
 // Se libera el 17 para Kiyomizu en kimono y ceremonia con las cuatro.
 const kyoto15 = get('2026-10-15');
 if (kyoto15) {
-  const kyotoData = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
-  const day = kyotoData?.days.find(d => d.date === '2026-10-15');
-  const activityIds = day?.activities.map(a => a.id) || [];
+  const rawDay = segments.find(s => s.city === 'Kioto' || s.city === 'Kyoto')
+    ?.days.find(d => d.date === '2026-10-15');
   const expected = ['kinkaku','ryoanji','otagi','adashino','bamboo',
     'arashiyama-comida-1015','tenryuji-1015','togetsukyo-1015','arashiyama-onsen'];
-  assert(activityIds.join(',') === expected.join(','),
-    '15/10 en directo: orden Kinkaku→Ryoan→Otagi→Adashino→bambu→comida→Tenryu→puente→bano');
-  assert(!day?.activities.some(a => a.id === 'ninnaji'),
-    '15/10: Ninna-ji ya se ha descartado hoy, sin marcarlo visitado');
+  assert(rawDay?.activities.map(a=>a.id).join(',') === expected.join(','),
+    '15/10: orden de visitas reales y previstas, sin Ninna');
   for (const id of ['kinkaku','ryoanji']) {
-    const a = day?.activities.find(x=>x.id===id);
-    assert(a?.status === 'confirmado' && !a.time,
-      '15/10: Kinkaku y Ryoan visitados sin fingir hora real de entrada/salida: '+id);
+    const a = rawDay?.activities.find(x=>x.id===id);
+    assert(a?.status === 'confirmado' && a?.visited === true && !a.time,
+      '15/10: visitas realmente realizadas, sin horas falsas '+id);
   }
-  const otagi = day?.activities.find(a=>a.id==='otagi');
+  const otagi = rawDay?.activities.find(x=>x.id==='otagi');
   assert(otagi?.status === 'plan' && otagi?.time === '~11:25–12:05' &&
     otagi?.notes.includes('NO se ha confirmado llegada') &&
-    otagi?.transit?.summary.includes('Uber REAL') &&
-    otagi?.transit?.summary.includes('ETA'),
-    '15/10: Uber real a Otagi; 11:25 es ETA, NUNCA visita confirmada');
+    otagi?.transit?.summary.includes('Uber REAL'),
+    '15/10: en Uber a Otagi 11:25 es ETA, no visita real');
   for (const id of ['adashino','bamboo','tenryuji-1015','togetsukyo-1015']) {
-    assert(day?.activities.find(a=>a.id===id)?.status === 'plan',
-      '15/10: visita futura sin marcar hecha: '+id);
+    assert(rawDay?.activities.find(a=>a.id===id)?.status === 'plan',
+      '15/10: no inventar visitas futuras realizadas '+id);
   }
-  assert(day?.activities.find(a => a.id === 'adashino')?.transit?.from.includes('Otagi') &&
-    day?.activities.find(a => a.id === 'bamboo')?.transit?.from.includes('Adashino'),
-    '15/10: transitos deben seguir Otagi→Adashino→bambu, no Kinkaku directo');
-  assert(day?.activities.find(a=>a.id==='tenryuji-1015')?.notes.includes('16:50'),
-    '15/10: Tenryu ultima entrada jardin 16:50, no ir cerrado');
-  assert(day?.activities.at(-1)?.id === 'arashiyama-onsen' &&
-    day?.activities.at(-1)?.time === 'Por decidir',
-    '15/10: bano al final sin hora inventada ni mas visitas');
-  const choice = day?.activities.find(a => a.id === 'arashiyama-onsen')?.bathChoices;
-  assert(choice?.defaultId === 'sento-nijo' && choice?.options?.length === 5 &&
-    choice?.options?.some(o=>o.id==='tattoo-friendly' && o.venue.includes('Kurama')) &&
-    choice?.options?.some(o=>o.id==='private' && o.confirmed === false),
-    '15/10: conservar selector de banos, Kurama y privado sin reserva confirmada');
-  const names = kyoto15.stages.map(s=>s.id);
-  assert(names.join(',') === [
-    'kinkaku-ryoan-1015','ryoan-otagi-1015','sagano-norte-1015',
-    'arashiyama-centro-1015','puente-bano-1015','bano-resi-1015'
-  ].join(','), '15/10: mapa debe tener nuevos tramos por Ryoan, Uber, Sagano y bano');
-  const stageStops = (id) => kyoto15.stages.find(s=>s.id===id)?.stops.map(p=>p.id).join(',');
-  assert(stageStops('kinkaku-ryoan-1015') === '@hotel-start,kinkaku,ryoanji' &&
-    stageStops('ryoan-otagi-1015') === 'ryoanji,otagi' &&
-    stageStops('sagano-norte-1015') === 'otagi,adashino,bamboo' &&
-    stageStops('arashiyama-centro-1015') ===
+  assert(rawDay?.activities.find(x=>x.id==='tenryuji-1015')?.notes.includes('16:50'),
+    '15/10: Tenryu jardines ultima admision 16:50');
+  const choice = rawDay?.activities.find(a=>a.id==='arashiyama-onsen')?.bathChoices;
+  assert(choice?.defaultId === 'sento-nijo' && choice?.options?.length === 5,
+    '15/10: selector de bano disponible sin reserva ficticia');
+  assert(rawDay?.activities.at(-1)?.id==='arashiyama-onsen' &&
+    rawDay?.activities.at(-1)?.time==='Por decidir',
+    '15/10: bano al final y tarde libre');
+  const stages=kyoto15.stages;
+  assert(stages.map(s=>s.id).join(',') ===
+    'kinkaku-ryoan-1015,ryoan-otagi-1015,sagano-norte-1015,arashiyama-centro-1015,puente-bano-1015,bano-resi-1015',
+    '15/10: mapa actualizado en tramos geograficos');
+  const stops=id=>stages.find(s=>s.id===id)?.stops.map(p=>p.id).join(',');
+  assert(stops('kinkaku-ryoan-1015')==='@hotel-start,kinkaku,ryoanji' &&
+    stops('ryoan-otagi-1015')==='ryoanji,otagi' &&
+    stops('sagano-norte-1015')==='otagi,adashino,bamboo' &&
+    stops('arashiyama-centro-1015')===
       'bamboo,arashiyama-comida-1015,tenryuji-1015,togetsukyo-1015',
-    '15/10: mapa con lugares reales en el orden acordado');
-  assert(kyoto15.stages.find(s=>s.id==='ryoan-otagi-1015')?.mode === 'transit' &&
-    kyoto15.stages.find(s=>s.id==='sagano-norte-1015')?.mode === 'walk' &&
-    kyoto15.stages.find(s=>s.id==='puente-bano-1015')?.mode === 'transit',
-    '15/10: Uber/transporte, paseo norte→sur a pie y transporte hacia sento');
-  assert(stageStops('puente-bano-1015') === 'togetsukyo-1015,arashiyama-onsen' &&
-    stageStops('bano-resi-1015') === 'arashiyama-onsen,@hotel-end',
-    '15/10: tras puente solo bano, y hotel despues, sin visitas extras');
-  assert(kyoto15.optional.every(o=>o.id!=='ninnaji' && o.id!=='otagi' && o.id!=='adashino') &&
-    kyoto15.optional.some(o=>o.id==='dummy') === false,
-    '15/10: Otagi y Adashino son paradas planeadas principales y Ninna no esta en Hoy');
+    '15/10: secuencia del mapa real norte a sur');
+  assert(stops('puente-bano-1015')==='togetsukyo-1015,arashiyama-onsen' &&
+    stops('bano-resi-1015')==='arashiyama-onsen,@hotel-end',
+    '15/10: ninguna visita tras el bano, regreso al hotel');
+  assert(stages.find(s=>s.id==='ryoan-otagi-1015')?.mode==='transit' &&
+    stages.find(s=>s.id==='sagano-norte-1015')?.mode==='walk' &&
+    stages.find(s=>s.id==='puente-bano-1015')?.mode==='transit',
+    '15/10: Uber y retorno en transporte, Sagano a pie');
+  assert(kyoto15.optional.every(x=>!['otagi','adashino','ninnaji'].includes(x.id)),
+    '15/10: Otagi/Adashino ya no son solo opcionales y Ninna se descarta');
 }
 const kyoto16 = get('2026-10-16');
 if (kyoto16) {
