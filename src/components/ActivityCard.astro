@@ -62,7 +62,7 @@ const hasExtra = Boolean(
   data-activity-status={activity.status}
   data-activity-skipped={activity.skipped ? 'true' : 'false'}
   data-activity-query={query ?? ''}
-  data-completed="false"
+  data-completed={activity.visited ? 'true' : 'false'}
 >
   <details class="activity-details group">
     <summary class:list={['cursor-pointer list-none select-none', compact ? 'p-3' : 'p-4']}>
