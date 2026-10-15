@@ -680,7 +680,8 @@
           },
           "goshuin": true,
           "description": "Kinkaku-ji es el nombre popular de Rokuon-ji, un templo zen Rinzai cuyo célebre Pabellón Dorado fue originalmente parte de la villa del shōgun Ashikaga Yoshimitsu a finales del siglo XIV. Tras su muerte se convirtió en templo budista. El edificio actual fue reconstruido en 1955 después de un incendio en 1950; sus plantas superiores están recubiertas de pan de oro, que se refleja sobre el estanque Kyōko-chi. El paisaje está concebido como un conjunto de arquitectura, islas, piedras y jardines para la contemplación. La lámina de agua multiplica la imagen del pabellón y conecta el poder histórico de los shōgun con el universo del budismo zen.",
-          "notes": "Visitado REALMENTE el jueves 15/10; hora de entrada y de salida desconocida. Después visitaron Ryōan-ji (jardín de piedras). El horario anterior de 09:00–09:50 era un plan, NO una hora de visita comprobada. El icono goshuin solo indica disponibilidad."
+          "notes": "Visitado REALMENTE el jueves 15/10; hora de entrada y de salida desconocida. Después visitaron Ryōan-ji (jardín de piedras). El horario anterior de 09:00–09:50 era un plan, NO una hora de visita comprobada. El icono goshuin solo indica disponibilidad.",
+          "visited": true
         },
         {
           "id": "ryoanji",
@@ -699,7 +700,8 @@
           },
           "goshuin": true,
           "description": "Ryōan-ji es un templo zen Rinzai de Kioto famoso por su jardín seco de grava blanca y quince rocas dispuestas en grupos. La fecha exacta y la intención original de la composición son objeto de debate, así que no existe una única explicación histórica demostrada. En la tradición moderna el jardín se interpreta como ejercicio de contemplación: el espacio vacío importa tanto como las piedras. El templo también cuenta con un estanque y caminos arbolados. En lugar de buscar una respuesta secreta al número de rocas, siéntate unos minutos en la galería y observa cómo cambian las proporciones y sombras según tu punto de vista.",
-          "notes": "VISITA REAL confirmada el jueves 15/10 después de Kinkaku-ji. No se comunicaron horas de entrada/salida. El grupo ha cogido un Uber desde aquí hasta Otagi Nenbutsu-ji; la app indicaba ETA 11:25. No confundir ETA con llegada real. Ninna-ji no se hará hoy."
+          "notes": "VISITA REAL confirmada el jueves 15/10 después de Kinkaku-ji. No se comunicaron horas de entrada/salida. El grupo ha cogido un Uber desde aquí hasta Otagi Nenbutsu-ji; la app indicaba ETA 11:25. No confundir ETA con llegada real. Ninna-ji no se hará hoy.",
+          "visited": true
         },
         {
           "id": "otagi",
