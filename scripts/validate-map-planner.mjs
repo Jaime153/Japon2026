@@ -250,7 +250,8 @@ if (kyoto15) {
   const rawDay = segments.find(s => s.city === 'Kioto' || s.city === 'Kyoto')
     ?.days.find(d => d.date === '2026-10-15');
   const expected = ['kinkaku','ryoanji','otagi','adashino','bamboo',
-    'arashiyama-comida-1015','tenryuji-1015','togetsukyo-1015','arashiyama-onsen'];
+    'arashiyama-comida-1015','tenryuji-1015','togetsukyo-1015',
+    'hotel-desmaquillarse-1015','arashiyama-onsen'];
   assert(rawDay?.activities.map(a=>a.id).join(',') === expected.join(','),
     '15/10: orden de visitas reales y previstas, sin Ninna');
   for (const id of ['kinkaku','ryoanji']) {
@@ -284,16 +285,27 @@ if (kyoto15) {
     o.practical.length < 160 && o.label.includes('·') &&
     ['official','tourism'].includes(o.evidence)),
     '15/10: opciones claras, breves, con fuente real de aceptación de tatuajes');
+  assert(choice?.options?.map(o=>o.fromHotelDuration).join(',') ===
+    '35–50 min aprox.,30–45 min aprox.,50–70 min aprox.',
+    '15/10: Duraciones estimadas RESI → Thoron/Goko/Funaoka');
+  assert(choice?.options?.every(o=>o.fromHotelMapsUrl?.includes('travelmode=transit') &&
+    o.fromHotelMapsUrl?.includes('origin=') && o.fromHotelDirections?.length>55),
+    '15/10: cada bano tiene enlace transporte PUBLICO desde RESI y ruta legible');
+
   assert(!['tattoo-friendly','private'].some(id=>bathIds.includes(id)) &&
     !/Kurama|Hanaikada/i.test(rawDay?.activities.find(a=>a.id==='arashiyama-onsen')?.notes ?? ''),
     '15/10: no añadir lugares lejanos o reservas sin confirmar al selector/observaciones');
+  const hotelPause = rawDay?.activities.find(a=>a.id==='hotel-desmaquillarse-1015');
+  assert(hotelPause?.status === 'plan' && hotelPause?.notes.includes('desmaquillarse') &&
+    hotelPause?.transit?.approximateDuration.includes('55–75'),
+    '15/10: pasar por RESI desde el puente para desmaquillarse ANTES del bano');
   assert(rawDay?.activities.at(-1)?.id==='arashiyama-onsen' &&
     rawDay?.activities.at(-1)?.time==='Por decidir',
-    '15/10: bano al final y tarde libre');
+    '15/10: bano despues de RESI y tarde libre, sin hora inventada');
   const stages=kyoto15.stages;
   assert(stages.map(s=>s.id).join(',') ===
-    'kinkaku-ryoan-1015,ryoan-otagi-1015,sagano-norte-1015,arashiyama-centro-1015,puente-bano-1015,bano-resi-1015',
-    '15/10: mapa actualizado en tramos geograficos');
+    'kinkaku-ryoan-1015,ryoan-otagi-1015,sagano-norte-1015,arashiyama-centro-1015,puente-resi-desmaquillar-1015,resi-bano-elegido-1015,bano-resi-final-1015',
+    '15/10: mapa con regreso al hotel ANTES de ir al sento');
   const stops=id=>stages.find(s=>s.id===id)?.stops.map(p=>p.id).join(',');
   assert(stops('kinkaku-ryoan-1015')==='@hotel-start,kinkaku,ryoanji' &&
     stops('ryoan-otagi-1015')==='ryoanji,otagi' &&
@@ -301,13 +313,15 @@ if (kyoto15) {
     stops('arashiyama-centro-1015')===
       'bamboo,arashiyama-comida-1015,tenryuji-1015,togetsukyo-1015',
     '15/10: secuencia del mapa real norte a sur');
-  assert(stops('puente-bano-1015')==='togetsukyo-1015,arashiyama-onsen' &&
-    stops('bano-resi-1015')==='arashiyama-onsen,@hotel-end',
-    '15/10: ninguna visita tras el bano, regreso al hotel');
+  assert(stops('puente-resi-desmaquillar-1015')==='togetsukyo-1015,hotel-desmaquillarse-1015' &&
+    stops('resi-bano-elegido-1015')==='hotel-desmaquillarse-1015,arashiyama-onsen' &&
+    stops('bano-resi-final-1015')==='arashiyama-onsen,@hotel-end',
+    '15/10: puente→RESI desmaquillar→bano elegido→RESI final');
   assert(stages.find(s=>s.id==='ryoan-otagi-1015')?.mode==='transit' &&
     stages.find(s=>s.id==='sagano-norte-1015')?.mode==='walk' &&
-    stages.find(s=>s.id==='puente-bano-1015')?.mode==='transit',
-    '15/10: Uber y retorno en transporte, Sagano a pie');
+    stages.find(s=>s.id==='puente-resi-desmaquillar-1015')?.mode==='transit' &&
+    stages.find(s=>s.id==='resi-bano-elegido-1015')?.mode==='transit',
+    '15/10: Uber, Sagano a pie y hotel→bano en transporte');
   assert(kyoto15.optional.every(x=>!['otagi','adashino','ninnaji'].includes(x.id)),
     '15/10: Otagi/Adashino ya no son solo opcionales y Ninna se descarta');
 }
@@ -478,7 +492,9 @@ for (const day of dates) {
 // las paradas intermedias del mapa y suprimía incluso la línea completa.
 const mapSource = readFileSync('src/pages/mapas.astro', 'utf8');
 const cardSource = readFileSync('src/components/ActivityCard.astro', 'utf8');
-assert(cardSource.includes('Tres baños públicos que aceptan tatuajes') &&
+assert(cardSource.includes('Primero volvéis al RESI para desmaquillaros') &&
+  cardSource.includes('fromHotelDuration') &&
+  cardSource.includes('fromHotelMapsUrl') &&
   cardSource.includes('activity.bathChoices ? undefined :') &&
   !cardSource.includes("option.id === 'private'"),
   '15/10: interfaz sin opción privada no disponible ni enlaces genéricos a otro baño');
