@@ -373,8 +373,13 @@ const hasExtra = Boolean(
         button.textContent = done ? '↩ Marcar como pendiente' : '✓ Marcar como hecho';
       }
 
-      let done = false;
-      try { done = localStorage.getItem(key) === 'true'; } catch {}
+      // Las visitas confirmadas por el usuario cuentan como realizadas por defecto.
+      // Una marca manual previa en este dispositivo prevalece.
+      let done = card.getAttribute('data-completed') === 'true';
+      try {
+        const stored = localStorage.getItem(key);
+        if (stored !== null) done = stored === 'true';
+      } catch {}
       apply(done);
 
       if (note instanceof HTMLTextAreaElement) {
