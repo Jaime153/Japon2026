@@ -276,8 +276,17 @@ if (kyoto15) {
   assert(rawDay?.activities.find(x=>x.id==='tenryuji-1015')?.notes.includes('16:50'),
     '15/10: Tenryu jardines ultima admision 16:50');
   const choice = rawDay?.activities.find(a=>a.id==='arashiyama-onsen')?.bathChoices;
-  assert(choice?.defaultId === 'sento-nijo' && choice?.options?.length === 5,
-    '15/10: selector de bano disponible sin reserva ficticia');
+  const bathIds = choice?.options?.map(o=>o.id) ?? [];
+  assert(choice?.defaultId === 'sento-nijo' && bathIds.join(',') ===
+    'sento-nijo,sento-sauna,sento-heritage',
+    '15/10: selector SOLO con Thoron, Goko-yu y Funaoka; nunca Kurama ni Hanaikada');
+  assert(choice?.options?.every(o=>o.policy.length < 155 &&
+    o.practical.length < 160 && o.label.includes('·') &&
+    ['official','tourism'].includes(o.evidence)),
+    '15/10: opciones claras, breves, con fuente real de aceptación de tatuajes');
+  assert(!['tattoo-friendly','private'].some(id=>bathIds.includes(id)) &&
+    !/Kurama|Hanaikada/i.test(rawDay?.activities.find(a=>a.id==='arashiyama-onsen')?.notes ?? ''),
+    '15/10: no añadir lugares lejanos o reservas sin confirmar al selector/observaciones');
   assert(rawDay?.activities.at(-1)?.id==='arashiyama-onsen' &&
     rawDay?.activities.at(-1)?.time==='Por decidir',
     '15/10: bano al final y tarde libre');
@@ -468,6 +477,15 @@ for (const day of dates) {
 // Regresión real reportada desde Android: plegar Shichifukujin ocultaba
 // las paradas intermedias del mapa y suprimía incluso la línea completa.
 const mapSource = readFileSync('src/pages/mapas.astro', 'utf8');
+const cardSource = readFileSync('src/components/ActivityCard.astro', 'utf8');
+assert(cardSource.includes('Tres baños públicos que aceptan tatuajes') &&
+  cardSource.includes('activity.bathChoices ? undefined :') &&
+  !cardSource.includes("option.id === 'private'"),
+  '15/10: interfaz sin opción privada no disponible ni enlaces genéricos a otro baño');
+assert(mapSource.includes("stop.bathChoices.find(opt => opt.id === selected) ||") &&
+  mapSource.includes("stop.bathChoices.find(opt => opt.id === stop.bathDefaultId)"),
+  'Mapa: elección de baño anterior obsoleta debe caer al default válido');
+
 assert(mapSource.includes('extra.mapBeforeId') && mapSource.includes('part.stops.splice(index, 0, extra)') &&
   !mapSource.includes('last.stops.push(...route.optional.filter'),
   'Mapa: incluir los opcionales ANTES de su referencia, sin alargar el tramo tras el hotel');
