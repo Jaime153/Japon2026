@@ -247,124 +247,91 @@ if (kyoto14) {
 // Se libera el 17 para Kiyomizu en kimono y ceremonia con las cuatro.
 const kyoto15 = get('2026-10-15');
 if (kyoto15) {
-  const rawDay = segments.find(s => s.city === 'Kioto' || s.city === 'Kyoto')
-    ?.days.find(d => d.date === '2026-10-15');
-  const expected = ['kinkaku','ryoanji','otagi','adashino','bamboo',
-    'arashiyama-comida-1015','tenryuji-1015','togetsukyo-1015',
-    'hotel-desmaquillarse-1015','arashiyama-onsen'];
-  assert(rawDay?.activities.map(a=>a.id).join(',') === expected.join(','),
-    '15/10: orden de visitas reales y previstas, sin Ninna');
-  for (const id of ['kinkaku','ryoanji']) {
-    const a = rawDay?.activities.find(x=>x.id===id);
-    assert(a?.status === 'confirmado' && a?.visited === true && !a.time,
-      '15/10: visitas realmente realizadas, sin horas falsas '+id);
-  }
-  const otagi = rawDay?.activities.find(x=>x.id==='otagi');
-  assert(otagi?.visited === true && !otagi.time &&
-    otagi?.notes.includes('NO como hora de visita certificada') &&
-    otagi?.title === 'Otagi Nenbutsu-ji',
-    '15/10: Otagi deja de figurar como Uber en camino y 11:25 sigue siendo ETA');
-  const adashino = rawDay?.activities.find(x=>x.id==='adashino');
-  assert(adashino?.status === 'plan' && adashino?.visited === false &&
-    adashino?.time === '12:25–13:05' &&
-    adashino?.notes.includes('LLEGADA REAL') &&
-    adashino?.notes.includes('salida sobre las 13:05'),
-    '15/10: Adashino llegada REAL 12:25; final estimado, no visita terminada');
-  for (const id of ['bamboo','tenryuji-1015','togetsukyo-1015']) {
-    assert(rawDay?.activities.find(x=>x.id===id)?.status === 'plan',
-      '15/10: no dar como hecha visita futura '+id);
-  }
-  assert(rawDay?.activities.find(x=>x.id==='tenryuji-1015')?.notes.includes('16:50'),
-    '15/10: Tenryu jardines ultima admision 16:50');
-  const choice = rawDay?.activities.find(a=>a.id==='arashiyama-onsen')?.bathChoices;
-  const bathIds = choice?.options?.map(o=>o.id) ?? [];
-  assert(choice?.defaultId === 'sento-nijo' && bathIds.join(',') ===
-    'sento-nijo,sento-sauna,sento-heritage',
-    '15/10: selector SOLO con Thoron, Goko-yu y Funaoka; nunca Kurama ni Hanaikada');
-  assert(choice?.options?.every(o=>o.policy.length < 155 &&
-    o.practical.length < 160 && o.label.includes('·') &&
-    ['official','tourism'].includes(o.evidence)),
-    '15/10: opciones claras, breves, con fuente real de aceptación de tatuajes');
-  assert(choice?.options?.map(o=>o.fromHotelDuration).join(',') ===
-    '35–50 min aprox.,30–45 min aprox.,50–70 min aprox.',
-    '15/10: Duraciones estimadas RESI → Thoron/Goko/Funaoka');
-  assert(choice?.options?.every(o=>o.fromHotelMapsUrl?.includes('travelmode=transit') &&
-    o.fromHotelMapsUrl?.includes('origin=') && o.fromHotelDirections?.length>55),
-    '15/10: cada bano tiene enlace transporte PUBLICO desde RESI y ruta legible');
-
-  assert(!['tattoo-friendly','private'].some(id=>bathIds.includes(id)) &&
-    !/Kurama|Hanaikada/i.test(rawDay?.activities.find(a=>a.id==='arashiyama-onsen')?.notes ?? ''),
-    '15/10: no añadir lugares lejanos o reservas sin confirmar al selector/observaciones');
-  const hotelPause = rawDay?.activities.find(a=>a.id==='hotel-desmaquillarse-1015');
-  assert(hotelPause?.status === 'plan' && hotelPause?.notes.includes('desmaquillarse') &&
-    hotelPause?.transit?.approximateDuration.includes('55–75'),
-    '15/10: pasar por RESI desde el puente para desmaquillarse ANTES del bano');
-  assert(rawDay?.activities.at(-1)?.id==='arashiyama-onsen' &&
-    rawDay?.activities.at(-1)?.time==='Por decidir',
-    '15/10: bano despues de RESI y tarde libre, sin hora inventada');
-  const stages=kyoto15.stages;
-  assert(stages.map(s=>s.id).join(',') ===
-    'kinkaku-ryoan-1015,ryoan-otagi-1015,sagano-norte-1015,arashiyama-centro-1015,puente-resi-desmaquillar-1015,resi-bano-elegido-1015,bano-resi-final-1015',
-    '15/10: mapa con regreso al hotel ANTES de ir al sento');
-  const stops=id=>stages.find(s=>s.id===id)?.stops.map(p=>p.id).join(',');
-  assert(stops('kinkaku-ryoan-1015')==='@hotel-start,kinkaku,ryoanji' &&
-    stops('ryoan-otagi-1015')==='ryoanji,otagi' &&
-    stops('sagano-norte-1015')==='otagi,adashino,bamboo' &&
-    stops('arashiyama-centro-1015')===
-      'bamboo,arashiyama-comida-1015,tenryuji-1015,togetsukyo-1015',
-    '15/10: secuencia del mapa real norte a sur');
-  assert(stops('puente-resi-desmaquillar-1015')==='togetsukyo-1015,hotel-desmaquillarse-1015' &&
-    stops('resi-bano-elegido-1015')==='hotel-desmaquillarse-1015,arashiyama-onsen' &&
-    stops('bano-resi-final-1015')==='arashiyama-onsen,@hotel-end',
-    '15/10: puente→RESI desmaquillar→bano elegido→RESI final');
-  assert(stages.find(s=>s.id==='ryoan-otagi-1015')?.mode==='transit' &&
-    stages.find(s=>s.id==='sagano-norte-1015')?.mode==='walk' &&
-    stages.find(s=>s.id==='puente-resi-desmaquillar-1015')?.mode==='transit' &&
-    stages.find(s=>s.id==='resi-bano-elegido-1015')?.mode==='transit',
-    '15/10: Uber, Sagano a pie y hotel→bano en transporte');
-  assert(kyoto15.optional.every(x=>!['otagi','adashino','ninnaji'].includes(x.id)),
-    '15/10: Otagi/Adashino ya no son solo opcionales y Ninna se descarta');
+  const day = segments.find(x => x.hotel?.name === 'RESI STAY Yasaka')
+    ?.days.find(x => x.date === '2026-10-15');
+  const bath = day?.activities.find(x => x.id === 'arashiyama-onsen');
+  assert(bath?.visited === true && bath?.status === 'confirmado' &&
+    bath?.title.includes('Gokō-yu') &&
+    bath?.locationQuery.includes('五香湯') && !bath?.bathChoices,
+    '15/10: Gokō-yu visitado, sin selector ni opciones falsas');
+  assert(kyoto15.stages.some(x => x.stops.some(s=>s.id==='arashiyama-onsen' &&
+    s.query.includes('五香湯'))),
+    '15/10: mapa debe llevar a Gokō-yu, no a Thoron');
+  assert(day?.activities.find(x => x.id === 'adashino')?.time === '12:25–13:05',
+    '15/10: preservar llegada real a Adashino a 12:25 y fin estimado');
+  assert(day?.activities.some(x=>x.id==='hotel-desmaquillarse-1015'),
+    '15/10: conservar la parada planeada en RESI, sin darla por hecha');
 }
 const kyoto16 = get('2026-10-16');
 if (kyoto16) {
-  const ids = kyoto16.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['fushimi','kofukuji','haru-nara','todaiji','kasuga'])
-    assert(ids.includes(id), '16/10 Fushimi/Nara: falta '+id);
-  assert(ids.indexOf('fushimi') < ids.indexOf('kofukuji') &&
-    ids.indexOf('kofukuji') < ids.indexOf('haru-nara'),
-    '16/10: Fushimi al amanecer, luego Kofuku-ji y Yoshoku Haru');
+  const day = segments.find(x => x.hotel?.name === 'RESI STAY Yasaka')
+    ?.days.find(x => x.date === '2026-10-16');
+  const ids = day?.activities.map(a=>a.id) || [];
+  assert(!ids.includes('fushimi') && !kyoto16.stages.some(s=>s.stops.some(p=>p.id==='fushimi')),
+    '16/10: SOLO Nara, sin Fushimi Inari ni otras visitas de Kioto');
+  const route = kyoto16.stages.flatMap(s=>s.stops.map(p=>p.id));
+  for (const id of ['kofukuji','haru-nara','nara-park','todaiji','nara-regreso-1016'])
+    assert(route.includes(id),'16/10 Nara esencial: falta '+id);
+  assert(route.indexOf('kofukuji') < route.indexOf('haru-nara') &&
+    route.indexOf('haru-nara') < route.indexOf('nara-park') &&
+    route.indexOf('nara-park') < route.indexOf('todaiji'),
+    '16/10: Kofuku→Haru→Parque→Todaiji en orden');
+  for (const id of ['nigatsudo-1016','kasuga'])
+    assert(day?.activities.find(a=>a.id===id)?.status==='opcional' &&
+      !route.includes(id),
+      '16/10: Nigatsudo/Kasuga solo si se eligen en tarde libre');
+  assert(day?.activities.find(a=>a.id==='nara-regreso-1016')?.time===undefined,
+    '16/10: regreso libre sin hora obligatoria');
 }
 const kyoto17 = get('2026-10-17');
 if (kyoto17) {
-  const ids = kyoto17.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['kimono-te-kiyomizu-1017','kiyomizu-1017','ninenzaka-palillos-fotos-1017','yasaka-pagoda-fotos-1017']) {
-    assert(ids.includes(id), '17/10: faltan kimono, té, Kiyomizu o fotos para las cuatro: '+id);
+  const day = segments.find(x => x.hotel?.name === 'RESI STAY Yasaka')
+    ?.days.find(x => x.date === '2026-10-17');
+  const ids=day?.activities.map(a=>a.id)||[];
+  const route=kyoto17.stages.flatMap(s=>s.stops.map(p=>p.id));
+  assert(ids[0]==='fushimi' && route.includes('fushimi') &&
+    route.indexOf('fushimi') < route.indexOf('kiyomizu-1017') &&
+    route.indexOf('kiyomizu-1017') < route.indexOf('yuzen-kiyomizu-ghibli-1017'),
+    '17/10: Fushimi temprano→Kiyomizu→Yūzen junto a Ghibli');
+  for(const id of ['tofukuji-1017','sanjusangendo-cercano-1017']){
+    const a=day?.activities.find(x=>x.id===id);
+    assert(a?.status==='opcional' && a?.mapBeforeId==='kiyomizu-1017' &&
+      !route.includes(id),
+      '17/10: solo opcionales geográficos ANTES de Kiyomizu, no al final: '+id);
   }
-  assert(!ids.includes('kinkaku') && !ids.includes('tatuajes-gion-1017'),
-    '17/10: no volver a meter Kinkaku ni tatuajes sin cita confirmada en la ruta principal');
-  const kyotoData = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
-  const day = kyotoData?.days.find(x => x.date === '2026-10-17');
-  assert(day?.activities.find(a => a.id === 'tatuajes-gion-1017')?.status === 'pendiente',
-    '17/10: conservar interés por tatuajes, pero SIN reserva');
-  assert(day?.activities.find(a => a.id === 'kimono-te-kiyomizu-1017')?.notes.includes('no confirmada'),
-    '17/10: NO inventar reserva de kimono/ceremonia');
-  assert(kyoto17.stages.at(-1).stops.at(-1).kind === 'hotel',
-    '17/10: volver a RESI tras Kiyomizu');
+  assert(day?.activities.find(x=>x.id==='tofukuji-1017')?.notes.includes('14:00') &&
+    day?.activities.find(x=>x.id==='tofukuji-1017')?.notes.includes('09:00'),
+    '17/10: cierre especial Tofukuji Hōjō hasta 14:00; solo Tsuten desde 09:00');
+  const shop = day?.activities.find(x=>x.id==='yuzen-kiyomizu-ghibli-1017');
+  assert(shop?.status==='plan' && shop?.locationQuery.includes('218-1') &&
+    shop?.notes.includes('Ghibli') && shop?.notes.includes('09:30'),
+    '17/10: tienda de palillos real Yūzen junto a Ghibli en 2-218-1, horario realista');
+  assert(!['kimono-te-kiyomizu-1017','tatuajes-gion-1017','tattoo-walkin-kawaramachi-1017']
+    .some(id=>ids.includes(id)),
+    '17/10: no imponer reservas de kimono, té ni tatuajes que no existen');
+  assert(route.at(-1)==='@hotel-end' &&
+    day?.activities.at(-1)?.id==='regreso-libre-1017',
+    '17/10: tarde libre tras Kiyomizu y compras sin visitas de relleno');
 }
 const kyoto18 = get('2026-10-18');
 if (kyoto18) {
-  const ids = kyoto18.stages.flatMap(s => s.stops.map(p => p.id));
-  assert(ids.includes('kyoto-station-h2') && ids.includes('kix-vilma-marga'),
-    '18/10: conservar salida H2/KY2 y vuelo KIX de las 19:00');
-  assert(!['kiyomizu-1018','ninenzaka-palillos-fotos-1018','yasaka-pagoda-fotos-1018']
-    .some(id => ids.includes(id)),
-    '18/10: no meter visita exigente antes de vuelo y maletas');
-  const kyotoData = segments.find(seg => seg.city === 'Kioto' || seg.city === 'Kyoto');
-  const day = kyotoData?.days.find(x => x.date === '2026-10-18');
-  assert(day?.activities.find(a => a.id === 'kyoto-station-h2')?.status !== 'confirmado',
-    '18/10: parada confirmada pero autobús 14:20 sigue sin billete');
-  assert(day?.activities.find(a => a.id === 'kix-vilma-marga')?.time === '19:00',
-    '18/10: conservar vuelo a KIX a las 19:00');
+  const day=segments.find(x=>x.hotel?.name==='RESI STAY Yasaka')
+    ?.days.find(x=>x.date==='2026-10-18');
+  const route=kyoto18.stages.flatMap(s=>s.stops.map(p=>p.id));
+  assert(route.includes('kyoto-station-h2') && route.includes('kix-vilma-marga') &&
+    !route.includes('kiyomizu-rescate-1018') && !route.includes('yuzen-kiyomizu-rescate-1018'),
+    '18/10: mapa base SOLO maletas y autobús al aeropuerto');
+  for(const id of ['kiyomizu-rescate-1018','yuzen-kiyomizu-rescate-1018']){
+    const a=day?.activities.find(x=>x.id===id);
+    assert(a?.status==='opcional' && a?.mapBeforeId==='kyoto-morning-flex' &&
+      a?.time?.startsWith('~'),
+      '18/10: Kiyomizu/palillos backup solo temprano y elegidos por usuario');
+  }
+  assert(day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('15:48') &&
+    day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('NO se ha confirmado compra'),
+    '18/10: bus 14:20 llega 15:48 a KIX, reserva obligatoria aún no confirmada');
+  assert(day?.activities.find(x=>x.id==='kix-vilma-marga')?.time==='19:00',
+    '18/10: vuelo KIX a 19:00 no se modifica');
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
