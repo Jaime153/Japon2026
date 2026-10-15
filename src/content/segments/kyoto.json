@@ -659,7 +659,7 @@
       "date": "2026-10-15",
       "title": "Kioto · Kinkaku → Ryōan → Otagi → Adashino → Arashiyama",
       "status": "plan",
-      "note": "Jueves 15/10, ruta REAL en curso: se visitaron Kinkaku-ji y Ryōan-ji; después Uber a Otagi (ETA del coche 11:25, NO llegada real confirmada); el grupo ya ha continuado hasta Adashino y ha llegado REALMENTE a las 12:25 JST. Adashino es la parada actual: salida NO confirmada, objetivo orientativo 13:05. Después bajar al bosque de bambú (~13:35, estimado), comer flexible (~14:10), visitar Tenryū-ji (~15:00, jardín última entrada 16:50) y puente (~15:55); baño tattoo-friendly al final y tarde/noche libre. No incluir Ninna-ji ni otros desvíos. El estado interno de una parada recorrida NO debe generar tachados, badges de «Confirmado» o «Hecho» en la pantalla.",
+      "note": "Jueves 15/10, ruta REAL en curso: se visitaron Kinkaku-ji y Ryōan-ji; después Uber a Otagi (ETA del coche 11:25, NO llegada real confirmada); el grupo ya ha continuado hasta Adashino y ha llegado REALMENTE a las 12:25 JST. Adashino es la parada actual: salida NO confirmada, objetivo orientativo 13:05. Después bajar al bosque de bambú (~13:35, estimado), comer flexible (~14:10), visitar Tenryū-ji (~15:00, jardín última entrada 16:50) y puente (~15:55); REGRESO al RESI para desmaquillarse (~55–75 min de trayecto + 20–30 min de pausa), DESPUÉS baño elegido desde el hotel y tarde/noche libre. No incluir Ninna-ji ni otros desvíos. El estado interno de una parada recorrida NO debe generar tachados, badges de «Confirmado» o «Hecho» en la pantalla.",
       "activities": [
         {
           "id": "kinkaku",
@@ -808,15 +808,34 @@
           ]
         },
         {
+          "id": "hotel-desmaquillarse-1015",
+          "title": "RESI STAY Yasaka · desmaquillarse antes del baño",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "RESI STAY YASAKA, 28 Bishamoncho, Higashiyama Ward, Kyoto",
+          "notes": "Después de acabar en el puente Togetsukyō, VOLVER al alojamiento para desmaquillarse y prepararse antes de ir al baño. Es una parada elegida por el grupo, no una vuelta innecesaria. Desde el puente a RESI STAY Yasaka, calcular aproximadamente 55–75 min en transporte público (por ejemplo Hankyu Arashiyama → Katsura → Kyoto-Kawaramachi, luego a pie/bus hasta Higashiyama Yasui), según espera y tráfico. Reservar ~20–30 min para desmaquillarse y cambiarse; ninguna hora de llegada está confirmada. Después ir al baño elegido desde el hotel, no directamente desde Arashiyama.",
+          "transit": {
+            "from": "Puente Togetsukyō / Hankyu Arashiyama",
+            "summary": "Hankyu Arashiyama → Katsura → Kyoto-Kawaramachi; último tramo al RESI a pie o en autobús. Consultar la ruta real en transporte público al terminar.",
+            "approximateDuration": "55–75 min aprox.",
+            "note": "20–30 min adicionales para desmaquillarse; tiempo orientativo, no reserva."
+          },
+          "plan": [
+            "Regresar desde Arashiyama al RESI STAY Yasaka en transporte público.",
+            "Desmaquillarse y cambiarse con calma (~20–30 min).",
+            "Elegir uno de los tres baños y salir hacia él desde el hotel."
+          ]
+        },
+        {
           "id": "arashiyama-onsen",
-          "title": "Baño · tarde libre después",
+          "title": "Baño elegido · después de pasar por el hotel",
           "category": "ocio",
           "status": "plan",
-          "notes": "Después del puente Togetsukyō, elegir uno de los tres baños de esta ficha. Thoron confirma los tatuajes en su web; Gokō-yu y Funaoka aparecen como aptos en la guía turística oficial de Kioto. Los tres son baños públicos separados por sexo, no baños privados. No hay reserva confirmada. Después, tarde libre, cena si apetece y regreso al alojamiento.",
+          "notes": "Al terminar el puente, volver primero al RESI STAY Yasaka para desmaquillarse y cambiarse. Tras esa pausa, elegir uno de los tres baños que aceptan tatuajes; ninguno está reservado. Todos separan hombres y mujeres. Thoron tiene aceptación de tatuajes confirmada por su web; Gokō-yu y Funaoka figuran en la guía turística oficial de Kioto. El desplazamiento desde el hotel es en autobús o combinando a pie y autobús; hay tiempos aproximados y enlaces a rutas de transporte público en cada opción. Después del baño, tarde/noche libre y regreso al alojamiento.",
           "plan": [
-            "Terminar el bosque, Tenryū-ji y el puente antes del baño; no añadir más visitas después.",
-            "Elegir Thoron Inari, Gokō-yu o Funaoka según ubicación y horario. El mapa usará la opción seleccionada.",
-            "Después del baño, tarde libre y volver al RESI cuando apetezca."
+            "Terminar Tenryū-ji y el puente antes de volver al RESI para desmaquillarse.",
+            "Descansar/cambiarse en el hotel (~20–30 min) y elegir Thoron, Gokō-yu o Funaoka. Los tiempos de transporte público se muestran en cada opción.",
+            "Después del baño, tarde libre y regresar al hotel; nada más obligatorio."
           ],
           "priority": "must",
           "time": "Por decidir",
@@ -833,12 +852,15 @@
                 "venue": "Thoron Onsen Inari",
                 "locationQuery": "トロン温泉 稲荷湯 京都市中京区今新在家西町4",
                 "policy": "Baño público con agua termal artificial (no de manantial). Zonas separadas para hombres y mujeres.",
-                "practical": "Buena opción de regreso: cerca de la estación JR Nijō. Incluye toalla, jabón y champú.",
+                "practical": "Tatuajes confirmados por el propio local; toalla, jabón y champú incluidos. Desde el hotel: bus 207 hasta Shijō-Ōmiya + 10–15 min a pie.",
                 "hours": "Jueves: 16:00–23:00",
                 "price": "550 ¥ por persona",
                 "confirmed": true,
                 "evidence": "official",
-                "officialUrl": "https://www.thoron-onsen.com/en/"
+                "officialUrl": "https://www.thoron-onsen.com/en/",
+                "fromHotelDuration": "35–50 min aprox.",
+                "fromHotelDirections": "Desde Higashiyama Yasui, autobús 207 hacia Shijō-Ōmiya; bajar en Shijō-Ōmiya y caminar unos 10–15 min hasta Thoron.",
+                "fromHotelMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=RESI%20STAY%20YASAKA%2C%2028%20Bishamoncho%2C%20Higashiyama%20Ward%2C%20Kyoto&destination=%E3%83%88%E3%83%AD%E3%83%B3%E6%B8%A9%E6%B3%89%20%E7%A8%B2%E8%8D%B7%E6%B9%AF%20%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E4%BB%8A%E6%96%B0%E5%9C%A8%E5%AE%B6%E8%A5%BF%E7%94%BA4&travelmode=transit"
               },
               {
                 "id": "sento-sauna",
@@ -846,12 +868,15 @@
                 "venue": "Gokō-yu",
                 "locationQuery": "五香湯 京都市下京区柿本町590-12",
                 "policy": "Baño público tradicional con sauna. Zonas separadas para hombres y mujeres.",
-                "practical": "En la zona centro de Kioto. Lleva o compra toalla, champú y jabón.",
+                "practical": "Sauna y más variedad de baños. Llevar o comprar productos de aseo. Desde el hotel: bus 207 hasta Ōmiya Gojō + 2–5 min a pie.",
                 "hours": "Jueves: 14:30–00:30",
                 "price": "550 ¥ por persona",
                 "confirmed": false,
                 "evidence": "tourism",
-                "officialUrl": "https://www.gokouyu.net/annai/"
+                "officialUrl": "https://www.gokouyu.net/annai/",
+                "fromHotelDuration": "30–45 min aprox.",
+                "fromHotelDirections": "Desde Higashiyama Yasui, autobús 207 dirección Shijō-Kawaramachi / Shijō-Ōmiya; bajar en Ōmiya Gojō y caminar 2–5 min hasta Gokō-yu.",
+                "fromHotelMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=RESI%20STAY%20YASAKA%2C%2028%20Bishamoncho%2C%20Higashiyama%20Ward%2C%20Kyoto&destination=%E4%BA%94%E9%A6%99%E6%B9%AF%20%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E6%9F%BF%E6%9C%AC%E7%94%BA590-12&travelmode=transit"
               },
               {
                 "id": "sento-heritage",
@@ -859,12 +884,15 @@
                 "venue": "Funaoka Onsen",
                 "locationQuery": "船岡温泉 京都市北区紫野南舟岡町82-1",
                 "policy": "Baño público histórico con arquitectura tradicional. No es un manantial termal.",
-                "practical": "Está al norte, cerca de Kinkaku-ji: desde Arashiyama supone un rodeo.",
+                "practical": "Edificio histórico muy bonito, pero queda al norte y alarga el regreso. Desde el hotel: a Shijō-Keihan a pie; bus 12 a Funaokayama/Daitokuji y caminar.",
                 "hours": "Jueves: 15:00–23:30",
                 "price": "550 ¥ por persona",
                 "confirmed": false,
                 "evidence": "tourism",
-                "officialUrl": "https://1010.kyoto/spot/funaokaonsen/"
+                "officialUrl": "https://1010.kyoto/spot/funaokaonsen/",
+                "fromHotelDuration": "50–70 min aprox.",
+                "fromHotelDirections": "Caminar hasta Shijō-Keihan/Gion-Shijō (aprox. 10–15 min); autobús 12 dirección Kinkaku-ji hasta Funaokayama o Daitokuji-mae, y último tramo a pie (aprox. 5–10 min).",
+                "fromHotelMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=RESI%20STAY%20YASAKA%2C%2028%20Bishamoncho%2C%20Higashiyama%20Ward%2C%20Kyoto&destination=%E8%88%B9%E5%B2%A1%E6%B8%A9%E6%B3%89%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8C%97%E5%8C%BA%E7%B4%AB%E9%87%8E%E5%8D%97%E8%88%9F%E5%B2%A1%E7%94%BA82-1&travelmode=transit"
               }
             ]
           }
@@ -912,16 +940,25 @@
           ]
         },
         {
-          "id": "puente-bano-1015",
-          "title": "Puente → baño elegido, en transporte",
+          "id": "puente-resi-desmaquillar-1015",
+          "title": "Puente → RESI para desmaquillarse",
           "mode": "transit",
           "activityIds": [
             "togetsukyo-1015",
+            "hotel-desmaquillarse-1015"
+          ]
+        },
+        {
+          "id": "resi-bano-elegido-1015",
+          "title": "RESI → baño elegido (transporte público)",
+          "mode": "transit",
+          "activityIds": [
+            "hotel-desmaquillarse-1015",
             "arashiyama-onsen"
           ]
         },
         {
-          "id": "bano-resi-1015",
+          "id": "bano-resi-final-1015",
           "title": "Baño → RESI, tarde libre",
           "mode": "transit",
           "activityIds": [
