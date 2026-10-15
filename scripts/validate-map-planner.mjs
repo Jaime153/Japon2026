@@ -259,13 +259,19 @@ if (kyoto15) {
       '15/10: visitas realmente realizadas, sin horas falsas '+id);
   }
   const otagi = rawDay?.activities.find(x=>x.id==='otagi');
-  assert(otagi?.status === 'plan' && otagi?.time === '~11:25–12:05' &&
-    otagi?.notes.includes('NO se ha confirmado llegada') &&
-    otagi?.transit?.summary.includes('Uber REAL'),
-    '15/10: en Uber a Otagi 11:25 es ETA, no visita real');
-  for (const id of ['adashino','bamboo','tenryuji-1015','togetsukyo-1015']) {
-    assert(rawDay?.activities.find(a=>a.id===id)?.status === 'plan',
-      '15/10: no inventar visitas futuras realizadas '+id);
+  assert(otagi?.visited === true && !otagi.time &&
+    otagi?.notes.includes('NO como hora de visita certificada') &&
+    otagi?.title === 'Otagi Nenbutsu-ji',
+    '15/10: Otagi deja de figurar como Uber en camino y 11:25 sigue siendo ETA');
+  const adashino = rawDay?.activities.find(x=>x.id==='adashino');
+  assert(adashino?.status === 'plan' && adashino?.visited === false &&
+    adashino?.time === '12:25–13:05' &&
+    adashino?.notes.includes('LLEGADA REAL') &&
+    adashino?.notes.includes('salida sobre las 13:05'),
+    '15/10: Adashino llegada REAL 12:25; final estimado, no visita terminada');
+  for (const id of ['bamboo','tenryuji-1015','togetsukyo-1015']) {
+    assert(rawDay?.activities.find(x=>x.id===id)?.status === 'plan',
+      '15/10: no dar como hecha visita futura '+id);
   }
   assert(rawDay?.activities.find(x=>x.id==='tenryuji-1015')?.notes.includes('16:50'),
     '15/10: Tenryu jardines ultima admision 16:50');

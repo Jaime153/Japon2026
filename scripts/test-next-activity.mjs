@@ -91,8 +91,38 @@ if (day) {
     'Si hay una parada principal sin hora, no elegir el opcional nocturno');
 }
 
+// 15/10 en la calle: apariencia limpia y progreso interno, sin tachar templos.
+const day15 = segment.days.find(d => d.date === '2026-10-15');
+check(Boolean(day15), '15/10: falta dia de Kioto');
+if (day15) {
+  const records = day15.activities.map(a => ({
+    id:a.id, title:a.title, time:a.time, status:a.status,
+    skipped:Boolean(a.skipped), completed:a.visited === true
+  }));
+  check(['kinkaku','ryoanji','otagi'].every(id => day15.activities.find(a => a.id===id)?.visited===true),
+    '15/10: las paradas anteriores se mantienen como progreso interno');
+  check(day15.activities.find(a=>a.id==='adashino')?.time==='12:25–13:05' &&
+    day15.activities.find(a=>a.id==='adashino')?.visited===false,
+    '15/10: llegada REAL a Adashino 12:25 sin salida confirmada');
+  const during = selectNextActivity(records, at('12:26'));
+  check(during?.kind === 'active' && during?.activity?.id === 'adashino',
+    '12:26 JST: Adashino es parada actual, no Otagi');
+  check(selectNextActivity(records, at('13:20'))?.activity?.id === 'bamboo',
+    '13:20 JST: proximo bosque de bambu');
+  check(selectNextActivity(records, at('15:05'))?.activity?.id === 'tenryuji-1015',
+    '15:05 JST: Tenryu debe caber antes del cierre');
+  check(selectNextActivity(records, at('16:25'))?.activity?.id === 'arashiyama-onsen',
+    '16:25 JST: despues del puente, bano y tarde libre');
+}
+const css = readFileSync('src/styles/global.css', 'utf8');
+check(!css.includes('.activity-done h3') && !css.includes('.activity-done { opacity'),
+  'El progreso no debe tachar ni atenuar tarjetas');
 const page = readFileSync('src/pages/hoy.astro', 'utf8');
 const card = readFileSync('src/components/ActivityCard.astro', 'utf8');
+check(!card.includes('data-done-badge') && !card.includes("card.classList.toggle('activity-done', done)"),
+  'No poner badges Hecho ni estilos tachados');
+check(card.includes("activity.status === 'confirmado' && !activity.visited"),
+  'No renderizar Confirmado para templos recorridos');
 check(page.includes('selectNextActivity(pending, japanClock().minutes)'),
   'La tarjeta Hoy debe usar el selector de franjas en hora japonesa');
 check(card.includes('data-activity-status={activity.status}') &&
@@ -106,4 +136,4 @@ if (errors.length) {
   console.error('\n❌ Regresiones en tarjeta Hoy:\n- ' + errors.join('\n- '));
   process.exit(1);
 }
-console.log('✓ Siguiente parada verificada con horas sueltas, rangos, JST y día 14/10.');
+console.log('✓ Siguiente parada verificada (14–15 oct), sin tachados ni etiquetas de visitas.');

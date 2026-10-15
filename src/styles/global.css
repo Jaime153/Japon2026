@@ -23,8 +23,7 @@ button, a, input { touch-action: manipulation; }
 .activity-details > summary::marker { content: ''; }
 .activity-chevron { transition: transform 140ms ease; }
 .activity-details[open] .activity-chevron { transform: rotate(180deg); }
-.activity-done { opacity: 0.58; }
-.activity-done h3 { text-decoration: line-through; }
+/* El progreso se usa solo para elegir la siguiente parada; las tarjetas no se apagan ni tachan. */
 
 @media (hover: hover) {
   .activity-card:hover {
