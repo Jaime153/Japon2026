@@ -69,12 +69,14 @@ const hasExtra = Boolean(
       <div class="min-w-0">
         <div class="flex min-w-0 flex-wrap items-center gap-1.5">
           <span class:list={['inline-flex max-w-full rounded-full px-2 py-0.5 text-[11px] font-semibold', meta.className]}>{meta.icon} {meta.label}</span>
-          <span class:list={['inline-flex max-w-full rounded-full px-2 py-0.5 text-[11px] font-semibold', status.className]}>{status.label}</span>
-          {activity.priority === 'must' && <span class="inline-flex rounded-full bg-red-600 px-2 py-0.5 text-[11px] font-semibold text-white">Sí o sí</span>}
+          {activity.status === 'opcional' || activity.status === 'pendiente' || (activity.status === 'confirmado' && !activity.visited && activity.category !== 'templo') ? (
+            <span class:list={['inline-flex max-w-full rounded-full px-2 py-0.5 text-[11px] font-semibold', status.className]}>{status.label}</span>
+          ) : null}
+          {activity.priority === 'must' && !activity.visited && <span class="inline-flex rounded-full bg-red-600 px-2 py-0.5 text-[11px] font-semibold text-white">Sí o sí</span>}
           {activity.goshuin === true && <span class="inline-flex rounded-full bg-violet-100 px-2 py-0.5 text-[11px] font-semibold text-violet-800">📕 Goshuin</span>}
           {activity.goshuin === false && <span class="inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600">Sin goshuin</span>}
           {activity.skipped && <span class="inline-flex rounded-full bg-slate-200 px-2 py-0.5 text-[11px] font-semibold text-slate-700">No fuimos</span>}
-          <span data-done-badge class="hidden rounded-full bg-emerald-100 px-2 py-0.5 text-[11px] font-bold text-emerald-800">✓ Hecho</span>
+
           {activity.time && <span class="inline-flex max-w-full items-center rounded-lg bg-slate-950 px-2 py-1 text-xs font-bold leading-snug text-white whitespace-normal break-words">{activity.time}</span>}
           <span class="activity-chevron ml-auto shrink-0 text-lg leading-none text-slate-400" aria-hidden="true">⌄</span>
         </div>
@@ -358,7 +360,7 @@ const hasExtra = Boolean(
         }));
       }
       const button = card.querySelector('[data-complete-toggle]');
-      const badge = card.querySelector('[data-done-badge]');
+
       const note = card.querySelector('[data-personal-note]');
       const noteSaved = card.querySelector('[data-note-saved]');
       if (!id || !(button instanceof HTMLButtonElement)) return;
@@ -368,8 +370,8 @@ const hasExtra = Boolean(
 
       function apply(done) {
         card.setAttribute('data-completed', done ? 'true' : 'false');
-        card.classList.toggle('activity-done', done);
-        badge?.classList.toggle('hidden', !done);
+
+
         button.textContent = done ? '↩ Marcar como pendiente' : '✓ Marcar como hecho';
       }
 
@@ -378,7 +380,7 @@ const hasExtra = Boolean(
       let done = card.getAttribute('data-completed') === 'true';
       try {
         const stored = localStorage.getItem(key);
-        if (stored !== null) done = stored === 'true';
+        if (stored !== null) done = done || stored === 'true'; // hecho real canónico no vuelve a pendiente por caché antigua
       } catch {}
       apply(done);
 
