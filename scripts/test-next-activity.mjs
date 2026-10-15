@@ -111,8 +111,11 @@ if (day15) {
     '13:20 JST: proximo bosque de bambu');
   check(selectNextActivity(records, at('15:05'))?.activity?.id === 'tenryuji-1015',
     '15:05 JST: Tenryu debe caber antes del cierre');
-  check(selectNextActivity(records, at('16:25'))?.activity?.id === 'arashiyama-onsen',
-    '16:25 JST: despues del puente, bano y tarde libre');
+  check(selectNextActivity(records, at('16:25'))?.activity?.id === 'hotel-desmaquillarse-1015',
+    '16:25 JST: despues del puente PRIMERO hotel para desmaquillarse, no bano directo');
+  const doneHotel = records.map(a=>a.id==='hotel-desmaquillarse-1015' ? {...a,completed:true} : a);
+  check(selectNextActivity(doneHotel, at('16:25'))?.activity?.id==='arashiyama-onsen',
+    'Tras salir del hotel, el siguiente hito pasa a ser el bano elegido');
 }
 const css = readFileSync('src/styles/global.css', 'utf8');
 check(!css.includes('.activity-done h3') && !css.includes('.activity-done { opacity'),
