@@ -287,31 +287,44 @@ const kyoto17 = get('2026-10-17');
 if (kyoto17) {
   const day = segments.find(x => x.hotel?.name === 'RESI STAY Yasaka')
     ?.days.find(x => x.date === '2026-10-17');
-  const ids=day?.activities.map(a=>a.id)||[];
-  const route=kyoto17.stages.flatMap(s=>s.stops.map(p=>p.id));
-  assert(ids[0]==='fushimi' && route.includes('fushimi') &&
-    route.indexOf('fushimi') < route.indexOf('kiyomizu-1017') &&
-    route.indexOf('kiyomizu-1017') < route.indexOf('yuzen-kiyomizu-ghibli-1017'),
-    '17/10: Fushimi temprano→Kiyomizu→Yūzen junto a Ghibli');
-  for(const id of ['tofukuji-1017','sanjusangendo-cercano-1017']){
-    const a=day?.activities.find(x=>x.id===id);
-    assert(a?.status==='opcional' && a?.mapBeforeId==='kiyomizu-1017' &&
-      !route.includes(id),
-      '17/10: solo opcionales geográficos ANTES de Kiyomizu, no al final: '+id);
-  }
-  assert(day?.activities.find(x=>x.id==='tofukuji-1017')?.notes.includes('14:00') &&
-    day?.activities.find(x=>x.id==='tofukuji-1017')?.notes.includes('09:00'),
-    '17/10: cierre especial Tofukuji Hōjō hasta 14:00; solo Tsuten desde 09:00');
-  const shop = day?.activities.find(x=>x.id==='yuzen-kiyomizu-ghibli-1017');
-  assert(shop?.status==='plan' && shop?.locationQuery.includes('218-1') &&
-    shop?.notes.includes('Ghibli') && shop?.notes.includes('09:30'),
-    '17/10: tienda de palillos real Yūzen junto a Ghibli en 2-218-1, horario realista');
-  assert(!['kimono-te-kiyomizu-1017','tatuajes-gion-1017','tattoo-walkin-kawaramachi-1017']
-    .some(id=>ids.includes(id)),
-    '17/10: no imponer reservas de kimono, té ni tatuajes que no existen');
-  assert(route.at(-1)==='@hotel-end' &&
-    day?.activities.at(-1)?.id==='regreso-libre-1017',
-    '17/10: tarde libre tras Kiyomizu y compras sin visitas de relleno');
+  const ids = day?.activities.map(a => a.id) || [];
+  const main = kyoto17.stages.flatMap(st => st.stops.map(p => p.id));
+  assert(ids.join(',') === [
+    'fushimi','kiyomizu-1017','yuzen-kiyomizu-ghibli-1017',
+    'yasaka-shrine-1017','regreso-libre-1017'
+  ].join(','),
+    '17/10: SOLO Fushimi, Kiyomizu, palillos, Yasaka opcional, tarde libre');
+  assert(!ids.includes('tofukuji-1017') && !ids.includes('sanjusangendo-cercano-1017') &&
+    !ids.includes('yasaka-pagoda-fotos-1017'),
+    '17/10: no mostrar extras descartados ni pagoda en tarjetas separadas');
+  const fushimi = day?.activities.find(a=>a.id==='fushimi');
+  assert(fushimi?.time === '~07:30–11:45' &&
+    fushimi?.status === 'confirmado' && fushimi?.visited !== true &&
+    fushimi?.notes.includes('ESTACIÓN Fushimi-Inari a las 07:30') &&
+    fushimi?.notes.includes('puesto o parada n.º 5') &&
+    fushimi?.notes.includes('11:15'),
+    '17/10: 07:30 estación REAL; 11:15 bajando en puesto 5; salida NO confirmada');
+  assert(ids.indexOf('fushimi') < ids.indexOf('kiyomizu-1017') &&
+    ids.indexOf('kiyomizu-1017') < ids.indexOf('yuzen-kiyomizu-ghibli-1017'),
+    '17/10: del santuario directamente a Kiyomizu y palillos');
+  assert(day?.activities.find(a=>a.id==='kiyomizu-1017')?.transit?.from.includes('Fushimi') &&
+    day?.activities.find(a=>a.id==='kiyomizu-1017')?.transit?.summary.includes('Kiyomizu-Gojō'),
+    '17/10: llegar desde Fushimi en Keihan y caminar, no desde hotel');
+  assert(day?.activities.find(a=>a.id==='yuzen-kiyomizu-ghibli-1017')?.locationQuery.includes('218-1') &&
+    day?.activities.find(a=>a.id==='yuzen-kiyomizu-ghibli-1017')?.notes.includes('Ghibli'),
+    '17/10: palillos en Yūzen junto a Ghibli (Kiyomizu 2-218-1)');
+  assert(day?.activities.find(a=>a.id==='yasaka-shrine-1017')?.status==='opcional' &&
+    day?.activities.find(a=>a.id==='yasaka-shrine-1017')?.mapBeforeId==='regreso-libre-1017' &&
+    day?.activities.find(a=>a.id==='yasaka-shrine-1017')?.notes.includes('24 horas') &&
+    kyoto17.optional.some(a=>a.id==='yasaka-shrine-1017') &&
+    !main.includes('yasaka-shrine-1017'),
+    '17/10: Yasaka shrine opcional cerca del hotel, solo si se elige');
+  assert(main.indexOf('fushimi') < main.indexOf('kiyomizu-1017') &&
+    main.indexOf('kiyomizu-1017') < main.indexOf('yuzen-kiyomizu-ghibli-1017') &&
+    main.at(-1) === '@hotel-end',
+    '17/10: mapa de Fushimi → Kiyomizu → Yūzen → hotel sin extras impuestos');
+  assert(day?.activities.at(-1)?.id === 'regreso-libre-1017',
+    '17/10: tarde libre tras compras, sin otras visitas');
 }
 const kyoto18 = get('2026-10-18');
 if (kyoto18) {
@@ -335,12 +348,24 @@ if (kyoto18) {
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
-  const ids = kyoto19.stages.flatMap(s => s.stops.map(p => p.id));
-  for (const id of ['sanjusangendo','nishiki','tobichi-kyoto','baikoan-matcha-2025'])
-    assert(ids.includes(id), '19/10: falta visita o compra pendiente '+id);
-  assert(!ids.includes('ginkakuji'), '19/10: no repetir el Ginkaku ya previsto para las cuatro personas el 14');
+  const day=segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
+    ?.days.find(d=>d.date==='2026-10-19');
+  const ids=day?.activities.map(a=>a.id)||[];
+  const routed=kyoto19.stages.flatMap(s=>s.stops.map(p=>p.id));
+  assert(ids[0]==='tofukuji-1019' && ids[1]==='sanjusangendo',
+    '19/10: Tōfuku-ji y Sanjūsangendō juntos con Lorena, en orden lógico');
+  for(const id of ['tofukuji-1019','sanjusangendo','nishiki','tobichi-kyoto','baikoan-matcha-2025'])
+    assert(routed.includes(id),'19/10: falta lugar pendiente '+id);
+  assert(routed.indexOf('tofukuji-1019') < routed.indexOf('sanjusangendo') &&
+    routed.indexOf('sanjusangendo') < routed.indexOf('nishiki') &&
+    routed.indexOf('nishiki') < routed.indexOf('tobichi-kyoto'),
+    '19/10: Tōfuku-ji→Sanjūsangendō→Nishiki→tiendas');
+  assert(day?.activities.find(a=>a.id==='tofukuji-1019')?.notes.includes('LUNES 19') &&
+    day?.activities.find(a=>a.id==='sanjusangendo')?.transit?.from==='Tōfuku-ji' &&
+    day?.activities.find(a=>a.id==='nishiki')?.transit?.from==='Sanjūsangendō',
+    '19/10: no conservar tránsitos obsoletos ni horario excepcional del sábado');
   assert(kyoto19.stages.at(-1).stops.at(-1).kind === 'hotel',
-    '19/10: volver a RESI STAY desde la ruta de Ginkaku');
+    '19/10: última etapa regresa al RESI');
 }
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
