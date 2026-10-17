@@ -351,7 +351,7 @@ if (kyoto18) {
   const route=kyoto18.stages.flatMap(s=>s.stops.map(p=>p.id));
   const pick = day?.activities.find(a=>a.id==='kyoto-station-h2');
   const flight = day?.activities.find(a=>a.id==='kix-vilma-marga');
-  assert(route.at(-1)==='kyoto-station-h2' && route.includes('kyoto-morning-flex') &&
+  assert(route.at(-1)==='kyoto-station-h2' && route[0] === '@hotel-start' &&
     !route.includes('kix-vilma-marga') &&
     !route.includes('kiyomizu-rescate-1018') && !route.includes('yuzen-kiyomizu-rescate-1018'),
     '18/10: mapa de acompañantes acaba en H2; KIX T1 solo información de las viajeras');
@@ -379,8 +379,8 @@ if (kyoto18) {
       '18/10: Kiyomizu/palillos backup solo temprano y elegidos por usuario');
   }
   assert(day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('15:48') &&
-    day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('NO se ha confirmado compra'),
-    '18/10: bus 14:20 llega 15:48 a KIX, reserva obligatoria aún no confirmada');
+    day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('No existe confirmación comunicada de reserva'),
+    '18/10: bus 14:20 llega 15:48 a KIX, billete aún sin confirmar');
   assert(day?.activities.find(x=>x.id==='kix-vilma-marga')?.time==='19:00',
     '18/10: vuelo KIX a 19:00 no se modifica');
 }
