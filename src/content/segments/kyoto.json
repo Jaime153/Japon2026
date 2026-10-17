@@ -1181,6 +1181,15 @@
           }
         },
         {
+          "id": "ichiran-comida-1017",
+          "title": "Ichiran · ramen",
+          "category": "comida",
+          "status": "confirmado",
+          "visited": true,
+          "locationQuery": "",
+          "notes": "COMIDA REAL del sábado 17/10 en Ichiran (一蘭). El grupo ha comido aquí a media tarde; Jaime no quiere que figure una hora. No se ha confirmado qué sucursal concreta de Ichiran fue, por lo que no debe inventarse una ubicación ni aparecer en la ruta del mapa. Registrar únicamente como recuerdo gastronómico del día."
+        },
+        {
           "id": "yasaka-shrine-1017",
           "title": "Yasaka Shrine · si apetece al volver",
           "category": "templo",
@@ -1211,7 +1220,7 @@
           ]
         }
       ],
-      "note": "SÁBADO 17/10, actualización REAL: llegada a la ESTACIÓN Fushimi-Inari 07:30; bajando por puesto 5 ~11:15; SALIDA REAL de Fushimi Inari a las **12:00**. Visita terminada, no alargar la estimación previa 11:30–11:45. El grupo VA AHORA DIRECTAMENTE HACIA Kiyomizu-dera; no ha confirmado aún llegada ni medio de transporte. ETA de Kiyomizu aproximada 13:00–13:20; visita prevista ~13:00–14:40 sujeta a traslado, colas y comida. Después Yūzen, tienda de palillos junto a Ghibli Kiyomizu 2-218-1 (~14:40–15:15 solo previsión), y Yasaka Shrine opcional si quedan ganas, o RESI directamente. TARDE LIBRE. Tōfuku-ji y Sanjūsangendō se conservan en el lunes 19 con Lorena, no vuelven a Hoy 17. El domingo 18 sigue teniendo Kiyomizu/palillos solo como rescate si no se logran hoy, priorizando vuelo de las chicas. No inventar visita realizada a Kiyomizu ni compra en Yūzen, kimono/ceremonia o viaje en tren real.",
+      "note": "SÁBADO 17/10, actualización REAL: llegada a la ESTACIÓN Fushimi-Inari 07:30; bajando por puesto 5 ~11:15; SALIDA REAL de Fushimi Inari a las **12:00**. Visita terminada, no alargar la estimación previa 11:30–11:45. El grupo VA AHORA DIRECTAMENTE HACIA Kiyomizu-dera; no ha confirmado aún llegada ni medio de transporte. ETA de Kiyomizu aproximada 13:00–13:20; visita prevista ~13:00–14:40 sujeta a traslado, colas y comida. Después Yūzen, tienda de palillos junto a Ghibli Kiyomizu 2-218-1 (~14:40–15:15 solo previsión), y Yasaka Shrine opcional si quedan ganas, o RESI directamente. TARDE LIBRE. Tōfuku-ji y Sanjūsangendō se conservan en el lunes 19 con Lorena, no vuelven a Hoy 17. El domingo 18 sigue teniendo Kiyomizu/palillos solo como rescate si no se logran hoy, priorizando vuelo de las chicas. No inventar visita realizada a Kiyomizu ni compra en Yūzen, kimono/ceremonia o viaje en tren real. Comida REAL de hoy: Ichiran (ramen), sin hora ni sucursal confirmadas. Se registra como parada gastronómica, sin añadir un punto de mapa ficticio; el orden exacto con las compras no se ha confirmado.",
       "mapStages": [
         {
           "id": "inari-a-kiyomizu-1017",
