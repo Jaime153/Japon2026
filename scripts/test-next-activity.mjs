@@ -122,6 +122,32 @@ if (day15) {
 const css = readFileSync('src/styles/global.css', 'utf8');
 check(!css.includes('.activity-done h3') && !css.includes('.activity-done { opacity'),
   'El progreso no debe tachar ni atenuar tarjetas');
+// Sábado 17: Fushimi TERMINADO realmente a las 12:00.
+// Su time es una etiqueta de salida, no una supuesta entrada a las 07:30.
+const day17 = segment.days.find(d=>d.date === '2026-10-17');
+check(Boolean(day17),'17/10: día de Kioto no encontrado');
+if (day17) {
+  const f = day17.activities.find(a=>a.id === 'fushimi');
+  const k = day17.activities.find(a=>a.id === 'kiyomizu-1017');
+  check(f?.visited === true && f?.time === 'Salida 12:00' &&
+    f?.notes.includes('ESTACIÓN Fushimi-Inari a las 07:30') &&
+    f?.notes.includes('SALIDA FINAL REAL'),
+    '17/10: 07:30 se refiere a estación, salida real del santuario 12:00');
+  check(parseTimeWindow(f?.time)===null,
+    '17/10: 12:00 es SALIDA de Fushimi, no una falsa hora de visita iniciada');
+  check(k?.visited !== true && k?.time === '~13:00–14:40',
+    '17/10: Kiyomizu todavía previsto, no visitado ni hora real');
+  const activities17=day17.activities.map(a=>({
+    id:a.id,time:a.time,status:a.status,
+    skipped:Boolean(a.skipped),completed:a.visited===true
+  }));
+  const next=selectNextActivity(activities17,at('12:01'));
+  check(next?.activity?.id==='kiyomizu-1017' && next?.kind==='upcoming',
+    '17/10 a las 12:01: siguiente Kiyomizu, sin volver a Fushimi');
+  check(!day17.activities.some(a=>['tofukuji-1017','sanjusangendo-cercano-1017'].includes(a.id)),
+    '17/10: Tofukuji y Sanjusangendo quedan con Lorena el 19');
+}
+
 const page = readFileSync('src/pages/hoy.astro', 'utf8');
 const card = readFileSync('src/components/ActivityCard.astro', 'utf8');
 check(!card.includes('data-done-badge') && !card.includes("card.classList.toggle('activity-done', done)"),
