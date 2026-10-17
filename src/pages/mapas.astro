@@ -436,7 +436,10 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       html += '<ol class="mt-3 grid gap-2">';
       visible.forEach((stop, i) => {
         const prev = visible[i - 1], dir = prev ? directions(prev.query, stop.query, stage.mode) : '';
-        html += '<li class="min-w-0 rounded-xl border border-slate-200 bg-white p-3">' +
+        const isH2 = stop.id === 'kyoto-station-h2';
+        html += '<li class="min-w-0 rounded-xl border p-3 ' +
+          (isH2 ? 'border-red-500 bg-red-50' : 'border-slate-200 bg-white') + '">' +
+          (isH2 ? '<p class="mb-1 text-xs font-black text-red-800">🔴 PARADA EXACTA · SUBIDA H2/KY2 · Kyoto Avanti</p>' : '') +
           '<p class="break-words text-sm font-bold">' + (i + 1) + '. ' + esc(stop.title) + '</p>';
         if (stop.time || stop.note) html += '<p class="mt-1 break-words text-xs leading-relaxed text-slate-500">' +
           esc([stop.time, stop.note].filter(Boolean).join(' · ')) + '</p>';
@@ -535,9 +538,13 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
         if (token !== sequence) return;
         if (coords) {
           geo.set(stop.query, coords);
+          const isPickupH2 = stop.id === 'kyoto-station-h2';
           const pin = leaflet.divIcon({
             className: '',
-            html: '<span style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid white;border-radius:100%;background:#0f172a;color:white;font-weight:bold;font-size:12px;box-shadow:0 1px 5px #64748b">' + (i + 1) + '</span>',
+            html: '<span style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid white;border-radius:100%;background:' +
+              (isPickupH2 ? '#dc2626' : '#0f172a') +
+              ';color:white;font-weight:bold;font-size:12px;box-shadow:0 1px 5px #64748b">' +
+              (isPickupH2 ? 'H2' : (i + 1)) + '</span>',
             iconSize: [28, 28], iconAnchor: [14, 14]
           });
           leaflet.marker([coords.lat, coords.lon], { icon: pin })
