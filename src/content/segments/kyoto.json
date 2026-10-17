@@ -1102,22 +1102,22 @@
     },
     {
       "date": "2026-10-17",
-      "title": "Fushimi temprano → Kiyomizu y palillos · tarde libre",
+      "title": "Fushimi Inari real 07:30 → Kiyomizu → palillos → tarde libre",
       "status": "plan",
       "activities": [
         {
           "id": "fushimi",
-          "title": "Fushimi Inari · primera visita del sábado",
+          "title": "Fushimi Inari Taisha",
           "category": "templo",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
           "locationQuery": "Fushimi Inari Taisha",
           "plan": [
-            "Salir del RESI temprano y llegar a Fushimi Inari cerca de las 07:00 (hora estimada).",
-            "Recorrer los primeros torii sin hacer la subida completa; salir hacia Tōfuku-ji sobre las 08:15.",
-            "Si hay retraso o cansancio, omitir el templo opcional antes que sacrificar Kiyomizu."
+            "07:30: llegada REAL a la estación Fushimi-Inari; no afirmar llegada al santuario exactamente a esa hora.",
+            "~11:15: el grupo bajaba desde la parada/puesto 5 de la montaña. Fin ~11:30–11:45 solo ESTIMACIÓN; no consta que ya hayan salido.",
+            "Una vez abajo: ir DIRECTAMENTE hacia Kiyomizu-dera (sin Tōfuku-ji ni Sanjūsangendō hoy). Comer cuando apetezca y mantener la tarde libre."
           ],
-          "time": "~07:00–08:15",
+          "time": "~07:30–11:45",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
@@ -1130,144 +1130,103 @@
           },
           "goshuin": true,
           "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido.",
-          "notes": "SÁBADO 17/10, no viernes. Prioridad de la mañana: Fushimi Inari temprano con los torii. Después continuar hacia la zona de Tōfuku-ji y Kiyomizu. Horario ~07:00–08:15 estimado, no reserva ni visita confirmada; no subir a la cima si perjudica Kiyomizu y la tarde libre. Desde RESI, Keihan desde Gion-Shijō a Fushimi-Inari; tren/andando para regresar hacia Tōfuku-ji.",
+          "notes": "HECHO REAL, sábado 17/10: el grupo llegó a la ESTACIÓN Fushimi-Inari a las 07:30 (no es hora confirmada de entrada a las puertas del santuario). Aproximadamente a las 11:15 estaban BAJANDO por el puesto o parada n.º 5 de la ruta de la montaña. Jaime calcula salir de la zona hacia las 11:30 o algo más tarde: objetivo ESTIMADO, no salida confirmada. Están recorriendo Fushimi Inari, aún no consta visita terminada. No utilizar el horario antiguo de 07:00–08:15 ni dirigirles a Tōfuku-ji/Sanjūsangendō después: hoy solo Kiyomizu, Yūzen y Yasaka opcional.",
           "links": {
             "officialWebsite": "https://inari.jp/en/"
-          }
-        },
-        {
-          "id": "tofukuji-1017",
-          "title": "Tōfuku-ji · puente Tsūtenkyō (opcional)",
-          "category": "templo",
-          "status": "opcional",
-          "mapBeforeId": "kiyomizu-1017",
-          "locationQuery": "Tofukuji Temple Kyoto",
-          "notes": "OPCIONAL GEOGRÁFICO entre Fushimi Inari y Kiyomizu. ATENCIÓN SÁBADO 17/10/2026: por ceremonia Kaizan-ki, el jardín Hōjō abre solo a las 14:00 y NO encaja en nuestra mañana; el puente Tsūtenkyō sí admite visita desde las 09:00. Visitar puente/recinto brevemente solo si no retrasa Kiyomizu ni deja la tarde ocupada. Fuente oficial: https://tofukuji.jp/news/10%E6%9C%8817%E6%97%A5%E6%9C%A8%E6%9C%AC%E5%9D%8A%E5%BA%AD%E5%9C%92%EF%BC%88%E6%96%B9%E4%B8%88%EF%BC%89%E6%8B%9D%E8%A6%B3%E6%99%82%E9%96%93%E5%A4%89%E6%9B%B4%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-3/ .",
-          "plan": [
-            "Si salís pronto de Fushimi, llegar a Tōfuku-ji para el puente Tsūtenkyō después de las 09:00.",
-            "No programar jardín Hōjō por la mañana: ABRE 14:00 excepcionalmente el 17.",
-            "Acortar u omitir si interesa más ir directo a Kiyomizu."
-          ],
-          "goshuin": true,
-          "links": {
-            "officialWebsite": "https://tofukuji.jp/guide/"
           },
-          "description": "Tōfuku-ji es uno de los grandes templos zen de Kioto y pertenece a la escuela Rinzai. Se fundó en el siglo XIII y es famoso por el puente Tsūtenkyō, que cruza un barranco bordeado de arces. Además del puente, alberga jardines y espacios de meditación; no todos tienen el mismo horario. El sábado 17 de octubre de 2026 el jardín del Hōjō abre excepcionalmente a las 14:00 por una ceremonia religiosa, aunque el puente sí se puede visitar desde las 09:00. La visita matinal de este planning, si se elige, sería únicamente al puente y su entorno."
-        },
-        {
-          "id": "sanjusangendo-cercano-1017",
-          "title": "Sanjūsangendō · alternativa cercana (opcional)",
-          "category": "templo",
-          "status": "opcional",
-          "mapBeforeId": "kiyomizu-1017",
-          "locationQuery": "Sanjusangendo Kyoto",
-          "notes": "Opcional en el eje de Tōfuku-ji hacia Kiyomizu, pero NO una visita obligatoria: el sábado solo escoger este o Tōfuku-ji si de verdad queda margen. Abre 08:30–17:00 en octubre (última admisión 16:30), fuente oficial https://www.sanjusangendo.jp/ . Requiere 45–60 min y transporte/paseo; si queréis tarde libre y Kiyomizu, descartarlo a tiempo.",
-          "plan": [
-            "Si preferís estatuas de Kannon a Tōfuku-ji y sobra tiempo, visitar este recinto en lugar del otro.",
-            "Si estáis retrasados, ir directo a Kiyomizu; Sanjūsangendō queda previsto también para el día 19 con Jaime y Lorena."
-          ],
-          "goshuin": true,
-          "links": {
-            "officialWebsite": "https://www.sanjusangendo.jp/"
-          },
-          "description": "Sanjūsangendō, también llamado Rengeō-in, es un gran pabellón budista de Kioto famoso por sus 1.001 estatuas de Kannon de mil brazos. El edificio actual data del siglo XIII y destaca por su extraordinaria longitud, que da origen a su nombre tradicional de los treinta y tres espacios entre columnas. Está al sur de Higashiyama, en una zona lógica al desplazarse desde Fushimi hacia Kiyomizu, pero requiere entrar, visitarlo con calma y dejar tiempo para el siguiente templo; en este plan es solo una alternativa opcional."
+          "visited": false
         },
         {
           "id": "kiyomizu-1017",
-          "title": "Kiyomizu-dera · prioridad del sábado",
+          "title": "Kiyomizu-dera",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Kiyomizu-dera Kyoto",
-          "notes": "Visita PRIORITARIA del sábado 17 después de Fushimi y, como máximo, uno de los templos cercanos si cuadra. Kiyomizu abre desde las 06:00 y normalmente cierra a las 18:00 en octubre (consultar calendario oficial). Llegada ~10:30 estimada; si se añade otro templo o kimono/ceremonia, retrasar la hora pero NO ocupar la tarde sin que el grupo lo decida. Si no se puede hacer el 17, hay un BACKUP corto el domingo 18 por la mañana con límite duro por el vuelo KIX de las chicas. Kimono y ceremonia del té siguen SIN reserva confirmada; no se incluyen automáticamente en esta mañana.",
+          "notes": "Objetivo principal del sábado con las chicas, DESPUÉS de acabar realmente Fushimi Inari (estación 07:30, aún bajando en puesto 5 ~11:15). Ir directamente sin templos intermedios. Llegada a Kiyomizu alrededor de 13:00 solo ORIENTATIVA, según bajada, tren, subida y comida. Kiyomizu abre desde las 06:00, cierre de octubre alrededor de 18:00; verificar acceso en el momento. Después, parar a mirar/comprar palillos en Yūzen junto a Ghibli; luego Yasaka Shrine opcional solo si apetece, y TARDE LIBRE. Si la visita se hace hoy, mañana domingo NO repetir Kiyomizu (ya existe fallback opcional para caso contrario). Kimono/ceremonia del té SIN reserva confirmada: no insertarlos sin pedir permiso.",
           "transit": {
-            "from": "RESI STAY Yasaka",
-            "summary": "Ir andando temprano desde Bishamoncho 28, cuesta arriba hacia Kiyomizu-zaka.",
-            "approximateDuration": "~20–30 min según ritmo"
+            "from": "Fushimi Inari Taisha (zona baja del santuario)",
+            "summary": "Ir a Keihan Fushimi-Inari → tren hacia Kiyomizu-Gojō → subir andando hasta Kiyomizu-dera (~25–30 min de cuesta desde la estación). Según tráfico, colas y paso del grupo, prever ~40–60 min de trayecto después de terminar Fushimi. Alternativamente taxi si están cansadas.",
+            "approximateDuration": "~40–60 min con caminata y espera",
+            "steps": [
+              "Terminar la bajada de Fushimi y caminar a la estación Keihan Fushimi-Inari.",
+              "Tomar Keihan al norte y bajar en Kiyomizu-Gojō.",
+              "Subir a pie por Kiyomizu-zaka hasta Kiyomizu-dera; hacer pausa para comer si apetece."
+            ]
           },
           "plan": [
-            "Después de Fushimi, ir hacia Kiyomizu, sin cruzar Kioto para completar extras fuera de zona.",
-            "Ver el templo y disfrutar las vistas; si ya queréis estar de regreso al mediodía, omitir Tōfuku-ji/Sanjūsangendō.",
-            "Bajar hacia la tienda de palillos Yūzen junto a la tienda de Ghibli (mismo edificio)."
+            "Tras bajar de Fushimi, ir directo a Kiyomizu; no sumar Tōfuku-ji/Sanjūsangendō hoy.",
+            "Reservar ~60–90 min para el templo, ajustable; comer antes o después si hace falta.",
+            "Al bajar, visitar tienda de palillos Yūzen de Kiyomizuzaka, al lado de Ghibli; luego Yasaka Shrine solo si apetece."
           ],
           "goshuin": true,
           "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO.",
-          "time": "~10:30–12:00"
+          "time": "~13:00–14:30"
         },
         {
           "id": "yuzen-kiyomizu-ghibli-1017",
-          "title": "Yūzen · comprar palillos junto a Ghibli",
+          "title": "Yūzen · palillos junto a Ghibli",
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "time": "~12:00–12:35",
+          "time": "~14:30–15:00",
           "locationQuery": "手作り箸工房 遊膳 清水坂 京都市東山区清水2丁目218-1",
-          "notes": "PARADA CONCRETA solicitada. Tienda de palillos Yūzen (遊膳 / 清水坂のお箸やさん) en KIYOMIZU 2-218-1, el mismo edificio que Donguri Kyowakoku (どんぐり共和国, Ghibli) 清水店. Abre aprox. 09:30–17:30 según ficha local; comprobar sobre el terreno. Mirar palillos, opciones para regalos y grabados. Hacerla ANTES o DESPUÉS de Kiyomizu según orden de paso, sin retroceder por Ninenzaka. No confundir con Yūzen de Nishiki ni Gion; esta es la sede junto a Ghibli de Kiyomizu. Si la visita a Kiyomizu se mueve al domingo 18, mover también esta compra a la mañana del domingo, a partir de 09:30.",
+          "notes": "Tienda de palillos Yūzen (遊膳, 清水坂店) en Kiyomizu 2-218-1, junto a la tienda Studio Ghibli Donguri Kyowakoku 清水店, en el mismo edificio. Visitar DESPUÉS de Kiyomizu (o antes si la subida lo favorece); llegada aproximada 14:30 tras Fushimi largo. Horario publicado en la ficha de esta sucursal ~09:30–17:30, no confundir con la otra Yūzen de Gion que cierra a las 19:00. Mirar y comprar palillos/posible grabado si encaja. No se ha confirmado que ya hayáis comprado.",
           "plan": [
-            "Localizar la tienda de Ghibli de Kiyomizu: 2-218-1 en Kiyomizuzaka (no la de Ninenzaka).",
-            "Entrar en Yūzen, tienda de palillos del mismo edificio, y mirar/comprar palillos o preguntar por grabado de nombres.",
-            "Volver al RESI para tener la TARDE libre, sin más templos obligatorios."
+            "Bajar de Kiyomizu por Kiyomizuzaka y encontrar la tienda Ghibli 清水店 (2-218-1).",
+            "Entrar en Yūzen al lado para mirar palillos y grabado opcional.",
+            "Después pasear hacia Yasaka o volver al RESI sin añadir más templos obligatorios."
           ],
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E6%89%8B%E4%BD%9C%E3%82%8A%E7%AE%B8%E5%B7%A5%E6%88%BF%20%E9%81%8A%E8%86%B3%20%E6%B8%85%E6%B0%B4%E5%9D%82%E3%81%AE%E3%81%8A%E7%AE%B8%E3%82%84%E3%81%95%E3%82%93%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B8%85%E6%B0%B42%E4%B8%81%E7%9B%AE218-1"
           }
         },
         {
-          "id": "yasaka-pagoda-fotos-1017",
-          "title": "Pagoda Yasaka · foto al volver (opcional)",
+          "id": "yasaka-shrine-1017",
+          "title": "Yasaka Shrine · si apetece al volver",
           "category": "templo",
           "status": "opcional",
-          "locationQuery": "Yasaka Pagoda Hokan-ji Kyoto",
-          "notes": "De paso hacia el hotel, solo si da tiempo después de Kiyomizu y la tienda de palillos. No es obligatorio ni se prolonga la tarde para esto.",
-          "transit": {
-            "from": "Ninenzaka",
-            "summary": "A pie por Higashiyama, unos minutos bajando hacia Hōkan-ji.",
-            "approximateDuration": "~5–10 min"
-          },
+          "mapBeforeId": "regreso-libre-1017",
+          "locationQuery": "Yasaka Shrine, 625 Gionmachi Kitagawa, Higashiyama Ward, Kyoto",
+          "notes": "OPCIONAL cerca del RESI. Si al bajar desde Kiyomizu y la tienda Yūzen aún hay ganas, pasear por Ninenzaka / zona de Gion hasta Yasaka Shrine. El recinto está abierto las 24 horas, aunque la oficina y los goshuin cierran sobre las 17:00. Es un pequeño DESVÍO hacia el norte de Bishamonchō, no una obligación. Si estáis cansadas, id directamente al hotel y dejar la tarde libre. Fuente oficial https://www.yasaka-jinja.or.jp/access/ .",
+          "description": "Yasaka-jinja es uno de los santuarios sintoístas emblemáticos de Kioto. Se relaciona con el festival Gion Matsuri y está situado a la entrada del barrio de Gion, junto a Maruyama Park. Su recinto puede recorrerse incluso por la tarde y noche, mientras que el mostrador de amuletos y los goshuin tienen horario más corto. En este recorrido solo es una parada de paseo opcional al regresar hacia el alojamiento.",
           "plan": [
-            "Hacer la foto de la pagoda desde la calle, si da tiempo.",
-            "Volver a devolver los kimonos a la hora que indique la tienda."
+            "Solo si quedan fuerzas, pasear desde las calles históricas al santuario Yasaka; sus puertas están abiertas todo el día.",
+            "Para volver al RESI, caminar hacia el sur por Higashiyama; si hay cansancio, omitir por completo el desvío."
           ],
           "goshuin": true,
-          "description": "La famosa pagoda de Yasaka pertenece a Hōkan-ji (法観寺), un templo budista de Higashiyama. Según una tradición local, su origen se vincula al príncipe Shōtoku en los siglos VI–VII, aunque esa atribución pertenece a la tradición religiosa y no puede comprobarse de forma independiente. La estructura actual de cinco pisos se reconstruyó en 1440, durante el período Muromachi, después de incendios y daños anteriores. Las pagodas budistas recuerdan a los monumentos levantados para custodiar reliquias y simbolizan la continuidad de las enseñanzas de Buda. Desde la cuesta de Yasaka-dōri se aprecia cómo la torre emerge entre las casas tradicionales: es una de las imágenes más reconocibles de Kioto. El templo puede limitar el acceso al interior y la atención para el goshuin, así que la parada principal es ver la pagoda desde fuera con respeto a los vecinos.",
-          "mapBeforeId": "regreso-libre-1017"
+          "links": {
+            "officialWebsite": "https://www.yasaka-jinja.or.jp/access/"
+          }
         },
         {
           "id": "regreso-libre-1017",
-          "title": "Regresar y dejar la tarde libre",
+          "title": "RESI STAY Yasaka · tarde libre",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "RESI STAY Yasaka, 28 Bishamoncho, Kyoto",
-          "notes": "Después de comprar palillos, volver tranquilamente al RESI. Las tardes del 17 quedan libres por decisión explícita del grupo. Comer, descansar o salir espontáneamente, sin ninguna cita inventada; nada de tatuajes obligatorios ni recorridos encadenados.",
+          "notes": "Terminar hoy tras Fushimi y Kiyomizu + tienda de palillos Yūzen, con Yasaka Shrine opcional si quedan ganas. Volver al RESI cuando el grupo quiera y dejar libre el resto de la tarde; no reservar actividades, restaurantes ni nuevos templos. Si Yasaka no encaja, regreso directo desde Kiyomizu. No dar por hecha la vuelta.",
           "plan": [
-            "Regresar al RESI cuando terminéis la ruta matinal.",
-            "Tarde libre: sin actividades fijas ni reservas supuestas."
+            "Tras Kiyomizu y Yūzen, decidir si merece la pena desviar un poco hasta Yasaka Shrine.",
+            "Regresar tranquilamente al RESI. La tarde queda libre."
           ]
         }
       ],
-      "note": "SÁBADO 17/10: excursión SOLO DE MAÑANA, por decisión actual: Fushimi Inari temprano (~07:00), Tōfuku-ji Tsūtenkyō opcional desde 09:00 (su jardín Hōjō no abre hasta las 14:00 excepcionalmente ese día), Sanjūsangendō como alternativa opcional EN LUGAR de sumar ambos, Kiyomizu-dera como prioridad (~10:30–12:00), compra de palillos Yūzen en el MISMO EDIFICIO de la tienda Ghibli de Kiyomizu 2-218-1 (~12:00–12:35), luego regreso y TARDE LIBRE. El grupo podría hacer Kiyomizu el DOMINGO 18 por la mañana si no lo logra el 17, pero solo con regreso seguro para el bus al KIX; no se considera viable meter ahí kimono y ceremonia del té sin reservas. Kimono y té fueron deseos anteriores y NO HAY RESERVAS; no forzar su actividad en el mapa. Tatuajes del grupo igualmente sin cita y no forman parte de la tarde libre programada.",
+      "note": "SÁBADO 17/10 EN DIRECTO: llegada REAL a la ESTACIÓN Fushimi-Inari 07:30. Aproximadamente a las 11:15 estaban bajando de la montaña a la altura del puesto/parada 5. Objetivo de finalizar Fushimi alrededor de 11:30–11:45, SOLO ESTIMADO, salida aún no confirmada. El grupo ha decidido ELIMINAR HOY Tōfuku-ji y Sanjūsangendō, que se harán con Lorena el lunes 19. Desde Fushimi ir directo a Kiyomizu-dera (~13:00–14:30 ESTIMADO, según traslado y comida) → Yūzen de palillos junto a Ghibli (~14:30) → Yasaka Shrine OPCIONAL (recinto abierto 24 h) o RESI directamente → TARDE LIBRE. Si Kiyomizu y palillos se completan el 17, no repetirlos el domingo 18; su tarjeta del domingo es solo rescate condicionado al vuelo. No inventar kimono/ceremonia del té, que no tienen reserva confirmada. Goshuin solo indica disponibilidad.",
       "mapStages": [
         {
-          "id": "fushimi-inari-1017",
-          "title": "RESI → Fushimi Inari temprano",
+          "id": "inari-a-kiyomizu-1017",
+          "title": "Fushimi (bajando) → Kiyomizu directo",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "fushimi"
-          ]
-        },
-        {
-          "id": "fushimi-kiyomizu-1017",
-          "title": "Fushimi → Kiyomizu (extras cercanos solo si se eligen)",
-          "mode": "transit",
-          "activityIds": [
             "fushimi",
             "kiyomizu-1017"
           ]
         },
         {
-          "id": "kiyomizu-palillos-1017",
-          "title": "Kiyomizu → Yūzen (al lado de Ghibli)",
+          "id": "kiyomizu-yuzen-1017",
+          "title": "Kiyomizu → tienda de palillos Yūzen",
           "mode": "walk",
           "activityIds": [
             "kiyomizu-1017",
@@ -1276,7 +1235,7 @@
         },
         {
           "id": "vuelta-libre-1017",
-          "title": "Palillos → RESI, tarde libre",
+          "title": "Yūzen → RESI · Yasaka opcional al paso",
           "mode": "walk",
           "activityIds": [
             "yuzen-kiyomizu-ghibli-1017",
@@ -1453,28 +1412,52 @@
     },
     {
       "date": "2026-10-19",
-      "title": "Kioto pendiente · Sanjūsangendō, Nishiki y tiendas",
+      "title": "Con Lorena · Tōfuku-ji → Sanjūsangendō → Nishiki y tiendas",
       "status": "plan",
-      "note": "Lunes 19, Jaime y Lorena: Ginkaku-ji, Camino del Filósofo, Hōnen-in, Eikan-dō y Nanzen-ji ya están previstos para el miércoles 14 con las chicas, así que no duplicarlos aquí. Este día podemos recuperar Sanjūsangendō, Nishiki Market, TOBICHI (agenda de Lorena) y la tienda de té probable Baikoan, todas pendientes. Ajustar según lo que realmente logremos visitar del 14 al 18. Onsen y restaurantes como opcionales.",
+      "note": "LUNES 19/10 con Lorena: recuperamos los DOS templos eliminados del sábado 17, en orden geográfico **Tōfuku-ji (abre 09:00) → Sanjūsangendō (08:30–17:00) → Nishiki Market para comer/pasear → TOBICHI → Baikoan** si sigue apeteciendo. Las horas son orientativas; mercado/compras se pueden recortar sin sacrificar los templos. La excepción de apertura a las 14:00 del jardín Hōjō afecta al sábado 17, no al lunes 19. No marcar templos realizados sin confirmación ni usar transit obsoletos desde Sennyū-ji o Tō-ji.",
       "activities": [
         {
+          "id": "tofukuji-1019",
+          "title": "Tōfuku-ji · Tsūtenkyō y jardín Hōjō",
+          "category": "templo",
+          "status": "plan",
+          "locationQuery": "Tofukuji Temple Kyoto",
+          "notes": "TRASLADADO DEL SÁBADO 17 al LUNES 19 para hacerlo con Lorena, junto a Sanjūsangendō. No se visitó el sábado y NO debemos volver a ofrecerlo después de Fushimi hoy. En octubre abre 09:00–16:00, acceso habitual 9:00; se puede ver puente Tsūtenkyō y/o jardín Hōjō según interés. La excepción de jardín Hōjō abierto solo desde las 14:00 correspondía exclusivamente al sábado 17, NO al lunes 19. Fuente oficial: https://renewal.tofukuji.jp/guide/ . Siguiente Sanjūsangendō a ~20–35 min en transporte o taxi, no reordenar visitas hacia Nishiki antes.",
+          "plan": [
+            "Llegar a Tōfuku-ji cerca de las 09:00 (hora planificada), elegir puente Tsūtenkyō y/o jardín Hōjō.",
+            "Tras dedicar ~60–75 min, viajar a Sanjūsangendō; después seguir hacia Nishiki/TOBICHI si apetece.",
+            "No intentar meter ambos el sábado 17: forman parte de la mañana del lunes 19 con Lorena."
+          ],
+          "goshuin": true,
+          "links": {
+            "officialWebsite": "https://tofukuji.jp/guide/"
+          },
+          "description": "Tōfuku-ji es uno de los grandes templos zen de Kioto, de la tradición Rinzai. Fue fundado en el siglo XIII y destaca por sus jardines y el puente Tsūtenkyō, sobre un valle de arces. En otoño es especialmente conocido por los colores de las hojas, aunque a mediados de octubre todavía es temprano para el máximo color. El jardín Hōjō y el puente tienen accesos diferenciados. El lunes 19 la visita vuelve a los horarios habituales de octubre, a diferencia del cambio excepcional comunicado para el sábado 17.",
+          "time": "~09:00–10:15",
+          "transit": {
+            "from": "RESI STAY Yasaka",
+            "summary": "Desde Gion-Shijō coger Keihan hacia Tōfukuji o tomar taxi si encaja; desde estación Tōfukuji caminar ~10 min hacia el templo.",
+            "approximateDuration": "~35–50 min puerta a puerta, sujeto a tren/colas"
+          }
+        },
+        {
           "id": "sanjusangendo",
-          "title": "Sanjūsangendō",
-          "time": "~08:30–09:30",
+          "title": "Sanjūsangendō · después de Tōfuku-ji",
+          "time": "~10:45–11:45",
           "category": "templo",
           "status": "plan",
           "priority": "must",
           "locationQuery": "Sanjusangendo Kyoto",
-          "notes": "Pendiente desde el 14. Sanjūsangendō abre 08:30 en octubre, tiene las 1.001 estatuas de Kannon y la visita se hace en buena parte bajo techo. No confundir con visita realizada.",
+          "notes": "Con Lorena el LUNES 19, trasladado desde los opcionales del sábado 17. Visita aún PENDIENTE, NO se ha hecho el 17. Abierto 08:30–17:00 en octubre, última entrada 16:30. Guardar tiempo para contemplar las 1.001 estatuas, donde no se permite fotografiar el interior; salir luego hacia Nishiki Market si apetece.",
           "transit": {
-            "from": "Sennyū-ji / Imakumano Kannon-ji",
-            "summary": "Bajar hacia Higashiyama Nanajo. Se puede caminar; si vamos cansados, bus/taxi corto.",
-            "approximateDuration": "20–25 min"
+            "from": "Tōfuku-ji",
+            "summary": "Desde Tōfuku-ji volver a estación Keihan Tōfukuji y bajar en Shichijō; desde Shichijō caminar hacia Sanjūsangendō. Alternativamente taxi corto.",
+            "approximateDuration": "~25–40 min con caminata y espera"
           },
           "plan": [
-            "Llegar sobre las 09:15 después de desayunar y salir a las 08:30.",
-            "Visitar el pabellón de las 1.001 estatuas; calcular cerca de una hora.",
-            "Si hay tormenta eléctrica, esperar a que pase antes de desplazarnos por la calle."
+            "Visitar después de Tōfuku-ji, no antes de su apertura a las 09:00.",
+            "Entrar a ver el pabellón con las 1.001 figuras de Kannon; dedicar unos 45–60 min.",
+            "Después seguir hacia Nishiki cuando apetezca, sin forzar compras si se alargan los templos."
           ],
           "goshuin": true,
           "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior.",
@@ -1493,14 +1476,14 @@
             "Mirar los puestos que estén abiertos y comer algo sin alargarlo demasiado.",
             "Si hay muchas persianas bajadas por ser miércoles, pasar directamente a TOBICHI o a las galerías cercanas."
           ],
-          "time": "~10:15–11:30",
+          "time": "~12:15–13:15",
           "transit": {
-            "from": "Tō-ji",
-            "summary": "Kintetsu Toji → Kyoto (1 parada); metro Karasuma Line Kyoto → Shijo; caminar a Nishiki Market.",
-            "approximateDuration": "20–25 min"
+            "from": "Sanjūsangendō",
+            "summary": "Caminar hacia Shichijō (Keihan) → Gion-Shijō en Keihan → ir andando al Nishiki Market, o tomar taxi si estáis cansados.",
+            "approximateDuration": "~25–40 min con caminata y tren"
           },
           "priority": "must",
-          "notes": "Paseo por Nishiki Market. El 19 es lunes; la mayoría de tiendas abre, aunque cada una tiene su propio horario. Priorizar solo si todavía no lo hemos visitado.",
+          "notes": "Nishiki queda después de la pareja Tōfuku-ji → Sanjūsangendō del lunes. Los horarios son solo aproximados y también podéis comer aquí; si la mañana se alarga, mover tiendas sin desordenar el mapa.",
           "links": {
             "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/contact/"
           }
@@ -1508,7 +1491,7 @@
         {
           "id": "tobichi-kyoto",
           "title": "TOBICHI Kyoto · agenda Hobonichi",
-          "time": "~11:45–12:30",
+          "time": "~13:30–14:15",
           "category": "compras",
           "status": "plan",
           "priority": "must",
@@ -1530,7 +1513,7 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "time": "~13:00",
+          "time": "~14:30",
           "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
           "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
           "notes": "Buscar la tienda de matcha del viaje de 2025, probablemente Baikoan (梅香庵茶舗), 46-1 Tachibanacho. Identidad de tienda todavía no confirmada; consultar sobre el terreno.",
@@ -1543,10 +1526,9 @@
             "officialWebsite": "https://www.kyoto-tea.net/membersindex/baikouan"
           },
           "transit": {
-            "from": "Nishiki Market",
-            "summary": "Caminar a Shijo Station → Karasuma Line una parada hasta Gojo; desde Gojo caminar ~10 min a Baikoan, en Matsubara/Aburanokoji.",
-            "approximateDuration": "20–25 min",
-            "note": "La asociación de té de Kyoto publica 10:00–19:00 y cierre domingos/festivos; aun así el pequeño comercio puede tener variaciones, así que no apurar a última hora."
+            "from": "TOBICHI Kyoto / Nishiki",
+            "summary": "Volver hacia Shijō/Gojo y caminar a Baikoan en Matsubara / Aburanokōji; comprobar primero si la tienda es la recordada de 2025.",
+            "approximateDuration": "~25–35 min, según recorrido"
           }
         },
         {
@@ -1554,7 +1536,7 @@
           "title": "Onsen",
           "category": "ocio",
           "status": "opcional",
-          "notes": "Backup solamente. El onsen principal del viaje es Fufu no Yu el 15 con las tres juntas; repetir el 19 solo si apetece a Jaime y Lorena.",
+          "notes": "Opcional únicamente si Jaime y Lorena quieren volver a un baño el lunes 19. El grupo ya visitó Gokō-yu el jueves 15, por lo que este NO es el onsen principal pendiente de hacer.",
           "locationQuery": "Funaoka Onsen Kyoto",
           "plan": [
             "Elegir el onsen según logística y ganas del día.",
@@ -1597,16 +1579,25 @@
       ],
       "mapStages": [
         {
-          "id": "sanjusangendo-1019",
-          "title": "Hotel → Sanjūsangendō",
+          "id": "tofukuji-1019",
+          "title": "RESI → Tōfuku-ji",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
+            "tofukuji-1019"
+          ]
+        },
+        {
+          "id": "tofuku-sanjus-1019",
+          "title": "Tōfuku-ji → Sanjūsangendō",
+          "mode": "transit",
+          "activityIds": [
+            "tofukuji-1019",
             "sanjusangendo"
           ]
         },
         {
-          "id": "nishiki-1019",
+          "id": "sanjus-nishiki-1019",
           "title": "Sanjūsangendō → Nishiki",
           "mode": "transit",
           "activityIds": [
@@ -1615,8 +1606,8 @@
           ]
         },
         {
-          "id": "tiendas-1019",
-          "title": "Nishiki → TOBICHI → matcha → hotel",
+          "id": "nishiki-tiendas-1019",
+          "title": "Nishiki → TOBICHI → matcha → RESI",
           "mode": "mixed",
           "activityIds": [
             "nishiki",
