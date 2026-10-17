@@ -301,7 +301,7 @@ if (kyoto17) {
   assert(fushimi?.time === 'Salida 12:00' &&
     fushimi?.status === 'confirmado' && fushimi?.visited === true &&
     fushimi?.notes.includes('ESTACIÓN Fushimi-Inari a las 07:30') &&
-    fushimi?.notes.includes('puesto o parada n.º 5') &&
+    fushimi?.notes.includes('puesto/parada 5') &&
     fushimi?.notes.includes('11:15') &&
     fushimi?.notes.includes('SALIDA FINAL REAL') &&
     fushimi?.notes.includes('12:00'),
@@ -309,7 +309,7 @@ if (kyoto17) {
   const kiyomizu = day?.activities.find(a=>a.id==='kiyomizu-1017');
   assert(kiyomizu?.visited !== true &&
     kiyomizu?.time === '~13:00–14:40' &&
-    kiyomizu?.notes.includes('ESTIMACIÓN') &&
+    kiyomizu?.notes.includes('ORIENTATIVA') &&
     kiyomizu?.transit?.from.includes('12:00') &&
     kiyomizu?.transit?.summary.includes('NO un trayecto ya realizado'),
     '17/10: van A Kiyomizu pero llegada y medio de transporte no confirmados');
