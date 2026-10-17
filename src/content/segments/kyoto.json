@@ -1102,7 +1102,7 @@
     },
     {
       "date": "2026-10-17",
-      "title": "Fushimi Inari real 07:30 → Kiyomizu → palillos → tarde libre",
+      "title": "Fushimi terminado 12:00 → Kiyomizu → palillos · tarde libre",
       "status": "plan",
       "activities": [
         {
@@ -1113,11 +1113,11 @@
           "priority": "must",
           "locationQuery": "Fushimi Inari Taisha",
           "plan": [
-            "07:30: llegada REAL a la estación Fushimi-Inari; no afirmar llegada al santuario exactamente a esa hora.",
-            "~11:15: el grupo bajaba desde la parada/puesto 5 de la montaña. Fin ~11:30–11:45 solo ESTIMACIÓN; no consta que ya hayan salido.",
-            "Una vez abajo: ir DIRECTAMENTE hacia Kiyomizu-dera (sin Tōfuku-ji ni Sanjūsangendō hoy). Comer cuando apetezca y mantener la tarde libre."
+            "07:30 llegada REAL a estación Fushimi-Inari (entrada al santuario a hora desconocida).",
+            "~11:15 bajada por el puesto 5; SALIDA REAL final 12:00, visita terminada.",
+            "Después desplazamiento directo hacia Kiyomizu-dera, sin templos intermedios."
           ],
-          "time": "~07:30–11:45",
+          "time": "Salida 12:00",
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Caminar ~10 min a Gion-Shijo (KH39) → Keihan Main Line directo → Fushimi-Inari (KH34).",
@@ -1130,11 +1130,11 @@
           },
           "goshuin": true,
           "description": "Fushimi Inari Taisha es el santuario principal de Inari en Japón. Su tradición de fundación se remonta al año 711. Inari fue venerado por las cosechas de arroz y hoy se asocia también a la prosperidad de empresas y negocios. Los miles de torii rojos que cubren el sendero de la montaña han sido donados por personas y empresas como ofrendas de gratitud o petición; los nombres escritos indican al donante. Los zorros de piedra no son Inari, sino sus mensajeros simbólicos: algunos sostienen llaves o espigas de arroz. Caminar entre los torii es también una peregrinación montañosa, con numerosos santuarios pequeños en el recorrido.",
-          "notes": "HECHO REAL, sábado 17/10: el grupo llegó a la ESTACIÓN Fushimi-Inari a las 07:30 (no es hora confirmada de entrada a las puertas del santuario). Aproximadamente a las 11:15 estaban BAJANDO por el puesto o parada n.º 5 de la ruta de la montaña. Jaime calcula salir de la zona hacia las 11:30 o algo más tarde: objetivo ESTIMADO, no salida confirmada. Están recorriendo Fushimi Inari, aún no consta visita terminada. No utilizar el horario antiguo de 07:00–08:15 ni dirigirles a Tōfuku-ji/Sanjūsangendō después: hoy solo Kiyomizu, Yūzen y Yasaka opcional.",
+          "notes": "SÁBADO 17/10, HECHOS REALES comunicados: llegada a la ESTACIÓN Fushimi-Inari a las 07:30 (no a la puerta del templo); aproximadamente a las 11:15 estaban bajando por el puesto/parada 5 de la montaña; **SALIDA FINAL REAL de Fushimi Inari a las 12:00**. La visita ha terminado y el grupo ha salido directamente hacia Kiyomizu-dera. El campo 12:00 indica salida del santuario, no inicio. La duración de la visita dentro del recinto NO se puede calcular como 07:30–12:00 porque 07:30 corresponde a la estación. Sin Tōfuku-ji ni Sanjūsangendō el sábado; ambos pasan al lunes con Lorena.",
           "links": {
             "officialWebsite": "https://inari.jp/en/"
           },
-          "visited": false
+          "visited": true
         },
         {
           "id": "kiyomizu-1017",
@@ -1143,25 +1143,24 @@
           "status": "plan",
           "priority": "must",
           "locationQuery": "Kiyomizu-dera Kyoto",
-          "notes": "Objetivo principal del sábado con las chicas, DESPUÉS de acabar realmente Fushimi Inari (estación 07:30, aún bajando en puesto 5 ~11:15). Ir directamente sin templos intermedios. Llegada a Kiyomizu alrededor de 13:00 solo ORIENTATIVA, según bajada, tren, subida y comida. Kiyomizu abre desde las 06:00, cierre de octubre alrededor de 18:00; verificar acceso en el momento. Después, parar a mirar/comprar palillos en Yūzen junto a Ghibli; luego Yasaka Shrine opcional solo si apetece, y TARDE LIBRE. Si la visita se hace hoy, mañana domingo NO repetir Kiyomizu (ya existe fallback opcional para caso contrario). Kimono/ceremonia del té SIN reserva confirmada: no insertarlos sin pedir permiso.",
+          "notes": "PRÓXIMA VISITA, aún NO confirmada: Kiyomizu-dera directamente tras salir REALMENTE de Fushimi Inari a las 12:00 del sábado 17. Estimación de llegada ~13:00–13:20 según esperas, caminata y modo de transporte elegido (no comunicado). La franja ~13:00–14:40 es ORIENTATIVA y debe reajustarse al llegar y si se para a comer. No inventar viaje en tren realizado: opción transporte Keihan Fushimi-Inari → Kiyomizu-Gojō + subida a pie ~25–30 min; también taxi. Sin Tōfuku-ji ni Sanjūsangendō hoy. Kiyomizu abierto desde 06:00, cierre habitual octubre ~18:00 (consultar cartel de última admisión). Al terminar, ir a Yūzen de palillos junto a Ghibli Kiyomizu, luego Yasaka Shrine opcional o regreso directo al RESI. Kimono/ceremonia del té sin reservas confirmadas.",
           "transit": {
-            "from": "Fushimi Inari Taisha (zona baja del santuario)",
-            "summary": "Ir a Keihan Fushimi-Inari → tren hacia Kiyomizu-Gojō → subir andando hasta Kiyomizu-dera (~25–30 min de cuesta desde la estación). Según tráfico, colas y paso del grupo, prever ~40–60 min de trayecto después de terminar Fushimi. Alternativamente taxi si están cansadas.",
-            "approximateDuration": "~40–60 min con caminata y espera",
+            "from": "Fushimi Inari Taisha (salida real 12:00)",
+            "summary": "Tras la salida REAL a las 12:00, ir directamente a Kiyomizu-dera. Posible ruta en tren Keihan Fushimi-Inari → Kiyomizu-Gojō y después subida a pie ~25–30 min. El usuario no ha confirmado qué medio están utilizando: esta es una sugerencia, NO un trayecto ya realizado. También puede convenir taxi.",
+            "approximateDuration": "~40–60 min estimados desde el santuario; sujeto a tráfico, esperas y caminata",
             "steps": [
-              "Terminar la bajada de Fushimi y caminar a la estación Keihan Fushimi-Inari.",
-              "Tomar Keihan al norte y bajar en Kiyomizu-Gojō.",
-              "Subir a pie por Kiyomizu-zaka hasta Kiyomizu-dera; hacer pausa para comer si apetece."
+              "Llegar desde Fushimi al barrio de Higashiyama (Keihan a Kiyomizu-Gojō o taxi, según decidan).",
+              "Si se usa Keihan, subir a pie a Kiyomizu-dera desde Kiyomizu-Gojō; hacer pausa si hace falta."
             ]
           },
           "plan": [
-            "Tras bajar de Fushimi, ir directo a Kiyomizu; no sumar Tōfuku-ji/Sanjūsangendō hoy.",
-            "Reservar ~60–90 min para el templo, ajustable; comer antes o después si hace falta.",
-            "Al bajar, visitar tienda de palillos Yūzen de Kiyomizuzaka, al lado de Ghibli; luego Yasaka Shrine solo si apetece."
+            "Al salir de Fushimi Inari a las 12:00, continuar directamente a Kiyomizu-dera (estimación de llegada ~13:00–13:20, transporte real todavía sin confirmar).",
+            "Visitar el templo y comer cuando apetezca; no dar por hecho ninguna llegada a Kiyomizu.",
+            "Bajar a la tienda Yūzen junto a la de Ghibli y dejar libre el resto de la tarde."
           ],
           "goshuin": true,
           "description": "Kiyomizu-dera se fundó en el año 778, antes de que Kioto fuera capital de Japón, y pertenece a la tradición budista Hossō (rama Kita-Hossō). Está dedicado a Kannon, la figura de la compasión: sus fieles acuden para pedir protección y agradecer favores. El nombre significa «templo del agua pura» por la cascada Otowa, donde el agua se considera sagrada. Su edificio más conocido es el gran pabellón de madera, reconstruido en 1633 durante la época de Tokugawa Iemitsu. La terraza sobresale por la ladera y se apoya en una estructura de enormes vigas y pilares ensamblados con técnicas tradicionales, sin clavos metálicos en las uniones principales. La expresión japonesa «tirarse de la terraza de Kiyomizu» significa tomar una decisión muy importante y arriesgada; hoy no tiene nada que ver con saltar de verdad. Merece la pena fijarse en la estatua de Kannon, las vistas de Higashiyama y la cascada Otowa, además de pedir el goshuin. El conjunto forma parte de los Monumentos Históricos de la Antigua Kioto reconocidos por la UNESCO.",
-          "time": "~13:00–14:30"
+          "time": "~13:00–14:40"
         },
         {
           "id": "yuzen-kiyomizu-ghibli-1017",
@@ -1169,9 +1168,9 @@
           "category": "compras",
           "status": "plan",
           "priority": "must",
-          "time": "~14:30–15:00",
+          "time": "~14:40–15:15",
           "locationQuery": "手作り箸工房 遊膳 清水坂 京都市東山区清水2丁目218-1",
-          "notes": "Tienda de palillos Yūzen (遊膳, 清水坂店) en Kiyomizu 2-218-1, junto a la tienda Studio Ghibli Donguri Kyowakoku 清水店, en el mismo edificio. Visitar DESPUÉS de Kiyomizu (o antes si la subida lo favorece); llegada aproximada 14:30 tras Fushimi largo. Horario publicado en la ficha de esta sucursal ~09:30–17:30, no confundir con la otra Yūzen de Gion que cierra a las 19:00. Mirar y comprar palillos/posible grabado si encaja. No se ha confirmado que ya hayáis comprado.",
+          "notes": "Después de Kiyomizu-dera, previsto todavía sin confirmación de compra: tienda Yūzen de palillos (遊膳 清水坂店), Kiyomizu 2-218-1, junto a la tienda Ghibli Donguri Kyowakoku 清水店. El grupo salió REALMENTE de Fushimi Inari a las 12:00, por lo que ~14:40–15:15 es solo ventana estimada para compras tras Kiyomizu, no una cita ni llegada real. Horario orientativo de la sucursal ~09:30–17:30, diferente de Yūzen Gion (cierra sobre 19:00).",
           "plan": [
             "Bajar de Kiyomizu por Kiyomizuzaka y encontrar la tienda Ghibli 清水店 (2-218-1).",
             "Entrar en Yūzen al lado para mirar palillos y grabado opcional.",
@@ -1212,11 +1211,11 @@
           ]
         }
       ],
-      "note": "SÁBADO 17/10 EN DIRECTO: llegada REAL a la ESTACIÓN Fushimi-Inari 07:30. Aproximadamente a las 11:15 estaban bajando de la montaña a la altura del puesto/parada 5. Objetivo de finalizar Fushimi alrededor de 11:30–11:45, SOLO ESTIMADO, salida aún no confirmada. El grupo ha decidido ELIMINAR HOY Tōfuku-ji y Sanjūsangendō, que se harán con Lorena el lunes 19. Desde Fushimi ir directo a Kiyomizu-dera (~13:00–14:30 ESTIMADO, según traslado y comida) → Yūzen de palillos junto a Ghibli (~14:30) → Yasaka Shrine OPCIONAL (recinto abierto 24 h) o RESI directamente → TARDE LIBRE. Si Kiyomizu y palillos se completan el 17, no repetirlos el domingo 18; su tarjeta del domingo es solo rescate condicionado al vuelo. No inventar kimono/ceremonia del té, que no tienen reserva confirmada. Goshuin solo indica disponibilidad.",
+      "note": "SÁBADO 17/10, actualización REAL: llegada a la ESTACIÓN Fushimi-Inari 07:30; bajando por puesto 5 ~11:15; SALIDA REAL de Fushimi Inari a las **12:00**. Visita terminada, no alargar la estimación previa 11:30–11:45. El grupo VA AHORA DIRECTAMENTE HACIA Kiyomizu-dera; no ha confirmado aún llegada ni medio de transporte. ETA de Kiyomizu aproximada 13:00–13:20; visita prevista ~13:00–14:40 sujeta a traslado, colas y comida. Después Yūzen, tienda de palillos junto a Ghibli Kiyomizu 2-218-1 (~14:40–15:15 solo previsión), y Yasaka Shrine opcional si quedan ganas, o RESI directamente. TARDE LIBRE. Tōfuku-ji y Sanjūsangendō se conservan en el lunes 19 con Lorena, no vuelven a Hoy 17. El domingo 18 sigue teniendo Kiyomizu/palillos solo como rescate si no se logran hoy, priorizando vuelo de las chicas. No inventar visita realizada a Kiyomizu ni compra en Yūzen, kimono/ceremonia o viaje en tren real.",
       "mapStages": [
         {
           "id": "inari-a-kiyomizu-1017",
-          "title": "Fushimi (bajando) → Kiyomizu directo",
+          "title": "Fushimi: salida REAL 12:00 → Kiyomizu (transporte por elegir)",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
