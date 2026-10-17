@@ -298,12 +298,23 @@ if (kyoto17) {
     !ids.includes('yasaka-pagoda-fotos-1017'),
     '17/10: no mostrar extras descartados ni pagoda en tarjetas separadas');
   const fushimi = day?.activities.find(a=>a.id==='fushimi');
-  assert(fushimi?.time === '~07:30–11:45' &&
-    fushimi?.status === 'confirmado' && fushimi?.visited !== true &&
+  assert(fushimi?.time === 'Salida 12:00' &&
+    fushimi?.status === 'confirmado' && fushimi?.visited === true &&
     fushimi?.notes.includes('ESTACIÓN Fushimi-Inari a las 07:30') &&
-    fushimi?.notes.includes('puesto o parada n.º 5') &&
-    fushimi?.notes.includes('11:15'),
-    '17/10: 07:30 estación REAL; 11:15 bajando en puesto 5; salida NO confirmada');
+    fushimi?.notes.includes('puesto/parada 5') &&
+    fushimi?.notes.includes('11:15') &&
+    fushimi?.notes.includes('SALIDA FINAL REAL') &&
+    fushimi?.notes.includes('12:00'),
+    '17/10: llegada real a ESTACION 07:30, salida REAL de Fushimi 12:00');
+  const kiyomizu = day?.activities.find(a=>a.id==='kiyomizu-1017');
+  assert(kiyomizu?.visited !== true &&
+    kiyomizu?.time === '~13:00–14:40' &&
+    kiyomizu?.notes.includes('ORIENTATIVA') &&
+    kiyomizu?.transit?.from.includes('12:00') &&
+    kiyomizu?.transit?.summary.includes('NO un trayecto ya realizado'),
+    '17/10: van A Kiyomizu pero llegada y medio de transporte no confirmados');
+  assert(day?.activities.find(a=>a.id==='yuzen-kiyomizu-ghibli-1017')?.time === '~14:40–15:15',
+    '17/10: la compra en Yūzen es una ETA tras Kiyomizu, no una visita hecha');
   assert(ids.indexOf('fushimi') < ids.indexOf('kiyomizu-1017') &&
     ids.indexOf('kiyomizu-1017') < ids.indexOf('yuzen-kiyomizu-ghibli-1017'),
     '17/10: del santuario directamente a Kiyomizu y palillos');
