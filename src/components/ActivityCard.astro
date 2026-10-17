@@ -73,6 +73,8 @@ const hasExtra = Boolean(
             <span class:list={['inline-flex max-w-full rounded-full px-2 py-0.5 text-[11px] font-semibold', status.className]}>{status.label}</span>
           ) : null}
           {activity.priority === 'must' && !activity.visited && <span class="inline-flex rounded-full bg-red-600 px-2 py-0.5 text-[11px] font-semibold text-white">Sí o sí</span>}
+          {activity.id === 'kyoto-station-h2' && <span class="inline-flex rounded-full bg-red-700 px-2 py-1 text-[11px] font-black text-white">🚌 SUBIDA · H2/KY2</span>}
+          {activity.id === 'kix-vilma-marga' && <span class="inline-flex rounded-full bg-red-700 px-2 py-1 text-[11px] font-black text-white">✈️ KIX · TERMINAL 1</span>}
           {activity.goshuin === true && <span class="inline-flex rounded-full bg-violet-100 px-2 py-0.5 text-[11px] font-semibold text-violet-800">📕 Goshuin</span>}
           {activity.goshuin === false && <span class="inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600">Sin goshuin</span>}
           {activity.skipped && <span class="inline-flex rounded-full bg-slate-200 px-2 py-0.5 text-[11px] font-semibold text-slate-700">No fuimos</span>}
@@ -89,6 +91,25 @@ const hasExtra = Boolean(
     </summary>
 
     <div class:list={['border-t border-slate-100', compact ? 'px-3 pb-3 pt-3' : 'px-4 pb-4 pt-3']}>
+      {activity.id === 'kyoto-station-h2' && (
+        <div class="mb-3 rounded-xl border-2 border-red-500 bg-red-50 p-3" data-kix-h2-pickup>
+          <p class="text-sm font-black text-red-900">🔴 SUBIDA AIRPORT LIMOUSINE · H2 / KY2</p>
+          <p class="mt-1 text-sm font-semibold text-red-950">Kyoto Station, salida Hachijō-guchi · junto a Kyoto Avanti</p>
+          <p class="mt-1 text-xs font-bold text-red-900">Pin exacto: 34.983902, 135.760799</p>
+          <p class="mt-2 text-xs leading-relaxed text-red-900">H2 es para SUBIR. H3 es para BAJAR y no sirve para coger el autobús. No usar «Kyoto Station» genérico ni KIX como destino del taxi.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=34.983902%2C135.760799&travelmode=driving" target="_blank" rel="noopener noreferrer" class="tap-target rounded-lg bg-red-700 px-3 py-2 text-sm font-bold text-white">🚕 Taxi al H2 exacto</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=34.983902%2C135.760799&travelmode=transit" target="_blank" rel="noopener noreferrer" class="tap-target rounded-lg border border-red-300 bg-white px-3 py-2 text-sm font-bold text-red-900">🚌 Transporte público al H2</a>
+            <a href="https://www.kate.co.jp/en/busstop/detail/4330" target="_blank" rel="noopener noreferrer" class="tap-target rounded-lg border border-red-300 bg-white px-3 py-2 text-sm font-bold text-red-900">Parada oficial KATE</a>
+          </div>
+        </div>
+      )}
+      {activity.id === 'kix-vilma-marga' && (
+        <div class="mb-3 rounded-xl border-2 border-red-500 bg-red-50 p-3" data-kix-terminal-one>
+          <p class="text-sm font-black text-red-900">🔴 AEROPUERTO KIX · TERMINAL 1 (T1)</p>
+          <p class="mt-1 text-xs leading-relaxed text-red-900">Destino del autobús y salida del vuelo de las 19:00. Vosotros acompañáis a Vilma y Marga solo hasta la parada H2/KY2 de Kioto.</p>
+        </div>
+      )}
       {activity.flightJourney && (
         <div class="rounded-2xl border border-sky-200 bg-sky-50/70 p-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
