@@ -1181,6 +1181,15 @@
           }
         },
         {
+          "id": "ichiran-comida-1017",
+          "title": "Ichiran · ramen",
+          "category": "comida",
+          "status": "confirmado",
+          "visited": true,
+          "locationQuery": "",
+          "notes": "COMIDA REAL del sábado 17/10 en Ichiran (一蘭). El grupo ha comido aquí a media tarde; Jaime no quiere que figure una hora. No se ha confirmado qué sucursal concreta de Ichiran fue, por lo que no debe inventarse una ubicación ni aparecer en la ruta del mapa. Registrar únicamente como recuerdo gastronómico del día."
+        },
+        {
           "id": "yasaka-shrine-1017",
           "title": "Yasaka Shrine · si apetece al volver",
           "category": "templo",
@@ -1211,7 +1220,7 @@
           ]
         }
       ],
-      "note": "SÁBADO 17/10, actualización REAL: llegada a la ESTACIÓN Fushimi-Inari 07:30; bajando por puesto 5 ~11:15; SALIDA REAL de Fushimi Inari a las **12:00**. Visita terminada, no alargar la estimación previa 11:30–11:45. El grupo VA AHORA DIRECTAMENTE HACIA Kiyomizu-dera; no ha confirmado aún llegada ni medio de transporte. ETA de Kiyomizu aproximada 13:00–13:20; visita prevista ~13:00–14:40 sujeta a traslado, colas y comida. Después Yūzen, tienda de palillos junto a Ghibli Kiyomizu 2-218-1 (~14:40–15:15 solo previsión), y Yasaka Shrine opcional si quedan ganas, o RESI directamente. TARDE LIBRE. Tōfuku-ji y Sanjūsangendō se conservan en el lunes 19 con Lorena, no vuelven a Hoy 17. El domingo 18 sigue teniendo Kiyomizu/palillos solo como rescate si no se logran hoy, priorizando vuelo de las chicas. No inventar visita realizada a Kiyomizu ni compra en Yūzen, kimono/ceremonia o viaje en tren real.",
+      "note": "SÁBADO 17/10, actualización REAL: llegada a la ESTACIÓN Fushimi-Inari 07:30; bajando por puesto 5 ~11:15; SALIDA REAL de Fushimi Inari a las **12:00**. Visita terminada, no alargar la estimación previa 11:30–11:45. El grupo VA AHORA DIRECTAMENTE HACIA Kiyomizu-dera; no ha confirmado aún llegada ni medio de transporte. ETA de Kiyomizu aproximada 13:00–13:20; visita prevista ~13:00–14:40 sujeta a traslado, colas y comida. Después Yūzen, tienda de palillos junto a Ghibli Kiyomizu 2-218-1 (~14:40–15:15 solo previsión), y Yasaka Shrine opcional si quedan ganas, o RESI directamente. TARDE LIBRE. Tōfuku-ji y Sanjūsangendō se conservan en el lunes 19 con Lorena, no vuelven a Hoy 17. El domingo 18 sigue teniendo Kiyomizu/palillos solo como rescate si no se logran hoy, priorizando vuelo de las chicas. No inventar visita realizada a Kiyomizu ni compra en Yūzen, kimono/ceremonia o viaje en tren real. Comida REAL de hoy: Ichiran (ramen), sin hora ni sucursal confirmadas. Se registra como parada gastronómica, sin añadir un punto de mapa ficticio; el orden exacto con las compras no se ha confirmado.",
       "mapStages": [
         {
           "id": "inari-a-kiyomizu-1017",
@@ -1246,9 +1255,9 @@
     },
     {
       "date": "2026-10-18",
-      "title": "Kiyomizu solo como rescate temprano → aeropuerto KIX",
+      "title": "Maletas → salida bus H2/KY2 → KIX T1 (vuelo 19:00)",
       "status": "confirmado",
-      "note": "Domingo 18/10: tarde COMPROMETIDA por vuelo KIX de Vilma y Marga a las 19:00, no es tarde libre de turismo. Solo si Kiyomizu/tienda Yūzen NO se hicieron el sábado, añadir visita breve 08:00–09:15 y palillos 09:30–10:00; ambas son opcionales condicionadas, se OMItEN cuando sábado completado. Antes de mediodía volver al RESI para maletas y check-out; estación Kyoto H2/KY2 objetivo estar 13:50–14:00. KATE publica bus 14:20 → KIX T1 15:48; todos los autobuses hacia KIX desde Kyoto Station requieren RESERVA, no está confirmada ninguna. Si hay retraso o equipaje sin resolver, CANCELAR las visitas opcionales: manda el vuelo. Tras despedir a las chicas, Jaime y Lorena quedan libres.",
+      "note": "DOMINGO 18/10 — PRIORIDAD DESPEDIDA VILMA Y MARGA (Lorena se queda con Jaime). La ruta de Jaime/Lorena desde RESI con maletas acaba en la PARADA EXACTA DE SUBIDA H2/KY2, junto a Kyoto Avanti: COORDENADAS 34.983902,135.760799. No navegar a Kyoto Station genérico ni a KIX Terminal 1. KATE identifica H2 como SUBIDA y H3 como BAJADA; las taquillas se encuentran en Kyoto Avanti 1F. El autobús publicado 14:20 sale de H2 (KY2) y llega a KIX T1 15:48, compatible en principio con vuelo T1 19:00; reservar/verificar billetes porque no constan confirmados. Objetivo estar allí 13:50–14:00. La Terminal 1 aparece en la ficha del vuelo y NO en el trayecto que debe seguir el grupo acompañante. Kiyomizu y Yūzen solo opcionales muy temprano si quedaron pendientes, nunca poner en riesgo el vuelo.",
       "activities": [
         {
           "id": "kiyomizu-rescate-1018",
@@ -1304,37 +1313,42 @@
         },
         {
           "id": "kyoto-station-h2",
-          "title": "Kyoto Station Hachijo-guchi · parada H2/KY2",
-          "time": "14:20 objetivo",
+          "title": "Kyoto Station · parada exacta H2/KY2 (Kyoto Avanti)",
+          "time": "Bus 14:20",
           "category": "transporte",
           "status": "plan",
           "priority": "must",
-          "notes": "Parada H2/KY2, Kyoto Avanti: ubicación confirmada 34.983902,135.760799. KATE publica autobús de las 14:20 a KIX T1 con llegada 15:48; requiere asiento reservado, pero NO se ha confirmado compra. Para tomarlo estar en la parada ~13:50–14:00. Si no hay billete, reservar/verificar antes de confiar en este horario. Vuelo de las 19:00 prioritario frente a cualquier visita.",
+          "notes": "PUNTO EXACTO DE SUBIDA AL AUTOBÚS LIMUSINA para Vilma y Marga: parada H2 (código de línea KY2), JR Kyoto Station, salida sur Hachijō-guchi, junto a Kyoto Avanti. PIN fijado en 34.983902, 135.760799 (coordenadas facilitadas por Jaime, usar tal cual en mapas y botones, NO buscar 'Kyoto Station' a secas). KATE confirma expresamente 'Pick up: No. H2'; la parada H3 es de BAJADA y no sirve para salir. Las taquillas/mostrador están dentro de Kyoto Avanti (primera planta), pero la SUBIDA es en H2, en la rotonda de autobuses. Horario publicado 14:20 → KIX T1 15:48, sujeto al servicio elegido; comprobar billete (reserva requerida, posibles plazas sin reserva solo si quedan asientos). No existe confirmación comunicada de reserva. Objetivo operativo llegar antes de las 13:50–14:00; vuelo internacional 19:00. Fuente oficial https://www.kate.co.jp/en/busstop/detail/4330 y https://www.kate.co.jp/en/timetable/detail/KY/ .",
           "locationQuery": "34.983902,135.760799",
           "plan": [
-            "Llegar a Hachijo-guchi con margen y localizar la parada H2/KY2 junto a Kyoto Avanti.",
-            "Dejar a Vilma y Marga ya situadas para el Airport Limousine Bus a KIX."
+            "Desde RESI STAY Yasaka, con las maletas ir DIRECTAMENTE a este pin H2/KY2: 34.983902, 135.760799. NO usar la ubicación genérica de Kyoto Station, H3 de llegadas ni KIX para la ruta del taxi.",
+            "Si se necesita sacar/recoger billete, mostrador/máquinas en Kyoto Avanti 1.ª planta. La parada física de SUBIDA al bus está en H2, en la rotonda de la salida Hachijō.",
+            "Verificar reserva y hora del billete: KATE publica un autobús de las 14:20 que llega a KIX T1 a las 15:48. Estar junto a H2 antes de las 13:50–14:00 para localizar la parada y despedirse."
           ],
           "transit": {
-            "from": "RESI STAY Yasaka",
-            "summary": "Desde Higashiyama Yasui, City Bus 206/86 hacia Kyoto Station; con maletas y 4 personas, taxi es el backup más cómodo.",
-            "approximateDuration": "25–40 min según tráfico",
-            "note": "Objetivo operativo: estar en Hachijo-guchi / Kyoto Avanti antes de las 14:20, no salir del hotel a las 14:20."
+            "from": "RESI STAY Yasaka (28 Bishamonchō, Higashiyama)",
+            "summary": "Taxi recomendado si vais cuatro y con maletas: indicar H2/KY2, rotonda de autobuses de Kyoto Station salida sur Hachijō-guchi, al lado de Kyoto Avanti. Pin de destino EXACTO: 34.983902,135.760799. Si preferís transporte público, consultar la ruta al pin, no a 'Kyoto Station' genérico.",
+            "approximateDuration": "~25–40 min puerta a puerta según tráfico/esperas",
+            "note": "Este es el lugar donde vosotros las dejáis. NO tenéis que ir hasta el aeropuerto."
+          },
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=34.983902%2C135.760799",
+            "officialWebsite": "https://www.kate.co.jp/en/busstop/detail/4330"
           }
         },
         {
           "id": "kix-vilma-marga",
-          "title": "Vuelo Vilma y Marga · KIX → Madrid vía Shanghái",
+          "title": "KIX · Terminal 1 · vuelo de Vilma y Marga",
           "time": "19:00",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Kansai International Airport Terminal 1",
+          "locationQuery": "Kansai International Airport Terminal 1 Departures, Osaka",
           "plan": [
             "Llegar a KIX T1 con margen; desde Kyoto Station el plan sigue siendo Airport Limousine Bus desde H2/KY2.",
             "Facturación/embarque en T1. Revisar pantalla del aeropuerto para mostrador y puerta.",
             "En PVG la escala es T1 → T1 durante 3 h 30 min; después MU709 directo a Madrid T1."
           ],
-          "notes": "Regreso de Vilma y Marga. No se muestran localizadores ni asientos en la web pública.",
+          "notes": "Vuelo internacional 19:00 desde KANSAI INTERNATIONAL AIRPORT (KIX), TERMINAL 1 (T1) para Vilma y Marga. El autobús limousine KATE sale de la parada H2/KY2 de Kyoto Station (coordenadas 34.983902,135.760799), publicada a las 14:20 con llegada a KIX T1 a las 15:48. La TERMINAL 1 es el DESTINO de las viajeras, NO la dirección a la que vosotros las lleváis en Kioto; las dejáis en H2. Confirmar billete/horario real de bus y terminal de la aerolínea en documentación y pantallas del día. No se muestran localizadores ni asientos.",
           "flightJourney": {
             "travellers": [
               "Vilma",
@@ -1392,19 +1406,22 @@
                 "note": "Conexión internacional dentro de T1; confirmar puerta en pantallas."
               }
             ]
+          },
+          "links": {
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Kansai+International+Airport+Terminal+1+Departures",
+            "officialWebsite": "https://www.kansai-airport.or.jp/en/"
           }
         }
       ],
       "mapStages": [
         {
-          "id": "despedida-kix-1018",
-          "title": "RESI → H2/KY2 → KIX (plan base obligatorio)",
+          "id": "resi-h2-subida-1018",
+          "title": "RESI con maletas → SUBIDA limousine H2/KY2 (pin exacto)",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
             "kyoto-morning-flex",
-            "kyoto-station-h2",
-            "kix-vilma-marga"
+            "kyoto-station-h2"
           ]
         }
       ]

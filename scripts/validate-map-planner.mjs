@@ -291,9 +291,16 @@ if (kyoto17) {
   const main = kyoto17.stages.flatMap(st => st.stops.map(p => p.id));
   assert(ids.join(',') === [
     'fushimi','kiyomizu-1017','yuzen-kiyomizu-ghibli-1017',
-    'yasaka-shrine-1017','regreso-libre-1017'
+    'ichiran-comida-1017','yasaka-shrine-1017','regreso-libre-1017'
   ].join(','),
-    '17/10: SOLO Fushimi, Kiyomizu, palillos, Yasaka opcional, tarde libre');
+    '17/10: Fushimi, Kiyomizu, palillos, Ichiran REAL, Yasaka opcional, tarde libre');
+  const ichiran = day?.activities.find(a=>a.id==='ichiran-comida-1017');
+  assert(ichiran?.title === 'Ichiran · ramen' && ichiran.visited === true &&
+    ichiran.status === 'confirmado' && ichiran.time === undefined &&
+    ichiran.locationQuery === '' && ichiran.notes.includes('sucursal'),
+    '17/10: registrar comida real en Ichiran SIN hora ni sucursal ficticia');
+  assert(!main.includes('ichiran-comida-1017'),
+    '17/10: no añadir a la ruta un Ichiran con dirección desconocida');
   assert(!ids.includes('tofukuji-1017') && !ids.includes('sanjusangendo-cercano-1017') &&
     !ids.includes('yasaka-pagoda-fotos-1017'),
     '17/10: no mostrar extras descartados ni pagoda en tarjetas separadas');
@@ -342,9 +349,29 @@ if (kyoto18) {
   const day=segments.find(x=>x.hotel?.name==='RESI STAY Yasaka')
     ?.days.find(x=>x.date==='2026-10-18');
   const route=kyoto18.stages.flatMap(s=>s.stops.map(p=>p.id));
-  assert(route.includes('kyoto-station-h2') && route.includes('kix-vilma-marga') &&
+  const pick = day?.activities.find(a=>a.id==='kyoto-station-h2');
+  const flight = day?.activities.find(a=>a.id==='kix-vilma-marga');
+  assert(route.at(-1)==='kyoto-station-h2' && route[0] === '@hotel-start' &&
+    !route.includes('kix-vilma-marga') &&
     !route.includes('kiyomizu-rescate-1018') && !route.includes('yuzen-kiyomizu-rescate-1018'),
-    '18/10: mapa base SOLO maletas y autobús al aeropuerto');
+    '18/10: mapa de acompañantes acaba en H2; KIX T1 solo información de las viajeras');
+  assert(day?.mapStages?.length === 1 &&
+    day.mapStages[0].id === 'resi-h2-subida-1018' &&
+    day.mapStages[0].activityIds.at(-1) === 'kyoto-station-h2',
+    '18/10: ningún waypoint de KIX en ruta base; taxi solo a Kyoto H2');
+  assert(pick?.locationQuery === '34.983902,135.760799' &&
+    pick?.links?.googleMaps?.includes('34.983902%2C135.760799') &&
+    pick?.notes?.includes('H3') && pick?.notes?.includes('H2') &&
+    pick?.links?.officialWebsite === 'https://www.kate.co.jp/en/busstop/detail/4330',
+    '18/10: pin EXACTO dado por Jaime, H2 subida / H3 bajada y fuente oficial');
+  const mapH2 = kyoto18.stages.flatMap(s=>s.stops).find(p=>p.id==='kyoto-station-h2');
+  assert(mapH2?.query === '34.983902,135.760799',
+    '18/10: la ruta dibujada debe usar las coordenadas literales de H2, no geocodificar Kyoto Station');
+  assert(flight?.title.includes('Terminal 1') &&
+    flight?.locationQuery?.includes('Terminal 1') &&
+    flight?.notes?.includes('TERMINAL 1') &&
+    flight?.time === '19:00',
+    '18/10: terminal KIX T1 en ficha del vuelo, no en mapa de acompañantes');
   for(const id of ['kiyomizu-rescate-1018','yuzen-kiyomizu-rescate-1018']){
     const a=day?.activities.find(x=>x.id===id);
     assert(a?.status==='opcional' && a?.mapBeforeId==='kyoto-morning-flex' &&
@@ -352,8 +379,8 @@ if (kyoto18) {
       '18/10: Kiyomizu/palillos backup solo temprano y elegidos por usuario');
   }
   assert(day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('15:48') &&
-    day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('NO se ha confirmado compra'),
-    '18/10: bus 14:20 llega 15:48 a KIX, reserva obligatoria aún no confirmada');
+    day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('No existe confirmación comunicada de reserva'),
+    '18/10: bus 14:20 llega 15:48 a KIX, billete aún sin confirmar');
   assert(day?.activities.find(x=>x.id==='kix-vilma-marga')?.time==='19:00',
     '18/10: vuelo KIX a 19:00 no se modifica');
 }
@@ -494,6 +521,18 @@ for (const day of dates) {
 // Regresión real reportada desde Android: plegar Shichifukujin ocultaba
 // las paradas intermedias del mapa y suprimía incluso la línea completa.
 const mapSource = readFileSync('src/pages/mapas.astro', 'utf8');
+const activityCardSource = readFileSync('src/components/ActivityCard.astro', 'utf8');
+assert(activityCardSource.includes('data-kix-h2-pickup') &&
+  activityCardSource.includes('data-kix-terminal-one') &&
+  activityCardSource.includes('🔴 SUBIDA AIRPORT LIMOUSINE · H2 / KY2') &&
+  activityCardSource.includes('🔴 AEROPUERTO KIX · TERMINAL 1 (T1)') &&
+  activityCardSource.includes('destination=34.983902%2C135.760799'),
+  '18/10: mostrar en rojo parada SUBIDA H2 y KIX T1, taxi al punto exacto');
+assert(mapSource.includes("stop.id === 'kyoto-station-h2'") &&
+  mapSource.includes("'#dc2626'") &&
+  mapSource.includes("isPickupH2 ? 'H2'"),
+  '18/10: pin H2 rojo e identificado visualmente en mapa');
+
 const cardSource = readFileSync('src/components/ActivityCard.astro', 'utf8');
 assert(cardSource.includes('Primero volvéis al RESI para desmaquillaros') &&
   cardSource.includes('fromHotelDuration') &&
