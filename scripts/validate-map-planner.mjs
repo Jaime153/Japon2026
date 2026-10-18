@@ -382,7 +382,7 @@ if (kyoto18) {
   const hong = day?.activities.find(a=>a.id==='higashi-honganji-1018');
   assert(hong?.category==='templo' && hong?.status==='confirmado' &&
     hong?.visited===true && hong?.time==='Salida ~14:46' &&
-    hong?.notes.includes('INTERIOR') && hong?.notes.includes('SALÍAN') &&
+    hong?.notes.includes('INTERIOR') && hong?.notes.includes('SALIENDO') &&
     hong?.notes.includes('No comunicó la hora de llegada') &&
     hong?.notes.includes('No recogieron goshuin') &&
     !hong?.goshuin,
