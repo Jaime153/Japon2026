@@ -1255,9 +1255,9 @@
     },
     {
       "date": "2026-10-18",
-      "title": "Billetes comprados · limousine 14:00 desde H2 → KIX T1",
+      "title": "Limousine tomada (14:00) · paseo libre con Lorena",
       "status": "confirmado",
-      "note": "DOMINGO 18/10, ACTUALIZACIÓN DESDE FOTO DE BILLETES: DOS BILLETES FÍSICOS YA COMPRADOS para Vilma y Marga, asiento 1A y 1B, coche 01 (servicio 0058), salida Kyoto Station Hachijō-guchi **14:00** el 18/10/2026, destino KIX Terminal 1, llegada PROGRAMADA **15:28**, vuelo internacional **19:00**. NO confundir con el autobús de 13:40 planeado anteriormente; billetes reales prevalecen. Precio total 5.600 ¥. Ir YA con ambos billetes y maletas a la parada de EMBARQUE H2/KY2, coordenadas 34.983902,135.760799, junto a Kyoto Avanti. El mostrador Kyoto Avanti 1F fue el lugar de compra, NO el embarque. FOTO confirma emisión, NO que hayan subido al autobús ni llegada real. Dejar de presentar la compra como pendiente. No mostrar números de billete/ID de reserva. Jaime y Lorena se quedan en Kioto.",
+      "note": "DOMINGO 18/10: hechos CONFIRMADOS: Jaime compró dos billetes físicos en Kyoto Avanti 1F y Vilma y Marga han SUBIDO CORRECTAMENTE al bus limousine de Kyoto Station H2/KY2 con salida PROGRAMADA 14:00, coche 01, asientos 1A/1B. Jaime confirmó 'lo han cogido y todo correcto'. La llegada a KIX T1 a las 15:28 sigue siendo PREVISTA, no constatada; el vuelo de las 19:00 tampoco está confirmado como realizado. Jaime y Lorena ahora pasean libremente por Kioto, sin lugares ni ruta comunicados. No inventar waypoint de paseo. El mapa histórico puede mostrar la taquilla Avanti 1F y H2 como logística REALIZADA; no mostrar carretera hasta KIX para los acompañantes ni más tareas de billetes.",
       "activities": [
         {
           "id": "kiyomizu-rescate-1018",
@@ -1302,9 +1302,9 @@
           "locationQuery": "京阪バス案内所 京都アバンティ1階 京都市南区東九条西山王町31",
           "notes": "COMPRA REAL CONFIRMADA por foto de dos billetes físicos el 18/10/2026, emitidos en Kyoto Avanti (Keihan Bus). Dos pasajeros adultos con asientos reservados: 1A y 1B, coche 01, autobús número 0058. Billetes correctos de Kyoto Station Hachijō-guchi a KIX TERMINAL 1. Salida real contratada 14:00, no 13:40; llegada prevista a Terminal 1 15:28 según horario KATE (no consta llegada real). Precio 2.800 ¥ por persona, 5.600 ¥ en total. NO compartir identificadores de reserva ni números impresos en el billete. La taquilla de Kyoto Avanti 1F es DIFERENTE de la parada H2/KY2, donde deben embarcar. Foto prueba emisión, NO confirma que las viajeras hayan abordado el autobús.",
           "plan": [
-            "Dos billetes físicos COMPRADOS y emitidos para las 14:00: asientos 1A y 1B, coche 01.",
-            "Entregar billetes a Vilma y Marga para subir por la parada exacta H2/KY2, junto a Kyoto Avanti.",
-            "El billete prueba compra, NO salida real ni embarque. Ir inmediatamente a H2 y presentar billetes al personal."
+            "Compra física de los dos billetes completada en Kyoto Avanti 1F.",
+            "Entregados y utilizados para subir al autobús de las 14:00, según confirmación de Jaime.",
+            "La compra y el embarque están confirmados, pero no llegada a KIX ni vuelo."
           ],
           "transit": {
             "from": "RESI STAY Yasaka (Bishamonchō)",
@@ -1319,34 +1319,34 @@
         },
         {
           "id": "kyoto-morning-flex",
-          "title": "Maletas y salida hacia parada H2",
+          "title": "Maletas y despedida · autobús tomado",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "plan": [
-            "Billetes ya comprados: 2 adultos, salida 14:00, coche 01, asientos 1A y 1B.",
-            "Entregar tickets a las chicas y llegar YA al H2; llevar maletas para que el personal las etiquete.",
-            "No volver a la taquilla ni navegar a KIX; pin de embarque H2 en 34.983902,135.760799."
+            "Se compraron dos billetes físicos y las dos viajeras subieron correctamente a la limousine de las 14:00.",
+            "Ahora Jaime y Lorena continúan en Kioto sin traslados obligatorios al aeropuerto."
           ],
           "transit": {
             "from": "RESI STAY Yasaka",
             "summary": "Con maletas, desplazarse a Kyoto Station Hachijo-guchi (H2/KY2) en taxi o transporte público, no desde la pagoda Yasaka.",
             "approximateDuration": "~25–40 min según tráfico"
           },
-          "notes": "DOMINGO 18/10: Jaime ha COMPRADO dos billetes físicos para Vilma y Marga. Fotografía confirma 18 octubre, **14:00** salida Kyoto Station Hachijō-guchi → KIX T1 (llegada PROGRAMADA 15:28), asientos 1A y 1B. NO son billetes de las 13:40. Preparar maletas, entregar ambos billetes y dirigirse cuanto antes al punto exacto de EMBARQUE H2/KY2, coordenadas 34.983902,135.760799. Son las 13:42 aproximadamente al enviar la foto: solo 18 minutos para salir. Jaime y Lorena no viajan a KIX."
+          "notes": "Las gestiones de despedida y entrega de billetes de Vilma y Marga ya han concluido: Jaime confirma que han cogido el autobús correspondiente a sus billetes de las 14:00 y que todo ha ido bien. No se conoce hora real de llegada a H2, itinerario del taxi ni hora efectiva de salida del autobús. Jaime y Lorena siguen juntos en Kioto.",
+          "visited": true
         },
         {
           "id": "kyoto-station-h2",
-          "title": "Kyoto Station · parada exacta H2/KY2 (Kyoto Avanti)",
+          "title": "Kyoto Station H2/KY2 · autobús tomado",
           "time": "Bus 14:00",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
-          "notes": "PARADA EXACTA DE SUBIDA H2/KY2, Kyoto Station Hachijō-guchi, junto a Kyoto Avanti. PIN REAL: 34.983902,135.760799. H3 es exclusivamente BAJADA, no embarque. Por FOTO DE BILLETES FÍSICOS se confirma COMPRADA la salida **14:00 del 18/10/2026**, coche 01, asientos 1A y 1B, para dos adultos Kyoto → Kansai Airport TERMINAL 1; llegada PREVISTA 15:28 según KATE, vuelo 19:00. Los billetes son correctos, pero no se ha confirmado embarque ni llegada al aeropuerto. La alternativa previa de 13:40 queda DESCARTADA. Dirigirse cuanto antes a H2 con tickets y maletas; no volver al mostrador de venta en Kyoto Avanti 1F. Coordenadas invariables según Jaime y KATE https://www.kate.co.jp/en/busstop/detail/4330; horario https://www.kate.co.jp/en/timetable/detail/KY/ .",
+          "notes": "DOMINGO 18/10: Vilma y Marga HAN SUBIDO CORRECTAMENTE al autobús limousine de Kyoto Station Hachijō-guchi con billetes reales para servicio de las 14:00, coche 01, asientos 1A y 1B; Jaime lo acaba de confirmar por mensaje. Parada de embarque H2/KY2 junto a Kyoto Avanti, pin exacto 34.983902,135.760799. La hora de las 14:00 es la PROGRAMADA en billete, no la hora real de partida comprobada. Destino KIX Terminal 1, llegada PROGRAMADA 15:28. No afirmar todavía que hayan llegado a KIX ni que hayan embarcado en el vuelo de las 19:00. Nada más que organizar para esta parada.",
           "locationQuery": "34.983902,135.760799",
           "plan": [
-            "Bus de las 14:00 CONFIRMADO EN BILLETES emitidos para 2 personas; asientos 1A/1B, coche 01.",
-            "Con los billetes y las maletas ir DIRECTAMENTE a H2/KY2 (34.983902,135.760799), parada de subida junto a Kyoto Avanti, NO a H3.",
-            "El personal recibe/etiqueta maletas. Embarque y salida todavía NO confirmados; vuelo desde KIX Terminal 1 a las 19:00."
+            "Embarque de Vilma y Marga CONFIRMADO por Jaime en el autobús con salida programada a las 14:00.",
+            "Punto utilizado: parada H2/KY2, Kyoto Avanti (34.983902,135.760799).",
+            "Próximos hitos de ellas: llegada prevista KIX T1 15:28 y vuelo 19:00; ninguno se considera realizado aún."
           ],
           "transit": {
             "from": "RESI STAY Yasaka (28 Bishamonchō, Higashiyama)",
@@ -1357,7 +1357,19 @@
           "links": {
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=34.983902%2C135.760799",
             "officialWebsite": "https://www.kate.co.jp/en/busstop/detail/4330"
-          }
+          },
+          "visited": true
+        },
+        {
+          "id": "paseo-libre-jaime-lorena-1018",
+          "title": "Paseo libre por Kioto · Jaime y Lorena",
+          "category": "zona",
+          "status": "plan",
+          "notes": "Tras despedir a Vilma y Marga en el autobús de las 14:00, Jaime confirma que está dando una vuelta por Kioto con Lorena. Sin ubicación precisa del paseo, hora de finalización, ruta predeterminada ni más actividades fijadas. Dejar la tarde libre y NO inventar paradas ni pins de mapa.",
+          "plan": [
+            "Pasear y descansar a vuestro ritmo, sin horarios ni visitas obligatorias.",
+            "El autobús de las chicas y el vuelo son datos de seguimiento, NO etapas del mapa de Jaime y Lorena."
+          ]
         },
         {
           "id": "kix-vilma-marga",
@@ -1371,7 +1383,7 @@
             "Facturación/embarque en T1. Revisar pantalla del aeropuerto para mostrador y puerta.",
             "En PVG la escala es T1 → T1 durante 3 h 30 min; después MU709 directo a Madrid T1."
           ],
-          "notes": "Vilma y Marga: vuelo internacional desde Kansai Airport **KIX Terminal 1 a las 19:00** del domingo 18. BILLETES FÍSICOS de limousine COMPRADOS y mostrados en fotografía: autobús Kyoto Station Hachijō-guchi → KIX Terminal 1, salida **14:00** (NO 13:40), llegada PROGRAMADA **15:28**, coche 01, asientos 1A/1B. Margen programado hasta vuelo 3h32. Jaime y Lorena solo las acompañan a H2/KY2 (34.983902,135.760799), no al aeropuerto. Los tickets NO certifican que ya hayan embarcado ni que el bus haya llegado. En KIX confirmar mostrador/puerta en pantallas.",
+          "notes": "Domingo 18/10: Vilma y Marga HAN SUBIDO a la limousine de las 14:00 en Kyoto Station H2/KY2, según confirmación directa de Jaime; los billetes físicos eran para coche 01, asientos 1A y 1B. KIX Terminal 1: llegada PROGRAMADA de autobús 15:28, aún NO confirmada. Vuelo internacional 19:00, embarque aéreo pendiente de confirmación. Jaime y Lorena están dando un paseo libre por Kioto y NO viajan a KIX.",
           "flightJourney": {
             "travellers": [
               "Vilma",
@@ -1439,7 +1451,7 @@
       "mapStages": [
         {
           "id": "compra-keihan-avanti-1018",
-          "title": "Solo Jaime · RESI → Kyoto Avanti 1F (billetes ya comprados)",
+          "title": "Ya realizado · compra de billetes Kyoto Avanti 1F",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
@@ -1448,7 +1460,7 @@
         },
         {
           "id": "resi-h2-subida-1018",
-          "title": "Grupo · embarque CONFIRMADO EN BILLETE a las 14:00, parada H2",
+          "title": "Ya realizado · despedida y embarque H2/KY2 (bus 14:00)",
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
