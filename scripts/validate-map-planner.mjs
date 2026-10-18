@@ -348,41 +348,48 @@ const kyoto18 = get('2026-10-18');
 if (kyoto18) {
   const day=segments.find(x=>x.hotel?.name==='RESI STAY Yasaka')
     ?.days.find(x=>x.date==='2026-10-18');
-  const route=kyoto18.stages.flatMap(s=>s.stops.map(p=>p.id));
+  const checkout = day?.activities.find(a=>a.id==='kyoto-avanti-billetes-1018');
   const pick = day?.activities.find(a=>a.id==='kyoto-station-h2');
   const flight = day?.activities.find(a=>a.id==='kix-vilma-marga');
-  assert(route.at(-1)==='kyoto-station-h2' && route[0] === '@hotel-start' &&
-    !route.includes('kix-vilma-marga') &&
-    !route.includes('kiyomizu-rescate-1018') && !route.includes('yuzen-kiyomizu-rescate-1018'),
-    '18/10: mapa de acompañantes acaba en H2; KIX T1 solo información de las viajeras');
-  assert(day?.mapStages?.length === 1 &&
-    day.mapStages[0].id === 'resi-h2-subida-1018' &&
-    day.mapStages[0].activityIds.at(-1) === 'kyoto-station-h2',
-    '18/10: ningún waypoint de KIX en ruta base; taxi solo a Kyoto H2');
-  assert(pick?.locationQuery === '34.983902,135.760799' &&
-    pick?.links?.googleMaps?.includes('34.983902%2C135.760799') &&
-    pick?.notes?.includes('H3') && pick?.notes?.includes('H2') &&
-    pick?.links?.officialWebsite === 'https://www.kate.co.jp/en/busstop/detail/4330',
-    '18/10: pin EXACTO dado por Jaime, H2 subida / H3 bajada y fuente oficial');
+  assert(Boolean(checkout) && checkout?.status==='plan' && checkout?.visited !== true &&
+    checkout?.category==='transporte' && checkout?.title.includes('AVANTI 1F'),
+    '18/10: compra fisica de dos billetes en AVANTI 1F, sin marcar comprados');
+  assert(checkout?.locationQuery.includes('京阪バス案内所') &&
+    checkout?.locationQuery.includes('アバンティ') &&
+    checkout?.links?.googleMaps?.includes('maps/search') &&
+    checkout?.notes.includes('5.600') &&
+    checkout?.notes.includes('13:40') &&
+    checkout?.notes.includes('1F'),
+    '18/10: mostrador oficial, enlace Maps, 2 tickets 5600 yen, bus elegido 13:40');
+  assert(checkout?.notes.includes('NO es la parada H2') &&
+    checkout?.notes.includes('SIN CONFIRMACIÓN'),
+    '18/10: NO confundir taquilla con subida H2, compra sin confirmar');
+  assert(day?.mapStages?.length===2 &&
+    day.mapStages[0]?.activityIds.join(',')==='@hotel-start,kyoto-avanti-billetes-1018' &&
+    day.mapStages[1]?.activityIds.join(',')==='@hotel-start,kyoto-station-h2',
+    '18/10: mapa con RUTAS SEPARADAS Jaime→AVANTI 1F y chicas→H2');
+  const routes=kyoto18.stages.map(s=>s.stops.map(stop=>stop.id).join(','));
+  assert(routes[0]==='@hotel-start,kyoto-avanti-billetes-1018' &&
+    routes[1]==='@hotel-start,kyoto-station-h2',
+    '18/10: mapa debe indicar VENTA y EMBARQUE por separado');
+  assert(!kyoto18.stages.some(st=>st.stops.some(p=>p.id==='kix-vilma-marga')),
+    '18/10: no dibujar KIX en ruta de acompañantes');
   const mapH2 = kyoto18.stages.flatMap(s=>s.stops).find(p=>p.id==='kyoto-station-h2');
-  assert(mapH2?.query === '34.983902,135.760799',
-    '18/10: la ruta dibujada debe usar las coordenadas literales de H2, no geocodificar Kyoto Station');
-  assert(flight?.title.includes('Terminal 1') &&
-    flight?.locationQuery?.includes('Terminal 1') &&
-    flight?.notes?.includes('TERMINAL 1') &&
-    flight?.time === '19:00',
-    '18/10: terminal KIX T1 en ficha del vuelo, no en mapa de acompañantes');
+  assert(pick?.locationQuery === '34.983902,135.760799' &&
+    mapH2?.query === '34.983902,135.760799' &&
+    pick?.links?.officialWebsite === 'https://www.kate.co.jp/en/busstop/detail/4330',
+    '18/10: H2 mantiene el PIN exacto y oficial');
+  assert(pick?.time === 'Bus 13:40' && pick?.notes.includes('15:08') &&
+    pick?.notes.includes('aún NO está confirmado'),
+    '18/10: bus 13:40 solo ELEGIDO, no vendido/reservado');
+  assert(flight?.time==='19:00' && flight?.title.includes('Terminal 1') &&
+    flight?.notes.includes('13:40'),
+    '18/10: KIX T1 y vuelo 19:00 siguen confirmados, bus solo previsto');
   for(const id of ['kiyomizu-rescate-1018','yuzen-kiyomizu-rescate-1018']){
     const a=day?.activities.find(x=>x.id===id);
-    assert(a?.status==='opcional' && a?.mapBeforeId==='kyoto-morning-flex' &&
-      a?.time?.startsWith('~'),
-      '18/10: Kiyomizu/palillos backup solo temprano y elegidos por usuario');
+    assert(a?.status==='opcional' && a?.mapBeforeId==='kyoto-morning-flex',
+      '18/10: visitas opcionales no obligatorias ni dentro del mapa base');
   }
-  assert(day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('15:48') &&
-    day?.activities.find(x=>x.id==='kyoto-station-h2')?.notes.includes('No existe confirmación comunicada de reserva'),
-    '18/10: bus 14:20 llega 15:48 a KIX, billete aún sin confirmar');
-  assert(day?.activities.find(x=>x.id==='kix-vilma-marga')?.time==='19:00',
-    '18/10: vuelo KIX a 19:00 no se modifica');
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
