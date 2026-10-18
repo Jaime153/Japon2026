@@ -357,8 +357,9 @@ if (kyoto18) {
     buy?.notes.includes('14:00') && buy?.notes.includes('15:28'),
     '18/10: DOS billetes reales COMPRADOS, salida 14:00 no 13:40');
   assert(buy?.notes.includes('NO confirma que las viajeras hayan abordado') &&
-    pick?.visited !== true && pick?.status === 'plan',
-    '18/10: prueba compra de billetes NO prueba embarque');
+    pick?.visited === true && pick?.status === 'confirmado' &&
+    pick?.notes.includes('HAN SUBIDO CORRECTAMENTE'),
+    '18/10: billetes reales y embarque confirmado por mensaje posterior de Jaime');
   assert(day?.mapStages?.length===2 &&
     day.mapStages[0]?.activityIds.join(',')==='@hotel-start,kyoto-avanti-billetes-1018' &&
     day.mapStages[1]?.activityIds.join(',')==='@hotel-start,kyoto-station-h2',
@@ -373,12 +374,22 @@ if (kyoto18) {
     kyoto18.stages[1]?.stops.at(-1).query==='34.983902,135.760799',
     '18/10: parada SUBIDA H2 mantiene coordenadas exactas');
   assert(pick?.time==='Bus 14:00' && pick?.notes.includes('1A y 1B') &&
-    pick?.notes.includes('15:28') && pick?.notes.includes('DESCARTADA'),
-    '18/10: hora de bus ACTUALIZADA 14:00 y antigua 13:40 descartada');
+    pick?.notes.includes('15:28') && pick?.notes.includes('aún NO confirmada'),
+    '18/10: embarque a bus 14:00 confirmado; llegada a KIX T1 15:28 solo prevista');
+  const stroll=day?.activities.find(a=>a.id==='paseo-libre-jaime-lorena-1018');
+  assert(stroll?.title.includes('Jaime y Lorena') && stroll?.status==='plan' &&
+    !stroll.locationQuery && !stroll.time &&
+    !kyoto18.stages.some(st=>st.stops.some(stop=>stop.id===stroll.id)),
+    '18/10: paseo libre con Lorena sin lugar inventado ni pin de mapa');
+  assert(day?.activities.find(a=>a.id==='kyoto-morning-flex')?.visited===true &&
+    day?.activities.find(a=>a.id==='kyoto-morning-flex')?.status==='confirmado',
+    '18/10: tareas de maletas y despedida acabadas, no quedan pendientes');
+
   assert(flight?.time==='19:00' && flight?.title.includes('Terminal 1') &&
     flight?.notes.includes('14:00') && flight?.notes.includes('15:28') &&
-    flight?.notes.includes('3h32'),
-    '18/10: KIX T1 llegada 15:28 programada, vuelo 19:00, margen 3h32');
+    flight?.notes.includes('aún NO confirmada') &&
+    flight?.visited !== true,
+    '18/10: vuelo 19:00 aún NO realizado y llegada KIX T1 no verificada');
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
