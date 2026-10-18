@@ -360,15 +360,18 @@ if (kyoto18) {
     pick?.visited === true && pick?.status === 'confirmado' &&
     pick?.notes.includes('HAN SUBIDO CORRECTAMENTE'),
     '18/10: billetes reales y embarque confirmado por mensaje posterior de Jaime');
-  assert(day?.mapStages?.length===2 &&
+  assert(day?.mapStages?.length===3 &&
     day.mapStages[0]?.activityIds.join(',')==='@hotel-start,kyoto-avanti-billetes-1018' &&
-    day.mapStages[1]?.activityIds.join(',')==='@hotel-start,kyoto-station-h2',
-    '18/10: venta AVANTI y embarque H2 siguen rutas distintas');
+    day.mapStages[1]?.activityIds.join(',')==='@hotel-start,kyoto-station-h2' &&
+    day.mapStages[2]?.activityIds.join(',')==='kyoto-station-h2,higashi-honganji-1018' &&
+    day.mapStages[2]?.mode==='mixed',
+    '18/10: venta AVANTI, embarque H2 y visita real Higashi Hongan-ji en tramo posterior, sin inventar medio de transporte');
   const routes=kyoto18.stages.map(s=>s.stops.map(p=>p.id).join(','));
   assert(routes[0]==='@hotel-start,kyoto-avanti-billetes-1018' &&
     routes[1]==='@hotel-start,kyoto-station-h2' &&
+    routes[2]==='kyoto-station-h2,higashi-honganji-1018' &&
     !kyoto18.stages.some(s=>s.stops.some(p=>p.id==='kix-vilma-marga')),
-    '18/10: grupo no va al aeropuerto, ruta termina en H2');
+    '18/10: Jaime y Lorena no van a KIX; después de H2 visitan Higashi Hongan-ji');
   assert(pick?.locationQuery === '34.983902,135.760799' &&
     pick?.links?.officialWebsite==='https://www.kate.co.jp/en/busstop/detail/4330' &&
     kyoto18.stages[1]?.stops.at(-1).query==='34.983902,135.760799',
@@ -376,6 +379,18 @@ if (kyoto18) {
   assert(pick?.time==='Bus 14:00' && pick?.notes.includes('1A y 1B') &&
     pick?.notes.includes('15:28') && pick?.notes.includes('llegada PROGRAMADA 15:28') && pick?.notes.includes('No afirmar todavía'),
     '18/10: embarque a bus 14:00 confirmado; llegada a KIX T1 15:28 solo prevista');
+  const hong = day?.activities.find(a=>a.id==='higashi-honganji-1018');
+  assert(hong?.category==='templo' && hong?.status==='confirmado' &&
+    hong?.visited===true && hong?.time==='Salida ~14:46' &&
+    hong?.notes.includes('INTERIOR') && hong?.notes.includes('SALIENDO') &&
+    hong?.notes.includes('No comunicó la hora de llegada') &&
+    hong?.notes.includes('No recogieron goshuin') &&
+    !hong?.goshuin,
+    '18/10: visita interior REAL a Higashi Hongan-ji, salida ~14:46 sin goshuin');
+  assert(kyoto18.stages[2]?.stops.at(-1)?.id === 'higashi-honganji-1018' &&
+    kyoto18.stages[2]?.stops.at(-1)?.query?.includes('Higashi Hongan-ji') &&
+    !day?.activities.find(a=>a.id==='paseo-libre-jaime-lorena-1018')?.locationQuery,
+    '18/10: pin solo en templo realmente visitado, no inventar parada futura');
   const stroll=day?.activities.find(a=>a.id==='paseo-libre-jaime-lorena-1018');
   assert(stroll?.title.includes('Jaime y Lorena') && stroll?.status==='plan' &&
     !stroll.locationQuery && !stroll.time &&

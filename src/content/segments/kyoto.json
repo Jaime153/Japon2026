@@ -1255,9 +1255,9 @@
     },
     {
       "date": "2026-10-18",
-      "title": "Limousine tomada (14:00) · paseo libre con Lorena",
+      "title": "Limousine tomada 14:00 · Higashi Hongan-ji · tarde libre",
       "status": "confirmado",
-      "note": "DOMINGO 18/10: hechos CONFIRMADOS: Jaime compró dos billetes físicos en Kyoto Avanti 1F y Vilma y Marga han SUBIDO CORRECTAMENTE al bus limousine de Kyoto Station H2/KY2 con salida PROGRAMADA 14:00, coche 01, asientos 1A/1B. Jaime confirmó 'lo han cogido y todo correcto'. La llegada a KIX T1 a las 15:28 sigue siendo PREVISTA, no constatada; el vuelo de las 19:00 tampoco está confirmado como realizado. Jaime y Lorena ahora pasean libremente por Kioto, sin lugares ni ruta comunicados. No inventar waypoint de paseo. El mapa histórico puede mostrar la taquilla Avanti 1F y H2 como logística REALIZADA; no mostrar carretera hasta KIX para los acompañantes ni más tareas de billetes.",
+      "note": "DOMINGO 18/10: confirmado que Vilma y Marga embarcaron en bus de las 14:00 desde H2/KY2 (pin 34.983902,135.760799). Jaime y Lorena permanecieron en Kioto y VISITARON REALMENTE EL INTERIOR de Higashi Hongan-ji (東本願寺); informaron que SALÍAN aproximadamente a las 14:46 JST, hora real aproximada de salida, SIN hora de entrada comunicada. NO recogieron goshuin. Después, tarde libre sin nuevos lugares ni ruta informados. Los dos billetes están comprados y usados para el embarque, pero la llegada de las chicas a KIX T1 a las 15:28 era solo prevista y el vuelo de las 19:00 sigue sin confirmarse realizado. El mapa incorpora Higashi Hongan-ji como visita real tras la despedida, SIN afirmar recorrido exacto ni medio de transporte utilizado; KIX NO aparece como destino de Jaime y Lorena.",
       "activities": [
         {
           "id": "kiyomizu-rescate-1018",
@@ -1361,14 +1361,30 @@
           "visited": true
         },
         {
+          "id": "higashi-honganji-1018",
+          "title": "Higashi Hongan-ji · visita al interior",
+          "category": "templo",
+          "status": "confirmado",
+          "visited": true,
+          "time": "Salida ~14:46",
+          "locationQuery": "Higashi Hongan-ji (東本願寺), Karasuma Shichijo, Shimogyo Ward, Kyoto",
+          "notes": "DOMINGO 18/10: visita REAL de Jaime y Lorena al templo Higashi Hongan-ji (東本願寺), con paseo por el INTERIOR. Jaime confirmó que estaban SALIENDO del recinto aproximadamente a las 14:46 JST. No comunicó la hora de llegada ni el tiempo empleado dentro: no inventarlos. No recogieron goshuin («sin goshuin» según Jaime); por ello no se añade icono de goshuin ni se da por obtenido ningún sello. Han venido paseando tras despedir a Vilma y Marga, que ya cogieron la limousine de las 14:00. Después, TARDE LIBRE sin ruta ni próximos sitios fijados.",
+          "description": "Higashi Hongan-ji es uno de los templos budistas más importantes de Kioto y la sede principal de la rama Ōtani de la escuela Jōdo Shinshū, vinculada a las enseñanzas de Shinran. Sus grandes pabellones de madera, especialmente Goei-dō y Amida-dō, están dedicados al fundador y al Buda Amida. El conjunto queda cerca de Kyoto Station, al norte de la zona de Hachijō, por lo que encaja como visita tranquila después de acompañar al grupo hasta el autobús del aeropuerto. Jaime y Lorena pasearon por su interior antes de salir sobre las 14:46.",
+          "plan": [
+            "Visita interior REALIZADA junto a Lorena.",
+            "Salida del recinto ~14:46 JST (hora comunicada al salir; llegada desconocida).",
+            "Sin goshuin recogido. Después, paseo libre sin siguientes paradas obligatorias."
+          ]
+        },
+        {
           "id": "paseo-libre-jaime-lorena-1018",
-          "title": "Paseo libre por Kioto · Jaime y Lorena",
+          "title": "Paseo libre de Jaime y Lorena · tras Higashi Hongan-ji",
           "category": "ocio",
           "status": "plan",
-          "notes": "Tras despedir a Vilma y Marga en el autobús de las 14:00, Jaime confirma que está dando una vuelta por Kioto con Lorena. Sin ubicación precisa del paseo, hora de finalización, ruta predeterminada ni más actividades fijadas. Dejar la tarde libre y NO inventar paradas ni pins de mapa.",
+          "notes": "Tras despedir a Vilma y Marga en H2, Jaime y Lorena pasearon por el INTERIOR de Higashi Hongan-ji y salieron alrededor de las 14:46 JST. Esta es la única parada turística concreta confirmada del paseo hasta el momento; no se conoce el recorrido exacto hasta el templo. Después queda la tarde LIBRE, sin inventar paradas adicionales ni fijar hora de regreso.",
           "plan": [
-            "Pasear y descansar a vuestro ritmo, sin horarios ni visitas obligatorias.",
-            "El autobús de las chicas y el vuelo son datos de seguimiento, NO etapas del mapa de Jaime y Lorena."
+            "Higashi Hongan-ji ya visitado por dentro; salida ~14:46 JST, sin goshuin.",
+            "Continuar paseo libre por Kioto sin visitas obligatorias ni geolocalizaciones supuestas."
           ]
         },
         {
@@ -1465,6 +1481,15 @@
           "activityIds": [
             "@hotel-start",
             "kyoto-station-h2"
+          ]
+        },
+        {
+          "id": "paseo-higashi-honganji-1018",
+          "title": "Tras la despedida: Higashi Hongan-ji (visita realizada, trayecto no confirmado)",
+          "mode": "mixed",
+          "activityIds": [
+            "kyoto-station-h2",
+            "higashi-honganji-1018"
           ]
         }
       ]
