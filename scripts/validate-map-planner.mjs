@@ -383,7 +383,7 @@ if (kyoto18) {
   assert(hong?.category==='templo' && hong?.status==='confirmado' &&
     hong?.visited===true && hong?.time==='Salida ~14:46' &&
     hong?.notes.includes('INTERIOR') && hong?.notes.includes('SALÍAN') &&
-    hong?.notes.includes('SIN hora de entrada') &&
+    hong?.notes.includes('No comunicó la hora de llegada') &&
     hong?.notes.includes('No recogieron goshuin') &&
     !hong?.goshuin,
     '18/10: visita interior REAL a Higashi Hongan-ji, salida ~14:46 sin goshuin');
