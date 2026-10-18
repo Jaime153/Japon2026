@@ -408,24 +408,44 @@ if (kyoto18) {
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
-  const day=segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
+  const day = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
     ?.days.find(d=>d.date==='2026-10-19');
   const ids=day?.activities.map(a=>a.id)||[];
-  const routed=kyoto19.stages.flatMap(s=>s.stops.map(p=>p.id));
-  assert(ids[0]==='tofukuji-1019' && ids[1]==='sanjusangendo',
-    '19/10: Tōfuku-ji y Sanjūsangendō juntos con Lorena, en orden lógico');
-  for(const id of ['tofukuji-1019','sanjusangendo','nishiki','tobichi-kyoto','baikoan-matcha-2025'])
-    assert(routed.includes(id),'19/10: falta lugar pendiente '+id);
-  assert(routed.indexOf('tofukuji-1019') < routed.indexOf('sanjusangendo') &&
-    routed.indexOf('sanjusangendo') < routed.indexOf('nishiki') &&
-    routed.indexOf('nishiki') < routed.indexOf('tobichi-kyoto'),
-    '19/10: Tōfuku-ji→Sanjūsangendō→Nishiki→tiendas');
-  assert(day?.activities.find(a=>a.id==='tofukuji-1019')?.notes.includes('LUNES 19') &&
-    day?.activities.find(a=>a.id==='sanjusangendo')?.transit?.from==='Tōfuku-ji' &&
-    day?.activities.find(a=>a.id==='nishiki')?.transit?.from==='Sanjūsangendō',
-    '19/10: no conservar tránsitos obsoletos ni horario excepcional del sábado');
-  assert(kyoto19.stages.at(-1).stops.at(-1).kind === 'hotel',
-    '19/10: última etapa regresa al RESI');
+  const core=['nishiki','teramachi-shinkyogoku-1019',
+    'kamo-shijo-1019','regreso-resi-libre-1019'];
+  assert(ids.join(',') === [
+    'nishiki','teramachi-shinkyogoku-1019',
+    'kamo-shijo-1019','gion-shirakawa-1019','regreso-resi-libre-1019'
+  ].join(','),
+    '19/10: día chill SOLO mercado, galerías, río Kamo y Gion opcional');
+  assert(!ids.some(id => ['tofukuji-1019','sanjusangendo','tobichi-kyoto',
+    'baikoan-matcha-2025','onsen-kyoto','ramen-sen-no-kaze','tonkatsu-yamamoto'].includes(id)),
+    '19/10: NO incluir templos de pago, TOBICHI ni compras/comidas antiguas');
+  assert(day?.activities.every(a => a.category!=='templo' && !a.goshuin) &&
+    day.activities.every(a => !a.visited),
+    '19/10: sin templos de pago, goshuin ni visitas futuras inventadas');
+  assert(day?.activities.find(a=>a.id==='nishiki')?.priority==='must' &&
+    day?.activities.find(a=>a.id==='nishiki')?.notes.includes('GRATUITA'),
+    '19/10: Nishiki es la prioridad de Lorena con entrada gratuita');
+  const stages = kyoto19.stages;
+  const idsMap=stages.flatMap(st=>st.stops.map(x=>x.id));
+  assert(stages.length===4 && stages.every(x=>x.mode==='walk') &&
+    stages[0].stops[0].kind==='hotel' && stages.at(-1).stops.at(-1).kind==='hotel',
+    '19/10: ruta sencilla de paseo, sin transporte obligatorio, inicio y fin RESI');
+  for(const id of core) assert(idsMap.includes(id),'19/10: falta parada '+id);
+  assert(idsMap.indexOf('nishiki') < idsMap.indexOf('teramachi-shinkyogoku-1019') &&
+    idsMap.indexOf('teramachi-shinkyogoku-1019') < idsMap.indexOf('kamo-shijo-1019') &&
+    idsMap.indexOf('kamo-shijo-1019') < idsMap.indexOf('regreso-resi-libre-1019'),
+    '19/10: mercado → galerías contiguas → río Kamo → RESI');
+  const gion=day?.activities.find(a=>a.id==='gion-shirakawa-1019');
+  assert(gion?.status==='opcional' && gion?.mapBeforeId==='regreso-resi-libre-1019' &&
+    kyoto19.optional.some(x=>x.id==='gion-shirakawa-1019') &&
+    !idsMap.includes('gion-shirakawa-1019'),
+    '19/10: Gion Shirakawa opcional en su sitio, no forzada en ruta base');
+  assert(day?.note.includes('Hobonichi') && day?.note.includes('TOBICHI NO se visita'),
+    '19/10: agenda Hobonichi ya comprada, TOBICHI NO pendiente');
+  assert(day?.note.includes('Hiroshima') && day?.note.includes('martes 20'),
+    '19/10: preparar maletas para salida a Hiroshima al día siguiente');
 }
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.

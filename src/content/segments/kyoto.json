@@ -1496,207 +1496,122 @@
     },
     {
       "date": "2026-10-19",
-      "title": "Con Lorena · Tōfuku-ji → Sanjūsangendō → Nishiki y tiendas",
+      "title": "Último día chill con Lorena · Nishiki y paseo gratis",
       "status": "plan",
-      "note": "LUNES 19/10 con Lorena: recuperamos los DOS templos eliminados del sábado 17, en orden geográfico **Tōfuku-ji (abre 09:00) → Sanjūsangendō (08:30–17:00) → Nishiki Market para comer/pasear → TOBICHI → Baikoan** si sigue apeteciendo. Las horas son orientativas; mercado/compras se pueden recortar sin sacrificar los templos. La excepción de apertura a las 14:00 del jardín Hōjō afecta al sábado 17, no al lunes 19. No marcar templos realizados sin confirmación ni usar transit obsoletos desde Sennyū-ji o Tō-ji.",
+      "note": "LUNES 19/10, ÚLTIMO DÍA COMPLETO EN KIOTO antes de Hiroshima el martes 20. DECISIÓN NUEVA: día CHILL, GRATIS O MUY BARATO, SIN templos con entrada obligatoria y SIN recoger más goshuin (no hace falta completar el libro en Kioto). PRIORIDAD EL MERCADO NISHIKI DE LORENA, gratuito de recorrer; después galerías Teramachi/Shinkyōgoku, río Kamo y Gion Shirakawa solo como paseo OPCIONAL. Inicio orientativo 10:00 desde RESI; no madrugar ni poner horas rígidas. Ya compraron la Hobonichi de Lorena, así que TOBICHI NO se visita y NO debe aparecer como compra pendiente. Se RETIRAN de este día los antiguos Tōfuku-ji (jardines/puente de pago), Sanjūsangendō (entrada de pago), Baikoan en el oeste, baños y locales de comida inconexos. No marcarlos realizados ni trasladarlos a otra fecha automáticamente: eran intenciones anteriores, ahora sustituidas por paseo barato. Después, tarde libre y preparar maletas para Hiroshima el día 20.",
       "activities": [
         {
-          "id": "tofukuji-1019",
-          "title": "Tōfuku-ji · Tsūtenkyō y jardín Hōjō",
-          "category": "templo",
+          "id": "nishiki",
+          "title": "Nishiki Market · mercado de Lorena",
+          "category": "comida",
           "status": "plan",
-          "locationQuery": "Tofukuji Temple Kyoto",
-          "notes": "TRASLADADO DEL SÁBADO 17 al LUNES 19 para hacerlo con Lorena, junto a Sanjūsangendō. No se visitó el sábado y NO debemos volver a ofrecerlo después de Fushimi hoy. En octubre abre 09:00–16:00, acceso habitual 9:00; se puede ver puente Tsūtenkyō y/o jardín Hōjō según interés. La excepción de jardín Hōjō abierto solo desde las 14:00 correspondía exclusivamente al sábado 17, NO al lunes 19. Fuente oficial: https://renewal.tofukuji.jp/guide/ . Siguiente Sanjūsangendō a ~20–35 min en transporte o taxi, no reordenar visitas hacia Nishiki antes.",
-          "plan": [
-            "Llegar a Tōfuku-ji cerca de las 09:00 (hora planificada), elegir puente Tsūtenkyō y/o jardín Hōjō.",
-            "Tras dedicar ~60–75 min, viajar a Sanjūsangendō; después seguir hacia Nishiki/TOBICHI si apetece.",
-            "No intentar meter ambos el sábado 17: forman parte de la mañana del lunes 19 con Lorena."
-          ],
-          "goshuin": true,
-          "links": {
-            "officialWebsite": "https://tofukuji.jp/guide/"
-          },
-          "description": "Tōfuku-ji es uno de los grandes templos zen de Kioto, de la tradición Rinzai. Fue fundado en el siglo XIII y destaca por sus jardines y el puente Tsūtenkyō, sobre un valle de arces. En otoño es especialmente conocido por los colores de las hojas, aunque a mediados de octubre todavía es temprano para el máximo color. El jardín Hōjō y el puente tienen accesos diferenciados. El lunes 19 la visita vuelve a los horarios habituales de octubre, a diferencia del cambio excepcional comunicado para el sábado 17.",
-          "time": "~09:00–10:15",
+          "priority": "must",
+          "time": "~10:30–12:15",
+          "locationQuery": "Nishiki Market, Kyoto",
+          "notes": "La prioridad real del lunes 19: paseo tranquilo por Nishiki Market (錦市場), cerca del centro de Kioto. Entrada a la calle del mercado GRATUITA: solo se paga lo que se decida comer o comprar. Cada puesto tiene horarios y días de cierre propios, NO hay una hora universal de apertura; alrededor de 10:30–11:00 suele encajar mejor que muy temprano. La asociación oficial pide NO comer mientras se camina, sino delante o dentro del local vendedor. Desde RESI STAY Yasaka, paseo ~25–35 min hacia Gion-Shijō, cruzando el río hasta las calles de Nishiki. Fuente oficial https://www.kyoto-nishiki.or.jp/en/contact/ . Sin obligación de gastar ni de visitar templos/recoger goshuin.",
           "transit": {
             "from": "RESI STAY Yasaka",
-            "summary": "Desde Gion-Shijō coger Keihan hacia Tōfukuji o tomar taxi si encaja; desde estación Tōfukuji caminar ~10 min hacia el templo.",
-            "approximateDuration": "~35–50 min puerta a puerta, sujeto a tren/colas"
-          }
-        },
-        {
-          "id": "sanjusangendo",
-          "title": "Sanjūsangendō · después de Tōfuku-ji",
-          "time": "~10:45–11:45",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Sanjusangendo Kyoto",
-          "notes": "Con Lorena el LUNES 19, trasladado desde los opcionales del sábado 17. Visita aún PENDIENTE, NO se ha hecho el 17. Abierto 08:30–17:00 en octubre, última entrada 16:30. Guardar tiempo para contemplar las 1.001 estatuas, donde no se permite fotografiar el interior; salir luego hacia Nishiki Market si apetece.",
-          "transit": {
-            "from": "Tōfuku-ji",
-            "summary": "Desde Tōfuku-ji volver a estación Keihan Tōfukuji y bajar en Shichijō; desde Shichijō caminar hacia Sanjūsangendō. Alternativamente taxi corto.",
-            "approximateDuration": "~25–40 min con caminata y espera"
+            "summary": "Paseo a pie por Gion, Shijō-Ōhashi y Kawaramachi hasta Nishiki, sin transporte de pago obligatorio.",
+            "approximateDuration": "~25–35 min andando, a ritmo tranquilo"
           },
           "plan": [
-            "Visitar después de Tōfuku-ji, no antes de su apertura a las 09:00.",
-            "Entrar a ver el pabellón con las 1.001 figuras de Kannon; dedicar unos 45–60 min.",
-            "Después seguir hacia Nishiki cuando apetezca, sin forzar compras si se alargan los templos."
+            "Salir del RESI sin madrugar, aproximadamente a las 10:00 (no obligatorio).",
+            "Explorar el mercado con calma, probar algo si apetece sin presupuesto impuesto; sus puestos tienen horarios independientes.",
+            "Continuar por las galerías Teramachi/Shinkyōgoku al salir por el lado oriental del mercado."
           ],
-          "goshuin": true,
-          "description": "Sanjūsangendō es el gran salón budista de 33 vanos construido originalmente en el siglo XII con patrocinio del poder cortesano; el edificio actual se reconstruyó en el siglo XIII tras un incendio. El nombre alude a los 33 espacios entre pilares de su larga estructura. Guarda 1.001 imágenes de Kannon de los Mil Brazos —un gran Kannon central y mil figuras de menor tamaño—, que simbolizan la capacidad de ayudar a innumerables seres. Delante se alinean impresionantes guardianes, cada uno de rostro y expresión diferente. Es uno de los grandes conjuntos de escultura religiosa japonesa. Normalmente no se permiten fotografías en el interior.",
           "links": {
-            "officialWebsite": "https://www.sanjusangendo.jp/"
+            "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/"
           }
         },
         {
-          "id": "nishiki",
-          "title": "Nishiki Market",
-          "category": "comida",
-          "status": "plan",
-          "locationQuery": "Nishiki Market Kyoto",
-          "plan": [
-            "Ir hacia Nishiki desde Sanjūsangendō.",
-            "Mirar los puestos que estén abiertos y comer algo sin alargarlo demasiado.",
-            "Si hay muchas persianas bajadas por ser miércoles, pasar directamente a TOBICHI o a las galerías cercanas."
-          ],
-          "time": "~12:15–13:15",
-          "transit": {
-            "from": "Sanjūsangendō",
-            "summary": "Caminar hacia Shichijō (Keihan) → Gion-Shijō en Keihan → ir andando al Nishiki Market, o tomar taxi si estáis cansados.",
-            "approximateDuration": "~25–40 min con caminata y tren"
-          },
-          "priority": "must",
-          "notes": "Nishiki queda después de la pareja Tōfuku-ji → Sanjūsangendō del lunes. Los horarios son solo aproximados y también podéis comer aquí; si la mañana se alarga, mover tiendas sin desordenar el mapa.",
-          "links": {
-            "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/contact/"
-          }
-        },
-        {
-          "id": "tobichi-kyoto",
-          "title": "TOBICHI Kyoto · agenda Hobonichi",
-          "time": "~13:30–14:15",
+          "id": "teramachi-shinkyogoku-1019",
+          "title": "Teramachi y Shinkyōgoku · galerías gratis",
           "category": "compras",
           "status": "plan",
-          "priority": "must",
-          "locationQuery": "TOBICHI Kyoto",
-          "address": "Kotobuki Building 5F, 251-2 Ichinocho, Kawaramachi-dori Shijo-sagaru, Shimogyo-ku, Kyoto",
-          "nearestStation": "Kyoto-Kawaramachi / Gion-Shijo",
-          "notes": "Agenda Hobonichi de Lorena pendiente del 14. TOBICHI Kyoto normalmente abre 11:00–18:00, cierre irregular; comprobar antes de ir.",
+          "time": "~12:15–13:45",
+          "locationQuery": "Teramachi Kyogoku Shopping Street Kyoto",
+          "notes": "Las dos galerías comerciales cubiertas están juntas, a pocos pasos del extremo ESTE de Nishiki Market. Callejear, ver tiendas, ropa, recuerdos y comer si hace falta, sin comprar nada obligatoriamente. Es un paseo GRATUITO: cada tienda tiene su propio horario; no se plantea entrar a templos, pagar entradas ni comprar goshuin. Sitios oficiales https://www.kyoto-teramachi.or.jp/ y https://www.shinkyogoku.or.jp/ . Si estáis cansados acortarlo y seguir al río.",
           "plan": [
-            "Ir andando desde Nishiki a la tienda TOBICHI Kyoto (planta 5).",
-            "Mirar agenda Hobonichi y accesorios; si está cerrada, no perder tiempo esperando."
-          ],
-          "links": {
-            "officialWebsite": "https://www.1101.com/tobichi/"
-          }
+            "Al salir de Nishiki hacia Teramachi, visitar esa galería y luego pasar a la paralela Shinkyōgoku si apetece.",
+            "No hay una lista de compras pendientes: la Hobonichi de Lorena YA está comprada; **TOBICHI eliminada**.",
+            "Parar a comer o tomar algo sin prisas y después ir al Kamo por Shijō."
+          ]
         },
         {
-          "id": "baikoan-matcha-2025",
-          "title": "Tienda de matcha de 2025 · probable Baikoan (梅香庵茶舗)",
-          "category": "compras",
+          "id": "kamo-shijo-1019",
+          "title": "Río Kamo · paseo y descanso",
+          "category": "ocio",
           "status": "plan",
-          "priority": "must",
-          "time": "~14:30",
-          "address": "46-1 Tachibanacho, Shimogyo Ward, Kyoto 600-8487",
-          "locationQuery": "Baikoan Tea Stall 46-1 Tachibanacho Kyoto",
-          "notes": "Buscar la tienda de matcha del viaje de 2025, probablemente Baikoan (梅香庵茶舗), 46-1 Tachibanacho. Identidad de tienda todavía no confirmada; consultar sobre el terreno.",
+          "time": "~14:00",
+          "locationQuery": "Shijo Ohashi Bridge, Kyoto",
+          "notes": "Parada GRATIS para caminar por el río Kamo (鴨川), cerca de Shijō-Ōhashi, sentarse a descansar y disfrutar de Kioto sin visitas con entrada. Es un lugar abierto, no requiere reserva ni goshuin. Si ya habéis paseado bastante por Nishiki/Teramachi, terminar aquí sin añadir obligaciones. Desde las galerías se llega en ~10–15 min andando.",
           "plan": [
-            "Desde TOBICHI ir hacia Baikoan; comprobar al verla que es la del recuerdo de 2025.",
-            "Comprar matcha solo si es la tienda correcta; si no lo es, no afirmarlo en el diario."
-          ],
-          "links": {
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Baikoan%20Tea%20Stall%2046-1%20Tachibanacho%20Kyoto",
-            "officialWebsite": "https://www.kyoto-tea.net/membersindex/baikouan"
-          },
-          "transit": {
-            "from": "TOBICHI Kyoto / Nishiki",
-            "summary": "Volver hacia Shijō/Gojo y caminar a Baikoan en Matsubara / Aburanokōji; comprobar primero si la tienda es la recordada de 2025.",
-            "approximateDuration": "~25–35 min, según recorrido"
-          }
+            "Salir de las galerías hacia el puente Shijō-Ōhashi (Gion-Shijō).",
+            "Pasear junto al río y parar a descansar el tiempo que queráis.",
+            "Si aún hay ganas, cruzar a la zona de Gion Shirakawa de camino al RESI."
+          ]
         },
         {
-          "id": "onsen-kyoto",
-          "title": "Onsen",
+          "id": "gion-shirakawa-1019",
+          "title": "Gion Shirakawa · canal y calles bonitas",
           "category": "ocio",
           "status": "opcional",
-          "notes": "Opcional únicamente si Jaime y Lorena quieren volver a un baño el lunes 19. El grupo ya visitó Gokō-yu el jueves 15, por lo que este NO es el onsen principal pendiente de hacer.",
-          "locationQuery": "Funaoka Onsen Kyoto",
+          "mapBeforeId": "regreso-resi-libre-1019",
+          "locationQuery": "Tatsumi Bridge, Gion Shirakawa, Kyoto",
+          "notes": "OPCIONAL y GRATIS. Desde el puente Shijō-Ōhashi seguir hacia el noreste al canal Shirakawa, en la zona de Tatsumi-bashi/Shinbashi, para pasear y hacer fotos. Queda algo al norte de la ruta más corta de vuelta al RESI, por eso NO se impone. Si estáis cansados, regresar al hotel directamente desde el río; sin templos, entradas ni goshuin.",
           "plan": [
-            "Elegir el onsen según logística y ganas del día.",
-            "Reservar tiempo suficiente para ir sin prisas y descansar."
+            "Pasear si apetece por Gion Shirakawa y el puente Tatsumi sin entrar a locales de pago.",
+            "Volver tranquilamente hacia el sur por Gion/Higashiyama hasta el RESI."
           ]
         },
         {
-          "id": "ramen-sen-no-kaze",
-          "title": "Ramen Sen-no-Kaze",
-          "category": "comida",
-          "status": "opcional",
-          "locationQuery": "Ramen Sen-no-Kaze Kyoto",
-          "nearestStation": "Kyoto Kawaramachi / Gion",
-          "notes": "Enlace Tabelog como búsqueda por nombre para comprobar ficha, horario y cola el mismo día.",
-          "links": {
-            "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=Ramen%20Sen-no-Kaze%20Kyoto"
-          },
+          "id": "regreso-resi-libre-1019",
+          "title": "Regreso al RESI · resto del día libre",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "RESI STAY Yasaka, 28 Bishamoncho, Higashiyama Ward, Kyoto",
+          "notes": "Terminar cuando queráis: la tarde es libre y no hay más visitas obligatorias. Regresar andando de Gion/Kamo al RESI STAY Yasaka, descansar y preparar sin estrés las maletas para la salida a Hiroshima el martes 20. No establecer hora fija de retorno ni meter Tōfuku-ji/Sanjūsangendō de pago. No se hace recorrido de goshuin.",
           "plan": [
-            "Comprobar cola/horario antes de ir.",
-            "Si la espera es excesiva, moverlo a otro momento del día o usar una alternativa cercana."
-          ]
-        },
-        {
-          "id": "tonkatsu-yamamoto",
-          "title": "Tonkatsu Yamamoto",
-          "category": "comida",
-          "status": "opcional",
-          "nearestStation": "Kyoto Shiyakusho-mae",
-          "approximatePrice": "¥2.000–4.000",
-          "notes": "De la lista de Lorena. Tabelog 100 Tonkatsu 2026; pocas plazas. Tabelog indica cierre habitual el domingo.",
-          "locationQuery": "Tonkatsu Yamamoto Kyoto",
-          "links": {
-            "tabelog": "https://tabelog.com/en/kyoto/A2601/A260202/26006075/"
-          },
-          "plan": [
-            "Comprobar apertura y disponibilidad antes de desplazarnos.",
-            "Priorizarlo si encaja porque tiene pocas plazas; si no, no sacrificar medio día esperando."
+            "Regresar paseando al hotel cuando os apetezca.",
+            "Resto de la tarde libre; preparar equipaje para el traslado a Hiroshima del martes 20."
           ]
         }
       ],
       "mapStages": [
         {
-          "id": "tofukuji-1019",
-          "title": "RESI → Tōfuku-ji",
-          "mode": "transit",
+          "id": "resi-nishiki-1019",
+          "title": "RESI → Nishiki Market · a pie",
+          "mode": "walk",
           "activityIds": [
             "@hotel-start",
-            "tofukuji-1019"
-          ]
-        },
-        {
-          "id": "tofuku-sanjus-1019",
-          "title": "Tōfuku-ji → Sanjūsangendō",
-          "mode": "transit",
-          "activityIds": [
-            "tofukuji-1019",
-            "sanjusangendo"
-          ]
-        },
-        {
-          "id": "sanjus-nishiki-1019",
-          "title": "Sanjūsangendō → Nishiki",
-          "mode": "transit",
-          "activityIds": [
-            "sanjusangendo",
             "nishiki"
           ]
         },
         {
-          "id": "nishiki-tiendas-1019",
-          "title": "Nishiki → TOBICHI → matcha → RESI",
-          "mode": "mixed",
+          "id": "nishiki-teramachi-1019",
+          "title": "Nishiki → galerías Teramachi/Shinkyōgoku",
+          "mode": "walk",
           "activityIds": [
             "nishiki",
-            "tobichi-kyoto",
-            "baikoan-matcha-2025",
+            "teramachi-shinkyogoku-1019"
+          ]
+        },
+        {
+          "id": "galerias-kamo-1019",
+          "title": "Galerías → río Kamo",
+          "mode": "walk",
+          "activityIds": [
+            "teramachi-shinkyogoku-1019",
+            "kamo-shijo-1019"
+          ]
+        },
+        {
+          "id": "kamo-resi-1019",
+          "title": "Río Kamo → RESI, tarde libre (Shirakawa opcional)",
+          "mode": "walk",
+          "activityIds": [
+            "kamo-shijo-1019",
+            "regreso-resi-libre-1019",
             "@hotel-end"
           ]
         }
