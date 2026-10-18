@@ -374,7 +374,7 @@ if (kyoto18) {
     kyoto18.stages[1]?.stops.at(-1).query==='34.983902,135.760799',
     '18/10: parada SUBIDA H2 mantiene coordenadas exactas');
   assert(pick?.time==='Bus 14:00' && pick?.notes.includes('1A y 1B') &&
-    pick?.notes.includes('15:28') && pick?.notes.includes('aún NO confirmada'),
+    pick?.notes.includes('15:28') && pick?.notes.includes('llegada PROGRAMADA 15:28') && pick?.notes.includes('No afirmar todavía'),
     '18/10: embarque a bus 14:00 confirmado; llegada a KIX T1 15:28 solo prevista');
   const stroll=day?.activities.find(a=>a.id==='paseo-libre-jaime-lorena-1018');
   assert(stroll?.title.includes('Jaime y Lorena') && stroll?.status==='plan' &&
