@@ -460,10 +460,10 @@ if (kyoto19) {
 }
 const kyoto20logistics=segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
   ?.days.find(d=>d.date==='2026-10-20');
-const transfer=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
-assert(transfer?.notes.includes('YA ESTÁN ENTREGADAS') &&
-  transfer?.notes.includes('EQUIPAJE LIGERO') &&
-  transfer?.notes.includes('NO está confirmada'),
+const kyotoToHiroshimaTransfer=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
+assert(kyotoToHiroshimaTransfer?.notes.includes('YA ESTÁN ENTREGADAS') &&
+  kyotoToHiroshimaTransfer?.notes.includes('EQUIPAJE LIGERO') &&
+  kyotoToHiroshimaTransfer?.notes.includes('NO está confirmada'),
   '20/10: Hiroshima con equipaje ligero, grandes ya entregadas en Yamato');
 const osakaTwo=segments.find(s=>s.hotel?.name==='APA Hotel & Resort Midosuji Hommachi Ekimae Tower');
 const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
