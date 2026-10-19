@@ -11,9 +11,22 @@
   "days": [
     {
       "date": "2026-10-23",
-      "title": "Llegada · Dōtonbori / Shinsaibashi",
+      "title": "Osaka · recoger maletas enviadas desde Kioto → Dōtonbori",
       "status": "plan",
       "activities": [
+        {
+          "id": "recoger-maletas-osaka-1023",
+          "title": "Recoger en el APA las maletas enviadas desde Kioto",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 4-2-9 Minamihommachi, Chuo-ku, Osaka",
+          "notes": "VIERNES 23/10: al llegar a Osaka desde Hiroshima, ir al APA Hotel & Resort Midosuji Hommachi Ekimae Tower (〒541-0054 大阪市中央区南本町4-2-9), donde se hace check-in del 23 al 28. El lunes 19 está previsto enviar desde Kyoto Yamato Gion las maletas grandes DIRECTAMENTE a este hotel, solicitando entrega el 22/10 (un día antes del check-in). TODAVÍA no hay comprobante de envío ni recepción confirmada. Si realmente se enviaron y el hotel las recibió, preguntar en recepción por los paquetes a nombre del huésped de la reserva y recogerlos; si no, revisar seguimiento privado con Yamato. El APA confirma que acepta envíos PREPAGADOS previos con fecha de check-in y nombre completo con furigana: https://www.apahotel.com/resort/midosuji-honmachi-eki-tower/faq/ . No confundir este APA de gran torre (No.306) con APA Hommachi Ekimae sin Tower.",
+          "plan": [
+            "Al llegar desde Hiroshima, ir al APA Hotel & Resort Midosuji Hommachi Ekimae Tower, no a otro APA de Hommachi.",
+            "Si las maletas se enviaron desde Kioto, consultar en recepción si están depositadas; verificar el seguimiento privado si aún no aparecen.",
+            "Recuperar equipaje y descansar antes del paseo por Dōtonbori/Shinsaibashi."
+          ]
+        },
         {
           "id": "dotonbori-final",
           "title": "Dōtonbori",
