@@ -8,6 +8,12 @@ export const TRIP = {
 
 export const MANUAL_TASKS = [
   {
+    id: 'billete-hiroshima-osaka-1023',
+    title: 'Decidir y comprar Hiroshima → Osaka del 23',
+    detail: 'Kodama 7.810 ¥/persona: comprar en e5489 como tarde el jueves 22 antes de las 23:30. Bus WILLER/JR Bus ~3.000–4.000 ¥: reservar cuanto antes. Nozomi 10.950 ¥: el mismo día en la estación. Detalle en el día 23.',
+    context: '22 octubre · antes de las 23:30',
+  },
+  {
     id: 'tricount-fuji-car',
     title: 'Añadir coche Fuji a Tricount',
     detail: 'Añadir 53,82 € del alquiler Honda Fit o similar del 9 de octubre.',
