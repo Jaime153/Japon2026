@@ -447,7 +447,7 @@ if (kyoto19) {
   }
   const routes=kyoto19.stages.map(s=>s.stops.map(x=>x.id).join(','));
   assert(routes.length===4 &&
-    routes[0]==='yamato-gion-a-osaka-1019' &&
+    routes[0]==='@hotel-start,yamato-gion-a-osaka-1019' &&
     routes[1]==='star-restaurant-1019,hotel-antes-baikoan-1019' &&
     routes[2]==='hotel-antes-baikoan-1019,baikoan-matcha-1019' &&
     routes[3]==='baikoan-matcha-1019,@hotel-end',
