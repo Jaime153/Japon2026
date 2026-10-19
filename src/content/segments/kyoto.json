@@ -1649,33 +1649,30 @@
     },
     {
       "date": "2026-10-20",
-      "title": "Kyoto → Hiroshima",
+      "title": "Kioto → Hiroshima · Nozomi 3 08:26",
       "status": "confirmado",
       "activities": [
         {
           "id": "kyoto-hiroshima",
-          "title": "Traslado a Hiroshima",
+          "title": "Nozomi 3 · Kioto 08:26 → Hiroshima 10:02",
           "category": "transporte",
-          "status": "confirmado",
-          "locationQuery": "Hiroshima Station",
-          "plan": [
-            "Maletas grandes YA ENTREGADAS en Yamato por Jaime, con destino Osaka; comprobar seguimiento privado, no publicar tracking.",
-            "Salir de Kioto hacia Hiroshima con equipaje ligero para la estancia 20–23.",
-            "Llegar al hotel de Hiroshima con mochilas/bolsa pequeña."
-          ],
-          "time": "~09:00",
+          "status": "plan",
+          "time": "08:26",
+          "locationQuery": "Kyoto Station Shinkansen",
+          "duration": "1 h 36 min de tren",
+          "approximatePrice": "Billete según máquina JR (no registrado aquí)",
+          "notes": "Tren elegido en la máquina de JR: NOZOMI 3, Kyoto 08:26 → Hiroshima 10:02. La compra y el asiento no constan confirmados en la web. Viaje con EQUIPAJE LIGERO: las maletas grandes YA ESTÁN ENTREGADAS a Yamato con destino al APA de Osaka (entrada 23/10); su recepción en el hotel NO está confirmada. Check-out del RESI hasta las 11:00.",
           "transit": {
             "from": "RESI STAY Yasaka",
-            "summary": "RESI STAY Yasaka → Kyoto Station → Shinkansen directo a Hiroshima con bolsa ligera si el envío de maletas grandes a Osaka ya se realizó. Viajan Jaime y Lorena, no un grupo de cuatro.",
-            "approximateDuration": "~2 h 15–2 h 40 puerta a puerta",
+            "summary": "RESI → Kyoto Station en taxi o bus urbano; andenes del Shinkansen por la entrada Hachijō.",
+            "approximateDuration": "Salir del RESI ~07:40",
             "steps": [
-              "Comprobar resguardo de envío directo a APA Osaka; el trámite es PENDIENTE hasta confirmación.",
-              "Del RESI a Kyoto Station con equipaje ligero, a pie/bus/taxi según preferencia.",
-              "Shinkansen Kyoto → Hiroshima directo, sin transbordo si hay servicio compatible.",
-              "Desde Hiroshima Station al APA Hotel Hiroshima Ekimae Stadiumguchi con bolsas pequeñas."
+              "Taxi RESI → Kyoto Station Hachijō-guchi: ~15–20 min sin atasco (precio por taxímetro).",
+              "Alternativa: bus urbano de Kioto, tarifa plana 230 ¥, más lento en hora punta.",
+              "Estar en el andén del Shinkansen 10 min antes (08:16).",
+              "En Hiroshima salir por la salida sur hacia el APA (Kōjinmachi 1-4)."
             ]
-          },
-          "notes": "Martes 20/10: viaje de Kioto a Hiroshima con EQUIPAJE LIGERO. Jaime confirma que las maletas grandes YA ESTÁN ENTREGADAS a Yamato para envío directo al APA Hotel & Resort Midosuji Hommachi Ekimae Tower de Osaka (check-in 23/10), evitando doble envío. El envío se entregó a Yamato, pero recepción final en APA NO está confirmada. Llevar ropa y objetos esenciales para Hiroshima del 20 al 23, no volver a Yamato."
+          }
         }
       ]
     }

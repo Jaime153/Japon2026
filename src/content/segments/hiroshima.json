@@ -5,161 +5,254 @@
   "endDate": "2026-10-23",
   "hotel": {
     "name": "APA Hotel Hiroshima Ekimae Stadiumguchi",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=APA%20Hotel%20Hiroshima%20Ekimae%20Stadiumguchi"
+    "address": "広島県広島市南区荒神町1-4",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=APA%20Hotel%20Hiroshima%20Ekimae%20Stadiumguchi%20%E5%8D%97%E5%8C%BA%E8%8D%92%E7%A5%9E%E7%94%BA1-4"
   },
   "days": [
     {
       "date": "2026-10-20",
-      "title": "Llegada · Hiroshima ciudad",
+      "title": "Hiroshima · Shukkei-en, castillo, Okonomimura y Peace Park",
       "status": "plan",
+      "note": "Previsión JMA: nublado, lluvia de madrugada que se retira a mediodía (30–40 %). Comida principal en Okonomimura; cena libre. Sin Museo de la Paz.",
       "activities": [
         {
-          "id": "peace-park",
-          "title": "Peace Memorial Park",
-          "category": "otro",
+          "id": "apa-hiroshima-llegada-1020",
+          "title": "Dejar bolsas en el APA Hiroshima",
+          "category": "transporte",
           "status": "plan",
-          "priority": "must",
-          "locationQuery": "Hiroshima Peace Memorial Park",
-          "plan": [
-            "Empezar por Peace Memorial Park y recorrerlo a pie con calma.",
-            "Mantener un ritmo tranquilo antes de entrar al museo."
-          ],
-          "time": "~14:00",
+          "time": "~10:15",
+          "locationQuery": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+          "address": "広島県広島市南区荒神町1-4",
+          "approximatePrice": "0 ¥",
+          "notes": "Llegada 10:02 a Hiroshima. Dejar mochilas en recepción; la habitación se ocupa a la hora de check-in de la reserva.",
           "transit": {
-            "from": "APA Hotel Hiroshima Ekimae Stadiumguchi / Hiroshima Station",
-            "summary": "Desde Hiroshima Station, tranvía No. 2 o No. 6 → Genbaku-dome Mae; desde allí recorrer a pie Peace Park.",
-            "approximateDuration": "~20 min de tranvía + paseo",
-            "steps": [
-              "Caminar desde el hotel a Hiroshima Station.",
-              "Tomar streetcar No. 2 (Miyajima/Nishi-Hiroshima) o No. 6 (Eba).",
-              "Bajar en Genbaku-dome Mae y empezar el recorrido del parque."
-            ]
+            "from": "Hiroshima Station",
+            "summary": "A pie desde la salida sur de la estación.",
+            "approximateDuration": "~5–10 min (estimado)"
           }
         },
         {
-          "id": "peace-museum",
-          "title": "Peace Memorial Museum",
-          "category": "otro",
+          "id": "shukkeien-1020",
+          "title": "Shukkei-en · jardín",
+          "category": "naturaleza",
           "status": "plan",
           "priority": "must",
-          "locationQuery": "Hiroshima Peace Memorial Museum",
-          "plan": [
-            "Hacer la visita del museo sin encadenarla con prisas.",
-            "Dejar margen emocional y de descanso antes de seguir al A-Bomb Dome."
-          ],
-          "time": "~14:30",
+          "time": "~10:45",
+          "locationQuery": "Shukkeien Garden Hiroshima",
+          "address": "広島市中区上幟町2-11",
+          "duration": "~1 h",
+          "approximatePrice": "350 ¥/persona",
+          "links": {
+            "officialWebsite": "https://shukkeien.jp/"
+          },
+          "notes": "Horario oct.: 9:00–17:00, última entrada 16:30. Abierto todo el año salvo 29–31 dic. Paseo circular alrededor del estanque Takuei-chi, puente Koko-kyo y casa de té.",
+          "description": "Jardín paisajista creado en 1620 por Ueda Sōko para el daimyō Asano Nagaakira. «Shukkei» significa «paisaje en miniatura»: colinas, valles e islas reproducidos alrededor de un estanque central. Quedó arrasado en 1945 y se reconstruyó; algunos árboles supervivientes siguen en pie.",
           "transit": {
-            "from": "Peace Memorial Park",
-            "summary": "Todo a pie dentro del parque memorial.",
-            "approximateDuration": "5–10 min"
+            "from": "APA Hiroshima",
+            "summary": "A pie hacia el oeste cruzando el río Kyōbashi.",
+            "approximateDuration": "~15–20 min (estimado)"
           }
         },
         {
-          "id": "a-bomb-dome",
-          "title": "A-Bomb Dome",
+          "id": "hiroshima-castle",
+          "title": "Castillo de Hiroshima · exterior y Ninomaru",
           "category": "otro",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Atomic Bomb Dome Hiroshima",
-          "plan": [
-            "Ver el A-Bomb Dome y cerrar el eje histórico de la tarde.",
-            "Después cambiar de ambiente y dirigirse a cenar."
-          ],
-          "time": "~16:30",
+          "status": "opcional",
+          "time": "~12:00",
+          "locationQuery": "Hiroshima Castle Ninomaru",
+          "duration": "30–45 min",
+          "approximatePrice": "0 ¥",
+          "links": {
+            "officialWebsite": "https://hiroshimacastle.jp/"
+          },
+          "notes": "EL TORREÓN ESTÁ CERRADO desde marzo de 2026 (solo exterior). Ninomaru reconstruido abierto 9:00–16:30 en oct., gratis. Si vais justos de hambre, saltar e ir directos a Okonomimura.",
           "transit": {
-            "from": "Peace Memorial Museum",
-            "summary": "Cruzar el parque a pie hasta el A-Bomb Dome.",
-            "approximateDuration": "10–15 min"
+            "from": "Shukkei-en",
+            "summary": "A pie por el foso este.",
+            "approximateDuration": "~10–15 min (estimado)"
           }
         },
         {
           "id": "okonomimura",
-          "title": "Okonomimura",
+          "title": "Okonomimura · comida",
           "category": "comida",
           "status": "plan",
-          "notes": "Okonomiyaki estilo Hiroshima. Tabelog abre búsqueda porque Okonomimura agrupa múltiples puestos.",
+          "priority": "must",
+          "time": "~13:00",
           "locationQuery": "Okonomimura Hiroshima",
+          "address": "広島市中区新天地5-13",
+          "nearestStation": "Tranvía Hatchōbori",
+          "approximatePrice": "~1.000–1.800 ¥/okonomiyaki (estimación; cada puesto tiene su carta)",
           "links": {
             "tabelog": "https://tabelog.com/en/rstLst/?vs=1&sk=Okonomimura%20Hiroshima"
           },
-          "plan": [
-            "Ir a Okonomimura y elegir puesto según cola/ambiente.",
-            "Probar okonomiyaki estilo Hiroshima como comida/cena principal de la ciudad."
-          ],
-          "time": "~18:00",
+          "notes": "Edificio de varias plantas con puestos independientes; horario y descanso según puesto. Llegar ~13:00 evita el pico. Pedir estilo Hiroshima (con fideos soba o udon). Repetición del viaje 2025.",
           "transit": {
-            "from": "A-Bomb Dome",
-            "summary": "Ir andando hacia Hondori/Okonomimura; es un trayecto corto por el centro.",
-            "approximateDuration": "15–20 min"
+            "from": "Castillo / Shukkei-en",
+            "summary": "A pie hacia el sur hasta Hatchōbori/Shintenchi, o tranvía hasta Hatchōbori.",
+            "approximateDuration": "~15–20 min a pie (estimado)"
           }
+        },
+        {
+          "id": "peace-park",
+          "title": "Parque Memorial de la Paz",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "time": "~14:30",
+          "locationQuery": "Hiroshima Peace Memorial Park",
+          "duration": "~45 min",
+          "approximatePrice": "0 ¥ (Museo de la Paz descartado)",
+          "notes": "Recorrido exterior: Cenotafio, Llama de la Paz y Monumento a los Niños. El museo NO entra en el plan.",
+          "transit": {
+            "from": "Okonomimura",
+            "summary": "A pie por Hondōri hacia el oeste.",
+            "approximateDuration": "~15 min (estimado)"
+          }
+        },
+        {
+          "id": "a-bomb-dome",
+          "title": "Cúpula de la Bomba Atómica",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "time": "~15:15",
+          "locationQuery": "Atomic Bomb Dome Hiroshima",
+          "approximatePrice": "0 ¥ (solo exterior)",
+          "transit": {
+            "from": "Parque de la Paz",
+            "summary": "Cruzar el puente Aioi a pie.",
+            "approximateDuration": "~5–10 min"
+          }
+        },
+        {
+          "id": "orizuru-tower",
+          "title": "Orizuru Tower · mirador",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "~15:45",
+          "locationQuery": "Hiroshima Orizuru Tower",
+          "address": "広島市中区大手町1-2-1",
+          "duration": "~45 min",
+          "approximatePrice": "1.700 ¥/persona (+100 ¥ por grulla de papel)",
+          "notes": "Junto a la Cúpula. 10:00–19:00. Vista del parque y la cúpula desde arriba. Si el 21 llueve, también sirve como plan bajo techo."
+        },
+        {
+          "id": "regreso-apa-1020",
+          "title": "Vuelta al APA · cena libre",
+          "category": "transporte",
+          "status": "plan",
+          "locationQuery": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+          "approximatePrice": "240 ¥/persona en tranvía",
+          "notes": "Tranvía desde Genbaku-dome-mae o Hatchōbori hasta Hiroshima Station; luego 5–10 min a pie. Tranvía Hiroden: 240 ¥ por trayecto en ciudad (tarifa plana)."
         }
       ]
     },
     {
       "date": "2026-10-21",
-      "title": "Miyajima · Itsukushima · Fujitaya · Monte Misen",
+      "title": "Lluvia prevista · Kure o Hiroshima bajo techo",
       "status": "plan",
+      "note": "Previsión JMA 70–80 % de lluvia. Elegir UNA opción; ninguna depende de reserva. Comida principal fuera, cena libre.",
       "activities": [
         {
-          "id": "itsukushima",
-          "title": "Itsukushima Shrine",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "locationQuery": "Itsukushima Shrine",
-          "plan": [
-            "Llegar a Miyajima y empezar por Itsukushima Shrine.",
-            "Coordinar la visita con el resto del día sin bloquearse esperando una foto perfecta."
-          ],
+          "id": "kure-yamato-1021",
+          "title": "Opción A · Kure: Museo Yamato + submarino",
+          "category": "otro",
+          "status": "opcional",
           "time": "~09:30",
-          "transit": {
-            "from": "APA Hotel Hiroshima Ekimae Stadiumguchi",
-            "summary": "JR Hiroshima → Miyajimaguchi por Sanyo Main Line (~28 min) → JR Miyajima Ferry (~10 min) → caminar a Itsukushima Shrine.",
-            "approximateDuration": "~55–70 min puerta a puerta",
-            "steps": [
-              "Caminar a Hiroshima Station.",
-              "JR Sanyo Main Line dirección Iwakuni hasta Miyajimaguchi.",
-              "Seguir el paso subterráneo al ferry.",
-              "Tomar JR Miyajima Ferry; entre 09:10 y 16:10 los servicios 'Great Torii' pasan frente al gran torii.",
-              "Desde Miyajima Pier caminar al santuario."
-            ]
+          "locationQuery": "Yamato Museum Kure",
+          "duration": "4–5 h con trayecto",
+          "approximatePrice": "Tren 510 ¥ x2 + Museo 1.000 ¥ = ~2.020 ¥/persona",
+          "links": {
+            "officialWebsite": "https://yamato-museum.com/"
           },
-          "goshuin": true,
-          "description": "Itsukushima Jinja es el santuario sintoísta de Miyajima, isla venerada como sagrada desde la Antigüedad. Según su tradición, el santuario se fundó en 593; adquirió gran esplendor a partir de 1168 bajo el patrocinio de Taira no Kiyomori, poderoso dirigente del final del período Heian. El complejo se diseñó sobre pilotes y pasarelas junto al mar, como si flotara cuando sube la marea. Venera a tres kami femeninos ligados a la protección de navegación y mares. El gran torii bermellón es la puerta simbólica al espacio sagrado. El contraste de monte Misen, bahía y arquitectura forma parte de su significado y reconocimiento como Patrimonio Mundial de la UNESCO."
+          "notes": "Museo Yamato (reabierto el 23/04/2026): 9:00–18:00, última entrada 17:30, cierra los martes (el 21 es miércoles). Al lado, Tetsu-no-Kujira-kan: gratis, 10:00–18:00, se entra en el submarino Akishio. Todo bajo techo. Comer en Kure (zona estación) y volver.",
+          "transit": {
+            "from": "Hiroshima Station",
+            "summary": "JR Kure Line rápido Hiroshima → Kure (~32 min, 510 ¥); museo a 5 min a pie de la estación.",
+            "approximateDuration": "~40 min puerta a puerta"
+          }
+        },
+        {
+          "id": "hiroshima-lluvia-1021",
+          "title": "Opción B · Hiroshima bajo techo",
+          "category": "compras",
+          "status": "opcional",
+          "time": "~11:00",
+          "locationQuery": "Hondori Shopping Street Hiroshima",
+          "approximatePrice": "Tranvía 240 ¥ por trayecto; Orizuru 1.700 ¥ si no se hizo el 20",
+          "notes": "Galería cubierta Hondōri y alrededores de Hatchōbori para compras, comida fuera y descanso. Orizuru Tower si no se subió el 20."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Miyajima completo · día de sol",
+      "status": "plan",
+      "note": "Día elegido por clima: JMA/tenki.jp dan sol y 10–20 % (fiabilidad A); el 21 llueve. Comida principal en Fujitaya; cena libre en Hiroshima.",
+      "activities": [
+        {
+          "id": "ida-miyajima-1022",
+          "title": "Hiroshima → Miyajima en JR + ferry",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~08:00",
+          "locationQuery": "Miyajimaguchi Ferry Terminal",
+          "approximatePrice": "420 ¥ JR + 200 ¥ ferry + 100 ¥ tasa = 720 ¥/persona",
+          "notes": "Tasa de visitante de Miyajima: 100 ¥ por visita, se paga aparte en la terminal. Los ferris JR que salen entre 09:10 y 16:10 pasan frente al gran torii.",
+          "transit": {
+            "from": "APA Hiroshima",
+            "summary": "JR Sanyo Line Hiroshima → Miyajimaguchi (~28 min); ferry JR (~10 min).",
+            "approximateDuration": "~55–70 min puerta a puerta"
+          }
         },
         {
           "id": "miyajima-torii",
-          "title": "Gran torii",
+          "title": "Gran torii desde la orilla · mañana",
           "category": "mirador",
           "status": "plan",
           "locationQuery": "Itsukushima Floating Torii",
-          "plan": [
-            "Ver el gran torii desde los puntos que mejor encajen durante el paseo.",
-            "Aprovechar el cambio de marea si coincide, pero sin rehacer toda la ruta por ello."
-          ],
-          "time": "~10:30",
-          "transit": {
-            "from": "Itsukushima Shrine",
-            "summary": "Todo andando por el paseo costero de Miyajima.",
-            "approximateDuration": "5–15 min"
-          },
-          "description": "El gran torii de Itsukushima marca de forma simbólica la entrada a un santuario sintoísta, pero aquí se alza en el mar: el paso entre lo cotidiano y lo sagrado depende visualmente de la marea. El torii actual data de 1875 y mide unos 16,8 metros; la estructura se sostiene fundamentalmente por su peso y está estabilizada con apoyos laterales. Su color bermellón, el bosque de la isla y el templo flotante forman un paisaje ritual diseñado para contemplarse también desde el agua. En marea baja se puede pasear cerca cuando las condiciones lo permiten; en marea alta parece flotar. No es una atracción independiente del santuario de Itsukushima."
+          "time": "~09:00",
+          "description": "El gran torii de Itsukushima marca de forma simbólica la entrada a un santuario sintoísta, pero aquí se alza en el mar: el paso entre lo cotidiano y lo sagrado depende visualmente de la marea. El torii actual data de 1875 y mide unos 16,8 metros; la estructura se sostiene fundamentalmente por su peso y está estabilizada con apoyos laterales. Su color bermellón, el bosque de la isla y el templo flotante forman un paisaje ritual diseñado para contemplarse también desde el agua. En marea baja se puede pasear cerca cuando las condiciones lo permiten; en marea alta parece flotar. No es una atracción independiente del santuario de Itsukushima.",
+          "approximatePrice": "0 ¥",
+          "notes": "Mareas 22/10 (Puerto de Hiroshima, Miyajima unos minutos antes): pleamar 06:52 (271 cm), bajamar 13:00 (109 cm), pleamar 19:24 (320 cm). A las 09:00 la marea baja pero el torii sigue en el agua. Para llegar andando hace falta ≤100 cm: el 22 no se alcanza.",
+          "links": {
+            "weather": "https://www.miyajima.or.jp/sio/sio10.html"
+          }
         },
         {
-          "id": "misen",
-          "title": "Monte Misen",
-          "category": "naturaleza",
+          "id": "senjokaku-pagoda-1022",
+          "title": "Senjōkaku y pagoda de cinco pisos",
+          "category": "templo",
           "status": "plan",
-          "locationQuery": "Mount Misen",
-          "plan": [
-            "Subir al Monte Misen si el tiempo y las fuerzas acompañan.",
-            "Si el grupo va justo, acortar esta parte antes que convertir Miyajima en una carrera."
-          ],
-          "time": "~12:30",
+          "time": "~09:20",
+          "locationQuery": "Senjokaku Miyajima",
+          "duration": "~30 min",
+          "approximatePrice": "100 ¥ Senjōkaku; pagoda gratis (exterior)",
+          "notes": "Senjōkaku (Toyokuni-jinja): 8:30–16:30. Colina junto al santuario, vistas sobre Omotesandō.",
+          "description": "El Senjōkaku («sala de mil tatamis») lo mandó construir Toyotomi Hideyoshi en 1587 como sala de lecturas de sutras por los caídos en guerra. Su muerte en 1598 dejó la obra sin terminar: aún hoy no tiene paredes ni techo decorado. Tras la separación de budismo y sintoísmo en la era Meiji pasó a ser el santuario Toyokuni, dedicado al propio Hideyoshi. La pagoda de cinco pisos contigua data de 1407 y mezcla estilos japonés y chino.",
           "transit": {
-            "from": "Fujitaya",
-            "summary": "Caminar hacia Momijidani Ropeway; subir en teleférico y continuar a pie según fuerzas.",
-            "approximateDuration": "20–30 min hasta la zona del ropeway"
+            "from": "Paseo del torii",
+            "summary": "A pie, subida corta.",
+            "approximateDuration": "~5 min"
+          }
+        },
+        {
+          "id": "daishoin-1022",
+          "title": "Daishō-in",
+          "category": "templo",
+          "status": "plan",
+          "time": "~09:50",
+          "locationQuery": "Daisho-in Miyajima",
+          "duration": "~45 min",
+          "approximatePrice": "0 ¥",
+          "goshuin": true,
+          "notes": "Abierto 8:00–17:00. Escalinata con ruedas de sutras, cueva Henjōkutsu y estatuas rakan. Fujitaya queda a 1–2 min.",
+          "description": "Daishō-in es el templo budista más antiguo de Miyajima, de la escuela Shingon Omuro. La tradición atribuye su fundación a Kōbō Daishi (Kūkai) en el año 806, tras practicar en el monte Misen. Fue templo administrador del santuario Itsukushima hasta la separación Meiji. En la cueva Henjōkutsu se reúnen imágenes de los 88 templos de la peregrinación de Shikoku, y las ruedas de la escalera contienen el Sutra del Corazón: girarlas equivale a recitarlo.",
+          "transit": {
+            "from": "Senjōkaku",
+            "summary": "A pie por detrás del santuario hacia el oeste.",
+            "approximateDuration": "~15 min (estimado)"
           }
         },
         {
@@ -167,83 +260,102 @@
           "title": "Fujitaya · anago meshi",
           "category": "comida",
           "status": "plan",
-          "notes": "Recomendación de Alberto. Candidato principal para el anago meshi de Miyajima; no admite reservas, así que conviene ir antes de la comida fuerte.",
+          "notes": "Comida principal del día. Abre 11:00–17:00 (última comanda 16:00), descanso irregular, sin reservas. Solo sirve anago meshi. A 1–2 min de Daishō-in: ponerse en cola sobre las 10:40. Recomendación de Alberto.",
           "locationQuery": "Fujitaya Miyajima",
           "links": {
             "officialWebsite": "https://www.fujitayamiyajima.com/",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Fujitaya%20Miyajima"
           },
-          "plan": [
-            "Intentar llegar antes de las 11:00 para reducir cola.",
-            "Pedir anago meshi como comida principal del día.",
-            "Si la cola es inviable, usar otro anago meshi cercano como fallback, pero Fujitaya es la primera opción."
-          ],
-          "time": "~10:45–11:00",
+          "time": "10:40 cola",
           "priority": "must",
-          "transit": {
-            "from": "Itsukushima Shrine / gran torii",
-            "summary": "Caminar por Miyajima hasta Fujitaya antes del pico de comida.",
-            "approximateDuration": "10–15 min"
-          }
-        }
-      ],
-      "note": "Ruta por JR Sanyo + JR Miyajima Ferry. Fujitaya pasa de genérico/opcional a primera opción para el anago meshi."
-    },
-    {
-      "date": "2026-10-22",
-      "title": "Hiroshima · día colchón",
-      "status": "plan",
-      "note": "No llenar por llenar: ciudad, compras, castillo si apetece o descanso.",
-      "activities": [
-        {
-          "id": "hiroshima-castle",
-          "title": "Hiroshima Castle",
-          "category": "otro",
-          "status": "opcional",
-          "locationQuery": "Hiroshima Castle",
-          "plan": [
-            "Visitar Hiroshima Castle como actividad principal del día colchón.",
-            "Después dejar tiempo libre para repetir, comprar o descansar."
-          ]
+          "address": "広島県廿日市市宮島町125-2",
+          "approximatePrice": "No publicado en su web; mirar carta en la puerta"
         },
         {
-          "id": "hiroshima-flex",
-          "title": "Tiempo libre / repetir zona",
-          "category": "otro",
+          "id": "misen",
+          "title": "Teleférico y cumbre del Misen",
+          "category": "naturaleza",
           "status": "plan",
-          "plan": [
-            "Usar el resto del día para repetir una zona, compras o descanso.",
-            "No introducir una excursión nueva: este día existe precisamente como colchón."
-          ]
+          "locationQuery": "Mount Misen",
+          "time": "~12:00",
+          "transit": {
+            "from": "Fujitaya",
+            "summary": "A pie por el parque Momijidani hasta la estación del teleférico.",
+            "approximateDuration": "~15–20 min (estimado)"
+          },
+          "duration": "~3 h",
+          "approximatePrice": "2.000 ¥/persona ida y vuelta",
+          "links": {
+            "officialWebsite": "https://miyajima-ropeway.info/"
+          },
+          "notes": "Subida 9:00–16:00, última bajada 16:30. Estación de Momijidani tras el parque Momijidani. De Shishiiwa a la cumbre son ~30 min a pie por senda con escalones (estimado); en el camino, salas de Daishō-in y la llama perpetua Reikadō. Volver a Shishiiwa antes de las 16:00 para no quedarse sin bajada. El evento nocturno 19–23/10 era por sorteo y está cerrado."
+        },
+        {
+          "id": "omotesando-1022",
+          "title": "Omotesandō · momiji manjū y age-momiji",
+          "category": "compras",
+          "status": "plan",
+          "time": "~15:30",
+          "locationQuery": "Miyajima Omotesando Shopping Street",
+          "approximatePrice": "Según lo que compréis",
+          "notes": "Calle comercial entre el muelle y el santuario: momiji manjū (pastelito relleno con forma de hoja de arce), age-momiji (la versión frita) y la gran espátula shamoji. Margen para sentarse antes del santuario.",
+          "transit": {
+            "from": "Teleférico Momijidani",
+            "summary": "Bajar a pie por el parque Momijidani.",
+            "approximateDuration": "~20 min (estimado)"
+          }
+        },
+        {
+          "id": "itsukushima",
+          "title": "Santuario Itsukushima · con marea alta",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "locationQuery": "Itsukushima Shrine",
+          "time": "~16:50",
+          "goshuin": true,
+          "description": "Itsukushima Jinja es el santuario sintoísta de Miyajima, isla venerada como sagrada desde la Antigüedad. Según su tradición, el santuario se fundó en 593; adquirió gran esplendor a partir de 1168 bajo el patrocinio de Taira no Kiyomori, poderoso dirigente del final del período Heian. El complejo se diseñó sobre pilotes y pasarelas junto al mar, como si flotara cuando sube la marea. Venera a tres kami femeninos ligados a la protección de navegación y mares. El gran torii bermellón es la puerta simbólica al espacio sagrado. El contraste de monte Misen, bahía y arquitectura forma parte de su significado y reconocimiento como Patrimonio Mundial de la UNESCO.",
+          "approximatePrice": "300 ¥/persona",
+          "duration": "~35 min",
+          "notes": "Horario 15/10–30/11: 6:30–17:30. Pleamar 19:24 (320 cm); el santuario «flota» desde ~250 cm, que se alcanza hacia las 16:55 (cálculo sobre la tabla de mareas, estimado). Entrar a las 16:50 y salir al cierre. Si por la mañana os apetece entrar, a las 08:30 todavía hay ~250 cm, pero llegaríais justos.",
+          "links": {
+            "officialWebsite": "https://www.itsukushimajinja.jp/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Itsukushima%20Shrine"
+          }
+        },
+        {
+          "id": "atardecer-torii-1022",
+          "title": "Atardecer en el torii con marea alta",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "~17:30",
+          "locationQuery": "Itsukushima Floating Torii",
+          "approximatePrice": "0 ¥",
+          "notes": "Al salir del santuario la marea sigue subiendo hacia la pleamar de las 19:24. Torii y santuario se iluminan al anochecer. Volver cuando apetezca: ferry + JR, 620 ¥/persona."
         }
       ]
     },
     {
       "date": "2026-10-23",
       "title": "Hiroshima → Osaka",
-      "status": "confirmado",
+      "status": "plan",
+      "note": "Previsión: sol por la mañana, lluvia por la tarde. Elegir transporte antes del 22 por la noche si se usa billete con descuento.",
       "activities": [
         {
           "id": "hiroshima-osaka",
-          "title": "Traslado a Osaka",
+          "title": "Traslado Hiroshima → Osaka (Hommachi)",
           "category": "transporte",
-          "status": "confirmado",
+          "status": "pendiente",
+          "time": "por decidir",
           "locationQuery": "Hommachi Station Osaka",
-          "plan": [
-            "Salir de Hiroshima hacia Osaka con el equipaje organizado.",
-            "Al llegar, check-in/dejar maletas antes del plan de Dōtonbori/Shinsaibashi."
-          ],
-          "time": "~09:00",
+          "notes": "Opciones por persona, solo ida: 1) Nozomi reservado Hiroshima → Shin-Osaka 10.950 ¥, ~1 h 25 min (estimado). 2) Kodama Shitei-seki Kippu 7.810 ¥: solo para 2 personas o más en el mismo tren, solo por la web e5489 de JR West y hasta el día antes; plaza reservada en un Kodama concreto, sin cambios; ~2 h 40–3 h (estimado). Ahorro: ~3.140 ¥/persona. 3) Bus WILLER Hiroshima Station (salida norte) → Umeda: 2.700–3.200 ¥, ~6 h (precios vistos para el 26/10; comprobar el 23). Ahorro máximo, pero se pierde el día. Después, Midosuji Line hasta Hommachi.",
+          "links": {
+            "reservation": "https://www.jr-odekake.net/ticket/tokutoku/kodama_kippu/"
+          },
           "transit": {
-            "from": "APA Hotel Hiroshima Ekimae Stadiumguchi",
-            "summary": "Caminar a Hiroshima Station → Sanyo Shinkansen directo a Shin-Osaka → Osaka Metro Midosuji Line → Hommachi.",
-            "approximateDuration": "~2 h puerta a puerta",
-            "steps": [
-              "Caminar a Hiroshima Station.",
-              "Sanyo Shinkansen (Nozomi/Mizuho/Sakura con parada) hasta Shin-Osaka.",
-              "Midosuji Line Shin-Osaka → Hommachi.",
-              "El APA Hotel & Resort Midosuji Hommachi Ekimae Tower está junto a Hommachi."
-            ]
+            "from": "APA Hiroshima",
+            "summary": "A pie a Hiroshima Station → tren o bus → Shin-Osaka/Umeda → Midosuji Line → Hommachi.",
+            "approximateDuration": "~2 h (Nozomi) · ~3 h 15 (Kodama) · ~6 h 30 (bus)"
           }
         }
       ]

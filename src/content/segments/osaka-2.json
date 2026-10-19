@@ -106,57 +106,6 @@
     },
     {
       "date": "2026-10-25",
-      "title": "Katsuo-ji · Minoh",
-      "status": "plan",
-      "activities": [
-        {
-          "id": "katsuoji",
-          "title": "Katsuo-ji",
-          "category": "templo",
-          "status": "plan",
-          "priority": "must",
-          "notes": "Templo de los darumas.",
-          "locationQuery": "Katsuo-ji",
-          "plan": [
-            "Ir a Katsuo-ji como visita principal de la mañana.",
-            "Recorrer el templo de los darumas con calma antes de continuar hacia Minoh."
-          ],
-          "time": "~09:00",
-          "transit": {
-            "from": "APA Hommachi",
-            "summary": "Midosuji Line / Kita-Osaka Kyuko directa Hommachi → Minoh-Kayano; desde allí Hankyu Bus directo → Katsuo-ji.",
-            "approximateDuration": "~60–75 min",
-            "steps": [
-              "Entrar en Hommachi (M18) y tomar un servicio hacia Minoh-Kayano.",
-              "No bajar en Esaka: la línea continúa como Kita-Osaka Kyuko hasta Minoh-Kayano.",
-              "En Minoh-Kayano tomar el Hankyu Bus directo a Katsuo-ji (~20 min)."
-            ]
-          },
-          "goshuin": true,
-          "description": "Katsuo-ji es el «templo de la victoria» de Minoh, un monasterio budista famoso por sus pequeños daruma rojos. Sus raíces se remontan al siglo VIII y su nombre se relaciona con la tradición de oraciones eficaces por la salud de un emperador. En el culto contemporáneo se interpreta la victoria no tanto como derrotar a los demás sino como superar la propia debilidad y perseverar. Los daruma suelen comprarse para fijar una meta: se pinta un ojo al formularla y el segundo al cumplirla. Los cientos de daruma colocados por el recinto son ofrendas de agradecimiento y esperanza. Observa los estanques, senderos y rincones donde aparecen."
-        },
-        {
-          "id": "minoh",
-          "title": "Minoh Park / cascada",
-          "category": "naturaleza",
-          "status": "plan",
-          "locationQuery": "Minoh Park",
-          "plan": [
-            "Pasear por Minoh Park hasta la cascada según fuerzas y tiempo.",
-            "Si el día se alarga, priorizar el paseo principal y volver sin apurar."
-          ],
-          "time": "~13:00",
-          "transit": {
-            "from": "Katsuo-ji",
-            "summary": "Hankyu Bus de vuelta hacia Minoh-Kayano; desde allí conectar hacia la zona de Minoh Park según el bus/estado del día.",
-            "approximateDuration": "30–45 min",
-            "note": "Si el enlace a Minoh Park se vuelve torpe, taxi corto desde Katsuo-ji/Minoh-Kayano puede ahorrar bastante tiempo."
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-26",
       "title": "Osaka · recuperar pendientes",
       "status": "plan",
       "activities": [
@@ -183,6 +132,66 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Cumpleaños de Lorena · Katsuo-ji y Minoh",
+      "status": "plan",
+      "activities": [
+        {
+          "id": "katsuoji",
+          "title": "Katsuo-ji · cumpleaños de Lorena",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "notes": "Lunes: 8:00–17:00, última entrada 16:30. Entrada web opcional para saltarse la cola de la taquilla. El bus 30 de Hankyu desde Minoh-Kayano (parada 8) es SOLO SIN EFECTIVO desde el 01/10/2026: llevar IC con saldo (no se recarga en el bus). Taxi alternativo desde Minoh-Kayano ~20 min, ~3.400 ¥.",
+          "locationQuery": "Katsuo-ji",
+          "plan": [
+            "Ir a Katsuo-ji como visita principal de la mañana.",
+            "Recorrer el templo de los darumas con calma antes de continuar hacia Minoh."
+          ],
+          "time": "~09:30",
+          "transit": {
+            "from": "APA Hommachi",
+            "summary": "Midosuji Line directa Hommachi → Minoh-Kayano (continúa como Kita-Osaka Kyuko; no bajar en Esaka) → bus Hankyu 30 → Katsuo-ji.",
+            "approximateDuration": "~70 min",
+            "steps": [
+              "Midosuji Line desde Hommachi hacia Minoh-Kayano.",
+              "Bus Hankyu nº 30, parada 8, ~25 min, 800 ¥ solo IC/tarjeta.",
+              "Salidas cada 10–20 min por la mañana."
+            ]
+          },
+          "goshuin": true,
+          "description": "Katsuo-ji es el «templo de la victoria» de Minoh, un monasterio budista famoso por sus pequeños daruma rojos. Sus raíces se remontan al siglo VIII y su nombre se relaciona con la tradición de oraciones eficaces por la salud de un emperador. En el culto contemporáneo se interpreta la victoria no tanto como derrotar a los demás sino como superar la propia debilidad y perseverar. Los daruma suelen comprarse para fijar una meta: se pinta un ojo al formularla y el segundo al cumplirla. Los cientos de daruma colocados por el recinto son ofrendas de agradecimiento y esperanza. Observa los estanques, senderos y rincones donde aparecen.",
+          "approximatePrice": "500 ¥ entrada + 800 ¥ bus x2 = 2.100 ¥/persona",
+          "duration": "~1 h 30 min",
+          "links": {
+            "officialWebsite": "https://katsuo-ji-temple.or.jp/access/index.php",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Katsuo-ji%20Minoh"
+          }
+        },
+        {
+          "id": "minoh",
+          "title": "Cascada de Minoh y bajada a pie",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Minoh Park",
+          "plan": [
+            "Pasear por Minoh Park hasta la cascada según fuerzas y tiempo.",
+            "Si el día se alarga, priorizar el paseo principal y volver sin apurar."
+          ],
+          "time": "~11:30",
+          "transit": {
+            "from": "Katsuo-ji",
+            "summary": "Taxi corto hasta la zona de la cascada; después a pie río abajo.",
+            "approximateDuration": "~20 min hasta la cascada"
+          },
+          "approximatePrice": "Taxi ~1.500 ¥ (total, no por persona) + tren de vuelta",
+          "duration": "~2 h",
+          "notes": "Desde Katsuo-ji, taxi ~10 min hasta el aparcamiento más cercano y ~10 min a pie a la cascada (el templo tiene teléfono gratuito para pedir taxi). Bajada por el sendero del río hasta la estación Hankyu Minoh, ~40 min cuesta abajo. Comer en Minoh. Vuelta: Hankyu a Umeda y Midosuji a Hommachi."
+        }
+      ],
+      "note": "Lunes laborable: horario de Katsuo-ji 8:00–17:00. Comida principal en Minoh; cena libre."
     },
     {
       "date": "2026-10-27",

@@ -18,6 +18,17 @@
 - **Llegadas en directo:** hora llegada confirmada != visita terminada. Adashino alcanzado REALMENTE a las **12:25 del 15/10**; salida no comunicada. Otagi ETA 11:25 del coche, no llegada certificada. Ahora **Gokō-yu confirmado visitado el 15** (sin hora). No marcar otras visitas intermedias de hoy como hechas sin declaración explícita. Mantener la pantalla sin tachados ni etiquetas de «hecho»/«confirmado».
 - **Mapa y modo Hoy:** Revisar `day.activities` y `mapStages` por separado. Las fichas opcionales aparecen donde encajan; el mapa base no las obliga a visitar. Si se seleccionan en mapa, usar `mapBeforeId` para insertarlas ANTES del punto adecuado y NUNCA añadirlas tras el hotel, tras una cena ya realizada o tras el baño. Cualquier modificación obliga a revisar también `transit.from/summary` y validar con tests ambos comportamientos.
 
+## Hiroshima y Osaka 20–28/10 · decisiones del 19/10 noche
+
+- **Formato de fichas pedido por Jaime:** cada actividad lleva `approximatePrice` real (por persona salvo que se diga) y notas útiles (horario, última entrada, cierres, cómo llegar). Nada de frases tipo «Jaime y Lorena quieren…». Marcar «(estimado)» lo que no esté verificado.
+- **Comida principal al mediodía; la cena es libre** (normalmente konbini). No crear tarjetas de cena salvo petición expresa.
+- **20/10:** tren elegido NOZOMI 3, Kyoto 08:26 → Hiroshima 10:02 (captura de la máquina; compra/asiento no confirmados). Okonomimura es la COMIDA del 20. Sin Museo de la Paz. Shukkei-en añadido (9:00–17:00, 350 ¥).
+- **Castillo de Hiroshima: torreón CERRADO desde marzo de 2026**; solo exterior y Ninomaru gratis.
+- **21/10 lluvia (70–80 %) y 22/10 sol (10–20 %, fiabilidad A): Miyajima va el 22.** 21 con dos opciones bajo techo (Kure o Hiroshima). Mareas 22/10: pleamar 06:52/19:24, bajamar 13:00 (109 cm, no se llega andando al torii). Entrada al santuario 16:50 para verlo «flotar».
+- **23/10:** transporte Hiroshima → Osaka PENDIENTE de elegir (Nozomi 10.950 ¥ / Kodama Shitei-seki Kippu 7.810 ¥ para 2+ por e5489 hasta el día antes / bus WILLER ~2.700–3.200 ¥, ~6 h).
+- **26/10 es el cumpleaños de Lorena: Katsuo-ji + Minoh ese día (lunes, 8:00–17:00).** Los pendientes de Osaka pasan al 25. Bus Hankyu 30 solo sin efectivo desde 01/10/2026.
+- Listas de Google Maps de Lorena: NO se publican en este repo (están en documentación privada del Proyecto).
+
 ## Miércoles 14/10/2026 — hechos y cierre de la jornada
 
 - **Hechos confirmados:** salida real del RESI STAY Yasaka **08:30**, subida al autobús **09:15**; **09:44** solo ETA del bus. No convertir en visitas realizadas Ginkaku-ji, Hōnen-in, Filósofo ni Eikan-dō sin confirmación del usuario. En **cafe LCM** estaban comiendo a las **14:22** (comienzo **~14:12** estimado). En **Nanzen-ji** presencia real a las **15:15** y posteriormente SALIERON, sin comunicar hora exacta de salida. En **Heian Jingū** llegada REAL a las **16:10**.
