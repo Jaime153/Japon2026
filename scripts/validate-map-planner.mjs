@@ -471,7 +471,7 @@ const kyoto20logistics = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
 const kyotoHiroshima=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
 assert(kyotoHiroshima?.notes?.includes('EQUIPAJE LIGERO') &&
   kyotoHiroshima?.notes?.includes('SI el envío') &&
-  kyotoHiroshima?.notes?.includes('20 al 23') &&
+  kyotoHiroshima?.notes?.includes('tres días') &&
   kyotoHiroshima?.plan?.[0]?.includes('resguardo privado'),
   '20/10: Kyoto→Hiroshima ligero, solo si se envió la maleta grande');
 const osakaTwo=segments.find(s=>s.hotel?.name ===
@@ -480,7 +480,7 @@ const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
 const collect=osakaFri?.activities.find(a=>a.id==='recoger-maletas-osaka-1023');
 assert(collect?.status==='plan' && !collect?.visited &&
   collect?.notes?.includes('22/10') && collect?.notes?.includes('23/10') &&
-  collect?.notes?.includes('NO hay comprobante de envío') &&
+  collect?.notes?.includes('TODAVÍA no hay comprobante de envío') &&
   osakaFri?.activities[0]?.id==='recoger-maletas-osaka-1023',
   '23/10: recogida en APA Osaka condicional, primera gestión al llegar desde Hiroshima');
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
