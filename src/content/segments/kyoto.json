@@ -1611,9 +1611,10 @@
       "mapStages": [
         {
           "id": "yamato-ya-entregado-1019",
-          "title": "Histórico: maletas entregadas a Yamato",
+          "title": "Referencia histórica · maletas ya entregadas (ruta exacta no confirmada)",
           "mode": "mixed",
           "activityIds": [
+            "@hotel-start",
             "yamato-gion-a-osaka-1019"
           ]
         },
