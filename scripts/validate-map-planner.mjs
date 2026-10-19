@@ -411,42 +411,69 @@ if (kyoto19) {
   const day = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
     ?.days.find(d=>d.date==='2026-10-19');
   const ids=day?.activities.map(a=>a.id)||[];
-  const core=['nishiki','teramachi-shinkyogoku-1019',
-    'kamo-shijo-1019','regreso-resi-libre-1019'];
-  assert(ids.join(',') === [
-    'nishiki','teramachi-shinkyogoku-1019',
+  const expected=[
+    'yamato-gion-a-osaka-1019','nishiki','teramachi-shinkyogoku-1019',
     'kamo-shijo-1019','gion-shirakawa-1019','regreso-resi-libre-1019'
-  ].join(','),
-    '19/10: día chill SOLO mercado, galerías, río Kamo y Gion opcional');
+  ];
+  assert(ids.join(',')===expected.join(','),
+    '19/10: Yamato primero al salir, luego Nishiki/galerias/Kamo sin maletas');
   assert(!ids.some(id => ['tofukuji-1019','sanjusangendo','tobichi-kyoto',
     'baikoan-matcha-2025','onsen-kyoto','ramen-sen-no-kaze','tonkatsu-yamamoto'].includes(id)),
-    '19/10: NO incluir templos de pago, TOBICHI ni compras/comidas antiguas');
+    '19/10: NO incluir templos de pago, TOBICHI ni extras antiguos');
   assert(day?.activities.every(a => a.category!=='templo' && !a.goshuin) &&
     day.activities.every(a => !a.visited),
-    '19/10: sin templos de pago, goshuin ni visitas futuras inventadas');
-  assert(day?.activities.find(a=>a.id==='nishiki')?.priority==='must' &&
-    day?.activities.find(a=>a.id==='nishiki')?.notes.includes('GRATUITA'),
-    '19/10: Nishiki es la prioridad de Lorena con entrada gratuita');
-  const stages = kyoto19.stages;
-  const idsMap=stages.flatMap(st=>st.stops.map(x=>x.id));
-  assert(stages.length===4 && stages.every(x=>x.mode==='walk') &&
-    stages[0].stops[0].kind==='hotel' && stages.at(-1).stops.at(-1).kind==='hotel',
-    '19/10: ruta sencilla de paseo, sin transporte obligatorio, inicio y fin RESI');
-  for(const id of core) assert(idsMap.includes(id),'19/10: falta parada '+id);
-  assert(idsMap.indexOf('nishiki') < idsMap.indexOf('teramachi-shinkyogoku-1019') &&
-    idsMap.indexOf('teramachi-shinkyogoku-1019') < idsMap.indexOf('kamo-shijo-1019') &&
-    idsMap.indexOf('kamo-shijo-1019') < idsMap.indexOf('regreso-resi-libre-1019'),
-    '19/10: mercado → galerías contiguas → río Kamo → RESI');
+    '19/10: sin templos, goshuin, ni envío dado por completado sin confirmación');
+  const yamato=day?.activities[0];
+  assert(yamato?.category==='transporte' && yamato?.status==='plan' &&
+    yamato?.priority==='must' && yamato?.time==='Al salir' &&
+    yamato?.locationQuery.includes('京都祇園営業所') &&
+    yamato?.notes.includes('162620') && yamato?.notes.includes('08:00 a 19:00'),
+    '19/10: PRIMERA gestión en Yamato Gion cuando salgan del RESI; aún pendiente');
+  assert(yamato?.notes.includes('NO REALIZADA') &&
+    yamato?.notes.includes('22/10') && yamato?.notes.includes('23/10') &&
+    yamato?.notes.includes('南本町4-2-9') &&
+    yamato?.notes.includes('PREPAGADO') && yamato?.notes.includes('furigana'),
+    '19/10: destino APA Osaka, entrega 22 y check-in 23, sin fingir envío');
+  assert(day?.activities[1]?.id==='nishiki' &&
+    day.activities[1]?.priority==='must' &&
+    day.activities[1]?.notes.includes('GRATUITA') &&
+    day.activities[1]?.transit?.from.includes('Yamato'),
+    '19/10: desde Yamato se va a Nishiki sin maletas ni vuelta intermedia al RESI');
+  const stages=kyoto19.stages;
+  const routes=stages.map(st=>st.stops.map(x=>x.id).join(','));
+  assert(stages.length===5 && stages.every(x=>x.mode==='walk') &&
+    routes[0]==='@hotel-start,yamato-gion-a-osaka-1019' &&
+    routes[1]==='yamato-gion-a-osaka-1019,nishiki' &&
+    routes[2]==='nishiki,teramachi-shinkyogoku-1019' &&
+    routes[3]==='teramachi-shinkyogoku-1019,kamo-shijo-1019' &&
+    routes[4]==='kamo-shijo-1019,regreso-resi-libre-1019,@hotel-end',
+    '19/10: mapa RESI→Yamato→Nishiki→galerias→Kamo→RESI sin desvíos');
   const gion=day?.activities.find(a=>a.id==='gion-shirakawa-1019');
   assert(gion?.status==='opcional' && gion?.mapBeforeId==='regreso-resi-libre-1019' &&
     kyoto19.optional.some(x=>x.id==='gion-shirakawa-1019') &&
-    !idsMap.includes('gion-shirakawa-1019'),
-    '19/10: Gion Shirakawa opcional en su sitio, no forzada en ruta base');
-  assert(day?.note.includes('Hobonichi') && day?.note.includes('TOBICHI NO se visita'),
-    '19/10: agenda Hobonichi ya comprada, TOBICHI NO pendiente');
-  assert(day?.note.includes('Hiroshima') && day?.note.includes('martes 20'),
-    '19/10: preparar maletas para salida a Hiroshima al día siguiente');
+    !routes.join(',').includes('gion-shirakawa-1019'),
+    '19/10: Gion Shirakawa opcional sin añadir trayectos obligatorios');
+  assert(day?.note.includes('Hobonichi') && day?.note.includes('TOBICHI NO se visita') &&
+    day?.note.includes('ENVIAR HOY') && day?.note.includes('PRIMERO AL SALIR'),
+    '19/10: TOBICHI no vuelve, Yamato prioritario y todavía no entregado');
 }
+const kyoto20logistics = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
+  ?.days.find(d=>d.date==='2026-10-20');
+const kyotoHiroshima=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
+assert(kyotoHiroshima?.notes?.includes('EQUIPAJE LIGERO') &&
+  kyotoHiroshima?.notes?.includes('SI el envío') &&
+  kyotoHiroshima?.notes?.includes('tres días') &&
+  kyotoHiroshima?.plan?.[0]?.includes('resguardo privado'),
+  '20/10: Kyoto→Hiroshima ligero, solo si se envió la maleta grande');
+const osakaTwo=segments.find(s=>s.hotel?.name ===
+  'APA Hotel & Resort Midosuji Hommachi Ekimae Tower');
+const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
+const collect=osakaFri?.activities.find(a=>a.id==='recoger-maletas-osaka-1023');
+assert(collect?.status==='plan' && !collect?.visited &&
+  collect?.notes?.includes('22/10') && collect?.notes?.includes('23/10') &&
+  collect?.notes?.includes('TODAVÍA no hay comprobante de envío') &&
+  osakaFri?.activities[0]?.id==='recoger-maletas-osaka-1023',
+  '23/10: recogida en APA Osaka condicional, primera gestión al llegar desde Hiroshima');
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
 // La planificación anterior tenía horas previstas, pero el viaje ya ocurrió.
