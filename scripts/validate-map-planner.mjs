@@ -418,18 +418,18 @@ if (kyoto19) {
   const yam=day?.activities.find(a=>a.id==='yamato-gion-a-osaka-1019');
   assert(yam?.visited===true && yam?.status==='confirmado' && yam?.time===undefined &&
     yam?.notes.includes('YA ESTÁN ENTREGADAS') &&
-    yam?.notes.includes('NO está confirmada') &&
+    yam?.notes.includes('RECOMENDACIÓN') && yam?.notes.includes('recepción en hotel') &&
     !yam?.priority,'19/10: YA ENTREGADAS a Yamato, hora/sucursal/recepción no inventadas');
   const star=day?.activities.find(a=>a.id==='star-restaurant-1019');
   assert(star?.category==='comida' && star?.visited===true &&
     star?.status==='confirmado' && star?.time===undefined &&
     star?.locationQuery.includes('中之町539') &&
-    star?.notes.includes('TERMINANDO'),
+    star?.notes.includes('terminando de comer'),
     '19/10: comida REAL en Star Restaurant, no inventar horario');
   const hotel=day?.activities.find(a=>a.id==='hotel-antes-baikoan-1019');
   const baikoan=day?.activities.find(a=>a.id==='baikoan-matcha-1019');
   assert(hotel?.status==='plan' && hotel?.visited!==true &&
-    hotel?.notes.includes('PRIMERO') &&
+    hotel?.notes.includes('volver primero') &&
     baikoan?.status==='plan' && baikoan?.visited!==true &&
     baikoan?.time==='Antes 19:00' &&
     baikoan?.notes.includes('46-1') &&
@@ -470,7 +470,7 @@ const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
 const collect=osakaFri?.activities.find(a=>a.id==='recoger-maletas-osaka-1023');
 assert(collect?.status==='plan' && !collect.visited &&
   collect?.notes.includes('YA FUERON ENTREGADAS') &&
-  collect?.notes.includes('NO está confirmada') &&
+  collect?.notes.includes('No está confirmada') &&
   osakaFri?.activities[0]?.id==='recoger-maletas-osaka-1023',
   '23/10: Yamato recibido de Jaime, llegada al APA y recogida aún pendientes');
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
