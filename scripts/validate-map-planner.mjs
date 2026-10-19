@@ -411,42 +411,78 @@ if (kyoto19) {
   const day = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
     ?.days.find(d=>d.date==='2026-10-19');
   const ids=day?.activities.map(a=>a.id)||[];
-  const core=['nishiki','teramachi-shinkyogoku-1019',
-    'kamo-shijo-1019','regreso-resi-libre-1019'];
-  assert(ids.join(',') === [
-    'nishiki','teramachi-shinkyogoku-1019',
-    'kamo-shijo-1019','gion-shirakawa-1019','regreso-resi-libre-1019'
-  ].join(','),
-    '19/10: día chill SOLO mercado, galerías, río Kamo y Gion opcional');
+  const expected=[
+    'nishiki','teramachi-shinkyogoku-1019','kamo-shijo-1019',
+    'gion-shirakawa-1019','regreso-resi-libre-1019','yamato-gion-a-osaka-1019'
+  ];
+  assert(ids.join(',')===expected.join(','),
+    '19/10: Nishiki chill y Yamato Gion como última tarea, sin desviar el paseo');
   assert(!ids.some(id => ['tofukuji-1019','sanjusangendo','tobichi-kyoto',
     'baikoan-matcha-2025','onsen-kyoto','ramen-sen-no-kaze','tonkatsu-yamamoto'].includes(id)),
-    '19/10: NO incluir templos de pago, TOBICHI ni compras/comidas antiguas');
+    '19/10: NO incluir templos de pago, TOBICHI ni extras antiguos');
   assert(day?.activities.every(a => a.category!=='templo' && !a.goshuin) &&
     day.activities.every(a => !a.visited),
-    '19/10: sin templos de pago, goshuin ni visitas futuras inventadas');
+    '19/10: sin templos, goshuin, ni envío dado por completado sin confirmación');
   assert(day?.activities.find(a=>a.id==='nishiki')?.priority==='must' &&
     day?.activities.find(a=>a.id==='nishiki')?.notes.includes('GRATUITA'),
-    '19/10: Nishiki es la prioridad de Lorena con entrada gratuita');
+    '19/10: Nishiki prioridad gratuita de Lorena');
+  const yamato=day?.activities.find(a=>a.id==='yamato-gion-a-osaka-1019');
+  assert(yamato?.category==='transporte' && yamato?.status==='plan' &&
+    yamato?.priority==='must' && yamato?.time==='Hoy, antes de 18:30' &&
+    yamato?.locationQuery.includes('京都祇園営業所') &&
+    yamato?.notes.includes('162620') && yamato?.notes.includes('08:00 a 19:00'),
+    '19/10: envío PENDIENTE hoy por Yamato Gion, antes de corte del día 18:30');
+  assert(yamato?.notes.includes('2026') && yamato?.notes.includes('22/10') &&
+    yamato?.notes.includes('23/10') &&
+    yamato?.notes.includes('南本町4-2-9') &&
+    yamato?.notes.includes('PREPAGADO') &&
+    yamato?.notes.includes('NO REALIZADA') &&
+    yamato?.notes.includes('furigana'),
+    '19/10: destino APA Osaka torre correcto, entrega 22, check-in 23, sin fingir envío');
+  assert(!day?.note.includes('Hiroshima→Osaka') || day.note.includes('SIN'),
+    '19/10: evitar doble envío desde Hiroshima');
   const stages = kyoto19.stages;
   const idsMap=stages.flatMap(st=>st.stops.map(x=>x.id));
-  assert(stages.length===4 && stages.every(x=>x.mode==='walk') &&
+  assert(stages.length===5 && stages.every(x=>x.mode==='walk') &&
     stages[0].stops[0].kind==='hotel' && stages.at(-1).stops.at(-1).kind==='hotel',
-    '19/10: ruta sencilla de paseo, sin transporte obligatorio, inicio y fin RESI');
-  for(const id of core) assert(idsMap.includes(id),'19/10: falta parada '+id);
+    '19/10: paseo a pie, regreso al hotel, Yamato Gion, regreso al RESI');
+  for(const id of ['nishiki','teramachi-shinkyogoku-1019',
+    'kamo-shijo-1019','regreso-resi-libre-1019','yamato-gion-a-osaka-1019'])
+    assert(idsMap.includes(id),'19/10: falta parada '+id);
   assert(idsMap.indexOf('nishiki') < idsMap.indexOf('teramachi-shinkyogoku-1019') &&
     idsMap.indexOf('teramachi-shinkyogoku-1019') < idsMap.indexOf('kamo-shijo-1019') &&
-    idsMap.indexOf('kamo-shijo-1019') < idsMap.indexOf('regreso-resi-libre-1019'),
-    '19/10: mercado → galerías contiguas → río Kamo → RESI');
+    idsMap.indexOf('kamo-shijo-1019') < idsMap.indexOf('regreso-resi-libre-1019') &&
+    idsMap.indexOf('regreso-resi-libre-1019') < idsMap.indexOf('yamato-gion-a-osaka-1019'),
+    '19/10: mercado→galerías→río→RESI→Yamato Gion en ese orden');
+  assert(stages.at(-1).stops.map(s=>s.id).join(',') ===
+    'regreso-resi-libre-1019,yamato-gion-a-osaka-1019,@hotel-end',
+    '19/10: último tramo prepara maletas en RESI, las envía en Yamato, vuelve RESI');
   const gion=day?.activities.find(a=>a.id==='gion-shirakawa-1019');
   assert(gion?.status==='opcional' && gion?.mapBeforeId==='regreso-resi-libre-1019' &&
     kyoto19.optional.some(x=>x.id==='gion-shirakawa-1019') &&
     !idsMap.includes('gion-shirakawa-1019'),
-    '19/10: Gion Shirakawa opcional en su sitio, no forzada en ruta base');
-  assert(day?.note.includes('Hobonichi') && day?.note.includes('TOBICHI NO se visita'),
-    '19/10: agenda Hobonichi ya comprada, TOBICHI NO pendiente');
-  assert(day?.note.includes('Hiroshima') && day?.note.includes('martes 20'),
-    '19/10: preparar maletas para salida a Hiroshima al día siguiente');
+    '19/10: Gion Shirakawa opcional sin interferir con envío');
+  assert(day?.note.includes('Hobonichi') && day?.note.includes('TOBICHI NO se visita') &&
+    day?.note.includes('Yamato Kyoto Gion'),
+    '19/10: no vuelve TOBICHI, se destaca envio de maletas');
 }
+const kyoto20logistics = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
+  ?.days.find(d=>d.date==='2026-10-20');
+const kyotoHiroshima=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
+assert(kyotoHiroshima?.notes?.includes('EQUIPAJE LIGERO') &&
+  kyotoHiroshima?.notes?.includes('SI el envío') &&
+  kyotoHiroshima?.notes?.includes('20 al 23') &&
+  kyotoHiroshima?.plan?.[0]?.includes('resguardo privado'),
+  '20/10: Kyoto→Hiroshima ligero, solo si se envió la maleta grande');
+const osakaTwo=segments.find(s=>s.hotel?.name ===
+  'APA Hotel & Resort Midosuji Hommachi Ekimae Tower');
+const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
+const collect=osakaFri?.activities.find(a=>a.id==='recoger-maletas-osaka-1023');
+assert(collect?.status==='plan' && !collect?.visited &&
+  collect?.notes?.includes('22/10') && collect?.notes?.includes('23/10') &&
+  collect?.notes?.includes('NO hay comprobante de envío') &&
+  osakaFri?.activities[0]?.id==='recoger-maletas-osaka-1023',
+  '23/10: recogida en APA Osaka condicional, primera gestión al llegar desde Hiroshima');
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
 // La planificación anterior tenía horas previstas, pero el viaje ya ocurrió.
