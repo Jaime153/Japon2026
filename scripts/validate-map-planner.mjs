@@ -428,7 +428,7 @@ if (kyoto19) {
     '19/10: Nishiki prioridad gratuita de Lorena');
   const yamato=day?.activities.find(a=>a.id==='yamato-gion-a-osaka-1019');
   assert(yamato?.category==='transporte' && yamato?.status==='plan' &&
-    yamato?.priority==='must' && yamato?.time==='Hoy, antes de 18:30' &&
+    yamato?.priority==='must' && yamato?.time==='Antes 18:30' &&
     yamato?.locationQuery.includes('京都祇園営業所') &&
     yamato?.notes.includes('162620') && yamato?.notes.includes('08:00 a 19:00'),
     '19/10: envío PENDIENTE hoy por Yamato Gion, antes de corte del día 18:30');
