@@ -337,26 +337,78 @@
     },
     {
       "date": "2026-10-23",
-      "title": "Hiroshima → Osaka",
+      "title": "Hiroshima → Osaka · elegir tren o bus",
       "status": "plan",
-      "note": "Previsión: sol por la mañana, lluvia por la tarde. Elegir transporte antes del 22 por la noche si se usa billete con descuento.",
+      "note": "Viernes 23/10. Check-out APA Hiroshima a las 10:00. Previsión: sol por la mañana, lluvia por la tarde. Elegir UNA de las tres opciones. La Kodama barata hay que comprarla como tarde el jueves 22 por internet; Nozomi se compra en el momento.",
       "activities": [
         {
-          "id": "hiroshima-osaka",
-          "title": "Traslado Hiroshima → Osaka (Hommachi)",
+          "id": "checkout-apa-hiroshima-1023",
+          "title": "Check-out APA Hiroshima",
           "category": "transporte",
-          "status": "pendiente",
-          "time": "por decidir",
-          "locationQuery": "Hommachi Station Osaka",
-          "notes": "Opciones por persona, solo ida: 1) Nozomi reservado Hiroshima → Shin-Osaka 10.950 ¥, ~1 h 25 min (estimado). 2) Kodama Shitei-seki Kippu 7.810 ¥: solo para 2 personas o más en el mismo tren, solo por la web e5489 de JR West y hasta el día antes; plaza reservada en un Kodama concreto, sin cambios; ~2 h 40–3 h (estimado). Ahorro: ~3.140 ¥/persona. 3) Bus WILLER Hiroshima Station (salida norte) → Umeda: 2.700–3.200 ¥, ~6 h (precios vistos para el 26/10; comprobar el 23). Ahorro máximo, pero se pierde el día. Después, Midosuji Line hasta Hommachi.",
+          "status": "plan",
+          "time": "antes 10:00",
+          "locationQuery": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+          "address": "広島県広島市南区荒神町1-4",
+          "approximatePrice": "0 ¥",
+          "notes": "Check-out hasta las 10:00. A 5 min a pie de la salida sur (南口) de Hiroshima Station. Si salís más tarde, preguntar en recepción si guardan las bolsas o usar taquillas de la estación."
+        },
+        {
+          "id": "kodama-hiroshima-osaka-1023",
+          "title": "Opción 1 · Kodama con descuento",
+          "category": "transporte",
+          "status": "opcional",
+          "time": "08:40 o 08:02",
+          "locationQuery": "Hiroshima Station Shinkansen",
+          "approximatePrice": "7.810 ¥/persona (15.620 ¥ los dos) · ahorro ~6.280 ¥",
+          "duration": "~2 h 25–2 h 45",
           "links": {
             "reservation": "https://www.jr-odekake.net/ticket/tokutoku/kodama_kippu/"
           },
-          "transit": {
-            "from": "APA Hiroshima",
-            "summary": "A pie a Hiroshima Station → tren o bus → Shin-Osaka/Umeda → Midosuji Line → Hommachi.",
-            "approximateDuration": "~2 h (Nozomi) · ~3 h 15 (Kodama) · ~6 h 30 (bus)"
-          }
+          "notes": "Billete «こだま指定席きっぷ» (Kodama Shitei-seki Kippu) de JR West: solo para 2 o más personas en el mismo tren, plaza reservada en ese tren concreto, sin cambios. Directos Hiroshima → Shin-Osaka vistos en horario de viernes 2026: Kodama 940 08:02→10:25 y Kodama 942 08:40→11:25 (por la tarde, 954 14:38→17:25). Confirmar en la web al reservar. Otras horas se pueden hacer cambiando en Okayama, solo entre trenes válidos.",
+          "plan": [
+            "CUÁNDO: comprar como tarde el jueves 22 antes de las 23:30. Se vende desde 1 mes antes. El mismo día 23 ya NO se puede.",
+            "DÓNDE: web e5489 de JR West (botón Reservar → e5489). Buscar Hiroshima (広島) → Shin-Osaka/Osaka (新大阪), viernes 23/10, 2 adultos, y elegir el producto «こだま指定席きっぷ».",
+            "PAGO: tarjeta en la web (pide 3D Secure). Si la tarjeta española falla, usar la opción 3 (Nozomi).",
+            "RECOGIDA: billete en papel en una máquina JR West con el logo 5489 de Hiroshima Station; hace falta la misma tarjeta, el número de reserva y el teléfono.",
+            "DESPUÉS: Shin-Osaka → Midosuji Line (metro) dirección Namba → Hommachi, 5 paradas; ~15 min."
+          ]
+        },
+        {
+          "id": "bus-hiroshima-osaka-1023",
+          "title": "Opción 2 · Bus a Umeda (lo más barato)",
+          "category": "transporte",
+          "status": "opcional",
+          "time": "08:35 o 08:40",
+          "locationQuery": "Hiroshima Station North Exit bus stop",
+          "approximatePrice": "~3.000–4.000 ¥/persona según empresa y día (ahorro ~14.000 ¥ los dos)",
+          "duration": "~5 h 25–6 h",
+          "links": {
+            "reservation": "https://www.kosokubus.com/_en/bus_list/00034-00620/00027-00518/",
+            "officialWebsite": "https://willerexpress.com/en/"
+          },
+          "notes": "Dos buses de mañana: WILLER EXPRESS sale 08:35 de Hiroshima Station salida norte (北口) → Umeda 14:00, ~3.000–3.300 ¥ (precio dinámico). JR Bus «広島エクスプレス大阪» sale 08:40 de Hiroshima Station salida del Shinkansen → JR Osaka Station (terminal de autobuses JR) 14:05; otro a las 10:40 → 16:05; tarifa 3.500–8.500 ¥ según día. Paradas para baño en áreas de servicio. Se pierde casi todo el día, pero es el mayor ahorro.",
+          "plan": [
+            "CUÁNDO: reservar ya; las tarifas bajas se agotan. Se puede hasta el mismo día si queda plaza.",
+            "DÓNDE: botón Reservar (kosokubus.com en inglés, compara WILLER/JR Bus) o Web oficial de WILLER en inglés. Origen Hiroshima Station, destino Osaka Umeda, 23/10, 2 adultos.",
+            "ESTAR en la parada 15 min antes. Ojo: WILLER sale de la salida NORTE; el hotel está en la salida SUR (cruzar la estación, ~10 min con bolsas).",
+            "DESPUÉS: Umeda → Midosuji Line → Hommachi, 2 paradas; ~10 min."
+          ]
+        },
+        {
+          "id": "nozomi-hiroshima-osaka-1023",
+          "title": "Opción 3 · Nozomi sin reservar antes",
+          "category": "transporte",
+          "status": "opcional",
+          "time": "cuando queráis",
+          "locationQuery": "Hiroshima Station Shinkansen",
+          "approximatePrice": "10.950 ¥/persona con asiento reservado",
+          "duration": "~1 h 25 (estimado)",
+          "notes": "La más cara pero la más flexible: varios Nozomi por hora. Plan B si falla la compra de la Kodama o se decide tarde.",
+          "plan": [
+            "CUÁNDO: el mismo día 23, en la estación.",
+            "DÓNDE: máquinas de billetes JR o ventanilla みどりの窓口 de Hiroshima Station. Destino Shin-Osaka, asiento reservado.",
+            "DESPUÉS: Shin-Osaka → Midosuji Line → Hommachi; ~15 min."
+          ]
         }
       ]
     }
