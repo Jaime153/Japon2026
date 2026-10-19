@@ -1496,28 +1496,54 @@
     },
     {
       "date": "2026-10-19",
-      "title": "Nishiki chill + enviar maletas a Osaka",
+      "title": "Primero Yamato a Osaka → Nishiki chill y paseo gratis",
       "status": "plan",
-      "note": "LUNES 19/10, ÚLTIMO DÍA COMPLETO EN KIOTO antes de Hiroshima el martes 20. DECISIÓN NUEVA: día CHILL, GRATIS O MUY BARATO, SIN templos con entrada obligatoria y SIN recoger más goshuin (no hace falta completar el libro en Kioto). PRIORIDAD EL MERCADO NISHIKI DE LORENA, gratuito de recorrer; después galerías Teramachi/Shinkyōgoku, río Kamo y Gion Shirakawa solo como paseo OPCIONAL. Inicio orientativo 10:00 desde RESI; no madrugar ni poner horas rígidas. Ya compraron la Hobonichi de Lorena, así que TOBICHI NO se visita y NO debe aparecer como compra pendiente. Se RETIRAN de este día los antiguos Tōfuku-ji (jardines/puente de pago), Sanjūsangendō (entrada de pago), Baikoan en el oeste, baños y locales de comida inconexos. No marcarlos realizados ni trasladarlos a otra fecha automáticamente: eran intenciones anteriores, ahora sustituidas por paseo barato. Después del paseo, regresar al RESI, separar equipaje ligero para Hiroshima (20–23) y ENVIAR HOY las maletas grandes DIRECTAMENTE al APA HOTEL & RESORT MIDOSUJI HOMMACHI EKIMAE TOWER de Osaka para la entrada del 23/10. Yamato Kyoto Gion (162620), cierre 19:00 y corte envío mismo día 18:30. Pedir entrega EL 22/10 (día previo), indicar titular y fecha de check-in y pagar portes; NO usar contrarreembolso. El APA dice que acepta entregas pre-check-in, y Yamato permite seleccionar fecha. El envío NO está realizado aún; resguardo y aceptación pendientes. Una vez hecho, tarde/noche libre.",
+      "note": "LUNES 19/10, ÚLTIMO DÍA COMPLETO EN KIOTO antes de Hiroshima el martes 20. DECISIÓN NUEVA: día CHILL, GRATIS O MUY BARATO, SIN templos con entrada obligatoria y SIN recoger más goshuin (no hace falta completar el libro en Kioto). PRIORIDAD EL MERCADO NISHIKI DE LORENA, gratuito de recorrer; después galerías Teramachi/Shinkyōgoku, río Kamo y Gion Shirakawa solo como paseo OPCIONAL. Salida flexible desde el RESI: primera gestión Yamato Gion con maletas, después Nishiki sin ellas; no poner una hora real de salida que Jaime no haya comunicado. Ya compraron la Hobonichi de Lorena, así que TOBICHI NO se visita y NO debe aparecer como compra pendiente. Se RETIRAN de este día los antiguos Tōfuku-ji (jardines/puente de pago), Sanjūsangendō (entrada de pago), Baikoan en el oeste, baños y locales de comida inconexos. No marcarlos realizados ni trasladarlos a otra fecha automáticamente: eran intenciones anteriores, ahora sustituidas por paseo barato. PRIMERO AL SALIR DEL RESI, separar equipaje ligero para Hiroshima (20–23) y ENVIAR HOY las maletas grandes DIRECTAMENTE al APA HOTEL & RESORT MIDOSUJI HOMMACHI EKIMAE TOWER de Osaka para la entrada del 23/10. Yamato Kyoto Gion (162620), cierre 19:00 y corte envío mismo día 18:30. Pedir entrega EL 22/10 (día previo), indicar titular y fecha de check-in y pagar portes; NO usar contrarreembolso. El APA dice que acepta entregas pre-check-in, y Yamato permite seleccionar fecha. El envío NO está realizado aún; resguardo y aceptación pendientes. Después de depositarlas en Yamato (entrega aún NO confirmada), ir directamente SIN maletas al mercado Nishiki; después Teramachi/Shinkyōgoku, río Kamo y Gion Shirakawa opcional. Las horas del paseo son flexibles. Regresar al RESI cuando os apetezca y dejar la tarde/noche libre.",
       "activities": [
+        {
+          "id": "yamato-gion-a-osaka-1019",
+          "title": "Primero: enviar maletas a Osaka · Yamato Gion",
+          "category": "transporte",
+          "status": "plan",
+          "priority": "must",
+          "time": "Al salir",
+          "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
+          "notes": "PRÓXIMA GESTIÓN AL SALIR, TODAVÍA PENDIENTE Y NO REALIZADA: Jaime y Lorena quieren enviar HOY lunes 19/10 las maletas grandes DIRECTAMENTE desde Kioto a su próximo hotel de Osaka para viajar a Hiroshima del 20 al 23 solo con mochila/bolsa pequeña, evitando dos envíos Kioto→Hiroshima→Osaka. OFICINA PROPUESTA próxima a la zona Gion/RESI: Yamato Transport 京都祇園営業所, código 162620, 〒605-0074 京都府京都市東山区祇園町南側570-228. Abre todos los días de 08:00 a 19:00, corte para ENVÍO EN EL MISMO DÍA a las 18:30; confirmar sobre el terreno cualquier servicio más tarde. DESTINO EXACTO (no confundir con otro APA cercano): APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 〒541-0054 大阪府大阪市中央区南本町4-2-9, tel. 0570-068-911. Check-in REAL PROGRAMADO 23/10/2026 (NO confirmado como hecho). Pedir Yamato TA-Q-BIN PREPAGADO con ENTREGA EL 22/10, día previo al check-in, y que el hotel lo guarde para el 23. El APA oficial confirma recepción anticipada con porte pagado siempre que el documento indique fecha de check-in y nombre completo de titular de la reserva con furigana; confirmar con el hotel si hay dudas, especialmente si llegada temprana, y nunca enviar contra reembolso. Yamato permite solicitar fecha diferida dentro de 7 días de la llegada a su oficina local; confirmar fecha de entrega con personal. No inventar precio, nº de maletas ni destinatario exacto, e indicar nombre REAL de la reserva únicamente al completar etiqueta, no en JSON público. Guardar números de seguimiento PRIVADOS, no publicar en la web. En Hiroshima del 20 al 23 llevar ropa, medicación, baterías y objetos de valor suficientes; separar lo que necesitéis esos tres días. Fuentes oficiales: https://locations.kuronekoyamato.co.jp/p/yamato01/dtl/162620/ ; https://www.apahotel.com/resort/midosuji-honmachi-eki-tower/faq/ ; https://www.apahotel.com/resort/midosuji-honmachi-eki-tower/access/ ; https://faq-en.kuronekoyamato.co.jp/app/answers/detail/a_id/5394/~/when-sending-a-parcel%2C-how-long-can-i-specify-the-delivery-date%3F . NUEVA INDICACIÓN DE JAIME 19/10: cuando salgan, van PRIMERO a ENTREGAR LAS MALETAS para dejarlo resuelto ANTES de continuar el paseo por Nishiki. Salida/hora exacta todavía no comunicadas, y entrega en Yamato aún no confirmada. El plazo oficial de atención sigue siendo hasta las 19:00, con corte de salida del mismo día 18:30.",
+          "transit": {
+            "from": "RESI STAY Yasaka, 28 Bishamonchō (con maletas grandes)",
+            "summary": "Recoger maletas ya preparadas en RESI y llevarlas andando o en taxi a la oficina Yamato Kyoto Gion, en Gionmachi Minamigawa 570-228. Tras depositarlas volver al RESI. No hay que ir a Kyoto Station ni a Hiroshima a enviar maletas.",
+            "approximateDuration": "~10–20 min a pie entre RESI y oficina (orientativo, según peso/ritmo)"
+          },
+          "plan": [
+            "AL SALIR desde el RESI con las maletas grandes, ir PRIMERO a Yamato Gion (oficina 162620) y entregarlas para Osaka. No llevar maletas grandes al mercado Nishiki.",
+            "Antes de entregar, separar en mochila/bolsa todo lo necesario en Hiroshima del 20 al 23: ropa, documentación, medicación, cargadores, baterías y objetos de valor.",
+            "Destino: APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 〒541-0054 大阪市中央区南本町4-2-9. Pedir entrega 22/10, indicar check-in 23/10 y nombre REAL de la reserva; envío PREPAGADO. Confirmar aceptación y fecha con Yamato.",
+            "No marcar envío completado hasta confirmar que se han entregado las maletas y hay resguardo. Guardar tracking PRIVADO, no en esta web.",
+            "Una vez entregadas, seguir LIGEROS directamente a Nishiki Market, sin volver al RESI por obligación."
+          ],
+          "links": {
+            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/dtl/162620/",
+            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8+%E4%BA%AC%E9%83%BD%E7%A5%87%E5%9C%92%E5%96%B6%E6%A5%AD%E6%89%80+570-228"
+          }
+        },
         {
           "id": "nishiki",
           "title": "Nishiki Market · mercado de Lorena",
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "time": "~10:30–12:15",
+          "time": "~11:30–13:00",
           "locationQuery": "Nishiki Market, Kyoto",
-          "notes": "La prioridad real del lunes 19: paseo tranquilo por Nishiki Market (錦市場), cerca del centro de Kioto. Entrada a la calle del mercado GRATUITA: solo se paga lo que se decida comer o comprar. Cada puesto tiene horarios y días de cierre propios, NO hay una hora universal de apertura; alrededor de 10:30–11:00 suele encajar mejor que muy temprano. La asociación oficial pide NO comer mientras se camina, sino delante o dentro del local vendedor. Desde RESI STAY Yasaka, paseo ~25–35 min hacia Gion-Shijō, cruzando el río hasta las calles de Nishiki. Fuente oficial https://www.kyoto-nishiki.or.jp/en/contact/ . Sin obligación de gastar ni de visitar templos/recoger goshuin.",
+          "notes": "La prioridad real del lunes 19: paseo tranquilo por Nishiki Market (錦市場), cerca del centro de Kioto. Entrada a la calle del mercado GRATUITA: solo se paga lo que se decida comer o comprar. Cada puesto tiene horarios y días de cierre propios, NO hay una hora universal de apertura; alrededor de 10:30–11:00 suele encajar mejor que muy temprano. La asociación oficial pide NO comer mientras se camina, sino delante o dentro del local vendedor. NUEVO ORDEN: primero dejar las maletas grandes en Yamato Kyoto Gion, luego ir SIN MALETAS desde Gion hacia Nishiki (a pie, unos 20–30 min estimados). No regresar al hotel entre Yamato y Nishiki. Fuente oficial https://www.kyoto-nishiki.or.jp/en/contact/ . Sin obligación de gastar ni de visitar templos/recoger goshuin.",
           "transit": {
-            "from": "RESI STAY Yasaka",
-            "summary": "Paseo a pie por Gion, Shijō-Ōhashi y Kawaramachi hasta Nishiki, sin transporte de pago obligatorio.",
-            "approximateDuration": "~25–35 min andando, a ritmo tranquilo"
+            "from": "Yamato Kyoto Gion (tras entregar las maletas)",
+            "summary": "Después del depósito de equipaje, caminar sin maletas hasta Nishiki pasando por Gion-Shijō y el puente Shijō-Ōhashi, sin visita intermedia obligatoria.",
+            "approximateDuration": "~20–30 min caminando, orientativo"
           },
           "plan": [
-            "Salir del RESI sin madrugar, aproximadamente a las 10:00 (no obligatorio).",
-            "Explorar el mercado con calma, probar algo si apetece sin presupuesto impuesto; sus puestos tienen horarios independientes.",
-            "Continuar por las galerías Teramachi/Shinkyōgoku al salir por el lado oriental del mercado."
+            "Primero entregar en Yamato Gion las maletas que van directamente a Osaka; solo continuar cuando estén entregadas o se haya resuelto cualquier incidencia.",
+            "Llegar a Nishiki sin equipaje grande, sobre las 11:30 o más tarde según lo que tarde el envío; horas flexibles.",
+            "Recorrer el mercado tranquilamente; los puestos tienen horarios propios, y comer/comprar es opcional. Después galerías Teramachi y Shinkyōgoku."
           ],
           "links": {
             "officialWebsite": "https://www.kyoto-nishiki.or.jp/en/"
@@ -1528,7 +1554,7 @@
           "title": "Teramachi y Shinkyōgoku · galerías gratis",
           "category": "compras",
           "status": "plan",
-          "time": "~12:15–13:45",
+          "time": "~13:00–14:15",
           "locationQuery": "Teramachi Kyogoku Shopping Street Kyoto",
           "notes": "Las dos galerías comerciales cubiertas están juntas, a pocos pasos del extremo ESTE de Nishiki Market. Callejear, ver tiendas, ropa, recuerdos y comer si hace falta, sin comprar nada obligatoriamente. Es un paseo GRATUITO: cada tienda tiene su propio horario; no se plantea entrar a templos, pagar entradas ni comprar goshuin. Sitios oficiales https://www.kyoto-teramachi.or.jp/ y https://www.shinkyogoku.or.jp/ . Si estáis cansados acortarlo y seguir al río.",
           "plan": [
@@ -1542,7 +1568,7 @@
           "title": "Río Kamo · paseo y descanso",
           "category": "ocio",
           "status": "plan",
-          "time": "~14:00",
+          "time": "~14:30",
           "locationQuery": "Shijo Ohashi Bridge, Kyoto",
           "notes": "Parada GRATIS para caminar por el río Kamo (鴨川), cerca de Shijō-Ōhashi, sentarse a descansar y disfrutar de Kioto sin visitas con entrada. Es un lugar abierto, no requiere reserva ni goshuin. Si ya habéis paseado bastante por Nishiki/Teramachi, terminar aquí sin añadir obligaciones. Desde las galerías se llega en ~10–15 min andando.",
           "plan": [
@@ -1566,51 +1592,34 @@
         },
         {
           "id": "regreso-resi-libre-1019",
-          "title": "Volver al RESI a preparar las maletas",
+          "title": "Regreso al RESI · tarde libre",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "RESI STAY Yasaka, 28 Bishamoncho, Higashiyama Ward, Kyoto",
-          "notes": "Tras Nishiki y el paseo por el río Kamo, regresar al RESI sin horario rígido. HOY queda una gestión importante y concreta: separar lo necesario para Hiroshima y mandar las MALETAS GRANDES directamente al APA de Osaka (check-in 23/10) mediante Yamato Gion. No programar templos ni compras adicionales. Una vez enviadas, tarde/noche libre.",
+          "notes": "Después del mercado Nishiki, las galerías, el río Kamo y opcionalmente Gion Shirakawa, volver al RESI cuando apetezca. Las maletas grandes se HAN DE ENTREGAR ANTES del mercado en Yamato Gion; NO dejar el envío como tarea final, pero tampoco marcarlo realizado hasta confirmación de Jaime. Quedaros con el equipaje ligero para Hiroshima del martes 20 al viernes 23. Tarde/noche libre y descanso.",
           "plan": [
-            "Volver al RESI cuando acabéis el paseo, dejando margen hasta el cierre de Yamato Gion a las 19:00 (corte salida el mismo día 18:30).",
-            "Preparar las maletas grandes para Osaka y la bolsa pequeña para Hiroshima del 20 al 23.",
-            "Llevar las maletas grandes a Yamato Gion, que es la siguiente y última gestión del día; después volver y descansar."
+            "Tras pasear por el río Kamo, volver al RESI sin horarios estrictos.",
+            "Las maletas grandes estaban previstas para entrega EN PRIMER LUGAR en Yamato: si aún no hay confirmación, comprobar el resguardo/estado antes de la salida del martes.",
+            "Tarde libre, dejar lista la bolsa de Hiroshima y descansar para el Shinkansen de mañana."
           ]
-        },
-        {
-          "id": "yamato-gion-a-osaka-1019",
-          "title": "Enviar maletas grandes a Osaka · Yamato Gion",
-          "category": "transporte",
-          "status": "plan",
-          "priority": "must",
-          "time": "Antes 18:30",
-          "locationQuery": "ヤマト運輸 京都祇園営業所 京都市東山区祇園町南側570-228",
-          "notes": "TAREA PENDIENTE, NO REALIZADA: Jaime y Lorena quieren enviar HOY lunes 19/10 las maletas grandes DIRECTAMENTE desde Kioto a su próximo hotel de Osaka para viajar a Hiroshima del 20 al 23 solo con mochila/bolsa pequeña, evitando dos envíos Kioto→Hiroshima→Osaka. OFICINA PROPUESTA próxima a la zona Gion/RESI: Yamato Transport 京都祇園営業所, código 162620, 〒605-0074 京都府京都市東山区祇園町南側570-228. Abre todos los días de 08:00 a 19:00, corte para ENVÍO EN EL MISMO DÍA a las 18:30; confirmar sobre el terreno cualquier servicio más tarde. DESTINO EXACTO (no confundir con otro APA cercano): APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 〒541-0054 大阪府大阪市中央区南本町4-2-9, tel. 0570-068-911. Check-in REAL PROGRAMADO 23/10/2026 (NO confirmado como hecho). Pedir Yamato TA-Q-BIN PREPAGADO con ENTREGA EL 22/10, día previo al check-in, y que el hotel lo guarde para el 23. El APA oficial confirma recepción anticipada con porte pagado siempre que el documento indique fecha de check-in y nombre completo de titular de la reserva con furigana; confirmar con el hotel si hay dudas, especialmente si llegada temprana, y nunca enviar contra reembolso. Yamato permite solicitar fecha diferida dentro de 7 días de la llegada a su oficina local; confirmar fecha de entrega con personal. No inventar precio, nº de maletas ni destinatario exacto, e indicar nombre REAL de la reserva únicamente al completar etiqueta, no en JSON público. Guardar números de seguimiento PRIVADOS, no publicar en la web. En Hiroshima del 20 al 23 llevar ropa, medicación, baterías y objetos de valor suficientes; separar lo que necesitéis esos tres días. Fuentes oficiales: https://locations.kuronekoyamato.co.jp/p/yamato01/dtl/162620/ ; https://www.apahotel.com/resort/midosuji-honmachi-eki-tower/faq/ ; https://www.apahotel.com/resort/midosuji-honmachi-eki-tower/access/ ; https://faq-en.kuronekoyamato.co.jp/app/answers/detail/a_id/5394/~/when-sending-a-parcel%2C-how-long-can-i-specify-the-delivery-date%3F .",
-          "transit": {
-            "from": "RESI STAY Yasaka, 28 Bishamonchō (con maletas grandes)",
-            "summary": "Recoger maletas ya preparadas en RESI y llevarlas andando o en taxi a la oficina Yamato Kyoto Gion, en Gionmachi Minamigawa 570-228. Tras depositarlas volver al RESI. No hay que ir a Kyoto Station ni a Hiroshima a enviar maletas.",
-            "approximateDuration": "~10–20 min a pie entre RESI y oficina (orientativo, según peso/ritmo)"
-          },
-          "plan": [
-            "Antes de salir a Nishiki o al volver, separar una mochila/bolsa para Hiroshima del 20 al 23: ropa, documentos, medicamentos, baterías y objetos de valor; el resto a Osaka.",
-            "Enviar las maletas grandes en Yamato 京都祇園営業所 (código 162620), cerca de Gion. Abre 08:00–19:00; corte de envío el mismo día 18:30. Si el RESI puede organizar recogida, confirmar antes; la oficina es plan seguro de entrega física.",
-            "Destinatario en Osaka: APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 〒541-0054 大阪府大阪市中央区南本町4-2-9. Indicar fecha de entrada 23/10 y el nombre real de la reserva; PORTES PAGADOS, no contrarreembolso.",
-            "Pedir entrega el 22/10, un día antes del check-in, y comprobar aceptación del hotel y fecha con Yamato. No dar el envío por hecho hasta recibir justificante.",
-            "Guardar resguardos y números de seguimiento fuera de la web pública; el 23/10 recoger en la recepción del APA de Osaka."
-          ],
-          "links": {
-            "officialWebsite": "https://locations.kuronekoyamato.co.jp/p/yamato01/dtl/162620/",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%88%E9%81%8B%E8%BC%B8+%E4%BA%AC%E9%83%BD%E7%A5%87%E5%9C%92%E5%96%B6%E6%A5%AD%E6%89%80+570-228"
-          }
         }
       ],
       "mapStages": [
         {
-          "id": "resi-nishiki-1019",
-          "title": "RESI → Nishiki Market · a pie",
+          "id": "resi-yamato-1019",
+          "title": "RESI con maletas → Yamato Gion (primero, pendiente)",
           "mode": "walk",
           "activityIds": [
             "@hotel-start",
+            "yamato-gion-a-osaka-1019"
+          ]
+        },
+        {
+          "id": "yamato-nishiki-1019",
+          "title": "Yamato Gion → Nishiki SIN maletas",
+          "mode": "walk",
+          "activityIds": [
+            "yamato-gion-a-osaka-1019",
             "nishiki"
           ]
         },
@@ -1634,20 +1643,11 @@
         },
         {
           "id": "kamo-resi-1019",
-          "title": "Río Kamo → RESI a preparar maletas",
+          "title": "Río Kamo → RESI, tarde libre (Shirakawa opcional)",
           "mode": "walk",
           "activityIds": [
             "kamo-shijo-1019",
-            "regreso-resi-libre-1019"
-          ]
-        },
-        {
-          "id": "resi-yamato-gion-envio-osaka-1019",
-          "title": "RESI → Yamato Gion (envío a Osaka) → RESI",
-          "mode": "walk",
-          "activityIds": [
             "regreso-resi-libre-1019",
-            "yamato-gion-a-osaka-1019",
             "@hotel-end"
           ]
         }
