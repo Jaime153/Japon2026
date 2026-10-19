@@ -408,72 +408,71 @@ if (kyoto18) {
 }
 const kyoto19 = get('2026-10-19');
 if (kyoto19) {
-  const day = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
-    ?.days.find(d=>d.date==='2026-10-19');
+  const day=segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')?.days.find(d=>d.date==='2026-10-19');
   const ids=day?.activities.map(a=>a.id)||[];
-  const expected=[
+  assert(ids.join(',') === [
     'yamato-gion-a-osaka-1019','nishiki','teramachi-shinkyogoku-1019',
-    'kamo-shijo-1019','gion-shirakawa-1019','regreso-resi-libre-1019'
-  ];
-  assert(ids.join(',')===expected.join(','),
-    '19/10: Yamato primero al salir, luego Nishiki/galerias/Kamo sin maletas');
-  assert(!ids.some(id => ['tofukuji-1019','sanjusangendo','tobichi-kyoto',
-    'baikoan-matcha-2025','onsen-kyoto','ramen-sen-no-kaze','tonkatsu-yamamoto'].includes(id)),
-    '19/10: NO incluir templos de pago, TOBICHI ni extras antiguos');
-  assert(day?.activities.every(a => a.category!=='templo' && !a.goshuin) &&
-    day.activities.every(a => !a.visited),
-    '19/10: sin templos, goshuin, ni envío dado por completado sin confirmación');
-  const yamato=day?.activities[0];
-  assert(yamato?.category==='transporte' && yamato?.status==='plan' &&
-    yamato?.priority==='must' && yamato?.time==='Al salir' &&
-    yamato?.locationQuery.includes('京都祇園営業所') &&
-    yamato?.notes.includes('162620') && yamato?.notes.includes('08:00 a 19:00'),
-    '19/10: PRIMERA gestión en Yamato Gion cuando salgan del RESI; aún pendiente');
-  assert(yamato?.notes.includes('NO REALIZADA') &&
-    yamato?.notes.includes('22/10') && yamato?.notes.includes('23/10') &&
-    yamato?.notes.includes('南本町4-2-9') &&
-    yamato?.notes.includes('PREPAGADO') && yamato?.notes.includes('furigana'),
-    '19/10: destino APA Osaka, entrega 22 y check-in 23, sin fingir envío');
-  assert(day?.activities[1]?.id==='nishiki' &&
-    day.activities[1]?.priority==='must' &&
-    day.activities[1]?.notes.includes('GRATUITA') &&
-    day.activities[1]?.transit?.from.includes('Yamato'),
-    '19/10: desde Yamato se va a Nishiki sin maletas ni vuelta intermedia al RESI');
-  const stages=kyoto19.stages;
-  const routes=stages.map(st=>st.stops.map(x=>x.id).join(','));
-  assert(stages.length===5 && stages.every(x=>x.mode==='walk') &&
-    routes[0]==='@hotel-start,yamato-gion-a-osaka-1019' &&
-    routes[1]==='yamato-gion-a-osaka-1019,nishiki' &&
-    routes[2]==='nishiki,teramachi-shinkyogoku-1019' &&
-    routes[3]==='teramachi-shinkyogoku-1019,kamo-shijo-1019' &&
-    routes[4]==='kamo-shijo-1019,regreso-resi-libre-1019,@hotel-end',
-    '19/10: mapa RESI→Yamato→Nishiki→galerias→Kamo→RESI sin desvíos');
-  const gion=day?.activities.find(a=>a.id==='gion-shirakawa-1019');
-  assert(gion?.status==='opcional' && gion?.mapBeforeId==='regreso-resi-libre-1019' &&
-    kyoto19.optional.some(x=>x.id==='gion-shirakawa-1019') &&
-    !routes.join(',').includes('gion-shirakawa-1019'),
-    '19/10: Gion Shirakawa opcional sin añadir trayectos obligatorios');
-  assert(day?.note.includes('Hobonichi') && day?.note.includes('TOBICHI NO se visita') &&
-    day?.note.includes('ENVIAR HOY') && day?.note.includes('PRIMERO AL SALIR'),
-    '19/10: TOBICHI no vuelve, Yamato prioritario y todavía no entregado');
+    'star-restaurant-1019','hotel-antes-baikoan-1019',
+    'baikoan-matcha-1019','regreso-resi-libre-1019'
+  ].join(','),'19/10: histórico Yamato y Star; siguiente RESI→Baikoan');
+  const yam=day?.activities.find(a=>a.id==='yamato-gion-a-osaka-1019');
+  assert(yam?.visited===true && yam?.status==='confirmado' && yam?.time===undefined &&
+    yam?.notes.includes('YA ESTÁN ENTREGADAS') &&
+    yam?.notes.includes('NO está confirmada') &&
+    !yam?.priority,'19/10: YA ENTREGADAS a Yamato, hora/sucursal/recepción no inventadas');
+  const star=day?.activities.find(a=>a.id==='star-restaurant-1019');
+  assert(star?.category==='comida' && star?.visited===true &&
+    star?.status==='confirmado' && star?.time===undefined &&
+    star?.locationQuery.includes('中之町539') &&
+    star?.notes.includes('TERMINANDO'),
+    '19/10: comida REAL en Star Restaurant, no inventar horario');
+  const hotel=day?.activities.find(a=>a.id==='hotel-antes-baikoan-1019');
+  const baikoan=day?.activities.find(a=>a.id==='baikoan-matcha-1019');
+  assert(hotel?.status==='plan' && hotel?.visited!==true &&
+    hotel?.notes.includes('PRIMERO') &&
+    baikoan?.status==='plan' && baikoan?.visited!==true &&
+    baikoan?.time==='Antes 19:00' &&
+    baikoan?.notes.includes('46-1') &&
+    baikoan?.notes.includes('10:00–19:00') &&
+    baikoan?.notes.includes('DESPUÉS'),
+    '19/10: RESI primero, comprar matcha en Baikoan antes cierre; aún no realizado');
+  assert(!ids.some(id=>['tofukuji-1019','sanjusangendo','tobichi-kyoto'].includes(id)) &&
+    day?.activities.every(a=>a.category!=='templo'&&!a.goshuin),
+    '19/10: nada de templos con goshuin o TOBICHI');
+  for(const id of ['nishiki','teramachi-shinkyogoku-1019']){
+    const a=day?.activities.find(x=>x.id===id);
+    assert(a?.status==='opcional' && a?.mapBeforeId==='star-restaurant-1019' && a?.visited!==true &&
+      kyoto19.optional.some(x=>x.id===id),
+      '19/10: no dar por hechas ni forzar las galerías o Nishiki');
+  }
+  const routes=kyoto19.stages.map(s=>s.stops.map(x=>x.id).join(','));
+  assert(routes.length===4 &&
+    routes[0]==='yamato-gion-a-osaka-1019' &&
+    routes[1]==='star-restaurant-1019,hotel-antes-baikoan-1019' &&
+    routes[2]==='hotel-antes-baikoan-1019,baikoan-matcha-1019' &&
+    routes[3]==='baikoan-matcha-1019,@hotel-end',
+    '19/10: mapa respeta histórico Yamato, luego Star→RESI→Baikoan→RESI');
+  assert(day?.note.includes('YA SE ENTREGARON') &&
+    day?.note.includes('Star Restaurant') &&
+    day?.note.includes('MATCHA') &&
+    day?.note.includes('aún NO confirmadas'),
+    '19/10: hechos y pendientes actualizados sin dejar Yamato como tarea');
 }
-const kyoto20logistics = segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
+const kyoto20logistics=segments.find(s=>s.hotel?.name==='RESI STAY Yasaka')
   ?.days.find(d=>d.date==='2026-10-20');
-const kyotoHiroshima=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
-assert(kyotoHiroshima?.notes?.includes('EQUIPAJE LIGERO') &&
-  kyotoHiroshima?.notes?.includes('SI el envío') &&
-  kyotoHiroshima?.notes?.includes('tres días') &&
-  kyotoHiroshima?.plan?.[0]?.includes('resguardo privado'),
-  '20/10: Kyoto→Hiroshima ligero, solo si se envió la maleta grande');
-const osakaTwo=segments.find(s=>s.hotel?.name ===
-  'APA Hotel & Resort Midosuji Hommachi Ekimae Tower');
+const transfer=kyoto20logistics?.activities.find(a=>a.id==='kyoto-hiroshima');
+assert(transfer?.notes.includes('YA ESTÁN ENTREGADAS') &&
+  transfer?.notes.includes('EQUIPAJE LIGERO') &&
+  transfer?.notes.includes('NO está confirmada'),
+  '20/10: Hiroshima con equipaje ligero, grandes ya entregadas en Yamato');
+const osakaTwo=segments.find(s=>s.hotel?.name==='APA Hotel & Resort Midosuji Hommachi Ekimae Tower');
 const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
 const collect=osakaFri?.activities.find(a=>a.id==='recoger-maletas-osaka-1023');
-assert(collect?.status==='plan' && !collect?.visited &&
-  collect?.notes?.includes('22/10') && collect?.notes?.includes('23/10') &&
-  collect?.notes?.includes('TODAVÍA no hay comprobante de envío') &&
+assert(collect?.status==='plan' && !collect.visited &&
+  collect?.notes.includes('YA FUERON ENTREGADAS') &&
+  collect?.notes.includes('NO está confirmada') &&
   osakaFri?.activities[0]?.id==='recoger-maletas-osaka-1023',
-  '23/10: recogida en APA Osaka condicional, primera gestión al llegar desde Hiroshima');
+  '23/10: Yamato recibido de Jaime, llegada al APA y recogida aún pendientes');
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
 // La planificación anterior tenía horas previstas, pero el viaje ya ocurrió.
