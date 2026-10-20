@@ -11,9 +11,9 @@
   "days": [
     {
       "date": "2026-10-20",
-      "title": "Hiroshima · Shukkei-en, castillo y Okonomimura",
+      "title": "Hiroshima · castillo, Okonomimura y mirador de Futabayama",
       "status": "plan",
-      "note": "Martes 20/10. HECHO: bolsas en recepción del APA al llegar; Shukkei-en visitado. Parque de la Paz y Cúpula pasan al 21 (Lorena prefiere no hacerlos hoy). Comida en Okonomimura; cena libre.",
+      "note": "Martes 20/10. HECHO: bolsas en recepción del APA al llegar; Shukkei-en visitado. Parque de la Paz pasa al 21. Resto del día gratis: castillo, Gokoku, Hondōri, Futabayama y Minamoa. Comida en Okonomimura; cena libre.",
       "activities": [
         {
           "id": "apa-hiroshima-llegada-1020",
@@ -73,6 +73,16 @@
           }
         },
         {
+          "id": "gokoku-1020",
+          "title": "Santuario Gokoku · recinto del castillo",
+          "category": "otro",
+          "status": "plan",
+          "time": "~12:50",
+          "locationQuery": "Hiroshima Gokoku Shrine",
+          "approximatePrice": "0 ¥",
+          "notes": "Dentro del recinto del castillo, sin desvío. Recinto abierto siempre; oficina 9:00–17:00. Goshuin no es objetivo."
+        },
+        {
           "id": "okonomimura",
           "title": "Okonomimura · comida",
           "category": "comida",
@@ -95,13 +105,13 @@
         },
         {
           "id": "hondori-1020",
-          "title": "Hondōri · paseo y compras",
+          "title": "Hondōri · paseo por la galería cubierta",
           "category": "compras",
           "status": "opcional",
           "time": "~14:45",
           "locationQuery": "Hondori Shopping Street Hiroshima",
           "approximatePrice": "0 ¥ (según compras)",
-          "notes": "Galería cubierta peatonal pegada a Okonomimura. Paseo sin prisa antes de volver al hotel."
+          "notes": "Galería peatonal cubierta pegada a Okonomimura. Solo paseo de camino al tranvía."
         },
         {
           "id": "regreso-apa-1020",
@@ -113,43 +123,60 @@
           "address": "広島県広島市南区荒神町1-4",
           "approximatePrice": "240 ¥/persona en tranvía",
           "notes": "Recogida de bolsas indicada en recepción a las ~16:00. Tranvía desde Hatchōbori hasta Hiroshima Station (240 ¥, tarifa plana) y 5 min a pie a la salida sur. Resto de la tarde libre."
+        },
+        {
+          "id": "futabayama-1020",
+          "title": "Futabayama · subida al mirador al atardecer",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "~16:45",
+          "locationQuery": "Futabayama Hiroshima",
+          "approximatePrice": "0 ¥",
+          "notes": "Monte bajo justo detrás de Hiroshima Station (~10 min a pie desde la salida del Shinkansen/norte). Vistas de toda la ciudad, el mar interior y Miyajima. Sendero con escalones: calzado cómodo; subida ~30–40 min (estimado). Puesta de sol ~17:30 (estimado). Bajar antes de que oscurezca."
+        },
+        {
+          "id": "minamoa-1020",
+          "title": "Minamoa · tranvía dentro de la estación",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "noche",
+          "locationQuery": "minamoa Hiroshima Station",
+          "approximatePrice": "0 ¥",
+          "notes": "Edificio de Hiroshima Station (reabierto 03/2025): el tranvía entra por la 2.ª planta. Gratis verlo desde la escalinata de 7.ª–8.ª o las terrazas de la 3.ª; azotea verde en la 9.ª. Pegado al APA."
         }
       ]
     },
     {
       "date": "2026-10-21",
-      "title": "Lluvia de día · Kure o Hiroshima bajo techo · Parque de la Paz al final",
+      "title": "Lluvia de día · Wood Egg o Saijō · Parque de la Paz al final",
       "status": "plan",
-      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Mañana bajo techo (elegir A o B); Parque de la Paz, Cúpula y Orizuru a última hora, cuando afloja. Comida principal fuera, cena libre.",
+      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Elegir UN plan de día (Wood Egg necesita reserva). Parque de la Paz y Cúpula a última hora, gratis. Comida principal fuera, cena libre.",
       "activities": [
         {
-          "id": "kure-yamato-1021",
-          "title": "Opción A · Kure: Museo Yamato + submarino",
-          "category": "otro",
-          "status": "opcional",
-          "time": "~09:30",
-          "locationQuery": "Yamato Museum Kure",
-          "duration": "4–5 h con trayecto",
-          "approximatePrice": "Tren 510 ¥ x2 + Museo 1.000 ¥ = ~2.020 ¥/persona",
-          "links": {
-            "officialWebsite": "https://yamato-museum.com/"
-          },
-          "notes": "Museo Yamato (reabierto el 23/04/2026): 9:00–18:00, última entrada 17:30, cierra los martes (el 21 es miércoles). Al lado, Tetsu-no-Kujira-kan: gratis, 10:00–18:00, se entra en el submarino Akishio. Todo bajo techo. Comer en Kure (zona estación) y volver. Volver a Hiroshima hacia las 15:30 para el Parque de la Paz a última hora.",
-          "transit": {
-            "from": "Hiroshima Station",
-            "summary": "JR Kure Line rápido Hiroshima → Kure (~32 min, 510 ¥); museo a 5 min a pie de la estación.",
-            "approximateDuration": "~40 min puerta a puerta"
-          }
-        },
-        {
-          "id": "hiroshima-lluvia-1021",
-          "title": "Opción B · Hiroshima bajo techo",
-          "category": "compras",
+          "id": "saijo-sake-1021",
+          "title": "Saijō · calle de las bodegas de sake",
+          "category": "comida",
           "status": "opcional",
           "time": "~11:00",
-          "locationQuery": "Hondori Shopping Street Hiroshima",
-          "approximatePrice": "Tranvía 240 ¥ por trayecto; Orizuru 1.700 ¥ si no se hizo el 20",
-          "notes": "Galería cubierta Hondōri y alrededores de Hatchōbori para compras, comida fuera y descanso. Orizuru Tower si no se subió el 20."
+          "locationQuery": "Saijo Sake Brewery Street Higashihiroshima",
+          "approximatePrice": "JR ida y vuelta ~1.200 ¥ (estimado); catas según bodega",
+          "notes": "Siete bodegas junto a la estación JR Saijō (~36 min desde Hiroshima). Recorrido corto a pie entre bodegas, con catas y agua de manantial (利き水). Pedir el mapa en la oficina de turismo de la estación. Comer allí (美酒鍋, guiso al sake). No verificado qué catas son gratis."
+        },
+        {
+          "id": "wood-egg-1021",
+          "title": "Wood Egg · fábrica y museo del okonomiyaki (Otafuku)",
+          "category": "otro",
+          "status": "opcional",
+          "time": "13:15",
+          "locationQuery": "Wood Egg Okonomiyakikan Hiroshima",
+          "address": "広島市西区商工センター7-4-5",
+          "approximatePrice": "0 ¥ (gratis con reserva)",
+          "duration": "90 min",
+          "reservationRequired": true,
+          "links": {
+            "reservation": "https://www.otafuku.co.jp/"
+          },
+          "notes": "Visita gratuita de lunes a viernes, turnos 10:00–11:30 y 13:15–14:45, RESERVA PREVIA en la web de Otafuku (o tel. 082-277-7116, laborables 9:00–17:00). No consta visita en inglés. A cubierto. Acceso: tranvía línea 2 hasta Iguchi y ~10 min a pie (tranvía fuera de la zona centro: tarifa mayor que 240 ¥, estimado)."
         },
         {
           "id": "peace-park",
@@ -183,18 +210,6 @@
             "approximateDuration": "~5–10 min"
           },
           "notes": "Exterior, gratis. Iluminada al anochecer."
-        },
-        {
-          "id": "orizuru-tower",
-          "title": "Orizuru Tower · mirador",
-          "category": "mirador",
-          "status": "opcional",
-          "time": "~17:45",
-          "locationQuery": "Hiroshima Orizuru Tower",
-          "address": "広島市中区大手町1-2-1",
-          "duration": "~45 min",
-          "approximatePrice": "1.700 ¥/persona (+100 ¥ por grulla de papel)",
-          "notes": "Junto a la Cúpula. 10:00–19:00. Vista del parque y la cúpula desde arriba, a cubierto si sigue lloviendo. Al anochecer, Cúpula iluminada."
         }
       ]
     },
@@ -350,9 +365,9 @@
     },
     {
       "date": "2026-10-23",
-      "title": "Hiroshima → Osaka · elegir tren o bus",
+      "title": "Hiroshima → Osaka en bus WILLER",
       "status": "plan",
-      "note": "Viernes 23/10. Check-out APA Hiroshima a las 10:00. Previsión: sol por la mañana, lluvia por la tarde. Elegir UNA de las tres opciones. La Kodama barata hay que comprarla como tarde el jueves 22 por internet; Nozomi se compra en el momento.",
+      "note": "Viernes 23/10. Decidido: vuelta en bus (WILLER 08:35 → Umeda 14:00). Billete PENDIENTE de comprar. Check-out APA 10:00. Kodama/Nozomi quedan solo como plan B.",
       "activities": [
         {
           "id": "checkout-apa-hiroshima-1023",
@@ -389,9 +404,9 @@
         },
         {
           "id": "bus-hiroshima-osaka-1023",
-          "title": "Opción 2 · Bus WILLER a Umeda (lo más barato)",
+          "title": "Bus WILLER a Umeda · ELEGIDO",
           "category": "transporte",
-          "status": "opcional",
+          "status": "plan",
           "time": "08:35 o 08:40",
           "locationQuery": "Hiroshima Station North Exit bus stop",
           "approximatePrice": "~3.000–4.000 ¥/persona según empresa y día (ahorro ~14.000 ¥ los dos)",
