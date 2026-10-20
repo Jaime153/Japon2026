@@ -110,7 +110,7 @@
           "status": "opcional",
           "time": "~14:45",
           "locationQuery": "Hondori Shopping Street Hiroshima",
-          "approximatePrice": "0 ¥ (según compras)",
+          "approximatePrice": "0 ¥",
           "notes": "Galería peatonal cubierta pegada a Okonomimura. Solo paseo de camino al tranvía."
         },
         {
@@ -150,17 +150,18 @@
       "date": "2026-10-21",
       "title": "Lluvia · ruta gratis a cubierto: Fukuromachi, Honkawa y Parque de la Paz",
       "status": "plan",
-      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Mañana libre o con un plan a cubierto opcional. Desde la comida, ruta gratis: Fukuromachi (cierra 17:00) → Honkawa → Cúpula → Parque de la Paz y Sala Memorial (hasta 18:00). Comida principal fuera; cena libre.",
+      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Mañana libre para dormir; recreativas si apetece. Desde la comida, ruta gratis: Fukuromachi (cierra 17:00) → Honkawa → Cúpula → Parque de la Paz y Sala Memorial (hasta 18:00). Comida principal fuera; cena libre.",
       "activities": [
         {
-          "id": "onsen-rakurakuen-1021",
-          "title": "Mañana opcional · onsen Hono-yu Rakurakuen",
+          "id": "round1-1021",
+          "title": "Si nos levantamos tarde · recreativas Round One",
           "category": "ocio",
           "status": "opcional",
-          "time": "~10:30",
-          "locationQuery": "塩屋天然温泉 ほの湯楽々園",
-          "approximatePrice": "1.050 ¥/persona entre semana + tranvía",
-          "notes": "Onsen natural, 9:00–23:00, abierto todo el año. A 5 min a pie de la parada de tranvía Rakurakuen (línea 2, dirección Miyajima; tarifa mayor que 240 ¥ al salir del centro, estimado). Baños separados por sexo. Norma de tatuajes no confirmada. Alternativas de mañana lluviosa: karaoke (barato entre semana de día) o recreativas/bolos en Round One."
+          "time": "mañana",
+          "locationQuery": "Round1 Hiroshima",
+          "nearestStation": "Tranvía Tatemachi (se baja enfrente)",
+          "approximatePrice": "Entrada gratis; cada máquina/juego se paga aparte",
+          "notes": "Round One Hiroshima, junto a la parada de tranvía Tatemachi (240 ¥ desde Hiroshima Station). Zona de recreativas y UFO catcher entre semana 10:00–23:50. A cubierto. Queda a ~5 min de Fukuromachi, así que encaja antes de la ruta de la tarde."
         },
         {
           "id": "fukuromachi-1021",
@@ -173,7 +174,12 @@
           "address": "広島市中区袋町6-36",
           "approximatePrice": "0 ¥",
           "duration": "~30 min",
-          "notes": "Gratis, 9:00–17:00. Tras la bomba, la gente escribió con tiza en las paredes del edificio superviviente mensajes buscando a familiares; se conserva parte del muro. A cubierto. 5 min a pie de la parada Hondōri o Kamiyachō-higashi."
+          "notes": "Gratis, 9:00–17:00. Tras la bomba, la gente escribió con tiza en las paredes del edificio superviviente mensajes buscando a familiares; se conserva parte del muro. A cubierto. 5 min a pie de la parada Hondōri o Kamiyachō-higashi.",
+          "transit": {
+            "from": "APA Hiroshima / Round One",
+            "summary": "Tranvía desde Hiroshima Station hasta Hondōri o Kamiyachō-higashi (240 ¥) y 5 min a pie.",
+            "approximateDuration": "~20 min"
+          }
         },
         {
           "id": "honkawa-1021",
@@ -225,7 +231,7 @@
       "date": "2026-10-22",
       "title": "Miyajima completo · día de sol",
       "status": "plan",
-      "note": "Día elegido por clima: JMA/tenki.jp dan sol y 10–20 % (fiabilidad A); el 21 llueve. Comida principal en Fujitaya; cena libre en Hiroshima.",
+      "note": "Día elegido por clima: JMA/tenki.jp dan sol y 10–20 % (fiabilidad A). Recorrido: tren + ferry → torii → Senjōkaku → Daishō-in → Fujitaya (anago meshi) → teleférico y Misen → Omotesandō → santuario con marea alta → atardecer → vuelta. Coste aprox. por persona: transporte 720 ¥ ida (con tasa 100 ¥) + 620 ¥ vuelta, teleférico 2.000 ¥, santuario 300 ¥, Senjōkaku 100 ¥ + comida.",
       "activities": [
         {
           "id": "ida-miyajima-1022",
@@ -254,6 +260,11 @@
           "notes": "Mareas 22/10 (Puerto de Hiroshima, Miyajima unos minutos antes): pleamar 06:52 (271 cm), bajamar 13:00 (109 cm), pleamar 19:24 (320 cm). A las 09:00 la marea baja pero el torii sigue en el agua. Para llegar andando hace falta ≤100 cm: el 22 no se alcanza.",
           "links": {
             "weather": "https://www.miyajima.or.jp/sio/sio10.html"
+          },
+          "transit": {
+            "from": "Muelle de Miyajima",
+            "summary": "A pie por la orilla (con ciervos sueltos: no dar comida, muerden bolsas y mapas).",
+            "approximateDuration": "~10–15 min"
           }
         },
         {
@@ -293,10 +304,10 @@
         },
         {
           "id": "fujitaya",
-          "title": "Fujitaya · anago meshi",
+          "title": "Fujitaya · anago meshi (congrio a la parrilla sobre arroz)",
           "category": "comida",
           "status": "plan",
-          "notes": "Comida principal del día. Abre 11:00–17:00 (última comanda 16:00), descanso irregular, sin reservas. Solo sirve anago meshi. A 1–2 min de Daishō-in: ponerse en cola sobre las 10:40. Recomendación de Alberto.",
+          "notes": "COMIDA PRINCIPAL. El anago meshi es EL plato de Miyajima: anago (congrio de mar, primo de la anguila pero más suave y menos graso) a la parrilla con salsa dulce sobre arroz cocido en caldo de anago. Fujitaya: 11:00–17:00 (última comanda 16:00), descanso irregular, sin reservas, solo sirve anago meshi; ponerse en cola sobre las 10:40. Plan B si la cola es enorme o está cerrado: Ueno (うえの), en Miyajimaguchi junto a la estación JR (10:00–19:00, ~2.000–3.000 ¥, sin reservas), a la vuelta.",
           "locationQuery": "Fujitaya Miyajima",
           "links": {
             "officialWebsite": "https://www.fujitayamiyajima.com/",
@@ -305,7 +316,12 @@
           "time": "10:40 cola",
           "priority": "must",
           "address": "広島県廿日市市宮島町125-2",
-          "approximatePrice": "No publicado en su web; mirar carta en la puerta"
+          "approximatePrice": "Precio no publicado; ~2.000–3.000 ¥ como el anago meshi de la zona (estimado)",
+          "transit": {
+            "from": "Daishō-in",
+            "summary": "A pie, bajando hacia el santuario.",
+            "approximateDuration": "1–2 min"
+          }
         },
         {
           "id": "misen",
@@ -333,7 +349,7 @@
           "status": "plan",
           "time": "~15:30",
           "locationQuery": "Miyajima Omotesando Shopping Street",
-          "approximatePrice": "Según lo que compréis",
+          "approximatePrice": "0 ¥ pasear; dulces opcionales",
           "notes": "Calle comercial entre el muelle y el santuario: momiji manjū (pastelito relleno con forma de hoja de arce), age-momiji (la versión frita) y la gran espátula shamoji. Margen para sentarse antes del santuario.",
           "transit": {
             "from": "Teleférico Momijidani",
@@ -357,6 +373,11 @@
           "links": {
             "officialWebsite": "https://www.itsukushimajinja.jp/",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Itsukushima%20Shrine"
+          },
+          "transit": {
+            "from": "Omotesandō",
+            "summary": "A pie por la orilla hasta la entrada del santuario.",
+            "approximateDuration": "~10 min"
           }
         },
         {
@@ -368,6 +389,21 @@
           "locationQuery": "Itsukushima Floating Torii",
           "approximatePrice": "0 ¥",
           "notes": "Al salir del santuario la marea sigue subiendo hacia la pleamar de las 19:24. Torii y santuario se iluminan al anochecer. Volver cuando apetezca: ferry + JR, 620 ¥/persona."
+        },
+        {
+          "id": "vuelta-miyajima-1022",
+          "title": "Vuelta a Hiroshima · cena libre",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~18:00",
+          "locationQuery": "Miyajima Ferry Terminal",
+          "approximatePrice": "200 ¥ ferry + 420 ¥ JR = 620 ¥/persona",
+          "notes": "Ferry JR al Miyajimaguchi y JR Sanyo Line a Hiroshima. Si a mediodía no pudisteis comer anago meshi, Ueno está a 3 min de la estación JR de Miyajimaguchi (abre hasta 19:00).",
+          "transit": {
+            "from": "Gran torii",
+            "summary": "A pie al muelle → ferry JR (~10 min) → JR Miyajimaguchi → Hiroshima (~28 min) → 5 min a pie al APA.",
+            "approximateDuration": "~60 min"
+          }
         }
       ]
     },
