@@ -148,51 +148,47 @@
     },
     {
       "date": "2026-10-21",
-      "title": "Lluvia de día · Wood Egg o Saijō · Parque de la Paz al final",
+      "title": "Lluvia · ruta gratis a cubierto: Fukuromachi, Honkawa y Parque de la Paz",
       "status": "plan",
-      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Elegir UN plan de día (Wood Egg necesita reserva). Parque de la Paz y Cúpula a última hora, gratis. Comida principal fuera, cena libre.",
+      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Mañana libre o con un plan a cubierto opcional. Desde la comida, ruta gratis: Fukuromachi (cierra 17:00) → Honkawa → Cúpula → Parque de la Paz y Sala Memorial (hasta 18:00). Comida principal fuera; cena libre.",
       "activities": [
         {
-          "id": "saijo-sake-1021",
-          "title": "Saijō · calle de las bodegas de sake",
-          "category": "comida",
+          "id": "onsen-rakurakuen-1021",
+          "title": "Mañana opcional · onsen Hono-yu Rakurakuen",
+          "category": "ocio",
           "status": "opcional",
-          "time": "~11:00",
-          "locationQuery": "Saijo Sake Brewery Street Higashihiroshima",
-          "approximatePrice": "JR ida y vuelta ~1.200 ¥ (estimado); catas según bodega",
-          "notes": "Siete bodegas junto a la estación JR Saijō (~36 min desde Hiroshima). Recorrido corto a pie entre bodegas, con catas y agua de manantial (利き水). Pedir el mapa en la oficina de turismo de la estación. Comer allí (美酒鍋, guiso al sake). No verificado qué catas son gratis."
+          "time": "~10:30",
+          "locationQuery": "塩屋天然温泉 ほの湯楽々園",
+          "approximatePrice": "1.050 ¥/persona entre semana + tranvía",
+          "notes": "Onsen natural, 9:00–23:00, abierto todo el año. A 5 min a pie de la parada de tranvía Rakurakuen (línea 2, dirección Miyajima; tarifa mayor que 240 ¥ al salir del centro, estimado). Baños separados por sexo. Norma de tatuajes no confirmada. Alternativas de mañana lluviosa: karaoke (barato entre semana de día) o recreativas/bolos en Round One."
         },
         {
-          "id": "wood-egg-1021",
-          "title": "Wood Egg · fábrica y museo del okonomiyaki (Otafuku)",
-          "category": "otro",
-          "status": "opcional",
-          "time": "13:15",
-          "locationQuery": "Wood Egg Okonomiyakikan Hiroshima",
-          "address": "広島市西区商工センター7-4-5",
-          "approximatePrice": "0 ¥ (gratis con reserva)",
-          "duration": "90 min",
-          "reservationRequired": true,
-          "links": {
-            "reservation": "https://www.otafuku.co.jp/"
-          },
-          "notes": "Visita gratuita de lunes a viernes, turnos 10:00–11:30 y 13:15–14:45, RESERVA PREVIA en la web de Otafuku (o tel. 082-277-7116, laborables 9:00–17:00). No consta visita en inglés. A cubierto. Acceso: tranvía línea 2 hasta Iguchi y ~10 min a pie (tranvía fuera de la zona centro: tarifa mayor que 240 ¥, estimado)."
-        },
-        {
-          "id": "peace-park",
-          "title": "Parque Memorial de la Paz",
+          "id": "fukuromachi-1021",
+          "title": "Escuela Fukuromachi · muro de mensajes de tiza",
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "time": "~16:30",
-          "locationQuery": "Hiroshima Peace Memorial Park",
-          "duration": "~45 min",
-          "approximatePrice": "0 ¥ (Museo de la Paz descartado)",
-          "notes": "Recorrido exterior: Cenotafio, Llama de la Paz y Monumento a los Niños. El museo NO entra en el plan.",
+          "time": "~14:00",
+          "locationQuery": "Fukuromachi Elementary School Peace Museum",
+          "address": "広島市中区袋町6-36",
+          "approximatePrice": "0 ¥",
+          "duration": "~30 min",
+          "notes": "Gratis, 9:00–17:00. Tras la bomba, la gente escribió con tiza en las paredes del edificio superviviente mensajes buscando a familiares; se conserva parte del muro. A cubierto. 5 min a pie de la parada Hondōri o Kamiyachō-higashi."
+        },
+        {
+          "id": "honkawa-1021",
+          "title": "Escuela Honkawa · edificio superviviente junto a la Cúpula",
+          "category": "otro",
+          "status": "opcional",
+          "time": "~14:45",
+          "locationQuery": "Honkawa Elementary School Peace Museum",
+          "approximatePrice": "0 ¥",
+          "duration": "~20 min",
+          "notes": "Gratis, 9:00–17:00 (última entrada 16:40). Edificio escolar de 1928 dañado por la bomba, conservado tal cual; maqueta de la ciudad antes de 1945 en el sótano. A cubierto. Al otro lado del río desde la Cúpula.",
           "transit": {
-            "from": "Hiroshima Station",
-            "summary": "Tranvía nº 2 o nº 6 hasta Genbaku-dome-mae (240 ¥), ~20 min.",
-            "approximateDuration": "~25 min"
+            "from": "Escuela Fukuromachi",
+            "summary": "A pie hacia el oeste cruzando el centro.",
+            "approximateDuration": "~15–20 min (estimado)"
           }
         },
         {
@@ -201,15 +197,27 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "time": "~17:15",
+          "time": "~15:30",
           "locationQuery": "Atomic Bomb Dome Hiroshima",
           "approximatePrice": "0 ¥ (solo exterior)",
           "transit": {
-            "from": "Parque de la Paz",
-            "summary": "Cruzar el puente Aioi a pie.",
-            "approximateDuration": "~5–10 min"
+            "from": "Escuela Honkawa",
+            "summary": "Cruzar el puente Aioi.",
+            "approximateDuration": "~5 min"
           },
-          "notes": "Exterior, gratis. Iluminada al anochecer."
+          "notes": "Exterior, gratis. Al anochecer se ilumina."
+        },
+        {
+          "id": "peace-park",
+          "title": "Parque de la Paz y Sala Memorial (gratis)",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "time": "~15:45",
+          "locationQuery": "Hiroshima Peace Memorial Park",
+          "duration": "~45 min",
+          "approximatePrice": "0 ¥ (Museo de la Paz NO)",
+          "notes": "Exterior: Cenotafio, Llama de la Paz y Monumento a los Niños. A cubierto y GRATIS: Sala Memorial Nacional por las Víctimas de la Bomba (8:30–18:00 en oct.), con nombres y fotos de víctimas, testimonios y una panorámica de la ciudad arrasada. El Museo de la Paz (de pago) no entra."
         }
       ]
     },
