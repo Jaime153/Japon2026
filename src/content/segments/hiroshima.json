@@ -11,33 +11,32 @@
   "days": [
     {
       "date": "2026-10-20",
-      "title": "Hiroshima · Shukkei-en, castillo, Okonomimura y Peace Park",
+      "title": "Hiroshima · Shukkei-en, castillo y Okonomimura",
       "status": "plan",
-      "note": "Previsión JMA: nublado, lluvia de madrugada que se retira a mediodía (30–40 %). Comida principal en Okonomimura; cena libre. Sin Museo de la Paz.",
+      "note": "Martes 20/10. HECHO: bolsas en recepción del APA al llegar; Shukkei-en visitado. Parque de la Paz y Cúpula pasan al 21 (Lorena prefiere no hacerlos hoy). Comida en Okonomimura; cena libre.",
       "activities": [
         {
           "id": "apa-hiroshima-llegada-1020",
-          "title": "Dejar bolsas en el APA Hiroshima",
+          "title": "Bolsas dejadas en recepción del APA",
           "category": "transporte",
-          "status": "plan",
-          "time": "~10:15",
+          "status": "confirmado",
           "locationQuery": "APA Hotel Hiroshima Ekimae Stadiumguchi",
           "address": "広島県広島市南区荒神町1-4",
           "approximatePrice": "0 ¥",
-          "notes": "Llegada 10:02 a Hiroshima. Dejar mochilas en recepción; la habitación se ocupa a la hora de check-in de la reserva.",
+          "notes": "HECHO 20/10: al llegar en el tren se dejaron las bolsas en recepción del APA. Hora de recogida indicada en recepción: ~16:00 (estimada). Check-in desde 15:00.",
           "transit": {
             "from": "Hiroshima Station",
             "summary": "A pie desde la salida sur de la estación.",
             "approximateDuration": "~5–10 min (estimado)"
-          }
+          },
+          "visited": true
         },
         {
           "id": "shukkeien-1020",
           "title": "Shukkei-en · jardín",
           "category": "naturaleza",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
-          "time": "~10:45",
           "locationQuery": "Shukkeien Garden Hiroshima",
           "address": "広島市中区上幟町2-11",
           "duration": "~1 h",
@@ -51,23 +50,24 @@
             "from": "APA Hiroshima",
             "summary": "A pie hacia el oeste cruzando el río Kyōbashi.",
             "approximateDuration": "~15–20 min (estimado)"
-          }
+          },
+          "visited": true
         },
         {
           "id": "hiroshima-castle",
           "title": "Castillo de Hiroshima · exterior y Ninomaru",
           "category": "otro",
-          "status": "opcional",
-          "time": "~12:00",
+          "status": "plan",
+          "time": "~12:30",
           "locationQuery": "Hiroshima Castle Ninomaru",
           "duration": "30–45 min",
           "approximatePrice": "0 ¥",
           "links": {
             "officialWebsite": "https://hiroshimacastle.jp/"
           },
-          "notes": "EL TORREÓN ESTÁ CERRADO desde marzo de 2026 (solo exterior). Ninomaru reconstruido abierto 9:00–16:30 en oct., gratis. Si vais justos de hambre, saltar e ir directos a Okonomimura.",
+          "notes": "EL TORREÓN ESTÁ CERRADO desde marzo de 2026 (solo exterior). Ninomaru reconstruido abierto 9:00–16:30 en oct., gratis. De camino hacia allí a las ~12:15 del 20/10 (salida de Shukkei-en hecha).",
           "transit": {
-            "from": "Shukkei-en",
+            "from": "Zona Shukkei-en",
             "summary": "A pie por el foso este.",
             "approximateDuration": "~10–15 min (estimado)"
           }
@@ -78,7 +78,7 @@
           "category": "comida",
           "status": "plan",
           "priority": "must",
-          "time": "~13:00",
+          "time": "~13:30",
           "locationQuery": "Okonomimura Hiroshima",
           "address": "広島市中区新天地5-13",
           "nearestStation": "Tranvía Hatchōbori",
@@ -88,71 +88,39 @@
           },
           "notes": "Edificio de varias plantas con puestos independientes; horario y descanso según puesto. Llegar ~13:00 evita el pico. Pedir estilo Hiroshima (con fideos soba o udon). Repetición del viaje 2025.",
           "transit": {
-            "from": "Castillo / Shukkei-en",
-            "summary": "A pie hacia el sur hasta Hatchōbori/Shintenchi, o tranvía hasta Hatchōbori.",
-            "approximateDuration": "~15–20 min a pie (estimado)"
+            "from": "Castillo de Hiroshima",
+            "summary": "A pie hacia el sur por Rijo-dōri hasta Hatchōbori/Shintenchi (~20 min), o tranvía desde Kamiyachō-nishi a Hatchōbori (240 ¥).",
+            "approximateDuration": "~20 min a pie (estimado)"
           }
         },
         {
-          "id": "peace-park",
-          "title": "Parque Memorial de la Paz",
-          "category": "otro",
-          "status": "plan",
-          "priority": "must",
-          "time": "~14:30",
-          "locationQuery": "Hiroshima Peace Memorial Park",
-          "duration": "~45 min",
-          "approximatePrice": "0 ¥ (Museo de la Paz descartado)",
-          "notes": "Recorrido exterior: Cenotafio, Llama de la Paz y Monumento a los Niños. El museo NO entra en el plan.",
-          "transit": {
-            "from": "Okonomimura",
-            "summary": "A pie por Hondōri hacia el oeste.",
-            "approximateDuration": "~15 min (estimado)"
-          }
-        },
-        {
-          "id": "a-bomb-dome",
-          "title": "Cúpula de la Bomba Atómica",
-          "category": "otro",
-          "status": "plan",
-          "priority": "must",
-          "time": "~15:15",
-          "locationQuery": "Atomic Bomb Dome Hiroshima",
-          "approximatePrice": "0 ¥ (solo exterior)",
-          "transit": {
-            "from": "Parque de la Paz",
-            "summary": "Cruzar el puente Aioi a pie.",
-            "approximateDuration": "~5–10 min"
-          }
-        },
-        {
-          "id": "orizuru-tower",
-          "title": "Orizuru Tower · mirador",
-          "category": "mirador",
+          "id": "hondori-1020",
+          "title": "Hondōri · paseo y compras",
+          "category": "compras",
           "status": "opcional",
-          "time": "~15:45",
-          "locationQuery": "Hiroshima Orizuru Tower",
-          "address": "広島市中区大手町1-2-1",
-          "duration": "~45 min",
-          "approximatePrice": "1.700 ¥/persona (+100 ¥ por grulla de papel)",
-          "notes": "Junto a la Cúpula. 10:00–19:00. Vista del parque y la cúpula desde arriba. Si el 21 llueve, también sirve como plan bajo techo."
+          "time": "~14:45",
+          "locationQuery": "Hondori Shopping Street Hiroshima",
+          "approximatePrice": "0 ¥ (según compras)",
+          "notes": "Galería cubierta peatonal pegada a Okonomimura. Paseo sin prisa antes de volver al hotel."
         },
         {
           "id": "regreso-apa-1020",
-          "title": "Vuelta al APA · cena libre",
+          "title": "Recoger bolsas y check-in en el APA · cena libre",
           "category": "transporte",
           "status": "plan",
+          "time": "~16:00",
           "locationQuery": "APA Hotel Hiroshima Ekimae Stadiumguchi",
+          "address": "広島県広島市南区荒神町1-4",
           "approximatePrice": "240 ¥/persona en tranvía",
-          "notes": "Tranvía desde Genbaku-dome-mae o Hatchōbori hasta Hiroshima Station; luego 5–10 min a pie. Tranvía Hiroden: 240 ¥ por trayecto en ciudad (tarifa plana)."
+          "notes": "Recogida de bolsas indicada en recepción a las ~16:00. Tranvía desde Hatchōbori hasta Hiroshima Station (240 ¥, tarifa plana) y 5 min a pie a la salida sur. Resto de la tarde libre."
         }
       ]
     },
     {
       "date": "2026-10-21",
-      "title": "Lluvia prevista · Kure o Hiroshima bajo techo",
+      "title": "Lluvia de día · Kure o Hiroshima bajo techo · Parque de la Paz al final",
       "status": "plan",
-      "note": "Previsión JMA 70–80 % de lluvia. Elegir UNA opción; ninguna depende de reserva. Comida principal fuera, cena libre.",
+      "note": "Previsión JMA del 20/10: lluvia 50–60 % de 06:00 a 18:00 y 20 % desde las 18:00. Mañana bajo techo (elegir A o B); Parque de la Paz, Cúpula y Orizuru a última hora, cuando afloja. Comida principal fuera, cena libre.",
       "activities": [
         {
           "id": "kure-yamato-1021",
@@ -166,7 +134,7 @@
           "links": {
             "officialWebsite": "https://yamato-museum.com/"
           },
-          "notes": "Museo Yamato (reabierto el 23/04/2026): 9:00–18:00, última entrada 17:30, cierra los martes (el 21 es miércoles). Al lado, Tetsu-no-Kujira-kan: gratis, 10:00–18:00, se entra en el submarino Akishio. Todo bajo techo. Comer en Kure (zona estación) y volver.",
+          "notes": "Museo Yamato (reabierto el 23/04/2026): 9:00–18:00, última entrada 17:30, cierra los martes (el 21 es miércoles). Al lado, Tetsu-no-Kujira-kan: gratis, 10:00–18:00, se entra en el submarino Akishio. Todo bajo techo. Comer en Kure (zona estación) y volver. Volver a Hiroshima hacia las 15:30 para el Parque de la Paz a última hora.",
           "transit": {
             "from": "Hiroshima Station",
             "summary": "JR Kure Line rápido Hiroshima → Kure (~32 min, 510 ¥); museo a 5 min a pie de la estación.",
@@ -182,6 +150,51 @@
           "locationQuery": "Hondori Shopping Street Hiroshima",
           "approximatePrice": "Tranvía 240 ¥ por trayecto; Orizuru 1.700 ¥ si no se hizo el 20",
           "notes": "Galería cubierta Hondōri y alrededores de Hatchōbori para compras, comida fuera y descanso. Orizuru Tower si no se subió el 20."
+        },
+        {
+          "id": "peace-park",
+          "title": "Parque Memorial de la Paz",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "time": "~16:30",
+          "locationQuery": "Hiroshima Peace Memorial Park",
+          "duration": "~45 min",
+          "approximatePrice": "0 ¥ (Museo de la Paz descartado)",
+          "notes": "Recorrido exterior: Cenotafio, Llama de la Paz y Monumento a los Niños. El museo NO entra en el plan.",
+          "transit": {
+            "from": "Hiroshima Station",
+            "summary": "Tranvía nº 2 o nº 6 hasta Genbaku-dome-mae (240 ¥), ~20 min.",
+            "approximateDuration": "~25 min"
+          }
+        },
+        {
+          "id": "a-bomb-dome",
+          "title": "Cúpula de la Bomba Atómica",
+          "category": "otro",
+          "status": "plan",
+          "priority": "must",
+          "time": "~17:15",
+          "locationQuery": "Atomic Bomb Dome Hiroshima",
+          "approximatePrice": "0 ¥ (solo exterior)",
+          "transit": {
+            "from": "Parque de la Paz",
+            "summary": "Cruzar el puente Aioi a pie.",
+            "approximateDuration": "~5–10 min"
+          },
+          "notes": "Exterior, gratis. Iluminada al anochecer."
+        },
+        {
+          "id": "orizuru-tower",
+          "title": "Orizuru Tower · mirador",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "~17:45",
+          "locationQuery": "Hiroshima Orizuru Tower",
+          "address": "広島市中区大手町1-2-1",
+          "duration": "~45 min",
+          "approximatePrice": "1.700 ¥/persona (+100 ¥ por grulla de papel)",
+          "notes": "Junto a la Cúpula. 10:00–19:00. Vista del parque y la cúpula desde arriba, a cubierto si sigue lloviendo. Al anochecer, Cúpula iluminada."
         }
       ]
     },
