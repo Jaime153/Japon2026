@@ -18,6 +18,13 @@
 - **Llegadas en directo:** hora llegada confirmada != visita terminada. Adashino alcanzado REALMENTE a las **12:25 del 15/10**; salida no comunicada. Otagi ETA 11:25 del coche, no llegada certificada. Ahora **Gokō-yu confirmado visitado el 15** (sin hora). No marcar otras visitas intermedias de hoy como hechas sin declaración explícita. Mantener la pantalla sin tachados ni etiquetas de «hecho»/«confirmado».
 - **Mapa y modo Hoy:** Revisar `day.activities` y `mapStages` por separado. Las fichas opcionales aparecen donde encajan; el mapa base no las obliga a visitar. Si se seleccionan en mapa, usar `mapBeforeId` para insertarlas ANTES del punto adecuado y NUNCA añadirlas tras el hotel, tras una cena ya realizada o tras el baño. Cualquier modificación obliga a revisar también `transit.from/summary` y validar con tests ambos comportamientos.
 
+## Regla de Jaime (21/10): lo que dice que está hecho, está hecho
+
+- Si Jaime dice que algo está comprado, reservado o hecho, se marca `confirmado` con los datos que ha dado, **sin coletillas** del tipo «en principio», «comprobar en el billete» o «no confirmado». Esto aplica también hacia atrás: revisar las fichas anteriores que digan lo mismo.
+- **No dejar nada como «pendiente» por defecto.** Si falta un dato para cerrarlo, **se le pregunta** en el chat. «Pendiente» solo vale para algo que de verdad está por hacer y él lo sabe.
+- Una PR que registra una compra o un hecho tiene que dejar la web coherente sin depender de otras PR abiertas. Si hay PR abiertas, avisar de cuáles faltan por fusionar.
+- **23/10:** bus JR **comprado** el 20/10 en la taquilla de Hiroshima Station: 08:40, parada 4 de la salida del Shinkansen, 4.500 ¥/persona. WILLER, Kodama y Nozomi quedan descartados.
+
 ## Hiroshima y Osaka 20–28/10 · decisiones del 19/10 noche
 
 - **Formato de fichas pedido por Jaime:** cada actividad lleva `approximatePrice` real (por persona salvo que se diga) y notas útiles (horario, última entrada, cierres, cómo llegar). Nada de frases tipo «Jaime y Lorena quieren…». Marcar «(estimado)» lo que no esté verificado.

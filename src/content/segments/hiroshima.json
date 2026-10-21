@@ -555,7 +555,7 @@
     },
     {
       "date": "2026-10-23",
-      "title": "Hiroshima → Osaka en bus JR 08:40 (comprado)",
+      "title": "Hiroshima → Osaka · bus JR 08:40 (comprado)",
       "status": "plan",
       "note": "Viernes 23/10. Bus JR comprado: 08:40 desde la parada 4 de la salida del Shinkansen de Hiroshima Station → Osaka Station ~14:05. 4.500 ¥/persona. Después, Midosuji Line a Hommachi y APA Osaka (recoger las maletas de Yamato en recepción).",
       "activities": [
@@ -572,14 +572,14 @@
         },
         {
           "id": "bus-jr-hiroshima-osaka-1023",
-          "title": "Bus JR Hiroshima → Osaka · COMPRADO",
+          "title": "Bus JR Hiroshima → Osaka · 08:40 · parada 4",
           "category": "transporte",
           "status": "confirmado",
           "time": "08:40",
           "locationQuery": "Hiroshima Station Shinkansen Exit bus terminal",
           "approximatePrice": "4.500 ¥/persona (9.000 ¥ los dos) · pagado",
           "duration": "~5 h 25 min",
-          "notes": "Billetes comprados el 20/10 en la taquilla de buses de Hiroshima Station (salida del Shinkansen). Bus JR «広島エクスプレス大阪» de las 08:40 (hora según Jaime, «en principio»: confirmar en el billete). Sube en la PARADA 4 de la terminal de la salida del Shinkansen de Hiroshima Station. Llega ~14:05 a Osaka Station, terminal de autobuses JR (horario publicado de JR Bus Chugoku). Paradas para baño en áreas de servicio (Fukuyama, Kibi, Shiratori). Billete en papel: llevarlo a mano.",
+          "notes": "Billetes COMPRADOS el 20/10 en la taquilla de buses de Hiroshima Station (salida del Shinkansen): 4.500 ¥/persona. Bus JR «広島エクスプレス大阪», sale 08:40 de la PARADA 4 de la salida del Shinkansen. Llega ~14:05 a la terminal de autobuses JR de Osaka Station. Paradas para baño en áreas de servicio (Fukuyama, Kibi, Shiratori). Billete en papel: llevarlo a mano.",
           "plan": [
             "08:15 salir del APA con las bolsas.",
             "08:25 estar en la parada 4 (salida del Shinkansen).",
