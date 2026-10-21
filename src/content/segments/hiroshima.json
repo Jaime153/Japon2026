@@ -294,24 +294,26 @@
     },
     {
       "date": "2026-10-22",
-      "title": "Miyajima completo · día de sol",
+      "title": "Miyajima completo · salida 08:15, ferry del Gran Torii 09:10",
       "status": "plan",
-      "note": "Día elegido por clima: JMA/tenki.jp dan sol y 10–20 % (fiabilidad A). Recorrido: tren + ferry → torii → Senjōkaku → Daishō-in → Fujitaya (anago meshi) → teleférico y Misen → Omotesandō → santuario con marea alta → atardecer → vuelta. Coste aprox. por persona: transporte 720 ¥ ida (con tasa 100 ¥) + 620 ¥ vuelta, teleférico 2.000 ¥, santuario 300 ¥, Senjōkaku 100 ¥ + comida.",
+      "note": "Jueves 22/10. Previsión JMA del 21: despejado, 0 % de lluvia todo el día, 15–24 °C, viento del noreste en el mar. Ruta clásica de un día: ferry → torii → Senjōkaku → Daishō-in → Fujitaya (anago meshi) → Momijidani → teleférico y Misen → Momijidō/Omotesandō → santuario con marea alta → atardecer → vuelta. Coste aprox. por persona: transporte ~1.320 ¥ ida y vuelta (con tasa), teleférico 2.000 ¥, santuario 300 ¥, Senjōkaku 100 ¥, Fujitaya ~2.500 ¥+.",
       "activities": [
         {
           "id": "ida-miyajima-1022",
-          "title": "Hiroshima → Miyajima en JR + ferry",
+          "title": "Salida del APA → JR + ferry «Gran Torii»",
           "category": "transporte",
           "status": "plan",
-          "time": "~08:00",
-          "locationQuery": "Miyajimaguchi Ferry Terminal",
-          "approximatePrice": "420 ¥ JR + 200 ¥ ferry + 100 ¥ tasa = 720 ¥/persona",
-          "notes": "Tasa de visitante de Miyajima: 100 ¥ por visita, se paga aparte en la terminal. Los ferris JR que salen entre 09:10 y 16:10 pasan frente al gran torii.",
-          "transit": {
-            "from": "APA Hiroshima",
-            "summary": "JR Sanyo Line Hiroshima → Miyajimaguchi (~28 min); ferry JR (~10 min).",
-            "approximateDuration": "~55–70 min puerta a puerta"
-          }
+          "time": "08:15",
+          "locationQuery": "宮島桟橋 Miyajima Pier",
+          "approximatePrice": "JR 420 ¥ + ferry 180–200 ¥ + tasa 100 ¥ = ~700–720 ¥/persona",
+          "notes": "08:15 salir del APA (5 min a la estación, salida sur). JR Sanyo Line dirección Iwakuni hasta Miyajimaguchi (~26–28 min, trenes cada ~10–15 min; IC sirve). Desde la estación, 5 min a pie al muelle. Coger el FERRY JR de las 09:10, el primero del día que pasa por delante del gran torii (los «大鳥居便» salen de 09:10 a 16:10). Ferry: Ferry JR 180–200 ¥ (la web oficial muestra ambas cifras) + tasa de visitante 100 ¥; la tasa se paga aparte en la terminal. Llegada a la isla ~09:20.",
+          "plan": [
+            "08:15 salir del APA.",
+            "~08:25 tren JR en Hiroshima Station (andén de la Sanyo Line hacia Iwakuni).",
+            "~08:55 llegada a Miyajimaguchi; 5 min a pie al muelle JR.",
+            "09:10 ferry JR «Gran Torii» (mirar a la derecha al acercaros a la isla).",
+            "~09:20 llegada a Miyajima."
+          ]
         },
         {
           "id": "miyajima-torii",
@@ -319,7 +321,7 @@
           "category": "mirador",
           "status": "plan",
           "locationQuery": "Itsukushima Floating Torii",
-          "time": "~09:00",
+          "time": "~09:30",
           "description": "El gran torii de Itsukushima marca de forma simbólica la entrada a un santuario sintoísta, pero aquí se alza en el mar: el paso entre lo cotidiano y lo sagrado depende visualmente de la marea. El torii actual data de 1875 y mide unos 16,8 metros; la estructura se sostiene fundamentalmente por su peso y está estabilizada con apoyos laterales. Su color bermellón, el bosque de la isla y el templo flotante forman un paisaje ritual diseñado para contemplarse también desde el agua. En marea baja se puede pasear cerca cuando las condiciones lo permiten; en marea alta parece flotar. No es una atracción independiente del santuario de Itsukushima.",
           "approximatePrice": "0 ¥",
           "notes": "Mareas 22/10 (Puerto de Hiroshima, Miyajima unos minutos antes): pleamar 06:52 (271 cm), bajamar 13:00 (109 cm), pleamar 19:24 (320 cm). A las 09:00 la marea baja pero el torii sigue en el agua. Para llegar andando hace falta ≤100 cm: el 22 no se alcanza.",
@@ -337,7 +339,7 @@
           "title": "Senjōkaku y pagoda de cinco pisos",
           "category": "templo",
           "status": "plan",
-          "time": "~09:20",
+          "time": "~09:45",
           "locationQuery": "Senjokaku Miyajima",
           "duration": "~30 min",
           "approximatePrice": "100 ¥ Senjōkaku; pagoda gratis (exterior)",
@@ -354,7 +356,7 @@
           "title": "Daishō-in",
           "category": "templo",
           "status": "plan",
-          "time": "~09:50",
+          "time": "~10:10",
           "locationQuery": "Daisho-in Miyajima",
           "duration": "~45 min",
           "approximatePrice": "0 ¥",
@@ -372,16 +374,16 @@
           "title": "Fujitaya · anago meshi (congrio a la parrilla sobre arroz)",
           "category": "comida",
           "status": "plan",
-          "notes": "COMIDA PRINCIPAL. El anago meshi es EL plato de Miyajima: anago (congrio de mar, primo de la anguila pero más suave y menos graso) a la parrilla con salsa dulce sobre arroz cocido en caldo de anago. Fujitaya: 11:00–17:00 (última comanda 16:00), descanso irregular, sin reservas, solo sirve anago meshi; ponerse en cola sobre las 10:40. Plan B si la cola es enorme o está cerrado: Ueno (うえの), en Miyajimaguchi junto a la estación JR (10:00–19:00, ~2.000–3.000 ¥, sin reservas), a la vuelta.",
+          "notes": "COMIDA PRINCIPAL. El anago meshi es EL plato de Miyajima: anago (congrio de mar, primo de la anguila pero más suave y menos graso) a la parrilla con salsa dulce sobre arroz cocido en caldo de anago. Fujitaya: 11:00–17:00 (última comanda 16:00), descanso irregular (artículos antiguos citan los miércoles; el 22 es jueves), sin reservas, solo sirve anago meshi; ponerse en cola sobre las 10:40. Plan B si la cola es enorme o está cerrado: Ueno (うえの), en Miyajimaguchi junto a la estación JR (10:00–19:00, ~2.000–3.000 ¥, sin reservas), a la vuelta.",
           "locationQuery": "Fujitaya Miyajima",
           "links": {
             "officialWebsite": "https://www.fujitayamiyajima.com/",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Fujitaya%20Miyajima"
           },
-          "time": "10:40 cola",
+          "time": "10:45 cola",
           "priority": "must",
           "address": "広島県廿日市市宮島町125-2",
-          "approximatePrice": "Precio no publicado; ~2.000–3.000 ¥ como el anago meshi de la zona (estimado)",
+          "approximatePrice": "2.500 ¥ en 2019 (hoy probablemente algo más; estimado)",
           "transit": {
             "from": "Daishō-in",
             "summary": "A pie, bajando hacia el santuario.",
@@ -389,12 +391,22 @@
           }
         },
         {
+          "id": "momijidani-1022",
+          "title": "Parque Momijidani · camino al teleférico",
+          "category": "naturaleza",
+          "status": "plan",
+          "time": "~11:45",
+          "locationQuery": "Momijidani Park Miyajima",
+          "approximatePrice": "0 ¥",
+          "notes": "Valle de arces a lo largo de un riachuelo, con ciervos y puentecitos rojos. Es el camino a pie desde Fujitaya hasta la estación del teleférico (~15–20 min). El rojo del otoño llega a mediados de noviembre: ahora estará verde."
+        },
+        {
           "id": "misen",
           "title": "Teleférico y cumbre del Misen",
           "category": "naturaleza",
           "status": "plan",
           "locationQuery": "Mount Misen",
-          "time": "~12:00",
+          "time": "~12:15",
           "transit": {
             "from": "Fujitaya",
             "summary": "A pie por el parque Momijidani hasta la estación del teleférico.",
@@ -405,17 +417,17 @@
           "links": {
             "officialWebsite": "https://miyajima-ropeway.info/"
           },
-          "notes": "Subida 9:00–16:00, última bajada 16:30. Estación de Momijidani tras el parque Momijidani. De Shishiiwa a la cumbre son ~30 min a pie por senda con escalones (estimado); en el camino, salas de Daishō-in y la llama perpetua Reikadō. Volver a Shishiiwa antes de las 16:00 para no quedarse sin bajada. El evento nocturno 19–23/10 era por sorteo y está cerrado."
+          "notes": "Teleférico 9:00–16:00 de subida, última bajada 16:30. Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min). Desde Shishiiwa a la cumbre ~30 min a pie por senda con escalones; por el camino, salas de Daishō-in en la montaña y el Reikadō con la «llama eterna» (gratis). Mirador de la cumbre con vista del mar interior. Estar de vuelta en Shishiiwa antes de las 16:00. Mañana sale despejado y con viento: llevar algo de abrigo arriba."
         },
         {
           "id": "omotesando-1022",
-          "title": "Omotesandō · momiji manjū y age-momiji",
+          "title": "Momijidō, Omotesandō y Machiya-dōri",
           "category": "compras",
           "status": "plan",
-          "time": "~15:30",
+          "time": "~15:15",
           "locationQuery": "Miyajima Omotesando Shopping Street",
-          "approximatePrice": "0 ¥ pasear; dulces opcionales",
-          "notes": "Calle comercial entre el muelle y el santuario: momiji manjū (pastelito relleno con forma de hoja de arce), age-momiji (la versión frita) y la gran espátula shamoji. Margen para sentarse antes del santuario.",
+          "approximatePrice": "0 ¥ pasear; age-momiji ~200–300 ¥/unidad (estimado)",
+          "notes": "Bajando del teleférico: Momijidō honten para el age-momiji (momiji manjū frito, se come caliente en la calle; 8:30–17:30). Omotesandō es la calle comercial entre el muelle y el santuario; Machiya-dōri, la paralela de casas tradicionales, es más tranquila para pasear.",
           "transit": {
             "from": "Teleférico Momijidani",
             "summary": "Bajar a pie por el parque Momijidani.",
@@ -453,7 +465,7 @@
           "time": "~17:30",
           "locationQuery": "Itsukushima Floating Torii",
           "approximatePrice": "0 ¥",
-          "notes": "Al salir del santuario la marea sigue subiendo hacia la pleamar de las 19:24. Torii y santuario se iluminan al anochecer. Volver cuando apetezca: ferry + JR, 620 ¥/persona."
+          "notes": "Puesta de sol ~17:30 (estimado). La marea sigue subiendo hacia la pleamar de las 19:24 (320 cm): torii y santuario en el agua e iluminados al anochecer."
         },
         {
           "id": "vuelta-miyajima-1022",
@@ -461,14 +473,68 @@
           "category": "transporte",
           "status": "plan",
           "time": "~18:00",
-          "locationQuery": "Miyajima Ferry Terminal",
-          "approximatePrice": "200 ¥ ferry + 420 ¥ JR = 620 ¥/persona",
+          "locationQuery": "宮島桟橋 Miyajima Pier",
+          "approximatePrice": "Ferry 180–200 ¥ + JR 420 ¥ = ~600–620 ¥/persona",
           "notes": "Ferry JR al Miyajimaguchi y JR Sanyo Line a Hiroshima. Si a mediodía no pudisteis comer anago meshi, Ueno está a 3 min de la estación JR de Miyajimaguchi (abre hasta 19:00).",
           "transit": {
             "from": "Gran torii",
             "summary": "A pie al muelle → ferry JR (~10 min) → JR Miyajimaguchi → Hiroshima (~28 min) → 5 min a pie al APA.",
             "approximateDuration": "~60 min"
           }
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "ida-1022",
+          "title": "APA → Hiroshima Station → Miyajimaguchi → ferry",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "ida-miyajima-1022"
+          ]
+        },
+        {
+          "id": "manana-isla-1022",
+          "title": "Muelle → torii → Senjōkaku → Daishō-in → Fujitaya",
+          "mode": "walk",
+          "activityIds": [
+            "ida-miyajima-1022",
+            "miyajima-torii",
+            "senjokaku-pagoda-1022",
+            "daishoin-1022",
+            "fujitaya"
+          ]
+        },
+        {
+          "id": "misen-1022",
+          "title": "Fujitaya → Momijidani → teleférico → Misen",
+          "mode": "walk",
+          "activityIds": [
+            "fujitaya",
+            "momijidani-1022",
+            "misen"
+          ]
+        },
+        {
+          "id": "tarde-isla-1022",
+          "title": "Bajada → Omotesandō → santuario → torii → muelle",
+          "mode": "walk",
+          "activityIds": [
+            "misen",
+            "omotesando-1022",
+            "itsukushima",
+            "atardecer-torii-1022",
+            "vuelta-miyajima-1022"
+          ]
+        },
+        {
+          "id": "vuelta-1022",
+          "title": "Ferry + JR → APA",
+          "mode": "transit",
+          "activityIds": [
+            "vuelta-miyajima-1022",
+            "@hotel-end"
+          ]
         }
       ]
     },
