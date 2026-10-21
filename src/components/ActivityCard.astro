@@ -30,6 +30,7 @@ const hasExtra = Boolean(
   activity.description ||
   activity.parking ||
   activity.bathChoices ||
+  activity.choices ||
   activity.transit ||
   activity.plan?.length ||
   activity.notes ||
@@ -83,6 +84,9 @@ const hasExtra = Boolean(
           <span class="activity-chevron ml-auto shrink-0 text-lg leading-none text-slate-400" aria-hidden="true">⌄</span>
         </div>
         <h3 class="mt-2 min-w-0 break-words text-base font-semibold leading-snug text-slate-950">{activity.title}</h3>
+        {activity.choices && (
+          <p class="mt-1 text-xs font-bold text-orange-700" data-choice-current>➜ {activity.choices.options.find(o => o.id === activity.choices?.defaultId)?.name}</p>
+        )}
         {flightRouteSummary && <p class="mt-1 text-xs font-black text-slate-500">{flightRouteSummary}</p>}
         {hasExtra && (
           <p class="mt-1 text-xs font-semibold text-slate-400 group-open:hidden">Toca para ver qué hacer y acciones</p>
@@ -191,6 +195,31 @@ const hasExtra = Boolean(
         </div>
       )}
 
+      {activity.choices && (
+        <section class="mb-3 rounded-xl border border-orange-200 bg-orange-50/60 p-2" data-choice-selector data-default-option={activity.choices.defaultId} aria-label={activity.choices.label}>
+          <p class="px-1 text-[11px] font-black uppercase tracking-[0.12em] text-orange-800">{activity.choices.label}</p>
+          <div class="mt-1.5 flex gap-1.5 overflow-x-auto pb-1" role="group">
+            {activity.choices.options.map((option) => (
+              <button
+                type="button"
+                data-choice={option.id}
+                data-choice-name={option.name}
+                data-choice-query={option.locationQuery}
+                aria-pressed={option.id === activity.choices?.defaultId ? 'true' : 'false'}
+                class:list={['shrink-0 whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-bold', option.id === activity.choices?.defaultId ? 'border-slate-950 bg-slate-950 text-white' : 'border-orange-200 bg-white text-slate-700']}
+              >{option.name}</button>
+            ))}
+          </div>
+          {activity.choices.options.map((option) => (
+            <div data-choice-panel={option.id} class:list={['mt-1 px-1 text-xs leading-snug text-slate-700', option.id !== activity.choices?.defaultId && 'hidden']}>
+              <p class="font-semibold">{[option.price && `💴 ${option.price}`, option.hours && `🕒 ${option.hours}`].filter(Boolean).join(' · ')}</p>
+              {option.note && <p class="mt-0.5 text-slate-600">{option.note}</p>}
+              {option.url && <a href={option.url} target="_blank" rel="noopener noreferrer" class="mt-1 inline-block font-bold text-violet-800 underline">Web</a>}
+            </div>
+          ))}
+        </section>
+      )}
+
       {activity.transit && (
         <div class="rounded-xl border border-emerald-200 bg-emerald-50/70 p-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
@@ -294,12 +323,12 @@ const hasExtra = Boolean(
             </>
           ) : (
             <>
-              {!activity.parking?.spotQuery && googleMapsUrl && <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">📍 Google Maps</a>}
-              {!activity.parking?.spotQuery && directionsUrl && <a href={directionsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">🧭 Cómo llegar</a>}
-              {!activity.parking?.spotQuery && appleMapsUrl && <a href={appleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800"> Maps</a>}
+              {!activity.parking?.spotQuery && googleMapsUrl && <a data-choice-link="maps" href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">📍 Google Maps</a>}
+              {!activity.parking?.spotQuery && directionsUrl && <a data-choice-link="dir" href={directionsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">🧭 Cómo llegar</a>}
+              {!activity.parking?.spotQuery && appleMapsUrl && <a data-choice-link="apple" href={appleMapsUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800"> Maps</a>}
             </>
           )}
-          {tabelogUrl && <a href={tabelogUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-orange-50 px-3 py-2 text-sm font-semibold text-orange-800">🍽️ Tabelog</a>}
+          {tabelogUrl && <a data-choice-link="tabelog" href={tabelogUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-orange-50 px-3 py-2 text-sm font-semibold text-orange-800">🍽️ Tabelog</a>}
           {!activity.bathChoices && activity.links?.officialWebsite && <a href={activity.links.officialWebsite} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-violet-50 px-3 py-2 text-sm font-semibold text-violet-800">🌐 Web oficial</a>}
           {activity.links?.photoSpots && <a href={activity.links.photoSpots} class="tap-target inline-flex items-center gap-1 rounded-xl bg-red-50 px-3 py-2 text-sm font-bold text-red-800">📸 Ver mapa de los 8 spots</a>}
           {activity.links?.reservation && <a href={activity.links.reservation} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center gap-1 rounded-xl bg-amber-50 px-3 py-2 text-sm font-semibold text-amber-900">🎫 Reservar</a>}
@@ -386,6 +415,59 @@ const hasExtra = Boolean(
           try { localStorage.setItem(bathKey, choice); } catch {}
           bathSelector.querySelector('[data-bath-saved]')?.classList.remove('hidden');
           document.dispatchEvent(new CustomEvent('japon2026:bath-choice', { detail: { id, choice } }));
+        }));
+      }
+      const choiceSelector = card.querySelector('[data-choice-selector]');
+      if (id && choiceSelector instanceof HTMLElement) {
+        const choiceButtons = Array.from(choiceSelector.querySelectorAll('[data-choice]'));
+        const choicePanels = Array.from(choiceSelector.querySelectorAll('[data-choice-panel]'));
+        const choiceIds = choiceButtons.map((el) => el.getAttribute('data-choice'));
+        const choiceKey = `japon2026:choice:${id}`;
+        const defaultOption = choiceSelector.getAttribute('data-default-option') || '';
+        let initialChoice = defaultOption;
+        try {
+          const stored = localStorage.getItem(choiceKey);
+          // IDs antiguos o borrados caen al valor por defecto.
+          if (stored && choiceIds.includes(stored)) initialChoice = stored;
+        } catch {}
+        const enc = encodeURIComponent;
+        function applyChoice(choice) {
+          let chosen = null;
+          choiceButtons.forEach((b) => {
+            const on = b.getAttribute('data-choice') === choice;
+            if (on) chosen = b;
+            b.setAttribute('aria-pressed', String(on));
+            b.classList.toggle('bg-slate-950', on);
+            b.classList.toggle('border-slate-950', on);
+            b.classList.toggle('text-white', on);
+            b.classList.toggle('bg-white', !on);
+            b.classList.toggle('border-orange-200', !on);
+            b.classList.toggle('text-slate-700', !on);
+          });
+          choicePanels.forEach(p => p.classList.toggle('hidden', p.getAttribute('data-choice-panel') !== choice));
+          if (!chosen) return;
+          const q = chosen.getAttribute('data-choice-query') || '';
+          const name = chosen.getAttribute('data-choice-name') || '';
+          const current = card.querySelector('[data-choice-current]');
+          if (current) current.textContent = '➜ ' + name;
+          card.setAttribute('data-activity-query', q);
+          const links = {
+            maps: `https://www.google.com/maps/search/?api=1&query=${enc(q)}`,
+            dir: `https://www.google.com/maps/dir/?api=1&destination=${enc(q)}`,
+            apple: `https://maps.apple.com/?q=${enc(q)}`,
+            tabelog: `https://tabelog.com/en/rstLst/?vs=1&sk=${enc(q)}`,
+          };
+          card.querySelectorAll('[data-choice-link]').forEach((a) => {
+            const kind = a.getAttribute('data-choice-link');
+            if (kind && links[kind]) a.setAttribute('href', links[kind]);
+          });
+        }
+        applyChoice(initialChoice);
+        choiceButtons.forEach(b => b.addEventListener('click', () => {
+          const choice = b.getAttribute('data-choice') || defaultOption;
+          applyChoice(choice);
+          try { localStorage.setItem(choiceKey, choice); } catch {}
+          document.dispatchEvent(new CustomEvent('japon2026:choice', { detail: { id, choice } }));
         }));
       }
       const button = card.querySelector('[data-complete-toggle]');

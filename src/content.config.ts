@@ -95,6 +95,21 @@ const bathChoicesSchema = z.object({
   })).min(3).max(5),
 });
 
+const choicesSchema = z.object({
+  label: z.string(),
+  defaultId: z.string(),
+  options: z.array(z.object({
+    id: z.string(),
+    name: z.string(),
+    locationQuery: z.string(),
+    price: z.string().optional(),
+    hours: z.string().optional(),
+    // Una línea útil por opción: el selector no debe ocupar media pantalla.
+    note: z.string().max(140).optional(),
+    url: z.string().url().optional(),
+  })).min(2).max(5),
+}).refine(c => c.options.some(o => o.id === c.defaultId), { message: 'choices.defaultId debe ser una de las opciones' });
+
 const activitySchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -108,6 +123,7 @@ const activitySchema = z.object({
   flightJourney: flightJourneySchema.optional(),
   parking: parkingSchema.optional(),
   bathChoices: bathChoicesSchema.optional(),
+  choices: choicesSchema.optional(), // selector compacto de alternativas (p. ej. dónde comer)
   address: z.string().optional(),
   nearestStation: z.string().optional(),
   duration: z.string().optional(),
