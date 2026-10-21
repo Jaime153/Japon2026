@@ -394,23 +394,61 @@
         },
         {
           "id": "fujitaya",
-          "title": "Fujitaya · anago meshi (congrio a la parrilla sobre arroz)",
+          "title": "Comida · anago meshi",
           "category": "comida",
           "status": "plan",
-          "notes": "COMIDA PRINCIPAL. Anago meshi = anago (congrio de mar, primo de la anguila, más suave) a la brasa con salsa dulce sobre arroz cocido en su caldo. Fujitaya: abre 11:00 hasta agotar (~16:00–17:00), descanso irregular, sin reservas, solo anago meshi, anago salvaje; a 1–2 min de Daishō-in. PLANES B si la cola es enorme o está cerrado (todos abiertos el jueves): 1) Mametanuki (まめたぬき), en el ryokan Kinsuikan a 5 min del muelle: anago meshi al vapor, más tierno, 2.600 ¥, 11:00–15:00. 2) Umeyama (梅山), a 5 min del muelle: anago don con dos anagos, ~2.000–2.300 ¥, 10:00–16:40. 3) Ueno (うえの), en Miyajimaguchi junto a la estación JR, el creador del anago meshi (1901): 2.800 ¥, 10:00–19:00, ~1 h de cola entre semana; encaja a la vuelta. Cerrados el jueves: Inachū (いな忠) y Wada (和田).",
+          "notes": "Anago meshi: congrio de mar (primo de la anguila, más suave) a la brasa con salsa dulce sobre arroz cocido en su caldo; el plato típico de Miyajima. Ninguno admite reserva. Cerrados el jueves: Inachū y Wada.",
           "locationQuery": "Fujitaya Miyajima",
           "links": {
-            "officialWebsite": "https://www.fujitayamiyajima.com/",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Fujitaya%20Miyajima"
+            "officialWebsite": "https://www.fujitayamiyajima.com/"
           },
           "time": "~11:00 cola",
           "priority": "must",
           "address": "広島県廿日市市宮島町125-2",
-          "approximatePrice": "~3.000 ¥ (guía Mapple; en 2019 eran 2.500 ¥)",
+          "approximatePrice": "~2.000–3.000 ¥/persona según sitio",
           "transit": {
             "from": "Daishō-in",
             "summary": "A pie, bajando hacia el santuario.",
             "approximateDuration": "1–2 min"
+          },
+          "choices": {
+            "label": "Dónde comer",
+            "defaultId": "fujitaya",
+            "options": [
+              {
+                "id": "fujitaya",
+                "name": "Fujitaya",
+                "locationQuery": "あなごめし ふじたや 宮島",
+                "price": "~3.000 ¥",
+                "hours": "11:00 hasta agotar",
+                "note": "Anago salvaje. A 1–2 min de Daishō-in: cola desde ~10:45. Descanso irregular.",
+                "url": "https://www.fujitayamiyajima.com/"
+              },
+              {
+                "id": "mametanuki",
+                "name": "Mametanuki",
+                "locationQuery": "まめたぬき 錦水館 宮島",
+                "price": "2.600 ¥",
+                "hours": "11:00–15:00",
+                "note": "Anago al vapor, más tierno. En el ryokan Kinsuikan, 5 min del muelle."
+              },
+              {
+                "id": "umeyama",
+                "name": "Umeyama",
+                "locationQuery": "お食事処 梅山 宮島",
+                "price": "~2.000–2.300 ¥",
+                "hours": "10:00–16:40",
+                "note": "Anago don con dos anagos. La más barata. 5 min del muelle."
+              },
+              {
+                "id": "ueno",
+                "name": "Ueno (Miyajimaguchi)",
+                "locationQuery": "あなごめし うえの 宮島口本店",
+                "price": "2.800 ¥",
+                "hours": "10:00–19:00",
+                "note": "El inventor del plato (1901). En tierra, junto a la estación JR: para la vuelta. ~1 h de cola."
+              }
+            ]
           }
         },
         {

@@ -281,6 +281,12 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
       const alternate = route.variants.find(v => v.id === currentVariant);
       const result = (alternate?.stages ?? route.stages).map(stage => {
         const stops = stage.stops.map(stop => {
+          if (stop.choices?.length) {
+            const picked = read('japon2026:choice:' + stop.id);
+            const option = stop.choices.find(opt => opt.id === picked) ||
+              stop.choices.find(opt => opt.id === stop.choiceDefaultId);
+            return option ? { ...stop, query: option.locationQuery, title: option.name + ' · ' + stop.title, note: option.note } : stop;
+          }
           if (!stop.bathChoices?.length) return stop;
           const selected = read('japon2026:bath-option:' + stop.id);
           const chosen = stop.bathChoices.find(opt => opt.id === selected) ||
@@ -666,8 +672,9 @@ const places = [...placeMap.values()].sort((a, b) => a.firstDate.localeCompare(b
     // En páginas donde el usuario alterna baño y mapa, aplicar el destino
     // sin borrar el resto de paradas del recorrido.
     document.addEventListener('japon2026:bath-choice', () => render());
+    document.addEventListener('japon2026:choice', () => render());
     window.addEventListener('storage', (event) => {
-      if (event.key?.startsWith('japon2026:bath-option:')) render();
+      if (event.key?.startsWith('japon2026:bath-option:') || event.key?.startsWith('japon2026:choice:')) render();
     });
     dayButtons.forEach((button, i) => button.addEventListener('click', () => {
       currentRoute = i;

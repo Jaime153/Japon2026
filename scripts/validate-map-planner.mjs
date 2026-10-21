@@ -698,8 +698,30 @@ assert(!cardsSource.includes('Toca para ver qué hacer y acciones') ||
   cardsSource.includes('bathChoices'),
   'La ficha de onsen debe poder abrirse para cambiar de modalidad');
 
+// Selector genérico de alternativas (comida de Miyajima 22/10): compacto, persistente y con fallback.
+{
+  const cardSrc = readFileSync('src/components/ActivityCard.astro', 'utf8');
+  const mapSrc = readFileSync('src/pages/mapas.astro', 'utf8');
+  assert(cardSrc.includes('data-choice-selector') && cardSrc.includes('japon2026:choice:') &&
+    cardSrc.includes('if (stored && choiceIds.includes(stored)) initialChoice = stored;'),
+    'Selector de alternativas: IDs guardados obsoletos deben caer al valor por defecto');
+  assert(cardSrc.includes('overflow-x-auto') && cardSrc.includes('whitespace-nowrap'),
+    'Selector de alternativas: chips en una sola fila, sin ocupar media pantalla');
+  assert(mapSrc.includes("read('japon2026:choice:' + stop.id)") &&
+    mapSrc.includes('stop.choices.find(opt => opt.id === stop.choiceDefaultId)'),
+    'Mapa: usar la alternativa elegida o el valor por defecto');
+  const hiro = JSON.parse(readFileSync('src/content/segments/hiroshima.json', 'utf8'));
+  const lunch = hiro.days.find(d => d.date === '2026-10-22')?.activities.find(a => a.id === 'fujitaya');
+  const ids = lunch?.choices?.options.map(o => o.id).join(',');
+  assert(lunch?.choices?.defaultId === 'fujitaya' && ids === 'fujitaya,mametanuki,umeyama,ueno',
+    '22/10: comida con selector Fujitaya (defecto), Mametanuki, Umeyama, Ueno; sin locales cerrados el jueves');
+  assert(lunch.choices.options.every(o => !o.note || o.note.length <= 140),
+    '22/10: una línea corta por opción');
+}
+
 if (failures.length) {
   console.error('Fallo en el nuevo mapa:\n- ' + failures.join('\n- '));
   process.exit(1);
 }
 console.log('✓ Mapa validado: ' + dates.length + ' días, cuatro tramos en Asakusa y Nagoya; nueve templos Shichifukujin; Yamato -> GN98.');
+

@@ -34,6 +34,9 @@ const activityStop = (a) => ({
   bathChoices: a.bathChoices?.options?.map(({ id, venue, locationQuery, policy }) =>
     ({ id, venue, locationQuery, policy })) || null,
   bathDefaultId: a.bathChoices?.defaultId || null,
+  // Alternativas genéricas (dónde comer…): el mapa usa la elegida en la ficha.
+  choices: a.choices?.options?.map(({ id, name, locationQuery, note }) => ({ id, name, locationQuery, note: note || '' })) || null,
+  choiceDefaultId: a.choices?.defaultId || null,
 });
 const routeStop = (s, index) => ({
   id: 'legacy-' + index, title: s.title, query: s.locationQuery,
