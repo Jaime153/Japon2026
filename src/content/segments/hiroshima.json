@@ -148,9 +148,9 @@
     },
     {
       "date": "2026-10-21",
-      "title": "Fukuromachi → Honkawa → Cúpula → comida → Parque de la Paz",
+      "title": "Fukuromachi → Cúpula → Honkawa → Parque de la Paz → comida",
       "status": "plan",
-      "note": "Miércoles 21/10. HECHO: mañana en el hotel; escuela Fukuromachi ~11:15–11:43. Resto: Honkawa → Cúpula → comida por Hondōri/Kamiyachō → Parque de la Paz y Sala Memorial (gratis, hasta 18:00) → recreativas opcional → APA. Cena libre.",
+      "note": "Miércoles 21/10. HECHO: mañana en el hotel; escuela Fukuromachi ~11:15–11:43. Ruta a pie de este a oeste y vuelta: Cúpula → Honkawa (otra orilla) → Parque de la Paz y Sala Memorial (gratis, hasta 18:00) → comida en Hondōri → recreativas opcional en Tatemachi → tranvía al APA. Cena libre.",
       "activities": [
         {
           "id": "fukuromachi-1021",
@@ -172,46 +172,36 @@
           "visited": true
         },
         {
-          "id": "honkawa-1021",
-          "title": "Escuela Honkawa · edificio superviviente junto a la Cúpula",
-          "category": "otro",
-          "status": "opcional",
-          "time": "~12:00",
-          "locationQuery": "Honkawa Elementary School Peace Museum",
-          "approximatePrice": "0 ¥",
-          "duration": "~20 min",
-          "notes": "Gratis, 9:00–17:00 (última entrada 16:40). Edificio escolar de 1928 dañado por la bomba, conservado tal cual; maqueta de la ciudad antes de 1945 en el sótano. A cubierto. Al otro lado del río desde la Cúpula.",
-          "transit": {
-            "from": "Escuela Fukuromachi",
-            "summary": "A pie hacia el oeste por Hondōri, cruzando el puente Aioi (Honkawa queda al otro lado del río desde la Cúpula).",
-            "approximateDuration": "~15–20 min (estimado)"
-          }
-        },
-        {
           "id": "a-bomb-dome",
           "title": "Cúpula de la Bomba Atómica",
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "time": "~12:30",
+          "time": "~12:00",
           "locationQuery": "Atomic Bomb Dome Hiroshima",
           "approximatePrice": "0 ¥ (solo exterior)",
           "transit": {
-            "from": "Escuela Honkawa",
-            "summary": "Cruzar el puente Aioi.",
-            "approximateDuration": "~5 min"
+            "from": "Escuela Fukuromachi",
+            "summary": "A pie hacia el oeste por Hondōri hasta la Cúpula (está de camino a Honkawa).",
+            "approximateDuration": "~15 min (estimado)"
           },
           "notes": "Exterior, gratis. Al anochecer se ilumina."
         },
         {
-          "id": "comida-hondori-1021",
-          "title": "Comida · zona Hondōri / Kamiyachō",
-          "category": "comida",
-          "status": "plan",
-          "time": "~12:45",
-          "locationQuery": "Hondori Shopping Street Hiroshima",
-          "approximatePrice": "~1.000–1.500 ¥/persona (estimado)",
-          "notes": "Comida principal. Desde la Cúpula, la entrada oeste de Hondōri y Kamiyachō quedan a ~5–10 min a pie. Sin restaurante fijo. Después volver al parque."
+          "id": "honkawa-1021",
+          "title": "Escuela Honkawa · edificio superviviente junto a la Cúpula",
+          "category": "otro",
+          "status": "opcional",
+          "time": "~12:15",
+          "locationQuery": "Honkawa Elementary School Peace Museum",
+          "approximatePrice": "0 ¥",
+          "duration": "~20 min",
+          "notes": "Gratis, 9:00–17:00 (última entrada 16:40). Edificio escolar de 1928 dañado por la bomba, conservado tal cual; maqueta de la ciudad antes de 1945 en el sótano. A cubierto. Al otro lado del río desde la Cúpula.",
+          "transit": {
+            "from": "Cúpula",
+            "summary": "Cruzar el río Motoyasu por el puente Aioi hacia el oeste; Honkawa queda en la otra orilla.",
+            "approximateDuration": "~5–10 min (estimado)"
+          }
         },
         {
           "id": "peace-park",
@@ -219,14 +209,29 @@
           "category": "otro",
           "status": "plan",
           "priority": "must",
-          "time": "~14:00",
+          "time": "~12:50",
           "locationQuery": "Hiroshima Peace Memorial Park",
           "duration": "~45 min",
           "approximatePrice": "0 ¥ (Museo de la Paz NO)",
           "notes": "Exterior: Cenotafio, Llama de la Paz y Monumento a los Niños. A cubierto y GRATIS: Sala Memorial Nacional por las Víctimas de la Bomba (8:30–18:00 en oct.), con nombres y fotos de víctimas, testimonios y una panorámica de la ciudad arrasada. El Museo de la Paz (de pago) no entra.",
           "transit": {
-            "from": "Hondōri",
-            "summary": "A pie hacia el sur-oeste hasta el parque.",
+            "from": "Escuela Honkawa",
+            "summary": "Volver al puente Aioi y bajar hacia el sur por el parque (Monumento a los Niños → Cenotafio → Sala Memorial).",
+            "approximateDuration": "~10 min (estimado)"
+          }
+        },
+        {
+          "id": "comida-hondori-1021",
+          "title": "Comida · Hondōri",
+          "category": "comida",
+          "status": "plan",
+          "time": "~14:00",
+          "locationQuery": "Hondori Shopping Street Hiroshima",
+          "approximatePrice": "~1.000–1.500 ¥/persona (estimado)",
+          "notes": "Comida principal al salir del parque, ya de camino al este (hacia Round One y el hotel). Hondōri empieza a ~10 min a pie del parque. Sin restaurante fijo.",
+          "transit": {
+            "from": "Parque de la Paz",
+            "summary": "A pie hacia el este por el puente Motoyasu hasta Hondōri.",
             "approximateDuration": "~10 min"
           }
         },
@@ -235,15 +240,15 @@
           "title": "Recreativas Round One (opcional)",
           "category": "ocio",
           "status": "opcional",
-          "time": "~15:30",
+          "time": "~15:00",
           "locationQuery": "Round1 Hiroshima",
           "nearestStation": "Tranvía Tatemachi (se baja enfrente)",
           "approximatePrice": "Entrada gratis; cada máquina/juego se paga aparte",
           "notes": "Junto a la parada de tranvía Tatemachi, ~10 min a pie al este del Parque de la Paz. Recreativas y UFO catcher entre semana 10:00–23:50, a cubierto. Entrada gratis; cada juego se paga aparte. Después, tranvía a Hiroshima Station (240 ¥).",
           "transit": {
-            "from": "Parque de la Paz",
-            "summary": "A pie hacia el este, o tranvía desde Genbaku-dome-mae hasta Tatemachi (240 ¥).",
-            "approximateDuration": "~10–15 min"
+            "from": "Hondōri",
+            "summary": "A pie hasta la parada Tatemachi, al norte de Hondōri.",
+            "approximateDuration": "~5 min"
           }
         },
         {
@@ -254,7 +259,36 @@
           "time": "tarde",
           "locationQuery": "APA Hotel Hiroshima Ekimae Stadiumguchi",
           "approximatePrice": "240 ¥/persona en tranvía",
-          "notes": "Tranvía hasta Hiroshima Station. Mañana Miyajima: salir ~08:00."
+          "notes": "Tranvía hasta Hiroshima Station. Mañana Miyajima: salir ~08:00.",
+          "transit": {
+            "from": "Tatemachi / Hondōri",
+            "summary": "Tranvía hasta Hiroshima Station (240 ¥) y 5 min a pie a la salida sur.",
+            "approximateDuration": "~20 min"
+          }
+        }
+      ],
+      "mapStages": [
+        {
+          "id": "oeste-a-pie-1021",
+          "title": "Fukuromachi → Cúpula → Honkawa → Parque de la Paz → Hondōri",
+          "mode": "walk",
+          "activityIds": [
+            "fukuromachi-1021",
+            "a-bomb-dome",
+            "honkawa-1021",
+            "peace-park",
+            "comida-hondori-1021",
+            "round1-1021"
+          ]
+        },
+        {
+          "id": "vuelta-apa-1021",
+          "title": "Tatemachi → APA en tranvía",
+          "mode": "transit",
+          "activityIds": [
+            "round1-1021",
+            "@hotel-end"
+          ]
         }
       ]
     },
