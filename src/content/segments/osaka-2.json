@@ -74,11 +74,46 @@
     },
     {
       "date": "2026-10-24",
+      "title": "Osaka · día de lluvia: pendientes a cubierto",
+      "status": "plan",
+      "activities": [
+        {
+          "id": "osaka-pending",
+          "title": "Osaka Castle / Umeda / Sumiyoshi si quedó pendiente",
+          "category": "otro",
+          "status": "plan",
+          "plan": [
+            "Elegir una sola gran visita pendiente entre Osaka Castle, Umeda o Sumiyoshi.",
+            "No intentar recuperar las tres si ya se hicieron o el grupo prefiere descansar."
+          ]
+        },
+        {
+          "id": "arcades",
+          "title": "Arcades y UFO Catcher",
+          "category": "ocio",
+          "status": "opcional",
+          "notes": "Interés por anime y recreativas.",
+          "locationQuery": "Namba arcades Osaka",
+          "plan": [
+            "Dedicar un bloque a recreativas, UFO Catcher y tiendas de anime.",
+            "Poner un límite flexible de gasto/tiempo y disfrutar sin itinerario rígido."
+          ]
+        }
+      ],
+      "weather": {
+        "place": "Osaka (Hommachi)",
+        "lat": 34.6826,
+        "lon": 135.5004
+      },
+      "note": "Sábado 24/10. Previsión de lluvia todo el día (tenki.jp: 90 %, 24 mm). Planes a cubierto en Osaka; Kobe pasa al domingo 25."
+    },
+    {
+      "date": "2026-10-25",
       "title": "Kobe · Kitano, Ikuta-jinja, ternera de Kobe, Nankinmachi y puerto",
       "status": "plan",
       "activities": [
         {
-          "id": "ida-kobe-1024",
+          "id": "ida-kobe-1025",
           "title": "APA → Umeda → Hankyu a Kobe-Sannomiya",
           "category": "transporte",
           "status": "plan",
@@ -93,7 +128,7 @@
           }
         },
         {
-          "id": "kitano-1024",
+          "id": "kitano-1025",
           "title": "Kitano Ijinkan-gai · calles de casas occidentales",
           "category": "barrio",
           "status": "plan",
@@ -108,7 +143,7 @@
           }
         },
         {
-          "id": "ikuta-jinja-1024",
+          "id": "ikuta-jinja-1025",
           "title": "Ikuta-jinja · santuario principal de Kobe",
           "category": "templo",
           "status": "plan",
@@ -126,7 +161,7 @@
           }
         },
         {
-          "id": "comida-kobe-1024",
+          "id": "comida-kobe-1025",
           "title": "Comida · ternera de Kobe",
           "category": "comida",
           "status": "plan",
@@ -187,7 +222,7 @@
           }
         },
         {
-          "id": "galerias-1024",
+          "id": "galerias-1025",
           "title": "Galerías cubiertas Sannomiya Center-gai → Motomachi",
           "category": "barrio",
           "status": "plan",
@@ -202,14 +237,14 @@
           }
         },
         {
-          "id": "nankinmachi-1024",
+          "id": "nankinmachi-1025",
           "title": "Nankinmachi (Chinatown) · picoteo",
           "category": "comida",
           "status": "plan",
           "time": "~13:45",
           "locationQuery": "南京町 神戸",
           "approximatePrice": "Butaman de Rōshōki 120 ¥/unidad; puestos ~300–800 ¥",
-          "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta ~11/2026 está en un local provisional (元町通1-3-7). En fin de semana, 30–60 min de cola.",
+          "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta ~11/2026 está en un local provisional (元町通1-3-7). En fin de semana, 30–60 min de cola. En domingo hay más gente.",
           "transit": {
             "from": "Motomachi",
             "summary": "A pie hacia el sur desde la galería de Motomachi.",
@@ -217,14 +252,14 @@
           }
         },
         {
-          "id": "meriken-1024",
+          "id": "meriken-1025",
           "title": "Meriken Park · BE KOBE y memorial del terremoto",
           "category": "mirador",
           "status": "plan",
           "time": "~15:00",
           "locationQuery": "メリケンパーク",
           "approximatePrice": "0 ¥",
-          "notes": "Paseo del puerto: el cartel BE KOBE y el Memorial del Terremoto de 1995, donde se dejó sin reparar un tramo del muelle destruido. A esta hora debería haber dejado de llover.",
+          "notes": "Paseo del puerto: el cartel BE KOBE y el Memorial del Terremoto de 1995, donde se dejó sin reparar un tramo del muelle destruido.",
           "transit": {
             "from": "Nankinmachi",
             "summary": "A pie hacia el sur por el antiguo barrio de extranjeros.",
@@ -232,7 +267,7 @@
           }
         },
         {
-          "id": "harborland-1024",
+          "id": "harborland-1025",
           "title": "Harborland · atardecer en el puerto",
           "category": "mirador",
           "status": "plan",
@@ -247,7 +282,7 @@
           }
         },
         {
-          "id": "nunobiki-noche-1024",
+          "id": "nunobiki-noche-1025",
           "title": "Opcional · teleférico de Nunobiki de noche",
           "category": "mirador",
           "status": "opcional",
@@ -262,7 +297,7 @@
           }
         },
         {
-          "id": "vuelta-kobe-1024",
+          "id": "vuelta-kobe-1025",
           "title": "Vuelta a Osaka · cena libre",
           "category": "transporte",
           "status": "plan",
@@ -277,7 +312,6 @@
         "lat": 34.6946,
         "lon": 135.1953
       },
-      "note": "Sábado 24/10. Previsión del 22: lluvia débil hasta ~15:00 y despejando después; por eso el puerto va al final. Comida principal: ternera de Kobe (selector). Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida 2.000–3.600 ¥ + picoteo Nankinmachi.",
       "mapStages": [
         {
           "id": "ida-kobe",
@@ -285,7 +319,7 @@
           "mode": "transit",
           "activityIds": [
             "@hotel-start",
-            "ida-kobe-1024"
+            "ida-kobe-1025"
           ]
         },
         {
@@ -293,14 +327,14 @@
           "title": "Sannomiya → Kitano → Ikuta → comida → galerías → Nankinmachi → Meriken → Harborland",
           "mode": "walk",
           "activityIds": [
-            "ida-kobe-1024",
-            "kitano-1024",
-            "ikuta-jinja-1024",
-            "comida-kobe-1024",
-            "galerias-1024",
-            "nankinmachi-1024",
-            "meriken-1024",
-            "harborland-1024"
+            "ida-kobe-1025",
+            "kitano-1025",
+            "ikuta-jinja-1025",
+            "comida-kobe-1025",
+            "galerias-1025",
+            "nankinmachi-1025",
+            "meriken-1025",
+            "harborland-1025"
           ]
         },
         {
@@ -308,45 +342,12 @@
           "title": "Harborland → APA",
           "mode": "transit",
           "activityIds": [
-            "harborland-1024",
+            "harborland-1025",
             "@hotel-end"
           ]
         }
-      ]
-    },
-    {
-      "date": "2026-10-25",
-      "title": "Osaka · recuperar pendientes",
-      "status": "plan",
-      "activities": [
-        {
-          "id": "osaka-pending",
-          "title": "Osaka Castle / Umeda / Sumiyoshi si quedó pendiente",
-          "category": "otro",
-          "status": "plan",
-          "plan": [
-            "Elegir una sola gran visita pendiente entre Osaka Castle, Umeda o Sumiyoshi.",
-            "No intentar recuperar las tres si ya se hicieron o el grupo prefiere descansar."
-          ]
-        },
-        {
-          "id": "arcades",
-          "title": "Arcades y UFO Catcher",
-          "category": "ocio",
-          "status": "opcional",
-          "notes": "Interés por anime y recreativas.",
-          "locationQuery": "Namba arcades Osaka",
-          "plan": [
-            "Dedicar un bloque a recreativas, UFO Catcher y tiendas de anime.",
-            "Poner un límite flexible de gasto/tiempo y disfrutar sin itinerario rígido."
-          ]
-        }
       ],
-      "weather": {
-        "place": "Osaka (Hommachi)",
-        "lat": 34.6826,
-        "lon": 135.5004
-      }
+      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi y Steak Land (reservar si se puede). Comida principal: ternera de Kobe (selector). Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida 2.000–3.600 ¥ + picoteo Nankinmachi."
     },
     {
       "date": "2026-10-26",
