@@ -296,7 +296,7 @@
       "date": "2026-10-22",
       "title": "Miyajima · Daishō-in hecho → Misen → comida → Senjōkaku",
       "status": "plan",
-      "note": "Jueves 22/10. HECHO: santuario Itsukushima, Daigan-ji (~09:30) y Daishō-in (hasta ~10:05). Ahora: Momijidani → teleférico y Misen → comida anago meshi al bajar (~13:00) → Senjōkaku y pagoda (cierra 16:30) → Omotesandō → atardecer opcional → vuelta. Los tiempos a pie son estimados: usar «Abrir ruta en Google Maps» de cada tramo.",
+      "note": "Jueves 22/10. HECHO: santuario Itsukushima, Daigan-ji (~09:30) y Daishō-in (hasta ~10:05). Ahora: teleférico desde Momijidani (taquilla 10:30) y Misen → comida anago meshi al bajar (~13:00) → Senjōkaku y pagoda (cierra 16:30) → Omotesandō → atardecer opcional → vuelta. Los tiempos a pie son estimados: usar «Abrir ruta en Google Maps» de cada tramo.",
       "activities": [
         {
           "id": "ida-miyajima-1022",
@@ -388,8 +388,7 @@
           "id": "momijidani-1022",
           "title": "Parque Momijidani · camino al teleférico",
           "category": "naturaleza",
-          "status": "plan",
-          "time": "~10:10",
+          "status": "confirmado",
           "locationQuery": "Momijidani Park Miyajima",
           "approximatePrice": "0 ¥",
           "notes": "Valle de arces junto a un riachuelo, con ciervos y puentecitos rojos; camino a pie hasta la estación del teleférico. Ahora estará verde (el rojo llega a mediados de noviembre).",
@@ -397,7 +396,8 @@
             "from": "Daishō-in",
             "summary": "A pie hacia el este por detrás del santuario y subida por el parque Momijidani hasta la estación del teleférico.",
             "approximateDuration": "~20 min (estimado; mirar en Maps)"
-          }
+          },
+          "visited": true
         },
         {
           "id": "misen",
@@ -405,7 +405,7 @@
           "category": "naturaleza",
           "status": "plan",
           "locationQuery": "Mount Misen",
-          "time": "~10:30",
+          "time": "Taquilla 10:30",
           "transit": {
             "from": "Parque Momijidani",
             "summary": "Teleférico Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min); a pie a la cumbre ~30 min.",
@@ -416,7 +416,7 @@
           "links": {
             "officialWebsite": "https://miyajima-ropeway.info/"
           },
-          "notes": "Teleférico 9:00–16:00 de subida, última bajada 16:30. Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min). Desde Shishiiwa a la cumbre ~30 min a pie por senda con escalones; por el camino, salas de Daishō-in en la montaña y el Reikadō con la «llama eterna» (gratis). Mirador de la cumbre con vista del mar interior. Estar de vuelta en Shishiiwa antes de las 16:00. Mañana sale despejado y con viento: llevar algo de abrigo arriba."
+          "notes": "HECHO 22/10: en la taquilla de Momijidani a las 10:30 (según Jaime). Teleférico 9:00–16:00 de subida, última bajada 16:30. Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min). Desde Shishiiwa a la cumbre ~30 min a pie por senda con escalones; por el camino, salas de Daishō-in en la montaña y el Reikadō con la «llama eterna» (gratis). Mirador de la cumbre con vista del mar interior. Estar de vuelta en Shishiiwa antes de las 16:00. Mañana sale despejado y con viento: llevar algo de abrigo arriba."
         },
         {
           "id": "fujitaya",
