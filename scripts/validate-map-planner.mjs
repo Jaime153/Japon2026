@@ -712,11 +712,17 @@ assert(!cardsSource.includes('Toca para ver qué hacer y acciones') ||
     'Mapa: usar la alternativa elegida o el valor por defecto');
   const hiro = JSON.parse(readFileSync('src/content/segments/hiroshima.json', 'utf8'));
   const lunch = hiro.days.find(d => d.date === '2026-10-22')?.activities.find(a => a.id === 'fujitaya');
-  const ids = lunch?.choices?.options.map(o => o.id).join(',');
-  assert(lunch?.choices?.defaultId === 'fujitaya' && ids === 'fujitaya,mametanuki,umeyama,ueno',
-    '22/10: comida con selector Fujitaya (defecto), Mametanuki, Umeyama, Ueno; sin locales cerrados el jueves');
-  assert(lunch.choices.options.every(o => !o.note || o.note.length <= 140),
-    '22/10: una línea corta por opción');
+  if (lunch?.visited) {
+    // Comida ya hecha en Fujitaya: el selector desaparece y queda el hecho real.
+    assert(!lunch.choices && lunch.title.includes('Fujitaya') && lunch.status === 'confirmado',
+      '22/10: comida realizada en Fujitaya, sin selector');
+  } else {
+    const ids = lunch?.choices?.options.map(o => o.id).join(',');
+    assert(lunch?.choices?.defaultId === 'fujitaya' && ids === 'fujitaya,mametanuki,umeyama,ueno',
+      '22/10: comida con selector Fujitaya (defecto), Mametanuki, Umeyama, Ueno; sin locales cerrados el jueves');
+    assert(lunch?.choices?.options.every(o => !o.note || o.note.length <= 140),
+      '22/10: una línea corta por opción');
+  }
 }
 
 if (failures.length) {
