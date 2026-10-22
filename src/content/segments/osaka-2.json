@@ -14,7 +14,7 @@
   "days": [
     {
       "date": "2026-10-23",
-      "title": "Llegada a Osaka · check-in APA y maletas → Shinsaibashi y Dōtonbori",
+      "title": "Llegada a Osaka · check-in APA y maletas → tarde libre",
       "status": "plan",
       "activities": [
         {
@@ -56,42 +56,16 @@
           "notes": "Llegáis a las ~14:05: o comer algo en las áreas de servicio del bus, o comida tardía por Hommachi/Shinsaibashi tras el check-in. Sin restaurante fijo."
         },
         {
-          "id": "shinsaibashi",
-          "title": "Shinsaibashi",
-          "category": "compras",
-          "status": "opcional",
-          "locationQuery": "Shinsaibashi Osaka",
-          "plan": [
-            "Recorrer Shinsaibashi para compras y paseo.",
-            "Cerrar cuando apetezca; este primer día de vuelta a Osaka debe ser ligero."
-          ],
-          "transit": {
-            "from": "Dōtonbori",
-            "summary": "Ir andando por Shinsaibashi-suji; no hace falta metro.",
-            "approximateDuration": "10–20 min"
-          },
-          "time": "de camino"
-        },
-        {
-          "id": "dotonbori-final",
-          "title": "Dōtonbori",
-          "category": "barrio",
+          "id": "tarde-libre-1023",
+          "title": "Tarde libre",
+          "category": "otro",
           "status": "plan",
-          "locationQuery": "Dotonbori Osaka",
-          "plan": [
-            "Volver a Dōtonbori ya sin presión de verlo todo por primera vez.",
-            "Centrarse en comer/pasear/repetir lo que más gustó."
-          ],
-          "time": "~16:30",
-          "transit": {
-            "from": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-            "summary": "Hommachi (M18) → Namba (M20) directo por Midosuji Line; caminar a Dōtonbori.",
-            "approximateDuration": "15–20 min"
-          },
-          "notes": "Hommachi → Namba por Midosuji (2 paradas, ~240 ¥ estimado) o a pie por Shinsaibashi-suji (~20 min). Paseo y neones al anochecer; cena libre."
+          "time": "tarde",
+          "approximatePrice": "0 ¥",
+          "notes": "Descanso tras el viaje en bus y deshacer maletas. Cena libre."
         }
       ],
-      "note": "Viernes 23/10. Bus JR desde Hiroshima (llega ~14:05) → metro a Hommachi → check-in APA (15:00) y maletas de Yamato → Shinsaibashi y Dōtonbori por la tarde. Cena libre."
+      "note": "Viernes 23/10. Bus JR desde Hiroshima (llega ~14:05) → metro a Hommachi → check-in APA (15:00) y maletas de Yamato → tarde libre. Cena libre."
     },
     {
       "date": "2026-10-24",
