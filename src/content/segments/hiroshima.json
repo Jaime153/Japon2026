@@ -294,9 +294,9 @@
     },
     {
       "date": "2026-10-22",
-      "title": "Miyajima completo · salida 07:45, santuario 09:00",
+      "title": "Miyajima · santuario hecho → Daishō-in → anago meshi → Misen",
       "status": "plan",
-      "note": "Jueves 22/10. Previsión JMA del 21: despejado, 0 % de lluvia, 15–24 °C, viento del noreste en el mar. Salida 07:45 → santuario 09:00 → torii → Senjōkaku → Daishō-in → Fujitaya (anago meshi, cola ~11:00; planes B en la ficha) → Momijidani → teleférico y Misen → Momijidō/Omotesandō → atardecer opcional → vuelta. Coste aprox. por persona: transporte ~1.320 ¥ ida y vuelta (con tasa), teleférico 2.000 ¥, santuario 300 ¥, Senjōkaku 100 ¥, anago meshi ~2.600–3.000 ¥.",
+      "note": "Jueves 22/10. HECHO: santuario Itsukushima por la mañana; Daigan-ji ~09:30. Resto: Daishō-in → comida anago meshi ~11:00 → Momijidani → teleférico y Misen (última bajada 16:30) → Senjōkaku y pagoda (cierra 16:30) → Omotesandō → atardecer opcional → vuelta.",
       "activities": [
         {
           "id": "ida-miyajima-1022",
@@ -319,15 +319,14 @@
           "id": "itsukushima",
           "title": "Santuario Itsukushima · 09:00",
           "category": "templo",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
           "locationQuery": "Itsukushima Shrine",
-          "time": "09:00",
           "goshuin": true,
           "description": "Itsukushima Jinja es el santuario sintoísta de Miyajima, isla venerada como sagrada desde la Antigüedad. Según su tradición, el santuario se fundó en 593; adquirió gran esplendor a partir de 1168 bajo el patrocinio de Taira no Kiyomori, poderoso dirigente del final del período Heian. El complejo se diseñó sobre pilotes y pasarelas junto al mar, como si flotara cuando sube la marea. Venera a tres kami femeninos ligados a la protección de navegación y mares. El gran torii bermellón es la puerta simbólica al espacio sagrado. El contraste de monte Misen, bahía y arquitectura forma parte de su significado y reconocimiento como Patrimonio Mundial de la UNESCO.",
           "approximatePrice": "300 ¥/persona",
           "duration": "~1 h con goshuin",
-          "notes": "Abierto desde las 6:30 (horario 15/10–30/11: 6:30–17:30), 300 ¥. A las 09:00 la marea está bajando desde la pleamar de las 06:52: aún hay agua bajo el santuario (~225 cm, cálculo estimado) pero no el efecto «flotando» completo (≥250 cm). Antes de las 11:00 hay bastante menos gente. Goshuin en la oficina de la salida; hora de apertura de la oficina NO verificada.",
+          "notes": "HECHO 22/10: santuario visitado por la mañana (según Jaime). Abierto desde las 6:30 (horario 15/10–30/11: 6:30–17:30), 300 ¥. A las 09:00 la marea está bajando desde la pleamar de las 06:52: aún hay agua bajo el santuario (~225 cm, cálculo estimado) pero no el efecto «flotando» completo (≥250 cm). Antes de las 11:00 hay bastante menos gente. Goshuin en la oficina de la salida; hora de apertura de la oficina NO verificada.",
           "links": {
             "officialWebsite": "https://www.itsukushimajinja.jp/",
             "googleMaps": "https://www.google.com/maps/search/?api=1&query=Itsukushima%20Shrine"
@@ -336,7 +335,8 @@
             "from": "Omotesandō",
             "summary": "A pie por la orilla hasta la entrada del santuario.",
             "approximateDuration": "~10 min"
-          }
+          },
+          "visited": true
         },
         {
           "id": "miyajima-torii",
@@ -344,7 +344,6 @@
           "category": "mirador",
           "status": "plan",
           "locationQuery": "Itsukushima Floating Torii",
-          "time": "~10:00",
           "description": "El gran torii de Itsukushima marca de forma simbólica la entrada a un santuario sintoísta, pero aquí se alza en el mar: el paso entre lo cotidiano y lo sagrado depende visualmente de la marea. El torii actual data de 1875 y mide unos 16,8 metros; la estructura se sostiene fundamentalmente por su peso y está estabilizada con apoyos laterales. Su color bermellón, el bosque de la isla y el templo flotante forman un paisaje ritual diseñado para contemplarse también desde el agua. En marea baja se puede pasear cerca cuando las condiciones lo permiten; en marea alta parece flotar. No es una atracción independiente del santuario de Itsukushima.",
           "approximatePrice": "0 ¥",
           "notes": "Al salir del santuario, paseo por la orilla. Mareas 22/10: pleamar 06:52 (271 cm), bajamar 13:00 (109 cm), pleamar 19:24 (320 cm). A las 09:00 el torii sigue en el agua; para llegar andando haría falta ≤100 cm y el 22 no se alcanza.",
@@ -358,28 +357,21 @@
           }
         },
         {
-          "id": "senjokaku-pagoda-1022",
-          "title": "Senjōkaku y pagoda de cinco pisos",
-          "category": "templo",
-          "status": "plan",
-          "time": "~10:15",
-          "locationQuery": "Senjokaku Miyajima",
-          "duration": "~30 min",
-          "approximatePrice": "100 ¥ Senjōkaku; pagoda gratis (exterior)",
-          "notes": "Senjōkaku (Toyokuni-jinja): 8:30–16:30. Colina junto al santuario, vistas sobre Omotesandō.",
-          "description": "El Senjōkaku («sala de mil tatamis») lo mandó construir Toyotomi Hideyoshi en 1587 como sala de lecturas de sutras por los caídos en guerra. Su muerte en 1598 dejó la obra sin terminar: aún hoy no tiene paredes ni techo decorado. Tras la separación de budismo y sintoísmo en la era Meiji pasó a ser el santuario Toyokuni, dedicado al propio Hideyoshi. La pagoda de cinco pisos contigua data de 1407 y mezcla estilos japonés y chino.",
-          "transit": {
-            "from": "Gran torii",
-            "summary": "A pie, subida corta por detrás del santuario.",
-            "approximateDuration": "~10 min"
-          }
+          "id": "daiganji-1022",
+          "title": "Daigan-ji",
+          "category": "otro",
+          "status": "confirmado",
+          "visited": true,
+          "locationQuery": "大願寺 宮島",
+          "approximatePrice": "0 ¥",
+          "notes": "HECHO 22/10: allí a las ~09:30 (según Jaime). Templo junto a la salida del santuario, de camino a Daishō-in."
         },
         {
           "id": "daishoin-1022",
           "title": "Daishō-in",
           "category": "templo",
           "status": "plan",
-          "time": "~10:35",
+          "time": "~09:35",
           "locationQuery": "Daisho-in Miyajima",
           "duration": "~45 min",
           "approximatePrice": "0 ¥",
@@ -387,9 +379,9 @@
           "notes": "Abierto 8:00–17:00. Escalinata con ruedas de sutras, cueva Henjōkutsu y estatuas rakan. Fujitaya queda a 1–2 min.",
           "description": "Daishō-in es el templo budista más antiguo de Miyajima, de la escuela Shingon Omuro. La tradición atribuye su fundación a Kōbō Daishi (Kūkai) en el año 806, tras practicar en el monte Misen. Fue templo administrador del santuario Itsukushima hasta la separación Meiji. En la cueva Henjōkutsu se reúnen imágenes de los 88 templos de la peregrinación de Shikoku, y las ruedas de la escalera contienen el Sutra del Corazón: girarlas equivale a recitarlo.",
           "transit": {
-            "from": "Senjōkaku",
-            "summary": "A pie hacia el oeste por detrás del santuario.",
-            "approximateDuration": "~15 min (estimado)"
+            "from": "Daigan-ji",
+            "summary": "A pie cuesta arriba hacia el oeste.",
+            "approximateDuration": "~5 min"
           }
         },
         {
@@ -481,18 +473,35 @@
           "notes": "Teleférico 9:00–16:00 de subida, última bajada 16:30. Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min). Desde Shishiiwa a la cumbre ~30 min a pie por senda con escalones; por el camino, salas de Daishō-in en la montaña y el Reikadō con la «llama eterna» (gratis). Mirador de la cumbre con vista del mar interior. Estar de vuelta en Shishiiwa antes de las 16:00. Mañana sale despejado y con viento: llevar algo de abrigo arriba."
         },
         {
+          "id": "senjokaku-pagoda-1022",
+          "title": "Senjōkaku y pagoda de cinco pisos",
+          "category": "templo",
+          "status": "plan",
+          "time": "~15:15",
+          "locationQuery": "Senjokaku Miyajima",
+          "duration": "~30 min",
+          "approximatePrice": "100 ¥ Senjōkaku; pagoda gratis (exterior)",
+          "notes": "Se dejó para la vuelta: está en la colina sobre Omotesandō, de camino al muelle. Senjōkaku (Toyokuni-jinja): 8:30–16:30, 100 ¥. Pagoda solo exterior, gratis.",
+          "description": "El Senjōkaku («sala de mil tatamis») lo mandó construir Toyotomi Hideyoshi en 1587 como sala de lecturas de sutras por los caídos en guerra. Su muerte en 1598 dejó la obra sin terminar: aún hoy no tiene paredes ni techo decorado. Tras la separación de budismo y sintoísmo en la era Meiji pasó a ser el santuario Toyokuni, dedicado al propio Hideyoshi. La pagoda de cinco pisos contigua data de 1407 y mezcla estilos japonés y chino.",
+          "transit": {
+            "from": "Teleférico Momijidani",
+            "summary": "Bajar a pie por el parque Momijidani y subir la colina junto al santuario.",
+            "approximateDuration": "~20 min (estimado)"
+          }
+        },
+        {
           "id": "omotesando-1022",
           "title": "Momijidō, Omotesandō y Machiya-dōri",
           "category": "compras",
           "status": "plan",
-          "time": "~15:15",
+          "time": "~15:45",
           "locationQuery": "Miyajima Omotesando Shopping Street",
           "approximatePrice": "0 ¥ pasear; age-momiji ~200–300 ¥/unidad (estimado)",
           "notes": "Bajando del teleférico: Momijidō honten para el age-momiji (momiji manjū frito, se come caliente en la calle; 8:30–17:30). Omotesandō es la calle comercial entre el muelle y el santuario; Machiya-dōri, la paralela de casas tradicionales, es más tranquila para pasear.",
           "transit": {
-            "from": "Teleférico Momijidani",
-            "summary": "Bajar a pie por el parque Momijidani.",
-            "approximateDuration": "~20 min (estimado)"
+            "from": "Senjōkaku",
+            "summary": "Bajar la escalera de la colina hasta la calle comercial.",
+            "approximateDuration": "~5 min"
           }
         },
         {
@@ -533,20 +542,19 @@
         },
         {
           "id": "manana-isla-1022",
-          "title": "Muelle → santuario → torii → Senjōkaku → Daishō-in → Fujitaya",
+          "title": "Muelle → santuario → Daigan-ji → Daishō-in → comida",
           "mode": "walk",
           "activityIds": [
             "ida-miyajima-1022",
             "itsukushima",
-            "miyajima-torii",
-            "senjokaku-pagoda-1022",
+            "daiganji-1022",
             "daishoin-1022",
             "fujitaya"
           ]
         },
         {
           "id": "misen-1022",
-          "title": "Fujitaya → Momijidani → teleférico → Misen",
+          "title": "Comida → Momijidani → teleférico → Misen",
           "mode": "walk",
           "activityIds": [
             "fujitaya",
@@ -556,10 +564,11 @@
         },
         {
           "id": "tarde-isla-1022",
-          "title": "Bajada → Omotesandō → torii → muelle",
+          "title": "Bajada → Senjōkaku y pagoda → Omotesandō → torii → muelle",
           "mode": "walk",
           "activityIds": [
             "misen",
+            "senjokaku-pagoda-1022",
             "omotesando-1022",
             "atardecer-torii-1022",
             "vuelta-miyajima-1022"
