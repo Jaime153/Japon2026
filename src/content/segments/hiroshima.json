@@ -294,9 +294,9 @@
     },
     {
       "date": "2026-10-22",
-      "title": "Miyajima · santuario hecho → Daishō-in → anago meshi → Misen",
+      "title": "Miyajima · Daishō-in hecho → Misen → comida → Senjōkaku",
       "status": "plan",
-      "note": "Jueves 22/10. HECHO: santuario Itsukushima por la mañana; Daigan-ji ~09:30. Resto: Daishō-in → comida anago meshi ~11:00 → Momijidani → teleférico y Misen (última bajada 16:30) → Senjōkaku y pagoda (cierra 16:30) → Omotesandō → atardecer opcional → vuelta.",
+      "note": "Jueves 22/10. HECHO: santuario Itsukushima, Daigan-ji (~09:30) y Daishō-in (hasta ~10:05). Ahora: Momijidani → teleférico y Misen → comida anago meshi al bajar (~13:00) → Senjōkaku y pagoda (cierra 16:30) → Omotesandō → atardecer opcional → vuelta. Los tiempos a pie son estimados: usar «Abrir ruta en Google Maps» de cada tramo.",
       "activities": [
         {
           "id": "ida-miyajima-1022",
@@ -370,38 +370,72 @@
           "id": "daishoin-1022",
           "title": "Daishō-in",
           "category": "templo",
-          "status": "plan",
-          "time": "~09:35",
+          "status": "confirmado",
           "locationQuery": "Daisho-in Miyajima",
           "duration": "~45 min",
           "approximatePrice": "0 ¥",
           "goshuin": true,
-          "notes": "Abierto 8:00–17:00. Escalinata con ruedas de sutras, cueva Henjōkutsu y estatuas rakan. Fujitaya queda a 1–2 min.",
+          "notes": "HECHO 22/10: terminado hacia las 10:05 (según Jaime). Abierto 8:00–17:00. Escalinata con ruedas de sutras, cueva Henjōkutsu y estatuas rakan. Fujitaya queda a 1–2 min.",
           "description": "Daishō-in es el templo budista más antiguo de Miyajima, de la escuela Shingon Omuro. La tradición atribuye su fundación a Kōbō Daishi (Kūkai) en el año 806, tras practicar en el monte Misen. Fue templo administrador del santuario Itsukushima hasta la separación Meiji. En la cueva Henjōkutsu se reúnen imágenes de los 88 templos de la peregrinación de Shikoku, y las ruedas de la escalera contienen el Sutra del Corazón: girarlas equivale a recitarlo.",
           "transit": {
             "from": "Daigan-ji",
             "summary": "A pie cuesta arriba hacia el oeste.",
             "approximateDuration": "~5 min"
+          },
+          "visited": true
+        },
+        {
+          "id": "momijidani-1022",
+          "title": "Parque Momijidani · camino al teleférico",
+          "category": "naturaleza",
+          "status": "plan",
+          "time": "~10:10",
+          "locationQuery": "Momijidani Park Miyajima",
+          "approximatePrice": "0 ¥",
+          "notes": "Valle de arces junto a un riachuelo, con ciervos y puentecitos rojos; camino a pie hasta la estación del teleférico. Ahora estará verde (el rojo llega a mediados de noviembre).",
+          "transit": {
+            "from": "Daishō-in",
+            "summary": "A pie hacia el este por detrás del santuario y subida por el parque Momijidani hasta la estación del teleférico.",
+            "approximateDuration": "~20 min (estimado; mirar en Maps)"
           }
+        },
+        {
+          "id": "misen",
+          "title": "Teleférico y cumbre del Misen",
+          "category": "naturaleza",
+          "status": "plan",
+          "locationQuery": "Mount Misen",
+          "time": "~10:30",
+          "transit": {
+            "from": "Parque Momijidani",
+            "summary": "Teleférico Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min); a pie a la cumbre ~30 min.",
+            "approximateDuration": "~45 min hasta la cumbre (estimado)"
+          },
+          "duration": "~3 h",
+          "approximatePrice": "2.000 ¥/persona ida y vuelta",
+          "links": {
+            "officialWebsite": "https://miyajima-ropeway.info/"
+          },
+          "notes": "Teleférico 9:00–16:00 de subida, última bajada 16:30. Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min). Desde Shishiiwa a la cumbre ~30 min a pie por senda con escalones; por el camino, salas de Daishō-in en la montaña y el Reikadō con la «llama eterna» (gratis). Mirador de la cumbre con vista del mar interior. Estar de vuelta en Shishiiwa antes de las 16:00. Mañana sale despejado y con viento: llevar algo de abrigo arriba."
         },
         {
           "id": "fujitaya",
           "title": "Comida · anago meshi",
           "category": "comida",
           "status": "plan",
-          "notes": "Anago meshi: congrio de mar (primo de la anguila, más suave) a la brasa con salsa dulce sobre arroz cocido en su caldo; el plato típico de Miyajima. Ninguno admite reserva. Cerrados el jueves: Inachū y Wada.",
+          "notes": "Anago meshi: congrio de mar (primo de la anguila, más suave) a la brasa con salsa dulce sobre arroz cocido en su caldo; el plato típico de Miyajima. Comida tras bajar del Misen. Fujitaya cierra cuando se acaba el anago: si ya no queda, elegir Mametanuki o Umeyama en el selector. Ninguno admite reserva.",
           "locationQuery": "Fujitaya Miyajima",
           "links": {
             "officialWebsite": "https://www.fujitayamiyajima.com/"
           },
-          "time": "~11:00 cola",
+          "time": "~13:00",
           "priority": "must",
           "address": "広島県廿日市市宮島町125-2",
           "approximatePrice": "~2.000–3.000 ¥/persona según sitio",
           "transit": {
-            "from": "Daishō-in",
-            "summary": "A pie, bajando hacia el santuario.",
-            "approximateDuration": "1–2 min"
+            "from": "Teleférico Momijidani",
+            "summary": "Bajar a pie por el parque Momijidani; Fujitaya queda junto a Daishō-in. Mametanuki y Umeyama, junto al muelle.",
+            "approximateDuration": "~15–20 min (estimado; mirar en Maps)"
           },
           "choices": {
             "label": "Dónde comer",
@@ -444,49 +478,20 @@
           }
         },
         {
-          "id": "momijidani-1022",
-          "title": "Parque Momijidani · camino al teleférico",
-          "category": "naturaleza",
-          "status": "plan",
-          "time": "~11:45",
-          "locationQuery": "Momijidani Park Miyajima",
-          "approximatePrice": "0 ¥",
-          "notes": "Valle de arces a lo largo de un riachuelo, con ciervos y puentecitos rojos. Es el camino a pie desde Fujitaya hasta la estación del teleférico (~15–20 min). El rojo del otoño llega a mediados de noviembre: ahora estará verde."
-        },
-        {
-          "id": "misen",
-          "title": "Teleférico y cumbre del Misen",
-          "category": "naturaleza",
-          "status": "plan",
-          "locationQuery": "Mount Misen",
-          "time": "~12:15",
-          "transit": {
-            "from": "Fujitaya",
-            "summary": "A pie por el parque Momijidani hasta la estación del teleférico.",
-            "approximateDuration": "~15–20 min (estimado)"
-          },
-          "duration": "~3 h",
-          "approximatePrice": "2.000 ¥/persona ida y vuelta",
-          "links": {
-            "officialWebsite": "https://miyajima-ropeway.info/"
-          },
-          "notes": "Teleférico 9:00–16:00 de subida, última bajada 16:30. Momijidani → Kayatani (~10 min) → transbordo → Shishiiwa (~5 min). Desde Shishiiwa a la cumbre ~30 min a pie por senda con escalones; por el camino, salas de Daishō-in en la montaña y el Reikadō con la «llama eterna» (gratis). Mirador de la cumbre con vista del mar interior. Estar de vuelta en Shishiiwa antes de las 16:00. Mañana sale despejado y con viento: llevar algo de abrigo arriba."
-        },
-        {
           "id": "senjokaku-pagoda-1022",
           "title": "Senjōkaku y pagoda de cinco pisos",
           "category": "templo",
           "status": "plan",
-          "time": "~15:15",
+          "time": "~14:15",
           "locationQuery": "Senjokaku Miyajima",
           "duration": "~30 min",
           "approximatePrice": "100 ¥ Senjōkaku; pagoda gratis (exterior)",
           "notes": "Se dejó para la vuelta: está en la colina sobre Omotesandō, de camino al muelle. Senjōkaku (Toyokuni-jinja): 8:30–16:30, 100 ¥. Pagoda solo exterior, gratis.",
           "description": "El Senjōkaku («sala de mil tatamis») lo mandó construir Toyotomi Hideyoshi en 1587 como sala de lecturas de sutras por los caídos en guerra. Su muerte en 1598 dejó la obra sin terminar: aún hoy no tiene paredes ni techo decorado. Tras la separación de budismo y sintoísmo en la era Meiji pasó a ser el santuario Toyokuni, dedicado al propio Hideyoshi. La pagoda de cinco pisos contigua data de 1407 y mezcla estilos japonés y chino.",
           "transit": {
-            "from": "Teleférico Momijidani",
-            "summary": "Bajar a pie por el parque Momijidani y subir la colina junto al santuario.",
-            "approximateDuration": "~20 min (estimado)"
+            "from": "Comida",
+            "summary": "A pie hasta la colina junto al santuario, sobre Omotesandō.",
+            "approximateDuration": "~10 min (estimado)"
           }
         },
         {
@@ -494,7 +499,7 @@
           "title": "Momijidō, Omotesandō y Machiya-dōri",
           "category": "compras",
           "status": "plan",
-          "time": "~15:45",
+          "time": "~14:45",
           "locationQuery": "Miyajima Omotesando Shopping Street",
           "approximatePrice": "0 ¥ pasear; age-momiji ~200–300 ¥/unidad (estimado)",
           "notes": "Bajando del teleférico: Momijidō honten para el age-momiji (momiji manjū frito, se come caliente en la calle; 8:30–17:30). Omotesandō es la calle comercial entre el muelle y el santuario; Machiya-dōri, la paralela de casas tradicionales, es más tranquila para pasear.",
@@ -542,32 +547,32 @@
         },
         {
           "id": "manana-isla-1022",
-          "title": "Muelle → santuario → Daigan-ji → Daishō-in → comida",
+          "title": "Muelle → santuario → Daigan-ji → Daishō-in",
           "mode": "walk",
           "activityIds": [
             "ida-miyajima-1022",
             "itsukushima",
             "daiganji-1022",
-            "daishoin-1022",
-            "fujitaya"
+            "daishoin-1022"
           ]
         },
         {
           "id": "misen-1022",
-          "title": "Comida → Momijidani → teleférico → Misen",
+          "title": "Daishō-in → Momijidani → teleférico → Misen",
           "mode": "walk",
           "activityIds": [
-            "fujitaya",
+            "daishoin-1022",
             "momijidani-1022",
             "misen"
           ]
         },
         {
           "id": "tarde-isla-1022",
-          "title": "Bajada → Senjōkaku y pagoda → Omotesandō → torii → muelle",
+          "title": "Bajada → comida → Senjōkaku y pagoda → Omotesandō → muelle",
           "mode": "walk",
           "activityIds": [
             "misen",
+            "fujitaya",
             "senjokaku-pagoda-1022",
             "omotesando-1022",
             "atardecer-torii-1022",
