@@ -8,12 +8,6 @@ export const TRIP = {
 
 export const MANUAL_TASKS = [
   {
-    id: 'billete-hiroshima-osaka-1023',
-    title: 'Comprar el bus WILLER Hiroshima → Osaka del 23',
-    detail: 'Decidido bus: WILLER 08:35 Hiroshima Station salida norte → Umeda 14:00, ~3.000–3.300 ¥/persona. Reservar cuanto antes en willer-travel.com/en como invitado; pagar en 10 min. Pasos en el día 23.',
-    context: 'Cuanto antes',
-  },
-  {
     id: 'tricount-fuji-car',
     title: 'Añadir coche Fuji a Tricount',
     detail: 'Añadir 53,82 € del alquiler Honda Fit o similar del 9 de octubre.',
