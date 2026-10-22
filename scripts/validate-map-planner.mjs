@@ -469,10 +469,9 @@ const osakaTwo=segments.find(s=>s.hotel?.name==='APA Hotel & Resort Midosuji Hom
 const osakaFri=osakaTwo?.days.find(d=>d.date==='2026-10-23');
 const collect=osakaFri?.activities.find(a=>a.id==='recoger-maletas-osaka-1023');
 assert(collect?.status==='plan' && !collect.visited &&
-  collect?.notes.includes('YA FUERON ENTREGADAS') &&
-  collect?.notes.includes('No está confirmada') &&
-  osakaFri?.activities[0]?.id==='recoger-maletas-osaka-1023',
-  '23/10: Yamato recibido de Jaime, llegada al APA y recogida aún pendientes');
+  collect?.notes.includes('Yamato') &&
+  osakaFri?.activities.findIndex(a=>a.id==='recoger-maletas-osaka-1023') <= 1,
+  '23/10: recoger las maletas de Yamato en el check-in del APA, justo al llegar a Osaka');
 // Día 13: salida real prevista a las 08:00. En Kyoto Station se hace el
 // registro y se dejan bolsas, pero la habitación se ocupa más tarde.
 // La planificación anterior tenía horas previstas, pero el viaje ya ocurrió.

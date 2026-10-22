@@ -6,43 +6,54 @@
   "endDate": "2026-10-28",
   "hotel": {
     "name": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=APA%20Hotel%20%26%20Resort%20Midosuji%20Hommachi%20Ekimae%20Tower"
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=APA%20Hotel%20%26%20Resort%20Midosuji%20Hommachi%20Ekimae%20Tower",
+    "address": "〒541-0054 大阪府大阪市中央区南本町4-2-9",
+    "checkIn": "15:00",
+    "checkOut": "10:00"
   },
   "days": [
     {
       "date": "2026-10-23",
-      "title": "Osaka · recoger maletas enviadas desde Kioto → Dōtonbori",
+      "title": "Llegada a Osaka · check-in APA y maletas → Shinsaibashi y Dōtonbori",
       "status": "plan",
       "activities": [
         {
+          "id": "llegada-osaka-bus-1023",
+          "title": "Osaka Station → metro a Hommachi",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~14:05",
+          "locationQuery": "Umeda Station Osaka Metro Midosuji",
+          "approximatePrice": "~240 ¥/persona (estimado)",
+          "notes": "El bus para en la terminal JR de Osaka Station (lado norte). A pie a la estación Umeda de la Midosuji Line (~10 min, estimado), dirección Namba/Tennōji, 2 paradas hasta Hommachi. El APA está conectado con la salida 18 de Hommachi.",
+          "transit": {
+            "from": "Terminal de autobuses JR de Osaka Station",
+            "summary": "A pie a Umeda (Midosuji) → Hommachi, salida 18.",
+            "approximateDuration": "~25 min (estimado)"
+          }
+        },
+        {
           "id": "recoger-maletas-osaka-1023",
-          "title": "Recoger en el APA las maletas enviadas desde Kioto",
+          "title": "Check-in APA Hommachi y maletas de Yamato",
           "category": "transporte",
           "status": "plan",
           "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 4-2-9 Minamihommachi, Chuo-ku, Osaka",
-          "notes": "VIERNES 23/10: recogida PENDIENTE en recepción del APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 〒541-0054 大阪市中央区南本町4-2-9. EL LUNES 19 Jaime CONFIRMÓ que las maletas grandes YA FUERON ENTREGADAS a Yamato en Kioto, con destino directo al APA de Osaka, evitando pasar las maletas por Hiroshima. No está confirmada la FECHA de llegada contratada (el 22 era objetivo recomendado), el tracking ni que el hotel las haya RECIBIDO. Al hacer check-in el 23, preguntar si han recibido los bultos y recogerlos; si faltan, consultar justificantes privados de Yamato. El hotel permite entregas adelantadas prepagadas a nombre del huésped. NO indicar recogida ya hecha.",
+          "notes": "Check-in desde las 15:00 (si llegáis antes, dejar las bolsas en recepción). Al hacer check-in, pedir en recepción las maletas enviadas por Yamato desde Kioto el 19/10 a nombre de la reserva. APA Hotel & Resort Midosuji Hommachi Ekimae Tower, 〒541-0054 大阪市中央区南本町4-2-9, conectado con Hommachi salida 18.",
           "plan": [
-            "Maletas grandes YA ENTREGADAS a Yamato desde Kioto según Jaime; no hay que organizar otro envío en Hiroshima.",
-            "En el check-in del APA Osaka del 23/10 preguntar en recepción por la recepción del paquete, que todavía NO consta confirmada.",
-            "Recoger bultos si han llegado, y si no, consultar seguimiento privado de Yamato."
-          ]
+            "Enseñar la reserva y pedir los bultos de Yamato (ヤマトの荷物).",
+            "Subir maletas y descansar un rato."
+          ],
+          "time": "~14:45"
         },
         {
-          "id": "dotonbori-final",
-          "title": "Dōtonbori",
-          "category": "barrio",
-          "status": "plan",
-          "locationQuery": "Dotonbori Osaka",
-          "plan": [
-            "Volver a Dōtonbori ya sin presión de verlo todo por primera vez.",
-            "Centrarse en comer/pasear/repetir lo que más gustó."
-          ],
-          "time": "~17:00",
-          "transit": {
-            "from": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-            "summary": "Hommachi (M18) → Namba (M20) directo por Midosuji Line; caminar a Dōtonbori.",
-            "approximateDuration": "15–20 min"
-          }
+          "id": "comida-llegada-1023",
+          "title": "Comida tardía al llegar",
+          "category": "comida",
+          "status": "opcional",
+          "time": "~15:15",
+          "locationQuery": "Hommachi Osaka",
+          "approximatePrice": "~1.000–1.500 ¥/persona (estimado)",
+          "notes": "Llegáis a las ~14:05: o comer algo en las áreas de servicio del bus, o comida tardía por Hommachi/Shinsaibashi tras el check-in. Sin restaurante fijo."
         },
         {
           "id": "shinsaibashi",
@@ -58,9 +69,29 @@
             "from": "Dōtonbori",
             "summary": "Ir andando por Shinsaibashi-suji; no hace falta metro.",
             "approximateDuration": "10–20 min"
-          }
+          },
+          "time": "de camino"
+        },
+        {
+          "id": "dotonbori-final",
+          "title": "Dōtonbori",
+          "category": "barrio",
+          "status": "plan",
+          "locationQuery": "Dotonbori Osaka",
+          "plan": [
+            "Volver a Dōtonbori ya sin presión de verlo todo por primera vez.",
+            "Centrarse en comer/pasear/repetir lo que más gustó."
+          ],
+          "time": "~16:30",
+          "transit": {
+            "from": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
+            "summary": "Hommachi (M18) → Namba (M20) directo por Midosuji Line; caminar a Dōtonbori.",
+            "approximateDuration": "15–20 min"
+          },
+          "notes": "Hommachi → Namba por Midosuji (2 paradas, ~240 ¥ estimado) o a pie por Shinsaibashi-suji (~20 min). Paseo y neones al anochecer; cena libre."
         }
-      ]
+      ],
+      "note": "Viernes 23/10. Bus JR desde Hiroshima (llega ~14:05) → metro a Hommachi → check-in APA (15:00) y maletas de Yamato → Shinsaibashi y Dōtonbori por la tarde. Cena libre."
     },
     {
       "date": "2026-10-24",

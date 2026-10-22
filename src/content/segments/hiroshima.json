@@ -572,20 +572,20 @@
         },
         {
           "id": "bus-jr-hiroshima-osaka-1023",
-          "title": "Bus JR Hiroshima → Osaka · 08:40 · parada 4",
+          "title": "Bus JR 広島EXP大阪2号 · 08:40 · parada 4",
           "category": "transporte",
           "status": "confirmado",
           "time": "08:40",
           "locationQuery": "Hiroshima Station Shinkansen Exit bus terminal",
           "approximatePrice": "4.500 ¥/persona (9.000 ¥ los dos) · pagado",
           "duration": "~5 h 25 min",
-          "notes": "Billetes COMPRADOS el 20/10 en la taquilla de buses de Hiroshima Station (salida del Shinkansen): 4.500 ¥/persona. Bus JR «広島エクスプレス大阪», sale 08:40 de la PARADA 4 de la salida del Shinkansen. Llega ~14:05 a la terminal de autobuses JR de Osaka Station. Paradas para baño en áreas de servicio (Fukuyama, Kibi, Shiratori). Billete en papel: llevarlo a mano.",
+          "notes": "Billetes comprados el 20/10: 4.500 ¥/persona. Sale 08:40 de la PARADA 4 de la salida del Shinkansen (広島駅新幹線口). Coche 1, asientos 4B y 6B (no van juntos; se puede preguntar al conductor si hay sitio libre al lado). El conductor recoge el billete. Llega ~14:05 a la terminal de autobuses JR de Osaka Station (大阪駅JR高速BT). Paradas de descanso en áreas de servicio (Fukuyama, Kibi, Shiratori), con baño y tiendas. Comer y beber en el bus está permitido: mejor onigiri, sándwiches y bebida con tapón; evitar comida con olor fuerte (bentō, fideos), snacks ruidosos y alcohol.",
           "plan": [
+            "La noche antes o a las 08:00: comprar onigiri y bebida en el konbini.",
             "08:15 salir del APA con las bolsas.",
-            "08:25 estar en la parada 4 (salida del Shinkansen).",
-            "08:40 sale el bus; enseñar el billete al subir.",
-            "~14:05 llegada a la terminal JR de Osaka Station.",
-            "Andar a Umeda (metro) → Midosuji Line dirección Namba → Hommachi, 2 paradas (~10 min). El APA Midosuji Hommachi está junto a la estación de Hommachi."
+            "08:25 en la parada 4 (salida del Shinkansen).",
+            "08:40 sale el bus; dar el billete al conductor.",
+            "~14:05 llegada a la terminal JR de Osaka Station."
           ],
           "transit": {
             "from": "APA Hiroshima",
