@@ -169,6 +169,8 @@ const mapStageSchema = z.object({
 
 const daySchema = z.object({
   date: z.coerce.date(),
+  // Previsión en directo arriba del día (Open-Meteo).
+  weather: z.object({ place: z.string(), lat: z.number(), lon: z.number() }).optional(),
   mapStages: z.array(mapStageSchema).optional(),
   title: z.string().optional(),
   note: z.string().optional(),
