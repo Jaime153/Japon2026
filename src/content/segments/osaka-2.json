@@ -65,46 +65,251 @@
           "notes": "Descanso tras el viaje en bus y deshacer maletas. Cena libre."
         }
       ],
-      "note": "Viernes 23/10. Bus JR desde Hiroshima (llega ~14:05) → metro a Hommachi → check-in APA (15:00) y maletas de Yamato → tarde libre. Cena libre."
+      "note": "Viernes 23/10. Bus JR desde Hiroshima (llega ~14:05) → metro a Hommachi → check-in APA (15:00) y maletas de Yamato → tarde libre. Cena libre.",
+      "weather": {
+        "place": "Osaka (Hommachi)",
+        "lat": 34.6826,
+        "lon": 135.5004
+      }
     },
     {
       "date": "2026-10-24",
-      "title": "Kobe · día completo",
+      "title": "Kobe · Kitano, Ikuta-jinja, ternera de Kobe, Nankinmachi y puerto",
       "status": "plan",
       "activities": [
         {
-          "id": "kobe-day",
-          "title": "Kobe",
-          "category": "barrio",
+          "id": "ida-kobe-1024",
+          "title": "APA → Umeda → Hankyu a Kobe-Sannomiya",
+          "category": "transporte",
           "status": "plan",
-          "notes": "Excursión desde Osaka.",
-          "locationQuery": "Kobe Sannomiya",
-          "plan": [
-            "Ir a Kobe y recorrer la zona que mejor encaje con la reserva/comida.",
-            "Dejar el día centrado en Kobe, sin intentar meter otra ciudad."
-          ],
-          "time": "~09:00",
+          "time": "~09:15",
+          "locationQuery": "阪急 神戸三宮駅",
+          "approximatePrice": "Metro ~240 ¥ (estimado) + Hankyu 330 ¥ = ~570 ¥/persona",
+          "notes": "Midosuji de Hommachi a Umeda (2 paradas) y Hankyu Kobe Line desde Osaka-Umeda hasta Kobe-Sannomiya: 330 ¥, ~28 min, sin transbordo; IC sirve. Es más rápido y barato que JR (420 ¥).",
           "transit": {
             "from": "APA Hommachi",
-            "summary": "Hommachi (M18) → Umeda (M16) por Midosuji Line; caminar a JR Osaka → JR Kobe Line Special Rapid → Sannomiya.",
-            "approximateDuration": "45–60 min",
-            "note": "Elegir el restaurante de Kobe-gyū en torno a Sannomiya/Motomachi para no romper la ruta."
+            "summary": "Midosuji → Umeda → Hankyu Kobe Line (exprés) → Kobe-Sannomiya.",
+            "approximateDuration": "~45 min"
           }
         },
         {
-          "id": "kobe-gyu",
-          "title": "Comer Kobe-gyū",
+          "id": "kitano-1024",
+          "title": "Kitano Ijinkan-gai · calles de casas occidentales",
+          "category": "barrio",
+          "status": "plan",
+          "time": "~10:00",
+          "locationQuery": "北野異人館街 神戸",
+          "approximatePrice": "0 ¥ (por fuera)",
+          "notes": "Barrio en cuesta de casas de comerciantes extranjeros de finales del XIX. Ver por fuera la Casa de la Veleta (風見鶏の館) y la plaza de Kitano; hay un Starbucks dentro de una casa antigua. Los interiores son de pago: no entran. Con lluvia, vuelta corta.",
+          "transit": {
+            "from": "Kobe-Sannomiya",
+            "summary": "A pie cuesta arriba por Kitano-zaka.",
+            "approximateDuration": "~15 min (estimado)"
+          }
+        },
+        {
+          "id": "ikuta-jinja-1024",
+          "title": "Ikuta-jinja · santuario principal de Kobe",
+          "category": "templo",
+          "status": "plan",
+          "time": "~11:00",
+          "goshuin": true,
+          "locationQuery": "生田神社",
+          "approximatePrice": "0 ¥",
+          "duration": "~30 min",
+          "notes": "Abierto 7:00–17:00, entrada gratis. Está en pleno centro, entre Kitano y Sannomiya. Detrás del santuario, el pequeño bosque Ikuta no mori.",
+          "description": "Ikuta-jinja es uno de los santuarios sintoístas más antiguos de Japón: según el Nihon Shoki fue fundado a comienzos del siglo III por la emperatriz Jingū, y venera a Wakahirume, deidad asociada a la tejeduría y a los nuevos comienzos. Las familias que servían al santuario se llamaban «kanbe» (神戸), y de ahí viene el nombre de la ciudad de Kobe. Destruido varias veces —por inundaciones, por los bombardeos de 1945 y por el terremoto de 1995— se ha reconstruido siempre, y por eso se le asocia con la resiliencia. Hoy es muy popular para rezar por el amor y el matrimonio.",
+          "transit": {
+            "from": "Kitano",
+            "summary": "Bajada a pie por Kitano-zaka y la calle Ikuta.",
+            "approximateDuration": "~10 min (estimado)"
+          }
+        },
+        {
+          "id": "comida-kobe-1024",
+          "title": "Comida · ternera de Kobe",
           "category": "comida",
           "status": "plan",
-          "priority": "must",
-          "notes": "Prioridad gastronómica del día. Elegir restaurante concreto en Tabelog cuando sepamos horario y presupuesto; no fijar uno a ciegas.",
-          "locationQuery": "Kobe beef Sannomiya",
-          "links": {
-            "tabelog": "https://tabelog.com/en/hyogo/rstLst/steak/?sk=Kobe%20beef"
+          "time": "~11:45",
+          "locationQuery": "ステーキランド神戸館",
+          "approximatePrice": "~2.000–3.600 ¥/persona según sitio",
+          "notes": "Precios de agosto de 2025 (Kobe Journal). Comprobar la placa o certificado oficial de Kobe beef en la entrada: muchos locales venden ternera normal como «Kobe». Todos en Sannomiya, a pocos minutos de Ikuta-jinja.",
+          "choices": {
+            "label": "Dónde comer",
+            "defaultId": "steakland",
+            "options": [
+              {
+                "id": "steakland",
+                "name": "Steak Land",
+                "locationQuery": "ステーキランド神戸館",
+                "price": "3.580 ¥ (150 g)",
+                "hours": "11:00–14:00",
+                "note": "Filete de Kobe a la plancha delante de vosotros. El clásico; suele haber cola, reservar si se puede."
+              },
+              {
+                "id": "kamishige",
+                "name": "Kamishige",
+                "locationQuery": "神戸牛ステーキ&ハンバーグ カミシゲ",
+                "price": "2.800 ¥ (100 g)",
+                "hours": "11:00–14:00",
+                "note": "Con sopa, ensalada y arroz o pilaf para repetir. Local pequeño."
+              },
+              {
+                "id": "yoshitoyo",
+                "name": "Yoshitoyo",
+                "locationQuery": "神戸吉豊 さんプラザ",
+                "price": "2.000 ¥",
+                "hours": "11:00–16:00 (fin de semana)",
+                "note": "Hamburguesa 100 % Kobe en olla de barro. Lo más barato siendo Kobe de verdad."
+              },
+              {
+                "id": "yazawa",
+                "name": "Yazawa (ramen)",
+                "locationQuery": "神戸牛らーめん 八坐和",
+                "price": "1.980 ¥",
+                "hours": "11:00–15:00",
+                "note": "Ramen de ternera de Kobe + 2 sushi de carne + arroz con bokkake a voluntad."
+              },
+              {
+                "id": "nishimura",
+                "name": "Nishimura-ya",
+                "locationQuery": "あぶり肉工房 西村家 三宮店",
+                "price": "2.980 ¥",
+                "hours": "11:30–14:00",
+                "note": "Yakiniku de Kobe de una carnicería. Cierra los miércoles."
+              }
+            ]
           },
-          "plan": [
-            "Elegir restaurante por Tabelog según presupuesto, horario y disponibilidad.",
-            "Reservar si hace falta; esta es la prioridad gastronómica del día."
+          "transit": {
+            "from": "Ikuta-jinja",
+            "summary": "A pie por Sannomiya.",
+            "approximateDuration": "~5 min"
+          }
+        },
+        {
+          "id": "galerias-1024",
+          "title": "Galerías cubiertas Sannomiya Center-gai → Motomachi",
+          "category": "barrio",
+          "status": "plan",
+          "time": "~13:15",
+          "locationQuery": "三宮センター街",
+          "approximatePrice": "0 ¥",
+          "notes": "Calles comerciales cubiertas que unen Sannomiya con Motomachi: el camino a Chinatown sin mojarse.",
+          "transit": {
+            "from": "Comida",
+            "summary": "A pie hacia el oeste por la galería.",
+            "approximateDuration": "~15 min"
+          }
+        },
+        {
+          "id": "nankinmachi-1024",
+          "title": "Nankinmachi (Chinatown) · picoteo",
+          "category": "comida",
+          "status": "plan",
+          "time": "~13:45",
+          "locationQuery": "南京町 神戸",
+          "approximatePrice": "Butaman de Rōshōki 120 ¥/unidad; puestos ~300–800 ¥",
+          "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta ~11/2026 está en un local provisional (元町通1-3-7). En fin de semana, 30–60 min de cola.",
+          "transit": {
+            "from": "Motomachi",
+            "summary": "A pie hacia el sur desde la galería de Motomachi.",
+            "approximateDuration": "~5 min"
+          }
+        },
+        {
+          "id": "meriken-1024",
+          "title": "Meriken Park · BE KOBE y memorial del terremoto",
+          "category": "mirador",
+          "status": "plan",
+          "time": "~15:00",
+          "locationQuery": "メリケンパーク",
+          "approximatePrice": "0 ¥",
+          "notes": "Paseo del puerto: el cartel BE KOBE y el Memorial del Terremoto de 1995, donde se dejó sin reparar un tramo del muelle destruido. A esta hora debería haber dejado de llover.",
+          "transit": {
+            "from": "Nankinmachi",
+            "summary": "A pie hacia el sur por el antiguo barrio de extranjeros.",
+            "approximateDuration": "~10 min"
+          }
+        },
+        {
+          "id": "harborland-1024",
+          "title": "Harborland · atardecer en el puerto",
+          "category": "mirador",
+          "status": "plan",
+          "time": "~16:30",
+          "locationQuery": "神戸ハーバーランド umie MOSAIC",
+          "approximatePrice": "0 ¥; subir a la Port Tower 1.000–1.200 ¥ (opcional)",
+          "notes": "Paseo junto al agua con la Port Tower roja y el museo marítimo iluminados al anochecer (~17:15, estimado). Vista gratis desde la terraza de Mosaic.",
+          "transit": {
+            "from": "Meriken Park",
+            "summary": "A pie bordeando el puerto hacia el oeste.",
+            "approximateDuration": "~10 min"
+          }
+        },
+        {
+          "id": "nunobiki-noche-1024",
+          "title": "Opcional · teleférico de Nunobiki de noche",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "desde 17:00",
+          "locationQuery": "神戸布引ロープウェイ ハーブ園山麓駅",
+          "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
+          "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
+          "transit": {
+            "from": "Harborland",
+            "summary": "Metro Kaigan/Seishin-Yamate hasta Shin-Kobe y 5 min a pie.",
+            "approximateDuration": "~25 min (estimado)"
+          }
+        },
+        {
+          "id": "vuelta-kobe-1024",
+          "title": "Vuelta a Osaka · cena libre",
+          "category": "transporte",
+          "status": "plan",
+          "time": "noche",
+          "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
+          "approximatePrice": "Hankyu 330 ¥ + metro ~240 ¥ = ~570 ¥/persona",
+          "notes": "Desde Kobe-Sannomiya en Hankyu hasta Osaka-Umeda y Midosuji a Hommachi."
+        }
+      ],
+      "weather": {
+        "place": "Kobe (Sannomiya)",
+        "lat": 34.6946,
+        "lon": 135.1953
+      },
+      "note": "Sábado 24/10. Previsión del 22: lluvia débil hasta ~15:00 y despejando después; por eso el puerto va al final. Comida principal: ternera de Kobe (selector). Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida 2.000–3.600 ¥ + picoteo Nankinmachi.",
+      "mapStages": [
+        {
+          "id": "ida-kobe",
+          "title": "APA → Kobe-Sannomiya",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "ida-kobe-1024"
+          ]
+        },
+        {
+          "id": "kobe-a-pie",
+          "title": "Sannomiya → Kitano → Ikuta → comida → galerías → Nankinmachi → Meriken → Harborland",
+          "mode": "walk",
+          "activityIds": [
+            "ida-kobe-1024",
+            "kitano-1024",
+            "ikuta-jinja-1024",
+            "comida-kobe-1024",
+            "galerias-1024",
+            "nankinmachi-1024",
+            "meriken-1024",
+            "harborland-1024"
+          ]
+        },
+        {
+          "id": "vuelta-kobe",
+          "title": "Harborland → APA",
+          "mode": "transit",
+          "activityIds": [
+            "harborland-1024",
+            "@hotel-end"
           ]
         }
       ]
@@ -136,7 +341,12 @@
             "Poner un límite flexible de gasto/tiempo y disfrutar sin itinerario rígido."
           ]
         }
-      ]
+      ],
+      "weather": {
+        "place": "Osaka (Hommachi)",
+        "lat": 34.6826,
+        "lon": 135.5004
+      }
     },
     {
       "date": "2026-10-26",
@@ -196,7 +406,12 @@
           "notes": "Desde Katsuo-ji, taxi ~10 min hasta el aparcamiento más cercano y ~10 min a pie a la cascada (el templo tiene teléfono gratuito para pedir taxi). Bajada por el sendero del río hasta la estación Hankyu Minoh, ~40 min cuesta abajo. Comer en Minoh. Vuelta: Hankyu a Umeda y Midosuji a Hommachi."
         }
       ],
-      "note": "Lunes laborable: horario de Katsuo-ji 8:00–17:00. Comida principal en Minoh; cena libre."
+      "note": "Lunes laborable: horario de Katsuo-ji 8:00–17:00. Comida principal en Minoh; cena libre.",
+      "weather": {
+        "place": "Minoh (Katsuo-ji)",
+        "lat": 34.8697,
+        "lon": 135.4908
+      }
     },
     {
       "date": "2026-10-27",
@@ -225,7 +440,12 @@
             "Dejar margen para preparar equipaje y no terminar el viaje corriendo."
           ]
         }
-      ]
+      ],
+      "weather": {
+        "place": "Osaka (Hommachi)",
+        "lat": 34.6826,
+        "lon": 135.5004
+      }
     },
     {
       "date": "2026-10-28",
@@ -330,7 +550,12 @@
             ]
           }
         }
-      ]
+      ],
+      "weather": {
+        "place": "Osaka (Hommachi)",
+        "lat": 34.6826,
+        "lon": 135.5004
+      }
     }
   ],
   "candidateModules": []

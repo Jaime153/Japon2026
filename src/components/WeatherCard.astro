@@ -1,0 +1,97 @@
+---
+// Previsión en directo del día (Open-Meteo, sin clave y con CORS abierto).
+// Se pide al abrir la página y cada 30 min; la última respuesta se guarda en el
+// dispositivo para verla sin cobertura.
+interface Props { date: string; place: string; lat: number; lon: number; }
+const { date, place, lat, lon } = Astro.props;
+const jma = 'https://www.jma.go.jp/bosai/forecast/';
+const wn = `https://weathernews.jp/onebox/${lat}/${lon}/`;
+---
+
+<section
+  class="mb-3 rounded-2xl border border-sky-200 bg-sky-50 p-3"
+  data-weather-card
+  data-date={date}
+  data-lat={lat}
+  data-lon={lon}
+  aria-label={`Tiempo en ${place}`}
+>
+  <div class="flex items-center justify-between gap-2">
+    <p class="text-xs font-black uppercase tracking-[0.12em] text-sky-800">Tiempo · {place}</p>
+    <p class="text-[11px] font-semibold text-sky-700" data-weather-updated>cargando…</p>
+  </div>
+  <p class="mt-1 text-base font-black text-slate-950" data-weather-summary>Consultando la previsión…</p>
+  <div class="mt-2 flex gap-1 overflow-x-auto pb-1 text-center text-[11px]" data-weather-hours></div>
+  <div class="mt-1 flex flex-wrap gap-x-3 text-[11px] font-semibold">
+    <a href={jma} target="_blank" rel="noopener noreferrer" class="text-sky-800 underline">JMA</a>
+    <a href={wn} target="_blank" rel="noopener noreferrer" class="text-sky-800 underline">Weathernews</a>
+    <span class="text-slate-400">Datos: Open-Meteo</span>
+  </div>
+</section>
+
+<script>
+  const ICON = (code) => code === 0 ? '☀️' : code <= 2 ? '🌤️' : code === 3 ? '☁️' : code <= 48 ? '🌫️'
+    : code <= 67 || (code >= 80 && code <= 82) ? '🌧️' : code <= 77 ? '🌨️' : '⛈️';
+  const TEXT = (code) => code === 0 ? 'Despejado' : code <= 2 ? 'Algo nuboso' : code === 3 ? 'Nublado' : code <= 48 ? 'Niebla'
+    : code <= 57 ? 'Llovizna' : code <= 67 ? 'Lluvia' : code <= 77 ? 'Nieve' : code <= 82 ? 'Chubascos' : 'Tormenta';
+
+  function render(card, data, fromCache) {
+    const d = data.daily;
+    const summary = card.querySelector('[data-weather-summary]');
+    const hours = card.querySelector('[data-weather-hours]');
+    const updated = card.querySelector('[data-weather-updated]');
+    if (!d?.time?.length) { summary.textContent = 'Sin previsión para este día todavía (máx. 16 días).'; return; }
+    const code = d.weather_code[0];
+    const pop = d.precipitation_probability_max[0];
+    const mm = d.precipitation_sum[0];
+    summary.textContent = `${ICON(code)} ${TEXT(code)} · lluvia ${pop ?? '–'} % · ${mm ?? 0} mm · ${Math.round(d.temperature_2m_max[0])}° / ${Math.round(d.temperature_2m_min[0])}°`;
+    hours.innerHTML = '';
+    const h = data.hourly;
+    for (let i = 0; i < (h?.time?.length || 0); i++) {
+      const hour = Number(h.time[i].slice(11, 13));
+      if (hour < 8 || hour > 20 || hour % 2) continue;
+      const p = h.precipitation_probability[i];
+      const cell = document.createElement('div');
+      cell.className = 'min-w-[2.6rem] shrink-0 rounded-lg bg-white px-1 py-1';
+      cell.innerHTML = `<div class="text-slate-500">${hour}h</div><div>${ICON(h.weather_code[i])}</div><div class="font-bold ${p >= 50 ? 'text-sky-800' : 'text-slate-700'}">${p ?? '–'}%</div>`;
+      hours.appendChild(cell);
+    }
+    const t = new Date(data.__fetchedAt || Date.now());
+    updated.textContent = (fromCache ? 'guardado ' : 'act. ') + t.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo' });
+  }
+
+  async function load(card) {
+    const { date, lat, lon } = card.dataset;
+    const key = `japon2026:wx:${date}:${lat},${lon}`;
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon +
+      '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum' +
+      '&hourly=precipitation_probability,weather_code&timezone=Asia%2FTokyo&start_date=' + date + '&end_date=' + date;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(String(res.status));
+      const data = await res.json();
+      data.__fetchedAt = Date.now();
+      try { localStorage.setItem(key, JSON.stringify(data)); } catch {}
+      render(card, data, false);
+    } catch {
+      let cached = null;
+      try { cached = JSON.parse(localStorage.getItem(key) || 'null'); } catch {}
+      if (cached) render(card, cached, true);
+      else {
+        card.querySelector('[data-weather-summary]').textContent = 'Sin conexión o día fuera de rango: abrir JMA o Weathernews.';
+        card.querySelector('[data-weather-updated]').textContent = '';
+      }
+    }
+  }
+
+  function init() {
+    document.querySelectorAll('[data-weather-card]').forEach((card) => {
+      if (card.getAttribute('data-weather-ready') === 'true') return;
+      card.setAttribute('data-weather-ready', 'true');
+      load(card);
+      setInterval(() => load(card), 30 * 60 * 1000);
+    });
+  }
+  init();
+  document.addEventListener('astro:page-load', init);
+</script>

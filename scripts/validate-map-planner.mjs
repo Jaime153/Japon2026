@@ -724,6 +724,22 @@ assert(!cardsSource.includes('Toca para ver qué hacer y acciones') ||
   }
 }
 
+// Tarjeta de tiempo en directo y día de Kobe.
+{
+  const wx = readFileSync('src/components/WeatherCard.astro', 'utf8');
+  const block = readFileSync('src/components/DayBlock.astro', 'utf8');
+  assert(wx.includes('api.open-meteo.com/v1/forecast') && wx.includes('localStorage.setItem(key') &&
+    block.includes('<WeatherCard'), 'Tiempo: previsión en directo con copia offline arriba del día');
+  const osaka = JSON.parse(readFileSync('src/content/segments/osaka-2.json', 'utf8'));
+  assert(osaka.days.every(d => d.weather && typeof d.weather.lat === 'number'), '23–28/10: cada día con tarjeta de tiempo');
+  const kobe = osaka.days.find(d => d.date === '2026-10-24');
+  const ids = kobe?.activities.map(a => a.id) || [];
+  assert(ids.includes('ikuta-jinja-1024') && ids.includes('comida-kobe-1024') && kobe.weather.place.startsWith('Kobe'),
+    '24/10: Kobe con Ikuta-jinja, comida de ternera y tiempo de Kobe');
+  assert(kobe.activities.find(a => a.id === 'comida-kobe-1024')?.choices?.options.length >= 3,
+    '24/10: selector de comida de ternera de Kobe');
+}
+
 if (failures.length) {
   console.error('Fallo en el nuevo mapa:\n- ' + failures.join('\n- '));
   process.exit(1);
