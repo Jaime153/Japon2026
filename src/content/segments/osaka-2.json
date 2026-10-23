@@ -74,30 +74,102 @@
     },
     {
       "date": "2026-10-24",
-      "title": "Osaka · día de lluvia: pendientes a cubierto",
+      "title": "Osaka · Sumiyoshi Taisha (tranvía Hankai) y Amerikamura",
       "status": "plan",
       "activities": [
         {
-          "id": "osaka-pending",
-          "title": "Osaka Castle / Umeda / Sumiyoshi si quedó pendiente",
-          "category": "otro",
+          "id": "ida-sumiyoshi-1024",
+          "title": "APA → Tennōji → tranvía Hankai",
+          "category": "transporte",
           "status": "plan",
-          "plan": [
-            "Elegir una sola gran visita pendiente entre Osaka Castle, Umeda o Sumiyoshi.",
-            "No intentar recuperar las tres si ya se hicieron o el grupo prefiere descansar."
-          ]
+          "time": "~09:30",
+          "locationQuery": "天王寺駅前 阪堺電車",
+          "approximatePrice": "Metro ~240 ¥ (estimado) + tranvía 230 ¥ = ~470 ¥/persona",
+          "notes": "Midosuji de Hommachi a Tennōji (~10 min). Desde la parada Tennōji-ekimae, tranvía Hankai (チン電), antiguo y de una sola vía, hasta Sumiyoshi-toriimae: 230 ¥ tarifa única, se paga al bajar.",
+          "transit": {
+            "from": "APA Hommachi",
+            "summary": "Midosuji → Tennōji → tranvía Hankai línea Uemachi → Sumiyoshi-toriimae.",
+            "approximateDuration": "~45 min (estimado)"
+          }
+        },
+        {
+          "id": "sumiyoshi",
+          "title": "Sumiyoshi Taisha",
+          "category": "templo",
+          "status": "plan",
+          "priority": "must",
+          "time": "~10:15",
+          "goshuin": true,
+          "locationQuery": "住吉大社",
+          "approximatePrice": "0 ¥",
+          "duration": "45–60 min",
+          "notes": "Abierto 6:30–17:00 todo el año, entrada gratis. Puente rojo en arco Sorihashi a la entrada y cuatro pabellones principales. El tranvía para delante del torii. Último de la lista de Osaka de Lorena.",
+          "description": "Sumiyoshi Taisha es el santuario principal de los más de 2.000 santuarios Sumiyoshi de Japón y uno de los más antiguos del país: según la tradición se fundó en el año 211, en tiempos de la emperatriz Jingū, para venerar a los tres dioses del mar Sumiyoshi, protectores de navegantes y pescadores, junto a la propia emperatriz. Sus cuatro pabellones principales, en estilo sumiyoshi-zukuri anterior a la llegada del budismo, son Tesoro Nacional y están dispuestos como una flota de barcos. El puente Sorihashi, muy arqueado, simboliza el paso del mundo humano al de los dioses.",
+          "transit": {
+            "from": "Sumiyoshi-toriimae",
+            "summary": "A pie, la entrada está frente a la parada.",
+            "approximateDuration": "1 min"
+          }
+        },
+        {
+          "id": "vuelta-namba-1024",
+          "title": "Sumiyoshi → Namba en Nankai",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~11:15",
+          "locationQuery": "南海 住吉大社駅",
+          "approximatePrice": "~240 ¥/persona (estimado)",
+          "notes": "Estación Nankai Sumiyoshitaisha a 3 min a pie al oeste del santuario. Tren local a Namba (~10 min, estimado).",
+          "transit": {
+            "from": "Sumiyoshi Taisha",
+            "summary": "A pie a la estación Nankai Sumiyoshitaisha y tren a Namba.",
+            "approximateDuration": "~20 min (estimado)"
+          }
+        },
+        {
+          "id": "comida-namba-1024",
+          "title": "Comida por Namba / Amerikamura",
+          "category": "comida",
+          "status": "plan",
+          "time": "~12:00",
+          "locationQuery": "アメリカ村 大阪",
+          "approximatePrice": "~1.000–1.500 ¥/persona (estimado)",
+          "notes": "Comida principal del día por la zona, sin restaurante fijo."
+        },
+        {
+          "id": "amerikamura-1024",
+          "title": "Amerikamura (Ame-mura)",
+          "category": "barrio",
+          "status": "plan",
+          "time": "~13:00",
+          "locationQuery": "三角公園 アメリカ村",
+          "approximatePrice": "0 ¥ pasear",
+          "notes": "Barrio joven al oeste de Shinsaibashi-suji: ropa de segunda mano, murales y tiendas alternativas alrededor de la plaza triangular (三角公園) y la mini estatua de la Libertad. Se pasea sin necesidad de comprar.",
+          "transit": {
+            "from": "Namba",
+            "summary": "A pie hacia el norte cruzando Dōtonbori.",
+            "approximateDuration": "~10–15 min"
+          }
         },
         {
           "id": "arcades",
-          "title": "Arcades y UFO Catcher",
+          "title": "Opcional · recreativas y UFO catcher",
           "category": "ocio",
           "status": "opcional",
-          "notes": "Interés por anime y recreativas.",
+          "time": "tarde",
           "locationQuery": "Namba arcades Osaka",
-          "plan": [
-            "Dedicar un bloque a recreativas, UFO Catcher y tiendas de anime.",
-            "Poner un límite flexible de gasto/tiempo y disfrutar sin itinerario rígido."
-          ]
+          "approximatePrice": "Entrada gratis; cada juego se paga aparte",
+          "notes": "A cubierto, por Namba/Shinsaibashi. Para la tarde lluviosa si apetece."
+        },
+        {
+          "id": "vuelta-apa-1024",
+          "title": "Vuelta al APA · tarde libre",
+          "category": "transporte",
+          "status": "plan",
+          "time": "tarde",
+          "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
+          "approximatePrice": "~240 ¥ (estimado) o a pie",
+          "notes": "Shinsaibashi → Hommachi en Midosuji (1 parada) o ~15 min andando. Cena libre."
         }
       ],
       "weather": {
@@ -105,7 +177,47 @@
         "lat": 34.6826,
         "lon": 135.5004
       },
-      "note": "Sábado 24/10. Previsión de lluvia todo el día (tenki.jp: 90 %, 24 mm). Planes a cubierto en Osaka; Kobe pasa al domingo 25."
+      "note": "Sábado 24/10. Lluvia prevista (tenki.jp Kobe/Osaka ~80–90 %). Sumiyoshi por la mañana, comida y Amerikamura por la tarde, luego libre. Coste aprox. por persona: transporte ~950 ¥ (estimado) + comida. Cena libre.",
+      "mapStages": [
+        {
+          "id": "ida-sumiyoshi",
+          "title": "APA → Tennōji → tranvía → Sumiyoshi",
+          "mode": "transit",
+          "activityIds": [
+            "@hotel-start",
+            "ida-sumiyoshi-1024",
+            "sumiyoshi"
+          ]
+        },
+        {
+          "id": "sumiyoshi-namba",
+          "title": "Sumiyoshi → Nankai → Namba",
+          "mode": "transit",
+          "activityIds": [
+            "sumiyoshi",
+            "vuelta-namba-1024",
+            "comida-namba-1024"
+          ]
+        },
+        {
+          "id": "amemura",
+          "title": "Namba → Amerikamura",
+          "mode": "walk",
+          "activityIds": [
+            "comida-namba-1024",
+            "amerikamura-1024"
+          ]
+        },
+        {
+          "id": "vuelta-24",
+          "title": "Amerikamura → APA",
+          "mode": "transit",
+          "activityIds": [
+            "amerikamura-1024",
+            "@hotel-end"
+          ]
+        }
+      ]
     },
     {
       "date": "2026-10-25",
