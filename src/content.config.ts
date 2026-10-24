@@ -107,7 +107,7 @@ const choicesSchema = z.object({
     // Una línea útil por opción: el selector no debe ocupar media pantalla.
     note: z.string().max(140).optional(),
     url: z.string().url().optional(),
-  })).min(2).max(5),
+  })).min(2).max(6),
 }).refine(c => c.options.some(o => o.id === c.defaultId), { message: 'choices.defaultId debe ser una de las opciones' });
 
 const activitySchema = z.object({

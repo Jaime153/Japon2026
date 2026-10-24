@@ -303,8 +303,8 @@
           "status": "plan",
           "time": "~11:45",
           "locationQuery": "ステーキランド神戸館",
-          "approximatePrice": "~2.000–3.600 ¥/persona según sitio",
-          "notes": "Precios de agosto de 2025 (Kobe Journal). Comprobar la placa o certificado oficial de Kobe beef en la entrada: muchos locales venden ternera normal como «Kobe». Todos en Sannomiya, a pocos minutos de Ikuta-jinja.",
+          "approximatePrice": "~1.800–3.600 ¥/persona según sitio",
+          "notes": "Precios de agosto de 2025 (Kobe Journal). Comprobar la placa o certificado oficial de Kobe beef en la entrada: muchos locales venden ternera normal como «Kobe». Todos en Sannomiya, a pocos minutos de Ikuta-jinja, salvo Gyoza-en, que está en Nankinmachi (~15 min a pie por las galerías).",
           "choices": {
             "label": "Dónde comer",
             "defaultId": "steakland",
@@ -348,6 +348,14 @@
                 "price": "2.980 ¥",
                 "hours": "11:30–14:00",
                 "note": "Yakiniku de Kobe de una carnicería. Cierra los miércoles."
+              },
+              {
+                "id": "gyozaen",
+                "name": "Ganso Gyoza-en (gyozas)",
+                "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
+                "price": "1.800 ¥ (6 gyozas de Kobe)",
+                "hours": "11:45–15:00",
+                "note": "Gyozas con salsa de miso en Nankinmachi; plan B si la ternera tiene mucha cola. Tarjeta y PayPay."
               }
             ]
           },
@@ -396,7 +404,7 @@
           "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
           "address": "神戸市中央区栄町通2-8-11 (Nankinmachi)",
           "approximatePrice": "Gyoza de ternera de Kobe 1.800 ¥ (6 uds); gyoza normal, ver carta",
-          "notes": "Local de 1951 que dice haber inventado el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Comida 11:45–15:00 (última comanda 15:00) y cena 17:00–20:30; cierra los lunes, el domingo abre. Acepta tarjeta y PayPay. Después de la ternera, mejor una ración para compartir. En domingo puede haber cola.",
+          "notes": "Local de 1951 que dice haber inventado el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Comida 11:45–15:00 (última comanda 15:00) y cena 17:00–20:30; cierra los lunes, el domingo abre. Acepta tarjeta y PayPay. Después de la ternera, mejor una ración para compartir. En domingo puede haber cola. Si ya habéis comido aquí, saltad esta parada.",
           "transit": {
             "from": "Nankinmachi",
             "summary": "Dentro de Nankinmachi, en la calle Sakaemachi-dōri.",
