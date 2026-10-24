@@ -359,13 +359,13 @@
         },
         {
           "id": "galerias-1025",
-          "title": "Galerías cubiertas Sannomiya Center-gai → Motomachi",
+          "title": "Galerías Sannomiya Center-gai → Motomachi-dōri",
           "category": "barrio",
           "status": "plan",
           "time": "~13:15",
-          "locationQuery": "三宮センター街",
+          "locationQuery": "元町商店街 神戸",
           "approximatePrice": "0 ¥",
-          "notes": "Calles comerciales cubiertas que unen Sannomiya con Motomachi: el camino a Chinatown sin mojarse.",
+          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando la avenida, Motomachi-dōri (arco KOBE MOTOMACHI). Es el camino a Chinatown sin mojarse; Nankinmachi queda a la izquierda (sur) a mitad de Motomachi.",
           "transit": {
             "from": "Comida",
             "summary": "A pie hacia el oeste por la galería.",
@@ -388,14 +388,30 @@
           }
         },
         {
+          "id": "gyozaen-1025",
+          "title": "Ganso Gyoza-en · gyozas con salsa de miso",
+          "category": "comida",
+          "status": "plan",
+          "time": "~14:15",
+          "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
+          "address": "神戸市中央区栄町通2-8-11 (Nankinmachi)",
+          "approximatePrice": "Gyoza de ternera de Kobe 1.800 ¥ (6 uds); gyoza normal, ver carta",
+          "notes": "Local de 1951 que dice haber inventado el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Comida 11:45–15:00 (última comanda 15:00) y cena 17:00–20:30; cierra los lunes, el domingo abre. Acepta tarjeta y PayPay. Después de la ternera, mejor una ración para compartir. En domingo puede haber cola.",
+          "transit": {
+            "from": "Nankinmachi",
+            "summary": "Dentro de Nankinmachi, en la calle Sakaemachi-dōri.",
+            "approximateDuration": "~2 min"
+          }
+        },
+        {
           "id": "meriken-1025",
-          "title": "Meriken Park · BE KOBE y memorial del terremoto",
+          "title": "Meriken Park · Port Tower, BE KOBE y memorial del terremoto",
           "category": "mirador",
           "status": "plan",
           "time": "~15:00",
-          "locationQuery": "メリケンパーク",
-          "approximatePrice": "0 ¥",
-          "notes": "Paseo del puerto: el cartel BE KOBE y el Memorial del Terremoto de 1995, donde se dejó sin reparar un tramo del muelle destruido.",
+          "locationQuery": "神戸港震災メモリアルパーク",
+          "approximatePrice": "0 ¥; subir a la Port Tower 1.000 ¥ (o 1.200 ¥ con azotea), opcional",
+          "notes": "Paseo del puerto: la Port Tower roja (verla por fuera es gratis; subir, 9:00–23:00, 1.000 ¥ el mirador y 1.200 ¥ con la azotea), el cartel BE KOBE junto al agua y el Memorial del Terremoto de 1995 (Hanshin-Awaji, 6.434 muertos), donde se dejó sin reparar un tramo del muelle destruido. Todo en unos 10 min a pie entre sí.",
           "transit": {
             "from": "Nankinmachi",
             "summary": "A pie hacia el sur por el antiguo barrio de extranjeros.",
@@ -404,17 +420,33 @@
         },
         {
           "id": "harborland-1025",
-          "title": "Harborland · atardecer en el puerto",
+          "title": "Harborland · Mosaic y atardecer en el puerto",
           "category": "mirador",
           "status": "plan",
           "time": "~16:30",
           "locationQuery": "神戸ハーバーランド umie MOSAIC",
-          "approximatePrice": "0 ¥; subir a la Port Tower 1.000–1.200 ¥ (opcional)",
-          "notes": "Paseo junto al agua con la Port Tower roja y el museo marítimo iluminados al anochecer (~17:15, estimado). Vista gratis desde la terraza de Mosaic.",
+          "approximatePrice": "0 ¥",
+          "notes": "Centro comercial Mosaic junto al agua. Desde su terraza y la pasarela se ve gratis la Port Tower y el museo marítimo iluminados al anochecer (puesta de sol ~17:10, estimado).",
           "transit": {
             "from": "Meriken Park",
             "summary": "A pie bordeando el puerto hacia el oeste.",
             "approximateDuration": "~10 min"
+          }
+        },
+        {
+          "id": "kindal-1025",
+          "title": "Opcional · Kindal Kobe, segunda mano de marca",
+          "category": "compras",
+          "status": "opcional",
+          "time": "~18:00",
+          "locationQuery": "カインドオル 神戸店 三宮町2-7-8",
+          "address": "神戸市中央区三宮町2-7-8 パウリスタビル (Tor Road, frente a Kobe BAL)",
+          "approximatePrice": "0 ¥ entrar",
+          "notes": "Tienda de ropa y bolsos de segunda mano en 5 plantas (vintage, marcas japonesas, diseñador, y una planta de exposiciones). Cierra ~20:00 según el cartel; confirmar en la puerta. Queda a ~5 min del Hankyu Kobe-Sannomiya, de camino a la vuelta.",
+          "transit": {
+            "from": "Harborland",
+            "summary": "JR de Kobe a Motomachi (1 parada) y 5 min a pie, o andando ~25 min.",
+            "approximateDuration": "~15 min (estimado)"
           }
         },
         {
@@ -469,6 +501,7 @@
             "comida-kobe-1025",
             "galerias-1025",
             "nankinmachi-1025",
+            "gyozaen-1025",
             "meriken-1025",
             "harborland-1025"
           ]
@@ -483,7 +516,7 @@
           ]
         }
       ],
-      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi y Steak Land (reservar si se puede). Comida principal: ternera de Kobe (selector). Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida 2.000–3.600 ¥ + picoteo Nankinmachi."
+      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi y Steak Land (reservar si se puede). Comida principal: ternera de Kobe (selector); en Nankinmachi, butaman y gyozas de miso para picar. Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida 2.000–3.600 ¥ + picoteo Nankinmachi (~500–1.000 ¥). Opcionales: Kindal (segunda mano, Sannomiya) o teleférico de Nunobiki de noche."
     },
     {
       "date": "2026-10-26",
