@@ -427,6 +427,21 @@
           }
         },
         {
+          "id": "nunobiki-noche-1025",
+          "title": "Opcional · teleférico de Nunobiki de noche",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "desde 17:00",
+          "locationQuery": "神戸布引ロープウェイ ハーブ園山麓駅",
+          "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
+          "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
+          "transit": {
+            "from": "Harborland",
+            "summary": "Metro Kaigan/Seishin-Yamate hasta Shin-Kobe y 5 min a pie.",
+            "approximateDuration": "~25 min (estimado)"
+          }
+        },
+        {
           "id": "kindal-1025",
           "title": "Opcional · Kindal Kobe, segunda mano de marca",
           "category": "compras",
@@ -440,21 +455,6 @@
             "from": "Harborland",
             "summary": "JR de Kobe a Motomachi (1 parada) y 5 min a pie, o andando ~25 min.",
             "approximateDuration": "~15 min (estimado)"
-          }
-        },
-        {
-          "id": "nunobiki-noche-1025",
-          "title": "Opcional · teleférico de Nunobiki de noche",
-          "category": "mirador",
-          "status": "opcional",
-          "time": "desde 17:00",
-          "locationQuery": "神戸布引ロープウェイ ハーブ園山麓駅",
-          "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
-          "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
-          "transit": {
-            "from": "Harborland",
-            "summary": "Metro Kaigan/Seishin-Yamate hasta Shin-Kobe y 5 min a pie.",
-            "approximateDuration": "~25 min (estimado)"
           }
         },
         {
