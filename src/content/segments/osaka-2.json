@@ -156,16 +156,22 @@
           "id": "amerikamura-1024",
           "title": "Amerikamura (Ame-mura)",
           "category": "barrio",
-          "status": "plan",
-          "time": "~13:00",
+          "status": "confirmado",
+          "time": "Llegada ~12:09",
           "locationQuery": "三角公園 アメリカ村",
           "approximatePrice": "0 ¥ pasear",
-          "notes": "Barrio joven al oeste de Shinsaibashi-suji: ropa de segunda mano, murales y tiendas alternativas alrededor de la plaza triangular (三角公園) y la mini estatua de la Libertad. Se pasea sin necesidad de comprar.",
+          "notes": "HECHO 24/10: en Amerikamura a las ~12:09 (según Jaime). Barrio joven al oeste de Shinsaibashi-suji; todo gratis y a pocos minutos a pie:",
           "transit": {
             "from": "Namba",
             "summary": "A pie hacia el norte cruzando Dōtonbori.",
             "approximateDuration": "~10–15 min"
-          }
+          },
+          "plan": [
+            "Mini estatua de la Libertad, en lo alto de un edificio del barrio (mirar hacia arriba). Maps: «アメリカ村 自由の女神».",
+            "Plaza triangular (三角公園 / Mitsu Park), el centro del barrio, con takoyaki alrededor. Maps: «三角公園 アメリカ村».",
+            "Mural «Peace on Earth» de Seitarō Kuroda, en una fachada del barrio. Maps: «Peace on Earth 壁画 アメリカ村».",
+            "Calles de alrededor: ropa de segunda mano, murales y tiendas alternativas, solo paseo."
+          ]
         },
         {
           "id": "arcades",
