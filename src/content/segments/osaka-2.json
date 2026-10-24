@@ -143,16 +143,6 @@
           }
         },
         {
-          "id": "comida-namba-1024",
-          "title": "Comida por Namba / Amerikamura",
-          "category": "comida",
-          "status": "plan",
-          "time": "~12:00",
-          "locationQuery": "アメリカ村 大阪",
-          "approximatePrice": "~1.000–1.500 ¥/persona (estimado)",
-          "notes": "Comida principal del día por la zona, sin restaurante fijo."
-        },
-        {
           "id": "amerikamura-1024",
           "title": "Amerikamura (Ame-mura)",
           "category": "barrio",
@@ -172,6 +162,17 @@
             "Mural «Peace on Earth» de Seitarō Kuroda, en una fachada del barrio. Maps: «Peace on Earth 壁画 アメリカ村».",
             "Calles de alrededor: ropa de segunda mano, murales y tiendas alternativas, solo paseo."
           ]
+        },
+        {
+          "id": "comida-namba-1024",
+          "title": "Tsukemen Suzume · comida",
+          "category": "comida",
+          "status": "confirmado",
+          "time": "Cola 13:26",
+          "locationQuery": "Tsukemen Suzume 2-11-11 Nishishinsaibashi Chuo-ku Osaka",
+          "approximatePrice": "~1.000–1.500 ¥/persona (estimado)",
+          "notes": "COMIDA REAL 24/10: haciendo cola en Tsukemen Suzume a las 13:26 (según Jaime), en Amerikamura.",
+          "address": "大阪市中央区西心斎橋2-11-11"
         },
         {
           "id": "arcades",
@@ -223,12 +224,12 @@
         },
         {
           "id": "amemura",
-          "title": "Rikurō's → comida → Amerikamura",
+          "title": "Rikurō's → Amerikamura → Tsukemen Suzume",
           "mode": "walk",
           "activityIds": [
             "rikuros-1024",
-            "comida-namba-1024",
-            "amerikamura-1024"
+            "amerikamura-1024",
+            "comida-namba-1024"
           ]
         },
         {
@@ -236,7 +237,7 @@
           "title": "Amerikamura → APA",
           "mode": "transit",
           "activityIds": [
-            "amerikamura-1024",
+            "comida-namba-1024",
             "@hotel-end"
           ]
         }
