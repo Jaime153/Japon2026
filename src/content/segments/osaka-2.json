@@ -74,7 +74,7 @@
     },
     {
       "date": "2026-10-24",
-      "title": "Osaka · Sumiyoshi Taisha (tranvía Hankai) y Amerikamura",
+      "title": "Osaka · Sumiyoshi Taisha, Rikurō's y Amerikamura",
       "status": "plan",
       "activities": [
         {
@@ -124,6 +124,22 @@
             "from": "Sumiyoshi Taisha",
             "summary": "A pie a la estación Nankai Sumiyoshitaisha y tren a Namba.",
             "approximateDuration": "~20 min (estimado)"
+          }
+        },
+        {
+          "id": "rikuros-1024",
+          "title": "Rikurō's · tarta de queso para llevar",
+          "category": "comida",
+          "status": "plan",
+          "time": "~11:30",
+          "locationQuery": "りくろーおじさんの店 なんば本店",
+          "address": "大阪市中央区難波3-2-28",
+          "approximatePrice": "965 ¥ la tarta entera (precio de 01/2025)",
+          "notes": "Tienda principal de Rikurō Ojisan no Mise, a ~3 min a pie de Namba. Planta baja: para llevar, sin reserva, con cola; tocan una campanita cuando sale una tanda recién hecha. La cafetería de la 2.ª planta (11:00–17:30) va con reserva previa y se llena: no contar con ella. Descanso irregular: mirar en Google Maps que hoy abre.",
+          "transit": {
+            "from": "Nankai Namba",
+            "summary": "A pie desde la estación de Namba.",
+            "approximateDuration": "~3–5 min"
           }
         },
         {
@@ -177,7 +193,7 @@
         "lat": 34.6826,
         "lon": 135.5004
       },
-      "note": "Sábado 24/10. Lluvia prevista (tenki.jp Kobe/Osaka ~80–90 %). Sumiyoshi por la mañana, comida y Amerikamura por la tarde, luego libre. Coste aprox. por persona: transporte ~950 ¥ (estimado) + comida. Cena libre.",
+      "note": "Sábado 24/10. Lluvia prevista (tenki.jp Kobe/Osaka ~80–90 %). Sumiyoshi por la mañana, tarta de Rikurō's al llegar a Namba, comida y Amerikamura por la tarde, luego libre. Coste aprox. por persona: transporte ~950 ¥ (estimado) + comida. Cena libre.",
       "mapStages": [
         {
           "id": "ida-sumiyoshi",
@@ -196,14 +212,15 @@
           "activityIds": [
             "sumiyoshi",
             "vuelta-namba-1024",
-            "comida-namba-1024"
+            "rikuros-1024"
           ]
         },
         {
           "id": "amemura",
-          "title": "Namba → Amerikamura",
+          "title": "Rikurō's → comida → Amerikamura",
           "mode": "walk",
           "activityIds": [
+            "rikuros-1024",
             "comida-namba-1024",
             "amerikamura-1024"
           ]
