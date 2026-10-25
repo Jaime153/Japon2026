@@ -736,8 +736,10 @@ assert(!cardsSource.includes('Toca para ver qué hacer y acciones') ||
   const ids = kobe?.activities.map(a => a.id) || [];
   assert(ids.includes('ikuta-jinja-1025') && ids.includes('comida-kobe-1025') && kobe.weather.place.startsWith('Kobe'),
     '25/10: Kobe con Ikuta-jinja, comida de ternera y tiempo de Kobe');
-  assert(kobe.activities.find(a => a.id === 'comida-kobe-1025')?.choices?.options.length >= 3,
-    '25/10: selector de comida de ternera de Kobe');
+  const kobeLunch = kobe.activities.find(a => a.id === 'comida-kobe-1025');
+  // Una vez hecha la comida, sin selector y confirmada; antes, selector con alternativas.
+  assert(kobeLunch?.visited ? (!kobeLunch.choices && kobeLunch.status === 'confirmado') : kobeLunch?.choices?.options.length >= 3,
+    '25/10: selector de comida de Kobe (o comida hecha y confirmada)');
 }
 
 if (failures.length) {
