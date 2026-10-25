@@ -314,7 +314,7 @@
           "category": "barrio",
           "status": "plan",
           "time": "~11:30",
-          "locationQuery": "JR元町駅 東口",
+          "locationQuery": "JR元町駅",
           "approximatePrice": "0 ¥",
           "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando la avenida, Motomachi-dōri (arco KOBE MOTOMACHI). Es el camino a Chinatown sin mojarse; Nankinmachi queda a la izquierda (sur) a mitad de Motomachi.",
           "transit": {
@@ -324,7 +324,7 @@
           },
           "plan": [
             "Sannomiya Center-gai (三宮センター街): galería cubierta, seguirla todo recto hacia el oeste. Maps: «三宮センター街».",
-            "Al final de Center-gai se cruza la calle Koikawa-suji y enfrente está el arco KOBE MOTOMACHI, entrada este de la galería de Motomachi; queda justo al sur de la salida este de JR Motomachi. Maps: «JR元町駅 東口».",
+            "Al final de Center-gai se cruza la calle Koikawa-suji y enfrente está el arco KOBE MOTOMACHI, entrada este de la galería de Motomachi, justo al sur de la estación JR Motomachi (salida este). Maps: «JR元町駅».",
             "Ya dentro de Motomachi, la primera o segunda calle a la izquierda (sur) lleva a la puerta este de Nankinmachi. Maps: «長安門 南京町»."
           ]
         },
