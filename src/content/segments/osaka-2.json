@@ -271,12 +271,19 @@
           "time": "~10:25",
           "locationQuery": "北野異人館街 神戸",
           "approximatePrice": "0 ¥ (por fuera)",
-          "notes": "Barrio en cuesta de casas de comerciantes extranjeros de finales del XIX. Ver por fuera la Casa de la Veleta (風見鶏の館) y la plaza de Kitano; hay un Starbucks dentro de una casa antigua. Los interiores son de pago: no entran. Con lluvia, vuelta corta.",
+          "notes": "Barrio en cuesta de casas de comerciantes extranjeros de finales del XIX. Los interiores son casi todos de pago y no entran; estos puntos son gratis y están a pocos minutos entre sí:",
           "transit": {
             "from": "JR Sannomiya",
             "summary": "A pie cuesta arriba por Kitano-zaka.",
             "approximateDuration": "~18 min"
-          }
+          },
+          "plan": [
+            "Subida por Kitano-zaka (北野坂), la calle en cuesta desde Sannomiya. Maps: «北野坂».",
+            "Starbucks en una casa de 1907 (patrimonio registrado); entrar solo si tomáis algo (~500–700 ¥). Maps: «スターバックス 神戸北野異人館店».",
+            "Plaza de Kitano (北野町広場), con estatuas y vistas hacia el puerto. Maps: «北野町広場».",
+            "Casa de la Veleta (風見鶏の館), de ladrillo con el gallo en el tejado, y al lado la casa verde Moegi (萌黄の館): por fuera. Maps: «風見鶏の館».",
+            "Casa del Rin (ラインの館): entrada gratis, 9:00–18:00. Maps: «ラインの館»."
+          ]
         },
         {
           "id": "ikuta-jinja-1025",
@@ -294,7 +301,12 @@
             "from": "Kitano",
             "summary": "Bajada a pie por Kitano-zaka y la calle Ikuta.",
             "approximateDuration": "~10 min (estimado)"
-          }
+          },
+          "plan": [
+            "Torii rojo y puerta 楼門 de la entrada, la foto típica desde la calle.",
+            "Pabellón principal: rezo y goshuin en la oficina de la derecha.",
+            "Bosque Ikuta no mori (生田の森), detrás del pabellón: camino corto entre árboles."
+          ]
         },
         {
           "id": "galerias-1025",
@@ -309,7 +321,12 @@
             "from": "Ikuta-jinja",
             "summary": "A pie hacia el oeste por la galería.",
             "approximateDuration": "~15 min"
-          }
+          },
+          "plan": [
+            "Sannomiya Center-gai (三宮センター街): galería cubierta hacia el oeste. Maps: «三宮センター街».",
+            "Arco KOBE MOTOMACHI, entrada a la galería de Motomachi. Maps: «元町商店街».",
+            "A mitad de Motomachi, girar al sur (izquierda) hacia Nankinmachi."
+          ]
         },
         {
           "id": "comida-kobe-1025",
@@ -394,7 +411,13 @@
             "from": "Ganso Gyoza-en",
             "summary": "Dentro de Nankinmachi.",
             "approximateDuration": "~2 min"
-          }
+          },
+          "plan": [
+            "Puerta este Chōan-mon (長安門), la grande de la entrada principal. Maps: «長安門 南京町».",
+            "Plaza central (南京町広場) con el pabellón y las estatuas del zodiaco chino. Maps: «南京町広場».",
+            "Rōshōki (老祥記), butaman a 120 ¥ (local provisional, 元町通1-3-7). Maps: «老祥記».",
+            "Puerta oeste Seian-mon (西安門), la del vídeo, saliendo hacia el puerto. Maps: «西安門 南京町»."
+          ]
         },
         {
           "id": "meriken-1025",
@@ -409,7 +432,14 @@
             "from": "Nankinmachi",
             "summary": "A pie hacia el sur por el antiguo barrio de extranjeros.",
             "approximateDuration": "~10 min"
-          }
+          },
+          "plan": [
+            "Port Tower (神戸ポートタワー), la torre roja: por fuera gratis. Maps: «神戸ポートタワー».",
+            "Fish Dance, la escultura de pez gigante de Frank Gehry, en la esquina del parque. Maps: «フィッシュダンス 神戸».",
+            "Memorial del terremoto (神戸港震災メモリアルパーク): tramo del muelle hundido sin reparar y paneles. Maps: «神戸港震災メモリアルパーク».",
+            "Cartel BE KOBE, junto al agua en el extremo del parque. Maps: «BE KOBE モニュメント».",
+            "Museo Marítimo (神戸海洋博物館), el del tejado de red blanca: solo por fuera."
+          ]
         },
         {
           "id": "harborland-1025",
@@ -424,7 +454,12 @@
             "from": "Meriken Park",
             "summary": "A pie bordeando el puerto hacia el oeste.",
             "approximateDuration": "~10 min"
-          }
+          },
+          "plan": [
+            "Pasarela hacia umie MOSAIC, con vistas a Meriken y la Port Tower. Maps: «umie MOSAIC».",
+            "Terraza de Mosaic junto al agua: el mejor sitio gratis para el atardecer.",
+            "Noria de Mosaic (モザイク大観覧車), solo por fuera."
+          ]
         },
         {
           "id": "nunobiki-noche-1025",
