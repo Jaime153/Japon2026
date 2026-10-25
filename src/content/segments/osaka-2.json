@@ -254,7 +254,7 @@
           "category": "transporte",
           "status": "plan",
           "time": "~09:17",
-          "locationQuery": "JR 三ノ宮駅",
+          "locationQuery": "34.69486,135.19509",
           "approximatePrice": "Metro 190 ¥ + JR 420 ¥ = 610 ¥/persona",
           "notes": "Midosuji (línea roja) de Hommachi dirección Umeda/Senri-Chūō, 2 paradas (salidas 9:14, 9:17, 9:21). En Umeda, ~4 min a pie a JR Osaka Station. JR Kobe Line (神戸線) dirección 三ノ宮/姫路: el Special Rapid (新快速) tarda ~21 min; un Rapid (快速) también vale. Bajar en 三ノ宮 (Sannomiya). Saliendo a las 9:17, llegada ~10:08. IC sirve.",
           "transit": {
@@ -269,7 +269,7 @@
           "category": "barrio",
           "status": "plan",
           "time": "~10:25",
-          "locationQuery": "北野異人館街 神戸",
+          "locationQuery": "34.70126,135.18973",
           "approximatePrice": "0 ¥ (por fuera)",
           "notes": "Barrio en cuesta de casas de comerciantes extranjeros de finales del XIX. Los interiores son casi todos de pago y no entran; estos puntos son gratis y están a pocos minutos entre sí:",
           "transit": {
@@ -278,11 +278,11 @@
             "approximateDuration": "~18 min"
           },
           "plan": [
-            "Subida por Kitano-zaka (北野坂), la calle en cuesta desde Sannomiya. Maps: «北野坂».",
-            "Starbucks en una casa de 1907 (patrimonio registrado); entrar solo si tomáis algo (~500–700 ¥). Maps: «スターバックス 神戸北野異人館店».",
-            "Plaza de Kitano (北野町広場), con estatuas y vistas hacia el puerto. Maps: «北野町広場».",
-            "Casa de la Veleta (風見鶏の館), de ladrillo con el gallo en el tejado, y al lado la casa verde Moegi (萌黄の館): por fuera. Maps: «風見鶏の館».",
-            "Casa del Rin (ラインの館): entrada gratis, 9:00–18:00. Maps: «ラインの館»."
+            "Subida por Kitano-zaka (北野坂) desde Sannomiya hacia el Starbucks histórico: el pin marca el final práctico de esta subida. Maps: «34.6998079,135.1902297».",
+            "Starbucks en una casa de 1907 (patrimonio registrado); entrar solo si tomáis algo (~500–700 ¥). Maps: «34.6998079,135.1902297».",
+            "Plaza de Kitano (北野町広場), con estatuas y vistas hacia el puerto. Maps: «34.70126,135.18973».",
+            "Casa de la Veleta (風見鶏の館), de ladrillo con el gallo en el tejado, y al lado la casa verde Moegi (萌黄の館): por fuera. Maps: «34.7013855,135.1895110».",
+            "Casa del Rin (ラインの館): entrada gratis, 9:00–18:00. Maps: «34.7011373,135.1911810»."
           ]
         },
         {
@@ -292,7 +292,7 @@
           "status": "plan",
           "time": "~11:00",
           "goshuin": true,
-          "locationQuery": "生田神社",
+          "locationQuery": "34.6946102,135.1906166",
           "approximatePrice": "0 ¥",
           "duration": "~30 min",
           "notes": "Abierto 7:00–17:00, entrada gratis. Está en pleno centro, entre Kitano y Sannomiya. Detrás del santuario, el pequeño bosque Ikuta no mori.",
@@ -314,18 +314,18 @@
           "category": "barrio",
           "status": "plan",
           "time": "~11:30",
-          "locationQuery": "JR元町駅",
+          "locationQuery": "34.688894,135.189566",
           "approximatePrice": "0 ¥",
-          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando la avenida, Motomachi-dōri (arco KOBE MOTOMACHI). Es el camino a Chinatown sin mojarse; Nankinmachi queda a la izquierda (sur) a mitad de Motomachi.",
+          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando Koikawa-suji, Motomachi-dōri (arco La Luce / KOBE MOTOMACHI). Para llegar a Chinatown desde ese arco hay que bajar hacia el SUR por Koikawa-suji hasta Chōan-mon (a unos 70 m); no ir a la estación JR.",
           "transit": {
             "from": "Ikuta-jinja",
             "summary": "A pie hacia el oeste por la galería.",
             "approximateDuration": "~15 min"
           },
           "plan": [
-            "Sannomiya Center-gai (三宮センター街): galería cubierta, seguirla todo recto hacia el oeste. Maps: «三宮センター街».",
-            "Al final de Center-gai se cruza la calle Koikawa-suji y enfrente está el arco KOBE MOTOMACHI, entrada este de la galería de Motomachi, justo al sur de la estación JR Motomachi (salida este). Maps: «JR元町駅».",
-            "Ya dentro de Motomachi, la primera o segunda calle a la izquierda (sur) lleva a la puerta este de Nankinmachi. Maps: «長安門 南京町»."
+            "Sannomiya Center-gai (三宮センター街): galería cubierta, seguirla todo recto hacia el oeste. Maps: «三宮センター街 神戸市中央区三宮町».",
+            "Al final de Center-gai se cruza Koikawa-suji: enfrente, junto a Daimaru, está el arco La Luce / KOBE MOTOMACHI (entrada ESTE de la galería, no la estación JR). Pin de la calle frente al arco, desde el mapa oficial de Motomachi. Maps: «34.688894,135.189566».",
+            "Desde el arco de Motomachi, baja hacia el SUR por Koikawa-suji hasta la puerta Chōan-mon de Nankinmachi (no vayas hacia la estación). Maps: «34.688328,135.189405»."
           ]
         },
         {
@@ -334,7 +334,7 @@
           "category": "comida",
           "status": "plan",
           "time": "~11:50",
-          "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
+          "locationQuery": "元祖ぎょうざ苑 神戸市中央区栄町通2-8-11",
           "approximatePrice": "Gyoza de ternera de Kobe 1.800 ¥ (6 uds); gyoza normal, ver carta",
           "notes": "Comida principal del día. Ganso Gyoza-en inventó el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Abre a las 11:45 (comida hasta las 15:00, última comanda 15:00; cena 17:00–20:30); cierra los lunes, el domingo abre. En domingo se forma cola: llegar cerca de la apertura. Si no queréis gyozas, en el selector siguen los sitios de ternera de Kobe (en Sannomiya, precios de agosto de 2025; comprobar la placa oficial de Kobe beef en la entrada).",
           "choices": {
@@ -344,7 +344,7 @@
               {
                 "id": "gyozaen",
                 "name": "Ganso Gyoza-en",
-                "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
+                "locationQuery": "元祖ぎょうざ苑 神戸市中央区栄町通2-8-11",
                 "price": "1.800 ¥ (6 gyozas de Kobe)",
                 "hours": "11:45–15:00",
                 "note": "Gyozas con salsa de miso, la forma típica de Kobe. Local de 1951. Tarjeta y PayPay."
@@ -404,19 +404,19 @@
           "category": "comida",
           "status": "plan",
           "time": "~13:00",
-          "locationQuery": "南京町 神戸",
+          "locationQuery": "34.6882163,135.1881583",
           "approximatePrice": "Butaman de Rōshōki 120 ¥/unidad; puestos ~300–800 ¥",
-          "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta ~11/2026 está en un local provisional (元町通1-3-7). En fin de semana, 30–60 min de cola. En domingo hay más gente.",
+          "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta la reapertura prevista del 11/11/2026 está en el LOCAL PROVISIONAL (antiguo 曹家包子館), 元町通1-3-7, al ESTE de la plaza. No ir a la antigua sede en 元町通2-1-14, que sigue en obras. En fin de semana, 30–60 min de cola.",
           "transit": {
             "from": "Ganso Gyoza-en",
             "summary": "Dentro de Nankinmachi.",
             "approximateDuration": "~2 min"
           },
           "plan": [
-            "Puerta este Chōan-mon (長安門), la grande de la entrada principal. Maps: «長安門 南京町».",
-            "Plaza central (南京町広場) con el pabellón y las estatuas del zodiaco chino. Maps: «南京町広場».",
-            "Rōshōki (老祥記), butaman a 120 ¥ (local provisional, 元町通1-3-7). Maps: «老祥記».",
-            "Puerta oeste Seian-mon (西安門), la del vídeo, saliendo hacia el puerto. Maps: «西安門 南京町»."
+            "Puerta este Chōan-mon (長安門), la grande de la entrada principal. Maps: «34.688328,135.189405».",
+            "Plaza central (南京町広場) con el pabellón y las estatuas del zodiaco chino. Maps: «34.6882163,135.1881583».",
+            "Rōshōki (老祥記): local provisional al ESTE de 南京町広場 (antiguo 曹家包子館), 元町通1-3-7; el edificio del oeste está en obras. Maps: «神戸市中央区元町通1-3-7 老祥記 仮店舗».",
+            "Puerta oeste Seian-mon (西安門), la del vídeo, saliendo hacia el puerto. Maps: «34.687699,135.186614»."
           ]
         },
         {
@@ -425,7 +425,7 @@
           "category": "mirador",
           "status": "plan",
           "time": "~14:00",
-          "locationQuery": "神戸港震災メモリアルパーク",
+          "locationQuery": "34.683722,135.190217",
           "approximatePrice": "0 ¥; subir a la Port Tower 1.000 ¥ (o 1.200 ¥ con azotea), opcional",
           "notes": "Paseo del puerto: la Port Tower roja (verla por fuera es gratis; subir, 9:00–23:00, 1.000 ¥ el mirador y 1.200 ¥ con la azotea), el cartel BE KOBE junto al agua y el Memorial del Terremoto de 1995 (Hanshin-Awaji, 6.434 muertos), donde se dejó sin reparar un tramo del muelle destruido. Todo en unos 10 min a pie entre sí.",
           "transit": {
@@ -434,11 +434,11 @@
             "approximateDuration": "~10 min"
           },
           "plan": [
-            "Port Tower (神戸ポートタワー), la torre roja: por fuera gratis. Maps: «神戸ポートタワー».",
-            "Fish Dance, la escultura de pez gigante de Frank Gehry, en la esquina del parque. Maps: «フィッシュダンス 神戸».",
-            "Memorial del terremoto (神戸港震災メモリアルパーク): tramo del muelle hundido sin reparar y paneles. Maps: «神戸港震災メモリアルパーク».",
-            "Cartel BE KOBE, junto al agua en el extremo del parque. Maps: «BE KOBE モニュメント».",
-            "Museo Marítimo (神戸海洋博物館), el del tejado de red blanca: solo por fuera."
+            "Fish Dance, la escultura de pez gigante de Frank Gehry: primera referencia al bajar desde Nankinmachi. Maps: «34.6844120,135.1897218».",
+            "Memorial del terremoto (神戸港震災メモリアルパーク): muelle dañado y paneles, al sureste de Fish Dance. Maps: «34.683722,135.190217».",
+            "Cartel BE KOBE, junto al agua en el extremo sur de Meriken Park. Maps: «34.6812816,135.1892499».",
+            "Museo Marítimo (神戸海洋博物館), el del tejado de red blanca: por fuera, de camino hacia la torre. Maps: «34.68295,135.18845».",
+            "Port Tower (神戸ポートタワー), la torre roja: por fuera gratis. Desde aquí, continuar al oeste hacia Mosaic. Maps: «34.6826278,135.1867241»."
           ]
         },
         {
@@ -447,7 +447,7 @@
           "category": "mirador",
           "status": "plan",
           "time": "~15:30",
-          "locationQuery": "神戸ハーバーランド umie MOSAIC",
+          "locationQuery": "34.6796142,135.1845690",
           "approximatePrice": "0 ¥",
           "notes": "Centro comercial Mosaic junto al agua, para hacer tiempo hasta el atardecer. Desde su terraza y la pasarela se ve gratis la Port Tower y el museo marítimo iluminados al anochecer (puesta de sol ~17:10, estimado).",
           "transit": {
@@ -456,9 +456,9 @@
             "approximateDuration": "~10 min"
           },
           "plan": [
-            "Pasarela hacia umie MOSAIC, con vistas a Meriken y la Port Tower. Maps: «umie MOSAIC».",
+            "Pasarela hacia umie MOSAIC, con vistas a Meriken y la Port Tower. Maps: «34.6796142,135.1845690».",
             "Terraza de Mosaic junto al agua: el mejor sitio gratis para el atardecer.",
-            "Noria de Mosaic (モザイク大観覧車), solo por fuera."
+            "Noria de Mosaic (モザイク大観覧車), solo por fuera. Maps: «34.67869,135.18518»."
           ]
         },
         {
@@ -467,7 +467,7 @@
           "category": "mirador",
           "status": "opcional",
           "time": "desde 17:00",
-          "locationQuery": "神戸布引ロープウェイ ハーブ園山麓駅",
+          "locationQuery": "34.7043632,135.1937926",
           "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
           "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
           "transit": {
@@ -482,7 +482,7 @@
           "category": "compras",
           "status": "opcional",
           "time": "~18:00",
-          "locationQuery": "カインドオル 神戸店 三宮町2-7-8",
+          "locationQuery": "カインドオル神戸店 神戸市中央区三宮町2-7-8 パウリスタビル",
           "address": "神戸市中央区三宮町2-7-8 パウリスタビル (Tor Road, frente a Kobe BAL)",
           "approximatePrice": "0 ¥ entrar",
           "notes": "Tienda de ropa y bolsos de segunda mano en 5 plantas (vintage, marcas japonesas, diseñador, y una planta de exposiciones). Cierra ~20:00 según el cartel; confirmar en la puerta. Queda a ~5 min del Hankyu Kobe-Sannomiya, de camino a la vuelta.",
