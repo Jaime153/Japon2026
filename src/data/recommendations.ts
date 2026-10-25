@@ -989,4 +989,17 @@ export const RECOMMENDATIONS: Recommendation[] = [
     query: '34.7043632,135.1937926',
     links: [{ label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=34.7043632%2C135.1937926', kind: 'maps' }],
   },
+  {
+    id: 'minoh-cascada',
+    title: 'Cascada de Minoh y paseo del río',
+    area: 'Minoh · norte de Osaka',
+    category: 'excursion',
+    scope: 'future',
+    priority: 'try',
+    source: 'Plan del 26/10/2026 (se quitó por lluvia fuerte)',
+    summary: 'Paseo de ~2,8 km junto al río desde la estación Hankyu Minoh hasta la cascada de 33 m; en la calle de subida venden tempura de hoja de arce (もみじの天ぷら).',
+    fit2026: 'Para otro viaje con buen tiempo: combina con Katsuo-ji (taxi ~10 min entre ambos). Mejor en noviembre con el arce rojo.',
+    query: '箕面大滝',
+    links: [{ label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=%E7%AE%95%E9%9D%A2%E5%A4%A7%E6%BB%9D', kind: 'maps' }],
+  },
 ];

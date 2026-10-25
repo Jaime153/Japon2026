@@ -471,59 +471,98 @@
       "status": "plan",
       "activities": [
         {
-          "id": "katsuoji",
-          "title": "Katsuo-ji · cumpleaños de Lorena",
-          "category": "templo",
+          "id": "salida-katsuoji-1026",
+          "title": "APA → Midosuji directo → Minoh-Kayano",
+          "category": "transporte",
           "status": "plan",
-          "priority": "must",
-          "notes": "Lunes: 8:00–17:00, última entrada 16:30. Entrada web opcional para saltarse la cola de la taquilla. El bus 30 de Hankyu desde Minoh-Kayano (parada 8) es SOLO SIN EFECTIVO desde el 01/10/2026: llevar IC con saldo (no se recarga en el bus). Taxi alternativo desde Minoh-Kayano ~20 min, ~3.400 ¥.",
-          "locationQuery": "Katsuo-ji",
-          "plan": [
-            "Ir a Katsuo-ji como visita principal de la mañana.",
-            "Recorrer el templo de los darumas con calma antes de continuar hacia Minoh."
-          ],
-          "time": "~09:30",
+          "time": "07:15",
+          "locationQuery": "箕面萱野駅",
+          "approximatePrice": "~500 ¥/persona (estimado; IC)",
+          "notes": "Desde Hommachi, Midosuji (línea roja) dirección norte: sigue sin transbordo por Kita-Osaka Kyuko hasta 箕面萱野 (Minoh-Kayano), la última parada. Coger un tren que ponga 箕面萱野; si el vuestro acaba en 千里中央 (Senri-Chūō), bajar y coger el siguiente. Llegada ~07:50. Cargad la IC en la estación: el bus del templo no acepta efectivo.",
           "transit": {
             "from": "APA Hommachi",
-            "summary": "Midosuji Line directa Hommachi → Minoh-Kayano (continúa como Kita-Osaka Kyuko; no bajar en Esaka) → bus Hankyu 30 → Katsuo-ji.",
-            "approximateDuration": "~70 min",
-            "steps": [
-              "Midosuji Line desde Hommachi hacia Minoh-Kayano.",
-              "Bus Hankyu nº 30, parada 8, ~25 min, 800 ¥ solo IC/tarjeta.",
-              "Salidas cada 10–20 min por la mañana."
-            ]
-          },
-          "goshuin": true,
-          "description": "Katsuo-ji es el «templo de la victoria» de Minoh, un monasterio budista famoso por sus pequeños daruma rojos. Sus raíces se remontan al siglo VIII y su nombre se relaciona con la tradición de oraciones eficaces por la salud de un emperador. En el culto contemporáneo se interpreta la victoria no tanto como derrotar a los demás sino como superar la propia debilidad y perseverar. Los daruma suelen comprarse para fijar una meta: se pinta un ojo al formularla y el segundo al cumplirla. Los cientos de daruma colocados por el recinto son ofrendas de agradecimiento y esperanza. Observa los estanques, senderos y rincones donde aparecen.",
-          "approximatePrice": "500 ¥ entrada + 800 ¥ bus x2 = 2.100 ¥/persona",
-          "duration": "~1 h 30 min",
-          "links": {
-            "officialWebsite": "https://katsuo-ji-temple.or.jp/access/index.php",
-            "googleMaps": "https://www.google.com/maps/search/?api=1&query=Katsuo-ji%20Minoh"
+            "summary": "Midosuji / Kita-Osaka Kyuko directo Hommachi → Minoh-Kayano.",
+            "approximateDuration": "~35 min"
           }
         },
         {
-          "id": "minoh",
-          "title": "Cascada de Minoh y bajada a pie",
-          "category": "naturaleza",
+          "id": "taxi-katsuoji-1026",
+          "title": "Taxi Minoh-Kayano → Katsuo-ji (para llegar a la apertura)",
+          "category": "transporte",
           "status": "plan",
-          "locationQuery": "Minoh Park",
+          "time": "~07:55",
+          "locationQuery": "勝尾寺",
+          "approximatePrice": "~3.000–3.400 ¥ el taxi (total, no por persona)",
+          "notes": "El primer bus 30 sale a las 9:00 y llega ~9:22, justo cuando empieza a llover más. En taxi (~15–20 min, parada de taxis de la estación) llegáis a las ~08:15, con el templo recién abierto (8:00), sin gente y con lluvia todavía floja (~1 mm/h). Alternativa barata: bus 30 desde la parada 8, 800 ¥ solo con IC (ICOCA/Suica) o billete especial con tarjeta de crédito; sin efectivo desde el 01/10/2026.",
+          "transit": {
+            "from": "Minoh-Kayano",
+            "summary": "Taxi por la carretera de montaña hasta la puerta del templo.",
+            "approximateDuration": "~15–20 min"
+          }
+        },
+        {
+          "id": "katsuoji",
+          "title": "Katsuo-ji · cumpleaños de Lorena",
+          "category": "templo",
+          "status": "confirmado",
+          "priority": "must",
+          "notes": "Lunes: 8:00–17:00, última entrada 16:30. Entrada 500 ¥ (taquilla o entrada web). Es el templo 23 de la ruta Saigoku de 33 templos de Kannon: goshuin en la oficina. Con lluvia: escaleras de piedra resbaladizas, calzado que agarre y paraguas; los daruma mojados son la foto típica de días así. Para pedir taxi de vuelta hay teléfono gratuito en el templo.",
+          "locationQuery": "勝尾寺",
           "plan": [
-            "Pasear por Minoh Park hasta la cascada según fuerzas y tiempo.",
-            "Si el día se alarga, priorizar el paseo principal y volver sin apurar."
+            "Puerta Sanmon y puente rojo sobre el estanque de Benten, nada más entrar: la foto clásica con los daruma.",
+            "Comprar un daruma de la victoria (勝ちダルマ) en la tienda del templo: se escribe el deseo, se pinta un ojo y el otro cuando se cumpla. Buen gesto para el cumpleaños.",
+            "Omikuji dentro de un mini daruma: el daruma se deja en cualquier rincón del recinto o se lleva a casa.",
+            "Subir al pabellón principal (本堂) y al pagoda Tahōtō; daruma en linternas, muros y troncos por todo el camino.",
+            "Goshuin en la oficina del templo (templo 23 de Saigoku)."
           ],
-          "time": "~11:30",
+          "time": "~08:15–10:20",
+          "transit": {
+            "from": "Minoh-Kayano",
+            "summary": "Taxi (o bus 30 desde las 9:00).",
+            "approximateDuration": "~15–20 min"
+          },
+          "goshuin": true,
+          "description": "Katsuo-ji es el «templo de la victoria» de Minoh, un monasterio budista famoso por sus pequeños daruma rojos. Sus raíces se remontan al siglo VIII y su nombre se relaciona con la tradición de oraciones eficaces por la salud de un emperador. En el culto contemporáneo se interpreta la victoria no tanto como derrotar a los demás sino como superar la propia debilidad y perseverar. Los daruma suelen comprarse para fijar una meta: se pinta un ojo al formularla y el segundo al cumplirla. Los cientos de daruma colocados por el recinto son ofrendas de agradecimiento y esperanza. Observa los estanques, senderos y rincones donde aparecen.",
+          "approximatePrice": "500 ¥ entrada; daruma y omikuji aparte",
+          "duration": "~2 h",
+          "links": {
+            "officialWebsite": "https://katsuo-ji-temple.or.jp/access/index.php"
+          }
+        },
+        {
+          "id": "vuelta-katsuoji-1026",
+          "title": "Vuelta a Minoh-Kayano antes de la lluvia fuerte",
+          "category": "transporte",
+          "status": "plan",
+          "time": "~10:30",
+          "locationQuery": "箕面萱野駅",
+          "approximatePrice": "Bus 800 ¥/persona (IC) o taxi ~3.000–3.400 ¥ total",
+          "notes": "Desde las 11:00 se espera lluvia fuerte (hasta ~11 mm/h). Bus 30 desde la parada del templo hacia 箕面萱野: en festivo el primero sale a las 10:30 y luego cada 30 min; el horario de lunes, mirarlo en la parada al llegar. Si no cuadra, taxi pedido con el teléfono gratuito del templo. Después, Midosuji hacia el sur.",
           "transit": {
             "from": "Katsuo-ji",
-            "summary": "Taxi corto hasta la zona de la cascada; después a pie río abajo.",
-            "approximateDuration": "~20 min hasta la cascada"
-          },
-          "approximatePrice": "Taxi ~1.500 ¥ (total, no por persona) + tren de vuelta",
-          "duration": "~2 h",
-          "notes": "Desde Katsuo-ji, taxi ~10 min hasta el aparcamiento más cercano y ~10 min a pie a la cascada (el templo tiene teléfono gratuito para pedir taxi). Bajada por el sendero del río hasta la estación Hankyu Minoh, ~40 min cuesta abajo. Comer en Minoh. Vuelta: Hankyu a Umeda y Midosuji a Hommachi."
+            "summary": "Bus Hankyu 30 o taxi hasta Minoh-Kayano.",
+            "approximateDuration": "~22 min"
+          }
+        },
+        {
+          "id": "comida-katsu-1026",
+          "title": "Comida · sitio de katsu de Lorena (pendiente)",
+          "category": "comida",
+          "status": "pendiente",
+          "time": "~12:00",
+          "notes": "Lorena tiene en mente un sitio de katsu: falta que pase el nombre o el enlace para ponerlo aquí con precio y horario. Comida principal del día. Si es kushikatsu (brochetas rebozadas), Shinsekai está en su lista de Osaka y se llega en Midosuji directo (Dōbutsuen-mae); su galería Jan-Jan Yokochō está cubierta."
+        },
+        {
+          "id": "tarde-libre-1026",
+          "title": "Tarde libre · lluvia fuerte hasta la noche",
+          "category": "otro",
+          "status": "plan",
+          "time": "tarde",
+          "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
+          "notes": "Lluvia fuerte prevista de 11:00 a 16:00 y sigue por la noche (restos del tifón 30 y frente). Tarde a cubierto y cena de cumpleaños libre."
         }
       ],
-      "note": "Lunes laborable: horario de Katsuo-ji 8:00–17:00. Comida principal en Minoh; cena libre.",
+      "note": "Lunes 26/10, cumpleaños de Lorena. Día de lluvia por los restos del tifón 30 y el frente: según tenki.jp (25/10 noche) para Minoh, lluvia floja de 6:00 a 9:00 (~1 mm/h), 3 mm a las 10:00 y fuerte de 11:00 a 16:00 (5–11 mm/h), y sigue de noche; Weathernews da ~4 mm/h de 10:00 a 13:00. Por eso: Katsuo-ji a primera hora en taxi y vuelta hacia las 10:30. La cascada de Minoh se quita: el sendero va junto al río y con lluvia fuerte resbala y puede cerrarse. Comida: sitio de katsu pendiente de Lorena. Coste aprox. por persona: metro ~1.000 ¥ ida y vuelta + taxi ~1.600 ¥ (la mitad) + bus 800 ¥ + entrada 500 ¥.",
       "weather": {
         "place": "Minoh (Katsuo-ji)",
         "lat": 34.8697,
