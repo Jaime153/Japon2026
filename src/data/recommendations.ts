@@ -976,4 +976,17 @@ export const RECOMMENDATIONS: Recommendation[] = [
     summary: 'A Alberto le dio la impresión de que parte de la ropa le salía más barata en Japón que en España.',
     fit2026: 'Consejo de compras; comparar precio real antes de comprar.',
   },
+  {
+    id: 'kobe-nunobiki-noche',
+    title: 'Teleférico de Nunobiki de noche',
+    area: 'Shin-Kobe · Kobe',
+    category: 'experiencia',
+    scope: 'future',
+    priority: 'optional',
+    source: 'Plan de Kobe 25/10/2026 (no se hizo)',
+    summary: 'Teleférico al jardín de hierbas de Nunobiki con la ciudad y el puerto iluminados; tarifa de noche desde las 17:00.',
+    fit2026: 'Para otro viaje a Kobe: fines de semana teleférico hasta las 20:15 y jardín hasta las 20:30; 2.000 ¥ ida y vuelta + jardín (precio de 2026). Junto a la estación de Shin-Kobe.',
+    query: '34.7043632,135.1937926',
+    links: [{ label: 'Maps', url: 'https://www.google.com/maps/search/?api=1&query=34.7043632%2C135.1937926', kind: 'maps' }],
+  },
 ];

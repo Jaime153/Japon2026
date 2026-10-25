@@ -413,37 +413,6 @@
           ]
         },
         {
-          "id": "nunobiki-noche-1025",
-          "title": "Opcional · teleférico de Nunobiki de noche",
-          "category": "mirador",
-          "status": "opcional",
-          "time": "desde 17:00",
-          "locationQuery": "34.7043632,135.1937926",
-          "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
-          "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
-          "transit": {
-            "from": "Harborland",
-            "summary": "Metro Kaigan/Seishin-Yamate hasta Shin-Kobe y 5 min a pie.",
-            "approximateDuration": "~25 min (estimado)"
-          }
-        },
-        {
-          "id": "kindal-1025",
-          "title": "Opcional · Kindal Kobe, segunda mano de marca",
-          "category": "compras",
-          "status": "opcional",
-          "time": "~18:00",
-          "locationQuery": "カインドオル神戸店 神戸市中央区三宮町2-7-8 パウリスタビル",
-          "address": "神戸市中央区三宮町2-7-8 パウリスタビル (Tor Road, frente a Kobe BAL)",
-          "approximatePrice": "0 ¥ entrar",
-          "notes": "Tienda de ropa y bolsos de segunda mano en 5 plantas (vintage, marcas japonesas, diseñador, y una planta de exposiciones). Cierra ~20:00 según el cartel; confirmar en la puerta. Queda a ~5 min del Hankyu Kobe-Sannomiya, de camino a la vuelta.",
-          "transit": {
-            "from": "Harborland",
-            "summary": "JR de Kobe a Motomachi (1 parada) y 5 min a pie, o andando ~25 min.",
-            "approximateDuration": "~15 min (estimado)"
-          }
-        },
-        {
           "id": "vuelta-kobe-1025",
           "title": "Vuelta a Osaka · cena libre",
           "category": "transporte",
@@ -494,7 +463,7 @@
           ]
         }
       ],
-      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi; llegar a Gyoza-en cerca de las 11:45. Comida principal: gyozas en Ganso Gyoza-en (ternera de Kobe como alternativa en el selector); después, butaman de Rōshōki. Cena libre. Coste aprox. por persona sin compras: transporte 1.220 ¥ (JR + metro, ida y vuelta) + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥). Opcionales: Kindal (segunda mano, Sannomiya) o teleférico de Nunobiki de noche."
+      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Comida hecha en Ganso Gyoza-en (salida 13:35); tarde en el puerto hasta el atardecer. Cena libre. Coste aprox. por persona sin compras: transporte 1.220 ¥ (JR + metro, ida y vuelta) + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥)."
     },
     {
       "date": "2026-10-26",
