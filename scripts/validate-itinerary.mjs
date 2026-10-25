@@ -42,6 +42,43 @@ for (const filename of readdirSync(folder).filter((f) => f.endsWith('.json'))) {
   }
 }
 
+// Kobe 25/10: proteger los pines de los destinos que antes abrían estaciones
+// o comercios con el mismo nombre. Los strings son latitud,longitud WGS84.
+const kobeSegment = JSON.parse(readFileSync('src/content/segments/osaka-2.json', 'utf8'));
+const kobeDay = kobeSegment.days.find(d => d.date === '2026-10-25');
+if (!kobeDay) {
+  errors.push('25/10: falta la jornada de Kobe');
+} else {
+  const kobeById = new Map(kobeDay.activities.map(a => [a.id, a]));
+  const exactKobe = {
+    'ida-kobe-1025': '34.69486,135.19509',
+    'kitano-1025': '34.70126,135.18973',
+    'ikuta-jinja-1025': '34.6946102,135.1906166',
+    'galerias-1025': '34.688894,135.189566',
+    'nankinmachi-1025': '34.6882163,135.1881583',
+    'meriken-1025': '34.683722,135.190217',
+    'harborland-1025': '34.6796142,135.1845690',
+    'nunobiki-noche-1025': '34.7043632,135.1937926',
+  };
+  for (const [id, pin] of Object.entries(exactKobe)) {
+    if (kobeById.get(id)?.locationQuery !== pin) errors.push(`25/10 ${id}: pin GPS cambiado o sustituido por búsqueda ambigua`);
+  }
+  const gallery = kobeById.get('galerias-1025');
+  if (!gallery?.plan?.[1]?.includes('Maps: «34.688894,135.189566»') ||
+      gallery?.plan?.some(s => /Maps: «JR元町駅/.test(s))) {
+    errors.push('25/10: el botón Maps del arco Motomachi debe ir a coordenadas, NO a JR Motomachi');
+  }
+  const chinatown = kobeById.get('nankinmachi-1025');
+  if (!chinatown?.plan?.some(s => s.includes('Maps: «34.688328,135.189405»')) ||
+      !chinatown?.plan?.some(s => s.includes('元町通1-3-7') && s.includes('仮店舗'))) {
+    errors.push('25/10: Chinatown necesita puerta Chōan y Rōshōki provisional, no locales ambiguos');
+  }
+  const walk = kobeDay.mapStages?.find(s => s.id === 'kobe-a-pie');
+  if (!walk?.activityIds?.includes('galerias-1025') || !walk?.activityIds?.includes('meriken-1025')) {
+    errors.push('25/10: faltan pines de Kobe en el mapa por tramos');
+  }
+}
+
 // El error de octubre venía de colocar un horario shrink-0 ancho junto al
 // título flex-1. El título se comprimía a una sola palabra por línea.
 const card = readFileSync('src/components/ActivityCard.astro', 'utf8');
