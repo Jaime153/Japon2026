@@ -252,7 +252,7 @@
           "id": "ida-kobe-1025",
           "title": "APA → Umeda → JR a Sannomiya",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "time": "~09:17",
           "locationQuery": "34.69486,135.19509",
           "approximatePrice": "Metro 190 ¥ + JR 420 ¥ = 610 ¥/persona",
@@ -261,13 +261,14 @@
             "from": "APA Hommachi",
             "summary": "Midosuji → Umeda → JR Kobe Line (Special Rapid) → Sannomiya.",
             "approximateDuration": "~51 min"
-          }
+          },
+          "visited": true
         },
         {
           "id": "kitano-1025",
           "title": "Kitano Ijinkan-gai · calles de casas occidentales",
           "category": "barrio",
-          "status": "plan",
+          "status": "confirmado",
           "time": "~10:25",
           "locationQuery": "34.70126,135.18973",
           "approximatePrice": "0 ¥ (por fuera)",
@@ -283,7 +284,8 @@
             "Plaza de Kitano (北野町広場), con estatuas y vistas hacia el puerto. Maps: «34.70126,135.18973».",
             "Casa de la Veleta (風見鶏の館), de ladrillo con el gallo en el tejado, y al lado la casa verde Moegi (萌黄の館): por fuera. Maps: «34.7013855,135.1895110».",
             "Casa del Rin (ラインの館): entrada gratis, 9:00–18:00. Maps: «34.7011373,135.1911810»."
-          ]
+          ],
+          "visited": true
         },
         {
           "id": "ikuta-jinja-1025",
@@ -312,7 +314,7 @@
           "id": "galerias-1025",
           "title": "Galerías Sannomiya Center-gai → Motomachi-dōri",
           "category": "barrio",
-          "status": "plan",
+          "status": "confirmado",
           "time": "~11:30",
           "locationQuery": "34.688894,135.189566",
           "approximatePrice": "0 ¥",
@@ -326,111 +328,60 @@
             "Sannomiya Center-gai (三宮センター街): galería cubierta, seguirla todo recto hacia el oeste. Maps: «三宮センター街 神戸市中央区三宮町».",
             "Al final de Center-gai se cruza Koikawa-suji: enfrente, junto a Daimaru, está el arco La Luce / KOBE MOTOMACHI (entrada ESTE de la galería, no la estación JR). Pin de la calle frente al arco, desde el mapa oficial de Motomachi. Maps: «34.688894,135.189566».",
             "Desde el arco de Motomachi, baja hacia el SUR por Koikawa-suji hasta la puerta Chōan-mon de Nankinmachi (no vayas hacia la estación). Maps: «34.688328,135.189405»."
-          ]
-        },
-        {
-          "id": "comida-kobe-1025",
-          "title": "Comida · gyozas en Ganso Gyoza-en",
-          "category": "comida",
-          "status": "plan",
-          "time": "~11:50",
-          "locationQuery": "元祖ぎょうざ苑 神戸市中央区栄町通2-8-11",
-          "approximatePrice": "Gyoza clásico con Kobe beef 550 ¥ (6 uds); 100 % Kobe A5 2.200 ¥ (5 uds)",
-          "notes": "Comida principal del día. Carta (25/10): el clásico 神戸牛入り焼き餃子 lleva cerdo, verdura y Kobe beef A5, 550 ¥ las 6, igual que el hervido y el frito (550 ¥) y en sopa (750 ¥); el 神戸牛餃子 es 100 % Kobe A5 certificado, 2.200 ¥ las 5, y como el resto de la carta especial pueden no servirlo a la hora de comer o con mucha gente. Arroz 250 ¥, sopa de huevo 300 ¥, jajamen 900 ¥. Mínimo un plato o bebida por persona. Ganso Gyoza-en inventó el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Abre a las 11:45 (comida hasta las 15:00, última comanda 15:00; cena 17:00–20:30); cierra los lunes, el domingo abre. En domingo se forma cola: llegar cerca de la apertura. Si no queréis gyozas, en el selector siguen los sitios de ternera de Kobe (en Sannomiya, precios de agosto de 2025; comprobar la placa oficial de Kobe beef en la entrada).",
-          "choices": {
-            "label": "Dónde comer (alternativas: ternera de Kobe)",
-            "defaultId": "gyozaen",
-            "options": [
-              {
-                "id": "gyozaen",
-                "name": "Ganso Gyoza-en",
-                "locationQuery": "元祖ぎょうざ苑 神戸市中央区栄町通2-8-11",
-                "price": "550 ¥ (6 gyozas) · 2.200 ¥ (5 de 100 % Kobe)",
-                "hours": "11:45–15:00",
-                "note": "Gyozas con salsa de miso, la forma típica de Kobe. Local de 1951. Tarjeta y PayPay."
-              },
-              {
-                "id": "steakland",
-                "name": "Steak Land",
-                "locationQuery": "ステーキランド神戸館",
-                "price": "3.580 ¥ (150 g)",
-                "hours": "11:00–14:00",
-                "note": "Filete de Kobe a la plancha delante de vosotros. El clásico; suele haber cola, reservar si se puede."
-              },
-              {
-                "id": "kamishige",
-                "name": "Kamishige",
-                "locationQuery": "神戸牛ステーキ&ハンバーグ カミシゲ",
-                "price": "2.800 ¥ (100 g)",
-                "hours": "11:00–14:00",
-                "note": "Con sopa, ensalada y arroz o pilaf para repetir. Local pequeño."
-              },
-              {
-                "id": "yoshitoyo",
-                "name": "Yoshitoyo",
-                "locationQuery": "神戸吉豊 さんプラザ",
-                "price": "2.000 ¥",
-                "hours": "11:00–16:00 (fin de semana)",
-                "note": "Hamburguesa 100 % Kobe en olla de barro. Lo más barato siendo Kobe de verdad."
-              },
-              {
-                "id": "yazawa",
-                "name": "Yazawa (ramen)",
-                "locationQuery": "神戸牛らーめん 八坐和",
-                "price": "1.980 ¥",
-                "hours": "11:00–15:00",
-                "note": "Ramen de ternera de Kobe + 2 sushi de carne + arroz con bokkake a voluntad."
-              },
-              {
-                "id": "nishimura",
-                "name": "Nishimura-ya",
-                "locationQuery": "あぶり肉工房 西村家 三宮店",
-                "price": "2.980 ¥",
-                "hours": "11:30–14:00",
-                "note": "Yakiniku de Kobe de una carnicería. Cierra los miércoles."
-              }
-            ]
-          },
-          "transit": {
-            "from": "Ikuta-jinja",
-            "summary": "A pie por las galerías Sannomiya Center-gai y Motomachi-dōri hasta Nankinmachi.",
-            "approximateDuration": "~20 min (estimado)"
-          },
-          "address": "神戸市中央区栄町通2-8-11 (Nankinmachi)"
+          ],
+          "visited": true
         },
         {
           "id": "nankinmachi-1025",
           "title": "Nankinmachi (Chinatown) · picoteo",
           "category": "comida",
-          "status": "plan",
-          "time": "~13:00",
+          "status": "confirmado",
+          "time": "antes de comer",
           "locationQuery": "34.6882163,135.1881583",
           "approximatePrice": "Butaman de Rōshōki 120 ¥/unidad; puestos ~300–800 ¥",
           "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta la reapertura prevista del 11/11/2026 está en el LOCAL PROVISIONAL (antiguo 曹家包子館), 元町通1-3-7, al ESTE de la plaza. No ir a la antigua sede en 元町通2-1-14, que sigue en obras. En fin de semana, 30–60 min de cola.",
           "transit": {
-            "from": "Ganso Gyoza-en",
-            "summary": "Dentro de Nankinmachi.",
-            "approximateDuration": "~2 min"
+            "from": "Motomachi",
+            "summary": "A pie hacia el sur desde la galería de Motomachi.",
+            "approximateDuration": "~5 min"
           },
           "plan": [
             "Puerta este Chōan-mon (長安門), la grande de la entrada principal. Maps: «34.688328,135.189405».",
             "Plaza central (南京町広場) con el pabellón y las estatuas del zodiaco chino. Maps: «34.6882163,135.1881583».",
             "Rōshōki (老祥記): local provisional al ESTE de 南京町広場 (antiguo 曹家包子館), 元町通1-3-7; el edificio del oeste está en obras. Maps: «神戸市中央区元町通1-3-7 老祥記 仮店舗».",
             "Puerta oeste Seian-mon (西安門), la del vídeo, saliendo hacia el puerto. Maps: «34.687699,135.186614»."
-          ]
+          ],
+          "visited": true
+        },
+        {
+          "id": "comida-kobe-1025",
+          "title": "Comida · gyozas en Ganso Gyoza-en",
+          "category": "comida",
+          "status": "confirmado",
+          "time": "Salida 13:35",
+          "locationQuery": "元祖ぎょうざ苑 神戸市中央区栄町通2-8-11",
+          "approximatePrice": "Gyoza clásico con Kobe beef 550 ¥ (6 uds); 100 % Kobe A5 2.200 ¥ (5 uds)",
+          "notes": "HECHO 25/10: comida en Ganso Gyoza-en, salida a las 13:35. Comida principal del día. Carta (25/10): el clásico 神戸牛入り焼き餃子 lleva cerdo, verdura y Kobe beef A5, 550 ¥ las 6, igual que el hervido y el frito (550 ¥) y en sopa (750 ¥); el 神戸牛餃子 es 100 % Kobe A5 certificado, 2.200 ¥ las 5, y como el resto de la carta especial pueden no servirlo a la hora de comer o con mucha gente. Arroz 250 ¥, sopa de huevo 300 ¥, jajamen 900 ¥. Mínimo un plato o bebida por persona. Ganso Gyoza-en inventó el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Abre a las 11:45 (comida hasta las 15:00, última comanda 15:00; cena 17:00–20:30); cierra los lunes, el domingo abre. En domingo se forma cola: llegar cerca de la apertura. Si no queréis gyozas, en el selector siguen los sitios de ternera de Kobe (en Sannomiya, precios de agosto de 2025; comprobar la placa oficial de Kobe beef en la entrada).",
+          "transit": {
+            "from": "Nankinmachi",
+            "summary": "Dentro de Nankinmachi, calle Sakaemachi-dōri.",
+            "approximateDuration": "~2 min"
+          },
+          "address": "神戸市中央区栄町通2-8-11 (Nankinmachi)",
+          "visited": true
         },
         {
           "id": "meriken-1025",
           "title": "Meriken Park · Port Tower, BE KOBE y memorial del terremoto",
           "category": "mirador",
           "status": "plan",
-          "time": "~14:00",
+          "time": "~13:50",
           "locationQuery": "34.683722,135.190217",
           "approximatePrice": "0 ¥; subir a la Port Tower 1.000 ¥ (o 1.200 ¥ con azotea), opcional",
           "notes": "Paseo del puerto: la Port Tower roja (verla por fuera es gratis; subir, 9:00–23:00, 1.000 ¥ el mirador y 1.200 ¥ con la azotea), el cartel BE KOBE junto al agua y el Memorial del Terremoto de 1995 (Hanshin-Awaji, 6.434 muertos), donde se dejó sin reparar un tramo del muelle destruido. Todo en unos 10 min a pie entre sí.",
           "transit": {
-            "from": "Nankinmachi",
-            "summary": "A pie hacia el sur por el antiguo barrio de extranjeros.",
+            "from": "Ganso Gyoza-en",
+            "summary": "A pie hacia el sur por la puerta oeste de Nankinmachi y el antiguo barrio de extranjeros.",
             "approximateDuration": "~10 min"
           },
           "plan": [
@@ -446,7 +397,7 @@
           "title": "Harborland · Mosaic y atardecer en el puerto",
           "category": "mirador",
           "status": "plan",
-          "time": "~15:30",
+          "time": "~15:15",
           "locationQuery": "34.6796142,135.1845690",
           "approximatePrice": "0 ¥",
           "notes": "Centro comercial Mosaic junto al agua, para hacer tiempo hasta el atardecer. Desde su terraza y la pasarela se ve gratis la Port Tower y el museo marítimo iluminados al anochecer (puesta de sol ~17:10, estimado).",
@@ -520,15 +471,15 @@
         },
         {
           "id": "kobe-a-pie",
-          "title": "Sannomiya → Kitano → Ikuta → galerías → comida en Nankinmachi → Meriken → Harborland",
+          "title": "Sannomiya → Kitano → Ikuta → galerías → Nankinmachi → Gyoza-en → Meriken → Harborland",
           "mode": "walk",
           "activityIds": [
             "ida-kobe-1025",
             "kitano-1025",
             "ikuta-jinja-1025",
             "galerias-1025",
-            "comida-kobe-1025",
             "nankinmachi-1025",
+            "comida-kobe-1025",
             "meriken-1025",
             "harborland-1025"
           ]
