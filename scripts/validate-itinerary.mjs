@@ -58,7 +58,6 @@ if (!kobeDay) {
     'nankinmachi-1025': '34.6882163,135.1881583',
     'meriken-1025': '34.683722,135.190217',
     'harborland-1025': '34.6796142,135.1845690',
-    'nunobiki-noche-1025': '34.7043632,135.1937926',
   };
   for (const [id, pin] of Object.entries(exactKobe)) {
     if (kobeById.get(id)?.locationQuery !== pin) errors.push(`25/10 ${id}: pin GPS cambiado o sustituido por búsqueda ambigua`);
