@@ -746,3 +746,8 @@ if (failures.length) {
 }
 console.log('✓ Mapa validado: ' + dates.length + ' días, cuatro tramos en Asakusa y Nagoya; nueve templos Shichifukujin; Yamato -> GN98.');
 
+// Los pasos de «Qué hacer aquí» con «Maps: «…»» abren ese punto en Google Maps.
+{
+  const card = readFileSync(new URL('../src/components/ActivityCard.astro', import.meta.url), 'utf8');
+  assert(card.includes('data-plan-maps') && card.includes("Maps:\\s*«"), 'Qué hacer aquí: botón 📍 Maps por punto de interés');
+}

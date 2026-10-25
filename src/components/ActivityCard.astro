@@ -241,7 +241,18 @@ const hasExtra = Boolean(
         <div class:list={[activity.transit ? 'mt-3' : '', 'rounded-xl bg-slate-50 p-3']}>
           <p class="text-xs font-black uppercase tracking-[0.12em] text-slate-400">Qué hacer aquí</p>
           <ol class="mt-2 grid gap-1.5 text-sm leading-relaxed text-slate-700">
-            {activity.plan.map((step, index) => <li><strong>{index + 1}.</strong> {step}</li>)}
+            {activity.plan.map((step, index) => {
+              // «Maps: «consulta»» dentro del paso → botón que abre ese punto en Google Maps.
+              const mapsMatch = step.match(/\s*Maps:\s*«([^»]+)»\.?/);
+              const text = mapsMatch ? step.replace(mapsMatch[0], '').trim() : step;
+              const pointUrl = mapsMatch ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsMatch[1])}` : undefined;
+              return (
+                <li class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                  <span><strong>{index + 1}.</strong> {text}</span>
+                  {pointUrl && <a href={pointUrl} target="_blank" rel="noopener noreferrer" class="tap-target inline-flex items-center rounded-lg bg-blue-50 px-2 py-1 text-xs font-bold text-blue-800" data-plan-maps>📍 Maps</a>}
+                </li>
+              );
+            })}
           </ol>
         </div>
       )}
