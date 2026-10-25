@@ -245,22 +245,22 @@
     },
     {
       "date": "2026-10-25",
-      "title": "Kobe · Kitano, Ikuta-jinja, ternera de Kobe, Nankinmachi y puerto",
+      "title": "Kobe · Kitano, Ikuta-jinja, gyozas en Nankinmachi y puerto",
       "status": "plan",
       "activities": [
         {
           "id": "ida-kobe-1025",
-          "title": "APA → Umeda → Hankyu a Kobe-Sannomiya",
+          "title": "APA → Umeda → JR a Sannomiya",
           "category": "transporte",
           "status": "plan",
-          "time": "~09:15",
-          "locationQuery": "阪急 神戸三宮駅",
-          "approximatePrice": "Metro ~240 ¥ (estimado) + Hankyu 330 ¥ = ~570 ¥/persona",
-          "notes": "Midosuji de Hommachi a Umeda (2 paradas) y Hankyu Kobe Line desde Osaka-Umeda hasta Kobe-Sannomiya: 330 ¥, ~28 min, sin transbordo; IC sirve. Es más rápido y barato que JR (420 ¥).",
+          "time": "~09:17",
+          "locationQuery": "JR 三ノ宮駅",
+          "approximatePrice": "Metro 190 ¥ + JR 420 ¥ = 610 ¥/persona",
+          "notes": "Midosuji (línea roja) de Hommachi dirección Umeda/Senri-Chūō, 2 paradas (salidas 9:14, 9:17, 9:21). En Umeda, ~4 min a pie a JR Osaka Station. JR Kobe Line (神戸線) dirección 三ノ宮/姫路: el Special Rapid (新快速) tarda ~21 min; un Rapid (快速) también vale. Bajar en 三ノ宮 (Sannomiya). Saliendo a las 9:17, llegada ~10:08. IC sirve.",
           "transit": {
             "from": "APA Hommachi",
-            "summary": "Midosuji → Umeda → Hankyu Kobe Line (exprés) → Kobe-Sannomiya.",
-            "approximateDuration": "~45 min"
+            "summary": "Midosuji → Umeda → JR Kobe Line (Special Rapid) → Sannomiya.",
+            "approximateDuration": "~51 min"
           }
         },
         {
@@ -268,14 +268,14 @@
           "title": "Kitano Ijinkan-gai · calles de casas occidentales",
           "category": "barrio",
           "status": "plan",
-          "time": "~10:00",
+          "time": "~10:25",
           "locationQuery": "北野異人館街 神戸",
           "approximatePrice": "0 ¥ (por fuera)",
           "notes": "Barrio en cuesta de casas de comerciantes extranjeros de finales del XIX. Ver por fuera la Casa de la Veleta (風見鶏の館) y la plaza de Kitano; hay un Starbucks dentro de una casa antigua. Los interiores son de pago: no entran. Con lluvia, vuelta corta.",
           "transit": {
-            "from": "Kobe-Sannomiya",
+            "from": "JR Sannomiya",
             "summary": "A pie cuesta arriba por Kitano-zaka.",
-            "approximateDuration": "~15 min (estimado)"
+            "approximateDuration": "~18 min"
           }
         },
         {
@@ -297,18 +297,41 @@
           }
         },
         {
+          "id": "galerias-1025",
+          "title": "Galerías Sannomiya Center-gai → Motomachi-dōri",
+          "category": "barrio",
+          "status": "plan",
+          "time": "~11:30",
+          "locationQuery": "元町商店街 神戸",
+          "approximatePrice": "0 ¥",
+          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando la avenida, Motomachi-dōri (arco KOBE MOTOMACHI). Es el camino a Chinatown sin mojarse; Nankinmachi queda a la izquierda (sur) a mitad de Motomachi.",
+          "transit": {
+            "from": "Ikuta-jinja",
+            "summary": "A pie hacia el oeste por la galería.",
+            "approximateDuration": "~15 min"
+          }
+        },
+        {
           "id": "comida-kobe-1025",
-          "title": "Comida · ternera de Kobe",
+          "title": "Comida · gyozas en Ganso Gyoza-en",
           "category": "comida",
           "status": "plan",
-          "time": "~11:45",
-          "locationQuery": "ステーキランド神戸館",
-          "approximatePrice": "~2.000–3.600 ¥/persona según sitio",
-          "notes": "Precios de agosto de 2025 (Kobe Journal). Comprobar la placa o certificado oficial de Kobe beef en la entrada: muchos locales venden ternera normal como «Kobe». Todos en Sannomiya, a pocos minutos de Ikuta-jinja.",
+          "time": "~11:50",
+          "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
+          "approximatePrice": "Gyoza de ternera de Kobe 1.800 ¥ (6 uds); gyoza normal, ver carta",
+          "notes": "Comida principal del día. Ganso Gyoza-en inventó el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Abre a las 11:45 (comida hasta las 15:00, última comanda 15:00; cena 17:00–20:30); cierra los lunes, el domingo abre. En domingo se forma cola: llegar cerca de la apertura. Si no queréis gyozas, en el selector siguen los sitios de ternera de Kobe (en Sannomiya, precios de agosto de 2025; comprobar la placa oficial de Kobe beef en la entrada).",
           "choices": {
-            "label": "Dónde comer",
-            "defaultId": "steakland",
+            "label": "Dónde comer (alternativas: ternera de Kobe)",
+            "defaultId": "gyozaen",
             "options": [
+              {
+                "id": "gyozaen",
+                "name": "Ganso Gyoza-en",
+                "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
+                "price": "1.800 ¥ (6 gyozas de Kobe)",
+                "hours": "11:45–15:00",
+                "note": "Gyozas con salsa de miso, la forma típica de Kobe. Local de 1951. Tarjeta y PayPay."
+              },
               {
                 "id": "steakland",
                 "name": "Steak Land",
@@ -353,53 +376,23 @@
           },
           "transit": {
             "from": "Ikuta-jinja",
-            "summary": "A pie por Sannomiya.",
-            "approximateDuration": "~5 min"
-          }
-        },
-        {
-          "id": "galerias-1025",
-          "title": "Galerías Sannomiya Center-gai → Motomachi-dōri",
-          "category": "barrio",
-          "status": "plan",
-          "time": "~13:15",
-          "locationQuery": "元町商店街 神戸",
-          "approximatePrice": "0 ¥",
-          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando la avenida, Motomachi-dōri (arco KOBE MOTOMACHI). Es el camino a Chinatown sin mojarse; Nankinmachi queda a la izquierda (sur) a mitad de Motomachi.",
-          "transit": {
-            "from": "Comida",
-            "summary": "A pie hacia el oeste por la galería.",
-            "approximateDuration": "~15 min"
-          }
+            "summary": "A pie por las galerías Sannomiya Center-gai y Motomachi-dōri hasta Nankinmachi.",
+            "approximateDuration": "~20 min (estimado)"
+          },
+          "address": "神戸市中央区栄町通2-8-11 (Nankinmachi)"
         },
         {
           "id": "nankinmachi-1025",
           "title": "Nankinmachi (Chinatown) · picoteo",
           "category": "comida",
           "status": "plan",
-          "time": "~13:45",
+          "time": "~13:00",
           "locationQuery": "南京町 神戸",
           "approximatePrice": "Butaman de Rōshōki 120 ¥/unidad; puestos ~300–800 ¥",
           "notes": "El butaman (bollo de cerdo al vapor) de Rōshōki es el clásico: 120 ¥, 10:00–18:30 hasta agotar, descanso irregular (muchos lunes). Hasta ~11/2026 está en un local provisional (元町通1-3-7). En fin de semana, 30–60 min de cola. En domingo hay más gente.",
           "transit": {
-            "from": "Motomachi",
-            "summary": "A pie hacia el sur desde la galería de Motomachi.",
-            "approximateDuration": "~5 min"
-          }
-        },
-        {
-          "id": "gyozaen-1025",
-          "title": "Ganso Gyoza-en · gyozas con salsa de miso",
-          "category": "comida",
-          "status": "plan",
-          "time": "~14:15",
-          "locationQuery": "元祖ぎょうざ苑 神戸 栄町通2-8-11",
-          "address": "神戸市中央区栄町通2-8-11 (Nankinmachi)",
-          "approximatePrice": "Gyoza de ternera de Kobe 1.800 ¥ (6 uds); gyoza normal, ver carta",
-          "notes": "Local de 1951 que dice haber inventado el gyoza con salsa de miso (味噌だれ), la forma típica de Kobe. Comida 11:45–15:00 (última comanda 15:00) y cena 17:00–20:30; cierra los lunes, el domingo abre. Acepta tarjeta y PayPay. Después de la ternera, mejor una ración para compartir. En domingo puede haber cola.",
-          "transit": {
-            "from": "Nankinmachi",
-            "summary": "Dentro de Nankinmachi, en la calle Sakaemachi-dōri.",
+            "from": "Ganso Gyoza-en",
+            "summary": "Dentro de Nankinmachi.",
             "approximateDuration": "~2 min"
           }
         },
@@ -408,7 +401,7 @@
           "title": "Meriken Park · Port Tower, BE KOBE y memorial del terremoto",
           "category": "mirador",
           "status": "plan",
-          "time": "~15:00",
+          "time": "~14:00",
           "locationQuery": "神戸港震災メモリアルパーク",
           "approximatePrice": "0 ¥; subir a la Port Tower 1.000 ¥ (o 1.200 ¥ con azotea), opcional",
           "notes": "Paseo del puerto: la Port Tower roja (verla por fuera es gratis; subir, 9:00–23:00, 1.000 ¥ el mirador y 1.200 ¥ con la azotea), el cartel BE KOBE junto al agua y el Memorial del Terremoto de 1995 (Hanshin-Awaji, 6.434 muertos), donde se dejó sin reparar un tramo del muelle destruido. Todo en unos 10 min a pie entre sí.",
@@ -423,14 +416,29 @@
           "title": "Harborland · Mosaic y atardecer en el puerto",
           "category": "mirador",
           "status": "plan",
-          "time": "~16:30",
+          "time": "~15:30",
           "locationQuery": "神戸ハーバーランド umie MOSAIC",
           "approximatePrice": "0 ¥",
-          "notes": "Centro comercial Mosaic junto al agua. Desde su terraza y la pasarela se ve gratis la Port Tower y el museo marítimo iluminados al anochecer (puesta de sol ~17:10, estimado).",
+          "notes": "Centro comercial Mosaic junto al agua, para hacer tiempo hasta el atardecer. Desde su terraza y la pasarela se ve gratis la Port Tower y el museo marítimo iluminados al anochecer (puesta de sol ~17:10, estimado).",
           "transit": {
             "from": "Meriken Park",
             "summary": "A pie bordeando el puerto hacia el oeste.",
             "approximateDuration": "~10 min"
+          }
+        },
+        {
+          "id": "nunobiki-noche-1025",
+          "title": "Opcional · teleférico de Nunobiki de noche",
+          "category": "mirador",
+          "status": "opcional",
+          "time": "desde 17:00",
+          "locationQuery": "神戸布引ロープウェイ ハーブ園山麓駅",
+          "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
+          "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
+          "transit": {
+            "from": "Harborland",
+            "summary": "Metro Kaigan/Seishin-Yamate hasta Shin-Kobe y 5 min a pie.",
+            "approximateDuration": "~25 min (estimado)"
           }
         },
         {
@@ -450,29 +458,14 @@
           }
         },
         {
-          "id": "nunobiki-noche-1025",
-          "title": "Opcional · teleférico de Nunobiki de noche",
-          "category": "mirador",
-          "status": "opcional",
-          "time": "desde 17:00",
-          "locationQuery": "神戸布引ロープウェイ ハーブ園山麓駅",
-          "approximatePrice": "2.000 ¥/persona (tarifa noche, ida y vuelta + jardín)",
-          "notes": "Fines de semana: teleférico hasta las 20:15 y jardín hasta las 20:30, con iluminación y vistas de la ciudad. Desde las 17:00 solo se vende ida y vuelta. Junto a Shin-Kobe: metro desde Harborland/Sannomiya. Comprobar que no está cerrado por mantenimiento.",
-          "transit": {
-            "from": "Harborland",
-            "summary": "Metro Kaigan/Seishin-Yamate hasta Shin-Kobe y 5 min a pie.",
-            "approximateDuration": "~25 min (estimado)"
-          }
-        },
-        {
           "id": "vuelta-kobe-1025",
           "title": "Vuelta a Osaka · cena libre",
           "category": "transporte",
           "status": "plan",
           "time": "noche",
           "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-          "approximatePrice": "Hankyu 330 ¥ + metro ~240 ¥ = ~570 ¥/persona",
-          "notes": "Desde Kobe-Sannomiya en Hankyu hasta Osaka-Umeda y Midosuji a Hommachi."
+          "approximatePrice": "JR 420 ¥ + metro 190 ¥ = 610 ¥/persona",
+          "notes": "Desde JR Sannomiya (三ノ宮) en JR Kobe Line hasta Osaka y Midosuji desde Umeda a Hommachi. Si se vuelve desde Harborland, JR Kobe Station (神戸駅) está al lado."
         }
       ],
       "weather": {
@@ -492,16 +485,15 @@
         },
         {
           "id": "kobe-a-pie",
-          "title": "Sannomiya → Kitano → Ikuta → comida → galerías → Nankinmachi → Meriken → Harborland",
+          "title": "Sannomiya → Kitano → Ikuta → galerías → comida en Nankinmachi → Meriken → Harborland",
           "mode": "walk",
           "activityIds": [
             "ida-kobe-1025",
             "kitano-1025",
             "ikuta-jinja-1025",
-            "comida-kobe-1025",
             "galerias-1025",
+            "comida-kobe-1025",
             "nankinmachi-1025",
-            "gyozaen-1025",
             "meriken-1025",
             "harborland-1025"
           ]
@@ -516,7 +508,7 @@
           ]
         }
       ],
-      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi y Steak Land (reservar si se puede). Comida principal: ternera de Kobe (selector); en Nankinmachi, butaman y gyozas de miso para picar. Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida 2.000–3.600 ¥ + picoteo Nankinmachi (~500–1.000 ¥). Opcionales: Kindal (segunda mano, Sannomiya) o teleférico de Nunobiki de noche."
+      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi; llegar a Gyoza-en cerca de las 11:45. Comida principal: gyozas en Ganso Gyoza-en (ternera de Kobe como alternativa en el selector); después, butaman de Rōshōki. Cena libre. Coste aprox. por persona sin compras: transporte 1.220 ¥ (JR + metro, ida y vuelta) + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥). Opcionales: Kindal (segunda mano, Sannomiya) o teleférico de Nunobiki de noche."
     },
     {
       "date": "2026-10-26",
