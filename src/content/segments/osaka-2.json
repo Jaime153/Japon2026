@@ -250,17 +250,17 @@
       "activities": [
         {
           "id": "ida-kobe-1025",
-          "title": "APA → Umeda → Hankyu a Kobe-Sannomiya",
+          "title": "APA → Umeda → JR a Sannomiya",
           "category": "transporte",
           "status": "plan",
-          "time": "~09:15",
-          "locationQuery": "阪急 神戸三宮駅",
-          "approximatePrice": "Metro ~240 ¥ (estimado) + Hankyu 330 ¥ = ~570 ¥/persona",
-          "notes": "Midosuji de Hommachi a Umeda (2 paradas) y Hankyu Kobe Line desde Osaka-Umeda hasta Kobe-Sannomiya: 330 ¥, ~28 min, sin transbordo; IC sirve. Es más rápido y barato que JR (420 ¥).",
+          "time": "~09:17",
+          "locationQuery": "JR 三ノ宮駅",
+          "approximatePrice": "Metro 190 ¥ + JR 420 ¥ = 610 ¥/persona",
+          "notes": "Midosuji (línea roja) de Hommachi dirección Umeda/Senri-Chūō, 2 paradas (salidas 9:14, 9:17, 9:21). En Umeda, ~4 min a pie a JR Osaka Station. JR Kobe Line (神戸線) dirección 三ノ宮/姫路: el Special Rapid (新快速) tarda ~21 min; un Rapid (快速) también vale. Bajar en 三ノ宮 (Sannomiya). Saliendo a las 9:17, llegada ~10:08. IC sirve.",
           "transit": {
             "from": "APA Hommachi",
-            "summary": "Midosuji → Umeda → Hankyu Kobe Line (exprés) → Kobe-Sannomiya.",
-            "approximateDuration": "~45 min"
+            "summary": "Midosuji → Umeda → JR Kobe Line (Special Rapid) → Sannomiya.",
+            "approximateDuration": "~51 min"
           }
         },
         {
@@ -268,14 +268,14 @@
           "title": "Kitano Ijinkan-gai · calles de casas occidentales",
           "category": "barrio",
           "status": "plan",
-          "time": "~10:00",
+          "time": "~10:25",
           "locationQuery": "北野異人館街 神戸",
           "approximatePrice": "0 ¥ (por fuera)",
           "notes": "Barrio en cuesta de casas de comerciantes extranjeros de finales del XIX. Ver por fuera la Casa de la Veleta (風見鶏の館) y la plaza de Kitano; hay un Starbucks dentro de una casa antigua. Los interiores son de pago: no entran. Con lluvia, vuelta corta.",
           "transit": {
-            "from": "Kobe-Sannomiya",
+            "from": "JR Sannomiya",
             "summary": "A pie cuesta arriba por Kitano-zaka.",
-            "approximateDuration": "~15 min (estimado)"
+            "approximateDuration": "~18 min"
           }
         },
         {
@@ -464,8 +464,8 @@
           "status": "plan",
           "time": "noche",
           "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-          "approximatePrice": "Hankyu 330 ¥ + metro ~240 ¥ = ~570 ¥/persona",
-          "notes": "Desde Kobe-Sannomiya en Hankyu hasta Osaka-Umeda y Midosuji a Hommachi."
+          "approximatePrice": "JR 420 ¥ + metro 190 ¥ = 610 ¥/persona",
+          "notes": "Desde JR Sannomiya (三ノ宮) en JR Kobe Line hasta Osaka y Midosuji desde Umeda a Hommachi. Si se vuelve desde Harborland, JR Kobe Station (神戸駅) está al lado."
         }
       ],
       "weather": {
@@ -508,7 +508,7 @@
           ]
         }
       ],
-      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi; llegar a Gyoza-en cerca de las 11:45. Comida principal: gyozas en Ganso Gyoza-en (ternera de Kobe como alternativa en el selector); después, butaman de Rōshōki. Cena libre. Coste aprox. por persona sin compras: transporte ~1.140 ¥ + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥). Opcionales: Kindal (segunda mano, Sannomiya) o teleférico de Nunobiki de noche."
+      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Domingo: más gente en Nankinmachi; llegar a Gyoza-en cerca de las 11:45. Comida principal: gyozas en Ganso Gyoza-en (ternera de Kobe como alternativa en el selector); después, butaman de Rōshōki. Cena libre. Coste aprox. por persona sin compras: transporte 1.220 ¥ (JR + metro, ida y vuelta) + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥). Opcionales: Kindal (segunda mano, Sannomiya) o teleférico de Nunobiki de noche."
     },
     {
       "date": "2026-10-26",
