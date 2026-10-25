@@ -316,7 +316,7 @@
           "time": "~11:30",
           "locationQuery": "34.688894,135.189566",
           "approximatePrice": "0 ¥",
-          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando la avenida, Motomachi-dōri (arco KOBE MOTOMACHI). Es el camino a Chinatown sin mojarse; Nankinmachi queda a la izquierda (sur) a mitad de Motomachi.",
+          "notes": "Dos galerías cubiertas seguidas: Sannomiya Center-gai y, cruzando Koikawa-suji, Motomachi-dōri (arco La Luce / KOBE MOTOMACHI). Para llegar a Chinatown desde ese arco hay que bajar hacia el SUR por Koikawa-suji hasta Chōan-mon (a unos 70 m); no ir a la estación JR.",
           "transit": {
             "from": "Ikuta-jinja",
             "summary": "A pie hacia el oeste por la galería.",
@@ -325,7 +325,7 @@
           "plan": [
             "Sannomiya Center-gai (三宮センター街): galería cubierta, seguirla todo recto hacia el oeste. Maps: «三宮センター街 神戸市中央区三宮町».",
             "Al final de Center-gai se cruza Koikawa-suji: enfrente, junto a Daimaru, está el arco La Luce / KOBE MOTOMACHI (entrada ESTE de la galería, no la estación JR). Pin de la calle frente al arco, desde el mapa oficial de Motomachi. Maps: «34.688894,135.189566».",
-            "Ya dentro de Motomachi, la primera o segunda calle a la izquierda (sur) lleva a la puerta este de Nankinmachi. Maps: «34.688328,135.189405»."
+            "Desde el arco de Motomachi, baja hacia el SUR por Koikawa-suji hasta la puerta Chōan-mon de Nankinmachi (no vayas hacia la estación). Maps: «34.688328,135.189405»."
           ]
         },
         {
@@ -416,7 +416,7 @@
             "Puerta este Chōan-mon (長安門), la grande de la entrada principal. Maps: «34.688328,135.189405».",
             "Plaza central (南京町広場) con el pabellón y las estatuas del zodiaco chino. Maps: «34.6882163,135.1881583».",
             "Rōshōki (老祥記): local provisional al ESTE de 南京町広場 (antiguo 曹家包子館), 元町通1-3-7; el edificio del oeste está en obras. Maps: «神戸市中央区元町通1-3-7 老祥記 仮店舗».",
-            "Puerta oeste Seian-mon (西安門), la del vídeo, saliendo hacia el puerto. Maps: «西安門 南京町 神戸»."
+            "Puerta oeste Seian-mon (西安門), la del vídeo, saliendo hacia el puerto. Maps: «34.687699,135.186614»."
           ]
         },
         {
@@ -437,8 +437,8 @@
             "Port Tower (神戸ポートタワー), la torre roja: por fuera gratis. Maps: «34.6826278,135.1867241».",
             "Fish Dance, la escultura de pez gigante de Frank Gehry, en la esquina del parque. Maps: «34.6844120,135.1897218».",
             "Memorial del terremoto (神戸港震災メモリアルパーク): tramo del muelle hundido sin reparar y paneles. Maps: «34.683722,135.190217».",
-            "Cartel BE KOBE, junto al agua en el extremo del parque. Maps: «BE KOBE モニュメント メリケンパーク 神戸».",
-            "Museo Marítimo (神戸海洋博物館), el del tejado de red blanca: solo por fuera."
+            "Cartel BE KOBE, junto al agua en el extremo del parque. Maps: «34.6812816,135.1892499».",
+            "Museo Marítimo (神戸海洋博物館), el del tejado de red blanca: solo por fuera. Maps: «34.68295,135.18845»."
           ]
         },
         {
@@ -458,7 +458,7 @@
           "plan": [
             "Pasarela hacia umie MOSAIC, con vistas a Meriken y la Port Tower. Maps: «34.6796142,135.1845690».",
             "Terraza de Mosaic junto al agua: el mejor sitio gratis para el atardecer.",
-            "Noria de Mosaic (モザイク大観覧車), solo por fuera."
+            "Noria de Mosaic (モザイク大観覧車), solo por fuera. Maps: «34.67869,135.18518»."
           ]
         },
         {
