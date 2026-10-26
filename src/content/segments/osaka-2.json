@@ -474,7 +474,7 @@
           "id": "salida-katsuoji-1026",
           "title": "APA → Midosuji directo → Minoh-Kayano",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "time": "~08:10",
           "locationQuery": "箕面萱野駅",
           "approximatePrice": "~500 ¥/persona (estimado; IC)",
@@ -483,13 +483,14 @@
             "from": "APA Hommachi",
             "summary": "Midosuji / Kita-Osaka Kyuko directo Hommachi → Minoh-Kayano.",
             "approximateDuration": "~35 min"
-          }
+          },
+          "visited": true
         },
         {
           "id": "bus-katsuoji-1026",
           "title": "Bus Hankyu 30 · Minoh-Kayano → Katsuo-ji",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "time": "09:00",
           "locationQuery": "勝尾寺",
           "approximatePrice": "800 ¥/persona, solo IC",
@@ -498,7 +499,8 @@
             "from": "Minoh-Kayano",
             "summary": "Bus directo por la carretera de montaña.",
             "approximateDuration": "~22 min"
-          }
+          },
+          "visited": true
         },
         {
           "id": "katsuoji",
@@ -515,7 +517,7 @@
             "Subir al pabellón principal (本堂) y al pagoda Tahōtō; daruma en linternas, muros y troncos por todo el camino.",
             "Goshuin en la oficina del templo (templo 23 de Saigoku)."
           ],
-          "time": "~09:25–10:50",
+          "time": "Salida 11:48",
           "transit": {
             "from": "Minoh-Kayano",
             "summary": "Bus Hankyu 30 (parada 8), sin paradas intermedias.",
@@ -527,17 +529,18 @@
           "duration": "~2 h",
           "links": {
             "officialWebsite": "https://katsuo-ji-temple.or.jp/access/index.php"
-          }
+          },
+          "visited": true
         },
         {
           "id": "vuelta-katsuoji-1026",
           "title": "Vuelta a Minoh-Kayano antes de la lluvia fuerte",
           "category": "transporte",
           "status": "plan",
-          "time": "~11:00",
+          "time": "~12:00",
           "locationQuery": "箕面萱野駅",
           "approximatePrice": "Bus 800 ¥/persona (IC)",
-          "notes": "Bus 30 desde la parada del templo hacia 箕面萱野. En festivo salen a las 10:30, 11:00, 11:30…; el horario de lunes, mirarlo en la parada al llegar a las 9:22 para elegir el de vuelta. La lluvia fuerte empieza hacia las 11:00. Después, Midosuji hacia el sur.",
+          "notes": "Salida del templo a las 11:48. Bus 30 desde la parada del templo hasta 箕面萱野 (~22 min, 800 ¥ con IC); después Midosuji directo hacia el sur.",
           "transit": {
             "from": "Katsuo-ji",
             "summary": "Bus Hankyu 30 hasta Minoh-Kayano.",
@@ -545,31 +548,15 @@
           }
         },
         {
-          "id": "taiyo-no-to-1026",
-          "title": "Opcional · Torre del Sol (Expo 70) desde la Gran Escalera",
-          "category": "mirador",
-          "status": "opcional",
-          "time": "~11:45",
-          "locationQuery": "万博記念公園 大階段 太陽の塔",
-          "approximatePrice": "0 ¥ (vista desde fuera del parque); transporte ~500 ¥ (estimado)",
-          "duration": "~20 min",
-          "notes": "La Torre del Sol de Tarō Okamoto (Expo de Osaka 1970), 70 m, el icono del norte de Osaka. Se ve de frente y gratis desde la Gran Escalera (万博記念公園大階段), junto a EXPOCITY, a 5 min de la estación de monorraíl Banpaku-kinen-kōen; no hace falta entrar al parque (260 ¥). Solo antes de comer: con lluvia, foto rápida y de ahí Midosuji directo hacia Namba para la comida.",
-          "transit": {
-            "from": "Minoh-Kayano",
-            "summary": "Kita-Kyu 2 paradas hasta Senri-Chūō y monorraíl de Osaka 1 parada hasta Banpaku-kinen-kōen.",
-            "approximateDuration": "~20 min"
-          }
-        },
-        {
           "id": "comida-katsu-1026",
           "title": "Comida · Osaka Tonkatsu (大阪とんかつ), katsudon de 5 cm",
           "category": "comida",
           "status": "plan",
-          "time": "~13:00",
+          "time": "~13:15",
           "locationQuery": "大阪とんかつ 道頓堀本店 大阪市中央区千日前1-1-10",
           "address": "大阪市中央区千日前1-1-10 (antes «Katsudon Chiyomatsu»)",
           "approximatePrice": "Katsudon 5 cm: 1.850 ¥ (370 g) · 2.500 ¥ (450 g); 2,5 cm ~1.250 ¥ (precios de reseñas)",
-          "notes": "El sitio de Lorena. Famoso por el katsudon con la chuleta de 5 cm de grosor (cerdo negro japonés cocinado a baja temperatura, cortado delante de ti). Comida 11:00–15:00 y cena 17:30–21:30; cierra días sueltos o cuando se acaba la carne. Suele haber cola: mejor no llegar tarde. Tarjeta y PayPay. Precios sacados de reseñas: mirar la carta en la puerta. TEL 06-6212-5920.",
+          "notes": "El sitio de Lorena. Famoso por el katsudon con la chuleta de 5 cm de grosor (cerdo negro japonés cocinado a baja temperatura, cortado delante de ti). Comida 11:00–15:00 y cena 17:30–21:30; cierra días sueltos o cuando se acaba la carne. Suele haber cola y la comida acaba a las 15:00: por eso va antes del Cup Noodle. Tarjeta y PayPay. Precios sacados de reseñas: mirar la carta en la puerta. TEL 06-6212-5920.",
           "transit": {
             "from": "Minoh-Kayano",
             "summary": "Midosuji directo hasta Namba (sin transbordo) y ~8 min a pie hacia el este por Dōtonbori; o Sennichimae/Sakaisuji hasta Nippombashi, a 2 min.",
@@ -581,12 +568,12 @@
           "title": "Opcional · Museo del Cup Noodle de Ikeda: diseñar vuestro propio vaso",
           "category": "ocio",
           "status": "opcional",
-          "time": "~15:15",
+          "time": "~15:00",
           "locationQuery": "カップヌードルミュージアム 大阪池田",
           "address": "大阪府池田市満寿美町8-25",
           "approximatePrice": "Entrada gratis; My Cup Noodles 500 ¥ por vaso",
           "duration": "~1 h",
-          "notes": "Bajo techo, ideal con lluvia. Entrada gratis; en My Cup Noodles Factory se dibuja el vaso a mano, se eligen sopa e ingredientes y te lo sellan para llevar (500 ¥). Lunes abierto: 9:30–16:30, ÚLTIMA ENTRADA 15:30: solo da tiempo si salís de comer antes de las 14:30 (cierra los martes). No he podido confirmar si entre semana hace falta reserva: si se agotan los turnos, se acaba por el día. Pegado al lugar donde se inventó el ramen instantáneo (1958).",
+          "notes": "Bajo techo, ideal con lluvia. Entrada gratis; en My Cup Noodles Factory se dibuja el vaso a mano, se eligen sopa e ingredientes y te lo sellan para llevar (500 ¥). Lunes abierto: 9:30–16:30, ÚLTIMA ENTRADA 15:30: hay que salir de comer antes de las 14:30 (~45 min hasta Ikeda) (cierra los martes). No he podido confirmar si entre semana hace falta reserva: si se agotan los turnos, se acaba por el día. Pegado al lugar donde se inventó el ramen instantáneo (1958).",
           "transit": {
             "from": "Osaka Tonkatsu",
             "summary": "Midosuji de Namba a Umeda, Hankyu Takarazuka Line hasta Ikeda y 5 min a pie.",
@@ -609,7 +596,7 @@
           }
         }
       ],
-      "note": "Lunes 26/10, cumpleaños de Lorena. Día de lluvia por los restos del tifón 30 y el frente: según tenki.jp (25/10 noche) para Minoh, lluvia floja de 6:00 a 9:00 (~1 mm/h), 3 mm a las 10:00 y fuerte de 11:00 a 16:00 (5–11 mm/h), y sigue de noche; Weathernews da ~4 mm/h de 10:00 a 13:00. Por eso: Katsuo-ji con el primer bus (9:00) y vuelta hacia las 11:00, todo en transporte público. La cascada de Minoh se quita: el sendero va junto al río y con lluvia fuerte resbala y puede cerrarse. Comida: Osaka Tonkatsu (Dōtonbori), el katsudon de 5 cm que eligió Lorena. Opcionales del norte, todo bajo techo o rápido: Torre del Sol (gratis desde fuera) y museo del Cup Noodle de Ikeda (entrada gratis, vaso propio 500 ¥). Coste aprox. por persona: metro ~1.000 ¥ ida y vuelta + bus 1.600 ¥ ida y vuelta + entrada 500 ¥ = ~3.100 ¥.",
+      "note": "Lunes 26/10, cumpleaños de Lorena. Día de lluvia por los restos del tifón 30 y el frente: según tenki.jp (25/10 noche) para Minoh, lluvia floja de 6:00 a 9:00 (~1 mm/h), 3 mm a las 10:00 y fuerte de 11:00 a 16:00 (5–11 mm/h), y sigue de noche; Weathernews da ~4 mm/h de 10:00 a 13:00. Por eso: Katsuo-ji con el primer bus (9:00) y vuelta hacia las 11:00, todo en transporte público. La cascada de Minoh se quita: el sendero va junto al río y con lluvia fuerte resbala y puede cerrarse. Comida: Osaka Tonkatsu (Dōtonbori), el katsudon de 5 cm que eligió Lorena. Después de comer, opcional: museo del Cup Noodle de Ikeda (entrada gratis, vaso propio 500 ¥, última entrada 15:30). Coste aprox. por persona: metro ~1.000 ¥ ida y vuelta + bus 1.600 ¥ ida y vuelta + entrada 500 ¥ = ~3.100 ¥.",
       "weather": {
         "place": "Minoh (Katsuo-ji)",
         "lat": 34.8697,
