@@ -78,6 +78,27 @@ if (!kobeDay) {
   }
 }
 
+// 26/10: la elección vigente es Sanpomen (ramen), no el tonkatsu de una PR anterior.
+const osaka26 = kobeSegment.days.find(d => d.date === '2026-10-26');
+if (!osaka26) {
+  errors.push('26/10: falta la jornada del cumpleaños');
+} else {
+  const sanpomen = osaka26.activities.find(a => a.id === 'comida-sanpomen-1026');
+  if (!sanpomen || sanpomen.category !== 'comida' ||
+      sanpomen.status !== 'plan' || sanpomen.visited ||
+      !sanpomen.locationQuery?.includes('三豊麺 なんば日本橋店') ||
+      !sanpomen.links?.tabelog?.includes('27084110')) {
+    errors.push('26/10: falta Sanpomen elegido, con ubicación correcta y sin visita ficticia');
+  }
+  if (osaka26.activities.some(a => a.id === 'comida-katsu-1026' ||
+      /Osaka Tonkatsu|大阪とんかつ/.test(a.title))) {
+    errors.push('26/10: no incluir la comida de tonkatsu que ha sido sustituida');
+  }
+  if (osaka26.activities.find(a => a.id === 'katsuoji')?.time !== 'Salida 11:48') {
+    errors.push('26/10: conservar la salida real de Katsuo-ji');
+  }
+}
+
 // El error de octubre venía de colocar un horario shrink-0 ancho junto al
 // título flex-1. El título se comprimía a una sola palabra por línea.
 const card = readFileSync('src/components/ActivityCard.astro', 'utf8');
