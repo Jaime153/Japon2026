@@ -655,22 +655,60 @@
           "plan": [
             "Hacer check-out, revisar habitación y organizar equipaje para vuelo largo.",
             "Usar la última mañana solo para algo cercano si realmente sobra tiempo."
-          ]
+          ],
+          "time": "10:00",
+          "notes": "Check-out del APA a las 10:00. Dejar las maletas en recepción hasta el taxi de las 14:40 (pedir 荷物を預かってください). Mañana libre cerca del hotel."
+        },
+        {
+          "id": "taxi-ocat-1028",
+          "title": "Taxi APA → Namba OCAT (con maletas)",
+          "category": "transporte",
+          "status": "plan",
+          "priority": "must",
+          "time": "14:40",
+          "locationQuery": "OCAT 大阪シティエアターミナル 大阪市浪速区湊町1-4-1",
+          "approximatePrice": "~1.000–1.500 ¥ el taxi (total, estimado)",
+          "notes": "Recoger las maletas en recepción y pedir taxi en el hotel (o en la parada de la calle Midōsuji). Al taxista: 「なんばOCAT（大阪シティエアターミナル）までお願いします」. OCAT es la terminal cubierta del Airport Limousine en Namba (大阪市浪速区湊町1-4-1); bajar en la entrada de la terminal y subir a la 2.ª planta.",
+          "transit": {
+            "from": "APA Hommachi",
+            "summary": "Taxi hasta la entrada de OCAT en Namba.",
+            "approximateDuration": "~10–15 min"
+          }
+        },
+        {
+          "id": "billetes-ocat-1028",
+          "title": "Comprar los billetes del bus en OCAT 2F",
+          "category": "transporte",
+          "status": "plan",
+          "priority": "must",
+          "time": "~14:55",
+          "locationQuery": "OCAT 大阪シティエアターミナル 大阪市浪速区湊町1-4-1",
+          "approximatePrice": "1.400 ¥/persona (2.800 ¥ los dos)",
+          "notes": "CUÁNDO: el mismo día 28. El billete sencillo solo vale el día en que se compra, así que no se puede comprar antes. DÓNDE: 2.ª planta de OCAT, junto a la terminal de autobuses. CÓMO: máquina (efectivo) o ventanilla de 日本交通バス案内センター (tarjeta), abierta 6:30–20:45. Pedir 2 billetes a 関西空港 第1ターミナル (KIX Terminal 1). Sin reserva ni asiento asignado: se sube por orden de llegada, así que mejor estar en el andén ~10 min antes.",
+          "transit": {
+            "from": "Entrada de OCAT",
+            "summary": "Subir a la 2.ª planta.",
+            "approximateDuration": "~5 min"
+          }
         },
         {
           "id": "kix-transfer",
-          "title": "Taxi a Namba OCAT + bus limusina a KIX T1",
+          "title": "Airport Limousine · OCAT andén 9 → KIX T1",
           "category": "transporte",
           "status": "confirmado",
           "locationQuery": "なんばOCAT 2階 バスターミナル",
           "transit": {
-            "from": "APA Hommachi",
-            "summary": "Taxi hasta Namba OCAT y bus limusina hasta KIX T1.",
-            "approximateDuration": "~1 h 10 min"
+            "from": "OCAT 2F",
+            "summary": "Airport Limousine directo hasta KIX Terminal 1 (salidas).",
+            "approximateDuration": "~48 min"
           },
-          "time": "15:10",
-          "approximatePrice": "Bus 1.400 ¥/persona + taxi ~1.000–1.500 ¥ total (estimado)",
-          "notes": "Con tantas maletas, taxi y bus, sin trenes. Taxi del APA a Namba OCAT (~10 min) y bus limusina desde el 2.º piso de OCAT, andén 9: sale a las 15:10 y llega a la T1 a las 15:58 (~48 min). Hay otros a las 14:40 (llega 15:28) y 15:40 (llega 16:28). Sin reserva, por orden de llegada; el personal mete las maletas en la bodega y da un resguardo para recogerlas. Billete: el sencillo solo vale el día que se compra, así que se compra el 28 en OCAT 2F: máquina (efectivo) o ventanilla (tarjeta), 6:30–20:45."
+          "time": "Bus 15:10",
+          "approximatePrice": "1.400 ¥/persona (billete del paso anterior)",
+          "notes": "Andén 9 de la terminal de OCAT (2.ª planta). Bus de las 15:10, llega a la T1 a las 15:58 (~48 min). Si se llega antes, el de las 14:40 (llega 15:28); si se retrasa, el de las 15:40 (llega 16:28). Equipaje: el personal mete en la bodega hasta 2 maletas por persona y da un resguardo para recogerlas (no perderlo); la norma oficial es que esas 2 sumen como máximo 30 kg y 0,25 m³, con las asas recogidas. Las maletas pequeñas van con vosotros en el bus. Pasaportes, dinero y baterías externas, siempre encima.",
+          "priority": "must",
+          "links": {
+            "officialWebsite": "https://www.kate.co.jp/timetable/detail/OC"
+          }
         },
         {
           "id": "return-flight",
