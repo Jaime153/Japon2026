@@ -374,8 +374,8 @@
           "id": "meriken-1025",
           "title": "Meriken Park · Port Tower, BE KOBE y memorial del terremoto",
           "category": "mirador",
-          "status": "plan",
-          "time": "~13:50",
+          "status": "confirmado",
+          "time": "tras comer",
           "locationQuery": "34.683722,135.190217",
           "approximatePrice": "0 ¥; subir a la Port Tower 1.000 ¥ (o 1.200 ¥ con azotea), opcional",
           "notes": "Paseo del puerto: la Port Tower roja (verla por fuera es gratis; subir, 9:00–23:00, 1.000 ¥ el mirador y 1.200 ¥ con la azotea), el cartel BE KOBE junto al agua y el Memorial del Terremoto de 1995 (Hanshin-Awaji, 6.434 muertos), donde se dejó sin reparar un tramo del muelle destruido. Todo en unos 10 min a pie entre sí.",
@@ -390,14 +390,15 @@
             "Cartel BE KOBE, junto al agua en el extremo sur de Meriken Park. Maps: «34.6812816,135.1892499».",
             "Museo Marítimo (神戸海洋博物館), el del tejado de red blanca: por fuera, de camino hacia la torre. Maps: «34.68295,135.18845».",
             "Port Tower (神戸ポートタワー), la torre roja: por fuera gratis. Desde aquí, continuar al oeste hacia Mosaic. Maps: «34.6826278,135.1867241»."
-          ]
+          ],
+          "visited": true
         },
         {
           "id": "harborland-1025",
           "title": "Harborland · Mosaic y atardecer en el puerto",
           "category": "mirador",
-          "status": "plan",
-          "time": "~15:15",
+          "status": "confirmado",
+          "time": "Llegada ~14:38",
           "locationQuery": "34.6796142,135.1845690",
           "approximatePrice": "0 ¥",
           "notes": "Centro comercial Mosaic junto al agua, para hacer tiempo hasta el atardecer. Desde su terraza y la pasarela se ve gratis la Port Tower y el museo marítimo iluminados al anochecer (puesta de sol ~17:10, estimado).",
@@ -410,17 +411,54 @@
             "Pasarela hacia umie MOSAIC, con vistas a Meriken y la Port Tower. Maps: «34.6796142,135.1845690».",
             "Terraza de Mosaic junto al agua: el mejor sitio gratis para el atardecer.",
             "Noria de Mosaic (モザイク大観覧車), solo por fuera. Maps: «34.67869,135.18518»."
-          ]
+          ],
+          "visited": true
         },
         {
           "id": "vuelta-kobe-1025",
-          "title": "Vuelta a Osaka · cena libre",
+          "title": "JR de vuelta a Osaka (Umeda)",
           "category": "transporte",
           "status": "plan",
-          "time": "noche",
+          "time": "~15:15",
+          "locationQuery": "JR大阪駅",
+          "approximatePrice": "JR ~460 ¥/persona (estimado)",
+          "notes": "Desde Mosaic, JR Kobe Station (神戸駅) está a ~5 min a pie. JR Kobe Line dirección 大阪・京都; mejor Special Rapid (新快速), ~25 min hasta Osaka. Bajar en 大阪 (Osaka) para ir a la UNIQLO de Umeda.",
+          "transit": {
+            "from": "Harborland",
+            "summary": "A pie a JR Kobe Station y JR Kobe Line (Special Rapid) hasta Osaka.",
+            "approximateDuration": "~35 min"
+          }
+        },
+        {
+          "id": "uniqlo-umeda-1025",
+          "title": "UNIQLO UMEDA · camisetas personalizadas (UTme!)",
+          "category": "compras",
+          "status": "plan",
+          "time": "~16:00",
+          "locationQuery": "UNIQLO UMEDA LINKS UMEDA 大阪市北区大深町1-1",
+          "address": "大阪市北区大深町1-1 LINKS UMEDA 1F–2F (edificio de Yodobashi Umeda)",
+          "approximatePrice": "Según diseño y prenda (precio en tienda)",
+          "notes": "Lorena: camisetas personalizadas con UTme! (estampado propio en camiseta o tote). Está en LINKS UMEDA, al norte de JR Osaka Station, a ~5 min a pie de la salida norte (中央北口). Tax-free con pasaporte a partir de 5.000 ¥ sin impuestos.",
+          "transit": {
+            "from": "JR Osaka",
+            "summary": "A pie por la salida norte de JR Osaka hacia Yodobashi Umeda.",
+            "approximateDuration": "~5 min"
+          }
+        },
+        {
+          "id": "tarde-libre-1025",
+          "title": "Vuelta al APA · tarde libre",
+          "category": "transporte",
+          "status": "plan",
+          "time": "tarde",
           "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-          "approximatePrice": "JR 420 ¥ + metro 190 ¥ = 610 ¥/persona",
-          "notes": "Desde JR Sannomiya (三ノ宮) en JR Kobe Line hasta Osaka y Midosuji desde Umeda a Hommachi. Si se vuelve desde Harborland, JR Kobe Station (神戸駅) está al lado."
+          "approximatePrice": "Metro 190 ¥/persona",
+          "notes": "Midosuji de Umeda a Hommachi (2 paradas). Tarde y cena libres.",
+          "transit": {
+            "from": "UNIQLO UMEDA",
+            "summary": "Metro Midosuji Umeda → Hommachi.",
+            "approximateDuration": "~15 min"
+          }
         }
       ],
       "weather": {
@@ -455,15 +493,17 @@
         },
         {
           "id": "vuelta-kobe",
-          "title": "Harborland → APA",
-          "mode": "transit",
+          "title": "Harborland → JR Osaka → UNIQLO Umeda → APA",
+          "mode": "mixed",
           "activityIds": [
             "harborland-1025",
+            "vuelta-kobe-1025",
+            "uniqlo-umeda-1025",
             "@hotel-end"
           ]
         }
       ],
-      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Comida hecha en Ganso Gyoza-en (salida 13:35); tarde en el puerto hasta el atardecer. Cena libre. Coste aprox. por persona sin compras: transporte 1.220 ¥ (JR + metro, ida y vuelta) + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥)."
+      "note": "Domingo 25/10. Kobe va el 25 porque es el día menos malo: tenki.jp (21/10 23:00) da para Kobe 70 % «nublado con lluvia breve» y 0 mm, frente a 90 % y 24 mm el 24. Comida hecha en Ganso Gyoza-en (salida 13:35); después Meriken y Mosaic; vuelta en JR a Osaka, UNIQLO de Umeda y tarde libre. Cena libre. Coste aprox. por persona sin compras: transporte 1.220 ¥ (JR + metro, ida y vuelta) + comida ~1.800–2.500 ¥ + picoteo Nankinmachi (~500–1.000 ¥)."
     },
     {
       "date": "2026-10-26",
