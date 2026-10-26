@@ -556,28 +556,11 @@
           "locationQuery": "大阪とんかつ 道頓堀本店 大阪市中央区千日前1-1-10",
           "address": "大阪市中央区千日前1-1-10 (antes «Katsudon Chiyomatsu»)",
           "approximatePrice": "Katsudon 5 cm: 1.850 ¥ (370 g) · 2.500 ¥ (450 g); 2,5 cm ~1.250 ¥ (precios de reseñas)",
-          "notes": "El sitio de Lorena. Famoso por el katsudon con la chuleta de 5 cm de grosor (cerdo negro japonés cocinado a baja temperatura, cortado delante de ti). Comida 11:00–15:00 y cena 17:30–21:30; cierra días sueltos o cuando se acaba la carne. Suele haber cola y la comida acaba a las 15:00: por eso va antes del Cup Noodle. Tarjeta y PayPay. Precios sacados de reseñas: mirar la carta en la puerta. TEL 06-6212-5920.",
+          "notes": "El sitio de Lorena. Famoso por el katsudon con la chuleta de 5 cm de grosor (cerdo negro japonés cocinado a baja temperatura, cortado delante de ti). Comida 11:00–15:00 y cena 17:30–21:30; cierra días sueltos o cuando se acaba la carne. Suele haber cola y la comida acaba a las 15:00. Tarjeta y PayPay. Precios sacados de reseñas: mirar la carta en la puerta. TEL 06-6212-5920.",
           "transit": {
             "from": "Minoh-Kayano",
             "summary": "Midosuji directo hasta Namba (sin transbordo) y ~8 min a pie hacia el este por Dōtonbori; o Sennichimae/Sakaisuji hasta Nippombashi, a 2 min.",
             "approximateDuration": "~55 min"
-          }
-        },
-        {
-          "id": "cupnoodles-ikeda-1026",
-          "title": "Opcional · Museo del Cup Noodle de Ikeda: diseñar vuestro propio vaso",
-          "category": "ocio",
-          "status": "opcional",
-          "time": "~15:00",
-          "locationQuery": "カップヌードルミュージアム 大阪池田",
-          "address": "大阪府池田市満寿美町8-25",
-          "approximatePrice": "Entrada gratis; My Cup Noodles 500 ¥ por vaso",
-          "duration": "~1 h",
-          "notes": "Bajo techo, ideal con lluvia. Entrada gratis; en My Cup Noodles Factory se dibuja el vaso a mano, se eligen sopa e ingredientes y te lo sellan para llevar (500 ¥). Lunes abierto: 9:30–16:30, ÚLTIMA ENTRADA 15:30: hay que salir de comer antes de las 14:30 (~45 min hasta Ikeda) (cierra los martes). No he podido confirmar si entre semana hace falta reserva: si se agotan los turnos, se acaba por el día. Pegado al lugar donde se inventó el ramen instantáneo (1958).",
-          "transit": {
-            "from": "Osaka Tonkatsu",
-            "summary": "Midosuji de Namba a Umeda, Hankyu Takarazuka Line hasta Ikeda y 5 min a pie.",
-            "approximateDuration": "~45 min"
           }
         },
         {
@@ -587,16 +570,10 @@
           "status": "plan",
           "time": "tarde",
           "locationQuery": "APA Hotel & Resort Midosuji Hommachi Ekimae Tower",
-          "notes": "Lluvia fuerte prevista hasta la noche: cena de cumpleaños libre y a cubierto. Si no se va a Ikeda, desde Namba al APA son 2 paradas de Midosuji.",
-          "approximatePrice": "Hankyu Ikeda → Umeda + metro a Hommachi ~500 ¥ (estimado)",
-          "transit": {
-            "from": "Ikeda",
-            "summary": "Hankyu hasta Osaka-umeda y Midosuji hasta Hommachi.",
-            "approximateDuration": "~40 min"
-          }
+          "notes": "Lluvia fuerte prevista hasta la noche: tarde y cena de cumpleaños libres y a cubierto. Desde Namba al APA son 2 paradas de Midosuji (190 ¥)."
         }
       ],
-      "note": "Lunes 26/10, cumpleaños de Lorena. Día de lluvia por los restos del tifón 30 y el frente: según tenki.jp (25/10 noche) para Minoh, lluvia floja de 6:00 a 9:00 (~1 mm/h), 3 mm a las 10:00 y fuerte de 11:00 a 16:00 (5–11 mm/h), y sigue de noche; Weathernews da ~4 mm/h de 10:00 a 13:00. Por eso: Katsuo-ji con el primer bus (9:00) y vuelta hacia las 11:00, todo en transporte público. La cascada de Minoh se quita: el sendero va junto al río y con lluvia fuerte resbala y puede cerrarse. Comida: Osaka Tonkatsu (Dōtonbori), el katsudon de 5 cm que eligió Lorena. Después de comer, opcional: museo del Cup Noodle de Ikeda (entrada gratis, vaso propio 500 ¥, última entrada 15:30). Coste aprox. por persona: metro ~1.000 ¥ ida y vuelta + bus 1.600 ¥ ida y vuelta + entrada 500 ¥ = ~3.100 ¥.",
+      "note": "Lunes 26/10, cumpleaños de Lorena. Día de lluvia por los restos del tifón 30 y el frente: según tenki.jp (25/10 noche) para Minoh, lluvia floja de 6:00 a 9:00 (~1 mm/h), 3 mm a las 10:00 y fuerte de 11:00 a 16:00 (5–11 mm/h), y sigue de noche; Weathernews da ~4 mm/h de 10:00 a 13:00. Por eso: Katsuo-ji con el primer bus (9:00) y vuelta hacia las 11:00, todo en transporte público. La cascada de Minoh se quita: el sendero va junto al río y con lluvia fuerte resbala y puede cerrarse. Comida: Osaka Tonkatsu (Dōtonbori), el katsudon de 5 cm que eligió Lorena. Coste aprox. por persona: metro ~1.000 ¥ ida y vuelta + bus 1.600 ¥ ida y vuelta + entrada 500 ¥ = ~3.100 ¥.",
       "weather": {
         "place": "Minoh (Katsuo-ji)",
         "lat": 34.8697,
