@@ -659,20 +659,18 @@
         },
         {
           "id": "kix-transfer",
-          "title": "Traslado a KIX con margen",
+          "title": "Taxi a Namba OCAT + bus limusina a KIX T1",
           "category": "transporte",
           "status": "confirmado",
-          "locationQuery": "Kansai International Airport",
-          "plan": [
-            "Salir hacia KIX con margen suficiente para facturación y controles.",
-            "No meter ninguna parada intermedia que pueda comprometer el vuelo."
-          ],
+          "locationQuery": "なんばOCAT 2階 バスターミナル",
           "transit": {
             "from": "APA Hommachi",
-            "summary": "Hommachi (M18) → Namba (M20) por Midosuji Line; desde Nankai Namba, Airport Express/Rapi:t → Kansai Airport.",
-            "approximateDuration": "~60–75 min",
-            "note": "Para vuelo internacional de las 19:00, salir con mucho margen; revisar el mismo día qué opción Nankai encaja mejor."
-          }
+            "summary": "Taxi hasta Namba OCAT y bus limusina hasta KIX T1.",
+            "approximateDuration": "~1 h 10 min"
+          },
+          "time": "15:10",
+          "approximatePrice": "Bus 1.400 ¥/persona + taxi ~1.000–1.500 ¥ total (estimado)",
+          "notes": "Con tantas maletas, taxi y bus, sin trenes. Taxi del APA a Namba OCAT (~10 min) y bus limusina desde el 2.º piso de OCAT, andén 9: sale a las 15:10 y llega a la T1 a las 15:58 (~48 min). Hay otros a las 14:40 (llega 15:28) y 15:40 (llega 16:28). Sin reserva, por orden de llegada; el personal mete las maletas en la bodega y da un resguardo para recogerlas. Billete: el sencillo solo vale el día que se compra, así que se compra el 28 en OCAT 2F: máquina (efectivo) o ventanilla (tarjeta), 6:30–20:45."
         },
         {
           "id": "return-flight",
