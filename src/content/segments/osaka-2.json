@@ -614,6 +614,32 @@
       "status": "plan",
       "activities": [
         {
+          "id": "billetes-ocat-1028",
+          "title": "Billetes KIX · 7-Eleven (comprar antes del 28)",
+          "category": "transporte",
+          "status": "plan",
+          "time": "Durante el 27",
+          "locationQuery": "セブン-イレブン",
+          "approximatePrice": "1.400 ¥/adulto; 2 billetes = 2.800 ¥",
+          "notes": "Comprar en el 7-Eleven junto al APA, preferiblemente hoy 26/10 o el 27/10. Billete JTB de la línea なんばOCAT線, código 0108112; válido un mes desde la compra. No reserva asiento ni bus concreto: subir el 28/10 por orden de llegada a OCAT 2F, andén 9. OJO: la hoja de la máquina (払込票) NO es el billete: hay que pagarla en caja en un máximo de 30 minutos y recoger allí los billetes. Si no funciona, plan B: comprar el 28 en OCAT 2F (máquina efectivo; ventanilla tarjeta, 6:30–20:45). No seleccionar 高速バス乗車券: es JTB レジャー.",
+          "transit": {
+            "from": "Konbini",
+            "summary": "Terminal multimedia de la tienda y pago en caja.",
+            "approximateDuration": "~10 min"
+          },
+          "priority": "must",
+          "plan": [
+            "EN LA MÁQUINA MULTICOPIA DE 7-ELEVEN: 「チケット」→「JTBレジャー」→「商品番号入力での直接購入」 → introducir 0108112 → comprobar なんばOCAT線 y 片道 → elegir 大人2枚 →「申込」.",
+            "La máquina imprime una hoja de pago (払込票). Llevarla a la caja antes de 30 minutos, pagar los 2.800 ¥ y recibir los 2 billetes. Se admite tarjeta según KATE; confirmar el importe y la dirección del trayecto antes de pagar.",
+            "JAPONÉS PARA MOSTRAR AL DEPENDIENTE: すみません。10月28日に使う、なんばOCATから関西国際空港第1ターミナルまでのリムジンバスの片道乗車券を、大人2枚買いたいです。JTBレジャーチケットの商品番号は0108112です。マルチコピー機の操作を教えていただけますか。",
+            "JAPONÉS CORTO PARA DECIR: すみません。リムジンバスのチケットを2枚買いたいです。手伝っていただけますか。 (Disculpe, quiero comprar dos billetes del bus al aeropuerto. ¿Puede ayudarme?)",
+            "SI QUIERES PAGAR CON TARJETA: クレジットカードで払えますか。 (¿Puedo pagar con tarjeta?)."
+          ],
+          "links": {
+            "officialWebsite": "https://www.jtb.co.jp/cvstkt/guide/seven/"
+          }
+        },
+        {
           "id": "cerezo",
           "title": "Cerezo Osaka · buscar equipación oficial",
           "category": "compras",
@@ -657,23 +683,7 @@
             "Usar la última mañana solo para algo cercano si realmente sobra tiempo."
           ],
           "time": "10:00",
-          "notes": "Check-out del APA a las 10:00. Dejar las maletas en recepción hasta el taxi de las 14:40 (pedir 荷物を預かってください). Mañana libre cerca del hotel."
-        },
-        {
-          "id": "billetes-ocat-1028",
-          "title": "Billetes del bus a KIX · comprar antes en un konbini",
-          "category": "transporte",
-          "status": "plan",
-          "time": "antes del 28",
-          "locationQuery": "セブン-イレブン",
-          "approximatePrice": "1.400 ¥/persona (2.800 ¥ los dos), tarjeta",
-          "notes": "CUÁNDO: cualquier día antes (p. ej. hoy 26/10): el billete de konbini vale 1 mes desde la compra. DÓNDE: en el terminal de cualquier konbini: 7-Eleven (マルチコピー), Lawson (Loppi), FamilyMart (Famiポート) o Ministop (Loppi). CÓMO: categoría レジャーチケット (no «高速バス»), buscar el producto 0108112 (なんばOCAT線), 2 billetes de adulto, pagar con tarjeta; el ticket sale por la caja. No reserva un bus concreto: el 28 se sube en el andén 9 de OCAT por orden de llegada. Si el terminal falla, plan B: comprar el 28 en OCAT 2F (máquina en efectivo o ventanilla con tarjeta, 6:30–20:45; ese billete solo vale el mismo día). Ojo: los billetes de konbini NO valen para los buses que salen de Shinsaibashi (Hotel Nikko).",
-          "transit": {
-            "from": "Konbini",
-            "summary": "Terminal multimedia de la tienda y pago en caja.",
-            "approximateDuration": "~10 min"
-          },
-          "priority": "must"
+          "notes": "Check-out del APA a las 10:00. El hotel confirma que guarda maletas hasta el mismo día de salida; dejarlas en recepción y recogerlas antes del taxi (~14:00). Para pedirlo: 「チェックアウト後、今日の14時ごろまで荷物を預かっていただけますか。」"
         },
         {
           "id": "taxi-ocat-1028",
@@ -681,21 +691,21 @@
           "category": "transporte",
           "status": "plan",
           "priority": "must",
-          "time": "14:40",
+          "time": "14:10",
           "locationQuery": "OCAT 大阪シティエアターミナル 大阪市浪速区湊町1-4-1",
-          "approximatePrice": "~1.000–1.500 ¥ el taxi (total, estimado)",
-          "notes": "Recoger las maletas en recepción y pedir taxi en el hotel (o en la parada de la calle Midōsuji). Al taxista: 「なんばOCAT（大阪シティエアターミナル）までお願いします」. OCAT es la terminal cubierta del Airport Limousine en Namba (大阪市浪速区湊町1-4-1); bajar en la entrada de la terminal y subir con las maletas a la 2.ª planta, andén 9.",
+          "approximatePrice": "Taxi ~1.500–2.500 ¥ total (estimado; taxímetro)",
+          "notes": "Recoger las maletas ~14:00; pedir en recepción que llamen un taxi para salir ~14:10: 「14時10分ごろ、なんばOCATまでタクシーを呼んでいただけますか。」. Al conductor: 「なんばOCAT（大阪シティエアターミナル）までお願いします。」 Dirección 大阪市浪速区湊町1-4-1. Tras bajar, ir al bus terminal de OCAT en el 2.º piso, andén 9. Trayecto en taxi ~10–20 min según tráfico (estimación); comprobar espacio para todas las maletas antes de subir.",
           "transit": {
             "from": "APA Hommachi",
             "summary": "Taxi hasta la entrada de OCAT en Namba.",
-            "approximateDuration": "~10–15 min"
+            "approximateDuration": "~10–20 min (tráfico)"
           }
         },
         {
           "id": "kix-transfer",
           "title": "Airport Limousine · OCAT andén 9 → KIX T1",
           "category": "transporte",
-          "status": "confirmado",
+          "status": "plan",
           "locationQuery": "なんばOCAT 2階 バスターミナル",
           "transit": {
             "from": "OCAT 2F",
@@ -703,8 +713,8 @@
             "approximateDuration": "~48 min"
           },
           "time": "Bus 15:10",
-          "approximatePrice": "1.400 ¥/persona (billete de konbini ya comprado)",
-          "notes": "Andén 9 de la terminal de OCAT (2.ª planta). Bus de las 15:10, llega a la T1 a las 15:58 (~48 min). Si se llega antes, el de las 14:40 (llega 15:28); si se retrasa, el de las 15:40 (llega 16:28). Equipaje: el personal mete en la bodega hasta 2 maletas por persona y da un resguardo para recogerlas (no perderlo); la norma oficial es que esas 2 sumen como máximo 30 kg y 0,25 m³, con las asas recogidas. Las maletas pequeñas van con vosotros en el bus. Pasaportes, dinero y baterías externas, siempre encima.",
+          "approximatePrice": "1.400 ¥/persona (comprar en 7-Eleven; si no, en OCAT)",
+          "notes": "Objetivo: estar con billetes y maletas en la cola del andén 9 de OCAT 2F ANTES de las 14:50–15:00. Bus 15:10 → KIX Terminal 1 a las 15:58 (hora PROGRAMADA, no garantizada por tráfico). Si llegáis muy pronto y hay sitio, 14:40 → 15:28; alternativa posterior 15:40 → 16:28 con menos margen para facturar. No admite reserva de asiento: primeros en llegar, primeros en subir. BODEGA: máximo 2 piezas POR PERSONA, con peso COMBINADO máximo 30 kg, volumen combinado 0,25 m³ y cada pieza con suma de lados máxima 2 m; confirmadlo al hacer las maletas. El personal etiqueta y entrega resguardos; comparar etiquetas al recoger. Pasaportes, dinero, cámaras, portátil, objetos frágiles y powerbanks siempre con vosotros, nunca en bodega.",
           "priority": "must",
           "links": {
             "officialWebsite": "https://www.kate.co.jp/timetable/detail/OC"
