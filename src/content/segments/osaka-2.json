@@ -619,9 +619,9 @@
           "category": "transporte",
           "status": "plan",
           "time": "Durante el 27",
-          "locationQuery": "セブン-イレブン",
+          "locationQuery": "セブン-イレブン 御堂筋本町店 大阪市中央区南本町4-2-5",
           "approximatePrice": "1.400 ¥/adulto; 2 billetes = 2.800 ¥",
-          "notes": "Comprar en el 7-Eleven junto al APA, preferiblemente hoy 26/10 o el 27/10. Billete JTB de la línea なんばOCAT線, código 0108112; válido un mes desde la compra. No reserva asiento ni bus concreto: subir el 28/10 por orden de llegada a OCAT 2F, andén 9. OJO: la hoja de la máquina (払込票) NO es el billete: hay que pagarla en caja en un máximo de 30 minutos y recoger allí los billetes. Si no funciona, plan B: comprar el 28 en OCAT 2F (máquina efectivo; ventanilla tarjeta, 6:30–20:45). No seleccionar 高速バス乗車券: es JTB レジャー.",
+          "notes": "Comprar en el 7-Eleven 御堂筋本町店, 南本町4-2-5, justo al lado del APA (南本町4-2-9), preferiblemente hoy 26/10 o el 27/10. Billete JTB de la línea なんばOCAT線, código 0108112; válido un mes desde la compra. No reserva asiento ni bus concreto: subir el 28/10 por orden de llegada a OCAT 2F, andén 9. OJO: la hoja de la máquina (払込票) NO es el billete: hay que pagarla en caja en un máximo de 30 minutos y recoger allí los billetes. Si no funciona, plan B: comprar el 28 en OCAT 2F (máquina efectivo; ventanilla tarjeta, 6:30–20:45). No seleccionar 高速バス乗車券: es JTB レジャー.",
           "transit": {
             "from": "Konbini",
             "summary": "Terminal multimedia de la tienda y pago en caja.",
