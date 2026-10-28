@@ -689,9 +689,9 @@
           "id": "taxi-ocat-1028",
           "title": "Taxi APA → Namba OCAT (con maletas)",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "priority": "must",
-          "time": "14:10",
+          "time": "antes de 13:10",
           "locationQuery": "OCAT 大阪シティエアターミナル 大阪市浪速区湊町1-4-1",
           "approximatePrice": "Taxi ~1.500–2.500 ¥ total (estimado; taxímetro)",
           "notes": "Recoger las maletas ~14:00; pedir en recepción que llamen un taxi para salir ~14:10: 「14時10分ごろ、なんばOCATまでタクシーを呼んでいただけますか。」. Al conductor: 「なんばOCAT（大阪シティエアターミナル）までお願いします。」 Dirección 大阪市浪速区湊町1-4-1. Tras bajar, ir al bus terminal de OCAT en el 2.º piso, andén 9. Trayecto en taxi ~10–20 min según tráfico (estimación); comprobar espacio para todas las maletas antes de subir.",
@@ -699,33 +699,35 @@
             "from": "APA Hommachi",
             "summary": "Taxi hasta la entrada de OCAT en Namba.",
             "approximateDuration": "~10–20 min (tráfico)"
-          }
+          },
+          "visited": true
         },
         {
           "id": "kix-transfer",
           "title": "Airport Limousine · OCAT andén 9 → KIX T1",
           "category": "transporte",
-          "status": "plan",
+          "status": "confirmado",
           "locationQuery": "なんばOCAT 2階 バスターミナル",
           "transit": {
             "from": "OCAT 2F",
             "summary": "Airport Limousine directo hasta KIX Terminal 1 (salidas).",
             "approximateDuration": "~48 min"
           },
-          "time": "Bus 15:10",
+          "time": "Bus 13:10",
           "approximatePrice": "1.400 ¥/persona (comprar en 7-Eleven; si no, en OCAT)",
-          "notes": "Objetivo: estar con billetes y maletas en la cola del andén 9 de OCAT 2F ANTES de las 14:50–15:00. Bus 15:10 → KIX Terminal 1 a las 15:58 (hora PROGRAMADA, no garantizada por tráfico). Si llegáis muy pronto y hay sitio, 14:40 → 15:28; alternativa posterior 15:40 → 16:28 con menos margen para facturar. No admite reserva de asiento: primeros en llegar, primeros en subir. BODEGA: máximo 2 piezas POR PERSONA, con peso COMBINADO máximo 30 kg, volumen combinado 0,25 m³ y cada pieza con suma de lados máxima 2 m; confirmadlo al hacer las maletas. El personal etiqueta y entrega resguardos; comparar etiquetas al recoger. Pasaportes, dinero, cámaras, portátil, objetos frágiles y powerbanks siempre con vosotros, nunca en bodega.",
+          "notes": "EN EL BUS (28/10, 13:09): Airport Limousine desde OCAT con salida a las 13:10; llegada prevista a KIX T1 ~13:58 (~48 min, según tráfico). Objetivo: estar con billetes y maletas en la cola del andén 9 de OCAT 2F ANTES de las 14:50–15:00. Bus 15:10 → KIX Terminal 1 a las 15:58 (hora PROGRAMADA, no garantizada por tráfico). Si llegáis muy pronto y hay sitio, 14:40 → 15:28; alternativa posterior 15:40 → 16:28 con menos margen para facturar. No admite reserva de asiento: primeros en llegar, primeros en subir. BODEGA: máximo 2 piezas POR PERSONA, con peso COMBINADO máximo 30 kg, volumen combinado 0,25 m³ y cada pieza con suma de lados máxima 2 m; confirmadlo al hacer las maletas. El personal etiqueta y entrega resguardos; comparar etiquetas al recoger. Pasaportes, dinero, cámaras, portátil, objetos frágiles y powerbanks siempre con vosotros, nunca en bodega.",
           "priority": "must",
           "links": {
             "officialWebsite": "https://www.kate.co.jp/timetable/detail/OC"
-          }
+          },
+          "visited": true
         },
         {
           "id": "return-flight",
           "title": "Vuelo Jaime y Lorena · KIX → Madrid vía Shanghái",
           "category": "transporte",
           "status": "confirmado",
-          "notes": "Regreso de Jaime y Lorena. El horario del 28 ya está en temporada de invierno: FM822 llega a PVG a las 20:25 y MU709 sale a las 00:50.",
+          "notes": "Regreso de Jaime y Lorena. El horario del 28 ya está en temporada de invierno: FM822 llega a PVG a las 20:25 y MU709 sale a las 00:50. Llegada al aeropuerto ~14:00: margen de sobra; los mostradores abren unas horas antes del vuelo (confirmar en pantallas).",
           "plan": [
             "Ir a KIX T1 con margen amplio y comprobar el mostrador de Shanghai Airlines/China Eastern en las pantallas.",
             "FM822 sale a las 19:00 y llega a PVG T1 a las 20:25.",
